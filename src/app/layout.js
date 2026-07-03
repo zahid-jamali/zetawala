@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "ZetaWala | Advanced E-Commerce & Video SEO Automation",
-  description: "Generate viral YouTube ideas, high-CTR titles, word-for-word scripts, and execute expert Daraz e-commerce keyword optimization and product hunting with AI-powered automation.",
+  description:
+    "Generate viral YouTube ideas, high-CTR titles, word-for-word scripts, and execute expert Daraz e-commerce keyword optimization and product hunting with AI-powered automation.",
   metadataBase: new URL("https://zetawala.com"),
 };
 
@@ -25,11 +26,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-screen w-screen overflow-x-hidden font-sans">
         <ReduxProvider>
-          <ClientLayoutWrapper>
-            {children}
-          </ClientLayoutWrapper>
+          <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
         </ReduxProvider>
       </body>
     </html>

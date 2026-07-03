@@ -1,14 +1,12 @@
 import { NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import dbConnect from "../../../lib/mongodb";
 import ProductHunt from "../../../models/ProductHunt";
 
-// Initialize the Gemini AI SDK safely
-const apiKey = process.env.GEMINI_API_KEY;
-const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
+// Initialize DeepSeek API Key safely
+const apiKey = process.env.DEEPSEEK_API_KEY;
 
-// Helper to clean potential markdown backticks if application/json fails to enforce raw output
-function parseGeminiJson(rawText) {
+// Helper to clean potential markdown backticks from text responses before parsing JSON
+function parseDeepSeekJson(rawText) {
   try {
     const cleaned = rawText
       .trim()
@@ -17,7 +15,7 @@ function parseGeminiJson(rawText) {
       .trim();
     return JSON.parse(cleaned);
   } catch (e) {
-    console.error("Failed to parse Gemini output as JSON:", rawText);
+    console.error("Failed to parse DeepSeek output as JSON:", rawText);
     throw new Error("Generative AI did not return a valid JSON structure.");
   }
 }
@@ -25,11 +23,11 @@ function parseGeminiJson(rawText) {
 export async function POST(request) {
   try {
     // 1. Check API Key configuration
-    if (!genAI) {
+    if (!apiKey) {
       return NextResponse.json(
         {
           error:
-            "GEMINI_API_KEY is not defined. Please add your Gemini API key to your environment variables.",
+            "DEEPSEEK_API_KEY is not defined. Please add your DeepSeek API key to your environment variables.",
         },
         { status: 500 },
       );
@@ -53,11 +51,10 @@ export async function POST(request) {
       );
     }
 
-    // 3. Define and resolve prompts based on action
+    // 3. Define instructions and user prompts based on actions
     let systemInstruction =
       "You are a Senior SEO Prompt Engineer and E-Commerce/Video Metadata Specialist. You output ONLY strictly valid JSON structures matching the requested output format. Do not wrap outputs in markdown block code wrappers like ```json if possible, just return the raw JSON object/array. No conversational filler.";
     let userPrompt = "";
-    let responseMimeType = "application/json";
 
     switch (action) {
       // --- YOUTUBE AUTOMATION PIPELINE ---
@@ -243,22 +240,39 @@ export async function POST(request) {
         );
     }
 
-    // 4. Generate content from Gemini Model
-    const model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
-      systemInstruction: systemInstruction,
-    });
-
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: userPrompt }] }],
-      generationConfig: {
-        responseMimeType: responseMimeType,
-        temperature: 0.2, // Lower temperature to ensure strict formatted compliance
+    // 4. Invoke the DeepSeek model using direct fetch API
+    const response = await fetch("https://api.deepseek.com/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`,
       },
+      body: JSON.stringify({
+        model: "deepseek-chat",
+        messages: [
+          { role: "system", content: systemInstruction },
+          { role: "user", content: userPrompt }
+        ],
+        temperature: 0.2,
+        response_format: {
+          type: "json_object"
+        }
+      })
     });
 
-    const text = result.response.text();
-    const parsedData = parseGeminiJson(text);
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("DeepSeek API error response:", errorText);
+      throw new Error(`DeepSeek API returned error code ${response.status}: ${errorText}`);
+    }
+
+    const data = await response.json();
+    if (!data.choices || data.choices.length === 0) {
+      throw new Error("DeepSeek API returned an empty choices array.");
+    }
+
+    const text = data.choices[0].message.content;
+    const parsedData = parseDeepSeekJson(text);
 
     // MongoDB logging for Daraz Product Hunting
     if (action === "product-hunting") {
@@ -279,7 +293,6 @@ export async function POST(request) {
           `Product hunt logged successfully. Score: ${score}, Trending: ${score >= 80}`,
         );
       } catch (dbErr) {
-        // Log the database error but do not crash the request, ensuring robustness in offline/local mock settings
         console.error("Failed to log product hunt to MongoDB:", dbErr);
       }
     }
