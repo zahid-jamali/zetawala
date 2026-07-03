@@ -83,7 +83,7 @@ export default function Navbar() {
             <img
               src="/images/Logo.png"
               alt="Logo"
-              className="h-full w-auto object-contain dark:brightness-110"
+              className="h-full w-auto object-contain rounded-2xl dark:brightness-110"
             />
           </Link>
 
