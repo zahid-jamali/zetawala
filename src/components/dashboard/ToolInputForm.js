@@ -92,16 +92,17 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Duration (Minutes)</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Duration / Format</label>
             <select
               value={toolInputs.duration || '5'}
               onChange={(e) => handleInputChange('duration', e.target.value)}
               className={inputClasses}
             >
-              <option value="3">3 Minutes</option>
-              <option value="5">5 Minutes</option>
-              <option value="8">8 Minutes</option>
-              <option value="12">12 Minutes</option>
+              <option value="shorts">YouTube Shorts / Reel (under 60s)</option>
+              <option value="3">3 Minutes (Long Form)</option>
+              <option value="5">5 Minutes (Long Form)</option>
+              <option value="8">8 Minutes (Long Form)</option>
+              <option value="12">12 Minutes (Long Form)</option>
             </select>
           </div>
         </>
