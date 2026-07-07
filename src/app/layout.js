@@ -29,10 +29,14 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        {/* monetag ads */}
         <meta name="monetag" content="018bc84a9c09ea6dfbc1e73a803c9455" />
+        {/* bing verification link */}
+        <meta name="msvalidate.01" content="4406A082AA2050BF85F493274149D6D4" />
       </head>
 
       <body className="min-h-screen w-screen overflow-x-hidden font-sans">
+        {/* monetag ads script */}
         <Script
           id="monetag"
           strategy="afterInteractive"
