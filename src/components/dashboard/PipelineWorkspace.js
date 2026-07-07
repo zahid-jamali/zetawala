@@ -21,20 +21,17 @@ import ScriptViewer from './ScriptViewer';
 import DarazHuntingMetrics from './DarazHuntingMetrics';
 import DarazTrafficKeywords from './DarazTrafficKeywords';
 
-const youtubeSteps = [
-  { name: 'Ideas', slug: 'video-ideas' },
-  { name: 'Titles', slug: 'title-generator' },
-  { name: 'Hook', slug: 'hook-architect' },
-  { name: 'Description', slug: 'description-builder' },
-  { name: 'Tags', slug: 'tags-extractor' },
-  { name: 'Thumbnail', slug: 'thumbnail-prompt' },
-  { name: 'Script', slug: 'script-master' },
-];
+import { navigationConfig } from '../../config/navigation';
 
-const darazSteps = [
-  { name: 'Product Hunting', slug: 'product-hunting' },
-  { name: 'Roman Urdu Keywords', slug: 'roman-urdu-keywords' },
-];
+const youtubeCategory = navigationConfig.find(c => c.slug === 'youtube-automation');
+const youtubeSteps = youtubeCategory 
+  ? youtubeCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) 
+  : [];
+
+const darazCategory = navigationConfig.find(c => c.slug === 'daraz-seo');
+const darazSteps = darazCategory 
+  ? darazCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) 
+  : [];
 
 export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   const router = useRouter();
@@ -183,9 +180,16 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
               </h2>
               {outputData && !['video-ideas', 'title-generator', 'tags-extractor', 'thumbnail-prompt', 'script-master', 'product-hunting', 'roman-urdu-keywords'].includes(toolSlug) && (
                 <button
-                  onClick={() => handleCopyText(
-                    toolSlug === 'hook-architect' ? outputData.script : outputData.description
-                  )}
+                  onClick={() => {
+                    let text = '';
+                    if (toolSlug === 'hook-architect') text = outputData.script;
+                    else if (toolSlug === 'description-builder') text = outputData.description;
+                    else if (outputData.content) text = outputData.content;
+                    else if (outputData.results && Array.isArray(outputData.results)) {
+                      text = outputData.results.map(r => `${r.title ? r.title + '\n' : ''}${r.content}`).join('\n\n');
+                    }
+                    handleCopyText(text);
+                  }}
                   className="text-[10px] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 transition-all cursor-pointer"
                 >
                   {copied ? <Check className="w-3.5 h-3.5 text-indigo-500" /> : <Copy className="w-3.5 h-3.5" />}
@@ -270,6 +274,26 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
                       handleCopyKeywords={handleCopyKeywords}
                       copied={keywordCopied}
                     />
+                  )}
+
+                  {!['video-ideas', 'title-generator', 'hook-architect', 'description-builder', 'tags-extractor', 'thumbnail-prompt', 'script-master', 'product-hunting', 'roman-urdu-keywords'].includes(toolSlug) && (
+                    <div className="space-y-4">
+                      {outputData.content && (
+                        <div className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl relative group shadow-sm">
+                          <p className="text-slate-850 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{outputData.content}</p>
+                        </div>
+                      )}
+                      {outputData.results && Array.isArray(outputData.results) && (
+                        <div className="space-y-3">
+                          {outputData.results.map((item, idx) => (
+                            <div key={idx} className="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl relative group shadow-sm">
+                              {item.title && <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block mb-1">{item.title}</span>}
+                              <p className="text-slate-805 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{item.content}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   )}
                 </>
 

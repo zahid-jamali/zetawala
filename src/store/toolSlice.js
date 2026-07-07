@@ -44,9 +44,10 @@ const toolSlice = createSlice({
     },
     setToolInput: (state, action) => {
       const { toolSlug, field, value } = action.payload;
-      if (state.inputs[toolSlug]) {
-        state.inputs[toolSlug][field] = value;
+      if (!state.inputs[toolSlug]) {
+        state.inputs[toolSlug] = {};
       }
+      state.inputs[toolSlug][field] = value;
     },
   },
 });

@@ -1,4 +1,9 @@
 import { navigationConfig } from '../config/navigation';
+import dbConnect from '../lib/mongodb';
+import BlogPost from '../models/BlogPost';
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function sitemap() {
   const baseUrl = 'https://zetawala.com';
@@ -36,6 +41,12 @@ export default async function sitemap() {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
   ];
 
   // 2. Dynamic active tools routes collected from navigation parameters
@@ -63,5 +74,22 @@ export default async function sitemap() {
     }
   });
 
-  return [...staticRoutes, ...toolRoutes];
+  // 3. Dynamic blog post URLs fetched from MongoDB
+  const blogRoutes = [];
+  try {
+    await dbConnect();
+    const posts = await BlogPost.find({}, { slug: 1, createdAt: 1 });
+    posts.forEach((post) => {
+      blogRoutes.push({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.createdAt || currentDate).toISOString(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    });
+  } catch (err) {
+    console.error('Failed to fetch blog routes for sitemap:', err);
+  }
+
+  return [...staticRoutes, ...toolRoutes, ...blogRoutes];
 }
