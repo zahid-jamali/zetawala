@@ -3,12 +3,21 @@ import { cookies } from 'next/headers';
 import dbConnect from '../../../../lib/mongodb';
 import BlogPost from '../../../../models/BlogPost';
 
-const SESSION_TOKEN = 'authenticated_zeta_secret_token';
+import User from '../../../../models/User';
+
+const SESSION_TOKEN_PREFIX = 'authenticated_zeta_session_';
 
 async function verifyAdmin() {
   const cookieStore = await cookies();
   const session = cookieStore.get('admin_session')?.value;
-  return session === SESSION_TOKEN;
+  if (!session || !session.startsWith(SESSION_TOKEN_PREFIX)) return null;
+
+  await dbConnect();
+  const userId = session.replace(SESSION_TOKEN_PREFIX, '');
+  const user = await User.findById(userId);
+  if (!user || user.role !== 'admin') return null;
+
+  return user;
 }
 
 // GET: Fetch single blog post by slug

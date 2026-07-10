@@ -1,0 +1,16 @@
+{
+  "dropoff": {
+    "tiers": [
+      { "maxPrice": 1000, "fee": 15 },
+      { "maxPrice": 3000, "fee": 30 },
+      { "maxPrice": 999999, "fee": 50 }
+    ]
+  },
+  "pickup": {
+    "tiers": [
+      { "maxWeight": 0.5, "fee": 35 },
+      { "maxWeight": 2, "fee": 55 },
+      { "maxWeight": 999, "fee": 85 }
+    ]
+  }
+}

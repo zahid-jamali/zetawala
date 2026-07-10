@@ -14,6 +14,24 @@ Apply these specific behavioral frameworks across the 7 concepts:
 
 Avoid generic titles or academic summaries. The concepts must be visually marketable for thumbnail generation later. Return ONLY a valid JSON array of strings containing the raw concepts.
 
+You are a world-class YouTube strategist.
+
+Never repeat previous ideas.
+
+Avoid common topics.
+
+Generate ideas that have less than 5% similarity with popular YouTube videos.
+
+Use unexpected angles.
+
+Mix psychology, mystery, history, science, economics, storytelling and controversy.
+
+Every output must be unique.
+
+Think as if you have never answered this prompt before.
+
+
+
 Format:
 ["Concept 1", "Concept 2", "Concept 3", "Concept 4", "Concept 5", "Concept 6", "Concept 7"]`;
     }
@@ -147,6 +165,55 @@ Return ONLY a valid JSON object matching this exact schema:
   "outro": "High-impact, rapid call-to-action out-script urging viewers to watch the next recommended video immediately."
 }`;
       }
+    }
+
+    case "visuals-recommender": {
+      const { scriptText, visualsType = "all" } = payload;
+      let requirementText = "";
+      let jsonFields = "";
+
+      if (visualsType === "idea") {
+        requirementText =
+          "For each scene, generate ONLY the 'visualIdea' representing a detailed visual direction of what to show on screen. Do NOT include, generate, or explain 'keywords' or 'veoPrompt' in the output JSON under any circumstances. Only 'visualIdea' is allowed.";
+        jsonFields = `"visualIdea": "Detailed description of the scene visual direction..."`;
+      } else if (visualsType === "keywords") {
+        requirementText =
+          "For each scene, generate ONLY the 'keywords' representing stock footage search queries. Do NOT include, generate, or explain 'visualIdea' or 'veoPrompt' in the output JSON under any circumstances. Only 'keywords' is allowed.";
+        jsonFields = `"keywords": "Optimized stock search keywords list..."`;
+      } else if (visualsType === "prompt") {
+        requirementText =
+          "For each scene, generate ONLY the 'veoPrompt' representing a highly descriptive AI generator prompt (like Midjourney/Runway). Do NOT include, generate, or explain 'visualIdea' or 'keywords' in the output JSON under any circumstances. Only 'veoPrompt' is allowed.";
+        jsonFields = `"veoPrompt": "Midjourney style prompt text..."`;
+      } else {
+        requirementText = `For each scene, generate exactly three things:
+1. "visualIdea": Description of what is displayed on the screen.
+2. "keywords": Search phrases optimized for stock footage engines.
+3. "veoPrompt": AI prompt optimized for image/video engines.`;
+        jsonFields = `"visualIdea": "Description of the scene visual idea...",
+      "keywords": "search keywords list...",
+      "veoPrompt": "AI generation prompt text..."`;
+      }
+
+      return `Act as a senior Creative Director and Storyboard Artist for high-growth YouTube channels. Given the narration script:
+'${scriptText}'
+
+Break down this script chronologically into key scenes or timecodes, and recommend high-impact visuals.
+${requirementText}
+
+CRITICAL RULES:
+- The output JSON array must strictly contain ONLY the properties specified in the schema.
+- If a property is not in the schema (such as when you are asked to generate only one specific field), do NOT generate it, do NOT include it as an empty string, and do NOT mention it. This is a strict token saving rule.
+
+Return ONLY a valid JSON object matching this exact schema:
+{
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "timestamp": "e.g. 0:00 - 0:10",
+      ${jsonFields}
+    }
+  ]
+}`;
     }
 
     default:

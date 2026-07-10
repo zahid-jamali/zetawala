@@ -25,8 +25,11 @@ export async function POST(request) {
   try {
     if (!apiKey) {
       return NextResponse.json(
-        { error: "DEEPSEEK_API_KEY is not defined. Please add it to your environment variables." },
-        { status: 500 }
+        {
+          error:
+            "DEEPSEEK_API_KEY is not defined. Please add it to your environment variables.",
+        },
+        { status: 500 },
       );
     }
 
@@ -36,7 +39,7 @@ export async function POST(request) {
     if (!action || !payload || typeof payload !== "object") {
       return NextResponse.json(
         { error: "Missing action identifier or invalid payload parameters." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -45,13 +48,13 @@ export async function POST(request) {
     if (!userPrompt) {
       return NextResponse.json(
         { error: `Unknown generation action: ${action}` },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     const systemInstruction =
       "You are an elite, senior-level data engineer, YouTube growth strategist, and e-commerce growth architect. You act purely as a backend data processor. You output ONLY valid JSON structures that match the exact shape requested by the user. Absolutely no markdown formatting codes like ```json or ```, no introductory sentences, no explanations, and no conversational text are allowed. Return only the raw JSON string.";
-
+    const creativitySeed = Math.floor(Math.random() * 1000000);
     // Make completion request to DeepSeek API
     const response = await fetch("https://api.deepseek.com/chat/completions", {
       method: "POST",
@@ -63,7 +66,10 @@ export async function POST(request) {
         model: "deepseek-chat",
         messages: [
           { role: "system", content: systemInstruction },
-          { role: "user", content: userPrompt },
+          {
+            role: "user",
+            content: `Creativity Seed: ${creativitySeed}  ${userPrompt}`,
+          },
         ],
         temperature: 0.7,
         response_format: { type: "json_object" },
@@ -73,12 +79,16 @@ export async function POST(request) {
     if (!response.ok) {
       const errorText = await response.text();
       console.error("DeepSeek completions failure response:", errorText);
-      throw new Error(`DeepSeek API returned code ${response.status}: ${errorText}`);
+      throw new Error(
+        `DeepSeek API returned code ${response.status}: ${errorText}`,
+      );
     }
 
     const data = await response.json();
     if (!data.choices || data.choices.length === 0) {
-      throw new Error("DeepSeek API returned an empty completions choices array.");
+      throw new Error(
+        "DeepSeek API returned an empty completions choices array.",
+      );
     }
 
     const text = data.choices[0].message.content;
@@ -109,8 +119,12 @@ export async function POST(request) {
   } catch (error) {
     console.error("API generation failure:", error);
     return NextResponse.json(
-      { success: false, error: error.message || "Server error encountered during output generation." },
-      { status: 500 }
+      {
+        success: false,
+        error:
+          error.message || "Server error encountered during output generation.",
+      },
+      { status: 500 },
     );
   }
 }

@@ -10,7 +10,8 @@ export const navigationConfig = [
       { name: "SEO Description Writer", slug: "description-builder", desc: "SEO semantic structure", isActive: true },
       { name: "Tags & Keyword Extractor", slug: "tags-extractor", desc: "YouTube Studio keywords", isActive: true },
       { name: "AI Thumbnail Prompter", slug: "thumbnail-prompt", desc: "Midjourney graphic prompter", isActive: true },
-      { name: "Comprehensive Script Writer", slug: "script-master", desc: "Word-for-word audio script", isActive: true }
+      { name: "Comprehensive Script Writer", slug: "script-master", desc: "Word-for-word audio script", isActive: true },
+      { name: "Visuals Recommender", slug: "visuals-recommender", desc: "Find stock footage & image prompts", isActive: true }
     ]
   },
   {
@@ -27,7 +28,6 @@ export const navigationConfig = [
       { name: "Daraz Keyword Generator", slug: "daraz-keywords", desc: "Generate high-traffic tags", isActive: true },
       { name: "Customer Reply Generator", slug: "customer-reply", desc: "Draft customer support replies", isActive: true },
       { name: "FAQ Generator", slug: "faq-generator", desc: "Generate buyer FAQs & answers", isActive: true },
-      { name: "Daraz Cost Calculator", slug: "cost-calculator", desc: "Calculate commissions & shipping", isActive: true },
       { name: "Product Benefits Generator", slug: "benefits-generator", desc: "Craft product value features", isActive: true },
       { name: "Negative Review Reply Generator", slug: "negative-reply", desc: "Handle negative reviews politely", isActive: true },
       { name: "Persuasive Sales Copy Generator", slug: "sales-copy", desc: "Copywriting using AIDA formulas", isActive: true },

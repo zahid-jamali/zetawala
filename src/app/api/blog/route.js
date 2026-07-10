@@ -3,20 +3,47 @@ import { cookies } from 'next/headers';
 import dbConnect from '../../../lib/mongodb';
 import BlogPost from '../../../models/BlogPost';
 
-const SESSION_TOKEN = 'authenticated_zeta_secret_token';
+import User from '../../../models/User';
+
+const SESSION_TOKEN_PREFIX = 'authenticated_zeta_session_';
 
 async function verifyAdmin() {
   const cookieStore = await cookies();
   const session = cookieStore.get('admin_session')?.value;
-  return session === SESSION_TOKEN;
+  if (!session || !session.startsWith(SESSION_TOKEN_PREFIX)) return null;
+
+  await dbConnect();
+  const userId = session.replace(SESSION_TOKEN_PREFIX, '');
+  const user = await User.findById(userId);
+  if (!user || user.role !== 'admin') return null;
+
+  return user;
 }
 
-// GET: Retrieve all published blog posts
-export async function GET() {
+// GET: Retrieve all published blog posts (with pagination)
+export async function GET(request) {
   try {
     await dbConnect();
-    const posts = await BlogPost.find({}).sort({ createdAt: -1 });
-    return NextResponse.json({ success: true, posts });
+    const { searchParams } = new URL(request.url);
+    const page = parseInt(searchParams.get('page')) || 1;
+    const limit = parseInt(searchParams.get('limit')) || 6;
+    const skip = (page - 1) * limit;
+
+    const totalPosts = await BlogPost.countDocuments({});
+    const totalPages = Math.ceil(totalPosts / limit);
+
+    const posts = await BlogPost.find({})
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(limit);
+
+    return NextResponse.json({
+      success: true,
+      posts,
+      totalPages,
+      currentPage: page,
+      totalPosts
+    });
   } catch (err) {
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }

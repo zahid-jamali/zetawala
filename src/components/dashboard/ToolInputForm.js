@@ -64,7 +64,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
 
       {['hook-architect', 'description-builder', 'tags-extractor', 'thumbnail-prompt'].includes(toolSlug) && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Optimized Video Title</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-450 uppercase tracking-wider block">Optimized Video Title</label>
           <input
             ref={inputRef}
             type="text"
@@ -75,6 +75,37 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
             placeholder="e.g. I Bought the Cheapest Keyboard on Daraz — Is it E-Waste?"
           />
         </div>
+      )}
+
+      {toolSlug === 'visuals-recommender' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">Required Visual Recommendations</label>
+            <select
+              value={toolInputs.visualsType || 'all'}
+              onChange={(e) => handleInputChange('visualsType', e.target.value)}
+              className={inputClasses}
+            >
+              <option value="all">All Three (Visual Idea, Keywords & AI Prompts)</option>
+              <option value="idea">Visual Idea Only</option>
+              <option value="keywords">Stock Search Keywords Only</option>
+              <option value="prompt">AI / VEO Prompts Only</option>
+            </select>
+          </div>
+          
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">Video Narration Script</label>
+            <textarea
+              ref={inputRef}
+              required
+              value={toolInputs.scriptText || ''}
+              onChange={(e) => handleInputChange('scriptText', e.target.value)}
+              className={inputClasses}
+              placeholder="Paste your video narrative script here to generate visual recommendations scene by scene..."
+              rows={8}
+            />
+          </div>
+        </>
       )}
 
       {toolSlug === 'script-master' && (
@@ -236,63 +267,6 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
         </>
       )}
 
-      {/* Group E: Financial Calculators */}
-      {['cost-calculator', 'profit-calculator'].includes(toolSlug) && (
-        <>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Source Cost (PKR)</label>
-              <input
-                ref={inputRef}
-                type="number"
-                required
-                value={toolInputs.sourceCost || ''}
-                onChange={(e) => handleInputChange('sourceCost', e.target.value)}
-                className={inputClasses}
-                placeholder="Purchase cost"
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Selling Price (PKR)</label>
-              <input
-                type="number"
-                required
-                value={toolInputs.sellingPrice || ''}
-                onChange={(e) => handleInputChange('sellingPrice', e.target.value)}
-                className={inputClasses}
-                placeholder="Daraz retail price"
-              />
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Category Comm. (%)</label>
-              <input
-                type="number"
-                required
-                value={toolInputs.commissionRate || '10'}
-                onChange={(e) => handleInputChange('commissionRate', e.target.value)}
-                className={inputClasses}
-                placeholder="e.g. 8, 10, 15"
-              />
-            </div>
-            {toolSlug === 'cost-calculator' && (
-              <div className="space-y-2">
-                <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Weight (kg)</label>
-                <input
-                  type="number"
-                  step="0.1"
-                  required
-                  value={toolInputs.weight || '0.5'}
-                  onChange={(e) => handleInputChange('weight', e.target.value)}
-                  className={inputClasses}
-                  placeholder="e.g. 0.2"
-                />
-              </div>
-            )}
-          </div>
-        </>
-      )}
 
       <button
         type="submit"

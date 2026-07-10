@@ -1,0 +1,16 @@
+[
+  { "name": "Fashion", "commission": 15 },
+  { "name": "Beauty", "commission": 12 },
+  { "name": "Electronics", "commission": 8 },
+  { "name": "Mobiles", "commission": 5 },
+  { "name": "Home & Living", "commission": 10 },
+  { "name": "Kitchen", "commission": 10 },
+  { "name": "Sports", "commission": 12 },
+  { "name": "Automotive", "commission": 8 },
+  { "name": "Groceries", "commission": 7 },
+  { "name": "Books", "commission": 6 },
+  { "name": "Pet Supplies", "commission": 10 },
+  { "name": "Health", "commission": 10 },
+  { "name": "Kids", "commission": 12 },
+  { "name": "Furniture", "commission": 15 }
+]
