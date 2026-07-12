@@ -1,19 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReduxProvider } from "../store/provider";
 
 import Script from "next/script";
 import ClientLayoutWrapper from "../components/ClientLayoutWrapper";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = { variable: "--font-geist-sans" };
+const geistMono = { variable: "--font-geist-mono" };
 
 export const metadata = {
   title: "ZetaWala | Advanced E-Commerce & Video SEO Automation",

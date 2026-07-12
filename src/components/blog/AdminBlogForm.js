@@ -87,7 +87,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
   }`;
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
+    <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
       
       <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
         <h3 className="text-sm font-bold text-slate-900 dark:text-white">
@@ -96,7 +96,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
         <button
           type="button"
           onClick={onCancel}
-          className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-950 dark:hover:text-white cursor-pointer transition-colors"
+          className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-955 dark:hover:text-white cursor-pointer transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           Cancel
@@ -187,7 +187,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
               <button type="button" onClick={() => insertTag('<blockquote class="border-l-4 border-sky-500 pl-3 italic text-slate-650 my-3">', '</blockquote>')} className={toolbarBtn} title="Quote block">
                 <Quote className="w-3.5 h-3.5" />
               </button>
-              <button type="button" onClick={() => insertTag('<pre class="bg-slate-100 dark:bg-slate-800 p-3.5 rounded-xl font-mono text-xs my-3 overflow-x-auto">', '</pre>')} className={toolbarBtn} title="Code block">
+              <button type="button" onClick={() => insertTag('<pre class="bg-slate-100 dark:bg-slate-805 p-3.5 rounded-xl font-mono text-xs my-3 overflow-x-auto">', '</pre>')} className={toolbarBtn} title="Code block">
                 <Code className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -198,7 +198,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
               value={content}
               onChange={(e) => setContent(e.target.value)}
               className={`${inputClasses} font-mono`}
-              placeholder="Write your blog post content using HTML tags or the toolbar above..."
+              placeholder="Write or paste raw HTML code generated from wordtohtml.net here..."
               rows={15}
             />
           </div>
@@ -206,13 +206,13 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
 
         {/* PREVIEW PANE */}
         {(editorTab === 'preview' || editorTab === 'split') && (
-          <div className="border border-slate-200 dark:border-slate-800 rounded-2xl p-6 bg-slate-50/50 dark:bg-slate-950/40 min-h-[300px] overflow-y-auto max-h-[480px]">
+          <div className="border border-slate-202 dark:border-slate-800 rounded-2xl p-6 bg-slate-50/50 dark:bg-slate-950/40 min-h-[300px] overflow-y-auto max-h-[480px]">
             <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest block mb-4 border-b border-slate-200 dark:border-slate-800 pb-1">
               Live Responsive Preview
             </span>
             <div 
-              className="prose dark:prose-invert max-w-none text-xs sm:text-sm leading-relaxed text-slate-800 dark:text-slate-300 font-medium space-y-4 whitespace-pre-line"
-              dangerouslySetInnerHTML={{ __html: content || '<p className="text-slate-400 italic">No content written yet. Preview will appear here...</p>' }}
+              className="prose dark:prose-invert max-w-none text-xs sm:text-sm leading-relaxed text-slate-850 dark:text-slate-300 font-medium space-y-4"
+              dangerouslySetInnerHTML={{ __html: content || '<p class="text-slate-400 italic">No content written yet. Preview will appear here...</p>' }}
             />
           </div>
         )}
@@ -223,7 +223,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
         <button
           type="button"
           onClick={onCancel}
-          className="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-slate-300 font-bold text-xs cursor-pointer transition-colors"
+          className="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-slate-850 dark:hover:text-white font-bold text-xs cursor-pointer transition-colors"
         >
           Cancel
         </button>

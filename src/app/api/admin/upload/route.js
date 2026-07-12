@@ -3,6 +3,8 @@ import { cookies } from 'next/headers';
 import dbConnect from '../../../../lib/mongodb';
 import User from '../../../../models/User';
 
+import crypto from 'crypto';
+
 const SESSION_TOKEN_PREFIX = 'authenticated_zeta_session_';
 
 // Helper to authenticate admin status
@@ -19,7 +21,7 @@ async function verifyAdmin() {
   return user;
 }
 
-// POST: Parse file data and forward to Cloudinary API using native fetch
+// POST: Parse file data and forward to Cloudinary API using signed request
 export async function POST(request) {
   try {
     const admin = await verifyAdmin();
@@ -27,12 +29,13 @@ export async function POST(request) {
       return NextResponse.json({ success: false, error: 'Unauthorized access.' }, { status: 401 });
     }
 
-    const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
-    const uploadPreset = process.env.CLOUDINARY_UPLOAD_PRESET;
+    const cloudName = process.env.CLOUDINARY_CLOUD;
+    const apiKey = process.env.CLOUDINARY_API_KEY;
+    const apiSecret = process.env.CLOUDINARY_API_SECRET;
 
-    if (!cloudName || !uploadPreset) {
+    if (!cloudName || !apiKey || !apiSecret) {
       return NextResponse.json(
-        { success: false, error: 'Cloudinary environment variables (CLOUDINARY_CLOUD_NAME and CLOUDINARY_UPLOAD_PRESET) are not defined.' },
+        { success: false, error: 'Cloudinary credentials (CLOUDINARY_CLOUD, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET) are not fully configured in your .env file.' },
         { status: 500 }
       );
     }
@@ -50,11 +53,18 @@ export async function POST(request) {
     const base64Data = buffer.toString('base64');
     const dataUrl = `data:${mimeType};base64,${base64Data}`;
 
+    // Generate SHA-1 signature for secure upload
+    const timestamp = Math.round(new Date().getTime() / 1000);
+    const signatureStr = `timestamp=${timestamp}${apiSecret}`;
+    const signature = crypto.createHash('sha1').update(signatureStr).digest('hex');
+
     // POST directly to Cloudinary upload REST API
     const cloudinaryUrl = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
     const uploadBody = new URLSearchParams();
     uploadBody.append('file', dataUrl);
-    uploadBody.append('upload_preset', uploadPreset);
+    uploadBody.append('timestamp', timestamp.toString());
+    uploadBody.append('api_key', apiKey);
+    uploadBody.append('signature', signature);
 
     const response = await fetch(cloudinaryUrl, {
       method: 'POST',
