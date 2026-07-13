@@ -33,6 +33,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   const [copied, setCopied] = useState(false);
   const [selectedKeywords, setSelectedKeywords] = useState([]);
   const [keywordCopied, setKeywordCopied] = useState(false);
+  const [securityToken, setSecurityToken] = useState('');
 
   const isYoutube = categorySlug === 'youtube-automation';
   const steps = isYoutube ? youtubeSteps : darazSteps;
@@ -61,7 +62,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       const res = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: toolSlug, payload: toolInputs }),
+        body: JSON.stringify({ action: toolSlug, payload: toolInputs, securityToken }),
       });
 
       const json = await res.json();
@@ -141,7 +142,13 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
           
           {/* Left Input Pane */}
           <div className="lg:col-span-4 flex flex-col">
-            <ToolInputForm toolSlug={toolSlug} onSubmit={handleSubmit} inputRef={inputRef} />
+            <ToolInputForm 
+              toolSlug={toolSlug} 
+              onSubmit={handleSubmit} 
+              inputRef={inputRef} 
+              onSecurityTokenChange={setSecurityToken} 
+              securityToken={securityToken}
+            />
           </div>
 
           {/* Right Output Pane */}

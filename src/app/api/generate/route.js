@@ -3,6 +3,8 @@ import dbConnect from "../../../lib/mongodb";
 import ProductHunt from "../../../models/ProductHunt";
 import { getUserPrompt } from "../../../lib/promptEngine";
 
+import { getClientIp, detectBot, checkRateLimit, verifyTurnstileToken } from "../../../lib/security";
+
 const apiKey = process.env.DEEPSEEK_API_KEY;
 
 // Clean markdown codes from DeepSeek responses before JSON parsing
@@ -23,6 +25,21 @@ function parseDeepSeekJson(rawText) {
 // POST: API handler routing generation requests to DeepSeek model
 export async function POST(request) {
   try {
+    const reqHeaders = request.headers;
+    const ip = getClientIp(reqHeaders);
+
+    // 1. Scan for bot signatures
+    const botCheck = detectBot(reqHeaders);
+    if (!botCheck.success) {
+      return NextResponse.json({ success: false, error: botCheck.error }, { status: 403 });
+    }
+
+    // 2. Enforce IP-based sliding window rate limits
+    const limitCheck = checkRateLimit(ip);
+    if (!limitCheck.success) {
+      return NextResponse.json({ success: false, error: limitCheck.error }, { status: 429 });
+    }
+
     if (!apiKey) {
       return NextResponse.json(
         {
@@ -34,7 +51,13 @@ export async function POST(request) {
     }
 
     const body = await request.json();
-    const { action, payload } = body;
+    const { action, payload, securityToken } = body;
+
+    // 3. Verify Turnstile captcha token if configured
+    const turnstileCheck = await verifyTurnstileToken(securityToken, ip);
+    if (!turnstileCheck.success) {
+      return NextResponse.json({ success: false, error: turnstileCheck.error }, { status: 400 });
+    }
 
     if (!action || !payload || typeof payload !== "object") {
       return NextResponse.json(

@@ -50,6 +50,7 @@ export default function RootLayout({ children }) {
         <ReduxProvider>
           <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
         </ReduxProvider>
+        <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
       </body>
     </html>
   );

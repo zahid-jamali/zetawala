@@ -4,8 +4,9 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Send, Loader2 } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
+import TurnstileWidget from './TurnstileWidget';
 
-export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
+export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurityTokenChange, securityToken }) {
   const dispatch = useDispatch();
   const { loading, inputs } = useSelector((state) => state.tools);
   const toolInputs = inputs[toolSlug] || {};
@@ -268,9 +269,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef }) {
       )}
 
 
+      <TurnstileWidget onTokenChange={onSecurityTokenChange} />
+
       <button
         type="submit"
-        disabled={loading}
+        disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)}
         className="w-full py-4 mt-6 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 disabled:opacity-50 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-sm cursor-pointer border border-transparent dark:border-slate-200"
       >
         {loading ? (
