@@ -1,18 +1,18 @@
 import React from 'react';
 import PipelineWorkspace from '../../../../components/dashboard/PipelineWorkspace';
-import { navigationConfig } from '../../../../config/navigation';
 import { getInternalSlug } from '../../../../config/routes';
+import { toolMetadata } from '../../../../config/toolMetadata';
 
 export async function generateMetadata({ params }) {
   const { toolSlug } = await params;
   const internalSlug = getInternalSlug(toolSlug);
   
-  const category = navigationConfig.find(c => c.slug === 'daraz-seo');
-  const tool = category?.tools.find(t => t.slug === internalSlug);
+  const meta = toolMetadata[internalSlug] || {};
 
   return {
-    title: tool ? `${tool.name} | Daraz SEO Tool - ZetaWala` : 'Daraz Seller Tools - ZetaWala',
-    description: tool ? `Optimize listing ranks and store conversion sales on Daraz using ${tool.name}.` : 'Premium Daraz seller analytics tools.',
+    ...meta,
+    title: meta.title || 'Daraz SEO Tool - ZetaWala',
+    description: meta.description || 'Premium Daraz seller optimization tools.'
   };
 }
 
