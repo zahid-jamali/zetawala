@@ -1,4 +1,5 @@
 import { navigationConfig } from '../config/navigation';
+import { getSeoPath } from '../config/routes';
 import dbConnect from '../lib/mongodb';
 import BlogPost from '../models/BlogPost';
 
@@ -51,26 +52,19 @@ export default async function sitemap() {
 
   // 2. Dynamic active tools routes collected from navigation parameters
   const toolRoutes = [];
-  const subpathMap = {
-    'youtube-automation': 'youtube',
-    'daraz-seo': 'daraz',
-  };
 
   navigationConfig.forEach((category) => {
     if (category.isActive) {
-      const catSubpath = subpathMap[category.slug];
-      if (catSubpath) {
-        category.tools.forEach((tool) => {
-          if (tool.isActive) {
-            toolRoutes.push({
-              url: `${baseUrl}/dashboard/${catSubpath}/${tool.slug}`,
-              lastModified: currentDate,
-              changeFrequency: 'weekly',
-              priority: 0.8,
-            });
-          }
-        });
-      }
+      category.tools.forEach((tool) => {
+        if (tool.isActive) {
+          toolRoutes.push({
+            url: `${baseUrl}${getSeoPath(category.slug, tool.slug)}`,
+            lastModified: currentDate,
+            changeFrequency: 'weekly',
+            priority: 0.8,
+          });
+        }
+      });
     }
   });
 

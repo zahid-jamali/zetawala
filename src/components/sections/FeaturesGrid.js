@@ -35,7 +35,7 @@ export default function FeaturesGrid() {
             </div>
             <div className="pt-8">
               <Link
-                href="/dashboard/youtube"
+                href="/tools/youtube/youtube-video-ideas-generator"
                 className="w-full py-3.5 rounded-2xl bg-red-650 hover:bg-red-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open YouTube Workspace
@@ -59,7 +59,7 @@ export default function FeaturesGrid() {
             </div>
             <div className="pt-8">
               <Link
-                href="/dashboard/daraz"
+                href="/tools/daraz/daraz-product-hunting"
                 className="w-full py-3.5 rounded-2xl bg-orange-650 hover:bg-orange-750 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open Daraz Workspace

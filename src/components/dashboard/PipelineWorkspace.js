@@ -10,6 +10,7 @@ import OutputSandbox from './OutputSandbox';
 import ToolSeoSection from './ToolSeoSection';
 import DarazProfitCalculator from './DarazProfitCalculator';
 import { navigationConfig } from '../../config/navigation';
+import { getSeoPath } from '../../config/routes';
 
 const youtubeCategory = navigationConfig.find(c => c.slug === 'youtube-automation');
 const youtubeSteps = youtubeCategory 
@@ -79,17 +80,17 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   };
 
   const handleStepClick = (slug) => {
-    router.push(`/dashboard/${isYoutube ? 'youtube' : 'daraz'}/${slug}`);
+    router.push(getSeoPath(isYoutube ? 'youtube' : 'daraz', slug));
   };
 
   const handleSendToTitle = (idea) => {
     dispatch(setToolInput({ toolSlug: 'title-generator', field: 'idea', value: idea }));
-    router.push('/dashboard/youtube/title-generator');
+    router.push(getSeoPath('youtube', 'title-generator'));
   };
 
   const handleSendToTool = (title, targetSlug) => {
     dispatch(setToolInput({ toolSlug: targetSlug, field: 'title', value: title }));
-    router.push(`/dashboard/youtube/${targetSlug}`);
+    router.push(getSeoPath('youtube', targetSlug));
   };
 
   const handleCopyText = (text) => {
