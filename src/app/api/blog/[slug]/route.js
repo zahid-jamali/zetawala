@@ -48,7 +48,7 @@ export async function PUT(request, { params }) {
     const { slug } = await params;
     await dbConnect();
     const body = await request.json();
-    const { title, content, excerpt, coverImage, tags } = body;
+    const { title, content, excerpt, coverImage, tags, category } = body;
 
     const post = await BlogPost.findOne({ slug });
     if (!post) {
@@ -79,6 +79,7 @@ export async function PUT(request, { params }) {
     if (excerpt) post.excerpt = excerpt;
     if (coverImage !== undefined) post.coverImage = coverImage;
     if (tags) post.tags = tags;
+    if (category) post.category = category;
     post.updatedAt = new Date();
 
     await post.save();

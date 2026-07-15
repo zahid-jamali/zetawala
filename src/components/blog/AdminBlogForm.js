@@ -10,6 +10,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
   const [coverImage, setCoverImage] = useState('');
   const [content, setContent] = useState('');
   const [tags, setTags] = useState('');
+  const [category, setCategory] = useState('youtube');
   const [saving, setSaving] = useState(false);
   const [editorTab, setEditorTab] = useState('split'); // 'edit', 'preview', or 'split'
 
@@ -20,12 +21,14 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
       setCoverImage(post.coverImage || '');
       setContent(post.content || '');
       setTags(post.tags ? post.tags.join(', ') : '');
+      setCategory(post.category || 'youtube');
     } else {
       setTitle('');
       setExcerpt('');
       setCoverImage('');
       setContent('');
       setTags('');
+      setCategory('youtube');
     }
   }, [post]);
 
@@ -64,6 +67,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
       excerpt,
       coverImage,
       content,
+      category,
       tags: tags.split(',').map(t => t.trim()).filter(Boolean)
     };
 
@@ -130,15 +134,28 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
             placeholder="A brief summary for cards and search snippets..."
           />
         </div>
-        <div className="space-y-1.5">
-          <label className={labelClasses}>Tags (comma separated)</label>
-          <input
-            type="text"
-            value={tags}
-            onChange={(e) => setTags(e.target.value)}
-            className={inputClasses}
-            placeholder="e.g. SEO, E-Commerce, Daraz"
-          />
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-1.5">
+            <label className={labelClasses}>Category *</label>
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className={inputClasses}
+            >
+              <option value="youtube">YouTube</option>
+              <option value="daraz">Daraz</option>
+            </select>
+          </div>
+          <div className="space-y-1.5">
+            <label className={labelClasses}>Tags (comma separated)</label>
+            <input
+              type="text"
+              value={tags}
+              onChange={(e) => setTags(e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. SEO, E-Commerce, Daraz"
+            />
+          </div>
         </div>
       </div>
 

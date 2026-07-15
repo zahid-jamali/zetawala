@@ -29,11 +29,13 @@ export async function GET(request) {
     const page = parseInt(searchParams.get("page")) || 1;
     const limit = parseInt(searchParams.get("limit")) || 6;
     const skip = (page - 1) * limit;
+    const category = searchParams.get("category");
+    const query = category ? { category } : {};
 
-    const totalPosts = await BlogPost.countDocuments({});
+    const totalPosts = await BlogPost.countDocuments(query);
     const totalPages = Math.ceil(totalPosts / limit);
 
-    const posts = await BlogPost.find({})
+    const posts = await BlogPost.find(query)
       .sort({ createdAt: -1 })
       .skip(skip)
       .limit(limit);
@@ -66,7 +68,7 @@ export async function POST(request) {
 
     await dbConnect();
     const body = await request.json();
-    const { title, content, excerpt, coverImage, tags } = body;
+    const { title, content, excerpt, coverImage, tags, category } = body;
 
     if (!title || !content || !excerpt) {
       return NextResponse.json(
@@ -96,6 +98,7 @@ export async function POST(request) {
       excerpt,
       coverImage: coverImage || "",
       tags: Array.isArray(tags) ? tags : [],
+      category: category || "youtube",
       author: "Admin",
     });
 
