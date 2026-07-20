@@ -38,7 +38,19 @@ export default function BlogCarousel({ category }) {
 
   if (loading || posts.length === 0) return null;
 
-  const headerLabel = category === 'youtube' ? 'YouTube Growth Articles' : 'Daraz Sourcing & Ranking Slabs';
+  const headerLabel =
+    category === 'youtube'
+      ? 'YouTube Growth Articles'
+      : category === 'local-commerce'
+        ? 'WhatsApp & Local Commerce Guides'
+        : 'Daraz Sourcing & Ranking Slabs';
+
+  const sectionTitle =
+    category === 'youtube'
+      ? 'Learn YouTube Growth Strategies'
+      : category === 'local-commerce'
+        ? 'Learn WhatsApp & Local Commerce Strategies'
+        : 'Learn Sourcing & Ranking Strategies';
 
   return (
     <div className="space-y-6 pt-10 border-t border-slate-200 dark:border-slate-800">
@@ -48,9 +60,9 @@ export default function BlogCarousel({ category }) {
         <div className="space-y-1">
           <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
             <BookOpen className="w-4.5 h-4.5 text-sky-500" />
-            Learn Sourcing & Ranking Strategies
+            {sectionTitle}
           </h3>
-          <p className="text-[11px] text-slate-500">Related guides and latest trends matching the {category} category.</p>
+          <p className="text-[11px] text-slate-500">Related guides and latest trends matching the {headerLabel.toLowerCase()} category.</p>
         </div>
         <div className="flex items-center gap-1.5">
           <button 

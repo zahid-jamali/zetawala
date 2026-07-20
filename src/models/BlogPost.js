@@ -13,7 +13,7 @@ const BlogPostSchema = new mongoose.Schema({
   excerpt: { type: String, required: true },
   coverImage: { type: String, default: '' },
   tags: { type: [String], default: [] },
-  category: { type: String, default: 'youtube', enum: ['youtube', 'daraz'] },
+  category: { type: String, default: 'youtube', enum: ['youtube', 'daraz', 'local-commerce'] },
   author: { type: String, default: 'Admin' },
   comments: [CommentSchema],
   createdAt: { type: Date, default: Date.now },

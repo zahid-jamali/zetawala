@@ -16,7 +16,16 @@ export default function ToolSeoSection({ toolSlug }) {
     'tags-extractor', 'thumbnail-prompt', 'script-master', 'visuals-recommender'
   ].includes(toolSlug);
 
-  const blogCategory = isYoutube ? 'youtube' : 'daraz';
+  const isLocalCommerce = [
+    'whatsapp-broadcast', 'local-ad-script', 'wholesale-negotiation',
+    'social-comment-responder', 'product-storyboard'
+  ].includes(toolSlug);
+
+  const blogCategory = isYoutube
+    ? 'youtube'
+    : isLocalCommerce
+      ? 'local-commerce'
+      : 'daraz';
 
   return (
     <div className="mt-12 pt-12 border-t border-slate-205 dark:border-slate-800 space-y-10 text-slate-900 dark:text-slate-100">
