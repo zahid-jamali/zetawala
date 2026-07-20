@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-3">
             <h2 className="text-lg font-bold text-slate-900 dark:text-white">2. Utilization of Information</h2>
             <p>
-              All gathered telemetry and payload values are processed strictly to generate relevant metadata responses (e.g. YouTube tag configurations, Daraz product descriptions) utilizing secure connections to the underlying LLM processing engines. We enforce strict data separation: user history logs are locked to individual accounts and never cross-pollinated or shared.
+              All gathered telemetry and payload values are processed strictly to generate relevant metadata responses (e.g. YouTube tag configurations, Daraz product descriptions, WhatsApp broadcast copy, and Local Social Commerce & WhatsApp Suite outputs) utilizing secure connections to the underlying LLM processing engines. We enforce strict data separation: user history logs are locked to individual accounts and never cross-pollinated or shared.
             </p>
           </section>
 

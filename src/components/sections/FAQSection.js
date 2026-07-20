@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 const seoFaqs = [
   {
     q: "ZetaWala kya hai aur yeh hamari digital growth me kaise help karta hai?",
-    a: "ZetaWala ek advanced digital multi-utility platform hai jo YouTube automation aur e-commerce workflows (jaise Daraz) ko ease aur precision pr faraham karta hai taake aap automated tarike se scalable income sources build kar sakein.",
+    a: "ZetaWala ek advanced digital multi-utility platform hai jo YouTube automation, e-commerce workflows (jaise Daraz), aur Local Social Commerce & WhatsApp Suite ko ease aur precision pr faraham karta hai taake aap automated tarike se scalable income sources build kar sakein.",
   },
   {
     q: "Daraz Product Hunting tool baqi standard tools se kaise different hai?",

@@ -268,6 +268,186 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
         </>
       )}
 
+      {/* Local Social Commerce: WhatsApp Broadcast & Status Copywriter */}
+      {toolSlug === 'whatsapp-broadcast' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Name</label>
+            <input
+              ref={inputRef}
+              type="text"
+              required
+              value={toolInputs.productName || ''}
+              onChange={(e) => handleInputChange('productName', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Silk Dupatta Set, Mini Air Fryer"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Details / Offer</label>
+            <textarea
+              required
+              value={toolInputs.productDetails || ''}
+              onChange={(e) => handleInputChange('productDetails', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Buy 2 Get 1 Free, Free Delivery Lahore, Cash on Delivery"
+              rows={4}
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Audience</label>
+            <input
+              type="text"
+              required
+              value={toolInputs.targetAudience || ''}
+              onChange={(e) => handleInputChange('targetAudience', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Ladies 18-35 in Lahore, students, housewives"
+            />
+          </div>
+        </>
+      )}
+
+      {/* Local Social Commerce: Facebook/Instagram Local Ad Script */}
+      {toolSlug === 'local-ad-script' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Category</label>
+            <input
+              ref={inputRef}
+              type="text"
+              required
+              value={toolInputs.productCategory || ''}
+              onChange={(e) => handleInputChange('productCategory', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Kitchen Gadgets, Skincare, Kids Fashion"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Unique Selling Proposition (USP)</label>
+            <textarea
+              required
+              value={toolInputs.usp || ''}
+              onChange={(e) => handleInputChange('usp', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Chops vegetables in 10 seconds, waterproof, COD available"
+              rows={4}
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Video Length</label>
+            <select
+              value={toolInputs.videoLength || '15s'}
+              onChange={(e) => handleInputChange('videoLength', e.target.value)}
+              className={inputClasses}
+            >
+              <option value="15s">15s (Short Hook Ad)</option>
+              <option value="30s">30s (Demo / Story Ad)</option>
+              <option value="60s">60s (Longer Story Ad)</option>
+            </select>
+          </div>
+        </>
+      )}
+
+      {/* Local Social Commerce: Wholesale Supplier Negotiation Drafter */}
+      {toolSlug === 'wholesale-negotiation' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product to Source</label>
+            <input
+              ref={inputRef}
+              type="text"
+              required
+              value={toolInputs.productToSource || ''}
+              onChange={(e) => handleInputChange('productToSource', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Bluetooth Neckband, Cotton Bedsheet"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Expected Quantity</label>
+            <input
+              type="text"
+              required
+              value={toolInputs.expectedQuantity || ''}
+              onChange={(e) => handleInputChange('expectedQuantity', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. 50 pcs, 100 dozen, 2 cartons"
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Price / Questions</label>
+            <textarea
+              required
+              value={toolInputs.targetPriceQuestions || ''}
+              onChange={(e) => handleInputChange('targetPriceQuestions', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Target Rs. 450 each, sample available? delivery Lahore?"
+              rows={4}
+            />
+          </div>
+        </>
+      )}
+
+      {/* Local Social Commerce: Social Media Price & Comment Responder */}
+      {toolSlug === 'social-comment-responder' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Customer&apos;s Comment</label>
+            <textarea
+              ref={inputRef}
+              required
+              value={toolInputs.customerComment || ''}
+              onChange={(e) => handleInputChange('customerComment', e.target.value)}
+              className={inputClasses}
+              placeholder='e.g. "Price please" or "Delivery late thi, bohot gussa hai"'
+              rows={4}
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Desired Tone</label>
+            <select
+              value={toolInputs.desiredTone || 'Polite'}
+              onChange={(e) => handleInputChange('desiredTone', e.target.value)}
+              className={inputClasses}
+            >
+              <option value="Polite">Polite</option>
+              <option value="Professional">Professional</option>
+              <option value="Apologetic">Apologetic</option>
+            </select>
+          </div>
+        </>
+      )}
+
+      {/* Local Social Commerce: One-Page Product Storyboard */}
+      {toolSlug === 'product-storyboard' && (
+        <>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Features</label>
+            <textarea
+              ref={inputRef}
+              required
+              value={toolInputs.productFeatures || ''}
+              onChange={(e) => handleInputChange('productFeatures', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. USB rechargeable, 3 heat modes, portable pouch"
+              rows={4}
+            />
+          </div>
+          <div className="space-y-2">
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Customer Pain Point It Solves</label>
+            <textarea
+              required
+              value={toolInputs.customerPainPoint || ''}
+              onChange={(e) => handleInputChange('customerPainPoint', e.target.value)}
+              className={inputClasses}
+              placeholder="e.g. Winter me haath thand se sooj jate hain"
+              rows={4}
+            />
+          </div>
+        </>
+      )}
+
 
       <TurnstileWidget onTokenChange={onSecurityTokenChange} />
 

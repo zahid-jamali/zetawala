@@ -139,5 +139,39 @@ export const toolMetadata = {
     description: 'Calculate real-time FBM and FBD earnings, commission slabs, shipping fees, and taxes.',
     keywords: ['daraz profit calculator', 'daraz margin analyzer', 'daraz seller commission calculator', 'pakistan ecommerce calculator'],
     alternates: { canonical: 'https://zetawala.com/tools/daraz/daraz-profit-calculator' }
+  },
+
+  // ==========================================
+  // LOCAL SOCIAL COMMERCE & WHATSAPP SUITE
+  // ==========================================
+  'whatsapp-broadcast': {
+    title: 'WhatsApp Broadcast & Status Copywriter | ZetaWala',
+    description: 'Generate AIDA-based WhatsApp broadcast and Status copy in Roman Urdu for Pakistani social commerce.',
+    keywords: ['whatsapp broadcast message templates', 'whatsapp status copywriter', 'roman urdu copywriter AI', 'whatsapp marketing tools Pakistan'],
+    alternates: { canonical: 'https://zetawala.com/tools/local-commerce/whatsapp-broadcast-status-copywriter' }
+  },
+  'local-ad-script': {
+    title: 'Facebook/Instagram Local Ad Script Generator | ZetaWala',
+    description: 'Create short Meta ad scripts and captions optimized for Pakistani local social audiences.',
+    keywords: ['facebook ad script generator Pakistan', 'instagram ad script roman urdu', 'local social commerce AI', 'meta ads copywriter pakistan'],
+    alternates: { canonical: 'https://zetawala.com/tools/local-commerce/facebook-instagram-local-ad-script-generator' }
+  },
+  'wholesale-negotiation': {
+    title: 'Wholesale Supplier Negotiation Drafter | ZetaWala',
+    description: 'Draft WhatsApp inquiry and negotiation templates for Shah Alami and local wholesale vendors.',
+    keywords: ['Shah Alami wholesale sourcing', 'wholesale negotiation whatsapp', 'supplier inquiry template pakistan', 'local e-commerce automation'],
+    alternates: { canonical: 'https://zetawala.com/tools/local-commerce/wholesale-supplier-negotiation-drafter' }
+  },
+  'social-comment-responder': {
+    title: 'Social Media Price & Comment Responder | ZetaWala',
+    description: 'Generate polite, conversion-focused auto-replies for price comments and social complaints.',
+    keywords: ['social media comment reply generator', 'price please auto reply', 'facebook comment responder pakistan', 'instagram dm reply templates'],
+    alternates: { canonical: 'https://zetawala.com/tools/local-commerce/social-media-price-comment-responder' }
+  },
+  'product-storyboard': {
+    title: 'One-Page Product Storyboard | ZetaWala',
+    description: 'Build story-driven social posts that solve customer pain points before pitching the product.',
+    keywords: ['product storyboard generator', 'social commerce storytelling', 'roman urdu product post', 'whatsapp status storyboard'],
+    alternates: { canonical: 'https://zetawala.com/tools/local-commerce/one-page-product-storyboard' }
   }
 };

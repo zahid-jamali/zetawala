@@ -29,10 +29,10 @@ export const metadata = {
 
   manifest: "/site.webmanifest",
 
-  title: "Free AI YouTube Automation, Daraz & SEO Tools | Zetawala",
+  title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools | Zetawala",
 
   description:
-    "Boost your YouTube channel and eCommerce business with free AI tools. Generate viral video ideas, YouTube titles, scripts, tags, Daraz profit calculations, keyword research, product hunting, and SEO tools—all in one place.",
+    "Boost your YouTube channel, Daraz store, and local social commerce with free AI tools. Generate viral video ideas, YouTube titles, scripts, tags, Daraz profit calculations, WhatsApp broadcast copy, Facebook ad scripts, keyword research, product hunting, and SEO tools—all in one place.",
 
   keywords: [
     "AI YouTube tools",
@@ -45,6 +45,14 @@ export const metadata = {
     "Daraz Keyword Tool",
     "Daraz Product Hunting",
     "Daraz SEO",
+    "Local social commerce AI",
+    "WhatsApp marketing tools Pakistan",
+    "Shah Alami wholesale sourcing",
+    "Roman Urdu copywriter AI",
+    "Facebook ad script generator Pakistan",
+    "WhatsApp broadcast message templates",
+    "local e-commerce automation",
+    "WhatsApp status copywriter",
     "SEO Tools",
     "AI SEO Tools",
     "Free AI Tools",
@@ -71,10 +79,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Free AI YouTube Automation, Daraz & SEO Tools | Zetawala",
+    title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools | Zetawala",
 
     description:
-      "Free AI-powered tools for YouTube creators, Daraz sellers, bloggers and SEO professionals. Create viral content, optimize products, calculate profits and grow faster.",
+      "Free AI-powered tools for YouTube creators, Daraz sellers, WhatsApp marketers, bloggers and SEO professionals. Create viral content, optimize products, draft local social commerce copy and grow faster.",
 
     url: "https://zetawala.com",
 
@@ -97,10 +105,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Free AI YouTube Automation, Daraz & SEO Tools",
+    title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools",
 
     description:
-      "AI-powered YouTube, Daraz, SEO and eCommerce tools to grow faster.",
+      "AI-powered YouTube, Daraz, WhatsApp, SEO and eCommerce tools to grow faster.",
 
     images: ["/android-chrome-512x512.png"],
   },
@@ -153,7 +161,7 @@ export default function RootLayout({ children }) {
               "@type": "WebSite",
               name: "Zetawala",
               url: "https://zetawala.com",
-              description: "Free AI YouTube Automation, Daraz and SEO Tools.",
+              description: "Free AI YouTube Automation, Daraz, WhatsApp and SEO Tools.",
               potentialAction: {
                 "@type": "SearchAction",
                 target: "https://zetawala.com/search?q={search_term_string}",

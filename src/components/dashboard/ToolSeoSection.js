@@ -15,7 +15,7 @@ export default function ToolSeoSection({ toolSlug }) {
     'video-ideas', 'title-generator', 'hook-architect', 'description-builder',
     'tags-extractor', 'thumbnail-prompt', 'script-master', 'visuals-recommender'
   ].includes(toolSlug);
-  
+
   const blogCategory = isYoutube ? 'youtube' : 'daraz';
 
   return (

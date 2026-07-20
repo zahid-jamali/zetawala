@@ -18,7 +18,7 @@ export default function HeroShowcase() {
       </h1>
 
       <p className="text-base sm:text-lg text-slate-400 dark:text-slate-350 max-w-2xl mx-auto leading-relaxed font-medium">
-        Eliminate hours of manual optimization. Run automated pipelines to evaluate product demand, export Urdu search keywords, outline narrative hooks, and write full video scripts instantly.
+        Eliminate hours of manual optimization. Run automated pipelines for YouTube, Daraz, and Local Social Commerce & WhatsApp Suite workflows—evaluate product demand, export Urdu search keywords, draft WhatsApp broadcasts, outline narrative hooks, and write full video scripts instantly.
       </p>
 
       <div className="pt-4 pb-12">

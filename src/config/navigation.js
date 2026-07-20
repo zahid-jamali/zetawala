@@ -35,6 +35,18 @@ export const navigationConfig = [
     ]
   },
   {
+    category: "Local Social Commerce & WhatsApp Suite",
+    slug: "local-social-commerce",
+    isActive: true,
+    tools: [
+      { name: "WhatsApp Broadcast & Status Copywriter", slug: "whatsapp-broadcast", desc: "AIDA Roman Urdu broadcast & status copy", isActive: true },
+      { name: "Facebook/Instagram Local Ad Script", slug: "local-ad-script", desc: "Short local ad scripts & captions", isActive: true },
+      { name: "Wholesale Negotiation Drafter", slug: "wholesale-negotiation", desc: "Shah Alami inquiry & negotiation templates", isActive: true },
+      { name: "Social Price & Comment Responder", slug: "social-comment-responder", desc: "Polite conversion-focused auto-replies", isActive: true },
+      { name: "One-Page Product Storyboard", slug: "product-storyboard", desc: "Story-driven social posts from pain points", isActive: true }
+    ]
+  },
+  {
     category: "Amazon SEO (Coming Soon)",
     slug: "amazon-seo",
     isActive: false,

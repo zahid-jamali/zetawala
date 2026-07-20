@@ -17,10 +17,32 @@ const darazFlow = [
   { step: '02', name: 'Roman Urdu Keywords', desc: 'Analyze localized Pak search tags mixing English and Urdu phonetics.' }
 ];
 
-export default function PipelineFlowShowcase() {
-  const [activeTab, setActiveTab] = useState('youtube'); // 'youtube' | 'daraz'
+const localCommerceFlow = [
+  { step: '01', name: 'WhatsApp Broadcast', desc: 'Draft AIDA Roman Urdu broadcast and Status copy with emojis.' },
+  { step: '02', name: 'Local Ad Script', desc: 'Build Facebook/Instagram scripts sized for 15s and 30s creatives.' },
+  { step: '03', name: 'Wholesale Negotiation', desc: 'Prepare Shah Alami inquiry and bargaining WhatsApp templates.' },
+  { step: '04', name: 'Comment Responder', desc: 'Reply to price comments and complaints with conversion-focused tone.' },
+  { step: '05', name: 'Product Storyboard', desc: 'Tell a pain-to-solution story before pitching the product.' }
+];
 
-  const activeFlow = activeTab === 'youtube' ? youtubeFlow : darazFlow;
+export default function PipelineFlowShowcase() {
+  const [activeTab, setActiveTab] = useState('youtube'); // 'youtube' | 'daraz' | 'local-commerce'
+
+  const activeFlow =
+    activeTab === 'youtube'
+      ? youtubeFlow
+      : activeTab === 'local-commerce'
+        ? localCommerceFlow
+        : darazFlow;
+
+  const tabButton = (id, label) => (
+    <button
+      onClick={() => setActiveTab(id)}
+      className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === id ? 'bg-white dark:bg-slate-900 text-sky-600 dark:text-sky-400 shadow-sm border border-slate-200 dark:border-slate-800' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300'}`}
+    >
+      {label}
+    </button>
+  );
 
   return (
     <section className="bg-white dark:bg-slate-900/40 border-y border-slate-205 dark:border-slate-800 py-20 px-6">
@@ -30,31 +52,22 @@ export default function PipelineFlowShowcase() {
             Workspace Workflow Pipelines
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
-            Toggle between platforms to visualize how the micro-tools pass data sequentially.
+            Toggle between YouTube, Daraz, and Local Social Commerce & WhatsApp Suite to visualize how the micro-tools pass data sequentially.
           </p>
         </div>
 
         {/* Interactive tab switcher */}
         <div className="flex justify-center">
-          <div className="p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex items-center gap-1">
-            <button
-              onClick={() => setActiveTab('youtube')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'youtube' ? 'bg-white dark:bg-slate-900 text-sky-600 dark:text-sky-400 shadow-sm border border-slate-200 dark:border-slate-800' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300'}`}
-            >
-              YouTube Pipeline
-            </button>
-            <button
-              onClick={() => setActiveTab('daraz')}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${activeTab === 'daraz' ? 'bg-white dark:bg-slate-900 text-sky-600 dark:text-sky-400 shadow-sm border border-slate-200 dark:border-slate-800' : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300'}`}
-            >
-              Daraz SEO Pipeline
-            </button>
+          <div className="p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-center gap-1">
+            {tabButton('youtube', 'YouTube Pipeline')}
+            {tabButton('daraz', 'Daraz SEO Pipeline')}
+            {tabButton('local-commerce', 'WhatsApp & Local Commerce')}
           </div>
         </div>
 
         {/* Flow Map Visual Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {activeFlow.map((item, idx) => (
+          {activeFlow.map((item) => (
             <div
               key={item.step}
               className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative"

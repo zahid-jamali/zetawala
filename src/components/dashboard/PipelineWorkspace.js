@@ -22,6 +22,23 @@ const darazSteps = darazCategory
   ? darazCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) 
   : [];
 
+const localCommerceCategory = navigationConfig.find(c => c.slug === 'local-social-commerce');
+const localCommerceSteps = localCommerceCategory
+  ? localCommerceCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const pipelineLabels = {
+  'youtube-automation': 'YouTube Automation pipeline',
+  'daraz-seo': 'Daraz SEO intelligence',
+  'local-social-commerce': 'Local Social Commerce & WhatsApp suite'
+};
+
+const categoryRouteKeys = {
+  'youtube-automation': 'youtube',
+  'daraz-seo': 'daraz',
+  'local-social-commerce': 'local-commerce'
+};
+
 export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -37,8 +54,14 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   const [securityToken, setSecurityToken] = useState('');
 
   const isYoutube = categorySlug === 'youtube-automation';
-  const steps = isYoutube ? youtubeSteps : darazSteps;
+  const steps = isYoutube
+    ? youtubeSteps
+    : categorySlug === 'local-social-commerce'
+      ? localCommerceSteps
+      : darazSteps;
   const currentStepIndex = steps.findIndex(s => s.slug === toolSlug);
+  const routeCategory = categoryRouteKeys[categorySlug] || 'daraz';
+  const pipelineLabel = pipelineLabels[categorySlug] || 'Tool pipeline';
 
   useEffect(() => {
     dispatch(setActiveTool(toolSlug));
@@ -80,7 +103,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   };
 
   const handleStepClick = (slug) => {
-    router.push(getSeoPath(isYoutube ? 'youtube' : 'daraz', slug));
+    router.push(getSeoPath(routeCategory, slug));
   };
 
   const handleSendToTitle = (idea) => {
@@ -116,7 +139,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       {/* Step Tracker */}
       <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
         <span className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">
-          {isYoutube ? 'YouTube Automation pipeline' : 'Daraz SEO intelligence'}
+          {pipelineLabel}
         </span>
         <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
           {steps.map((step, idx) => {

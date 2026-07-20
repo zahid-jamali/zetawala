@@ -30,6 +30,11 @@ export default function Footer() {
                 Daraz SEO Suite
               </Link>
             </li>
+            <li>
+              <Link href="/tools/local-commerce/whatsapp-broadcast-status-copywriter" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Local Social Commerce & WhatsApp Suite
+              </Link>
+            </li>
           </ul>
         </div>
 

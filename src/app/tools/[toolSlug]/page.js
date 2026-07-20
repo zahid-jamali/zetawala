@@ -24,6 +24,11 @@ const routeMap = {
   'daraz-product-hunting': { cat: 'daraz', slug: 'product-hunting' },
   'roman-urdu-keywords': { cat: 'daraz', slug: 'roman-urdu-keywords' },
   'daraz-keyword-generator': { cat: 'daraz', slug: 'roman-urdu-keywords' },
+  'whatsapp-broadcast': { cat: 'local-commerce', slug: 'whatsapp-broadcast' },
+  'local-ad-script': { cat: 'local-commerce', slug: 'local-ad-script' },
+  'wholesale-negotiation': { cat: 'local-commerce', slug: 'wholesale-negotiation' },
+  'social-comment-responder': { cat: 'local-commerce', slug: 'social-comment-responder' },
+  'product-storyboard': { cat: 'local-commerce', slug: 'product-storyboard' },
 };
 
 export default function ToolWorkspaceRedirectPage({ params }) {

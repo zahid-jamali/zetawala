@@ -22,14 +22,46 @@ const routeMapping = {
   'benefits-generator': 'daraz-benefits-generator',
   'negative-reply': 'daraz-negative-reply-generator',
   'sales-copy': 'daraz-sales-copy-generator',
-  'profit-calculator': 'daraz-profit-calculator'
+  'profit-calculator': 'daraz-profit-calculator',
+
+  // Local Social Commerce & WhatsApp Suite
+  'whatsapp-broadcast': 'whatsapp-broadcast-status-copywriter',
+  'local-ad-script': 'facebook-instagram-local-ad-script-generator',
+  'wholesale-negotiation': 'wholesale-supplier-negotiation-drafter',
+  'social-comment-responder': 'social-media-price-comment-responder',
+  'product-storyboard': 'one-page-product-storyboard'
+};
+
+const categoryFolderMap = {
+  'youtube-automation': 'youtube',
+  'youtube': 'youtube',
+  'daraz-seo': 'daraz',
+  'daraz': 'daraz',
+  'local-social-commerce': 'local-commerce',
+  'local-commerce': 'local-commerce'
+};
+
+const getFolderFromCategory = (category) => categoryFolderMap[category] || 'daraz';
+
+const getFolderFromSeoSlug = (seo) => {
+  if (seo.startsWith('youtube-')) return 'youtube';
+  if (
+    seo.startsWith('whatsapp-') ||
+    seo.startsWith('facebook-instagram-') ||
+    seo.startsWith('wholesale-') ||
+    seo.startsWith('social-media-') ||
+    seo.startsWith('one-page-')
+  ) {
+    return 'local-commerce';
+  }
+  return 'daraz';
 };
 
 // Convert internal slug to SEO-friendly path
 export const getSeoPath = (category, toolSlug) => {
   const seoSlug = routeMapping[toolSlug] || toolSlug;
-  const isYoutube = category === 'youtube-automation' || category === 'youtube';
-  return `/tools/${isYoutube ? 'youtube' : 'daraz'}/${seoSlug}`;
+  const folder = getFolderFromCategory(category);
+  return `/tools/${folder}/${seoSlug}`;
 };
 
 // Convert public SEO slug back to internal key
@@ -45,17 +77,16 @@ export const getLegacyRedirects = () => {
   const redirects = [];
   
   for (const [internal, seo] of Object.entries(routeMapping)) {
-    const isYoutube = seo.startsWith('youtube-');
-    const folder = isYoutube ? 'youtube' : 'daraz';
+    const folder = getFolderFromSeoSlug(seo);
     
-    // Redirect /dashboard/youtube/[internal] -> /tools/youtube/[seo]
+    // Redirect /dashboard/[folder]/[internal] -> /tools/[folder]/[seo]
     redirects.push({
       source: `/dashboard/${folder}/${internal}`,
       destination: `/tools/${folder}/${seo}`,
       permanent: true
     });
 
-    // Also redirect /tools/[internal] -> /tools/youtube/[seo] for SEO compatibility
+    // Also redirect /tools/[internal] -> /tools/[folder]/[seo] for SEO compatibility
     redirects.push({
       source: `/tools/${internal}`,
       destination: `/tools/${folder}/${seo}`,
@@ -72,6 +103,11 @@ export const getLegacyRedirects = () => {
   redirects.push({
     source: '/dashboard/daraz',
     destination: '/tools/daraz/daraz-product-hunting',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/local-commerce',
+    destination: '/tools/local-commerce/whatsapp-broadcast-status-copywriter',
     permanent: true
   });
 

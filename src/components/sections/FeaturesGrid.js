@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Video, ShoppingBag, Layers, Globe, Cpu } from 'lucide-react';
+import { Video, ShoppingBag, MessageCircle, Layers, Globe, Cpu } from 'lucide-react';
 
 export default function FeaturesGrid() {
   const cardClasses = "bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300";
@@ -19,7 +19,7 @@ export default function FeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {/* YouTube Automation Suite */}
           <div className={cardClasses}>
             <div className="space-y-6">
@@ -53,7 +53,7 @@ export default function FeaturesGrid() {
               <div className="space-y-2">
                 <h3 className="text-xl font-black text-slate-900 dark:text-white">Daraz SEO & Conversion Pack</h3>
                 <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
-                  Dominate Pakistan's local e-commerce marketplace. Build highly optimized titles, draft descriptions, optimize keywords, respond to negative reviews, and simulate FBM/FBD net profit margins.
+                  Dominate Pakistan&apos;s local e-commerce marketplace. Build highly optimized titles, draft descriptions, optimize keywords, respond to negative reviews, and simulate FBM/FBD net profit margins.
                 </p>
               </div>
             </div>
@@ -63,6 +63,30 @@ export default function FeaturesGrid() {
                 className="w-full py-3.5 rounded-2xl bg-orange-650 hover:bg-orange-750 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open Daraz Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Local Social Commerce & WhatsApp Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/30 flex items-center justify-center">
+                <MessageCircle className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">Local Social Commerce & WhatsApp Suite</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Scale WhatsApp broadcasts, Meta ad scripts, Shah Alami wholesale negotiations, social comment replies, and story-driven product posts in natural Roman Urdu for Pakistani buyers.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/tools/local-commerce/whatsapp-broadcast-status-copywriter"
+                className="w-full py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open Local Commerce Workspace
                 <span>&rarr;</span>
               </Link>
             </div>
@@ -95,7 +119,7 @@ export default function FeaturesGrid() {
               <Globe className="w-8 h-8 text-indigo-500 dark:text-indigo-400 mb-4" />
               <h3 className="text-sm font-extrabold text-slate-900 dark:text-white mb-2">Localized Pak SEO Tools</h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                Get target keyword lists mixing English and Roman Urdu phonetics tailored for Pakistan's search volumes.
+                Get target keyword lists mixing English and Roman Urdu phonetics tailored for Pakistan&apos;s search volumes.
               </p>
             </div>
 
