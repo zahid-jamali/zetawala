@@ -1,4 +1,11 @@
 const routeMapping = {
+  // YouTube Intelligence & Monetization
+  'niche-finder': 'youtube-niche-finder',
+  'niche-opportunity': 'youtube-niche-opportunity-analyzer',
+  'channel-health': 'youtube-channel-health-analyzer',
+  'video-performance': 'youtube-video-performance-analyzer',
+  'revenue-calculator': 'youtube-revenue-calculator',
+
   // YouTube Automation tools
   'video-ideas': 'youtube-video-ideas-generator',
   'title-generator': 'youtube-title-generator',

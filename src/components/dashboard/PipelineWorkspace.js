@@ -9,6 +9,7 @@ import ToolInputForm from './ToolInputForm';
 import OutputSandbox from './OutputSandbox';
 import ToolSeoSection from './ToolSeoSection';
 import DarazProfitCalculator from './DarazProfitCalculator';
+import YoutubeIntelligenceHost, { YOUTUBE_INTELLIGENCE_SLUGS } from './youtube/YoutubeIntelligenceHost';
 import { navigationConfig } from '../../config/navigation';
 import { getSeoPath } from '../../config/routes';
 
@@ -151,7 +152,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
                 onClick={() => handleStepClick(step.slug)}
                 className={`px-3 py-1.5 rounded-xl text-[10px] font-bold border transition-all cursor-pointer ${isCurrent ? 'bg-sky-500 text-white border-transparent shadow-sm' : isPast ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350 border-slate-200 dark:border-slate-800' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500'}`}
               >
-                0{idx + 1} {step.name}
+                {String(idx + 1).padStart(2, '0')} {step.name}
               </button>
             );
           })}
@@ -161,6 +162,8 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       {/* Main Form/Output Grid */}
       {toolSlug === 'profit-calculator' ? (
         <DarazProfitCalculator />
+      ) : YOUTUBE_INTELLIGENCE_SLUGS.includes(toolSlug) ? (
+        <YoutubeIntelligenceHost toolSlug={toolSlug} />
       ) : (
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
           

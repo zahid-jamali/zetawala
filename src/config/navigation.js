@@ -4,6 +4,11 @@ export const navigationConfig = [
     slug: "youtube-automation",
     isActive: true,
     tools: [
+      { name: "YouTube Niche Finder & Recommender", slug: "niche-finder", desc: "Data-driven niche discovery for your profile", isActive: true },
+      { name: "YouTube Niche Opportunity Analyzer", slug: "niche-opportunity", desc: "Validate niche demand vs competition", isActive: true },
+      { name: "YouTube Channel Health Analyzer", slug: "channel-health", desc: "Score channel performance from public data", isActive: true },
+      { name: "YouTube Video Performance Analyzer", slug: "video-performance", desc: "Compare a video against channel baseline", isActive: true },
+      { name: "YouTube Revenue Calculator", slug: "revenue-calculator", desc: "Estimate earnings from views & RPM", isActive: true },
       { name: "Video Idea Generator", slug: "video-ideas", desc: "Find viral trending concepts", isActive: true },
       { name: "Title Copywriter", slug: "title-generator", desc: "High-CTR CTR copywriting", isActive: true },
       { name: "Audience Retention Hook", slug: "hook-architect", desc: "Capture viewer attention", isActive: true },

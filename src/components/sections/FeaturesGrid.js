@@ -29,13 +29,13 @@ export default function FeaturesGrid() {
               <div className="space-y-2">
                 <h3 className="text-xl font-black text-slate-900 dark:text-white">YouTube Automation Pack</h3>
                 <p className="text-xs text-slate-500 dark:text-slate-450 leading-relaxed font-medium">
-                  Supercharge video creation with a 7-step optimization pipeline. Find trends, optimize hooks, extract Studio tags, script voiceovers, and storyboard visual B-roll sequences in one click.
+                  Supercharge creator workflows with niche research, channel/video intelligence, revenue estimates, plus a full content pipeline—ideas, titles, hooks, scripts, tags, thumbnails, and visuals.
                 </p>
               </div>
             </div>
             <div className="pt-8">
               <Link
-                href="/tools/youtube/youtube-video-ideas-generator"
+                href="/tools/youtube/youtube-niche-finder"
                 className="w-full py-3.5 rounded-2xl bg-red-650 hover:bg-red-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open YouTube Workspace

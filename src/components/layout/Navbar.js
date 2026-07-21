@@ -48,11 +48,11 @@ export default function Navbar() {
                 <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:rotate-180 transition-transform duration-200" />
               </button>
 
-              <div className="absolute top-full left-1/2 -translate-x-1/2 w-[520px] pt-2 pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200">
-                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-2xl grid grid-cols-2 gap-4">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-[560px] pt-2 pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200">
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-2xl grid grid-cols-2 gap-4 max-h-[70vh] overflow-y-auto">
                   <div className="col-span-2 border-b border-slate-100 dark:border-slate-800 pb-2 mb-1 flex items-center gap-2">
                     <Video className="w-4 h-4 text-red-500" />
-                    <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">video metadata & script pipeline</span>
+                    <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">intelligence, monetization & content pipeline</span>
                   </div>
                   {youtubeTools.map((tool) => (
                     <Link

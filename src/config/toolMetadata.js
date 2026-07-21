@@ -8,6 +8,40 @@
 
 export const toolMetadata = {
   // ==========================================
+  // YOUTUBE INTELLIGENCE & MONETIZATION
+  // ==========================================
+  'niche-finder': {
+    title: 'YouTube Niche Finder & Recommender – Find the Best Channel Niche | Zetawala',
+    description: 'Find the best YouTube niche based on your interests, skills, audience, competition, content opportunities, and monetization potential with Zetawala\'s data-driven YouTube Niche Finder.',
+    keywords: ['youtube niche finder', 'youtube niche recommender', 'best youtube niche', 'faceless youtube niche'],
+    alternates: { canonical: 'https://zetawala.com/tools/youtube/youtube-niche-finder' }
+  },
+  'niche-opportunity': {
+    title: 'YouTube Niche Opportunity Analyzer – Validate Your Channel Idea | Zetawala',
+    description: 'Validate whether a YouTube niche is worth entering using public YouTube data, opportunity scoring, competition proxies, and actionable AI interpretation.',
+    keywords: ['youtube niche analyzer', 'niche opportunity score', 'validate youtube niche', 'youtube market research'],
+    alternates: { canonical: 'https://zetawala.com/tools/youtube/youtube-niche-opportunity-analyzer' }
+  },
+  'channel-health': {
+    title: 'YouTube Channel Health Analyzer – Analyze Your Channel Performance | Zetawala',
+    description: 'Analyze a YouTube channel\'s public performance, consistency, engagement, momentum, and Zetawala Channel Health Score with clear recommendations.',
+    keywords: ['youtube channel analyzer', 'channel health score', 'youtube channel audit', 'youtube analytics tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/youtube/youtube-channel-health-analyzer' }
+  },
+  'video-performance': {
+    title: 'YouTube Video Performance Analyzer – Analyze Video Performance | Zetawala',
+    description: 'Analyze one YouTube video against its channel baseline—views, engagement, relative performance, and next-video opportunities grounded in real metrics.',
+    keywords: ['youtube video analyzer', 'video performance score', 'youtube video analytics', 'compare video to channel'],
+    alternates: { canonical: 'https://zetawala.com/tools/youtube/youtube-video-performance-analyzer' }
+  },
+  'revenue-calculator': {
+    title: 'YouTube Revenue Calculator – Estimate Your Channel Earnings | Zetawala',
+    description: 'Estimate YouTube earnings from monthly or daily views with low, typical, and high RPM scenarios. Deterministic calculator—no API required.',
+    keywords: ['youtube revenue calculator', 'youtube earnings estimator', 'youtube rpm calculator', 'how much does youtube pay'],
+    alternates: { canonical: 'https://zetawala.com/tools/youtube/youtube-revenue-calculator' }
+  },
+
+  // ==========================================
   // YOUTUBE AUTOMATION SUITE
   // ==========================================
   'video-ideas': {

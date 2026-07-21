@@ -21,7 +21,7 @@ export default function Footer() {
           <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Workspace Pages</h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <Link href="/tools/youtube/youtube-video-ideas-generator" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+              <Link href="/tools/youtube/youtube-niche-finder" className="hover:text-slate-900 dark:hover:text-white transition-colors">
                 YouTube Automation
               </Link>
             </li>

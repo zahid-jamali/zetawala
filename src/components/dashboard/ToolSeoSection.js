@@ -12,6 +12,7 @@ export default function ToolSeoSection({ toolSlug }) {
 
   // Determine matching blog category for interlinking
   const isYoutube = [
+    'niche-finder', 'niche-opportunity', 'channel-health', 'video-performance', 'revenue-calculator',
     'video-ideas', 'title-generator', 'hook-architect', 'description-builder',
     'tags-extractor', 'thumbnail-prompt', 'script-master', 'visuals-recommender'
   ].includes(toolSlug);

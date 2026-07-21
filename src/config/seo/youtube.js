@@ -1,4 +1,159 @@
 export const youtubeSeoData = {
+  "niche-finder": {
+    title: "YouTube Niche Finder & Recommender",
+    description:
+      "Zetawala's YouTube Niche Finder is a data-driven discovery workflow—not a prompt box. It builds candidate niches from your interests and skills, samples public YouTube results, calculates opportunity and fit scores, then uses AI only to interpret those metrics. Official search volume is not fabricated; unavailable metrics are labeled N/A.",
+    example: {
+      input: "Interests: personal finance, habits | Skills: research, narration | Country: Pakistan | Faceless | Goal: Make money",
+      output: "Top niche: 'Pakistan Money Habits Explained' · Fit Score 78/100 · Demand proxy 72 · Competition 54 · First video ideas grounded in sample patterns",
+    },
+    faqs: [
+      {
+        q: "Does this tool invent search volume?",
+        a: "No. YouTube Data API does not provide keyword search volume. Zetawala uses view/competition proxies and labels unavailable metrics as N/A.",
+      },
+      {
+        q: "Is the Fit Score an official YouTube metric?",
+        a: "No. It is a Zetawala Score combining sampled public performance signals with your creator profile fit.",
+      },
+      {
+        q: "Who should use Niche Finder?",
+        a: "New creators choosing a first niche, and existing creators exploring adjacent niches before investing in content production.",
+      },
+      {
+        q: "What happens after I pick a niche?",
+        a: "Validate it with Niche Opportunity Analyzer, estimate earnings with Revenue Calculator, then move into Video Idea Generator and the content creation pipeline.",
+      },
+      {
+        q: "Why is AI used at all?",
+        a: "AI interprets calculated metrics and personalizes recommendations. It is not allowed to invent statistics that were not computed from public data.",
+      },
+    ],
+  },
+  "niche-opportunity": {
+    title: "YouTube Niche Opportunity Analyzer",
+    description:
+      "Validate a specific niche by searching YouTube, sampling relevant videos and channels, calculating median/average performance, competition density, content-gap proxies, and a deterministic Opportunity Score with a clear verdict threshold.",
+    example: {
+      input: "Niche: 'Faceless History Documentaries' | Format: Long-form",
+      output: "Opportunity Score 67 · Verdict: Strong Opportunity · Median views (sample): 18.4K · Competition: Medium-High",
+    },
+    faqs: [
+      {
+        q: "How is the Opportunity Score calculated?",
+        a: "Deterministically from weighted demand, competition, content gap, monetization proxy, growth proxy, and entry difficulty. AI does not set the score.",
+      },
+      {
+        q: "Why use median views?",
+        a: "Medians reduce distortion from a few viral outliers so your niche read is more realistic.",
+      },
+      {
+        q: "Can a high score guarantee success?",
+        a: "No. It estimates market conditions from a public sample. Execution, packaging, and consistency still matter.",
+      },
+      {
+        q: "What if YouTube returns few results?",
+        a: "The tool reports insufficient data rather than inventing a market. Try a clearer niche phrase.",
+      },
+      {
+        q: "What should I do next?",
+        a: "Estimate revenue potential, audit competitor channels with Channel Health Analyzer, then generate content with the YouTube Automation pipeline.",
+      },
+    ],
+  },
+  "channel-health": {
+    title: "YouTube Channel Health Analyzer",
+    description:
+      "Paste a channel URL or @handle to analyze recent uploads, consistency, engagement, momentum, top vs underperforming videos, and a Zetawala Channel Health Score—clearly labeled as an analytical estimate, not an official YouTube metric.",
+    example: {
+      input: "https://youtube.com/@example · Last 20 videos",
+      output: "Health Score 71 · Momentum 1.3× · Median views 9.2K · Consistency strong · Recommendations tied to measured gaps",
+    },
+    faqs: [
+      {
+        q: "Is Channel Health Score official?",
+        a: "No. It is a Zetawala analytical estimate from publicly available YouTube data.",
+      },
+      {
+        q: "How many videos are analyzed?",
+        a: "By default the last 20 uploads (configurable to 10 or 30) to protect API quota while staying useful.",
+      },
+      {
+        q: "Can it read YouTube Studio private analytics?",
+        a: "No. Only public Data API fields are used unless you later connect OAuth (not required for this tool).",
+      },
+      {
+        q: "What is momentum ratio?",
+        a: "A Zetawala Calculation comparing recent median views to older median views in the sampled window.",
+      },
+      {
+        q: "What is the next step after a channel audit?",
+        a: "Open Video Performance Analyzer on a top or weak video, then use Title/Hook/Script tools to improve the next upload.",
+      },
+    ],
+  },
+  "video-performance": {
+    title: "YouTube Video Performance Analyzer",
+    description:
+      "Analyze one video against its channel baseline: relative views, engagement rates, views-per-subscriber, performance score, caveats for brand-new uploads, and AI next-video opportunities grounded in observed data.",
+    example: {
+      input: "https://youtube.com/watch?v=VIDEO_ID",
+      output: "Performance Score 64 · 1.4× channel median · Engagement 3.1% · 7 follow-up ideas tied to what worked",
+    },
+    faqs: [
+      {
+        q: "Why compare to channel median?",
+        a: "Absolute view counts mislead across channel sizes. Relative performance shows whether this video beat the channel's typical outcome.",
+      },
+      {
+        q: "What about brand-new videos?",
+        a: "Videos under ~2 days get a caveat and tempered score because early views are not comparable to older uploads.",
+      },
+      {
+        q: "Are next video ideas random?",
+        a: "No. AI suggestions must reference observed patterns from the analyzed video and channel baseline.",
+      },
+      {
+        q: "Does this replace YouTube Analytics?",
+        a: "No. It complements public metrics with Zetawala scoring and workflow links into content tools.",
+      },
+      {
+        q: "What tools should I open next?",
+        a: "Video Idea Generator, Title Copywriter, Retention Hook, and Script Writer to act on the diagnosis.",
+      },
+    ],
+  },
+  "revenue-calculator": {
+    title: "YouTube Revenue Calculator",
+    description:
+      "A deterministic earnings estimator using Views/1000×RPM with low, typical, and high scenarios. Works without YouTube API or DeepSeek. Estimated RPM bands are labeled as estimates—not official YouTube payouts.",
+    example: {
+      input: "Monthly views: 100,000 · Long-form · South Asia · Education · Estimated RPM",
+      output: "Typical monthly estimate range with low/typical/high scenarios and listed assumptions",
+    },
+    faqs: [
+      {
+        q: "Is this revenue guaranteed?",
+        a: "No. Estimates are illustrative. Actual earnings vary by geography, niche, ad demand, seasonality, and monetization status.",
+      },
+      {
+        q: "Do I need a YouTube API key for this tool?",
+        a: "No. The calculator is fully deterministic and runs without YouTube or DeepSeek.",
+      },
+      {
+        q: "What is RPM?",
+        a: "Revenue per mille—estimated earnings per 1,000 views after YouTube's share, used here as a modeling input.",
+      },
+      {
+        q: "Why show low/typical/high?",
+        a: "A single point estimate is misleading. Ranges communicate uncertainty honestly.",
+      },
+      {
+        q: "How does this connect to other tools?",
+        a: "Use Niche Opportunity Analyzer before estimating, then Channel Health Analyzer to sanity-check whether your real channel can reach those view levels.",
+      },
+    ],
+  },
   "video-ideas": {
     title: "YouTube Video Idea Generator",
     description:
