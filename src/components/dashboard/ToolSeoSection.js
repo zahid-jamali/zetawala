@@ -22,11 +22,20 @@ export default function ToolSeoSection({ toolSlug }) {
     'social-comment-responder', 'product-storyboard'
   ].includes(toolSlug);
 
+  const isSeoWebmaster = [
+    'website-checker', 'content-audit', 'title-meta-analyzer', 'pagespeed-analyzer',
+    'internal-link-analyzer', 'broken-link-checker', 'sitemap-tool', 'canonical-indexability',
+    'action-plan', 'robots-txt-tool', 'header-meta-inspector', 'traffic-revenue',
+    'health-score', 'keyword-density', 'seo-roi', 'keyword-roi', 'content-roi'
+  ].includes(toolSlug);
+
   const blogCategory = isYoutube
     ? 'youtube'
     : isLocalCommerce
       ? 'local-commerce'
-      : 'daraz';
+      : isSeoWebmaster
+        ? 'seo-webmaster'
+        : 'daraz';
 
   return (
     <div className="mt-12 pt-12 border-t border-slate-205 dark:border-slate-800 space-y-10 text-slate-900 dark:text-slate-100">

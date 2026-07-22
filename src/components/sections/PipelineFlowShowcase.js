@@ -25,15 +25,23 @@ const localCommerceFlow = [
   { step: '05', name: 'Product Storyboard', desc: 'Tell a pain-to-solution story before pitching the product.' }
 ];
 
+const seoFlow = [
+  { step: '01', name: 'Website SEO Audit', desc: 'Score technical & on-page factors with prioritized fix recommendations.' },
+  { step: '02', name: 'Technical SEO', desc: 'Validate sitemaps, robots.txt, canonicals, indexability & broken links.' },
+  { step: '03', name: 'Content SEO', desc: 'Audit titles, meta tags, keyword density & content structure signals.' }
+];
+
 export default function PipelineFlowShowcase() {
-  const [activeTab, setActiveTab] = useState('youtube'); // 'youtube' | 'daraz' | 'local-commerce'
+  const [activeTab, setActiveTab] = useState('youtube'); // 'youtube' | 'daraz' | 'local-commerce' | 'seo'
 
   const activeFlow =
     activeTab === 'youtube'
       ? youtubeFlow
       : activeTab === 'local-commerce'
         ? localCommerceFlow
-        : darazFlow;
+        : activeTab === 'seo'
+          ? seoFlow
+          : darazFlow;
 
   const tabButton = (id, label) => (
     <button
@@ -52,7 +60,7 @@ export default function PipelineFlowShowcase() {
             Workspace Workflow Pipelines
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
-            Toggle between YouTube, Daraz, and Local Social Commerce & WhatsApp Suite to visualize how the micro-tools pass data sequentially.
+            Toggle between YouTube, Daraz, Local Social Commerce & WhatsApp, and SEO & Webmaster workflows to visualize how the micro-tools pass data sequentially.
           </p>
         </div>
 
@@ -62,6 +70,7 @@ export default function PipelineFlowShowcase() {
             {tabButton('youtube', 'YouTube Pipeline')}
             {tabButton('daraz', 'Daraz SEO Pipeline')}
             {tabButton('local-commerce', 'WhatsApp & Local Commerce')}
+            {tabButton('seo', 'SEO & Webmaster')}
           </div>
         </div>
 

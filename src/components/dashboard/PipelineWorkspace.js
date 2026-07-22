@@ -10,6 +10,7 @@ import OutputSandbox from './OutputSandbox';
 import ToolSeoSection from './ToolSeoSection';
 import DarazProfitCalculator from './DarazProfitCalculator';
 import YoutubeIntelligenceHost, { YOUTUBE_INTELLIGENCE_SLUGS } from './youtube/YoutubeIntelligenceHost';
+import SeoToolHost, { SEO_HOST_SLUGS } from './seo/SeoToolHost';
 import { navigationConfig } from '../../config/navigation';
 import { getSeoPath } from '../../config/routes';
 
@@ -28,16 +29,23 @@ const localCommerceSteps = localCommerceCategory
   ? localCommerceCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
   : [];
 
+const seoCategory = navigationConfig.find(c => c.slug === 'seo-webmaster');
+const seoSteps = seoCategory
+  ? seoCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
 const pipelineLabels = {
   'youtube-automation': 'YouTube Automation pipeline',
   'daraz-seo': 'Daraz SEO intelligence',
-  'local-social-commerce': 'Local Social Commerce & WhatsApp suite'
+  'local-social-commerce': 'Local Social Commerce & WhatsApp suite',
+  'seo-webmaster': 'SEO & Webmaster Intelligence'
 };
 
 const categoryRouteKeys = {
   'youtube-automation': 'youtube',
   'daraz-seo': 'daraz',
-  'local-social-commerce': 'local-commerce'
+  'local-social-commerce': 'local-commerce',
+  'seo-webmaster': 'seo'
 };
 
 export default function PipelineWorkspace({ toolSlug, categorySlug }) {
@@ -59,7 +67,9 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
     ? youtubeSteps
     : categorySlug === 'local-social-commerce'
       ? localCommerceSteps
-      : darazSteps;
+      : categorySlug === 'seo-webmaster'
+        ? seoSteps
+        : darazSteps;
   const currentStepIndex = steps.findIndex(s => s.slug === toolSlug);
   const routeCategory = categoryRouteKeys[categorySlug] || 'daraz';
   const pipelineLabel = pipelineLabels[categorySlug] || 'Tool pipeline';
@@ -164,6 +174,8 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
         <DarazProfitCalculator />
       ) : YOUTUBE_INTELLIGENCE_SLUGS.includes(toolSlug) ? (
         <YoutubeIntelligenceHost toolSlug={toolSlug} />
+      ) : SEO_HOST_SLUGS.includes(toolSlug) ? (
+        <SeoToolHost toolSlug={toolSlug} />
       ) : (
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
           

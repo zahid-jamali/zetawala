@@ -207,5 +207,111 @@ export const toolMetadata = {
     description: 'Build story-driven social posts that solve customer pain points before pitching the product.',
     keywords: ['product storyboard generator', 'social commerce storytelling', 'roman urdu product post', 'whatsapp status storyboard'],
     alternates: { canonical: 'https://zetawala.com/tools/local-commerce/one-page-product-storyboard' }
+  },
+
+  // ==========================================
+  // SEO & WEBMASTER INTELLIGENCE
+  // ==========================================
+  'website-checker': {
+    title: 'SEO Website Checker – Technical & On-Page Audit | ZetaWala',
+    description: 'Run a technical and on-page SEO audit with scores, critical issues, and prioritized fixes for any URL.',
+    keywords: ['seo website checker', 'technical seo audit', 'on-page seo analyzer', 'site audit tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-website-checker' }
+  },
+  'content-audit': {
+    title: 'SEO Content Audit – Headings, Links & Readability | ZetaWala',
+    description: 'Audit page content structure, headings, internal links, and readability signals for better on-page SEO.',
+    keywords: ['seo content audit', 'on-page content analyzer', 'heading structure checker', 'content seo tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-content-audit' }
+  },
+  'title-meta-analyzer': {
+    title: 'SEO Title & Meta Description Analyzer | ZetaWala',
+    description: 'Find missing, duplicate, and weak title tags and meta descriptions with length and CTR guidance.',
+    keywords: ['title tag analyzer', 'meta description checker', 'seo title optimizer', 'duplicate title finder'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-title-meta-description-analyzer' }
+  },
+  'pagespeed-analyzer': {
+    title: 'PageSpeed & Core Web Vitals Analyzer | ZetaWala',
+    description: 'Measure Google PageSpeed Insights performance, Core Web Vitals, and optimization opportunities.',
+    keywords: ['pagespeed insights analyzer', 'core web vitals checker', 'lcp inp cls tool', 'website speed test seo'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/pagespeed-core-web-vitals-analyzer' }
+  },
+  'internal-link-analyzer': {
+    title: 'Internal Link & Orphan Page Analyzer | ZetaWala',
+    description: 'Map internal links, weak anchors, and orphan pages to strengthen site architecture and crawl equity.',
+    keywords: ['internal link analyzer', 'orphan page finder', 'site architecture seo', 'internal linking tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/internal-link-orphan-page-analyzer' }
+  },
+  'broken-link-checker': {
+    title: 'Broken Link Checker – Internal & External | ZetaWala',
+    description: 'Find broken internal and external links, 404s, and redirect chains before they hurt UX and SEO.',
+    keywords: ['broken link checker', '404 link finder', 'dead link scanner', 'seo link audit'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/broken-link-checker' }
+  },
+  'sitemap-tool': {
+    title: 'Sitemap Generator & Validator | ZetaWala',
+    description: 'Generate XML sitemaps or validate existing sitemaps for format errors and indexability issues.',
+    keywords: ['xml sitemap generator', 'sitemap validator', 'sitemap checker', 'seo sitemap tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/sitemap-generator-validator' }
+  },
+  'canonical-indexability': {
+    title: 'Canonical & Indexability Checker | ZetaWala',
+    description: 'Inspect canonical tags, robots directives, and HTTP signals to confirm pages are indexable.',
+    keywords: ['canonical tag checker', 'indexability analyzer', 'noindex checker', 'robots meta inspector'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/canonical-indexability-checker' }
+  },
+  'action-plan': {
+    title: 'SEO Action Plan Generator | ZetaWala',
+    description: 'Generate a prioritized, beginner-friendly SEO roadmap from audit findings and site goals.',
+    keywords: ['seo action plan', 'seo roadmap generator', 'seo task prioritizer', 'seo project plan'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-action-plan-generator' }
+  },
+  'robots-txt-tool': {
+    title: 'Robots.txt Generator & Tester | ZetaWala',
+    description: 'Generate robots.txt crawl rules and test whether URLs are allowed or blocked for crawlers.',
+    keywords: ['robots txt generator', 'robots txt tester', 'crawl rules builder', 'seo robots tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/robots-txt-generator-tester' }
+  },
+  'header-meta-inspector': {
+    title: 'SEO Header & Meta Tags Inspector | ZetaWala',
+    description: 'Inspect title, Open Graph, Twitter, canonical, hreflang, and HTTP meta tags in one report.',
+    keywords: ['meta tags inspector', 'open graph checker', 'seo header analyzer', 'twitter card validator'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-header-meta-tags-inspector' }
+  },
+  'traffic-revenue': {
+    title: 'SEO Traffic & Ad Revenue Estimator | ZetaWala',
+    description: 'Estimate organic traffic value and ad revenue with transparent, labeled assumptions.',
+    keywords: ['seo traffic estimator', 'ad revenue calculator', 'organic traffic value', 'rpm revenue tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-traffic-ad-revenue-estimator' }
+  },
+  'health-score': {
+    title: 'SEO Health Score Calculator | ZetaWala',
+    description: 'Calculate overall SEO health with technical, content, and performance category breakdowns.',
+    keywords: ['seo health score', 'website seo score', 'seo grade calculator', 'site health checker'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-health-score-calculator' }
+  },
+  'keyword-density': {
+    title: 'Keyword Density Checker | ZetaWala',
+    description: 'Analyze 1–3 word phrase frequency from a URL or pasted text to balance keyword usage.',
+    keywords: ['keyword density checker', 'keyword frequency analyzer', 'seo keyword tool', 'phrase density tool'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/keyword-density-checker' }
+  },
+  'seo-roi': {
+    title: 'SEO ROI Calculator | ZetaWala',
+    description: 'Estimate SEO return on investment from traffic lift, conversions, and average order value.',
+    keywords: ['seo roi calculator', 'seo investment return', 'organic marketing roi', 'seo revenue estimator'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/seo-roi-calculator' }
+  },
+  'keyword-roi': {
+    title: 'Keyword ROI Calculator | ZetaWala',
+    description: 'Model keyword traffic, leads, and revenue potential from volume, rank, and conversion inputs.',
+    keywords: ['keyword roi calculator', 'keyword revenue estimator', 'keyword value tool', 'seo keyword roi'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/keyword-roi-calculator' }
+  },
+  'content-roi': {
+    title: 'Content ROI Calculator | ZetaWala',
+    description: 'Estimate content marketing ROI from production costs, traffic, and conversion value.',
+    keywords: ['content roi calculator', 'content marketing roi', 'blog roi estimator', 'content investment return'],
+    alternates: { canonical: 'https://zetawala.com/tools/seo/content-roi-calculator' }
   }
 };

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
-import { Menu, X, ChevronDown, Video, ShoppingBag, MessageCircle, Lock, ChevronRight, Sun, Moon, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronDown, Video, ShoppingBag, MessageCircle, Search, Lock, ChevronRight, Sun, Moon, ArrowRight } from 'lucide-react';
 import { toggleTheme } from '../../store/uiSlice';
 import { navigationConfig } from '../../config/navigation';
 import { getSeoPath } from '../../config/routes';
@@ -17,6 +17,9 @@ const darazTools = dzCat ? dzCat.tools.filter(t => t.isActive) : [];
 const lcCat = navigationConfig.find(c => c.slug === 'local-social-commerce');
 const localCommerceTools = lcCat ? lcCat.tools.filter(t => t.isActive) : [];
 
+const seoCat = navigationConfig.find(c => c.slug === 'seo-webmaster');
+const seoTools = seoCat ? seoCat.tools.filter(t => t.isActive) : [];
+
 export default function Navbar() {
   const dispatch = useDispatch();
   const { theme } = useSelector((state) => state.ui);
@@ -25,6 +28,7 @@ export default function Navbar() {
   const [mobileYoutubeOpen, setMobileYoutubeOpen] = useState(true);
   const [mobileDarazOpen, setMobileDarazOpen] = useState(false);
   const [mobileLocalCommerceOpen, setMobileLocalCommerceOpen] = useState(false);
+  const [mobileSeoOpen, setMobileSeoOpen] = useState(false);
 
   const mobileLink = "p-2.5 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/35 transition-colors flex items-center justify-between group";
 
@@ -130,6 +134,47 @@ export default function Navbar() {
                       </div>
                     </Link>
                   ))}
+                </div>
+              </div>
+            </div>
+
+            {/* SEO & Webmaster Mega Dropdown — opens left so it stays on-screen */}
+            <div className="relative group py-5">
+              <button className="px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-805/65 dark:hover:text-black rounded-xl flex items-center gap-1 cursor-pointer transition-all">
+                SEO & Webmaster
+                <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:rotate-180 transition-transform duration-200" />
+              </button>
+
+              <div className="absolute top-full right-0 w-[min(760px,calc(100vw-2rem))] pt-2 pointer-events-none group-hover:pointer-events-auto opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0 transition-all duration-200 z-50">
+                <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-5 shadow-2xl">
+                  <div className="border-b border-slate-100 dark:border-slate-800 pb-2.5 mb-3 flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <Search className="w-4 h-4 text-sky-500 shrink-0" />
+                      <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest truncate">technical audits, indexability & webmaster intelligence</span>
+                    </div>
+                    <Link
+                      href="/seo"
+                      className="text-[10px] font-bold text-sky-600 dark:text-sky-400 hover:underline shrink-0"
+                    >
+                      View all →
+                    </Link>
+                  </div>
+
+                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-1">
+                    {seoTools.map((tool) => (
+                      <Link
+                        key={tool.slug}
+                        href={getSeoPath('seo', tool.slug)}
+                        className="p-2.5 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors flex items-start gap-2 group/item"
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full bg-slate-300 group-hover/item:bg-sky-500 mt-1.5 shrink-0 transition-colors" />
+                        <div className="min-w-0">
+                          <p className="text-xs font-bold text-slate-900 dark:text-white mb-0.5 leading-snug">{tool.name}</p>
+                          <p className="text-[10px] text-slate-500 dark:text-slate-400 leading-normal line-clamp-1">{tool.desc}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,6 +302,35 @@ export default function Navbar() {
                     <Link
                       key={tool.slug}
                       href={getSeoPath('local-commerce', tool.slug)}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={mobileLink}
+                    >
+                      <div className="flex flex-col pr-3">
+                        <span className="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-sky-500 transition-colors">{tool.name}</span>
+                        <span className="text-[9px] text-slate-400 dark:text-slate-500 font-normal line-clamp-1">{tool.desc}</span>
+                      </div>
+                      <ChevronRight className="w-3.5 h-3.5 text-slate-300 dark:text-slate-700 shrink-0" />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Collapsible SEO & Webmaster Folder */}
+            <div className="border border-slate-150 dark:border-slate-800/80 rounded-2xl overflow-hidden bg-slate-50/50 dark:bg-slate-950/20">
+              <button onClick={() => setMobileSeoOpen(!mobileSeoOpen)} className="w-full p-4 flex items-center justify-between bg-slate-100/50 dark:bg-slate-850/40 border-b border-slate-150 dark:border-slate-800 cursor-pointer">
+                <div className="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-widest text-slate-600 dark:text-slate-350">
+                  <Search className="w-4 h-4 text-sky-500" />
+                  <span>SEO & Webmaster Intelligence</span>
+                </div>
+                <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${mobileSeoOpen ? "rotate-180" : ""}`} />
+              </button>
+              {mobileSeoOpen && (
+                <div className="p-2 space-y-1 bg-white dark:bg-slate-900">
+                  {seoTools.map((tool) => (
+                    <Link
+                      key={tool.slug}
+                      href={getSeoPath('seo', tool.slug)}
                       onClick={() => setMobileMenuOpen(false)}
                       className={mobileLink}
                     >

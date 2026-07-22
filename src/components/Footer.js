@@ -35,6 +35,11 @@ export default function Footer() {
                 Local Social Commerce & WhatsApp Suite
               </Link>
             </li>
+            <li>
+              <Link href="/seo" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                SEO & Webmaster Intelligence
+              </Link>
+            </li>
           </ul>
         </div>
 

@@ -11,14 +11,14 @@ export default function HeroShowcase() {
       </div>
 
       <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12] max-w-4xl mx-auto animate-fade-in">
-        Automated Digital Assets & Financial Stability through{' '}
+        Free AI Tools for YouTube, Daraz, WhatsApp &{' '}
         <span className="text-sky-600 dark:text-sky-400">
-          E-Commerce & Video AI Utilities
+          SEO Webmaster Growth
         </span>
       </h1>
 
       <p className="text-base sm:text-lg text-slate-400 dark:text-slate-350 max-w-2xl mx-auto leading-relaxed font-medium">
-        Eliminate hours of manual optimization. Run automated pipelines for YouTube, Daraz, and Local Social Commerce & WhatsApp Suite workflows—evaluate product demand, export Urdu search keywords, draft WhatsApp broadcasts, outline narrative hooks, and write full video scripts instantly.
+        Run research, audits, and content pipelines in one place—YouTube niche & video intelligence, Daraz listing SEO, WhatsApp social commerce copy, plus technical SEO checks like PageSpeed, sitemaps, broken links, and indexability.
       </p>
 
       <div className="pt-4 pb-12">

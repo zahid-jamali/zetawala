@@ -1,3 +1,7 @@
+import { seoTools } from './seoWebmaster/tools';
+
+const seoRouteEntries = Object.fromEntries(seoTools.map((t) => [t.slug, t.seoSlug]));
+
 const routeMapping = {
   // YouTube Intelligence & Monetization
   'niche-finder': 'youtube-niche-finder',
@@ -36,7 +40,10 @@ const routeMapping = {
   'local-ad-script': 'facebook-instagram-local-ad-script-generator',
   'wholesale-negotiation': 'wholesale-supplier-negotiation-drafter',
   'social-comment-responder': 'social-media-price-comment-responder',
-  'product-storyboard': 'one-page-product-storyboard'
+  'product-storyboard': 'one-page-product-storyboard',
+
+  // SEO & Webmaster Intelligence
+  ...seoRouteEntries,
 };
 
 const categoryFolderMap = {
@@ -45,10 +52,15 @@ const categoryFolderMap = {
   'daraz-seo': 'daraz',
   'daraz': 'daraz',
   'local-social-commerce': 'local-commerce',
-  'local-commerce': 'local-commerce'
+  'local-commerce': 'local-commerce',
+  'seo-webmaster': 'seo',
+  'seo': 'seo',
 };
 
 const getFolderFromCategory = (category) => categoryFolderMap[category] || 'daraz';
+
+const seoInternalSlugs = new Set(seoTools.map((t) => t.slug));
+const seoPublicSlugs = new Set(seoTools.map((t) => t.seoSlug));
 
 const getFolderFromSeoSlug = (seo) => {
   if (seo.startsWith('youtube-')) return 'youtube';
@@ -60,6 +72,21 @@ const getFolderFromSeoSlug = (seo) => {
     seo.startsWith('one-page-')
   ) {
     return 'local-commerce';
+  }
+  if (
+    seoPublicSlugs.has(seo) ||
+    seo.startsWith('seo-') ||
+    seo.startsWith('pagespeed-') ||
+    seo.startsWith('broken-link-') ||
+    seo.startsWith('sitemap-') ||
+    seo.startsWith('canonical-') ||
+    seo.startsWith('robots-txt-') ||
+    seo.startsWith('internal-link-') ||
+    seo.startsWith('keyword-density-') ||
+    seo.startsWith('keyword-roi-') ||
+    seo.startsWith('content-roi-')
+  ) {
+    return 'seo';
   }
   return 'daraz';
 };
@@ -76,24 +103,21 @@ export const getInternalSlug = (seoSlug) => {
   for (const [key, value] of Object.entries(routeMapping)) {
     if (value === seoSlug) return key;
   }
-  return seoSlug; // fallback
+  return seoSlug;
 };
 
-// Returns list of all redirects for next.config.js
 export const getLegacyRedirects = () => {
   const redirects = [];
   
   for (const [internal, seo] of Object.entries(routeMapping)) {
     const folder = getFolderFromSeoSlug(seo);
     
-    // Redirect /dashboard/[folder]/[internal] -> /tools/[folder]/[seo]
     redirects.push({
       source: `/dashboard/${folder}/${internal}`,
       destination: `/tools/${folder}/${seo}`,
       permanent: true
     });
 
-    // Also redirect /tools/[internal] -> /tools/[folder]/[seo] for SEO compatibility
     redirects.push({
       source: `/tools/${internal}`,
       destination: `/tools/${folder}/${seo}`,
@@ -101,10 +125,9 @@ export const getLegacyRedirects = () => {
     });
   }
 
-  // General dashboard redirects
   redirects.push({
     source: '/dashboard/youtube',
-    destination: '/tools/youtube/youtube-video-ideas-generator',
+    destination: '/tools/youtube/youtube-niche-finder',
     permanent: true
   });
   redirects.push({
@@ -117,6 +140,13 @@ export const getLegacyRedirects = () => {
     destination: '/tools/local-commerce/whatsapp-broadcast-status-copywriter',
     permanent: true
   });
+  redirects.push({
+    source: '/dashboard/seo',
+    destination: '/tools/seo/seo-website-checker',
+    permanent: true
+  });
 
   return redirects;
 };
+
+export { seoInternalSlugs };

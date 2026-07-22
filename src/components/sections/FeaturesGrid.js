@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Video, ShoppingBag, MessageCircle, Layers, Globe, Cpu } from 'lucide-react';
+import { Video, ShoppingBag, MessageCircle, Search, Layers, Globe, Cpu } from 'lucide-react';
 
 export default function FeaturesGrid() {
   const cardClasses = "bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300";
@@ -19,7 +19,7 @@ export default function FeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
           {/* YouTube Automation Suite */}
           <div className={cardClasses}>
             <div className="space-y-6">
@@ -87,6 +87,30 @@ export default function FeaturesGrid() {
                 className="w-full py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open Local Commerce Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* SEO & Webmaster Intelligence Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/30 flex items-center justify-center">
+                <Search className="w-6 h-6 text-sky-600 dark:text-sky-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">SEO & Webmaster Intelligence</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Run technical audits, PageSpeed & Core Web Vitals checks, sitemap validation, canonical/indexability reviews, and ROI calculators—everything webmasters need to diagnose and prioritize SEO fixes.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/seo"
+                className="w-full py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open SEO Workspace
                 <span>&rarr;</span>
               </Link>
             </div>

@@ -52,6 +52,30 @@ export const navigationConfig = [
     ]
   },
   {
+    category: "SEO & Webmaster Intelligence",
+    slug: "seo-webmaster",
+    isActive: true,
+    tools: [
+      { name: "SEO Website Checker", slug: "website-checker", desc: "Technical & on-page audit with scores", isActive: true },
+      { name: "SEO Content Audit", slug: "content-audit", desc: "Content structure & on-page factors", isActive: true },
+      { name: "Title & Meta Description Analyzer", slug: "title-meta-analyzer", desc: "Missing, duplicate & weak metadata", isActive: true },
+      { name: "PageSpeed & Core Web Vitals", slug: "pagespeed-analyzer", desc: "Google PSI performance & CWV", isActive: true },
+      { name: "Internal Link & Orphan Analyzer", slug: "internal-link-analyzer", desc: "Internal linking & orphan risks", isActive: true },
+      { name: "Broken Link Checker", slug: "broken-link-checker", desc: "Broken internal & external links", isActive: true },
+      { name: "Sitemap Generator & Validator", slug: "sitemap-tool", desc: "Generate or validate XML sitemaps", isActive: true },
+      { name: "Canonical & Indexability Checker", slug: "canonical-indexability", desc: "Canonical, robots & index signals", isActive: true },
+      { name: "SEO Action Plan Generator", slug: "action-plan", desc: "Prioritized SEO roadmap", isActive: true },
+      { name: "Robots.txt Generator & Tester", slug: "robots-txt-tool", desc: "Generate and test crawl rules", isActive: true },
+      { name: "Header & Meta Tags Inspector", slug: "header-meta-inspector", desc: "Title, OG, Twitter & meta audit", isActive: true },
+      { name: "Traffic & Ad Revenue Estimator", slug: "traffic-revenue", desc: "Estimated traffic value (labeled)", isActive: true },
+      { name: "SEO Health Score Calculator", slug: "health-score", desc: "Overall SEO health breakdown", isActive: true },
+      { name: "Keyword Density Checker", slug: "keyword-density", desc: "1–3 word phrase frequency", isActive: true },
+      { name: "SEO ROI Calculator", slug: "seo-roi", desc: "Estimate SEO return on investment", isActive: true },
+      { name: "Keyword ROI Calculator", slug: "keyword-roi", desc: "Estimate keyword traffic & revenue", isActive: true },
+      { name: "Content ROI Calculator", slug: "content-roi", desc: "Estimate content marketing ROI", isActive: true }
+    ]
+  },
+  {
     category: "Amazon SEO (Coming Soon)",
     slug: "amazon-seo",
     isActive: false,

@@ -11,7 +11,7 @@ export default function TrustAnalytics() {
         Engineered for Digital Assets Stability
       </h2>
       <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed font-medium">
-        Whether sourcing products from Shah Alami wholesale markets, running Daraz campaigns, automating YouTube watch retention hooks, or scaling Local Social Commerce & WhatsApp Suite broadcasts, ZetaWala drives conversion rates.
+        Whether you are auditing technical SEO, improving Core Web Vitals, sourcing Daraz products, automating YouTube retention hooks, or scaling WhatsApp social commerce—ZetaWala helps you move from insight to action faster.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10">

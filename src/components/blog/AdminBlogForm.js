@@ -145,6 +145,7 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
               <option value="youtube">YouTube</option>
               <option value="daraz">Daraz</option>
               <option value="local-commerce">Local Social Commerce & WhatsApp Suite</option>
+              <option value="seo-webmaster">SEO & Webmaster Intelligence</option>
             </select>
           </div>
           <div className="space-y-1.5">

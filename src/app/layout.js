@@ -17,30 +17,23 @@ export const metadata = {
     shortcut: "/favicon.ico",
     apple: "/apple-icon.png",
   },
-  openGraph: {
-    images: [
-      {
-        url: "/opengraph-image.png",
-        width: 512,
-        height: 512,
-      },
-    ],
-  },
-
   manifest: "/site.webmanifest",
 
-  title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools | Zetawala",
+  title: "Free AI YouTube, Daraz, WhatsApp & SEO Webmaster Tools | Zetawala",
 
   description:
-    "Boost your YouTube channel, Daraz store, and local social commerce with free AI tools. Generate viral video ideas, YouTube titles, scripts, tags, Daraz profit calculations, WhatsApp broadcast copy, Facebook ad scripts, keyword research, product hunting, and SEO tools—all in one place.",
+    "Zetawala is a free AI toolkit for YouTube automation, Daraz SEO, WhatsApp social commerce, and SEO & Webmaster Intelligence. Audit websites, check PageSpeed and Core Web Vitals, fix broken links, validate sitemaps, analyze niches, generate scripts, and grow faster—all in one place.",
 
   keywords: [
     "AI YouTube tools",
     "YouTube Automation",
+    "YouTube Niche Finder",
     "YouTube Title Generator",
     "YouTube Script Generator",
     "YouTube Description Generator",
     "YouTube Tags Generator",
+    "YouTube Channel Health Analyzer",
+    "YouTube Revenue Calculator",
     "Daraz Profit Calculator",
     "Daraz Keyword Tool",
     "Daraz Product Hunting",
@@ -53,6 +46,18 @@ export const metadata = {
     "WhatsApp broadcast message templates",
     "local e-commerce automation",
     "WhatsApp status copywriter",
+    "SEO & Webmaster Intelligence",
+    "SEO Website Checker",
+    "PageSpeed Insights tool",
+    "Core Web Vitals analyzer",
+    "Broken link checker",
+    "Sitemap generator",
+    "Canonical checker",
+    "SEO health score",
+    "Keyword density checker",
+    "SEO ROI calculator",
+    "Free SEO tools",
+    "Technical SEO audit",
     "SEO Tools",
     "AI SEO Tools",
     "Free AI Tools",
@@ -79,10 +84,10 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools | Zetawala",
+    title: "Free AI YouTube, Daraz, WhatsApp & SEO Webmaster Tools | Zetawala",
 
     description:
-      "Free AI-powered tools for YouTube creators, Daraz sellers, WhatsApp marketers, bloggers and SEO professionals. Create viral content, optimize products, draft local social commerce copy and grow faster.",
+      "Free AI tools for YouTube creators, Daraz sellers, WhatsApp marketers, and website owners. Discover niches, audit technical SEO, analyze PageSpeed, optimize listings, and grow faster with Zetawala.",
 
     url: "https://zetawala.com",
 
@@ -94,9 +99,9 @@ export const metadata = {
 
     images: [
       {
-        url: "/images/Logo.png",
-        width: 1200,
-        height: 630,
+        url: "/opengraph-image.png",
+        width: 512,
+        height: 512,
         alt: "Zetawala AI Tools",
       },
     ],
@@ -105,10 +110,10 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Free AI YouTube Automation, Daraz, WhatsApp & SEO Tools",
+    title: "Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala",
 
     description:
-      "AI-powered YouTube, Daraz, WhatsApp, SEO and eCommerce tools to grow faster.",
+      "YouTube automation, Daraz SEO, WhatsApp commerce, and SEO & Webmaster Intelligence tools—free on Zetawala.",
 
     images: ["/android-chrome-512x512.png"],
   },
@@ -161,7 +166,8 @@ export default function RootLayout({ children }) {
               "@type": "WebSite",
               name: "Zetawala",
               url: "https://zetawala.com",
-              description: "Free AI YouTube Automation, Daraz, WhatsApp and SEO Tools.",
+              description:
+                "Free AI YouTube automation, Daraz SEO, WhatsApp commerce, and SEO & Webmaster Intelligence tools.",
               potentialAction: {
                 "@type": "SearchAction",
                 target: "https://zetawala.com/search?q={search_term_string}",

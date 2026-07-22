@@ -43,14 +43,18 @@ export default function BlogCarousel({ category }) {
       ? 'YouTube Growth Articles'
       : category === 'local-commerce'
         ? 'WhatsApp & Local Commerce Guides'
-        : 'Daraz Sourcing & Ranking Slabs';
+        : category === 'seo-webmaster'
+          ? 'SEO & Webmaster Guides'
+          : 'Daraz Sourcing & Ranking Slabs';
 
   const sectionTitle =
     category === 'youtube'
       ? 'Learn YouTube Growth Strategies'
       : category === 'local-commerce'
         ? 'Learn WhatsApp & Local Commerce Strategies'
-        : 'Learn Sourcing & Ranking Strategies';
+        : category === 'seo-webmaster'
+          ? 'Learn SEO & Webmaster Strategies'
+          : 'Learn Sourcing & Ranking Strategies';
 
   return (
     <div className="space-y-6 pt-10 border-t border-slate-200 dark:border-slate-800">
