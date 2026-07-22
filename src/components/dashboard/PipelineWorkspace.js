@@ -61,6 +61,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
   const [selectedKeywords, setSelectedKeywords] = useState([]);
   const [keywordCopied, setKeywordCopied] = useState(false);
   const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
 
   const isYoutube = categorySlug === 'youtube-automation';
   const steps = isYoutube
@@ -110,6 +111,8 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       dispatch(setError(err.message));
     } finally {
       dispatch(setLoading(false));
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -187,6 +190,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
               inputRef={inputRef} 
               onSecurityTokenChange={setSecurityToken} 
               securityToken={securityToken}
+              turnstileResetKey={turnstileResetKey}
             />
           </div>
 

@@ -38,6 +38,7 @@ export default function NicheFinderTool() {
     topicsToAvoid: '',
   });
   const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
   const [loading, setLoading] = useState(false);
   const [stageIdx, setStageIdx] = useState(0);
   const [error, setError] = useState(null);
@@ -67,6 +68,8 @@ export default function NicheFinderTool() {
     } finally {
       clearInterval(timer);
       setLoading(false);
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -157,7 +160,7 @@ export default function NicheFinderTool() {
           <input className={inputClasses} value={form.topicsToAvoid} onChange={(e) => set('topicsToAvoid', e.target.value)} placeholder="e.g. crypto trading, politics" />
         </div>
 
-        <TurnstileWidget onTokenChange={setSecurityToken} />
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button
           type="submit"
           disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)}

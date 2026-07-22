@@ -40,6 +40,7 @@ const NEXT = {
 export default function SeoToolHost({ toolSlug }) {
   const tool = getSeoTool(toolSlug);
   const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
@@ -69,6 +70,8 @@ export default function SeoToolHost({ toolSlug }) {
       setError(err.message);
     } finally {
       setLoading(false);
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -83,7 +86,7 @@ export default function SeoToolHost({ toolSlug }) {
 
         <SeoFormFields mode={tool.mode} form={form} set={set} />
 
-        <TurnstileWidget onTokenChange={setSecurityToken} />
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button
           type="submit"
           disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)}

@@ -6,7 +6,7 @@ import { Send, Loader2 } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
 import TurnstileWidget from './TurnstileWidget';
 
-export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurityTokenChange, securityToken }) {
+export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurityTokenChange, securityToken, turnstileResetKey = 0 }) {
   const dispatch = useDispatch();
   const { loading, inputs } = useSelector((state) => state.tools);
   const toolInputs = inputs[toolSlug] || {};
@@ -449,7 +449,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       )}
 
 
-      <TurnstileWidget onTokenChange={onSecurityTokenChange} />
+      <TurnstileWidget onTokenChange={onSecurityTokenChange} resetKey={turnstileResetKey} />
 
       <button
         type="submit"

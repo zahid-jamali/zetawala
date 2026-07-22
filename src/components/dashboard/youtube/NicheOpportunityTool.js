@@ -21,6 +21,7 @@ export default function NicheOpportunityTool() {
   const [language, setLanguage] = useState('');
   const [contentFormat, setContentFormat] = useState('Both');
   const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
@@ -43,6 +44,8 @@ export default function NicheOpportunityTool() {
       setError(err.message);
     } finally {
       setLoading(false);
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -72,7 +75,7 @@ export default function NicheOpportunityTool() {
             <option>Long-form</option>
           </select>
         </div>
-        <TurnstileWidget onTokenChange={setSecurityToken} />
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button type="submit" disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)} className="w-full py-4 rounded-xl bg-slate-900 dark:bg-white dark:text-slate-900 text-white font-semibold text-sm disabled:opacity-50">
           {loading ? 'Analyzing Market...' : 'Analyze Niche Opportunity'}
         </button>

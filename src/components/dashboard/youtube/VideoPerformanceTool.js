@@ -18,6 +18,7 @@ import {
 export default function VideoPerformanceTool() {
   const [videoInput, setVideoInput] = useState('');
   const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
@@ -40,6 +41,8 @@ export default function VideoPerformanceTool() {
       setError(err.message);
     } finally {
       setLoading(false);
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -57,7 +60,7 @@ export default function VideoPerformanceTool() {
             placeholder="youtube.com/watch?v=... or shorts URL"
           />
         </div>
-        <TurnstileWidget onTokenChange={setSecurityToken} />
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button type="submit" disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)} className="w-full py-4 rounded-xl bg-slate-900 dark:bg-white dark:text-slate-900 text-white font-semibold text-sm disabled:opacity-50">
           {loading ? 'Analyzing Video...' : 'Analyze Video Performance'}
         </button>
