@@ -322,7 +322,7 @@ function ResultView({ data }) {
     return (
       <div className="space-y-3">
         <Metric title="URLs in generated sitemap" value={data.urlCount} />
-        <pre className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[10px] overflow-auto max-h-96 whitespace-pre-wrap">{data.xml}</pre>
+        <CodeBlock title="Generated sitemap XML" text={data.xml} />
         {data.note && <p className="text-[11px] text-slate-500">{data.note}</p>}
       </div>
     );
@@ -330,57 +330,155 @@ function ResultView({ data }) {
   if (data.robotsTxt) {
     return (
       <div className="space-y-3">
-        <pre className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs overflow-auto whitespace-pre-wrap">{data.robotsTxt}</pre>
-        {data.tips && <ul className="list-disc pl-4 text-xs text-slate-600 dark:text-slate-300">{data.tips.map((t) => <li key={t}>{t}</li>)}</ul>}
+        <CodeBlock title="robots.txt" text={data.robotsTxt} />
+        {data.tips?.length > 0 && <IssueList title="Tips" items={data.tips} tone="emerald" />}
       </div>
     );
   }
+
+  const critical =
+    data.critical || data.audit?.critical || data.onPage?.issues || data.onPage?.critical || data.auditSummary?.critical;
+  const warnings = data.warnings || data.audit?.warnings || data.onPage?.warnings || data.auditSummary?.warnings;
+  const passed = data.passed || data.audit?.passed || data.onPage?.passed;
 
   return (
     <div className="space-y-4">
       {data.overall != null && (
         <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Overall Score</p>
-          <p className="text-4xl font-black text-sky-600 dark:text-sky-400">{data.overall}<span className="text-base text-slate-400">/100</span></p>
+          <p className="text-4xl font-black text-sky-600 dark:text-sky-400">
+            {data.overall}
+            <span className="text-base text-slate-400">/100</span>
+          </p>
           {data.disclaimer && <p className="text-[10px] text-slate-500 mt-2">{data.disclaimer}</p>}
         </div>
       )}
-      {data.audit?.overall != null && (
+      {(data.audit?.overall != null || data.auditSummary?.overall != null) && data.overall == null && (
         <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Website SEO Score</p>
-          <p className="text-4xl font-black text-sky-600">{data.audit.overall}/100</p>
+          <p className="text-4xl font-black text-sky-600">
+            {data.audit?.overall ?? data.auditSummary?.overall}
+            <span className="text-base text-slate-400">/100</span>
+          </p>
         </div>
       )}
-      {data.scores && (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {Object.entries(data.scores).map(([k, v]) => (
-            <Metric key={k} title={k} value={v} />
-          ))}
+      {data.onPage?.score != null && (
+        <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">On-Page Score</p>
+          <p className="text-4xl font-black text-sky-600">
+            {data.onPage.score}
+            <span className="text-base text-slate-400">/100</span>
+          </p>
         </div>
       )}
-      {data.categories && (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {Object.entries(data.categories).map(([k, v]) => (
-            <Metric key={k} title={k} value={v == null ? 'N/A' : v} />
-          ))}
+
+      {data.scores && <MetricsGrid entries={data.scores} />}
+      {data.categories && <MetricsGrid entries={data.categories} />}
+      {(data.audit?.categories || data.auditSummary?.categories) && (
+        <MetricsGrid entries={data.audit?.categories || data.auditSummary?.categories} />
+      )}
+
+      {data.crawl && (
+        <div className="grid sm:grid-cols-3 gap-3">
+          <Metric title="Start URL" value={shortUrl(data.crawl.startUrl)} />
+          <Metric title="Pages analyzed" value={data.crawl.pagesAnalyzed} />
+          <Metric title="Cache" value={data.crawl.fromCache ? 'Hit' : 'Fresh'} />
         </div>
       )}
-      {data.audit?.categories && (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {Object.entries(data.audit.categories).map(([k, v]) => (
-            <Metric key={k} title={k} value={v == null ? 'N/A' : v} />
-          ))}
+
+      {data.pagesAnalyzed != null && !data.crawl && <Metric title="Pages analyzed" value={data.pagesAnalyzed} />}
+      {data.pagesChecked != null && <Metric title="Pages checked" value={data.pagesChecked} />}
+      {data.pagesScored != null && <Metric title="Pages scored" value={data.pagesScored} />}
+
+      {data.page && (
+        <InfoCard title="Page Snapshot">
+          <KeyValueList
+            entries={{
+              Title: data.page.title || '—',
+              Description: data.page.description || '—',
+              'Word count': data.page.wordCount,
+              H1: (data.page.headings?.h1 || []).join(' · ') || '—',
+              'H2 count': data.page.headings?.h2?.length ?? '—',
+              Images: data.page.imageCount,
+              'Missing alt': data.page.missingAlt,
+            }}
+          />
+        </InfoCard>
+      )}
+
+      {data.links && (
+        <div className="grid sm:grid-cols-2 gap-3">
+          <Metric title="Internal links" value={data.links.internal} />
+          <Metric title="External links" value={data.links.external} />
         </div>
       )}
-      <IssueList title="Critical Issues" items={data.critical || data.audit?.critical} tone="red" />
-      <IssueList title="Warnings" items={data.warnings || data.audit?.warnings} tone="amber" />
-      <IssueList title="Passed Checks" items={data.passed || data.audit?.passed} tone="emerald" />
+
+      {data.fetch && (
+        <InfoCard title="Fetch Status">
+          <KeyValueList
+            entries={{
+              Status: data.fetch.status,
+              OK: data.fetch.ok ? 'Yes' : 'No',
+              'Final URL': data.fetch.finalUrl,
+              'Content type': data.fetch.contentType,
+            }}
+          />
+        </InfoCard>
+      )}
+
+      <IssueList title="Critical Issues" items={critical} tone="red" />
+      <IssueList title="Warnings" items={warnings} tone="amber" />
+      <IssueList title="Passed Checks" items={passed} tone="emerald" />
+
       {data.broken && <BrokenTable rows={data.broken} />}
       {data.rows && <MetaTable rows={data.rows} />}
+      {data.duplicates && <DuplicatesBlock duplicates={data.duplicates} />}
       {data.density && <DensityBlocks density={data.density} overused={data.overused} />}
       {data.vitals && <VitalsBlock vitals={data.vitals} />}
-      {data.meta && <JsonCard title="Metadata" obj={data.meta} />}
-      {data.indexability && <JsonCard title="Indexability" obj={data.indexability} />}
+
+      {data.meta && <MetaCard meta={data.meta} />}
+      {data.indexability && <IndexabilityCard score={data.indexability} extra={data} />}
+
+      {data.orphanCandidates?.length > 0 && (
+        <IssueList title="Orphan / low-inbound candidates" items={data.orphanCandidates} tone="amber" />
+      )}
+      {data.weaklyLinked?.length > 0 && (
+        <IssueList
+          title="Weakly linked pages"
+          items={data.weaklyLinked.map((r) => `${r.url} (inbound: ${r.inbound})`)}
+          tone="amber"
+        />
+      )}
+      {data.hubPages?.length > 0 && (
+        <IssueList
+          title="Hub pages (most outbound)"
+          items={data.hubPages.map((r) => `${r.url} (outbound: ${r.outbound})`)}
+          tone="emerald"
+        />
+      )}
+      {data.weakAnchors?.length > 0 && (
+        <IssueList
+          title="Weak anchor text"
+          items={data.weakAnchors.map((r) => `"${r.anchor}" → ${r.to}`)}
+          tone="amber"
+        />
+      )}
+
+      {data.test && (
+        <InfoCard title="Robots Path Test">
+          <KeyValueList
+            entries={{
+              Path: data.test.path,
+              'User-agent': data.test.userAgent,
+              Decision: data.test.decision,
+              'robots.txt URL': data.robotsUrl,
+              Accessible: data.accessible ? 'Yes' : 'No',
+              'HTTP status': data.status,
+            }}
+          />
+        </InfoCard>
+      )}
+
       {data.revenue && (
         <div className="grid sm:grid-cols-3 gap-3">
           <Metric title="Low $/mo" value={`$${data.revenue.low}`} />
@@ -390,14 +488,21 @@ function ResultView({ data }) {
       )}
       {data.roiPercent != null && <Metric title="ROI %" value={`${data.roiPercent}%`} />}
       {data.estimatedRevenue != null && <Metric title="Estimated revenue" value={`$${data.estimatedRevenue}`} />}
-      {data.estimatedMonthlyRevenue != null && <Metric title="Est. monthly revenue" value={`$${data.estimatedMonthlyRevenue}`} />}
+      {data.estimatedMonthlyRevenue != null && (
+        <Metric title="Est. monthly revenue" value={`$${data.estimatedMonthlyRevenue}`} />
+      )}
+
       {data.ai && <AiBlock ai={data.ai} />}
-      {data.aiError && <p className="text-[11px] text-amber-600">{data.aiError}</p>}
-      {data.disclaimer && <p className="text-[11px] text-slate-500">{data.disclaimer}</p>}
+      {data.aiError && (
+        <p className="text-[11px] text-amber-600 dark:text-amber-400">{data.aiError}</p>
+      )}
+      {data.disclaimer && data.overall == null && (
+        <p className="text-[11px] text-slate-500">{data.disclaimer}</p>
+      )}
       {data.labels && (
         <p className="text-[10px] text-slate-500">
           {Object.entries(data.labels)
-            .map(([k, v]) => `${k}: ${v}`)
+            .map(([k, v]) => `${humanizeKey(k)}: ${v}`)
             .join(' · ')}
         </p>
       )}
@@ -411,7 +516,17 @@ function Metric({ title, value }) {
   return (
     <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
       <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{title}</p>
-      <p className="text-lg font-black text-slate-900 dark:text-white mt-1">{value ?? 'N/A'}</p>
+      <p className="text-lg font-black text-slate-900 dark:text-white mt-1 break-words">{formatDisplay(value)}</p>
+    </div>
+  );
+}
+
+function MetricsGrid({ entries }) {
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {Object.entries(entries).map(([k, v]) => (
+        <Metric key={k} title={humanizeKey(k)} value={v == null ? 'N/A' : v} />
+      ))}
     </div>
   );
 }
@@ -428,8 +543,8 @@ function IssueList({ title, items, tone }) {
     <div className={`p-5 rounded-2xl border bg-white dark:bg-slate-900 ${color} space-y-2`}>
       <h4 className="text-xs font-extrabold">{title}</h4>
       <ul className="list-disc pl-4 text-xs text-slate-600 dark:text-slate-300 space-y-1">
-        {items.slice(0, 25).map((i) => (
-          <li key={i}>{i}</li>
+        {items.slice(0, 25).map((i, idx) => (
+          <li key={`${String(i).slice(0, 40)}-${idx}`}>{typeof i === 'string' ? i : formatDisplay(i)}</li>
         ))}
       </ul>
     </div>
@@ -497,7 +612,7 @@ function DensityBlocks({ density, overused }) {
       <Metric title="Word count" value={density.wordCount} />
       {['oneWord', 'twoWord', 'threeWord'].map((key) => (
         <div key={key} className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-          <h4 className="text-xs font-extrabold mb-2">{key}</h4>
+          <h4 className="text-xs font-extrabold mb-2">{humanizeKey(key)}</h4>
           <ul className="text-[11px] space-y-1 text-slate-600 dark:text-slate-300">
             {(density[key] || []).slice(0, 12).map((t) => (
               <li key={t.term}>
@@ -524,23 +639,285 @@ function VitalsBlock({ vitals }) {
   );
 }
 
-function JsonCard({ title, obj }) {
+function DuplicatesBlock({ duplicates }) {
+  const titles = duplicates.titles || [];
+  const descriptions = duplicates.descriptions || [];
+  if (!titles.length && !descriptions.length) return null;
   return (
-    <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-2">
-      <h4 className="text-xs font-extrabold">{title}</h4>
-      <pre className="text-[10px] overflow-auto whitespace-pre-wrap text-slate-600 dark:text-slate-300">{JSON.stringify(obj, null, 2)}</pre>
+    <div className="space-y-3">
+      {titles.length > 0 && (
+        <IssueList
+          title="Duplicate titles"
+          items={titles.map((t) => `"${t.value}" × ${t.count}`)}
+          tone="amber"
+        />
+      )}
+      {descriptions.length > 0 && (
+        <IssueList
+          title="Duplicate meta descriptions"
+          items={descriptions.map((t) => `"${String(t.value).slice(0, 80)}…" × ${t.count}`)}
+          tone="amber"
+        />
+      )}
     </div>
   );
 }
 
-function AiBlock({ ai }) {
+function MetaCard({ meta }) {
   return (
-    <div className="p-5 rounded-2xl border border-indigo-100 dark:border-indigo-900/30 bg-indigo-50/30 dark:bg-indigo-950/10 space-y-2">
-      <div className="flex justify-between">
-        <h4 className="text-xs font-extrabold">AI Insight</h4>
-        <span className="text-[8px] font-bold uppercase text-indigo-500">Interpretation only</span>
-      </div>
-      <pre className="text-[11px] whitespace-pre-wrap text-slate-700 dark:text-slate-300">{typeof ai === 'string' ? ai : JSON.stringify(ai, null, 2)}</pre>
+    <div className="space-y-3">
+      <InfoCard title="Page Metadata">
+        <KeyValueList
+          entries={{
+            Title: meta.title || '—',
+            Description: meta.description || '—',
+            Robots: meta.robots || '—',
+            Canonical: meta.canonical || '—',
+            Language: meta.language || '—',
+            Charset: meta.charset || '—',
+            Viewport: meta.viewport || '—',
+          }}
+        />
+      </InfoCard>
+      {meta.openGraph && Object.keys(meta.openGraph).length > 0 && (
+        <InfoCard title="Open Graph Tags">
+          <KeyValueList entries={meta.openGraph} />
+        </InfoCard>
+      )}
+      {meta.twitter && Object.keys(meta.twitter).length > 0 && (
+        <InfoCard title="Twitter Card Tags">
+          <KeyValueList entries={meta.twitter} />
+        </InfoCard>
+      )}
     </div>
   );
+}
+
+function IndexabilityCard({ score, extra }) {
+  return (
+    <div className="space-y-3">
+      {score.score != null && <Metric title="Indexability score" value={`${score.score}/100`} />}
+      <InfoCard title="Indexability Signals">
+        <KeyValueList
+          entries={{
+            Canonical: extra.canonical || score.canonical || '—',
+            'Robots meta': extra.robotsMeta || score.robotsMeta || '—',
+            'X-Robots-Tag': extra.xRobotsTag || score.xRobotsTag || '—',
+            'robots.txt accessible':
+              extra.robotsTxtAccessible == null ? '—' : extra.robotsTxtAccessible ? 'Yes' : 'No',
+            Indexable: score.indexable == null ? '—' : score.indexable ? 'Likely yes' : 'Blocked / limited',
+          }}
+        />
+      </InfoCard>
+      <IssueList title="Indexability issues" items={score.issues} tone="red" />
+      <IssueList title="Indexability warnings" items={score.warnings} tone="amber" />
+      <IssueList title="Passed checks" items={score.passed} tone="emerald" />
+    </div>
+  );
+}
+
+function InfoCard({ title, children }) {
+  return (
+    <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-3">
+      <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">{title}</h4>
+      {children}
+    </div>
+  );
+}
+
+function KeyValueList({ entries }) {
+  const list = Object.entries(entries || {}).filter(([, v]) => v !== undefined);
+  if (!list.length) return <p className="text-xs text-slate-500">No data</p>;
+  return (
+    <dl className="space-y-2.5">
+      {list.map(([k, v]) => (
+        <div key={k} className="grid grid-cols-[120px_1fr] sm:grid-cols-[160px_1fr] gap-2 text-xs">
+          <dt className="font-bold text-slate-500 dark:text-slate-400">{humanizeKey(k)}</dt>
+          <dd className="text-slate-700 dark:text-slate-200 break-words leading-relaxed">{formatDisplay(v)}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function CodeBlock({ title, text }) {
+  return (
+    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 space-y-2">
+      {title && <h4 className="text-xs font-extrabold">{title}</h4>}
+      <pre className="text-[10px] overflow-auto max-h-96 whitespace-pre-wrap text-slate-600 dark:text-slate-300 font-mono">
+        {text}
+      </pre>
+    </div>
+  );
+}
+
+const AI_FIELD_ORDER = [
+  ['summary', 'Summary'],
+  ['contentQuality', 'Content Quality'],
+  ['recommendations', 'Recommendations'],
+  ['priorityFixes', 'Priority Fixes'],
+  ['fixFirst', 'Fix First'],
+  ['improveFirst', 'Improve First'],
+  ['suggestions', 'Suggestions'],
+  ['seoNotes', 'SEO Notes'],
+  ['improvements', 'Improvements'],
+  ['beginnerTips', 'Beginner Tips'],
+  ['beginnerSteps', 'Beginner Steps'],
+  ['roadmap', 'Action Roadmap'],
+];
+
+function AiBlock({ ai }) {
+  if (!ai) return null;
+  if (typeof ai === 'string') {
+    return (
+      <div className="p-5 rounded-2xl border border-indigo-100 dark:border-indigo-900/30 bg-indigo-50/30 dark:bg-indigo-950/10 space-y-2">
+        <AiHeader />
+        <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-wrap">{ai}</p>
+      </div>
+    );
+  }
+
+  const knownKeys = new Set(AI_FIELD_ORDER.map(([k]) => k));
+  const extras = Object.keys(ai).filter((k) => !knownKeys.has(k));
+
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center justify-between px-1">
+        <h3 className="text-xs font-extrabold text-slate-900 dark:text-white">AI Insight</h3>
+        <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/30 text-indigo-500">
+          Interpretation only
+        </span>
+      </div>
+
+      {AI_FIELD_ORDER.map(([key, label]) => {
+        const value = ai[key];
+        if (value == null || value === '') return null;
+        if (key === 'roadmap' && Array.isArray(value)) {
+          return <RoadmapList key={key} items={value} />;
+        }
+        return (
+          <InsightCard key={key} title={label}>
+            <ListOrText value={value} />
+          </InsightCard>
+        );
+      })}
+
+      {extras.map((key) => (
+        <InsightCard key={key} title={humanizeKey(key)}>
+          <ListOrText value={ai[key]} />
+        </InsightCard>
+      ))}
+    </div>
+  );
+}
+
+function AiHeader() {
+  return (
+    <div className="flex justify-between items-center">
+      <h4 className="text-xs font-extrabold">AI Insight</h4>
+      <span className="text-[8px] font-bold uppercase text-indigo-500">Interpretation only</span>
+    </div>
+  );
+}
+
+function InsightCard({ title, children }) {
+  return (
+    <div className="p-5 rounded-2xl border border-indigo-100 dark:border-indigo-900/30 bg-indigo-50/30 dark:bg-indigo-950/10 space-y-2">
+      <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">{title}</h4>
+      <div className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">{children}</div>
+    </div>
+  );
+}
+
+function RoadmapList({ items }) {
+  return (
+    <div className="p-5 rounded-2xl border border-indigo-100 dark:border-indigo-900/30 bg-indigo-50/30 dark:bg-indigo-950/10 space-y-3">
+      <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">Action Roadmap</h4>
+      <div className="space-y-2">
+        {items.map((item, i) => (
+          <div
+            key={i}
+            className="p-3 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 space-y-1"
+          >
+            <div className="flex flex-wrap gap-2 text-[9px] font-bold uppercase tracking-wider">
+              {item.priority && (
+                <span className="px-1.5 py-0.5 rounded bg-sky-100 dark:bg-sky-950/40 text-sky-700 dark:text-sky-300">
+                  {item.priority}
+                </span>
+              )}
+              {item.impact && (
+                <span className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                  Impact: {item.impact}
+                </span>
+              )}
+              {item.urgency && (
+                <span className="px-1.5 py-0.5 rounded bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300">
+                  {item.urgency}
+                </span>
+              )}
+            </div>
+            <p className="text-xs font-bold text-slate-900 dark:text-white">{item.task || item.title || 'Task'}</p>
+            {item.why && <p className="text-[11px] text-slate-500 leading-relaxed">{item.why}</p>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ListOrText({ value }) {
+  if (Array.isArray(value)) {
+    if (!value.length) return <p>—</p>;
+    return (
+      <ul className="list-disc pl-4 space-y-1">
+        {value.map((item, i) => (
+          <li key={i}>{typeof item === 'string' ? item : formatDisplay(item)}</li>
+        ))}
+      </ul>
+    );
+  }
+  if (value && typeof value === 'object') {
+    return <KeyValueList entries={value} />;
+  }
+  return <p className="whitespace-pre-wrap">{value || '—'}</p>;
+}
+
+function humanizeKey(key) {
+  return String(key)
+    .replace(/([a-z])([A-Z])/g, '$1 $2')
+    .replace(/[_-]+/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+function formatDisplay(value) {
+  if (value == null || value === '') return '—';
+  if (typeof value === 'boolean') return value ? 'Yes' : 'No';
+  if (typeof value === 'number') return value;
+  if (typeof value === 'string') return value;
+  if (Array.isArray(value)) {
+    if (!value.length) return '—';
+    if (value.every((v) => typeof v === 'string' || typeof v === 'number')) return value.join(', ');
+    return value.map((v) => (typeof v === 'string' ? v : v?.task || v?.url || humanReadableObject(v))).join(' · ');
+  }
+  return humanReadableObject(value);
+}
+
+function humanReadableObject(obj) {
+  if (!obj || typeof obj !== 'object') return String(obj);
+  const preferred = obj.task || obj.title || obj.url || obj.name || obj.message || obj.label;
+  if (preferred) return preferred;
+  return Object.entries(obj)
+    .slice(0, 4)
+    .map(([k, v]) => `${humanizeKey(k)}: ${typeof v === 'object' ? '…' : v}`)
+    .join(' · ');
+}
+
+function shortUrl(url) {
+  if (!url) return '—';
+  try {
+    const u = new URL(url);
+    return u.hostname + (u.pathname === '/' ? '' : u.pathname);
+  } catch {
+    return url;
+  }
 }
