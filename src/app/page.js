@@ -6,8 +6,26 @@ import TrustAnalytics from '../components/sections/TrustAnalytics';
 import FAQSection from '../components/sections/FAQSection';
 
 export const metadata = {
-  title: 'ZetaWala | E-Commerce SEO & Video Automation Systems',
-  description: 'Boost watch time and shop sales. Leverage optimized pipelines to hunt profitable products, extract Roman Urdu search volume tags, and write video script hooks.',
+  title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',
+  description:
+    'Zetawala offers free AI tools for YouTube automation, Daraz SEO, WhatsApp social commerce, and SEO webmaster audits—titles, scripts, niche research, PageSpeed, and more.',
+  alternates: {
+    canonical: 'https://zetawala.com/',
+  },
+  openGraph: {
+    title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',
+    description:
+      'Free AI tools for YouTube creators, Daraz sellers, WhatsApp marketers, and website owners—research, audit, and create faster with Zetawala.',
+    url: 'https://zetawala.com/',
+    siteName: 'Zetawala',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',
+    description:
+      'YouTube automation, Daraz SEO, WhatsApp commerce, and SEO webmaster tools—free on Zetawala.',
+  },
 };
 
 export default function HomePage() {

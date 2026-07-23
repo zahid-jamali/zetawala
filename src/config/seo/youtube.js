@@ -1,195 +1,219 @@
 export const youtubeSeoData = {
   "niche-finder": {
-    title: "YouTube Niche Finder & Recommender",
+    title: "Free YouTube Niche Finder – Find the Best YouTube Niche | Zetawala",
     description:
-      "Zetawala's YouTube Niche Finder is a data-driven discovery workflow—not a prompt box. It builds candidate niches from your interests and skills, samples public YouTube results, calculates opportunity and fit scores, then uses AI only to interpret those metrics. Official search volume is not fabricated; unavailable metrics are labeled N/A.",
+      "Looking for a free YouTube niche finder? Zetawala helps you discover the best YouTube niche for your skills, interests, and goals in minutes. Get data-backed niche ideas with opportunity and fit scores from real public YouTube signals—not invented search volume. Start free and pick a profitable direction before you film a single video.",
     example: {
       input: "Interests: personal finance, habits | Skills: research, narration | Country: Pakistan | Faceless | Goal: Make money",
       output: "Top niche: 'Pakistan Money Habits Explained' · Fit Score 78/100 · Demand proxy 72 · Competition 54 · First video ideas grounded in sample patterns",
     },
     faqs: [
       {
-        q: "Does this tool invent search volume?",
-        a: "No. YouTube Data API does not provide keyword search volume. Zetawala uses view/competition proxies and labels unavailable metrics as N/A.",
+        q: "Is there a free YouTube niche finder?",
+        a: "Yes. Zetawala's free YouTube niche finder builds candidate niches from your interests and skills, samples public YouTube results, and scores opportunity and fit—so you can find the best YouTube niche without paying for expensive research tools.",
       },
       {
-        q: "Is the Fit Score an official YouTube metric?",
-        a: "No. It is a Zetawala Score combining sampled public performance signals with your creator profile fit.",
+        q: "How do I find the best YouTube niche for beginners?",
+        a: "Start with what you can create consistently, then validate demand and competition. Zetawala's YouTube niche finder combines your creator profile with public performance signals so beginners can choose a niche that fits skills and audience potential.",
       },
       {
-        q: "Who should use Niche Finder?",
-        a: "New creators choosing a first niche, and existing creators exploring adjacent niches before investing in content production.",
+        q: "Does this YouTube niche finder invent search volume?",
+        a: "No. YouTube's API does not provide keyword search volume. Zetawala uses view and competition proxies from public data and labels unavailable metrics as N/A—so scores stay honest.",
       },
       {
-        q: "What happens after I pick a niche?",
-        a: "Validate it with Niche Opportunity Analyzer, estimate earnings with Revenue Calculator, then move into Video Idea Generator and the content creation pipeline.",
+        q: "What is a Fit Score in a YouTube niche finder?",
+        a: "Fit Score is a Zetawala Score that blends sampled public performance signals with how well a niche matches your interests, skills, and format (e.g. faceless). It is not an official YouTube metric.",
       },
       {
-        q: "Why is AI used at all?",
-        a: "AI interprets calculated metrics and personalizes recommendations. It is not allowed to invent statistics that were not computed from public data.",
+        q: "Who should use a free YouTube niche finder?",
+        a: "New creators choosing a first niche, and existing creators exploring adjacent topics before investing in production. Use Zetawala Niche Finder first, then validate with Niche Opportunity Analyzer.",
+      },
+      {
+        q: "What should I do after I find a YouTube niche?",
+        a: "Validate it with Zetawala Niche Opportunity Analyzer, estimate earnings with YouTube Revenue Calculator, then generate topics with Video Ideas Generator and move into titles, hooks, and scripts.",
       },
     ],
   },
   "niche-opportunity": {
-    title: "YouTube Niche Opportunity Analyzer",
+    title: "YouTube Niche Analyzer – Validate Your Niche Opportunity | Zetawala",
     description:
-      "Validate a specific niche by searching YouTube, sampling relevant videos and channels, calculating median/average performance, competition density, content-gap proxies, and a deterministic Opportunity Score with a clear verdict threshold.",
+      "Use Zetawala's free YouTube niche analyzer to validate a specific niche before you commit. We search YouTube, sample relevant videos and channels, and calculate demand, competition, content-gap proxies, and a clear Opportunity Score with a verdict. Know whether to enter, pivot, or double down—with transparent metrics, not guesswork.",
     example: {
       input: "Niche: 'Faceless History Documentaries' | Format: Long-form",
       output: "Opportunity Score 67 · Verdict: Strong Opportunity · Median views (sample): 18.4K · Competition: Medium-High",
     },
     faqs: [
       {
+        q: "How do I validate a YouTube niche before starting a channel?",
+        a: "Check demand, competition density, and content gaps with a YouTube niche analyzer. Zetawala samples public videos and channels, then returns a deterministic Opportunity Score and verdict so you can validate the niche before filming.",
+      },
+      {
         q: "How is the Opportunity Score calculated?",
-        a: "Deterministically from weighted demand, competition, content gap, monetization proxy, growth proxy, and entry difficulty. AI does not set the score.",
+        a: "Zetawala calculates it deterministically from weighted demand, competition, content gap, monetization proxy, growth proxy, and entry difficulty. AI interprets results—it does not invent the score.",
       },
       {
-        q: "Why use median views?",
-        a: "Medians reduce distortion from a few viral outliers so your niche read is more realistic.",
+        q: "Why does a YouTube niche analyzer use median views?",
+        a: "Medians reduce distortion from a few viral outliers, so your niche read is more realistic than chasing one lucky hit. That helps you validate niches you can actually compete in.",
       },
       {
-        q: "Can a high score guarantee success?",
-        a: "No. It estimates market conditions from a public sample. Execution, packaging, and consistency still matter.",
+        q: "Can a high niche opportunity score guarantee success?",
+        a: "No. A YouTube niche analyzer estimates market conditions from a public sample. Execution, packaging, thumbnails, and consistency still decide results. Zetawala gives you a clearer starting signal—not a guarantee.",
       },
       {
-        q: "What if YouTube returns few results?",
-        a: "The tool reports insufficient data rather than inventing a market. Try a clearer niche phrase.",
+        q: "What if YouTube returns few results for my niche?",
+        a: "Zetawala reports insufficient data rather than inventing a market. Try a clearer niche phrase, or go back to Niche Finder for broader ideas that still match your skills.",
       },
       {
-        q: "What should I do next?",
-        a: "Estimate revenue potential, audit competitor channels with Channel Health Analyzer, then generate content with the YouTube Automation pipeline.",
+        q: "What tools should I use after validating a niche?",
+        a: "Estimate earnings with YouTube Revenue Calculator, audit competitors with Channel Health Analyzer, then build your calendar with Video Ideas Generator and the Zetawala content pipeline.",
       },
     ],
   },
   "channel-health": {
-    title: "YouTube Channel Health Analyzer",
+    title: "YouTube Channel Analyzer – Free Channel Health Score | Zetawala",
     description:
-      "Paste a channel URL or @handle to analyze recent uploads, consistency, engagement, momentum, top vs underperforming videos, and a Zetawala Channel Health Score—clearly labeled as an analytical estimate, not an official YouTube metric.",
+      "Paste a channel URL or @handle into Zetawala's free YouTube channel analyzer and get a clear Channel Health Score. We review recent uploads, consistency, engagement, momentum, and top vs underperforming videos—so you know what to fix next. Scores are analytical estimates from public data, not official YouTube Studio metrics.",
     example: {
       input: "https://youtube.com/@example · Last 20 videos",
       output: "Health Score 71 · Momentum 1.3× · Median views 9.2K · Consistency strong · Recommendations tied to measured gaps",
     },
     faqs: [
       {
-        q: "Is Channel Health Score official?",
-        a: "No. It is a Zetawala analytical estimate from publicly available YouTube data.",
+        q: "What is a YouTube channel health score?",
+        a: "A Channel Health Score is Zetawala's analytical estimate of consistency, engagement, and momentum from publicly available uploads. It is not an official YouTube metric—but it makes channel weaknesses easier to act on.",
       },
       {
-        q: "How many videos are analyzed?",
-        a: "By default the last 20 uploads (configurable to 10 or 30) to protect API quota while staying useful.",
+        q: "Is there a free YouTube channel analyzer?",
+        a: "Yes. Zetawala's free YouTube channel analyzer audits a public channel URL or @handle and returns a health score plus recommendations tied to measured gaps in your recent uploads.",
       },
       {
-        q: "Can it read YouTube Studio private analytics?",
-        a: "No. Only public Data API fields are used unless you later connect OAuth (not required for this tool).",
+        q: "How many videos does the channel analyzer review?",
+        a: "By default Zetawala analyzes the last 20 uploads (configurable to 10 or 30) to balance API quota with a useful read of channel health and momentum.",
       },
       {
-        q: "What is momentum ratio?",
-        a: "A Zetawala Calculation comparing recent median views to older median views in the sampled window.",
+        q: "Can a YouTube channel analyzer read YouTube Studio private analytics?",
+        a: "No. Channel Health Analyzer uses public Data API fields only. You get actionable public-signal insights without connecting Studio—ideal for competitor audits and quick self-checks.",
       },
       {
-        q: "What is the next step after a channel audit?",
-        a: "Open Video Performance Analyzer on a top or weak video, then use Title/Hook/Script tools to improve the next upload.",
+        q: "What is momentum ratio in channel health analysis?",
+        a: "Momentum is a Zetawala Calculation comparing recent median views to older median views in the sampled window. Rising momentum often means your packaging or topics are improving.",
+      },
+      {
+        q: "What should I do after a YouTube channel health audit?",
+        a: "Open Video Performance Analyzer on a top or weak video, then improve the next upload with Title Generator, Hook Architect, and Script Master on Zetawala.",
       },
     ],
   },
   "video-performance": {
-    title: "YouTube Video Performance Analyzer",
+    title: "YouTube Video Analyzer – Performance Score & Insights | Zetawala",
     description:
-      "Analyze one video against its channel baseline: relative views, engagement rates, views-per-subscriber, performance score, caveats for brand-new uploads, and AI next-video opportunities grounded in observed data.",
+      "Analyze any public video with Zetawala's free YouTube video analyzer. Compare views and engagement to the channel baseline, get a performance score, and uncover follow-up opportunities grounded in what actually worked. Perfect for diagnosing hits, fixing underperformers, and planning the next upload with data—not guesswork.",
     example: {
       input: "https://youtube.com/watch?v=VIDEO_ID",
       output: "Performance Score 64 · 1.4× channel median · Engagement 3.1% · 7 follow-up ideas tied to what worked",
     },
     faqs: [
       {
-        q: "Why compare to channel median?",
-        a: "Absolute view counts mislead across channel sizes. Relative performance shows whether this video beat the channel's typical outcome.",
+        q: "How does a YouTube video analyzer work?",
+        a: "Zetawala's YouTube video analyzer pulls public metrics for one video, compares them to the channel baseline (relative views, engagement, views-per-subscriber), and returns a performance score plus next-video ideas grounded in observed patterns.",
       },
       {
-        q: "What about brand-new videos?",
-        a: "Videos under ~2 days get a caveat and tempered score because early views are not comparable to older uploads.",
+        q: "Why compare a video to the channel median?",
+        a: "Absolute view counts mislead across channel sizes. Relative performance shows whether this upload beat your typical outcome—exactly what a useful YouTube video analyzer should highlight.",
       },
       {
-        q: "Are next video ideas random?",
-        a: "No. AI suggestions must reference observed patterns from the analyzed video and channel baseline.",
+        q: "Can I analyze brand-new YouTube videos?",
+        a: "Yes, but videos under ~2 days get a caveat and tempered score because early views are not comparable to older uploads. Zetawala is transparent about that limitation.",
       },
       {
         q: "Does this replace YouTube Analytics?",
-        a: "No. It complements public metrics with Zetawala scoring and workflow links into content tools.",
+        a: "No. Zetawala complements public metrics with scoring and workflow links into content tools. Use Studio for private retention graphs; use this YouTube video analyzer for fast public diagnosis and idea generation.",
       },
       {
-        q: "What tools should I open next?",
-        a: "Video Idea Generator, Title Copywriter, Retention Hook, and Script Writer to act on the diagnosis.",
+        q: "Are next video ideas random?",
+        a: "No. AI suggestions on Zetawala must reference observed patterns from the analyzed video and channel baseline—so follow-ups stay tied to what already earned attention.",
+      },
+      {
+        q: "What tools should I open after analyzing a video?",
+        a: "Use Video Ideas Generator for related topics, Title Generator and Hook Architect for packaging, then Script Master to write the next retention-focused script.",
       },
     ],
   },
   "revenue-calculator": {
-    title: "YouTube Revenue Calculator",
+    title: "YouTube Revenue Calculator – How Much Does YouTube Pay? | Zetawala",
     description:
-      "A deterministic earnings estimator using Views/1000×RPM with low, typical, and high scenarios. Works without YouTube API or DeepSeek. Estimated RPM bands are labeled as estimates—not official YouTube payouts.",
+      "Wondering how much YouTube pays? Zetawala's free YouTube revenue calculator estimates earnings with Views ÷ 1000 × RPM across low, typical, and high scenarios. Model monthly income by niche, format, and region—without an API key. Estimates are illustrative ranges, not official payouts, so you plan realistically.",
     example: {
       input: "Monthly views: 100,000 · Long-form · South Asia · Education · Estimated RPM",
-      output: "Typical monthly estimate range with low/typical/high scenarios and listed assumptions",
+      output: "Typical monthly estimate: low / typical / high range with assumptions listed (views, RPM band, niche, region)",
     },
     faqs: [
       {
-        q: "Is this revenue guaranteed?",
-        a: "No. Estimates are illustrative. Actual earnings vary by geography, niche, ad demand, seasonality, and monetization status.",
+        q: "How much does YouTube pay per 1,000 views?",
+        a: "It depends on RPM (revenue per mille), which varies by niche, geography, ad demand, and seasonality. Zetawala's YouTube revenue calculator models low, typical, and high RPM bands so you see a realistic range—not a fake single number.",
       },
       {
-        q: "Do I need a YouTube API key for this tool?",
-        a: "No. The calculator is fully deterministic and runs without YouTube or DeepSeek.",
+        q: "Is there a free YouTube revenue calculator?",
+        a: "Yes. Zetawala's free YouTube revenue calculator runs entirely in your browser logic—no YouTube API or AI required—so you can estimate earnings from monthly views in seconds.",
       },
       {
-        q: "What is RPM?",
-        a: "Revenue per mille—estimated earnings per 1,000 views after YouTube's share, used here as a modeling input.",
+        q: "Is YouTube revenue guaranteed by this calculator?",
+        a: "No. Estimates are illustrative. Actual earnings vary by monetization status, geography, niche CPM, and ad fill. Zetawala labels RPM bands as estimates so planning stays honest.",
       },
       {
-        q: "Why show low/typical/high?",
-        a: "A single point estimate is misleading. Ranges communicate uncertainty honestly.",
+        q: "What is RPM on YouTube?",
+        a: "RPM means revenue per mille—estimated earnings per 1,000 views after YouTube's share. The YouTube revenue calculator uses RPM as a modeling input for low/typical/high scenarios.",
       },
       {
-        q: "How does this connect to other tools?",
-        a: "Use Niche Opportunity Analyzer before estimating, then Channel Health Analyzer to sanity-check whether your real channel can reach those view levels.",
+        q: "Why show low, typical, and high revenue scenarios?",
+        a: "A single point estimate is misleading. Ranges communicate uncertainty honestly and help creators plan content and niches with clearer upside and downside cases.",
+      },
+      {
+        q: "How does this connect to other Zetawala tools?",
+        a: "Validate the niche with Niche Opportunity Analyzer first, estimate with the YouTube revenue calculator, then sanity-check reachable views with Channel Health Analyzer before you scale production.",
       },
     ],
   },
   "video-ideas": {
-    title: "YouTube Video Idea Generator",
+    title: "YouTube Video Ideas Generator – Free Topic Ideas | Zetawala",
     description:
-      "Unlock exponential channel growth and dominate your niche with our AI-powered YouTube Video Idea Generator. This advanced SEO tool meticulously analyzes trending search volumes, competitor content gaps, long-tail keyword opportunities, and audience retention metrics to deliver highly searchable, high-CTR video topics. Perfect for content creators, marketers, and brands looking to overcome writer's block, build a profitable content calendar, and leverage data-backed concepts to conquer YouTube search engine rankings and trigger homepage recommendations.",
+      "Beat creative block with Zetawala's free YouTube video ideas generator. Get searchable, high-CTR topic ideas tailored to your niche—built for content calendars, evergreen series, and trend-aware uploads. Whether you need viral angles or steady organic traffic, generate YouTube video ideas that match audience intent and channel goals.",
     example: {
       input: "Niche: 'Pakistan Local E-Commerce Sourcing'",
       output:
-        "1. 'I Spent Rs. 50,000 on Daraz Wholesale: Unboxing the Secrets'\n2. 'Top 10 High-Margin Products to Source from Shah Alami Market (2024)'\n3. 'How to Start a Shopify Store in Pakistan with Zero Capital [Step-by-Step]'",
+        "1. 'I Spent Rs. 50,000 on Daraz Wholesale: Unboxing the Secrets'\n2. 'Top 10 High-Margin Products to Source from Shah Alami Market'\n3. 'How to Start a Shopify Store in Pakistan with Zero Capital [Step-by-Step]'",
     },
     faqs: [
       {
-        q: "How does the YouTube Video Idea Generator find viral topics?",
-        a: "Our tool utilizes high-performing keyword clusters, user search intent analysis, and competitor gap tracking to generate proven, engaging content hooks. It cross-references current search trends with historically successful video frameworks tailored specifically to your channel's niche.",
+        q: "Is there a free YouTube video ideas generator?",
+        a: "Yes. Zetawala's free YouTube video ideas generator turns your niche into ready-to-film topic lists—so creators, marketers, and brands can fill a content calendar without staring at a blank page.",
       },
       {
-        q: "Why is having unique video ideas important for YouTube SEO?",
-        a: "The YouTube algorithm heavily prioritizes audience satisfaction and click-through rates (CTR). Unique, high-intent concepts naturally improve viewer click behavior, extend watch time metrics, and signal the algorithm to push your content to a broader audience via the 'Suggested Videos' feed.",
+        q: "How does a YouTube video ideas generator find good topics?",
+        a: "Zetawala combines niche context, search-style angles, and proven video frameworks (lists, how-tos, experiments, breakdowns) to suggest topics people actually look for—then you refine packaging with Title Generator and Hook Architect.",
       },
       {
-        q: "Can this tool help generate evergreen YouTube content?",
-        a: "Yes. While it identifies trending and viral topics, it also pinpoints high-volume, low-competition evergreen search queries. Evergreen content ensures your channel receives consistent, passive organic traffic for years after the video is published.",
+        q: "Can this tool generate evergreen YouTube video ideas?",
+        a: "Yes. Alongside timely angles, the YouTube video ideas generator surfaces evergreen how-to and explainer concepts that can earn organic search traffic long after publish day.",
       },
       {
-        q: "How do targeted video topics affect YouTube channel monetization?",
-        a: "Creating videos around high-CPM (Cost Per Mille) niches and highly targeted commercial search queries attracts premium advertisers. This increases your overall ad revenue and opens doors for lucrative brand sponsorships and affiliate marketing opportunities.",
+        q: "Why do unique video ideas matter for YouTube SEO?",
+        a: "Fresh, intent-matched topics improve CTR and watch time when packaging is strong. Better satisfaction signals help videos earn suggested and browse traffic—not just one-off uploads.",
       },
       {
-        q: "What is the difference between high search volume and high-CTR video ideas?",
-        a: "High search volume indicates that many people are looking for a topic, while a high-CTR idea is packaged with a compelling psychological hook that forces users to click. Our generator combines both, giving you topics that have high demand and immense clickability.",
+        q: "How do video topics affect YouTube monetization?",
+        a: "Topics in higher-CPM niches and commercial search intent can attract better ads and sponsorships. Pair Zetawala Video Ideas with Revenue Calculator to sanity-check upside before you commit to a series.",
+      },
+      {
+        q: "What should I do after generating YouTube video ideas?",
+        a: "Pick a winner, then use Title Generator for high-CTR titles, Description Builder for SEO copy, Tags Extractor for metadata, and Script Master to write the full video.",
       },
     ],
   },
   "title-generator": {
-    title: "YouTube Title Copywriter & Optimizer",
+    title: "YouTube Title Generator – Free High CTR Titles | Zetawala",
     description:
-      "Maximize your video click-through rate (CTR) and search visibility with our advanced YouTube Title Generator. A great video is useless if nobody clicks on it. Our tool crafts highly clickable, SEO-optimized titles that perfectly balance human psychological curiosity with algorithm-friendly target keywords. Drive massive organic views, increase your browse feature traffic, and dominate the SERPs (Search Engine Results Pages) without resorting to negative or misleading clickbait.",
+      "Need a free YouTube title generator that actually aims for high CTR? Zetawala crafts clickable, keyword-aware titles that balance curiosity with honest promises—so you win search and browse without toxic clickbait. Generate high CTR YouTube titles in seconds, then A/B test packaging to grow impressions and views.",
     example: {
       input: "Topic: 'Daraz Product Sourcing' | Niche: 'E-commerce'",
       output:
@@ -197,31 +221,35 @@ export const youtubeSeoData = {
     },
     faqs: [
       {
-        q: "What makes a YouTube title rank higher in search results?",
-        a: "A high-ranking YouTube title places primary target keywords near the beginning of the text string (front-loading) while utilizing action-oriented, emotional trigger words (like 'Secret', 'Exposed', or 'Free') to entice natural click interactions from human viewers.",
+        q: "Is there a free YouTube title generator?",
+        a: "Yes. Zetawala's free YouTube title generator creates high CTR title options from your topic and niche—optimized for curiosity, clarity, and primary keywords without misleading clickbait.",
       },
       {
-        q: "Should I change my YouTube titles after publishing a video?",
-        a: "Absolutely. If a video generates high impressions but suffers from a low CTR (typically below 4-5%), updating the title and thumbnail is known as A/B testing. This can instantly trigger the YouTube algorithm to re-evaluate and boost your video's visibility.",
+        q: "What makes a YouTube title get more clicks (high CTR)?",
+        a: "Front-load the primary keyword, add a clear benefit or curiosity gap, and keep claims deliverable. Zetawala's YouTube title generator is built to balance SEO keywords with human click psychology for higher CTR.",
       },
       {
-        q: "What is the optimal length for a YouTube video title in 2024?",
-        a: "The ideal length for a YouTube title is between 50 and 60 characters. Keeping your title within this limit ensures it does not get truncated (cut off) on mobile devices or in the suggested videos sidebar, maximizing readability and CTR.",
+        q: "Should I change YouTube titles after publishing?",
+        a: "Yes—if impressions are high but CTR is low (often under ~4–5%), rewrite the title and refresh the thumbnail. A/B testing packaging with Zetawala Title Generator ideas can revive a video's distribution.",
       },
       {
-        q: "How does the title generator balance SEO keywords and clickbait?",
-        a: "Our tool is programmed to avoid 'toxic clickbait' (misleading claims). Instead, it uses 'curiosity gaps'—promising valuable information and delivering it. It naturally weaves exact-match keywords into compelling narrative structures to satisfy both the algorithm and the viewer.",
+        q: "What is the best length for a YouTube video title?",
+        a: "Aim for roughly 50–60 characters so titles stay readable on mobile and in suggested sidebars. The YouTube title generator helps you stay concise while keeping the primary keyword visible.",
       },
       {
-        q: "Can an optimized YouTube title actually increase audience retention?",
-        a: "Yes. A highly optimized, accurate title sets the correct viewer expectation. When the video content perfectly matches the promise made in the title, viewers are less likely to click away, leading to higher Average View Duration (AVD).",
+        q: "How do I write YouTube titles without toxic clickbait?",
+        a: "Use curiosity gaps that your video actually fulfills. Zetawala avoids false claims and focuses on high CTR phrasing that matches content—better for retention and long-term channel trust.",
+      },
+      {
+        q: "What tools pair with a YouTube title generator?",
+        a: "After titles, use Hook Architect for the first 30 seconds, Thumbnail Prompt for Midjourney-ready visuals, Description Builder for SEO descriptions, and Tags Extractor for YouTube tags.",
       },
     ],
   },
   "hook-architect": {
-    title: "Audience Retention Hook Architect",
+    title: "YouTube Hook Generator – First 30 Seconds Scripts | Zetawala",
     description:
-      "Stop viewers from scrolling away instantly. The Audience Retention Hook Architect is designed to draft high-impact, psychologically driven spoken narratives that captivate your audience in the critical first 15 to 30 seconds. By establishing an immediate pattern interrupt and promising extreme value, this tool drastically reduces early drop-off rates, skyrockets your Average View Duration (AVD), and provides the strong engagement signals the YouTube algorithm requires to make your video go viral.",
+      "Stop early drop-off with Zetawala's free YouTube hook generator. Write powerful spoken intros for the critical first 30 seconds—pattern interrupts, stakes, and value promises that keep viewers watching. Strong hooks lift average view duration and give the algorithm the retention signals your video needs to grow.",
     example: {
       input: "Video Topic: 'How I built a Shopify brand in 30 days'",
       output:
@@ -229,159 +257,179 @@ export const youtubeSeoData = {
     },
     faqs: [
       {
-        q: "Why are the first 30 seconds of a YouTube video so crucial for SEO?",
-        a: "YouTube analytics prove that the most significant viewer drop-off occurs within the first 30 seconds. Securing a strong retention hook directly increases your overall watch time, which is the number one ranking factor for YouTube's recommendation engine.",
+        q: "Is there a free YouTube hook generator?",
+        a: "Yes. Zetawala's free YouTube hook generator drafts spoken intros designed for the first 30 seconds—so you open with clarity, stakes, and a reason to stay instead of a slow channel intro.",
       },
       {
-        q: "What elements make a highly effective YouTube video hook?",
-        a: "A professional video hook must instantly state a high-stakes problem, tease a guaranteed resolution, and offer immediate visual or verbal social proof—all delivered concisely before the viewer has a chance to lose interest.",
+        q: "Why are the first 30 seconds of a YouTube video so important?",
+        a: "Most drop-off happens early. A strong first 30 seconds improves watch time and retention, which are core signals for recommendations. That is exactly what a YouTube hook generator should optimize for.",
       },
       {
-        q: "Can I use the Hook Architect for YouTube Shorts and TikTok?",
-        a: "Yes! Short-form content relies entirely on the first 3 seconds to prevent the user from scrolling. The Hook Architect generates punchy, high-energy intros perfectly suited for the fast-paced nature of YouTube Shorts, Instagram Reels, and TikTok.",
+        q: "What makes an effective YouTube video hook?",
+        a: "State a high-stakes problem, tease a clear payoff, and prove you can deliver—fast. Zetawala Hook Architect structures that pattern so your open feels intentional, not rambling.",
       },
       {
-        q: "How do retention hooks affect YouTube algorithm recommendations?",
-        a: "The algorithm rewards videos that keep users on the platform longer. A strong hook prevents 'bouncing.' If your video retains 70% or more of its audience past the one-minute mark, YouTube will aggressively promote it on the homepage.",
+        q: "Can I use a YouTube hook generator for Shorts?",
+        a: "Yes. Shorts need a punchy open in the first few seconds. Use Zetawala's YouTube hook generator for long-form first-30-second scripts and tighten the same angles for Shorts, Reels, and TikTok.",
       },
       {
-        q: "Should I introduce myself in the video hook?",
-        a: "No. Long, drawn-out channel intros kill retention. Modern YouTube SEO dictates that you should deliver the core value proposition first (the hook), and seamlessly weave your channel branding or introduction in later after the viewer is invested.",
+        q: "Should I introduce myself in the first 30 seconds?",
+        a: "Usually no. Long intros kill retention. Deliver the hook and value promise first, then weave branding in after viewers are invested—Zetawala scripts follow that modern retention approach.",
+      },
+      {
+        q: "What comes after writing a YouTube hook?",
+        a: "Expand the full narrative with Script Master, pair packaging with Title Generator and Thumbnail Prompt, then add SEO description and tags with Description Builder and Tags Extractor.",
       },
     ],
   },
   "description-builder": {
-    title: "SEO Description Writer",
+    title: "YouTube Description Generator – Free SEO Descriptions | Zetawala",
     description:
-      "Generate search-console compliant metadata effortlessly with our YouTube SEO Description Writer. The description box is a massively underutilized SEO asset. Create perfectly structured, long-form descriptions packed with semantic LSI keywords, interactive timestamp chapters, authoritative external links, and strategic call-to-actions (CTAs). Maximize your search visibility on both YouTube's internal search engine and Google Video search results, driving sustained organic traffic and boosting affiliate conversions.",
+      "Write stronger metadata with Zetawala's free YouTube description generator. Build SEO descriptions packed with primary keywords, timestamp chapters, links, and CTAs—optimized for YouTube search and Google Video results. Stop leaving the description box empty; turn it into a ranking and conversion asset in minutes.",
     example: {
       input: "Title: 'Shah Alami Market Sourcing Guide'",
       output:
-        "Description: 'In this complete guide, we explore the best wholesale products in Shah Alami Market Lahore for e-commerce sellers... \n\n🕒 Chapters:\n0:00 - The Reality of Local Sourcing\n1:20 - Best Shops for Electronic Goods\n4:00 - Negotiation Secrets for Wholesalers...'",
+        "Description: 'In this complete guide, we explore the best wholesale products in Shah Alami Market Lahore for e-commerce sellers...\n\n🕒 Chapters:\n0:00 - The Reality of Local Sourcing\n1:20 - Best Shops for Electronic Goods\n4:00 - Negotiation Secrets for Wholesalers...'",
     },
     faqs: [
       {
-        q: "What is the ideal length for an SEO-optimized YouTube description?",
-        a: "An optimized description should be between 250 and 500 words. The critical first three lines (roughly 150 characters) must contain your primary search keywords naturally, as this text displays above the 'Show More' fold in search results.",
+        q: "Is there a free YouTube description generator?",
+        a: "Yes. Zetawala's free YouTube description generator creates SEO descriptions with keyword-rich intros, chapter ideas, and CTAs—so your metadata works as hard as your title and thumbnail.",
       },
       {
-        q: "Do video timestamps help with Google search rankings?",
-        a: "Absolutely. Timestamp chapters act as localized metadata. They allow Google Search to index specific key moments within your video, displaying them as interactive 'rich snippets' directly in the main Google Search Engine Results Pages (SERPs).",
+        q: "How long should a YouTube SEO description be?",
+        a: "Aim for about 250–500 words when useful. Put primary keywords in the first ~150 characters (above 'Show more'). Zetawala Description Builder structures that fold-first SEO description for you.",
       },
       {
-        q: "How many hashtags should I include in a YouTube description?",
-        a: "YouTube allows up to 15 hashtags, but using 3 to 5 highly relevant, broad-niche hashtags is the SEO best practice. Overstuffing hashtags can trigger spam filters and actually harm your video's search ranking.",
+        q: "Do timestamps help YouTube and Google rankings?",
+        a: "Timestamps improve usability and can surface key moments in search. A YouTube description generator that includes chapter-style lines helps viewers jump ahead and helps platforms understand your outline.",
       },
       {
-        q: "Where should I place my primary target keywords in the description?",
-        a: "Primary keywords should appear in the very first sentence. Secondary and long-tail keywords should be naturally sprinkled throughout the descriptive paragraphs and cleverly integrated into your timestamp chapter titles.",
+        q: "Where should I place keywords in a YouTube description?",
+        a: "Put the primary keyword in the first sentence, then weave secondary and long-tail phrases naturally into paragraphs and chapter titles. Avoid stuffing—Zetawala keeps SEO descriptions readable.",
       },
       {
-        q: "Can a well-written video description improve affiliate marketing conversions?",
-        a: "Yes. A structured description allows you to strategically place affiliate links and CTAs immediately after the primary SEO introduction, making it highly accessible for viewers who want to purchase the products mentioned in the video.",
+        q: "How many hashtags should I put in a YouTube description?",
+        a: "YouTube allows up to 15, but 3–5 relevant hashtags is usually enough. Overstuffing can look spammy. Focus energy on a strong SEO description first, then light hashtag support.",
+      },
+      {
+        q: "What should I use with a YouTube description generator?",
+        a: "Pair Description Builder with Title Generator for CTR, Tags Extractor for YouTube tags, and Script Master so your spoken content matches the SEO description promise.",
       },
     ],
   },
   "tags-extractor": {
-    title: "Tags & Keyword Extractor",
+    title: "YouTube Tag Generator – Free YouTube Tags & Keywords | Zetawala",
     description:
-      "Uncover hidden search volume and outrank your competitors with our YouTube Tags & Keyword Extractor. Instantly generate high-relevance, low-competition tag recommendations for your YouTube Studio backend. By optimizing your video's hidden metadata with semantic search terms, exact match keywords, and broad match identifiers, you support deep search indexing and drastically increase your chances of appearing in the coveted 'Up Next' and related-video sidebars.",
+      "Generate better YouTube tags with Zetawala's free YouTube tag generator. Get relevant broad, exact-match, and long-tail YouTube tags for Studio—supporting search indexing, synonyms, and related-video discovery. Optimize hidden metadata in seconds so your titles and descriptions are reinforced, not left incomplete.",
     example: {
       input: "Video Topic: 'Shopify Pakistan'",
       output:
-        "Tags: 'shopify pakistan, shopify dropshipping pakistan 2024, ecommerce business in pakistan, how to start shopify brand, shah alami market wholesale online'",
+        "Tags: 'shopify pakistan, shopify dropshipping pakistan, ecommerce business in pakistan, how to start shopify brand, shah alami market wholesale online'",
     },
     faqs: [
       {
-        q: "Do YouTube tags still matter for SEO in 2024?",
-        a: "While titles and descriptions carry the majority of the SEO weight, tags remain a vital metadata component. They are incredibly useful for capturing traffic from common spelling mistakes, regional synonyms, and localized search queries (such as Roman Urdu phrases).",
+        q: "Is there a free YouTube tag generator?",
+        a: "Yes. Zetawala's free YouTube tag generator suggests relevant YouTube tags and keyword variations for your topic—so you fill Studio metadata quickly without random stuffing.",
       },
       {
-        q: "How many tags should I use for a YouTube video?",
-        a: "YouTube provides a 500-character limit for tags. It is recommended to use 200-300 characters, focusing on a mix of broad niche tags, exact match keywords directly related to your title, and specific long-tail keyword variations.",
+        q: "Do YouTube tags still matter for SEO?",
+        a: "Titles and descriptions carry more weight, but YouTube tags still help with synonyms, misspellings, and related discovery. Use a YouTube tag generator for relevant tags—never irrelevant trending names.",
       },
       {
-        q: "What is the difference between broad tags and long-tail tags?",
-        a: "A broad tag is a general category (e.g., 'ecommerce'), which is highly competitive. A long-tail tag is specific and targeted (e.g., 'how to start ecommerce in Pakistan 2024'), which brings in highly qualified, high-retention search traffic.",
+        q: "How many YouTube tags should I use?",
+        a: "YouTube allows up to 500 characters. Many creators use ~200–300 characters mixing broad niche tags, exact-match phrases from the title, and specific long-tail YouTube tags. Zetawala helps you prioritize quality over volume.",
       },
       {
-        q: "Can using irrelevant tags hurt my YouTube channel ranking?",
-        a: "Yes. Keyword stuffing or using highly searched but irrelevant tags (like trending celebrity names) violates YouTube's metadata policies. It confuses the algorithm, tanks your audience retention, and can lead to channel strikes.",
+        q: "What is the difference between broad and long-tail YouTube tags?",
+        a: "Broad tags (e.g. 'ecommerce') are competitive category labels. Long-tail tags (e.g. 'how to start ecommerce in Pakistan') target clearer intent and often bring more qualified viewers. A good YouTube tag generator includes both.",
       },
       {
-        q: "How does the Tags Extractor analyze competitor metadata?",
-        a: "The tool reverse-engineers the search landscape by identifying which tags top-ranking videos are using to secure their positions. This allows you to adopt proven keyword frameworks and piggyback off their suggested video traffic.",
+        q: "Can irrelevant YouTube tags hurt my channel?",
+        a: "Yes. Stuffing unrelated tags confuses the algorithm and can hurt retention if the wrong audience clicks. Zetawala focuses on on-topic YouTube tags that match your video.",
+      },
+      {
+        q: "What tools should I use with a YouTube tag generator?",
+        a: "Write the title with Title Generator, the SEO description with Description Builder, then finish metadata with Tags Extractor. For packaging visuals, use Thumbnail Prompt next.",
       },
     ],
   },
   "thumbnail-prompt": {
-    title: "AI Thumbnail Prompter",
+    title: "YouTube Thumbnail Prompt Generator – Midjourney Ready | Zetawala",
     description:
-      "Transform standard video concepts into irresistible visual masterpieces. The AI Thumbnail Prompter generates expertly engineered prompts for cutting-edge AI image generators like Midjourney, Stable Diffusion, and DALL-E. Stop struggling with complex graphic design software. Create hyper-realistic, high-contrast, perfectly composed thumbnails that leverage color psychology and visual hierarchy to guarantee skyrocketing click-through rates (CTR) and dominate the YouTube homepage grid.",
+      "Create scroll-stopping visuals with Zetawala's free YouTube thumbnail prompt generator. Get Midjourney-ready (and Stable Diffusion / DALL·E friendly) prompts engineered for contrast, emotion, and clear composition. Turn any video concept into a high-CTR thumbnail direction—without wrestling design software from scratch.",
     example: {
       input: "Concept: 'Rich vs Poor Programmer'",
       output:
-        "Prompt: 'A dramatic split-screen portrait. Left side: stressed, exhausted software developer in a dark, messy room. Right side: relaxed, wealthy tech entrepreneur in a luxurious bright penthouse office, cyber neon ambient lighting, 8k resolution, highly detailed, cinematic render --ar 16:9 --v 6.0'",
+        "Prompt: 'A dramatic split-screen portrait. Left side: stressed, exhausted software developer in a dark, messy room. Right side: relaxed, wealthy tech entrepreneur in a luxurious bright penthouse office, cyber neon ambient lighting, 8k resolution, highly detailed, cinematic render --ar 16:9 --v 6'",
     },
     faqs: [
       {
-        q: "How does an AI thumbnail prompt improve YouTube CTR?",
-        a: "AI-guided prompts generate photorealistic, high-contrast visual assets that trigger immediate psychological curiosity. These hyper-optimized images stand out in crowded YouTube recommendation grids, driving significantly more organic clicks than standard screenshots.",
+        q: "Is there a free YouTube thumbnail prompt generator?",
+        a: "Yes. Zetawala's free YouTube thumbnail prompt tool writes Midjourney-style prompts from your video concept—so you can generate high-contrast thumbnail drafts faster.",
       },
       {
-        q: "Which AI image generator is best for YouTube thumbnails?",
-        a: "Midjourney (v6) is currently the industry leader for cinematic, highly detailed visual assets. However, DALL-E 3 is excellent for exact text generation and vector-style graphics, making both highly viable depending on your channel's aesthetic.",
+        q: "How do YouTube thumbnail prompts improve CTR?",
+        a: "Clear subjects, high contrast, and emotional faces stop the scroll in crowded feeds. A strong YouTube thumbnail prompt for Midjourney helps you produce that look consistently instead of guessing prompt wording.",
       },
       {
-        q: "What role does color psychology play in YouTube thumbnails?",
-        a: "High-contrast colors (like yellow, red, and electric blue) naturally draw the human eye. Thumbnails that utilize complementary color schemes and bright subjects against dark backgrounds achieve higher visibility on both mobile and desktop screens.",
+        q: "Which AI image tool is best for YouTube thumbnails?",
+        a: "Midjourney is popular for cinematic, detailed thumbnails; DALL·E is strong for readable text and simpler graphics. Zetawala thumbnail prompts are written to transfer across Midjourney, Stable Diffusion, and similar tools.",
       },
       {
-        q: "Should I include text in my YouTube video thumbnails?",
-        a: "Yes, but keep it minimal. Best practices dictate using 3 to 5 bold, highly readable words that complement—not just repeat—the video title. Text should be large enough to read clearly on a small smartphone screen.",
+        q: "Should I put text on YouTube thumbnails?",
+        a: "Usually yes—but keep it to a few bold words that complement the title, readable on mobile. Use Zetawala Title Generator for the title, Thumbnail Prompt for the visual, then test CTR together.",
       },
       {
-        q: "How does thumbnail quality affect YouTube browse features traffic?",
-        a: "Browse features (the homepage) are driven entirely by CTR and broad appeal. A stunning, high-quality thumbnail forces users to stop scrolling, signaling to the algorithm that your content is highly engaging and worthy of wider distribution.",
+        q: "What colors work best for YouTube thumbnails?",
+        a: "High-contrast pairings (bright subject on darker background, complementary accents) tend to stand out. Zetawala prompts emphasize contrast and hierarchy so thumbnails read at small sizes.",
+      },
+      {
+        q: "What should I do after generating a thumbnail prompt?",
+        a: "Generate the image in Midjourney (or your preferred tool), pair it with Title Generator options, then finish SEO with Description Builder and Tags Extractor before upload.",
       },
     ],
   },
   "script-master": {
-    title: "Comprehensive Script Writer",
+    title: "YouTube Script Generator – Free AI Script Writer | Zetawala",
     description:
-      "Turn rough ideas into word-for-word, production-ready cinematic scripts. The YouTube Script Master formats your raw concepts into highly engaging, retention-optimized narrative architectures. It seamlessly integrates psychological pacing, designated B-roll cues, emotional transitions, and expert speaker guidance. Eliminate mid-video drop-offs, maintain viewer attention from intro to outro, and seamlessly integrate high-converting call-to-actions (CTAs) that turn casual viewers into loyal, long-term subscribers.",
+      "How do you write a YouTube script that holds attention? Zetawala's free YouTube script generator (AI script writer) turns topics into retention-ready narratives with hooks, pacing, B-roll cues, and CTAs. From faceless voiceovers to on-camera explainers, draft production-ready scripts faster and keep viewers from mid-video drop-off.",
     example: {
       input: "Topic: 'Shah Alami Wholesale' | Duration: '5 minutes'",
       output:
-        "Script Outline: '[Intro - Dramatic hook on camera]: Are you tired of running ads and getting zero sales? Today, we are going deep inside Lahore's biggest hidden goldmine... \n[B-Roll cut to fast-paced, crowded market lanes with energetic background music]...'",
+        "Script Outline: '[Intro - Dramatic hook on camera]: Are you tired of running ads and getting zero sales? Today, we are going deep inside Lahore's biggest hidden goldmine...\n[B-Roll cut to fast-paced, crowded market lanes with energetic background music]...'",
     },
     faqs: [
       {
-        q: "How many words should a 10-minute YouTube video script be?",
-        a: "At an average, engaging conversational speaking pace (130-150 words per minute), a 10-minute YouTube video requires a well-structured script of approximately 1,300 to 1,500 words.",
+        q: "Is there a free YouTube script generator?",
+        a: "Yes. Zetawala's free YouTube script generator works as an AI script writer for creators—turning a topic and target length into a structured script with hook, value sections, and outro CTA.",
       },
       {
-        q: "What is the standard structure of a successful YouTube video script?",
-        a: "A high-retention script follows a strict framework: 1. The Hook (0:00-0:30), 2. The Setup/Branding (0:30-1:00), 3. The Core Value/Content Delivery (1:00-8:00), and 4. The Outro/Call to Action (8:00-end).",
+        q: "How do I write a YouTube script that keeps people watching?",
+        a: "Open with a strong first 30 seconds, cut fluff, add pattern interrupts, and deliver value in clear sections. Use Hook Architect for the open, then Script Master as your full YouTube script generator for the rest.",
       },
       {
-        q: "How does a well-written script improve audience retention?",
-        a: "A professional script eliminates fluff, 'ums,' and dead air. By scripting dynamic pattern interrupts, open loops, and smooth transitions, you keep the viewer's brain constantly engaged, preventing them from clicking off to another video.",
+        q: "How many words is a 10-minute YouTube script?",
+        a: "At a conversational ~130–150 words per minute, plan about 1,300–1,500 words. Zetawala's AI script writer can target duration so your draft matches the runtime you want.",
       },
       {
-        q: "Where should I place CTAs (Call to Actions) in my video script?",
-        a: "Never place your CTA at the very beginning. The best places for CTAs are right after you have delivered a massive piece of value (mid-roll) and during the outro, guiding them to another related video on your channel.",
+        q: "What is the best structure for a YouTube video script?",
+        a: "A proven flow is Hook (0:00–0:30), setup, core value delivery, then CTA/outro. Zetawala Script Master follows retention-friendly architecture so your AI script writer output is usable on set—not a wall of text.",
       },
       {
-        q: "Can the Script Master tool write for faceless YouTube channels?",
-        a: "Absolutely. The tool can generate narrative structures specifically tailored for voiceovers and documentary-style faceless channels, focusing heavily on visual storytelling cues rather than on-camera personality.",
+        q: "Can an AI script writer work for faceless YouTube channels?",
+        a: "Yes. Zetawala can generate voiceover-friendly YouTube scripts with visual storytelling cues—ideal for faceless documentary, explainer, and listicle channels.",
+      },
+      {
+        q: "Where should CTAs go in a YouTube script?",
+        a: "After a clear value beat (mid-roll) and in the outro—not before the hook earns attention. Pair Script Master with Visuals Recommender for B-roll ideas that support each section.",
       },
     ],
   },
   "visuals-recommender": {
-    title: "Script Visuals Recommender & Storyboarder",
+    title: "B-Roll Ideas & Stock Footage Keywords – Visuals Recommender | Zetawala",
     description:
-      "Accelerate your post-production editing pipeline and elevate your visual storytelling. The Visuals Recommender deeply analyzes your spoken script to suggest dynamic B-roll ideas, precise stock footage search queries, and cutting-edge AI-generation prompts (for tools like Sora or Runway) scene by scene. By introducing constant visual changes and matching imagery perfectly to the narrative context, you reset the viewer's attention span, drastically boosting viewer retention and algorithmic performance.",
+      "Speed up editing with Zetawala's Visuals Recommender: scene-by-scene B-roll ideas, stock footage keywords, and AI video prompts matched to your script. Find the right clips on Pexels, Storyblocks, or Envato faster—and keep visual variety high so retention stays strong from intro to outro.",
     example: {
       input: "Script: 'I started a wholesale business from my tiny bedroom...'",
       output:
@@ -389,24 +437,28 @@ export const youtubeSeoData = {
     },
     faqs: [
       {
-        q: "How do targeted search keywords save video editing time?",
-        a: "By providing pre-optimized, exact-match search strings, video editors can bypass tedious manual searching on stock platforms like Storyblocks, Pexels, or Envato Elements, instantly finding the exact B-roll needed and saving hours of production time.",
+        q: "How do I find B-roll ideas for a YouTube script?",
+        a: "Break the script into scenes and match each beat with a visual change. Zetawala Visuals Recommender suggests B-roll ideas plus stock footage keywords so editors can search libraries without guessing phrases.",
       },
       {
-        q: "What is B-roll and why is it vital for viewer retention?",
-        a: "B-roll is supplemental footage inserted over the main audio track. It acts as a visual pattern interrupt. Because human attention spans are short, showing relevant B-roll prevents the video from becoming a boring 'talking head' presentation.",
+        q: "What are stock footage keywords and why do they matter?",
+        a: "Stock footage keywords are exact search phrases for platforms like Pexels, Storyblocks, or Envato Elements. Better keywords mean faster finds and fewer wrong clips—saving hours in post-production.",
       },
       {
-        q: "How often should a YouTube video change visual scenes?",
-        a: "Modern YouTube editing guidelines suggest a visual change (a cut, zoom, text pop-up, or B-roll insertion) every 3 to 5 seconds. This fast-paced visual stimulation is crucial for retaining younger demographics and mobile viewers.",
+        q: "Why is B-roll important for viewer retention?",
+        a: "B-roll acts as a visual pattern interrupt over talking-head or voiceover audio. Fresh visuals every few seconds reduce boredom and help average view duration—key for YouTube growth.",
       },
       {
-        q: "Can the Visuals Recommender help with AI video generation?",
-        a: "Yes. It generates highly specific, cinematic text-to-video prompts that can be plugged directly into AI video tools like Runway Gen-2, Pika Labs, or OpenAI's Sora to create custom, hyper-realistic footage that doesn't exist on stock websites.",
+        q: "How often should visuals change in a YouTube video?",
+        a: "Many modern edits cut, zoom, add text, or insert B-roll every few seconds—especially for mobile viewers. Use Zetawala B-roll ideas as a checklist so each script section has a visual plan.",
       },
       {
-        q: "How do dynamic visuals impact the YouTube algorithm?",
-        a: "Dynamic visuals directly increase average view duration (AVD). When the algorithm detects that viewers are watching your video all the way through without skipping, it categorizes your content as 'highly engaging' and pushes it to millions of potential new viewers.",
+        q: "Can this tool help with AI video generation prompts?",
+        a: "Yes. Along with stock footage keywords, Visuals Recommender outputs scene-ready AI prompts you can paste into tools like Runway or similar text-to-video apps when stock libraries fall short.",
+      },
+      {
+        q: "What should I use before the Visuals Recommender?",
+        a: "Write the narrative with Script Master (and Hook Architect for the open), then generate B-roll ideas and stock footage keywords here. Finish packaging with Title Generator and Thumbnail Prompt.",
       },
     ],
   },

@@ -1,19 +1,19 @@
 import React from 'react';
 import PipelineWorkspace from '../../../../components/dashboard/PipelineWorkspace';
 import { getInternalSlug } from '../../../../config/routes';
-import { toolMetadata } from '../../../../config/toolMetadata';
+import { buildToolPageMetadata } from '../../../../lib/buildToolPageMetadata';
 
 export async function generateMetadata({ params }) {
   const { toolSlug } = await params;
   const internalSlug = getInternalSlug(toolSlug);
-  
-  const meta = toolMetadata[internalSlug] || {};
 
-  return {
-    ...meta,
-    title: meta.title || 'Local Social Commerce & WhatsApp Tool - ZetaWala',
-    description: meta.description || 'Premium WhatsApp and local social commerce tools for Pakistani sellers.'
-  };
+  return buildToolPageMetadata({
+    internalSlug,
+    category: 'local-commerce',
+    fallbackTitle: 'Free WhatsApp & Local Commerce Tool | Zetawala',
+    fallbackDescription:
+      'Free WhatsApp broadcast, Facebook ad script, and local social commerce tools for Pakistani sellers on Zetawala.',
+  });
 }
 
 export default async function DynamicLocalCommerceToolPage({ params }) {

@@ -3,8 +3,17 @@ import Link from 'next/link';
 import { BookOpen, ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Terms of Service | ZetaWala',
-  description: 'Review the Terms of Service governing the use of ZetaWala platforms and tools.',
+  title: 'Terms of Service | Zetawala',
+  description: 'Review the Terms of Service governing the use of Zetawala platforms and free AI SEO tools.',
+  alternates: { canonical: 'https://zetawala.com/terms' },
+  openGraph: {
+    title: 'Terms of Service | Zetawala',
+    description: 'Review the Terms of Service governing the use of Zetawala platforms and free AI SEO tools.',
+    url: 'https://zetawala.com/terms',
+    siteName: 'Zetawala',
+    type: 'website',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function TermsOfServicePage() {

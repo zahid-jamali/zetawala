@@ -1,18 +1,19 @@
 import React from 'react';
 import PipelineWorkspace from '../../../../components/dashboard/PipelineWorkspace';
 import { getInternalSlug } from '../../../../config/routes';
-import { toolMetadata } from '../../../../config/toolMetadata';
+import { buildToolPageMetadata } from '../../../../lib/buildToolPageMetadata';
 
 export async function generateMetadata({ params }) {
   const { toolSlug } = await params;
   const internalSlug = getInternalSlug(toolSlug);
-  const meta = toolMetadata[internalSlug] || {};
 
-  return {
-    ...meta,
-    title: meta.title || 'SEO & Webmaster Tool - ZetaWala',
-    description: meta.description || 'Free SEO and webmaster intelligence tools by ZetaWala.',
-  };
+  return buildToolPageMetadata({
+    internalSlug,
+    category: 'seo',
+    fallbackTitle: 'Free SEO & Webmaster Tool | Zetawala',
+    fallbackDescription:
+      'Free SEO tools by Zetawala—website audits, PageSpeed, broken links, sitemaps, canonical checks, and ROI calculators.',
+  });
 }
 
 export default async function DynamicSeoToolPage({ params }) {

@@ -39,6 +39,50 @@ export default function ToolSeoSection({ toolSlug }) {
 
   return (
     <div className="mt-12 pt-12 border-t border-slate-205 dark:border-slate-800 space-y-10 text-slate-900 dark:text-slate-100">
+      {data.faqs?.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: data.faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: faq.a,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
+      {data.title && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'SoftwareApplication',
+              name: data.title,
+              applicationCategory: 'BusinessApplication',
+              operatingSystem: 'Web',
+              offers: {
+                '@type': 'Offer',
+                price: '0',
+                priceCurrency: 'USD',
+              },
+              description: data.description,
+              provider: {
+                '@type': 'Organization',
+                name: 'Zetawala',
+                url: 'https://zetawala.com',
+              },
+            }),
+          }}
+        />
+      )}
       
       {/* 1. SEO Description */}
       <section className="grid md:grid-cols-12 gap-6 items-start">

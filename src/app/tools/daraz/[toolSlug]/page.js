@@ -1,19 +1,19 @@
 import React from 'react';
 import PipelineWorkspace from '../../../../components/dashboard/PipelineWorkspace';
 import { getInternalSlug } from '../../../../config/routes';
-import { toolMetadata } from '../../../../config/toolMetadata';
+import { buildToolPageMetadata } from '../../../../lib/buildToolPageMetadata';
 
 export async function generateMetadata({ params }) {
   const { toolSlug } = await params;
   const internalSlug = getInternalSlug(toolSlug);
-  
-  const meta = toolMetadata[internalSlug] || {};
 
-  return {
-    ...meta,
-    title: meta.title || 'Daraz SEO Tool - ZetaWala',
-    description: meta.description || 'Premium Daraz seller optimization tools.'
-  };
+  return buildToolPageMetadata({
+    internalSlug,
+    category: 'daraz',
+    fallbackTitle: 'Free Daraz SEO Tool | Zetawala',
+    fallbackDescription:
+      'Free Daraz SEO and seller tools by Zetawala—product hunting, titles, keywords, and profit calculators for Pakistan.',
+  });
 }
 
 export default async function DynamicDarazToolPage({ params }) {

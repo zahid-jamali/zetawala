@@ -4,19 +4,39 @@ import { seoTools } from '../../config/seoWebmaster/tools';
 import { getSeoPath } from '../../config/routes';
 
 export const metadata = {
-  title: 'SEO & Webmaster Intelligence Tools | ZetaWala',
+  title: 'Free SEO Tools – Website Audit, PageSpeed & Webmaster Suite | Zetawala',
   description:
-    'Free SEO and webmaster tools: technical audits, PageSpeed & Core Web Vitals, sitemap validation, canonical checks, broken links, and ROI calculators.',
+    'Free SEO & Webmaster Intelligence tools: website SEO checker, PageSpeed & Core Web Vitals, broken link checker, sitemap generator, canonical checker, keyword density, and SEO ROI calculators.',
+  keywords: [
+    'free seo tools',
+    'seo website checker',
+    'pagespeed insights',
+    'core web vitals checker',
+    'broken link checker',
+    'xml sitemap generator',
+    'canonical tag checker',
+    'keyword density checker',
+    'seo health score',
+    'seo roi calculator',
+    'webmaster tools free',
+    'technical seo audit',
+  ],
   alternates: {
     canonical: 'https://zetawala.com/seo',
   },
   openGraph: {
-    title: 'SEO & Webmaster Intelligence Tools | ZetaWala',
+    title: 'Free SEO Tools – Website Audit, PageSpeed & Webmaster Suite | Zetawala',
     description:
-      'Run technical SEO audits, validate indexability, and prioritize fixes with ZetaWala webmaster tools.',
+      'Run free technical SEO audits, validate indexability, check Core Web Vitals, and prioritize fixes with Zetawala webmaster tools.',
     url: 'https://zetawala.com/seo',
     siteName: 'Zetawala',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free SEO Tools – Website Audit & Webmaster Suite | Zetawala',
+    description:
+      'Free SEO website checker, PageSpeed, broken links, sitemaps, canonical checks, and ROI calculators.',
   },
   robots: { index: true, follow: true },
 };

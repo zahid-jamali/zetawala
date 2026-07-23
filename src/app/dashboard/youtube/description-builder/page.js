@@ -25,7 +25,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/dashboard/description-builder",
+    canonical: "https://zetawala.com/tools/youtube/youtube-description-generator",
   },
 
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata = {
     description:
       "Create professional, SEO-optimized YouTube descriptions using AI. Improve search rankings, increase visibility, and grow your channel with Zetawala.",
 
-    url: "https://zetawala.com/dashboard/description-builder",
+    url: "https://zetawala.com/tools/youtube/youtube-description-generator",
 
     type: "website",
 
@@ -62,15 +62,8 @@ export const metadata = {
   },
 
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
   },
 };
 

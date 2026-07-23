@@ -1,19 +1,19 @@
 import React from 'react';
 import PipelineWorkspace from '../../../../components/dashboard/PipelineWorkspace';
 import { getInternalSlug } from '../../../../config/routes';
-import { toolMetadata } from '../../../../config/toolMetadata';
+import { buildToolPageMetadata } from '../../../../lib/buildToolPageMetadata';
 
 export async function generateMetadata({ params }) {
   const { toolSlug } = await params;
   const internalSlug = getInternalSlug(toolSlug);
-  
-  const meta = toolMetadata[internalSlug] || {};
 
-  return {
-    ...meta,
-    title: meta.title || 'YouTube Automation Tool - ZetaWala',
-    description: meta.description || 'Premium YouTube Automation tools.'
-  };
+  return buildToolPageMetadata({
+    internalSlug,
+    category: 'youtube',
+    fallbackTitle: 'Free YouTube Automation Tool | Zetawala',
+    fallbackDescription:
+      'Free YouTube automation and SEO tools by Zetawala—titles, scripts, tags, niches, and channel analytics.',
+  });
 }
 
 export default async function DynamicYoutubeToolPage({ params }) {

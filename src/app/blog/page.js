@@ -1,25 +1,32 @@
 import BlogListingClient from '../../components/blog/BlogListingClient';
 
 export const metadata = {
-  title: 'ZetaWala Blog & SEO Guides | YouTube, Daraz & E-commerce',
+  title: 'Zetawala Blog – YouTube, Daraz, WhatsApp & SEO Guides',
   description:
-    'Read ZetaWala SEO guides, YouTube automation tips, Daraz growth strategies, and local social commerce insights.',
+    'Read free guides on YouTube SEO, Daraz seller growth, WhatsApp social commerce, and technical SEO—practical tips from Zetawala.',
+  keywords: [
+    'youtube seo guide',
+    'daraz seller tips',
+    'whatsapp marketing pakistan',
+    'technical seo blog',
+    'zetawala blog',
+  ],
   alternates: {
     canonical: 'https://zetawala.com/blog',
   },
   openGraph: {
-    title: 'ZetaWala Blog & SEO Guides',
+    title: 'Zetawala Blog – YouTube, Daraz, WhatsApp & SEO Guides',
     description:
-      'Optimization guides for YouTube creators, Daraz sellers, and local commerce marketers.',
+      'Practical guides for YouTube creators, Daraz sellers, WhatsApp marketers, and SEO webmasters.',
     url: 'https://zetawala.com/blog',
     siteName: 'Zetawala',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ZetaWala Blog & SEO Guides',
+    title: 'Zetawala Blog – YouTube, Daraz, WhatsApp & SEO Guides',
     description:
-      'Optimization guides for YouTube creators, Daraz sellers, and local commerce marketers.',
+      'Practical guides for YouTube creators, Daraz sellers, WhatsApp marketers, and SEO webmasters.',
   },
   robots: {
     index: true,

@@ -3,8 +3,17 @@ import Link from 'next/link';
 import { Shield, ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Privacy Policy | ZetaWala',
-  description: 'Understand how ZetaWala handles user data and maintains strict compliance with privacy standards.',
+  title: 'Privacy Policy | Zetawala',
+  description: 'Understand how Zetawala handles user data and maintains privacy standards across free SEO and creator tools.',
+  alternates: { canonical: 'https://zetawala.com/privacy-policy' },
+  openGraph: {
+    title: 'Privacy Policy | Zetawala',
+    description: 'Understand how Zetawala handles user data and maintains privacy standards across free SEO and creator tools.',
+    url: 'https://zetawala.com/privacy-policy',
+    siteName: 'Zetawala',
+    type: 'website',
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function PrivacyPolicyPage() {
