@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { extractTextFromUpload } from '../../../../lib/writing/textExtract';
-import { getClientIp, detectBot, checkRateLimit } from '../../../../lib/security';
+import { guardFormRequest } from '../../../../lib/apiGuard';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
@@ -8,23 +8,15 @@ export const maxDuration = 60;
 const MAX_BYTES = 8 * 1024 * 1024;
 
 /**
- * Extract text from PDF/DOCX/TXT for writing tools (e.g. plagiarism checker).
- * Does not call DeepSeek — client then sends text to /api/generate.
+ * Extract text from PDF/DOCX/TXT for writing/study tools.
+ * Heavy server work — protected by Turnstile. Client then sends text to /api/generate.
  */
 export async function POST(request) {
   try {
-    const ip = getClientIp(request.headers);
-    const botCheck = detectBot(request.headers);
-    if (!botCheck.success) {
-      return NextResponse.json({ success: false, error: botCheck.error }, { status: 403 });
-    }
-    const limitCheck = checkRateLimit(ip);
-    if (!limitCheck.success) {
-      return NextResponse.json({ success: false, error: limitCheck.error }, { status: 429 });
-    }
+    const guard = await guardFormRequest(request);
+    if (!guard.ok) return guard.response;
 
-    const form = await request.formData();
-    const file = form.get('file');
+    const file = guard.formData.get('file');
     if (!file || typeof file === 'string') {
       return NextResponse.json({ success: false, error: 'No file uploaded.' }, { status: 400 });
     }

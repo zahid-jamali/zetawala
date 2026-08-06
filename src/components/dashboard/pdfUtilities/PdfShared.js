@@ -110,12 +110,13 @@ export function ResultCard({ title, children, actions }) {
   );
 }
 
-export async function processUtility(action, { file, text, options } = {}) {
+export async function processUtility(action, { file, text, options, securityToken } = {}) {
   const form = new FormData();
   form.append('action', action);
   if (file) form.append('file', file);
   if (text != null) form.append('text', text);
   if (options) form.append('options', JSON.stringify(options));
+  form.append('securityToken', securityToken || '');
 
   const res = await fetch('/api/pdf-utilities/process', { method: 'POST', body: form });
   const json = await res.json();

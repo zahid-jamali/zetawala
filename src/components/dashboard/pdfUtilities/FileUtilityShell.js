@@ -4,6 +4,7 @@ import React, { useMemo, useState } from 'react';
 import { FileStack } from 'lucide-react';
 import { getPdfUtilityTool } from '../../../config/pdfUtilities/tools';
 import FileDropzone from './FileDropzone';
+import TurnstileWidget from '../TurnstileWidget';
 import {
   ErrorBanner,
   NextSteps,
@@ -93,8 +94,11 @@ export default function FileUtilityShell({ toolSlug }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [data, setData] = useState(null);
+  const [securityToken, setSecurityToken] = useState('');
+  const [turnstileResetKey, setTurnstileResetKey] = useState(0);
 
   const isJsonTool = toolSlug === 'json-to-excel';
+  const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
   const run = async () => {
     setLoading(true);
@@ -107,12 +111,15 @@ export default function FileUtilityShell({ toolSlug }) {
         file: isJsonTool ? undefined : file,
         text: isJsonTool ? jsonText : undefined,
         options,
+        securityToken,
       });
       setData(result);
     } catch (err) {
       setError(err.message || 'Processing failed.');
     } finally {
       setLoading(false);
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     }
   };
 
@@ -167,10 +174,12 @@ export default function FileUtilityShell({ toolSlug }) {
           </div>
         )}
 
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
+
         <ProcessButton
           onClick={run}
           loading={loading}
-          disabled={isJsonTool ? !jsonText.trim() : !file}
+          disabled={(isJsonTool ? !jsonText.trim() : !file) || (turnstileRequired && !securityToken)}
         />
         <p className="text-[10px] text-slate-500 leading-relaxed">
           Open-source processing only. Temporary buffers are discarded after the response.

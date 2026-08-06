@@ -242,17 +242,24 @@ export default function StudyAiHost({ toolSlug }) {
 
   const extractPdf = async (file) => {
     if (!file) return;
+    if (turnstileRequired && !securityToken) {
+      setError('Complete the security check before uploading a PDF.');
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
       const fd = new FormData();
       fd.append('file', file);
+      fd.append('securityToken', securityToken || '');
       const res = await fetch('/api/writing/extract', { method: 'POST', body: fd });
       const json = await res.json();
       if (!res.ok || !json.success) throw new Error(json.error || 'PDF extract failed.');
       set('text', json.data.text || '');
       set('pdfName', json.data.filename || file.name);
       setPdfPreview((json.data.text || '').slice(0, 1200));
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -286,27 +293,7 @@ export default function StudyAiHost({ toolSlug }) {
     e.preventDefault();
 
     if (toolSlug === 'youtube-study-notes') {
-      setLoading(true);
-      setError(null);
-      setResult(null);
-      try {
-        const tr = await fetch('/api/study/youtube-transcript', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ url: form.youtubeUrl }),
-        });
-        const tj = await tr.json();
-        if (!tr.ok || !tj.success) throw new Error(tj.error || 'Transcript unavailable.');
-        await runGenerate({
-          transcript: tj.data.transcript,
-          videoTitle: tj.data.videoId,
-        });
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-        setSecurityToken('');
-        setTurnstileResetKey((k) => k + 1);
-      }
+      await runGenerate({ youtubeUrl: form.youtubeUrl });
       return;
     }
 
@@ -381,7 +368,9 @@ export default function StudyAiHost({ toolSlug }) {
 
         {(toolSlug === 'pdf-to-quiz' || toolSlug === 'ai-flashcard-generator') && (
           <div className="space-y-2">
+            <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
             <label className={labelClasses}>Upload PDF {toolSlug === 'ai-flashcard-generator' ? '(optional)' : ''}</label>
+            <p className="text-[10px] text-slate-500">Complete the security check above before uploading.</p>
             <label className="flex items-center justify-center gap-2 p-4 rounded-2xl border-2 border-dashed border-slate-200 dark:border-slate-800 cursor-pointer text-xs font-bold">
               <UploadCloud className="w-4 h-4 text-sky-500" />
               {form.pdfName || 'Choose PDF'}
@@ -430,7 +419,9 @@ export default function StudyAiHost({ toolSlug }) {
           </div>
         )}
 
-        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
+        {toolSlug !== 'pdf-to-quiz' && toolSlug !== 'ai-flashcard-generator' && (
+          <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
+        )}
         <button
           type="submit"
           disabled={loading || (turnstileRequired && !securityToken)}

@@ -390,15 +390,22 @@ export default function WritingHost({ toolSlug }) {
 
   const onExtractFile = async (file) => {
     if (!file) return;
+    if (turnstileRequired && !securityToken) {
+      setError('Complete the security check before uploading a document.');
+      return;
+    }
     setExtracting(true);
     setError(null);
     try {
       const form = new FormData();
       form.append('file', file);
+      form.append('securityToken', securityToken || '');
       const res = await fetch('/api/writing/extract', { method: 'POST', body: form });
       const json = await res.json();
       if (!res.ok || !json.success) throw new Error(json.error || 'Extract failed.');
       setText(json.data.text || '');
+      setSecurityToken('');
+      setTurnstileResetKey((k) => k + 1);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -516,9 +523,12 @@ export default function WritingHost({ toolSlug }) {
           <p className="text-[10px] text-slate-500">{words} words · {chars} characters</p>
         </div>
 
+        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
+
         {tool.supportsUpload && (
           <div className="space-y-2">
             <label className={labelClasses}>Or upload PDF / DOCX / TXT</label>
+            <p className="text-[10px] text-slate-500">Complete the security check above before uploading.</p>
             <label className="flex items-center justify-center gap-2 p-4 rounded-2xl border-2 border-dashed border-slate-200 dark:border-slate-800 cursor-pointer hover:border-sky-300 text-xs font-bold text-slate-600 dark:text-slate-300">
               <UploadCloud className="w-4 h-4 text-sky-500" />
               {extracting ? 'Extracting…' : 'Upload document'}
@@ -544,7 +554,6 @@ export default function WritingHost({ toolSlug }) {
           </div>
         )}
 
-        <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button
           type="submit"
           disabled={loading || extracting || (turnstileRequired && !securityToken)}

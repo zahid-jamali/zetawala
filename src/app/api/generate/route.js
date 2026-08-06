@@ -4,6 +4,7 @@ import ProductHunt from "../../../models/ProductHunt";
 import { getUserPrompt } from "../../../lib/promptEngine";
 
 import { getClientIp, detectBot, checkRateLimit, verifyTurnstileToken } from "../../../lib/security";
+import { fetchYouTubeTranscript } from "../../../lib/study/youtubeTranscript";
 
 const apiKey = process.env.DEEPSEEK_API_KEY;
 
@@ -66,8 +67,26 @@ export async function POST(request) {
       );
     }
 
+    // YouTube study notes: fetch transcript server-side so one Turnstile covers the full flow
+    let resolvedPayload = payload;
+    if (action === "youtube-study-notes" && payload.youtubeUrl && !payload.transcript) {
+      try {
+        const transcriptData = await fetchYouTubeTranscript(payload.youtubeUrl);
+        resolvedPayload = {
+          ...payload,
+          transcript: transcriptData.transcript,
+          videoTitle: payload.videoTitle || transcriptData.videoId,
+        };
+      } catch (err) {
+        return NextResponse.json(
+          { success: false, error: err.message || "Transcript fetch failed." },
+          { status: 400 }
+        );
+      }
+    }
+
     // Retrieve corresponding prompt instructions dynamically
-    const userPrompt = getUserPrompt(action, payload);
+    const userPrompt = getUserPrompt(action, resolvedPayload);
     if (!userPrompt) {
       return NextResponse.json(
         { error: `Unknown generation action: ${action}` },

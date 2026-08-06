@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { PDF_UTILITY_ACTIONS, runPdfUtilityTool } from '../../../../lib/pdfUtilities/runTool';
+import { guardFormRequest } from '../../../../lib/apiGuard';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
@@ -114,7 +115,10 @@ function statusForError(message) {
 
 export async function POST(request) {
   try {
-    const formData = await request.formData();
+    const guard = await guardFormRequest(request);
+    if (!guard.ok) return guard.response;
+
+    const formData = guard.formData;
     const action = String(formData.get('action') || '').trim();
 
     if (!action || !PDF_UTILITY_ACTIONS.includes(action)) {
