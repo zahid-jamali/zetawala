@@ -40,6 +40,41 @@ export default function Footer() {
                 SEO & Webmaster Intelligence
               </Link>
             </li>
+            <li>
+              <Link href="/calculators" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Calculators
+              </Link>
+            </li>
+            <li>
+              <Link href="/pdf-utilities" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                PDF & Image Utilities
+              </Link>
+            </li>
+            <li>
+              <Link href="/writing" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                AI Writing & Language Tools
+              </Link>
+            </li>
+            <li>
+              <Link href="/study" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                AI Study, Quizzes & Typing
+              </Link>
+            </li>
+            <li>
+              <Link href="/freelancer" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Freelancer Toolkit
+              </Link>
+            </li>
+            <li>
+              <Link href="/shopee" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Shopee Seller Toolkit
+              </Link>
+            </li>
+            <li>
+              <Link href="/lazada" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Lazada Seller Toolkit
+              </Link>
+            </li>
           </ul>
         </div>
 

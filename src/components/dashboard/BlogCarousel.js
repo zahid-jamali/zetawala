@@ -45,7 +45,21 @@ export default function BlogCarousel({ category }) {
         ? 'WhatsApp & Local Commerce Guides'
         : category === 'seo-webmaster'
           ? 'SEO & Webmaster Guides'
-          : 'Daraz Sourcing & Ranking Slabs';
+          : category === 'calculators'
+            ? 'Calculator & Pricing Guides'
+            : category === 'pdf-utilities'
+              ? 'PDF & Image Utility Guides'
+              : category === 'writing'
+                ? 'AI Writing & Language Guides'
+                : category === 'study'
+                  ? 'AI Study, Quizzes & Typing Guides'
+                  : category === 'freelancer'
+                    ? 'Freelancer Toolkit Guides'
+                    : category === 'shopee'
+                      ? 'Shopee Seller Guides'
+                      : category === 'lazada'
+                        ? 'Lazada Seller Guides'
+                        : 'Daraz Sourcing & Ranking Slabs';
 
   const sectionTitle =
     category === 'youtube'
@@ -54,7 +68,21 @@ export default function BlogCarousel({ category }) {
         ? 'Learn WhatsApp & Local Commerce Strategies'
         : category === 'seo-webmaster'
           ? 'Learn SEO & Webmaster Strategies'
-          : 'Learn Sourcing & Ranking Strategies';
+          : category === 'calculators'
+            ? 'Learn Pricing & ROI Strategies'
+            : category === 'pdf-utilities'
+              ? 'Learn PDF & Image Utility Tips'
+              : category === 'writing'
+                ? 'Learn AI Writing & Language Tips'
+                : category === 'study'
+                  ? 'Learn Study, Quiz & Typing Tips'
+                  : category === 'freelancer'
+                    ? 'Learn Upwork & Fiverr Freelancer Tips'
+                    : category === 'shopee'
+                      ? 'Learn Shopee Seller Strategies'
+                      : category === 'lazada'
+                        ? 'Learn Lazada Seller Strategies'
+                        : 'Learn Sourcing & Ranking Strategies';
 
   return (
     <div className="space-y-6 pt-10 border-t border-slate-200 dark:border-slate-800">

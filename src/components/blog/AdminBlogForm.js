@@ -146,6 +146,13 @@ export default function AdminBlogForm({ post, onSave, onCancel }) {
               <option value="daraz">Daraz</option>
               <option value="local-commerce">Local Social Commerce & WhatsApp Suite</option>
               <option value="seo-webmaster">SEO & Webmaster Intelligence</option>
+              <option value="calculators">Calculators</option>
+              <option value="pdf-utilities">PDF & Image Utilities</option>
+              <option value="writing">AI Writing & Language Tools</option>
+              <option value="study">AI Study, Quizzes & Typing</option>
+              <option value="freelancer">Freelancer Toolkit</option>
+              <option value="shopee">Shopee Seller Toolkit</option>
+              <option value="lazada">Lazada Seller Toolkit</option>
             </select>
           </div>
           <div className="space-y-1.5">

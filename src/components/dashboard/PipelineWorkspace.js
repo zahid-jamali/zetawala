@@ -11,6 +11,12 @@ import ToolSeoSection from './ToolSeoSection';
 import DarazProfitCalculator from './DarazProfitCalculator';
 import YoutubeIntelligenceHost, { YOUTUBE_INTELLIGENCE_SLUGS } from './youtube/YoutubeIntelligenceHost';
 import SeoToolHost, { SEO_HOST_SLUGS } from './seo/SeoToolHost';
+import CalculatorsHost, { CALCULATOR_HOST_SLUGS } from './calculators/CalculatorsHost';
+import PdfUtilitiesHost, { PDF_UTILITY_HOST_SLUGS } from './pdfUtilities/PdfUtilitiesHost';
+import WritingHost, { WRITING_HOST_SLUGS } from './writing/WritingHost';
+import StudyHost, { STUDY_HOST_SLUGS } from './study/StudyHost';
+import FreelancerHost, { FREELANCER_HOST_SLUGS } from './freelancer/FreelancerHost';
+import MarketplaceHost, { SHOPEE_HOST_SLUGS, LAZADA_HOST_SLUGS } from './marketplace/MarketplaceHost';
 import { navigationConfig } from '../../config/navigation';
 import { getSeoPath } from '../../config/routes';
 
@@ -34,18 +40,67 @@ const seoSteps = seoCategory
   ? seoCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
   : [];
 
+const calculatorsCategory = navigationConfig.find(c => c.slug === 'calculators');
+const calculatorsSteps = calculatorsCategory
+  ? calculatorsCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const pdfUtilitiesCategory = navigationConfig.find(c => c.slug === 'pdf-image-utilities');
+const pdfUtilitiesSteps = pdfUtilitiesCategory
+  ? pdfUtilitiesCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const writingCategory = navigationConfig.find(c => c.slug === 'ai-writing');
+const writingSteps = writingCategory
+  ? writingCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const studyCategory = navigationConfig.find(c => c.slug === 'ai-study');
+const studySteps = studyCategory
+  ? studyCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const freelancerCategory = navigationConfig.find(c => c.slug === 'freelancer-toolkit');
+const freelancerSteps = freelancerCategory
+  ? freelancerCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const shopeeCategory = navigationConfig.find(c => c.slug === 'shopee-seller');
+const shopeeSteps = shopeeCategory
+  ? shopeeCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
+const lazadaCategory = navigationConfig.find(c => c.slug === 'lazada-seller');
+const lazadaSteps = lazadaCategory
+  ? lazadaCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
+  : [];
+
 const pipelineLabels = {
   'youtube-automation': 'YouTube Automation pipeline',
   'daraz-seo': 'Daraz SEO intelligence',
   'local-social-commerce': 'Local Social Commerce & WhatsApp suite',
-  'seo-webmaster': 'SEO & Webmaster Intelligence'
+  'seo-webmaster': 'SEO & Webmaster Intelligence',
+  'calculators': 'Business & Marketing Calculators',
+  'pdf-image-utilities': 'PDF & Image Utilities',
+  'ai-writing': 'AI Writing & Language Tools',
+  'ai-study': 'AI Study, Quizzes & Typing',
+  'freelancer-toolkit': 'Freelancer Toolkit',
+  'shopee-seller': 'Shopee Seller Toolkit',
+  'lazada-seller': 'Lazada Seller Toolkit'
 };
 
 const categoryRouteKeys = {
   'youtube-automation': 'youtube',
   'daraz-seo': 'daraz',
   'local-social-commerce': 'local-commerce',
-  'seo-webmaster': 'seo'
+  'seo-webmaster': 'seo',
+  'calculators': 'calculators',
+  'pdf-image-utilities': 'pdf-utilities',
+  'ai-writing': 'writing',
+  'ai-study': 'study',
+  'freelancer-toolkit': 'freelancer',
+  'shopee-seller': 'shopee',
+  'lazada-seller': 'lazada'
 };
 
 export default function PipelineWorkspace({ toolSlug, categorySlug }) {
@@ -70,7 +125,21 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       ? localCommerceSteps
       : categorySlug === 'seo-webmaster'
         ? seoSteps
-        : darazSteps;
+        : categorySlug === 'calculators'
+          ? calculatorsSteps
+          : categorySlug === 'pdf-image-utilities'
+            ? pdfUtilitiesSteps
+            : categorySlug === 'ai-writing'
+              ? writingSteps
+              : categorySlug === 'ai-study'
+                ? studySteps
+                : categorySlug === 'freelancer-toolkit'
+                  ? freelancerSteps
+                  : categorySlug === 'shopee-seller'
+                    ? shopeeSteps
+                    : categorySlug === 'lazada-seller'
+                      ? lazadaSteps
+                      : darazSteps;
   const currentStepIndex = steps.findIndex(s => s.slug === toolSlug);
   const routeCategory = categoryRouteKeys[categorySlug] || 'daraz';
   const pipelineLabel = pipelineLabels[categorySlug] || 'Tool pipeline';
@@ -179,6 +248,20 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
         <YoutubeIntelligenceHost toolSlug={toolSlug} />
       ) : SEO_HOST_SLUGS.includes(toolSlug) ? (
         <SeoToolHost toolSlug={toolSlug} />
+      ) : CALCULATOR_HOST_SLUGS.includes(toolSlug) ? (
+        <CalculatorsHost toolSlug={toolSlug} />
+      ) : PDF_UTILITY_HOST_SLUGS.includes(toolSlug) ? (
+        <PdfUtilitiesHost toolSlug={toolSlug} />
+      ) : WRITING_HOST_SLUGS.includes(toolSlug) ? (
+        <WritingHost toolSlug={toolSlug} />
+      ) : STUDY_HOST_SLUGS.includes(toolSlug) ? (
+        <StudyHost toolSlug={toolSlug} />
+      ) : FREELANCER_HOST_SLUGS.includes(toolSlug) ? (
+        <FreelancerHost toolSlug={toolSlug} />
+      ) : SHOPEE_HOST_SLUGS.includes(toolSlug) ? (
+        <MarketplaceHost marketplace="shopee" toolSlug={toolSlug} />
+      ) : LAZADA_HOST_SLUGS.includes(toolSlug) ? (
+        <MarketplaceHost marketplace="lazada" toolSlug={toolSlug} />
       ) : (
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
           

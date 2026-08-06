@@ -1,0 +1,541 @@
+export const pdfUtilitiesSeoData = {
+  'pdf-to-markdown': {
+    title: 'Free PDF to Markdown Converter – Clean Headings & Lists',
+    description:
+      'Convert PDFs into clean, readable Markdown with Zetawala’s free PDF to Markdown converter. Headings, lists, and structure are preserved for docs, notes, and static sites. Processing runs on our local open-source server stack—no paid APIs, no third-party AI bills. Upload a PDF and download Markdown you can paste into GitHub, Notion, or your CMS.',
+    example: {
+      input: 'Upload: quarterly-report.pdf (with H1/H2 titles and bullet lists)',
+      output: '# Quarterly Report\n\n## Highlights\n- Revenue up 12%\n- New markets opened…',
+    },
+    faqs: [
+      {
+        q: 'How does the PDF to Markdown converter work?',
+        a: 'You upload a PDF; our server extracts text and structure with open-source libraries, then emits Markdown with headings and lists. No paid OCR or cloud AI API is used.',
+      },
+      {
+        q: 'Is this PDF to Markdown tool free?',
+        a: 'Yes. It is free to use on Zetawala. Processing uses open-source Node libraries on our server—not paid third-party conversion APIs.',
+      },
+      {
+        q: 'Will headings and bullet lists be preserved?',
+        a: 'The converter aims to map common heading and list patterns into Markdown (#, ##, -). Complex multi-column layouts may need light cleanup.',
+      },
+      {
+        q: 'What file size can I convert?',
+        a: 'PDFs up to the tool’s stated limit (typically around 10 MB) are supported. Larger files may fail or time out—split long documents if needed.',
+      },
+      {
+        q: 'Is my PDF sent to a paid AI service?',
+        a: 'No. Files are processed with open-source libraries on Zetawala’s local server path. There are no paid LLM or conversion API calls.',
+      },
+      {
+        q: 'Who should use a PDF to Markdown converter?',
+        a: 'Writers, developers, and knowledge teams who want docs in Git-friendly Markdown instead of locked PDF formatting.',
+      },
+    ],
+  },
+
+  'pdf-table-extractor': {
+    title: 'Free PDF Table Extractor – Export CSV, Excel & JSON',
+    description:
+      'Pull tables out of PDFs with Zetawala’s free PDF table extractor and export CSV, Excel, or JSON. Ideal for reports, invoices, and research PDFs where copy-paste breaks columns. Extraction runs on our local open-source server—no paid APIs. Get structured data you can open in Sheets, Excel, or your pipeline.',
+    example: {
+      input: 'Upload: sales-by-region.pdf (embedded data tables)',
+      output: 'Download CSV / XLSX / JSON with columns Region, Units, Revenue',
+    },
+    faqs: [
+      {
+        q: 'What formats can I export extracted tables to?',
+        a: 'You can export detected tables as CSV, Excel (XLSX), or JSON depending on the option you choose in the tool.',
+      },
+      {
+        q: 'Does the PDF table extractor use paid APIs?',
+        a: 'No. Table detection and export run on Zetawala’s local server with open-source libraries—no paid third-party table APIs.',
+      },
+      {
+        q: 'Will every PDF table extract perfectly?',
+        a: 'Results are best on clear, grid-like tables. Scanned images, merged cells, or decorative layouts may need manual cleanup after export.',
+      },
+      {
+        q: 'Is this PDF table extractor free?',
+        a: 'Yes. Zetawala offers free local-server processing with open-source tools and no paid API dependency.',
+      },
+      {
+        q: 'Can I extract multiple tables from one PDF?',
+        a: 'If several tables are detected, you can typically review and export them individually or as available in the tool UI.',
+      },
+      {
+        q: 'Who benefits from a PDF table extractor?',
+        a: 'Analysts, accountants, researchers, and ops teams who need spreadsheet-ready data from PDF reports without retyping.',
+      },
+    ],
+  },
+
+  'pdf-link-extractor': {
+    title: 'Free PDF Link Extractor – URLs, Emails & Phones',
+    description:
+      'Extract URLs, email addresses, phone numbers, and internal links from PDFs with Zetawala’s free PDF link extractor. Perfect for audits, lead lists, and citation checks. Processing uses open-source libraries on our local server—no paid APIs. Copy or download a clean list of contacts and hyperlinks from any supported PDF.',
+    example: {
+      input: 'Upload: partner-directory.pdf with clickable links and mailto: addresses',
+      output: 'URLs: https://… · Emails: sales@… · Phones: +1-… · Internal: #section-2',
+    },
+    faqs: [
+      {
+        q: 'What types of links does the extractor find?',
+        a: 'It targets web URLs, email addresses, phone numbers, and internal PDF destinations when they appear as extractable text or annotations.',
+      },
+      {
+        q: 'Is the PDF link extractor free?',
+        a: 'Yes. It is free on Zetawala and runs on our local open-source server stack without paid third-party APIs.',
+      },
+      {
+        q: 'Are my PDFs uploaded to an external AI service?',
+        a: 'No. Extraction runs with open-source Node libraries on Zetawala’s server path—no paid AI or link-mining APIs.',
+      },
+      {
+        q: 'Can I use this for SEO or compliance audits?',
+        a: 'Yes. Many teams extract outbound URLs and contact details from PDF decks, whitepapers, and catalogs for review.',
+      },
+      {
+        q: 'What if a phone number is written as plain text?',
+        a: 'Plain-text phones and emails that match common patterns are included when the extractor can detect them in the PDF text layer.',
+      },
+      {
+        q: 'Who should use a PDF link extractor?',
+        a: 'Marketers, researchers, and compliance reviewers who need a fast inventory of links and contacts buried inside PDFs.',
+      },
+    ],
+  },
+
+  'pdf-metadata-viewer': {
+    title: 'Free PDF Metadata Viewer – Author, Dates & Permissions',
+    description:
+      'Inspect PDF metadata with Zetawala’s free PDF metadata viewer—author, title, creation/modification dates, encryption, and permissions. Useful before publishing, archiving, or sharing sensitive docs. Reads run on our local open-source server—no paid APIs. See what is embedded in the file without installing desktop software.',
+    example: {
+      input: 'Upload: contract-v3.pdf',
+      output: 'Title, Author, Creator, Created/Modified dates, encrypted: yes/no, print/copy permissions',
+    },
+    faqs: [
+      {
+        q: 'What PDF metadata can I see?',
+        a: 'Typical fields include title, author, subject, creator/producer, creation and modification dates, encryption status, and common permission flags.',
+      },
+      {
+        q: 'Is the PDF metadata viewer free?',
+        a: 'Yes. It is free to use. Metadata is read with open-source libraries on Zetawala’s local server—no paid APIs.',
+      },
+      {
+        q: 'Does viewing metadata modify my PDF?',
+        a: 'No. The viewer inspects properties; it does not rewrite or strip the file unless you use a separate edit tool.',
+      },
+      {
+        q: 'Why check PDF permissions and encryption?',
+        a: 'Before sharing, you may need to know if printing, copying, or editing is restricted, or if the file is password-encrypted.',
+      },
+      {
+        q: 'Is metadata the same as document content?',
+        a: 'No. Metadata is file-level properties (author, dates, etc.). Body text and images are separate from these fields.',
+      },
+      {
+        q: 'Who uses a PDF metadata viewer?',
+        a: 'Legal, publishing, and IT teams verifying provenance, timestamps, and security flags on PDFs before distribution.',
+      },
+    ],
+  },
+
+  'pdf-image-extractor': {
+    title: 'Free PDF Image Extractor – Gallery & ZIP Download',
+    description:
+      'Extract embedded images from PDFs with Zetawala’s free PDF image extractor. Preview a gallery and download assets individually or as a ZIP. Processing uses open-source libraries on our local server—no paid APIs. Recover logos, charts, and photos locked inside presentations and reports without screenshotting page by page.',
+    example: {
+      input: 'Upload: brand-kit.pdf with embedded PNG/JPEG assets',
+      output: 'Gallery of extracted images + ZIP download of all images',
+    },
+    faqs: [
+      {
+        q: 'What image formats can be extracted from a PDF?',
+        a: 'Embedded raster images commonly come out as PNG or JPEG depending on how they were stored in the PDF. Vector-only artwork may not appear as separate image files.',
+      },
+      {
+        q: 'Is the PDF image extractor free?',
+        a: 'Yes. Extraction runs free on Zetawala with open-source server-side libraries and no paid third-party APIs.',
+      },
+      {
+        q: 'Can I download all images at once?',
+        a: 'Yes. After extraction you can typically browse a gallery and download a ZIP of the extracted images.',
+      },
+      {
+        q: 'Will screenshots of pages count as embedded images?',
+        a: 'Only images embedded as PDF XObjects are extracted. A page that is entirely a scanned bitmap may yield one large image; decorative vectors may not.',
+      },
+      {
+        q: 'Are my files sent to a paid cloud AI?',
+        a: 'No. Processing stays on Zetawala’s local open-source server path without paid image or AI APIs.',
+      },
+      {
+        q: 'Who should use a PDF image extractor?',
+        a: 'Designers, marketers, and archivists who need original assets out of PDF decks without re-exporting from design tools.',
+      },
+    ],
+  },
+
+  'excel-formula-generator': {
+    title: 'Free Excel Formula Generator – Lookup, Math, Date & Logic',
+    description:
+      'Build Excel formulas fast with Zetawala’s free Excel formula generator. Pick rule-based patterns for lookup, math, date, text, and logic—no guessing syntax. It runs client-side with open-source logic and no paid APIs, so you get instant formulas for VLOOKUP/XLOOKUP-style needs, SUMIFS, IF, and more. Copy the result straight into Excel or Google Sheets.',
+    example: {
+      input: 'Need: sum sales where Region = "West" in columns A–C',
+      output: '=SUMIF(A:A,"West",C:C)  (or equivalent SUMIFS pattern from the generator)',
+    },
+    faqs: [
+      {
+        q: 'How does the Excel formula generator work?',
+        a: 'You describe the task via the tool’s rule-based options (lookup, math, date, text, logic). It assembles a valid Excel formula from templates—no LLM required.',
+      },
+      {
+        q: 'Does it use AI or paid APIs?',
+        a: 'No. Formula generation is open-source, rule-based, and runs in your browser without paid AI or spreadsheet APIs.',
+      },
+      {
+        q: 'Which formula categories are supported?',
+        a: 'Common categories include lookup, math/aggregation, date, text, and logic (IF/AND/OR-style patterns) as exposed in the UI.',
+      },
+      {
+        q: 'Will the formula work in Google Sheets?',
+        a: 'Most generated Excel formulas work in Google Sheets with the same or very similar syntax. Check Sheets docs for any function name differences.',
+      },
+      {
+        q: 'Is the Excel formula generator free?',
+        a: 'Yes. It is free on Zetawala with no paid API dependency and client-side generation.',
+      },
+      {
+        q: 'Who should use an Excel formula generator?',
+        a: 'Analysts, students, and ops teams who know the outcome they want but need correct Excel syntax quickly.',
+      },
+    ],
+  },
+
+  'excel-formula-explainer': {
+    title: 'Free Excel Formula Explainer – Arguments & Expected Output',
+    description:
+      'Understand any Excel formula with Zetawala’s free Excel formula explainer. Paste a formula to see plain-language explanations of functions, arguments, and expected output. Explanation runs client-side with open-source logic—no paid APIs. Ideal for learning nested IFs, lookups, and array-style formulas before you trust them in production sheets.',
+    example: {
+      input: '=IF(VLOOKUP(A2,Sheet2!A:B,2,FALSE)>100,"High","Low")',
+      output: 'Step-by-step: VLOOKUP returns matching value → compared to 100 → IF returns "High" or "Low"',
+    },
+    faqs: [
+      {
+        q: 'How does the Excel formula explainer work?',
+        a: 'You paste a formula; the tool parses functions and arguments using rule-based, open-source logic and explains what each part does—no paid AI API.',
+      },
+      {
+        q: 'Is my spreadsheet data uploaded?',
+        a: 'You only paste the formula text. The explainer does not need your full workbook unless you choose to share cell context in the UI.',
+      },
+      {
+        q: 'Can it explain nested formulas?',
+        a: 'Yes. Nested functions are broken into steps so you can see inner results feeding outer functions.',
+      },
+      {
+        q: 'Does the explainer use paid APIs?',
+        a: 'No. It runs free in the browser with open-source explanation logic and no paid LLM or spreadsheet APIs.',
+      },
+      {
+        q: 'Will it tell me the exact cell result?',
+        a: 'It explains expected behavior and argument roles. Exact numeric results still depend on the values in your sheet.',
+      },
+      {
+        q: 'Who should use an Excel formula explainer?',
+        a: 'Anyone inheriting complex workbooks—students, analysts, and managers who need to verify what a formula actually computes.',
+      },
+    ],
+  },
+
+  'excel-to-json': {
+    title: 'Free Excel to JSON Converter – Structured Worksheet Export',
+    description:
+      'Convert Excel worksheets to structured JSON with Zetawala’s free Excel to JSON converter. Map rows to objects for APIs, configs, and front-end mocks. Conversion runs on our local open-source server—no paid APIs. Upload .xlsx/.xls and download clean JSON ready for developers and automation workflows.',
+    example: {
+      input: 'Upload: products.xlsx with columns sku, name, price',
+      output: '[{ "sku": "A1", "name": "Widget", "price": 19.99 }, …]',
+    },
+    faqs: [
+      {
+        q: 'Which Excel formats are supported?',
+        a: 'Common .xlsx and .xls uploads are accepted within the tool’s size limit. Prefer .xlsx for modern worksheets.',
+      },
+      {
+        q: 'Is Excel to JSON conversion free?',
+        a: 'Yes. It is free on Zetawala. Files are processed with open-source libraries on our local server—no paid APIs.',
+      },
+      {
+        q: 'How are headers mapped to JSON keys?',
+        a: 'The first row is typically treated as column headers and becomes object keys for each subsequent data row.',
+      },
+      {
+        q: 'Can I convert multiple sheets?',
+        a: 'Sheet handling follows the tool UI—often the active or first worksheet. Split workbooks if you need one JSON file per sheet.',
+      },
+      {
+        q: 'Are my spreadsheets sent to a paid cloud service?',
+        a: 'No. Conversion uses open-source Node libraries on Zetawala’s server path without paid third-party APIs.',
+      },
+      {
+        q: 'Who uses an Excel to JSON converter?',
+        a: 'Developers and data teams turning spreadsheet catalogs into JSON for APIs, CMS imports, and prototypes.',
+      },
+    ],
+  },
+
+  'json-to-excel': {
+    title: 'Free JSON to Excel Converter – Validate & Download XLSX',
+    description:
+      'Turn JSON into downloadable Excel with Zetawala’s free JSON to Excel converter. Paste or upload JSON, validate structure, and export XLSX for stakeholders who live in spreadsheets. Built with open-source tooling and no paid APIs—processing stays on Zetawala’s local path. Perfect for API responses, config dumps, and data handoffs.',
+    example: {
+      input: '[{ "id": 1, "status": "open" }, { "id": 2, "status": "closed" }]',
+      output: 'Download orders.xlsx with columns id, status',
+    },
+    faqs: [
+      {
+        q: 'What JSON shapes can I convert?',
+        a: 'Arrays of objects work best (one row per object, keys as columns). Nested objects may be flattened or stringified depending on the converter rules.',
+      },
+      {
+        q: 'Is the JSON to Excel tool free?',
+        a: 'Yes. It is free to use with open-source conversion and no paid third-party APIs.',
+      },
+      {
+        q: 'Does it validate JSON before export?',
+        a: 'Yes. Invalid JSON is flagged so you can fix syntax before generating the XLSX download.',
+      },
+      {
+        q: 'Can I use this for API response exports?',
+        a: 'Absolutely. Paste a JSON array from an API, validate it, and download Excel for non-technical teammates.',
+      },
+      {
+        q: 'Is processing done with paid cloud APIs?',
+        a: 'No. Conversion uses open-source libraries on Zetawala—no paid spreadsheet or AI APIs.',
+      },
+      {
+        q: 'Who should use a JSON to Excel converter?',
+        a: 'Engineers, PMs, and analysts who need spreadsheet-friendly views of JSON datasets without writing scripts.',
+      },
+    ],
+  },
+
+  'csv-to-excel': {
+    title: 'Free CSV to Excel Converter – Preview Rows & Download XLSX',
+    description:
+      'Convert CSV files to Excel with Zetawala’s free CSV to Excel converter. Upload a CSV, preview rows, then download a proper XLSX workbook. Conversion runs on our local open-source server—no paid APIs. Ideal when colleagues need Excel formatting, filters, and multiple sheets instead of raw comma-separated text.',
+    example: {
+      input: 'Upload: leads.csv (name,email,source)',
+      output: 'Preview table + download leads.xlsx',
+    },
+    faqs: [
+      {
+        q: 'Why convert CSV to Excel instead of opening CSV in Excel?',
+        a: 'A true XLSX preserves types better, supports Excel features, and avoids delimiter/encoding surprises when sharing across teams and locales.',
+      },
+      {
+        q: 'Is the CSV to Excel converter free?',
+        a: 'Yes. It is free on Zetawala with open-source local-server processing and no paid APIs.',
+      },
+      {
+        q: 'Can I preview data before downloading?',
+        a: 'Yes. The tool lets you preview rows so you can confirm columns look correct before exporting XLSX.',
+      },
+      {
+        q: 'What CSV size is supported?',
+        a: 'Uploads follow the tool’s limit (typically around 8 MB). Split very large exports if needed.',
+      },
+      {
+        q: 'Are files processed by paid third-party APIs?',
+        a: 'No. Conversion uses open-source libraries on Zetawala’s local server path.',
+      },
+      {
+        q: 'Who benefits from CSV to Excel conversion?',
+        a: 'Anyone receiving CSV dumps from CRMs, databases, or analytics tools who needs a polished Excel file to share.',
+      },
+    ],
+  },
+
+  'image-metadata-viewer': {
+    title: 'Free Image Metadata Viewer – EXIF, GPS, ISO & Resolution',
+    description:
+      'View EXIF and image metadata with Zetawala’s free image metadata viewer—camera model, GPS, ISO, aperture, shutter, and resolution. Great for photographers, journalists, and privacy checks before publishing. Reads run via open-source libraries on our local server—no paid APIs. Inspect what your JPEG or photo file still contains.',
+    example: {
+      input: 'Upload: vacation.jpg from a phone camera',
+      output: 'Camera, lens/ISO/aperture, GPS coordinates (if present), dimensions, date taken',
+    },
+    faqs: [
+      {
+        q: 'What metadata fields can I see?',
+        a: 'Common EXIF fields include camera make/model, ISO, aperture, shutter speed, focal length, capture date, GPS (if present), and image resolution.',
+      },
+      {
+        q: 'Is the image metadata viewer free?',
+        a: 'Yes. It is free on Zetawala. Metadata is read with open-source tools on our local server—no paid APIs.',
+      },
+      {
+        q: 'Does every image have GPS data?',
+        a: 'No. GPS appears only if the device stored location in EXIF and it was not stripped earlier.',
+      },
+      {
+        q: 'Can PNG or WebP show EXIF?',
+        a: 'EXIF is most common on JPEG/HEIC-style camera files. Other formats may show limited or no EXIF depending on how they were saved.',
+      },
+      {
+        q: 'Is my photo sent to a paid AI service?',
+        a: 'No. Inspection uses open-source libraries on Zetawala’s server path without paid vision or metadata APIs.',
+      },
+      {
+        q: 'Who should use an image metadata viewer?',
+        a: 'Photographers verifying camera settings, and anyone checking whether location or device data is still embedded before sharing.',
+      },
+    ],
+  },
+
+  'exif-metadata-remover': {
+    title: 'Free EXIF Metadata Remover – Strip Image Privacy Data',
+    description:
+      'Strip EXIF and sensitive image metadata with Zetawala’s free EXIF metadata remover while preserving visual quality. Remove GPS, camera serials, and device tags before posting online. Processing uses open-source libraries on our local server—no paid APIs. Download a cleaned image ready for social media, portfolios, or client handoff.',
+    example: {
+      input: 'Upload: photo-with-gps.jpg',
+      output: 'Download cleaned image with EXIF/GPS stripped; pixels preserved',
+    },
+    faqs: [
+      {
+        q: 'What does an EXIF metadata remover do?',
+        a: 'It removes embedded metadata (GPS, camera info, timestamps, etc.) from the image file while keeping the visible picture intact.',
+      },
+      {
+        q: 'Is the EXIF remover free?',
+        a: 'Yes. It is free on Zetawala with open-source local-server processing and no paid APIs.',
+      },
+      {
+        q: 'Will stripping EXIF reduce image quality?',
+        a: 'The tool aims to preserve visual quality. You remove metadata tags, not intentionally recompress for a “filter” look—download and spot-check critical shots.',
+      },
+      {
+        q: 'Why remove GPS from photos?',
+        a: 'Location EXIF can reveal home or travel patterns. Stripping GPS before public posts is a common privacy practice.',
+      },
+      {
+        q: 'Are images processed with paid cloud APIs?',
+        a: 'No. Cleaning runs with open-source libraries on Zetawala’s local server—no paid third-party APIs.',
+      },
+      {
+        q: 'Who should use an EXIF metadata remover?',
+        a: 'Creators, journalists, and privacy-conscious users sharing photos publicly or with clients.',
+      },
+    ],
+  },
+
+  'image-color-palette': {
+    title: 'Free Image Color Palette Extractor – HEX, RGB & Tailwind',
+    description:
+      'Extract dominant colors from any image with Zetawala’s free image color palette extractor. Get HEX, RGB, CSS, and Tailwind-friendly hints for brand kits and UI design. Analysis runs on our local open-source server—no paid APIs. Upload a photo or screenshot and copy a ready-to-use palette in seconds.',
+    example: {
+      input: 'Upload: product-hero.png',
+      output: 'Palette: #0F172A, #38BDF8, #F8FAFC… with RGB/CSS/Tailwind hints',
+    },
+    faqs: [
+      {
+        q: 'How are dominant colors chosen?',
+        a: 'Open-source color analysis samples the image and clusters frequent colors into a compact palette you can copy as HEX/RGB.',
+      },
+      {
+        q: 'Is the color palette extractor free?',
+        a: 'Yes. It is free on Zetawala with local open-source server processing and no paid design or AI APIs.',
+      },
+      {
+        q: 'What formats can I copy colors in?',
+        a: 'Expect HEX and RGB plus CSS-oriented values and Tailwind-style hints where the UI provides them.',
+      },
+      {
+        q: 'Can I use this for brand guidelines?',
+        a: 'Yes. Designers often extract palettes from photos, packaging, or screenshots to seed mood boards and UI tokens.',
+      },
+      {
+        q: 'Does this call a paid color API?',
+        a: 'No. Palette extraction uses open-source libraries on Zetawala’s server—no paid third-party APIs.',
+      },
+      {
+        q: 'Who should use an image color palette tool?',
+        a: 'Designers, front-end developers, and marketers building cohesive color systems from real imagery.',
+      },
+    ],
+  },
+
+  'social-image-resizer': {
+    title: 'Free Social Media Image Resizer – IG, Facebook, LinkedIn & More',
+    description:
+      'Resize images for Instagram, Facebook, LinkedIn, X, TikTok, and more with Zetawala’s free social media image resizer. Pick a platform preset, upload once, and download correctly sized creatives. Processing uses open-source libraries on our local server—no paid APIs. Stop guessing pixel dimensions for every network.',
+    example: {
+      input: 'Upload: campaign.jpg · Preset: Instagram feed portrait',
+      output: 'Download resized image at the preset’s target dimensions',
+    },
+    faqs: [
+      {
+        q: 'Which platforms are supported?',
+        a: 'Presets cover major networks such as Instagram, Facebook, LinkedIn, X (Twitter), TikTok, and other common social sizes listed in the tool.',
+      },
+      {
+        q: 'Is the social image resizer free?',
+        a: 'Yes. It is free on Zetawala with open-source local-server processing and no paid image APIs.',
+      },
+      {
+        q: 'Will resizing crop my image?',
+        a: 'Behavior depends on the preset and fit mode (cover vs contain). Check the preview so important subjects stay in frame.',
+      },
+      {
+        q: 'Can I resize one image for multiple platforms?',
+        a: 'Yes. Re-run with different presets—or batch as the UI allows—to export each network’s recommended size.',
+      },
+      {
+        q: 'Are uploads sent to paid cloud editors?',
+        a: 'No. Resizing uses open-source libraries on Zetawala’s local server path without paid APIs.',
+      },
+      {
+        q: 'Who should use a social media image resizer?',
+        a: 'Social managers, creators, and small businesses who need on-spec post and cover images without desktop design tools.',
+      },
+    ],
+  },
+
+  'screenshot-to-text': {
+    title: 'Free Screenshot to Text OCR – Copyable TXT & Markdown',
+    description:
+      'Turn screenshots into copyable text with Zetawala’s free screenshot-to-text OCR tool. Extract text from UI captures, slides, and error dialogs, then copy or download TXT/Markdown. OCR runs via open-source tooling on our local server—no paid APIs. Skip retyping from images when you need searchable, editable text.',
+    example: {
+      input: 'Upload: error-dialog.png with on-screen message text',
+      output: 'Plain text / Markdown of the recognized OCR content ready to copy',
+    },
+    faqs: [
+      {
+        q: 'How accurate is screenshot OCR?',
+        a: 'Accuracy is best on sharp, high-contrast text. Blurry screenshots, stylized fonts, or dense UI chrome may need light manual fixes.',
+      },
+      {
+        q: 'Is the screenshot to text tool free?',
+        a: 'Yes. It is free on Zetawala. OCR uses open-source libraries on our local server—no paid OCR or AI APIs.',
+      },
+      {
+        q: 'What output formats are available?',
+        a: 'You can typically copy recognized text and export as TXT or Markdown depending on the tool options.',
+      },
+      {
+        q: 'Which languages are supported?',
+        a: 'Support follows the open-source OCR engine configuration. Latin-script UI screenshots usually work well; check results for other scripts.',
+      },
+      {
+        q: 'Is my screenshot sent to a paid cloud OCR service?',
+        a: 'No. Processing stays on Zetawala’s local open-source server path without paid third-party OCR APIs.',
+      },
+      {
+        q: 'Who should use screenshot to text OCR?',
+        a: 'Support agents, developers, students, and writers who need editable text from images without typing it by hand.',
+      },
+    ],
+  },
+};

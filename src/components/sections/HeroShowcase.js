@@ -11,14 +11,14 @@ export default function HeroShowcase() {
       </div>
 
       <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.12] max-w-4xl mx-auto animate-fade-in">
-        Free AI Tools for YouTube, Daraz, WhatsApp &{' '}
+        Free AI Tools for YouTube, Daraz, Freelancers, Shopee &{' '}
         <span className="text-sky-600 dark:text-sky-400">
-          SEO Webmaster Growth
+          Lazada
         </span>
       </h1>
 
       <p className="text-base sm:text-lg text-slate-400 dark:text-slate-350 max-w-2xl mx-auto leading-relaxed font-medium">
-        Run research, audits, and content pipelines in one place—YouTube niche & video intelligence, Daraz listing SEO, WhatsApp social commerce copy, plus technical SEO checks like PageSpeed, sitemaps, broken links, and indexability.
+        Research, audits, study tools, freelancer workflows, and marketplace seller toolkits in one place—YouTube, Daraz, WhatsApp, SEO, calculators, PDF utilities, AI writing, Upwork/Fiverr, plus Shopee and Lazada listing SEO and profit math.
       </p>
 
       <div className="pt-4 pb-12">

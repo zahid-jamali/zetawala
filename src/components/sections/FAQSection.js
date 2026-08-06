@@ -6,11 +6,35 @@ import { ChevronDown } from "lucide-react";
 const seoFaqs = [
   {
     q: "What is Zetawala and who is it for?",
-    a: "Zetawala is a free multi-suite productivity platform for creators, sellers, and website owners. It combines YouTube automation, Daraz SEO tools, Local Social Commerce & WhatsApp Suite workflows, and SEO & Webmaster Intelligence—so you can research, audit, optimize, and create content without juggling dozens of disconnected apps.",
+    a: "Zetawala is a free multi-suite productivity platform for creators, sellers, and website owners. It combines YouTube automation, Daraz SEO tools, Local Social Commerce & WhatsApp Suite workflows, SEO & Webmaster Intelligence, Business & Marketing Calculators, PDF & Image Utilities, AI Writing & Language Tools, AI Study, Quizzes & Typing, Freelancer Toolkit (Upwork & Fiverr), and Shopee & Lazada Seller Toolkits—so you can research, audit, optimize, and create content without juggling dozens of disconnected apps.",
   },
   {
     q: "What tools are included in SEO & Webmaster Intelligence?",
     a: "The suite includes an SEO Website Checker, Content Audit, Title & Meta Description Analyzer, PageSpeed & Core Web Vitals Analyzer, Internal Link & Orphan Page Analyzer, Broken Link Checker, Sitemap Generator & Validator, Canonical & Indexability Checker, SEO Action Plan Generator, Robots.txt Generator & Tester, Header & Meta Tags Inspector, Traffic & Ad Revenue Estimator, SEO Health Score Calculator, Keyword Density Checker, plus SEO, Keyword, and Content ROI calculators.",
+  },
+  {
+    q: "What calculators does Zetawala include?",
+    a: "The Calculators suite has 18 free deterministic tools: freelance hourly rate and project pricing, AI API cost, SaaS pricing, LTV, CAC, break-even, profit margin, content/email/Google Ads ROI, affiliate earnings, AdSense revenue, ecommerce/Amazon FBA/Etsy/eBay profit, and salary-to-hourly conversion—no AI calls required.",
+  },
+  {
+    q: "What PDF & Image Utilities does Zetawala include?",
+    a: "Fifteen free utilities: PDF to Markdown, table/link/image extractors, PDF metadata viewer, Excel formula generator and explainer, Excel/JSON/CSV converters, image EXIF viewer and remover, color palette extractor, social image resizer, and screenshot OCR.",
+  },
+  {
+    q: "What AI Writing & Language Tools does Zetawala include?",
+    a: "Ten free tools: AI Humanizer, AI Content Detector, Plagiarism Checker, Grammar Checker, Paraphrasing Tool, Roman Urdu → Urdu Converter, Urdu → Roman Urdu Converter, Roman Urdu Grammar & Spell Checker, AI Text Summarizer, and AI Rewrite Tool—powered by DeepSeek for English, Spanish, and Urdu workflows.",
+  },
+  {
+    q: "What AI Study, Quizzes & Typing tools does Zetawala include?",
+    a: "Ten free tools: AI Notes Generator, AI Quiz Generator, PDF to Quiz, AI Flashcard Generator, YouTube Study Notes, AI Assignment Generator, AI Homework Solver, Typing Speed Test, Typing Master Course, and Coding Typing Test—AI study tools use DeepSeek; typing tools are pure client logic with certificates.",
+  },
+  {
+    q: "What is the Freelancer Toolkit?",
+    a: "Twenty free Upwork and Fiverr tools: proposal and gig generators, analyzers, profile optimizers, pricing packages, contracts, buyer/review replies, and an hourly rate calculator—AI tools use DeepSeek; rate and package math are deterministic. Optional Freelancer Profile prefills shared fields.",
+  },
+  {
+    q: "What Shopee and Lazada seller tools does Zetawala include?",
+    a: "Each marketplace has 10 tools: listing title/description generators, keyword research, SEO analyzer, profit/fee/pricing/shipping calculators, chat replies, and listing optimizer. Shared seller math and prompts keep both toolkits consistent while using marketplace-specific defaults.",
   },
   {
     q: "How does Zetawala help with YouTube growth?",
@@ -38,7 +62,7 @@ const seoFaqs = [
   },
   {
     q: "Is Zetawala mobile friendly?",
-    a: "Yes. The full layout is responsive with Tailwind CSS, so YouTube, Daraz, WhatsApp, and SEO tool workspaces remain usable on phones, tablets, and desktops.",
+    a: "Yes. The full layout is responsive with Tailwind CSS, so YouTube, Daraz, WhatsApp, SEO, Calculators, PDF Utilities, AI Writing, AI Study, Freelancer, Shopee, and Lazada workspaces remain usable on phones, tablets, and desktops.",
   },
 ];
 
@@ -64,7 +88,7 @@ export default function FAQSection() {
             Frequently Asked Questions (FAQ)
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
-            Clear answers about Zetawala’s YouTube, Daraz, WhatsApp, and SEO & Webmaster tools.
+            Clear answers about Zetawala’s YouTube, Daraz, WhatsApp, SEO & Webmaster, Calculators, PDF & Image Utilities, AI Writing, AI Study, Freelancer, Shopee, and Lazada tools.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Video, ShoppingBag, MessageCircle, Search, Layers, Globe, Cpu } from 'lucide-react';
+import { Video, ShoppingBag, MessageCircle, Search, Calculator, FileStack, PenLine, BookOpen, Briefcase, Store, Layers, Globe, Cpu } from 'lucide-react';
 
 export default function FeaturesGrid() {
   const cardClasses = "bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300";
@@ -111,6 +111,166 @@ export default function FeaturesGrid() {
                 className="w-full py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 Open SEO Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Calculators Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-violet-50 dark:bg-violet-950/20 border border-violet-100 dark:border-violet-900/30 flex items-center justify-center">
+                <Calculator className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">Business & Marketing Calculators</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Instant freelance rates, SaaS pricing, LTV, CAC, ads ROI, AdSense, affiliate earnings, and ecommerce profit math—deterministic formulas with no AI dependency.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/calculators"
+                className="w-full py-3.5 rounded-2xl bg-violet-600 hover:bg-violet-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open Calculators Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* PDF & Image Utilities Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-teal-50 dark:bg-teal-950/20 border border-teal-100 dark:border-teal-900/30 flex items-center justify-center">
+                <FileStack className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">PDF & Image Utilities</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Convert PDFs to Markdown, extract tables and links, Excel converters, EXIF tools, color palettes, social image resizers, and screenshot OCR—all free, server-side utilities.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/pdf-utilities"
+                className="w-full py-3.5 rounded-2xl bg-teal-600 hover:bg-teal-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open PDF Utilities Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* AI Writing & Language Tools Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/30 flex items-center justify-center">
+                <PenLine className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">AI Writing & Language Tools</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Humanize AI text, detect AI content, check grammar and plagiarism, paraphrase, convert Roman Urdu ↔ Urdu, summarize, and rewrite—10 free language tools powered by DeepSeek.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/writing"
+                className="w-full py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open AI Writing Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* AI Study, Quizzes & Typing Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/30 flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-sky-600 dark:text-sky-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">AI Study, Quizzes & Typing</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  AI notes, quizzes, PDF-to-quiz, flashcards, YouTube study notes, assignments, homework help, plus typing speed, typing master, and coding typing tests with certificates.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/study"
+                className="w-full py-3.5 rounded-2xl bg-sky-600 hover:bg-sky-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open Study Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Freelancer Toolkit Suite */}
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/30 flex items-center justify-center">
+                <Briefcase className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">Freelancer Toolkit</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Upwork and Fiverr hubs with 20 tools—proposals, gig SEO, profiles, pricing, contracts, buyer replies, and an optional shared freelancer profile.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link
+                href="/freelancer"
+                className="w-full py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+              >
+                Open Freelancer Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-orange-50 dark:bg-orange-950/20 border border-orange-100 dark:border-orange-900/30 flex items-center justify-center">
+                <Store className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">Shopee Seller Toolkit</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Listing titles, descriptions, keywords, SEO scores, profit/fee/pricing/shipping math, chat replies, and listing optimizer for Shopee sellers.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link href="/shopee" className="w-full py-3.5 rounded-2xl bg-orange-600 hover:bg-orange-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+                Open Shopee Workspace
+                <span>&rarr;</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className={cardClasses}>
+            <div className="space-y-6">
+              <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-900/30 flex items-center justify-center">
+                <Store className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-black text-slate-900 dark:text-white">Lazada Seller Toolkit</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-455 leading-relaxed font-medium">
+                  Same shared seller engine for Lazada—listing SEO, keywords, calculators, shipping estimates, chat replies, and listing optimization.
+                </p>
+              </div>
+            </div>
+            <div className="pt-8">
+              <Link href="/lazada" className="w-full py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-white font-bold text-xs transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+                Open Lazada Workspace
                 <span>&rarr;</span>
               </Link>
             </div>

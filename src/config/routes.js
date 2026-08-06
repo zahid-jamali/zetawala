@@ -1,6 +1,20 @@
 import { seoTools } from './seoWebmaster/tools';
+import { calculatorTools } from './calculators/tools';
+import { pdfUtilityTools } from './pdfUtilities/tools';
+import { writingTools } from './writing/tools';
+import { studyTools } from './study/tools';
+import { freelancerTools } from './freelancer/tools';
+import { shopeeTools } from './shopee/tools';
+import { lazadaTools } from './lazada/tools';
 
 const seoRouteEntries = Object.fromEntries(seoTools.map((t) => [t.slug, t.seoSlug]));
+const calculatorRouteEntries = Object.fromEntries(calculatorTools.map((t) => [t.slug, t.seoSlug]));
+const pdfUtilityRouteEntries = Object.fromEntries(pdfUtilityTools.map((t) => [t.slug, t.seoSlug]));
+const writingRouteEntries = Object.fromEntries(writingTools.map((t) => [t.slug, t.seoSlug]));
+const studyRouteEntries = Object.fromEntries(studyTools.map((t) => [t.slug, t.seoSlug]));
+const freelancerRouteEntries = Object.fromEntries(freelancerTools.map((t) => [t.slug, t.seoSlug]));
+const shopeeRouteEntries = Object.fromEntries(shopeeTools.map((t) => [t.slug, t.seoSlug]));
+const lazadaRouteEntries = Object.fromEntries(lazadaTools.map((t) => [t.slug, t.seoSlug]));
 
 const routeMapping = {
   // YouTube Intelligence & Monetization
@@ -44,6 +58,25 @@ const routeMapping = {
 
   // SEO & Webmaster Intelligence
   ...seoRouteEntries,
+
+  // Business & Marketing Calculators
+  ...calculatorRouteEntries,
+
+  // PDF & Image Utilities
+  ...pdfUtilityRouteEntries,
+
+  // AI Writing & Language Tools
+  ...writingRouteEntries,
+
+  // AI Study, Quizzes & Typing
+  ...studyRouteEntries,
+
+  // Freelancer Toolkit
+  ...freelancerRouteEntries,
+
+  // Shopee & Lazada Seller Toolkits
+  ...shopeeRouteEntries,
+  ...lazadaRouteEntries,
 };
 
 const categoryFolderMap = {
@@ -55,15 +88,42 @@ const categoryFolderMap = {
   'local-commerce': 'local-commerce',
   'seo-webmaster': 'seo',
   'seo': 'seo',
+  'calculators': 'calculators',
+  'pdf-image-utilities': 'pdf-utilities',
+  'pdf-utilities': 'pdf-utilities',
+  'ai-writing': 'writing',
+  'writing': 'writing',
+  'ai-study': 'study',
+  'study': 'study',
+  'freelancer-toolkit': 'freelancer',
+  'freelancer': 'freelancer',
+  'shopee-seller': 'shopee',
+  'shopee': 'shopee',
+  'lazada-seller': 'lazada',
+  'lazada': 'lazada',
 };
 
 const getFolderFromCategory = (category) => categoryFolderMap[category] || 'daraz';
 
 const seoInternalSlugs = new Set(seoTools.map((t) => t.slug));
 const seoPublicSlugs = new Set(seoTools.map((t) => t.seoSlug));
+const calculatorPublicSlugs = new Set(calculatorTools.map((t) => t.seoSlug));
+const pdfUtilityPublicSlugs = new Set(pdfUtilityTools.map((t) => t.seoSlug));
+const writingPublicSlugs = new Set(writingTools.map((t) => t.seoSlug));
+const studyPublicSlugs = new Set(studyTools.map((t) => t.seoSlug));
+const freelancerPublicSlugs = new Set(freelancerTools.map((t) => t.seoSlug));
+const shopeePublicSlugs = new Set(shopeeTools.map((t) => t.seoSlug));
+const lazadaPublicSlugs = new Set(lazadaTools.map((t) => t.seoSlug));
 
 const getFolderFromSeoSlug = (seo) => {
   if (seo.startsWith('youtube-')) return 'youtube';
+  if (shopeePublicSlugs.has(seo) || seo.startsWith('shopee-')) return 'shopee';
+  if (lazadaPublicSlugs.has(seo) || seo.startsWith('lazada-')) return 'lazada';
+  if (freelancerPublicSlugs.has(seo) || seo.startsWith('upwork-') || seo.startsWith('fiverr-')) return 'freelancer';
+  if (studyPublicSlugs.has(seo)) return 'study';
+  if (writingPublicSlugs.has(seo)) return 'writing';
+  if (pdfUtilityPublicSlugs.has(seo)) return 'pdf-utilities';
+  if (calculatorPublicSlugs.has(seo)) return 'calculators';
   if (
     seo.startsWith('whatsapp-') ||
     seo.startsWith('facebook-instagram-') ||
@@ -143,6 +203,41 @@ export const getLegacyRedirects = () => {
   redirects.push({
     source: '/dashboard/seo',
     destination: '/tools/seo/seo-website-checker',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/calculators',
+    destination: '/tools/calculators/freelance-hourly-rate-calculator',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/pdf-utilities',
+    destination: '/tools/pdf-utilities/pdf-to-markdown-converter',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/writing',
+    destination: '/tools/writing/ai-humanizer',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/study',
+    destination: '/tools/study/ai-notes-generator',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/freelancer',
+    destination: '/tools/freelancer/upwork-proposal-generator',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/shopee',
+    destination: '/tools/shopee/shopee-listing-title-generator',
+    permanent: true
+  });
+  redirects.push({
+    source: '/dashboard/lazada',
+    destination: '/tools/lazada/lazada-listing-title-generator',
     permanent: true
   });
 

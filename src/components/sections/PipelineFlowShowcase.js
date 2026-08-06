@@ -31,8 +31,50 @@ const seoFlow = [
   { step: '03', name: 'Content SEO', desc: 'Audit titles, meta tags, keyword density & content structure signals.' }
 ];
 
+const calculatorsFlow = [
+  { step: '01', name: 'Hourly Rate', desc: 'Set minimum, recommended, and premium freelance rates from goals and taxes.' },
+  { step: '02', name: 'Unit Economics', desc: 'Model SaaS pricing, LTV, CAC, and break-even before scaling spend.' },
+  { step: '03', name: 'Marketing ROI', desc: 'Estimate returns from content, Google Ads, email, affiliates, and AdSense.' },
+  { step: '04', name: 'Ecommerce Margins', desc: 'Net profit after marketplace fees on Amazon, Etsy, eBay, and DTC stores.' }
+];
+
+const pdfUtilitiesFlow = [
+  { step: '01', name: 'PDF Extract', desc: 'Convert to Markdown, pull tables, links, metadata, and embedded images.' },
+  { step: '02', name: 'Excel Convert', desc: 'Generate formulas, explain them, and convert Excel, JSON, and CSV.' },
+  { step: '03', name: 'Image Tools', desc: 'View or strip EXIF, extract color palettes, and resize for social platforms.' },
+  { step: '04', name: 'Screenshot OCR', desc: 'Turn screenshots into copyable text, TXT, or Markdown.' }
+];
+
+const writingFlow = [
+  { step: '01', name: 'Humanize & Detect', desc: 'Rewrite AI text to sound natural, then score AI vs human writing signals.' },
+  { step: '02', name: 'Grammar & Paraphrase', desc: 'Fix grammar, check plagiarism, and rewrite in fluency, formal, or academic modes.' },
+  { step: '03', name: 'Urdu Language', desc: 'Convert Roman Urdu ↔ Urdu script and fix Roman Urdu spelling and grammar.' },
+  { step: '04', name: 'Summarize & Rewrite', desc: 'Compress long text into key points or rewrite shorter, longer, or SEO-focused.' }
+];
+
+const studyFlow = [
+  { step: '01', name: 'Notes & Quizzes', desc: 'Generate study notes and interactive MCQs with scores and review mode.' },
+  { step: '02', name: 'PDF & YouTube', desc: 'Turn PDFs into quizzes and YouTube videos into notes, summaries, and quizzes.' },
+  { step: '03', name: 'Flashcards & Homework', desc: 'Build flashcards, draft assignments, and get step-by-step homework explanations.' },
+  { step: '04', name: 'Typing Practice', desc: 'Speed tests, typing master lessons, and coding typing with certificates.' }
+];
+
+const freelancerFlow = [
+  { step: '01', name: 'Win Upwork Jobs', desc: 'Proposals, job match scores, cover letters, and interview answers.' },
+  { step: '02', name: 'Optimize Profile', desc: 'Profile optimizer, portfolio copy, rates, and contracts.' },
+  { step: '03', name: 'Build Fiverr Gigs', desc: 'Titles, descriptions, tags, FAQs, SEO scores, and image text.' },
+  { step: '04', name: 'Close & Retain', desc: 'Pricing packages, buyer replies, bios, and review responses.' }
+];
+
+const marketplaceFlow = [
+  { step: '01', name: 'Listing Copy', desc: 'Titles, descriptions, and keyword research for marketplace SEO.' },
+  { step: '02', name: 'SEO Score', desc: 'Analyze listings and optimize quality before publishing.' },
+  { step: '03', name: 'Margins & Fees', desc: 'Profit, fee, pricing, and shipping calculators with regional configs.' },
+  { step: '04', name: 'Seller Chat', desc: 'Professional and friendly replies to buyer messages.' }
+];
+
 export default function PipelineFlowShowcase() {
-  const [activeTab, setActiveTab] = useState('youtube'); // 'youtube' | 'daraz' | 'local-commerce' | 'seo'
+  const [activeTab, setActiveTab] = useState('youtube');
 
   const activeFlow =
     activeTab === 'youtube'
@@ -41,7 +83,19 @@ export default function PipelineFlowShowcase() {
         ? localCommerceFlow
         : activeTab === 'seo'
           ? seoFlow
-          : darazFlow;
+          : activeTab === 'calculators'
+            ? calculatorsFlow
+            : activeTab === 'pdf-utilities'
+              ? pdfUtilitiesFlow
+              : activeTab === 'writing'
+                ? writingFlow
+                : activeTab === 'study'
+                  ? studyFlow
+                  : activeTab === 'freelancer'
+                    ? freelancerFlow
+                    : activeTab === 'marketplace'
+                      ? marketplaceFlow
+                      : darazFlow;
 
   const tabButton = (id, label) => (
     <button
@@ -60,7 +114,7 @@ export default function PipelineFlowShowcase() {
             Workspace Workflow Pipelines
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
-            Toggle between YouTube, Daraz, Local Social Commerce & WhatsApp, and SEO & Webmaster workflows to visualize how the micro-tools pass data sequentially.
+            Toggle between YouTube, Daraz, Local Social Commerce & WhatsApp, SEO & Webmaster, Calculators, PDF & Image Utilities, AI Writing, AI Study, Freelancer, and Shopee/Lazada marketplace workflows.
           </p>
         </div>
 
@@ -71,6 +125,12 @@ export default function PipelineFlowShowcase() {
             {tabButton('daraz', 'Daraz SEO Pipeline')}
             {tabButton('local-commerce', 'WhatsApp & Local Commerce')}
             {tabButton('seo', 'SEO & Webmaster')}
+            {tabButton('calculators', 'Calculators')}
+            {tabButton('pdf-utilities', 'PDF & Images')}
+            {tabButton('writing', 'AI Writing')}
+            {tabButton('study', 'AI Study')}
+            {tabButton('freelancer', 'Freelancer')}
+            {tabButton('marketplace', 'Shopee / Lazada')}
           </div>
         </div>
 

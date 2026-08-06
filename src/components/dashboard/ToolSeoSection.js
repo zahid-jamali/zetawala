@@ -29,13 +29,67 @@ export default function ToolSeoSection({ toolSlug }) {
     'health-score', 'keyword-density', 'seo-roi', 'keyword-roi', 'content-roi'
   ].includes(toolSlug);
 
+  const isCalculators = [
+    'freelance-hourly-rate', 'ai-api-cost', 'saas-pricing', 'customer-ltv', 'customer-cac',
+    'break-even', 'profit-margin', 'content-marketing-roi', 'google-ads-profit',
+    'email-marketing-roi', 'affiliate-earnings', 'adsense-revenue', 'ecommerce-profit',
+    'amazon-fba-profit', 'etsy-fee-profit', 'ebay-fee', 'freelance-project-pricing',
+    'salary-to-hourly'
+  ].includes(toolSlug);
+
+  const isPdfUtilities = [
+    'pdf-to-markdown', 'pdf-table-extractor', 'pdf-link-extractor', 'pdf-metadata-viewer',
+    'pdf-image-extractor', 'excel-formula-generator', 'excel-formula-explainer', 'excel-to-json',
+    'json-to-excel', 'csv-to-excel', 'image-metadata-viewer', 'exif-metadata-remover',
+    'image-color-palette', 'social-image-resizer', 'screenshot-to-text'
+  ].includes(toolSlug);
+
+  const isWriting = [
+    'ai-humanizer', 'ai-content-detector', 'plagiarism-checker', 'grammar-checker',
+    'paraphrasing-tool', 'roman-urdu-to-urdu', 'urdu-to-roman-urdu', 'roman-urdu-grammar',
+    'ai-text-summarizer', 'ai-rewrite-tool'
+  ].includes(toolSlug);
+
+  const isStudy = [
+    'ai-notes-generator', 'ai-quiz-generator', 'pdf-to-quiz', 'ai-flashcard-generator',
+    'youtube-study-notes', 'ai-assignment-generator', 'ai-homework-solver',
+    'typing-speed-test', 'typing-master-course', 'coding-typing-test'
+  ].includes(toolSlug);
+
+  const isFreelancer = [
+    'upwork-proposal-generator', 'upwork-proposal-analyzer', 'upwork-job-match-analyzer',
+    'upwork-profile-optimizer', 'upwork-cover-letter-generator', 'upwork-interview-answer-generator',
+    'upwork-hourly-rate-calculator', 'upwork-contract-generator', 'upwork-portfolio-description-generator',
+    'upwork-client-followup-generator', 'fiverr-gig-title-generator', 'fiverr-gig-description-generator',
+    'fiverr-gig-seo-analyzer', 'fiverr-tag-generator', 'fiverr-faq-generator', 'fiverr-pricing-generator',
+    'fiverr-gig-image-text-generator', 'fiverr-buyer-request-reply-generator', 'fiverr-profile-bio-generator',
+    'fiverr-review-response-generator'
+  ].includes(toolSlug);
+
+  const isShopee = String(toolSlug).startsWith('shopee-');
+  const isLazada = String(toolSlug).startsWith('lazada-');
+
   const blogCategory = isYoutube
     ? 'youtube'
     : isLocalCommerce
       ? 'local-commerce'
       : isSeoWebmaster
         ? 'seo-webmaster'
-        : 'daraz';
+        : isCalculators
+          ? 'calculators'
+          : isPdfUtilities
+            ? 'pdf-utilities'
+            : isWriting
+              ? 'writing'
+              : isStudy
+                ? 'study'
+                : isFreelancer
+                  ? 'freelancer'
+                  : isShopee
+                    ? 'shopee'
+                    : isLazada
+                      ? 'lazada'
+                      : 'daraz';
 
   return (
     <div className="mt-12 pt-12 border-t border-slate-205 dark:border-slate-800 space-y-10 text-slate-900 dark:text-slate-100">
