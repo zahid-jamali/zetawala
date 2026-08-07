@@ -2,6 +2,7 @@ import { seoTools } from './seoWebmaster/tools';
 import { calculatorTools } from './calculators/tools';
 import { pdfUtilityTools } from './pdfUtilities/tools';
 import { writingTools } from './writing/tools';
+import { listWritingLangSeoSlugs, parseWritingToolSlug } from './writing/languages';
 import { studyTools } from './study/tools';
 import { freelancerTools } from './freelancer/tools';
 import { shopeeTools } from './shopee/tools';
@@ -109,7 +110,10 @@ const seoInternalSlugs = new Set(seoTools.map((t) => t.slug));
 const seoPublicSlugs = new Set(seoTools.map((t) => t.seoSlug));
 const calculatorPublicSlugs = new Set(calculatorTools.map((t) => t.seoSlug));
 const pdfUtilityPublicSlugs = new Set(pdfUtilityTools.map((t) => t.seoSlug));
-const writingPublicSlugs = new Set(writingTools.map((t) => t.seoSlug));
+const writingPublicSlugs = new Set([
+  ...writingTools.map((t) => t.seoSlug),
+  ...listWritingLangSeoSlugs(),
+]);
 const studyPublicSlugs = new Set(studyTools.map((t) => t.seoSlug));
 const freelancerPublicSlugs = new Set(freelancerTools.map((t) => t.seoSlug));
 const shopeePublicSlugs = new Set(shopeeTools.map((t) => t.seoSlug));
@@ -160,10 +164,19 @@ export const getSeoPath = (category, toolSlug) => {
 
 // Convert public SEO slug back to internal key
 export const getInternalSlug = (seoSlug) => {
+  const writing = parseWritingToolSlug(seoSlug);
+  if (writing) return writing.internalSlug;
+
   for (const [key, value] of Object.entries(routeMapping)) {
     if (value === seoSlug) return key;
   }
   return seoSlug;
+};
+
+/** Writing-only: resolve language from public SEO slug (e.g. ai-humanizer-spanish → es). */
+export const getWritingLanguageFromSeoSlug = (seoSlug) => {
+  const writing = parseWritingToolSlug(seoSlug);
+  return writing?.language || null;
 };
 
 export const getLegacyRedirects = () => {

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { PenLine, ArrowRight, BookOpen, ChevronDown, HelpCircle } from 'lucide-react';
-import { writingTools } from '../../config/writing/tools';
+import { writingTools, LANG_LABELS } from '../../config/writing/tools';
+import { getWritingLangPath } from '../../config/writing/languages';
 import { getSeoPath } from '../../config/routes';
 
 export const metadata = {
@@ -135,16 +136,30 @@ export default function WritingCategoryPage() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {writingTools.map((tool) => (
-            <Link
+            <div
               key={tool.slug}
-              href={getSeoPath('writing', tool.slug)}
-              className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/30 dark:hover:border-indigo-500/20 transition-all group"
+              className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm hover:shadow-md hover:border-indigo-500/30 dark:hover:border-indigo-500/20 transition-all group space-y-3"
             >
-              <h3 className="text-sm font-extrabold text-slate-900 dark:text-white mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                {tool.name}
-              </h3>
-              <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">{tool.desc}</p>
-            </Link>
+              <Link href={getSeoPath('writing', tool.slug)} className="block">
+                <h3 className="text-sm font-extrabold text-slate-900 dark:text-white mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  {tool.name}
+                </h3>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed font-medium">{tool.desc}</p>
+              </Link>
+              {tool.languages?.length > 1 && (
+                <div className="flex flex-wrap gap-1.5 pt-1 border-t border-slate-100 dark:border-slate-800">
+                  {tool.languages.map((code) => (
+                    <Link
+                      key={code}
+                      href={getWritingLangPath(tool.seoSlug, code)}
+                      className="px-2 py-1 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-[10px] font-bold text-sky-600 dark:text-sky-400 hover:border-sky-300"
+                    >
+                      {LANG_LABELS[code]}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </section>

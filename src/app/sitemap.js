@@ -1,5 +1,6 @@
 import { navigationConfig } from '../config/navigation';
 import { getSeoPath } from '../config/routes';
+import { listWritingLangSitemapPaths } from '../config/writing/languages';
 import dbConnect from '../lib/mongodb';
 import BlogPost from '../models/BlogPost';
 
@@ -174,6 +175,16 @@ export default async function sitemap() {
         }
       });
     }
+  });
+
+  // Writing language-variant URLs (English / Spanish / Urdu) for multilingual tools
+  listWritingLangSitemapPaths().forEach((path) => {
+    toolRoutes.push({
+      url: `${baseUrl}${path}`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.75,
+    });
   });
 
   // 3. Dynamic blog post URLs fetched from MongoDB

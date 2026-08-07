@@ -256,33 +256,33 @@ export const studySeoData = {
   },
 
   'typing-master-course': {
-    title: 'Free Typing Master Course – Lessons Progress & Certificate',
+    title: 'Free Typing Master Course – Guided Lessons WPM & Certificate',
     description:
-      'Beginner, intermediate, and advanced typing lessons with guided practice, LocalStorage resume, lesson completion, and a final certificate—no AI required.',
+      'Professional typing tutor with 12 guided lessons, live character feedback, accuracy gates, WPM tracking, coach tips, LocalStorage progress, and a completion certificate with real stats—no AI required.',
     example: {
-      input: 'Complete home-row lessons → resume later from LocalStorage',
-      output: 'Progress tracking, lesson completion, final course certificate',
+      input: 'Home-row drill → reach 94% accuracy → unlock next lesson',
+      output: 'Live green/red feedback, WPM & accuracy, gated curriculum, certificate with avg WPM',
     },
     faqs: [
       {
         q: 'Will the course resume where I left off?',
-        a: 'Yes. Progress and the current lesson are saved in LocalStorage so you can continue later on the same browser.',
+        a: 'Yes. Lesson scores and your current lesson are saved in LocalStorage so you can continue later on the same browser.',
       },
       {
         q: 'What levels are included?',
-        a: 'Beginner, intermediate, and advanced lessons covering home row, mixed practice, punctuation, and speed paragraphs.',
+        a: 'Beginner (home row & rhythm), Intermediate (top/bottom rows & capitals), and Advanced (punctuation, numbers, symbols, and a speed paragraph).',
+      },
+      {
+        q: 'How do I unlock the next lesson?',
+        a: 'Finish the prompt with live feedback and meet the lesson’s minimum accuracy (usually 90–94%). Failed attempts can be retried anytime.',
       },
       {
         q: 'Is there a certificate?',
-        a: 'Yes. After completing all lessons you can download a final Typing Master certificate PDF.',
+        a: 'Yes. After completing all lessons you can download a Typing Master certificate PDF with average WPM and accuracy.',
       },
       {
         q: 'Does this use AI?',
-        a: 'No. Typing Master is deterministic practice logic only.',
-      },
-      {
-        q: 'How do I complete a lesson?',
-        a: 'Type the lesson prompt exactly, then mark it complete to unlock the next lesson.',
+        a: 'No. Typing Master is deterministic practice logic only—no API calls.',
       },
     ],
   },

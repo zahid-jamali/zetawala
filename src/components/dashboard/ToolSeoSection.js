@@ -1,14 +1,28 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { HelpCircle, ChevronDown } from 'lucide-react';
 import { seoData } from '../../config/seo';
 import BlogCarousel from './BlogCarousel';
+import { LANG_LABELS, getWritingTool } from '../../config/writing/tools';
+import { getWritingLangPath } from '../../config/writing/languages';
 
-export default function ToolSeoSection({ toolSlug }) {
-  const data = seoData[toolSlug];
-  
-  if (!data) return null;
+export default function ToolSeoSection({ toolSlug, language = null }) {
+  const base = seoData[toolSlug];
+  if (!base) return null;
+
+  const langLabel = language ? LANG_LABELS[language] : null;
+  const data = langLabel
+    ? {
+        ...base,
+        title: `${String(base.title || '').split(/[–—|-]/)[0].trim()} for ${langLabel}`,
+        description: `${base.description} This page is optimized for ${langLabel} drafts—select ${langLabel} in the tool and get language-aware results.`,
+      }
+    : base;
+
+  const writingTool = getWritingTool(toolSlug);
+  const showLangLinks = writingTool?.languages?.length > 1;
 
   // Determine matching blog category for interlinking
   const isYoutube = [
@@ -146,8 +160,24 @@ export default function ToolSeoSection({ toolSlug }) {
           </h3>
           <p className="text-[11px] text-slate-500">How this metadata tool helps search visibility & content ranking.</p>
         </div>
-        <div className="md:col-span-8 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm text-xs leading-relaxed text-slate-700 dark:text-slate-303">
+        <div className="md:col-span-8 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm text-xs leading-relaxed text-slate-700 dark:text-slate-303 space-y-3">
           <p>{data.description}</p>
+          {showLangLinks && (
+            <p className="text-[11px] text-slate-500 pt-1 border-t border-slate-100 dark:border-slate-800">
+              Dedicated language pages:{' '}
+              {writingTool.languages.map((code, i) => (
+                <React.Fragment key={code}>
+                  {i > 0 ? ' · ' : ''}
+                  <Link
+                    href={getWritingLangPath(writingTool.seoSlug, code)}
+                    className="font-bold text-sky-600 dark:text-sky-400 hover:underline"
+                  >
+                    {LANG_LABELS[code]}
+                  </Link>
+                </React.Fragment>
+              ))}
+            </p>
+          )}
         </div>
       </section>
 

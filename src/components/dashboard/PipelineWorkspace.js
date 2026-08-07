@@ -103,7 +103,7 @@ const categoryRouteKeys = {
   'lazada-seller': 'lazada'
 };
 
-export default function PipelineWorkspace({ toolSlug, categorySlug }) {
+export default function PipelineWorkspace({ toolSlug, categorySlug, initialLanguage = null }) {
   const router = useRouter();
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -253,7 +253,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       ) : PDF_UTILITY_HOST_SLUGS.includes(toolSlug) ? (
         <PdfUtilitiesHost toolSlug={toolSlug} />
       ) : WRITING_HOST_SLUGS.includes(toolSlug) ? (
-        <WritingHost toolSlug={toolSlug} />
+        <WritingHost toolSlug={toolSlug} initialLanguage={initialLanguage} />
       ) : STUDY_HOST_SLUGS.includes(toolSlug) ? (
         <StudyHost toolSlug={toolSlug} />
       ) : FREELANCER_HOST_SLUGS.includes(toolSlug) ? (
@@ -302,7 +302,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug }) {
       )}
 
       {/* Bottom SEO Section: Description, Example and FAQs */}
-      <ToolSeoSection toolSlug={toolSlug} />
+      <ToolSeoSection toolSlug={toolSlug} language={initialLanguage} />
 
     </div>
   );

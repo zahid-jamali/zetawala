@@ -67,7 +67,7 @@ export const studyTools = [
   {
     slug: 'typing-master-course',
     name: 'Typing Master Course',
-    desc: 'Beginner to advanced lessons with progress and certificate',
+    desc: 'Guided lessons with live feedback, accuracy gates & certificate',
     seoSlug: 'typing-master-course',
     clientOnly: true,
   },

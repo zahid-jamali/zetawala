@@ -152,7 +152,7 @@ export const navigationConfig = [
       { name: "AI Assignment Generator", slug: "ai-assignment-generator", desc: "Structured assignments with headings, references, and conclusion", isActive: true },
       { name: "AI Homework Solver", slug: "ai-homework-solver", desc: "Step-by-step explanations with final answer and key concepts", isActive: true },
       { name: "Typing Speed Test", slug: "typing-speed-test", desc: "WPM, accuracy, mistakes, timed tests, and downloadable certificate", isActive: true },
-      { name: "Typing Master Course", slug: "typing-master-course", desc: "Beginner to advanced lessons with progress and certificate", isActive: true },
+      { name: "Typing Master Course", slug: "typing-master-course", desc: "Guided lessons with live feedback, accuracy gates & certificate", isActive: true },
       { name: "Coding Typing Test", slug: "coding-typing-test", desc: "Practice typing JS, Python, Java, C++, HTML, and SQL", isActive: true }
     ]
   },

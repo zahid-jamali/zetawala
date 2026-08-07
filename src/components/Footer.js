@@ -83,6 +83,11 @@ export default function Footer() {
           <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Platform Info</h4>
           <ul className="space-y-2 text-xs">
             <li>
+              <Link href="/blog" className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                Blog
+              </Link>
+            </li>
+            <li>
               <Link href="/contact" className="hover:text-slate-900 dark:hover:text-white transition-colors">
                 Contact Support
               </Link>

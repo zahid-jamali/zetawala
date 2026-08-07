@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   PenLine,
@@ -14,7 +14,9 @@ import {
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
 import { getWritingTool, LANG_LABELS, WRITING_TOOL_SLUGS } from '../../../config/writing/tools';
+import { getWritingLangPath } from '../../../config/writing/languages';
 import { getSeoPath } from '../../../config/routes';
+import { useRouter } from 'next/navigation';
 
 const inputClasses =
   'w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all';
@@ -365,11 +367,14 @@ function ResultPanel({ toolSlug, data, rejectedIds, toggleReject }) {
   );
 }
 
-export default function WritingHost({ toolSlug }) {
+export default function WritingHost({ toolSlug, initialLanguage = null }) {
   const tool = getWritingTool(toolSlug);
+  const router = useRouter();
   const [text, setText] = useState('');
   const [referenceText, setReferenceText] = useState('');
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(
+    initialLanguage && ['en', 'es', 'ur'].includes(initialLanguage) ? initialLanguage : 'en'
+  );
   const [mode, setMode] = useState(tool?.modes?.[0] || 'standard');
   const [style, setStyle] = useState(tool?.styles?.[0] || 'standard');
   const [length, setLength] = useState(tool?.lengths?.[0] || 'medium');
@@ -381,12 +386,24 @@ export default function WritingHost({ toolSlug }) {
   const [result, setResult] = useState(null);
   const [rejectedIds, setRejectedIds] = useState(new Set());
 
+  useEffect(() => {
+    if (initialLanguage && tool?.languages?.includes(initialLanguage)) {
+      setLanguage(initialLanguage);
+    }
+  }, [initialLanguage, tool?.languages]);
+
   if (!tool) return <p className="text-sm text-slate-500">Unknown writing tool.</p>;
 
   const words = countWords(text);
   const chars = text.length;
   const needsLang = Array.isArray(tool.languages);
   const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
+  const onLanguageChange = (code) => {
+    setLanguage(code);
+    if (!needsLang || !tool.languages?.includes(code)) return;
+    router.replace(getWritingLangPath(tool.seoSlug, code), { scroll: false });
+  };
 
   const onExtractFile = async (file) => {
     if (!file) return;
@@ -470,11 +487,22 @@ export default function WritingHost({ toolSlug }) {
         {needsLang && (
           <div className="space-y-2">
             <label className={labelClasses}>Language</label>
-            <select className={inputClasses} value={language} onChange={(e) => setLanguage(e.target.value)}>
+            <select className={inputClasses} value={language} onChange={(e) => onLanguageChange(e.target.value)}>
               {tool.languages.map((l) => (
                 <option key={l} value={l}>{LANG_LABELS[l] || l}</option>
               ))}
             </select>
+            <p className="text-[10px] text-slate-500">
+              Also available as dedicated pages:{' '}
+              {tool.languages.map((l, i) => (
+                <React.Fragment key={l}>
+                  {i > 0 ? ' · ' : ''}
+                  <Link href={getWritingLangPath(tool.seoSlug, l)} className="text-sky-600 dark:text-sky-400 font-semibold hover:underline">
+                    {LANG_LABELS[l]}
+                  </Link>
+                </React.Fragment>
+              ))}
+            </p>
           </div>
         )}
 
