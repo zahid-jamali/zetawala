@@ -1,0 +1,322 @@
+{
+  "shopee-listing-title-generator": {
+    "name": "Générateur de titres Shopee",
+    "desc": "Titres SEO avec compteur de caractères",
+    "title": "Générateur gratuit de titres d'annonces Shopee | Zetawala",
+    "description": "Créez des titres d'annonces Shopee prêts pour la recherche avec le générateur gratuit de Zetawala. Placez mots-clés, marque et attributs clés dans la longueur visible sur mobile, avec compteur de caractères et variantes à tester. Conçu pour les vendeurs Shopee en Asie du Sud-Est et sur les autres marchés qui veulent plus de clics sans bourrage de mots-clés.",
+    "example": {
+      "input": "Produit : écouteurs sans fil | Marque : SoundMax | Caractéristiques : réduction de bruit, 30 h d'autonomie",
+      "output": "SoundMax ANC Wireless Earbuds – Écouteurs Bluetooth à réduction de bruit, 30 h d'autonomie, sport et bureau (78 caractères)"
+    },
+    "faqs": [
+      [
+        "Que fait le générateur de titres d'annonces Shopee ?",
+        "Il génère des titres d'annonces optimisés SEO, avec compteur de caractères et plusieurs variantes, pour que les vendeurs Shopee améliorent visibilité et CTR grâce à la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Shopee est présent dans plusieurs pays. Les pourcentages de frais et les barèmes d'expédition sont configurables pour chaque marketplace."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent un SEO d'annonces plus rapide, des titres plus clairs et davantage de clics depuis la recherche."
+      ]
+    ]
+  },
+  "shopee-product-description-generator": {
+    "name": "Générateur de descriptions Shopee",
+    "desc": "Descriptions avec puces et appel à l'action",
+    "title": "Générateur gratuit de descriptions produit Shopee | Zetawala",
+    "description": "Rédigez des descriptions produit Shopee orientées conversion avec le générateur gratuit de Zetawala. Structurez caractéristiques, bénéfices, puces et un appel à l'action clair pour que les acheteurs fassent confiance à la fiche et que les retours diminuent. Idéal pour les vendeurs qui ont besoin d'un texte lisible sur mobile, pas de paragraphes génériques.",
+    "example": {
+      "input": "Produit : gourde inox 750 ml | Public : bureau et salle de sport",
+      "output": "Puces :\n- Isolation double paroi : froid ~24 h / chaud ~12 h\n- Acier 18/8 alimentaire, sans BPA\n- Bouchon étanche pour sac et salle de sport\nCTA : Ajoutez-la au panier et gardez votre boisson à température."
+    },
+    "faqs": [
+      [
+        "Que fait le générateur de descriptions produit Shopee ?",
+        "Il crée des descriptions optimisées avec puces et appel à l'action pour que les vendeurs Shopee améliorent conversion et clarté grâce à la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "L'outil convient à tous les marchés Shopee. Adaptez langue, unités et politiques d'expédition à votre région dans Seller Center."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent des descriptions plus claires, moins de questions en chat et moins de retours dus à de mauvaises attentes."
+      ]
+    ]
+  },
+  "shopee-keyword-generator": {
+    "name": "Générateur de mots-clés Shopee",
+    "desc": "Mots-clés principaux, longue traîne et intention de recherche",
+    "title": "Générateur gratuit de mots-clés Shopee | Zetawala",
+    "description": "Obtenez des idées de mots-clés Shopee : principaux, de longue traîne et à intention d'achat. Le générateur gratuit de Zetawala vous aide à remplir titres, descriptions et champs de recherche Seller Center pour indexer davantage de requêtes. Associez termes de marque et variantes locales de chaque marché Shopee.",
+    "example": {
+      "input": "Produit : anneau lumineux LED avec trépied",
+      "output": "Principaux : led ring light, ring light with stand\nLongue traîne : ring light for tiktok, 10 inch ring light tripod\nIntention : buy ring light shopee, ring light price"
+    },
+    "faqs": [
+      [
+        "Que fait le générateur de mots-clés Shopee ?",
+        "Il propose des mots-clés principaux, de longue traîne et d'intention de recherche pour que les vendeurs Shopee améliorent le SEO de leurs annonces avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Les idées s'adaptent à la façon dont les acheteurs cherchent dans chaque pays Shopee. Vérifiez toujours le volume et la langue locaux."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent indexer plus de recherches et ne pas dépendre d'un seul titre générique."
+      ]
+    ]
+  },
+  "shopee-listing-seo-analyzer": {
+    "name": "Analyseur SEO d'annonces Shopee",
+    "desc": "Score SEO, mots-clés manquants et lisibilité",
+    "title": "Analyseur SEO gratuit d'annonces Shopee | Zetawala",
+    "description": "Collez le titre et la description d'une annonce Shopee et obtenez un score SEO, les mots-clés manquants, la lisibilité et des suggestions concrètes. L'analyseur gratuit de Zetawala indique quoi corriger avant d'investir dans la publicité ou les campagnes. Utilisez-le pour auditer les fiches faibles et prioriser celles qui peuvent gagner le plus de visibilité organique.",
+    "example": {
+      "input": "Titre : câble noir | Description : bon câble de charge",
+      "output": "Score SEO : 42/100\nManquent : type de connecteur, intensité, longueur, marque\nLisibilité : faible\nSuggestion : ajoutez USB-C, 2,4 A, 1,5 m et l'usage (téléphone / batterie externe)"
+    },
+    "faqs": [
+      [
+        "Que fait l'analyseur SEO d'annonces Shopee ?",
+        "Il évalue l'annonce avec un score SEO, détecte les mots-clés manquants et la lisibilité, et propose des améliorations pour les vendeurs Shopee via la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée ; le score combine des règles et des suggestions."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Fonctionne sur tous les marchés Shopee. Interprétez le score selon la langue et les règles de votre Seller Center local."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent comprendre pourquoi une annonce ne se classe pas et quoi changer en premier."
+      ]
+    ]
+  },
+  "shopee-profit-calculator": {
+    "name": "Calculateur de profit Shopee",
+    "desc": "Profit net, marge et ROI à partir des coûts et frais",
+    "title": "Calculateur gratuit de profit Shopee | Zetawala",
+    "description": "Calculez le profit net, la marge et le ROI Shopee à partir du coût, du prix, de l'expédition, des frais et de la publicité. Le calculateur gratuit de Zetawala n'utilise que des mathématiques, sans estimations opaques, pour savoir si une référence reste rentable après les frais marketplace. Testez des scénarios de remise avant de rejoindre une campagne.",
+    "example": {
+      "input": "Coût : 8,50 | Prix : 19,90 | Expédition vendeur : 1,20 | Commission 6 % | Pubs : 0,80",
+      "output": "Commission : 1,19\nProfit net : 8,21\nMarge : 41,3 %\nROI sur le coût : 96,6 %"
+    },
+    "faqs": [
+      [
+        "Que fait le calculateur de profit Shopee ?",
+        "Il calcule profit net, marge et ROI à partir des coûts, du prix, de l'expédition, des frais et de la publicité pour que les vendeurs Shopee voient la rentabilité réelle avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Non. Les calculateurs de profit, de frais et d'expédition utilisent des mathématiques déterministes ; ils n'inventent pas les chiffres."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Les pourcentages de frais et les barèmes d'expédition sont configurables pour chaque pays Shopee."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui ont besoin de marges claires avant de baisser les prix ou d'investir dans la publicité."
+      ]
+    ]
+  },
+  "shopee-fee-calculator": {
+    "name": "Calculateur de frais Shopee",
+    "desc": "Frais marketplace et de paiement configurables",
+    "title": "Calculateur gratuit de frais Shopee | Zetawala",
+    "description": "Estimez les frais marketplace et de paiement Shopee, et ce qu'il vous reste en versement. Le calculateur gratuit de Zetawala permet de configurer les pourcentages selon votre catégorie et votre pays, et s'appuie sur des mathématiques pures. Comparez le net entre références ou entre marchés avant de fixer le prix.",
+    "example": {
+      "input": "Prix : 25,00 | Commission marketplace 5,5 % | Paiement 2 % | TVA sur frais selon la région",
+      "output": "Commission marketplace : 1,38\nFrais de paiement : 0,50\nVersement vendeur estimé : 23,12"
+    },
+    "faqs": [
+      [
+        "Que fait le calculateur de frais Shopee ?",
+        "Il estime des frais marketplace et de paiement configurables, ainsi que le versement vendeur, pour que les vendeurs Shopee planifient leurs prix avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Non. Les calculateurs de profit, de frais et d'expédition utilisent des mathématiques déterministes."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Les pourcentages sont configurables : adaptez commission, paiement et taxes au Seller Center de votre pays."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent voir le net après frais, pas seulement le prix affiché."
+      ]
+    ]
+  },
+  "shopee-pricing-calculator": {
+    "name": "Calculateur de prix Shopee",
+    "desc": "Prix suggéré, seuil de rentabilité, concurrentiel et premium",
+    "title": "Calculateur gratuit de prix Shopee | Zetawala",
+    "description": "Obtenez des prix suggéré, seuil de rentabilité, concurrentiel et premium pour Shopee, avec des conseils IA. Le calculateur gratuit de Zetawala combine les maths de coûts et de frais avec des pistes pour ne pas vendre sous le seuil. Idéal avant les campagnes, coupons ou guerres de prix.",
+    "example": {
+      "input": "Coût : 12 | Commission 6 % | Expédition 2 | Marge cible 35 % | Prix concurrent : 24,90",
+      "output": "Seuil de rentabilité : 17,02\nSuggéré : 23,15\nConcurrentiel : 24,50\nPremium : 27,90\nConseil IA : gardez le prix suggéré et offrez un coupon de 1 $ plutôt que de baisser l'annonce."
+    },
+    "faqs": [
+      [
+        "Que fait le calculateur de prix Shopee ?",
+        "Il propose des prix suggéré, seuil de rentabilité, concurrentiel et premium, avec des conseils IA, pour que les vendeurs Shopee fixent leurs tarifs avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "La partie chiffrée est déterministe ; les conseils de positionnement tarifaire utilisent l'IA (DeepSeek) via l'API partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Frais et expédition sont configurables pour chaque marché Shopee."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent des prix défendables : ni trop bas pour tuer la marge, ni trop hauts pour ne pas convertir."
+      ]
+    ]
+  },
+  "shopee-shipping-calculator": {
+    "name": "Calculateur d'expédition Shopee",
+    "desc": "Coût d'expédition estimé et délai de livraison",
+    "title": "Calculateur gratuit d'expédition Shopee | Zetawala",
+    "description": "Estimez le coût d'expédition et le délai de livraison Shopee à partir de barèmes régionaux configurables. Le calculateur gratuit de Zetawala aide à décider si vous prenez l'expédition à votre charge, une tarification forfaitaire ou Shopee Express selon le poids et la destination. Des mathématiques, pas des approximations, pour ne pas éroder la marge par la logistique.",
+    "example": {
+      "input": "Poids : 0,45 kg | Origine : MY | Destination : zone urbaine | Service : standard",
+      "output": "Coût estimé : 3,80\nLivraison : 2–4 jours\nNote : la livraison gratuite au-dessus de 15 peut réduire la conversion si la marge ne l'absorbe pas"
+    },
+    "faqs": [
+      [
+        "Que fait le calculateur d'expédition Shopee ?",
+        "Il estime le coût d'expédition et le délai de livraison à partir de barèmes régionaux configurables pour que les vendeurs Shopee planifient la logistique avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Non. Les calculateurs de profit, de frais et d'expédition utilisent des mathématiques déterministes."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Les barèmes d'expédition sont configurables pour refléter les écarts entre pays et zones Shopee."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui ont besoin de coûts d'expédition réalistes avant d'offrir la livraison gratuite ou de choisir un service."
+      ]
+    ]
+  },
+  "shopee-chat-reply-generator": {
+    "name": "Générateur de réponses de chat Shopee",
+    "desc": "Réponses professionnelles, amicales et courtes",
+    "title": "Générateur gratuit de réponses de chat Shopee | Zetawala",
+    "description": "Rédigez des réponses de chat Shopee professionnelles, amicales ou courtes à partir du message de l'acheteur. Le générateur gratuit de Zetawala aide à répondre plus vite sans ton froid ni modèles robotiques. Utilisez-le pour la taille, l'expédition, les remboursements et les objections de prix, en respectant la politique de votre boutique.",
+    "example": {
+      "input": "Message : « Cette robe rétrécit-elle au lavage ? Taille M. » | Ton : amical",
+      "output": "Bonjour ! Le tissu ne devrait pas rétrécir si vous lavez à l'eau froide et faites sécher à l'air. Le M correspond au EU 38 ; si vous hésitez entre deux tailles, je recommande le L. Voulez-vous le tableau des mesures ?"
+    },
+    "faqs": [
+      [
+        "Que fait le générateur de réponses de chat Shopee ?",
+        "Il propose des réponses professionnelles, amicales et courtes aux messages des acheteurs pour que les vendeurs Shopee communiquent mieux avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Il génère des réponses dans la langue indiquée. Adaptez les politiques d'expédition et de retour à votre marché Shopee."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent répondre plus vite et avec un meilleur ton, sans perdre de ventes dans le chat."
+      ]
+    ]
+  },
+  "shopee-listing-optimizer": {
+    "name": "Optimiseur d'annonces Shopee",
+    "desc": "Titre, description, mots-clés et score de qualité",
+    "title": "Optimiseur gratuit d'annonces Shopee | Zetawala",
+    "description": "Améliorez en une fois le titre, la description, les mots-clés et le score de qualité d'une annonce Shopee. L'optimiseur gratuit de Zetawala signale les lacunes SEO et réécrit le texte pour viser plus d'impressions organiques. Utilisez-le sur les fiches aux ventes faibles avant de dépenser en publicité.",
+    "example": {
+      "input": "Titre actuel : power bank pas cher | Description courte sans capacité",
+      "output": "Titre : Power Bank 20000 mAh charge rapide PD – Batterie portable USB-C pour téléphone et tablette\nMots-clés : 20000mah powerbank, pd fast charge\nScore de qualité : 78 (avant 41)"
+    },
+    "faqs": [
+      [
+        "Que fait l'optimiseur d'annonces Shopee ?",
+        "Il optimise titre, description et mots-clés, et estime un score de qualité, pour que les vendeurs Shopee améliorent le SEO de l'annonce avec la boîte à outils Zetawala."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. Les outils de la boîte à outils vendeur Shopee de Zetawala sont gratuits."
+      ],
+      [
+        "Utilise-t-il l'IA ?",
+        "Oui. Les outils d'annonces et de réponses utilisent DeepSeek via l'API de génération partagée."
+      ],
+      [
+        "Quelles régions sont prises en charge ?",
+        "Convient à tous les pays Shopee. Adaptez le texte à la langue et aux règles qualité locales de Seller Center."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "Aux vendeurs Shopee qui veulent renforcer des annonces faibles de façon globale, pas seulement changer le titre."
+      ]
+    ]
+  }
+}

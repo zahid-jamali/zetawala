@@ -15,7 +15,7 @@ import {
 import TurnstileWidget from '../TurnstileWidget';
 import { getWritingTool, LANG_LABELS, WRITING_TOOL_SLUGS } from '../../../config/writing/tools';
 import { getWritingLangPath } from '../../../config/writing/languages';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import { useRouter } from 'next/navigation';
 
 const inputClasses =
@@ -368,6 +368,7 @@ function ResultPanel({ toolSlug, data, rejectedIds, toggleReject }) {
 }
 
 export default function WritingHost({ toolSlug, initialLanguage = null }) {
+  const { toolHref } = useLocalizedHref();
   const tool = getWritingTool(toolSlug);
   const router = useRouter();
   const [text, setText] = useState('');
@@ -618,7 +619,7 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
                 {(NEXT[toolSlug] || []).map((l) => (
                   <Link
                     key={l.slug}
-                    href={getSeoPath('writing', l.slug)}
+                    href={toolHref('writing', l.slug)}
                     className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600"
                   >
                     {l.label}

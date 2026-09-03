@@ -1,0 +1,392 @@
+{
+  "lazada-listing-title-generator": {
+    "name": "Lazada Listing Title Generator",
+    "desc": "SEO-optimized listing titles with character counts",
+    "metadata": {
+      "title": "Free Lazada Listing Title Generator",
+      "description": "Free Lazada listing title generator. SEO-optimized listing titles with character counts and variations.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Listing Title Generator",
+      "description": "Free Lazada listing title generator. SEO-optimized listing titles with character counts and variations.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Listing Title Generator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-product-description-generator": {
+    "name": "Lazada Product Description Generator",
+    "desc": "Optimized descriptions with bullets and CTA",
+    "metadata": {
+      "title": "Free Lazada Product Description Generator",
+      "description": "Free Lazada product description generator. Optimized product descriptions with bullets and CTAs.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Product Description Generator",
+      "description": "Free Lazada product description generator. Optimized product descriptions with bullets and CTAs.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Product Description Generator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-keyword-generator": {
+    "name": "Lazada Keyword Generator",
+    "desc": "Primary, long-tail, and search-intent keywords",
+    "metadata": {
+      "title": "Free Lazada Keyword Generator",
+      "description": "Free Lazada keyword generator. Primary, long-tail, and search-intent keyword ideas.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Keyword Generator",
+      "description": "Free Lazada keyword generator. Primary, long-tail, and search-intent keyword ideas.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Keyword Generator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-listing-seo-analyzer": {
+    "name": "Lazada Listing SEO Analyzer",
+    "desc": "SEO score, missing keywords, and readability",
+    "metadata": {
+      "title": "Free Lazada Listing SEO Analyzer",
+      "description": "Free Lazada listing seo analyzer. SEO score, missing keywords, readability, and suggestions.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Listing SEO Analyzer",
+      "description": "Free Lazada listing seo analyzer. SEO score, missing keywords, readability, and suggestions.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Listing SEO Analyzer do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-profit-calculator": {
+    "name": "Lazada Profit Calculator",
+    "desc": "Net profit, margin, and ROI from costs and fees",
+    "metadata": {
+      "title": "Free Lazada Profit Calculator",
+      "description": "Free Lazada profit calculator. Net profit, margin, and ROI from cost, price, shipping, fees, and ads—pure math.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Profit Calculator",
+      "description": "Free Lazada profit calculator. Net profit, margin, and ROI from cost, price, shipping, fees, and ads—pure math.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Profit Calculator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-fee-calculator": {
+    "name": "Lazada Fee Calculator",
+    "desc": "Configurable marketplace and payment fees",
+    "metadata": {
+      "title": "Free Lazada Fee Calculator",
+      "description": "Free Lazada fee calculator. Configurable marketplace and payment fees with seller payout estimates—pure math.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Fee Calculator",
+      "description": "Free Lazada fee calculator. Configurable marketplace and payment fees with seller payout estimates—pure math.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Fee Calculator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-pricing-calculator": {
+    "name": "Lazada Pricing Calculator",
+    "desc": "Suggested, break-even, competitive, and premium prices",
+    "metadata": {
+      "title": "Free Lazada Pricing Calculator",
+      "description": "Free Lazada pricing calculator. Suggested, break-even, competitive, and premium prices with AI tips.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Pricing Calculator",
+      "description": "Free Lazada pricing calculator. Suggested, break-even, competitive, and premium prices with AI tips.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Pricing Calculator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-shipping-calculator": {
+    "name": "Lazada Shipping Calculator",
+    "desc": "Estimated shipping cost and delivery time",
+    "metadata": {
+      "title": "Free Lazada Shipping Calculator",
+      "description": "Free Lazada shipping calculator. Estimated shipping cost and delivery time from configurable regional tables.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Shipping Calculator",
+      "description": "Free Lazada shipping calculator. Estimated shipping cost and delivery time from configurable regional tables.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Shipping Calculator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-chat-reply-generator": {
+    "name": "Lazada Chat Reply Generator",
+    "desc": "Professional, friendly, and short customer replies",
+    "metadata": {
+      "title": "Free Lazada Chat Reply Generator",
+      "description": "Free Lazada chat reply generator. Professional, friendly, and short replies to customer messages.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Chat Reply Generator",
+      "description": "Free Lazada chat reply generator. Professional, friendly, and short replies to customer messages.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Chat Reply Generator do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "lazada-listing-optimizer": {
+    "name": "Lazada Listing Optimizer",
+    "desc": "Optimized title, description, keywords, and quality score",
+    "metadata": {
+      "title": "Free Lazada Listing Optimizer",
+      "description": "Free Lazada listing optimizer. Optimized title, description, keywords, SEO improvements, and quality score.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Lazada Listing Optimizer",
+      "description": "Free Lazada listing optimizer. Optimized title, description, keywords, SEO improvements, and quality score.",
+      "example": {
+        "input": "Lazada seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Lazada Listing Optimizer do?",
+          "a": "It helps Lazada sellers improve listings, pricing, or customer communication using Zetawala’s Lazada Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Lazada Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Lazada sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  }
+}

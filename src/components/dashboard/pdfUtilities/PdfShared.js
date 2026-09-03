@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { AlertTriangle, ArrowRight, Copy, Check, Download, Loader2 } from 'lucide-react';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 
 export const inputClasses =
   'w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all';
@@ -22,6 +22,7 @@ export function ErrorBanner({ message }) {
 }
 
 export function NextSteps({ links = [] }) {
+  const { toolHref } = useLocalizedHref();
   if (!links.length) return null;
   return (
     <div className="p-5 rounded-3xl bg-sky-50/50 dark:bg-sky-950/10 border border-sky-100 dark:border-sky-900/30 space-y-3">
@@ -30,7 +31,7 @@ export function NextSteps({ links = [] }) {
         {links.map((link) => (
           <Link
             key={link.slug}
-            href={getSeoPath('pdf-utilities', link.slug)}
+            href={toolHref('pdf-utilities', link.slug)}
             className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400 hover:border-sky-300 transition-colors"
           >
             {link.label}

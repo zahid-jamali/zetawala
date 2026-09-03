@@ -1,0 +1,83 @@
+{
+  "name": "Calculateur de marge bénéficiaire",
+  "desc": "Marge brute, marge % et markup à partir du coût et du prix",
+  "metadata": {
+    "title": "Calculateur de marge bénéficiaire gratuit – Marge et markup | Zetawala",
+    "description": "Calculez la marge brute, la marge % et le markup à partir du coût et du prix de vente. Calculateur gratuit, formules claires, sans IA.",
+    "keywords": [
+      "calculateur de marge bénéficiaire",
+      "calculateur de marge brute",
+      "calculateur de markup",
+      "marge vs markup",
+      "calculateur de pourcentage de profit"
+    ]
+  },
+  "seo": {
+    "title": "Calculateur de marge bénéficiaire – Marge et markup",
+    "description": "Calculez le profit brut, la marge % et le markup % avec le calculateur gratuit de Zetawala. Saisissez le coût et le prix de vente pour un résultat instantané et déterministe, sans IA. Idéal pour les retailers, freelances et vendeurs e-commerce.",
+    "example": {
+      "input": "Coût produit : 40 $ · Prix de vente : 100 $",
+      "output": "Profit brut 60 $ · Marge 60 % · Markup 150 %"
+    },
+    "faqs": [
+      {
+        "q": "Comment calcule-t-on la marge et le markup ?",
+        "a": "Profit brut = Prix − Coût. Marge % = Profit brut ÷ Prix × 100. Markup % = Profit brut ÷ Coût × 100 (si coût > 0)."
+      },
+      {
+        "q": "Quelle est la différence entre marge et markup ?",
+        "a": "La marge est le profit en part du prix de vente. Le markup est le profit en part du coût. Une marge de 50 % n’est pas un markup de 50 %."
+      },
+      {
+        "q": "Ce calculateur utilise-t-il l’IA ?",
+        "a": "Non. Il n’utilise que de l’arithmétique déterministe, pour que vous sachiez d’où viennent les pourcentages."
+      },
+      {
+        "q": "Qui devrait l’utiliser ?",
+        "a": "Vendeurs e-commerce, grossistes, prestataires de services, et quiconque fixe ou revoit un prix face au coût."
+      },
+      {
+        "q": "Inclut-il livraison, pubs ou commissions ?",
+        "a": "Cet outil se concentre sur coût vs prix. Pour la rentabilité complète, utilisez les calculateurs e-commerce, Amazon FBA, Etsy ou eBay."
+      },
+      {
+        "q": "La marge peut-elle être négative ?",
+        "a": "Oui : si le coût dépasse le prix, profit brut et marge deviennent négatifs — vous vendez à perte sur cette unité."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Données de marge",
+    "disclaimer": "Calcul local instantané, sans appel IA. Les résultats se mettent à jour à la saisie. Estimations uniquement : vérifiez avec vos données.",
+    "formulaLabel": "Formule",
+    "detailsTitle": "Détails",
+    "nextStepsTitle": "Étapes suivantes recommandées",
+    "badge": "Calcul Zetawala",
+    "notFound": "Calculateur introuvable.",
+    "sectionTitle": "À quoi sert ce calculateur",
+    "sectionHint": "Marge et markup transparents à partir du coût et du prix.",
+    "exampleTitle": "Exemple concret",
+    "exampleHint": "Entrées d’exemple et résultat attendu.",
+    "sampleInput": "Entrée d’exemple",
+    "sampleOutput": "Résultat",
+    "faqTitle": "Questions fréquentes",
+    "faqHint": "Réponses claires sur la marge, le markup et les prix.",
+    "fields": {
+      "productCost": "Coût du produit ($)",
+      "sellingPrice": "Prix de vente ($)"
+    },
+    "nextSteps": {
+      "ecommerce-profit": "Profit e-commerce",
+      "break-even": "Seuil de rentabilité",
+      "amazon-fba-profit": "Profit Amazon FBA"
+    },
+    "results": {
+      "headline": "Marge bénéficiaire : {value}",
+      "metrics": {
+        "Gross Profit": { "title": "Profit brut" },
+        "Profit Margin": { "title": "Marge bénéficiaire" },
+        "Markup": { "title": "Markup" }
+      }
+    }
+  }
+}

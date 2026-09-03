@@ -12,7 +12,7 @@ import {
   Calculator,
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import { getShopeeTool } from '../../../config/shopee/tools';
 import { getLazadaTool } from '../../../config/lazada/tools';
 import {
@@ -230,6 +230,7 @@ function List({ title, items }) {
 }
 
 function MarketplaceAiPanel({ marketplace, toolSlug }) {
+  const { toolHref } = useLocalizedHref();
   const tool = getTool(marketplace, toolSlug);
   const base = baseOf(toolSlug);
   const fields = AI_FIELDS[base] || [];
@@ -335,7 +336,7 @@ function MarketplaceAiPanel({ marketplace, toolSlug }) {
         )}
         <div className="flex flex-wrap gap-2">
           {related.map((slug) => (
-            <Link key={slug} href={getSeoPath(marketplace, slug)} className="inline-flex items-center gap-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400">
+            <Link key={slug} href={toolHref(marketplace, slug)} className="inline-flex items-center gap-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400">
               Related <ArrowRight className="w-3 h-3" />
             </Link>
           ))}

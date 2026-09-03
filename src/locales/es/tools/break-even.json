@@ -1,0 +1,61 @@
+{
+  "name": "Calculadora de punto de equilibrio",
+  "desc": "Unidades e ingresos necesarios para cubrir costes fijos",
+  "metadata": {
+    "title": "Calculadora de punto de equilibrio gratis – Unidades e ingresos | Zetawala",
+    "description": "Calcula las unidades y los ingresos de equilibrio a partir de costes fijos, precio y coste variable. Calculadora gratis con margen de contribución, sin IA.",
+    "keywords": ["calculadora de punto de equilibrio", "umbral de rentabilidad", "unidades de equilibrio", "margen de contribución"]
+  },
+  "seo": {
+    "title": "Calculadora de punto de equilibrio – Unidades e ingresos",
+    "description": "Encuentra las unidades e ingresos de equilibrio con la calculadora gratis de Zetawala. Introduce costes fijos, precio de venta y coste variable por unidad: matemáticas deterministas, sin IA.",
+    "example": {
+      "input": "Costes fijos: 12.000 $ · Precio: 50 $ · Coste variable: 20 $",
+      "output": "Equilibrio 400 unidades · Ingresos 20.000 $ · Contribución 30 $/ud."
+    },
+    "faqs": [
+      { "q": "¿Cuál es la fórmula del punto de equilibrio?", "a": "Unidades = Costes fijos ÷ (Precio − Coste variable por unidad). Ingresos = Unidades × Precio. Margen de contribución = Precio − Coste variable." },
+      { "q": "¿Por qué el precio debe ser mayor que el coste variable?", "a": "Si el precio ≤ coste variable, el margen de contribución es cero o negativo y nunca cubres los costes fijos. La calculadora exige un margen positivo." },
+      { "q": "¿Usa inteligencia artificial?", "a": "No. Unidades e ingresos se calculan con fórmulas estándar de costes. Nada lo estima un modelo." },
+      { "q": "¿Qué es coste fijo y variable?", "a": "Los fijos se mantienen (alquiler, sueldos, software). Los variables crecen con cada unidad (materiales, packaging, envío por pedido)." },
+      { "q": "¿Quién debería usarla?", "a": "Founders de producto, retailers, cafeterías y fabricantes que necesitan saber cuántas unidades vender antes de ser rentables." },
+      { "q": "¿Qué ocurre después del equilibrio?", "a": "Cada unidad extra suma aproximadamente el margen de contribución al beneficio. La herramienta muestra el beneficio por unidad extra." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Datos de equilibrio",
+    "disclaimer": "Cálculo local instantáneo, sin llamadas a IA. Los resultados se actualizan al escribir. Son estimaciones: verifica con tus datos.",
+    "formulaLabel": "Fórmula",
+    "detailsTitle": "Detalles",
+    "nextStepsTitle": "Siguientes pasos recomendados",
+    "badge": "Cálculo Zetawala",
+    "notFound": "Calculadora no encontrada.",
+    "sectionTitle": "Cómo ayuda esta calculadora",
+    "sectionHint": "Unidades e ingresos para cubrir los costes fijos.",
+    "exampleTitle": "Ejemplo práctico",
+    "exampleHint": "Entradas de ejemplo y el resultado esperado.",
+    "sampleInput": "Entrada de ejemplo",
+    "sampleOutput": "Resultado",
+    "faqTitle": "Preguntas frecuentes",
+    "faqHint": "Respuestas claras sobre el punto de equilibrio.",
+    "fields": {
+      "fixedCosts": "Costes fijos ($)",
+      "sellingPrice": "Precio de venta por unidad ($)",
+      "variableCost": "Coste variable por unidad ($)"
+    },
+    "nextSteps": {
+      "profit-margin": "Margen de beneficio",
+      "saas-pricing": "Precio SaaS",
+      "ecommerce-profit": "Beneficio ecommerce"
+    },
+    "results": {
+      "headline": "Punto de equilibrio: {value}",
+      "metrics": {
+        "Break-even Units": { "title": "Unidades de equilibrio" },
+        "Break-even Revenue": { "title": "Ingresos de equilibrio" },
+        "Contribution Margin / Unit": { "title": "Margen de contribución / ud." },
+        "Profit After Break-even (per extra unit)": { "title": "Beneficio tras el equilibrio (por unidad extra)" }
+      }
+    }
+  }
+}

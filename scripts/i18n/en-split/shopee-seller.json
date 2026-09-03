@@ -1,0 +1,392 @@
+{
+  "shopee-listing-title-generator": {
+    "name": "Shopee Listing Title Generator",
+    "desc": "SEO-optimized listing titles with character counts",
+    "metadata": {
+      "title": "Free Shopee Listing Title Generator",
+      "description": "Free Shopee listing title generator. SEO-optimized listing titles with character counts and variations.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Listing Title Generator",
+      "description": "Free Shopee listing title generator. SEO-optimized listing titles with character counts and variations.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Listing Title Generator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-product-description-generator": {
+    "name": "Shopee Product Description Generator",
+    "desc": "Optimized descriptions with bullets and CTA",
+    "metadata": {
+      "title": "Free Shopee Product Description Generator",
+      "description": "Free Shopee product description generator. Optimized product descriptions with bullets and CTAs.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Product Description Generator",
+      "description": "Free Shopee product description generator. Optimized product descriptions with bullets and CTAs.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Product Description Generator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-keyword-generator": {
+    "name": "Shopee Keyword Generator",
+    "desc": "Primary, long-tail, and search-intent keywords",
+    "metadata": {
+      "title": "Free Shopee Keyword Generator",
+      "description": "Free Shopee keyword generator. Primary, long-tail, and search-intent keyword ideas.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Keyword Generator",
+      "description": "Free Shopee keyword generator. Primary, long-tail, and search-intent keyword ideas.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Keyword Generator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-listing-seo-analyzer": {
+    "name": "Shopee Listing SEO Analyzer",
+    "desc": "SEO score, missing keywords, and readability",
+    "metadata": {
+      "title": "Free Shopee Listing SEO Analyzer",
+      "description": "Free Shopee listing seo analyzer. SEO score, missing keywords, readability, and suggestions.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Listing SEO Analyzer",
+      "description": "Free Shopee listing seo analyzer. SEO score, missing keywords, readability, and suggestions.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Listing SEO Analyzer do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-profit-calculator": {
+    "name": "Shopee Profit Calculator",
+    "desc": "Net profit, margin, and ROI from costs and fees",
+    "metadata": {
+      "title": "Free Shopee Profit Calculator",
+      "description": "Free Shopee profit calculator. Net profit, margin, and ROI from cost, price, shipping, fees, and ads—pure math.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Profit Calculator",
+      "description": "Free Shopee profit calculator. Net profit, margin, and ROI from cost, price, shipping, fees, and ads—pure math.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Profit Calculator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-fee-calculator": {
+    "name": "Shopee Fee Calculator",
+    "desc": "Configurable marketplace and payment fees",
+    "metadata": {
+      "title": "Free Shopee Fee Calculator",
+      "description": "Free Shopee fee calculator. Configurable marketplace and payment fees with seller payout estimates—pure math.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Fee Calculator",
+      "description": "Free Shopee fee calculator. Configurable marketplace and payment fees with seller payout estimates—pure math.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Fee Calculator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-pricing-calculator": {
+    "name": "Shopee Pricing Calculator",
+    "desc": "Suggested, break-even, competitive, and premium prices",
+    "metadata": {
+      "title": "Free Shopee Pricing Calculator",
+      "description": "Free Shopee pricing calculator. Suggested, break-even, competitive, and premium prices with AI tips.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Pricing Calculator",
+      "description": "Free Shopee pricing calculator. Suggested, break-even, competitive, and premium prices with AI tips.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Pricing Calculator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-shipping-calculator": {
+    "name": "Shopee Shipping Calculator",
+    "desc": "Estimated shipping cost and delivery time",
+    "metadata": {
+      "title": "Free Shopee Shipping Calculator",
+      "description": "Free Shopee shipping calculator. Estimated shipping cost and delivery time from configurable regional tables.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Shipping Calculator",
+      "description": "Free Shopee shipping calculator. Estimated shipping cost and delivery time from configurable regional tables.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Shipping Calculator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-chat-reply-generator": {
+    "name": "Shopee Chat Reply Generator",
+    "desc": "Professional, friendly, and short customer replies",
+    "metadata": {
+      "title": "Free Shopee Chat Reply Generator",
+      "description": "Free Shopee chat reply generator. Professional, friendly, and short replies to customer messages.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Chat Reply Generator",
+      "description": "Free Shopee chat reply generator. Professional, friendly, and short replies to customer messages.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Chat Reply Generator do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  },
+  "shopee-listing-optimizer": {
+    "name": "Shopee Listing Optimizer",
+    "desc": "Optimized title, description, keywords, and quality score",
+    "metadata": {
+      "title": "Free Shopee Listing Optimizer",
+      "description": "Free Shopee listing optimizer. Optimized title, description, keywords, SEO improvements, and quality score.",
+      "keywords": []
+    },
+    "seo": {
+      "title": "Free Shopee Listing Optimizer",
+      "description": "Free Shopee listing optimizer. Optimized title, description, keywords, SEO improvements, and quality score.",
+      "example": {
+        "input": "Shopee seller inputs",
+        "output": "Ready-to-use optimized output"
+      },
+      "faqs": [
+        {
+          "q": "What does the Shopee Listing Optimizer do?",
+          "a": "It helps Shopee sellers improve listings, pricing, or customer communication using Zetawala’s Shopee Seller Toolkit."
+        },
+        {
+          "q": "Is it free?",
+          "a": "Yes. Zetawala’s Shopee Seller Toolkit tools are free to use."
+        },
+        {
+          "q": "Does it use AI?",
+          "a": "AI listing and reply tools use DeepSeek via the shared generate API. Profit, fee, and shipping calculators use deterministic math; pricing combines math with AI tips."
+        },
+        {
+          "q": "Which regions are supported?",
+          "a": "Fee % and shipping tables are configurable so you can adapt to regional marketplace differences."
+        },
+        {
+          "q": "Who is this for?",
+          "a": "Shopee sellers who want faster listing SEO, clearer margins, and better customer replies."
+        }
+      ]
+    }
+  }
+}

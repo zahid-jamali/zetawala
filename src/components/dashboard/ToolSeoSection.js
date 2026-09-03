@@ -8,11 +8,11 @@ import BlogCarousel from './BlogCarousel';
 import { LANG_LABELS, getWritingTool } from '../../config/writing/tools';
 import { getWritingLangPath } from '../../config/writing/languages';
 
-export default function ToolSeoSection({ toolSlug, language = null }) {
-  const base = seoData[toolSlug];
+export default function ToolSeoSection({ toolSlug, language = null, toolCopy = null }) {
+  const base = toolCopy?.seo || seoData[toolSlug];
   if (!base) return null;
 
-  const langLabel = language ? LANG_LABELS[language] : null;
+  const langLabel = !toolCopy && language ? LANG_LABELS[language] : null;
   const data = langLabel
     ? {
         ...base,
@@ -156,9 +156,9 @@ export default function ToolSeoSection({ toolSlug, language = null }) {
       <section className="grid md:grid-cols-12 gap-6 items-start">
         <div className="md:col-span-4 space-y-1">
           <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-            Algorithm Optimization & SEO Insights
+            {toolCopy?.ui?.sectionTitle || 'Algorithm Optimization & SEO Insights'}
           </h3>
-          <p className="text-[11px] text-slate-500">How this metadata tool helps search visibility & content ranking.</p>
+          <p className="text-[11px] text-slate-500">{toolCopy?.ui?.sectionHint || 'How this metadata tool helps search visibility & content ranking.'}</p>
         </div>
         <div className="md:col-span-8 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm text-xs leading-relaxed text-slate-700 dark:text-slate-303 space-y-3">
           <p>{data.description}</p>
@@ -186,17 +186,17 @@ export default function ToolSeoSection({ toolSlug, language = null }) {
         <section className="grid md:grid-cols-12 gap-6 items-start">
           <div className="md:col-span-4 space-y-1">
             <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-              Practical Usage Example
+              {toolCopy?.ui?.exampleTitle || 'Practical Usage Example'}
             </h3>
-            <p className="text-[11px] text-slate-500">Standard input parameters and the expected optimization output.</p>
+            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.exampleHint || 'Standard input parameters and the expected optimization output.'}</p>
           </div>
           <div className="md:col-span-8 grid sm:grid-cols-2 gap-4">
             <div className="p-5 bg-slate-50 dark:bg-slate-950/45 border border-slate-150 dark:border-slate-850 rounded-2xl space-y-2">
-              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">Sample Input</span>
+              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">{toolCopy?.ui?.sampleInput || 'Sample Input'}</span>
               <p className="text-xs font-mono text-slate-650 dark:text-slate-400 whitespace-pre-wrap">{data.example.input}</p>
             </div>
             <div className="p-5 bg-sky-50/30 dark:bg-sky-950/10 border border-sky-100/50 dark:border-sky-900/20 rounded-2xl space-y-2">
-              <span className="text-[9px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block">Generated Output</span>
+              <span className="text-[9px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block">{toolCopy?.ui?.sampleOutput || 'Generated Output'}</span>
               <p className="text-xs font-mono text-slate-750 dark:text-slate-300 whitespace-pre-wrap">{data.example.output}</p>
             </div>
           </div>
@@ -208,9 +208,9 @@ export default function ToolSeoSection({ toolSlug, language = null }) {
         <section className="grid md:grid-cols-12 gap-6 items-start">
           <div className="md:col-span-4 space-y-1">
             <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-              Frequently Asked Questions
+              {toolCopy?.ui?.faqTitle || 'Frequently Asked Questions'}
             </h3>
-            <p className="text-[11px] text-slate-500">Essential answers to technical ranking & search indexing questions.</p>
+            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.faqHint || 'Essential answers to technical ranking & search indexing questions.'}</p>
           </div>
           <div className="md:col-span-8 space-y-3">
             {data.faqs.map((faq, idx) => (

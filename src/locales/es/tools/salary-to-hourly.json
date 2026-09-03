@@ -1,0 +1,68 @@
+{
+  "name": "Calculadora salario a tarifa horaria",
+  "desc": "Convierte salario anual o mensual en tarifa por hora",
+  "metadata": {
+    "title": "Calculadora de salario a tarifa horaria gratis | Zetawala",
+    "description": "Convierte un salario anual o mensual en tarifa horaria, diaria, semanal y mensual según tu jornada. Gratis y sin IA.",
+    "keywords": ["calculadora salario a hora", "salario anual a tarifa horaria", "convertir salario a hora", "calculadora de sueldo horario"]
+  },
+  "seo": {
+    "title": "Calculadora de salario a tarifa horaria",
+    "description": "Convierte salario anual o mensual en equivalentes horarios, diarios, semanales y mensuales con la calculadora gratis de Zetawala. Introduce días, horas y semanas: matemáticas deterministas, sin IA.",
+    "example": {
+      "input": "Anual 78.000 $ · 5 días/semana · 8 horas/día · 52 semanas",
+      "output": "Hora 37,50 $ · Día 300 $ · Semana 1.500 $ · Mes 6.500 $"
+    },
+    "faqs": [
+      { "q": "¿Cómo se convierte el salario a hora?", "a": "Salario anual (mensual × 12 si aplica) ÷ (Semanas × Días por semana × Horas por día) = Tarifa horaria. Los equivalentes diario, semanal y mensual salen de ese calendario." },
+      { "q": "¿Deben los freelancers usarla como tarifa facturable?", "a": "El equivalente de empleado es solo un punto de partida. Un freelance suele necesitar más para impuestos, beneficios y tiempo no facturable: sigue con la calculadora de tarifa freelance." },
+      { "q": "¿Usa inteligencia artificial?", "a": "No. Las conversiones son aritmética pura a partir del salario y el horario que introduces." },
+      { "q": "¿Qué valor de semanas al año uso?", "a": "52 asume que no hay vacaciones sin sueldo. Algunos usan 48–50; bajar semanas sube la tarifa horaria implícita." },
+      { "q": "¿Quién debería usarla?", "a": "Quien compara ofertas, RR. HH. que explica la nómina, y freelancers que traducen un sueldo a tarifa de contratista." },
+      { "q": "¿Puedo partir de un salario mensual?", "a": "Sí. Elige el periodo mensual; la herramienta anualiza (×12) antes de calcular hora, día y semana." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Datos de salario",
+    "disclaimer": "Cálculo local instantáneo, sin llamadas a IA. Los resultados se actualizan al escribir. Son estimaciones: verifica con tus datos.",
+    "formulaLabel": "Fórmula",
+    "detailsTitle": "Detalles",
+    "nextStepsTitle": "Siguientes pasos recomendados",
+    "badge": "Cálculo Zetawala",
+    "notFound": "Calculadora no encontrada.",
+    "sectionTitle": "Cómo ayuda esta calculadora",
+    "sectionHint": "Pasa el salario a equivalentes por hora, día, semana y mes.",
+    "exampleTitle": "Ejemplo práctico",
+    "exampleHint": "Entradas de ejemplo y el resultado esperado.",
+    "sampleInput": "Entrada de ejemplo",
+    "sampleOutput": "Resultado",
+    "faqTitle": "Preguntas frecuentes",
+    "faqHint": "Respuestas claras sobre la conversión de salario.",
+    "fields": {
+      "salaryPeriod": "Periodo salarial",
+      "salaryAnnual": "Salario anual ($)",
+      "salaryMonthly": "Salario mensual ($)",
+      "workingDaysPerWeek": "Días laborables por semana",
+      "workingHoursPerDay": "Horas de trabajo por día",
+      "weeksPerYear": "Semanas por año"
+    },
+    "selects": {
+      "annual": "Anual",
+      "monthly": "Mensual"
+    },
+    "nextSteps": {
+      "freelance-hourly-rate": "Tarifa freelance",
+      "freelance-project-pricing": "Precio de proyecto",
+      "profit-margin": "Margen de beneficio"
+    },
+    "results": {
+      "headline": "Tarifa horaria: {value}",
+      "metrics": {
+        "Hourly Rate": { "title": "Tarifa horaria" },
+        "Daily Salary": { "title": "Salario diario" },
+        "Weekly Salary": { "title": "Salario semanal" },
+        "Monthly Salary": { "title": "Salario mensual" }
+      }
+    }
+  }
+}

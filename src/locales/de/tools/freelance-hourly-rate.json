@@ -1,0 +1,62 @@
+{
+  "name": "Freiberufler-Stundensatz-Rechner",
+  "desc": "Mindest-, Empfehlungs- und Premium-Satz aus Einkommenszielen",
+  "metadata": {
+    "title": "Kostenloser Freiberufler-Stundensatz-Rechner | Zetawala",
+    "description": "Mindest-, Empfehlungs- und Premium-Stundensatz aus Einkommensziel, Kosten, Steuern und fakturierbaren Stunden. Kostenlos, ohne KI.",
+    "keywords": ["Freiberufler-Stundensatz-Rechner", "Freelance-Stundensatz", "Honorarrechner", "Stundensatz berechnen"]
+  },
+  "seo": {
+    "title": "Freiberufler-Stundensatz-Rechner – Arbeit richtig preisen",
+    "description": "Nutzen Sie Zetawalas kostenlosen Rechner für Mindest-, Empfehlungs- und Premium-Sätze aus Ziel, Kosten, Steuer % und fakturierbaren Stunden. Nur deterministische Mathematik, keine KI.",
+    "example": {
+      "input": "Ziel: 5.000 $/Monat · Kosten: 1.500 $ · Steuer: 25 % · Stunden: 100",
+      "output": "Minimum 86,67 $/h · Empfehlung 112,67 $/h · Premium 138,67 $/h · Bruttobedarf 8.666,67 $"
+    },
+    "faqs": [
+      { "q": "Wie wird der Stundensatz berechnet?", "a": "Brutto-Monatsbedarf = (Ziel + Kosten) ÷ (1 − Steuer %). Minimalsatz = Bedarf ÷ fakturierbare Stunden. Empfehlung = Minimum × 1,3; Premium = Minimum × 1,6." },
+      { "q": "Nutzt der Rechner KI?", "a": "Nein. Jedes Ergebnis ist deterministisch. Kein LLM und kein erfundener “Marktsatz”." },
+      { "q": "Unterschied zwischen Minimum, Empfehlung und Premium?", "a": "Das Minimum deckt Ziel und Kosten nach Steuern. Die Empfehlung addiert 30 % Puffer. Premium (×1,6) positioniert spezialisierte Arbeit." },
+      { "q": "Wer sollte ihn nutzen?", "a": "Freelancer, Berater, Designer, Entwickler und Agenturen, die vor dem Angebot einen klaren Boden brauchen." },
+      { "q": "Soll jede Stunde zum Empfehlungssatz abgerechnet werden?", "a": "Nutzen Sie ihn als Ziel-Stundensatz. Unbezahlte Zeit (Admin, Vertrieb, Lernen) ist der Grund für den Puffer." },
+      { "q": "Kann ich daraus einen Projektpreis machen?", "a": "Ja. Kombinieren Sie ihn mit dem Freelance-Projektpreis-Rechner für Stunden, Korrekturen und Contingency." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Satz-Eingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Ein transparenter Satzboden aus Zielen, Kosten, Steuern und Stunden.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zur Freelance-Preisgestaltung.",
+    "fields": {
+      "monthlyIncomeGoal": "Monatliches Einkommensziel ($)",
+      "monthlyExpenses": "Monatliche Kosten ($)",
+      "taxPct": "Steuer (%)",
+      "billableHours": "Fakturierbare Stunden pro Monat"
+    },
+    "nextSteps": {
+      "freelance-project-pricing": "Projektpreis",
+      "salary-to-hourly": "Gehalt → Stunde",
+      "profit-margin": "Gewinnmarge"
+    },
+    "results": {
+      "headline": "Empfohlener Stundensatz: {value}",
+      "metrics": {
+        "Minimum Hourly Rate": { "title": "Mindest-Stundensatz", "subtitle": "Deckt Ziel + Kosten nach Steuern" },
+        "Recommended Hourly Rate": { "title": "Empfohlener Stundensatz", "subtitle": "Minimum × 1,3 Puffer" },
+        "Premium Hourly Rate": { "title": "Premium-Stundensatz", "subtitle": "Minimum × 1,6 Positionierung" },
+        "Monthly Earnings @ Recommended": { "title": "Monatseinkommen zum Empfehlungssatz" }
+      }
+    }
+  }
+}

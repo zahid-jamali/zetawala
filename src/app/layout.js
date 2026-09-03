@@ -3,6 +3,9 @@ import { ReduxProvider } from "../store/provider";
 
 import Script from "next/script";
 import ClientLayoutWrapper from "../components/ClientLayoutWrapper";
+import { LocaleProvider } from "../components/i18n/LocaleProvider";
+import { getRequestLocale } from "../i18n/requestLocale";
+import { getLocaleMeta } from "../i18n/config";
 
 const geistSans = { variable: "--font-geist-sans" };
 const geistMono = { variable: "--font-geist-mono" };
@@ -110,10 +113,15 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const locale = await getRequestLocale();
+  const localeMeta = getLocaleMeta(locale);
+
   return (
     <html
-      lang="en"
+      lang={localeMeta.htmlLang}
+      data-locale={locale}
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
@@ -145,7 +153,9 @@ export default function RootLayout({ children }) {
 
       <body className="min-h-screen w-screen overflow-x-hidden font-sans">
         <ReduxProvider>
-          <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+          <LocaleProvider>
+            <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
+          </LocaleProvider>
         </ReduxProvider>
         <Script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js"

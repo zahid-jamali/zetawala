@@ -1,0 +1,119 @@
+{
+  "privacy-policy": {
+    "metadata": {
+      "title": "Política de privacidad | Zetawala",
+      "description": "Cómo Zetawala trata los datos de usuario en las herramientas SEO y de creadores."
+    },
+    "title": "Política de privacidad",
+    "updated": "Última actualización: 3 de julio de 2026",
+    "back": "Volver al inicio",
+    "sections": [
+      {
+        "title": "1. Alcance de la recogida de datos",
+        "paragraphs": [
+          "Zetawala recoge datos para operar, mejorar y proteger las herramientas. El alcance cubre registro de cuenta, parámetros de uso de API e historial de consultas. No recogemos datos ajenos al uso de las herramientas de vídeo, marketplaces, escritura, estudio y SEO."
+        ]
+      },
+      {
+        "title": "2. Uso de la información",
+        "paragraphs": [
+          "La telemetría y los valores enviados se procesan para generar salidas relevantes (metadatos de YouTube, fichas, copy de WhatsApp, auditorías SEO) por conexiones seguras. El historial queda vinculado a cada cuenta y no se vende ni se cruza entre usuarios."
+        ]
+      },
+      {
+        "title": "3. Integraciones de terceros e IA generativa",
+        "paragraphs": [
+          "Al usar generadores, parámetros como consultas, descripciones de nicho y títulos pueden enviarse a entornos seguros en la nube, incluidos endpoints de Google Gemini. Esos envíos están cubiertos por normas de confidencialidad de API corporativa y no se usan para entrenar modelos públicos."
+        ]
+      },
+      {
+        "title": "4. Derechos del usuario y borrado",
+        "paragraphs": [
+          "Puedes inspeccionar, descargar o borrar el historial de generación. Las solicitudes de borrado completo de perfil e historial se tramitan por los canales de soporte."
+        ]
+      },
+      {
+        "title": "5. Seguridad",
+        "paragraphs": [
+          "Las conexiones con servidores, bases de datos y modelos de terceros usan TLS 1.3. Los datos en base de datos usan control de acceso por roles."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "metadata": {
+      "title": "Términos de servicio | Zetawala",
+      "description": "Condiciones de uso de las plataformas y herramientas IA de Zetawala."
+    },
+    "title": "Términos de servicio",
+    "updated": "Última actualización: 3 de julio de 2026",
+    "back": "Volver al inicio",
+    "sections": [
+      {
+        "title": "1. Uso aceptable",
+        "paragraphs": [
+          "Zetawala te concede una licencia no exclusiva, intransferible y revocable para generar salidas de marketing y metadatos. Te comprometes a no abusar, hacer ingeniería inversa, extraer datos de forma masiva ni eludir límites de uso."
+        ]
+      },
+      {
+        "title": "2. Propiedad intelectual",
+        "paragraphs": [
+          "Las salidas que generas (guiones, descripciones, keywords) son tuyas. La configuración del sistema, la interfaz, los prompts y el código del servidor siguen siendo propiedad exclusiva de Zetawala."
+        ]
+      },
+      {
+        "title": "3. Límites de API y uso razonable",
+        "paragraphs": [
+          "Para mantener la calidad del servicio aplicamos tasas de uso razonable. Las peticiones automáticas por lotes que degraden el servicio pueden suponer suspensión temporal o permanente."
+        ]
+      },
+      {
+        "title": "4. Exclusión de garantías",
+        "paragraphs": [
+          "El servicio se ofrece «tal cual» y «según disponibilidad». No garantizamos conversiones, posiciones de keywords ni resultados de campañas. Revisa las salidas de modelos de lenguaje antes de publicarlas."
+        ]
+      },
+      {
+        "title": "5. Limitación de responsabilidad",
+        "paragraphs": [
+          "Zetawala y sus desarrolladores no serán responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos por caídas, pérdida de datos o errores del modelo."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "metadata": {
+      "title": "Política de cookies | Zetawala",
+      "description": "Cómo usa Zetawala las cookies para sesiones y para mejorar las herramientas."
+    },
+    "title": "Política de cookies",
+    "updated": "Última actualización: 3 de julio de 2026",
+    "back": "Volver al inicio",
+    "sections": [
+      {
+        "title": "1. Uso de cookies",
+        "paragraphs": [
+          "Las cookies son pequeños archivos de texto en tu dispositivo. Zetawala las usa para identificar sesiones, guardar preferencias de interfaz y mantener tokens de autenticación."
+        ]
+      },
+      {
+        "title": "2. Cookies esenciales",
+        "paragraphs": [
+          "Estas cookies son necesarias para navegar el panel, mantener la sesión y conservar entradas de las herramientas. Desactivarlas degrada el servicio."
+        ]
+      },
+      {
+        "title": "3. Analítica y rendimiento",
+        "paragraphs": [
+          "Podemos usar tokens anonimizados para medir latencia y optimizar el servidor. La telemetría analítica se procesa solo con ese fin."
+        ]
+      },
+      {
+        "title": "4. Control y gestión",
+        "paragraphs": [
+          "Puedes borrar o bloquear cookies en el navegador. Algunas funciones dejarán de funcionar si bloqueas las cookies esenciales."
+        ]
+      }
+    ]
+  }
+}

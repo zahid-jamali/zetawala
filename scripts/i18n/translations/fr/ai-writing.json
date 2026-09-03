@@ -1,0 +1,362 @@
+{
+  "ai-humanizer": {
+    "name": "Humaniseur d'IA",
+    "desc": "Réécrivez un texte d'IA pour qu'il sonne naturel en anglais, espagnol ou ourdou",
+    "title": "Humaniseur d'IA gratuit – Rendez le texte d'IA plus naturel",
+    "description": "Humanisez un texte généré par IA avec l'humaniseur gratuit de Zetawala, propulsé par DeepSeek. Transformez des copies rigides façon ChatGPT en une prose naturelle et lisible en anglais, espagnol ou ourdou — idéal pour les blogs, les e-mails et les brouillons d'étudiants. Collez votre texte, choisissez la langue et obtenez une formulation plus fluide qui conserve le sens. Aucune inscription pour essayer.",
+    "example": {
+      "input": "Dans le paysage numérique actuel en évolution rapide, il est impératif de tirer parti de solutions synergiques…",
+      "output": "Les outils en ligne évoluent vite : choisissez ceux qui aident vraiment votre équipe à avancer…"
+    },
+    "faqs": [
+      [
+        "Que fait l'humaniseur d'IA ?",
+        "Il réécrit un texte rigide ou au ton d'IA pour qu'il se lise plus naturellement — rythme plus clair, moins de formules toutes faites — tout en visant à conserver le sens d'origine."
+      ],
+      [
+        "L'humaniseur d'IA est-il gratuit ?",
+        "Oui. L'humaniseur d'IA de Zetawala est gratuit. Les résultats sont générés par une analyse d'écriture propulsée par DeepSeek via notre API de génération."
+      ],
+      [
+        "Quelles langues sont prises en charge ?",
+        "Vous pouvez humaniser du texte en anglais, espagnol et ourdou. Choisissez la langue qui correspond à votre brouillon pour de meilleurs résultats."
+      ],
+      [
+        "L'humanisation va-t-elle supprimer mes faits ou citations ?",
+        "L'outil se concentre sur le ton et la fluidité. Relisez tout de même les noms, les chiffres et les citations — n'inventez jamais de faits et vérifiez ce qui compte avant de publier."
+      ],
+      [
+        "À qui s'adresse un humaniseur d'IA ?",
+        "Aux rédacteurs, marketeurs, étudiants et équipes support qui veulent que les brouillons d'IA sonnent moins robotiques avant publication ou envoi."
+      ],
+      [
+        "Est-ce une garantie contre les détecteurs d'IA ?",
+        "Non. Les détecteurs varient et restent imparfaits. Utilisez l'humaniseur pour améliorer la lisibilité et la voix — pas comme une promesse qu'un détecteur notera « 100 % humain »."
+      ]
+    ]
+  },
+  "ai-content-detector": {
+    "name": "Détecteur de contenu IA",
+    "desc": "Estimez l'écriture IA vs humaine avec des signaux par phrase",
+    "title": "Détecteur de contenu IA gratuit – Estimez IA vs écriture humaine",
+    "description": "Vérifiez si un texte semble écrit par IA avec le détecteur gratuit de Zetawala, propulsé par DeepSeek. Obtenez une estimation globale et des signaux par phrase en anglais, espagnol ou ourdou — utile aux rédacteurs, enseignants et éditeurs qui relisent des brouillons. Collez le contenu et lisez les scores avec prudence, pas comme une preuve absolue. Essai gratuit, sans compte.",
+    "example": {
+      "input": "Collez une intro de blog de 200 mots susceptible d'être générée par IA",
+      "output": "Global : Probablement assisté par IA · Phrases d'exemple signalées pour des amorces stéréotypées et une structure répétitive"
+    },
+    "faqs": [
+      [
+        "Quelle est la précision du détecteur de contenu IA ?",
+        "Il estime la probabilité à partir de motifs d'écriture via une analyse propulsée par DeepSeek. Traitez les scores comme un guide — pas une preuve judiciaire — surtout sur un texte court ou fortement édité."
+      ],
+      [
+        "Le détecteur d'IA est-il gratuit ?",
+        "Oui. Zetawala propose un détecteur de contenu IA gratuit pour le texte en anglais, espagnol et ourdou."
+      ],
+      [
+        "Met-il en évidence des phrases précises ?",
+        "Oui. En plus d'une estimation globale, vous obtenez des signaux par phrase pour relire les passages plus formulaires ou « IA »."
+      ],
+      [
+        "Un texte mixte humain + IA peut-il brouiller le score ?",
+        "Souvent oui. Un brouillon d'IA très retravaillé ou une écriture collaborative peut se situer dans une fourchette intermédiaire. Utilisez la vue par phrase pour inspecter les zones limites."
+      ],
+      [
+        "Quelles langues puis-je vérifier ?",
+        "L'anglais, l'espagnol et l'ourdou sont pris en charge. Choisissez la langue qui correspond au texte collé."
+      ],
+      [
+        "Qui utilise un détecteur de contenu IA ?",
+        "Éditeurs, enseignants, agences et propriétaires de sites qui veulent un second avis avant de publier ou d'évaluer une écriture assistée par IA."
+      ]
+    ]
+  },
+  "plagiarism-checker": {
+    "name": "Détecteur de plagiat",
+    "desc": "Analyse locale de similarité pour documents collés ou importés",
+    "title": "Détecteur de plagiat gratuit – Similarité locale de documents",
+    "description": "Comparez deux textes pour y trouver des recoupements avec le détecteur de plagiat gratuit de Zetawala, propulsé par DeepSeek. Il s'agit d'une analyse LOCALE de similarité entre le brouillon que vous collez ou importez et une référence que vous fournissez — pas d'une recherche de plagiat sur tout Internet. Idéal pour les brouillons en anglais, espagnol ou ourdou lorsque vous devez estimer le recoupement avec une source connue. Gratuit ; relisez toujours les correspondances vous-même.",
+    "example": {
+      "input": "Source : votre dissertation · Référence : brouillon d'un camarade ou notes de source (coller ou importer)",
+      "output": "Estimation de similarité + expressions qui se recoupent (comparaison locale/document uniquement — pas de crawl web)"
+    },
+    "faqs": [
+      [
+        "Cherche-t-il le plagiat sur tout Internet ?",
+        "Non. Il calcule une similarité LOCALE entre le texte que vous fournissez et une référence que vous collez ou importez. Ce n'est pas une détection de plagiat à l'échelle du web."
+      ],
+      [
+        "Le détecteur de plagiat est-il gratuit ?",
+        "Oui. Le comparateur de similarité locale de Zetawala est gratuit. L'analyse utilise une comparaison propulsée par DeepSeek des documents que vous fournissez."
+      ],
+      [
+        "Que puis-je importer ?",
+        "Vous pouvez coller du texte ou importer un document pris en charge pour en extraire le contenu, puis le comparer à une référence. Limitez-vous aux fichiers que vous avez le droit d'analyser."
+      ],
+      [
+        "Quelles langues sont prises en charge ?",
+        "Les comparaisons fonctionnent pour le contenu en anglais, espagnol et ourdou lorsque vous sélectionnez la langue correspondante."
+      ],
+      [
+        "Comment interpréter un score de similarité élevé ?",
+        "Un fort recoupement signifie que les deux documents partagent formulation ou structure. Les citations entre guillemets et les formules partagées peuvent faire monter le score — relisez toujours les passages surlignés dans leur contexte."
+      ],
+      [
+        "À qui s'adresse la similarité locale de documents ?",
+        "Aux enseignants qui comparent des copies, aux éditeurs qui confrontent un brouillon à un brief, et aux rédacteurs qui vérifient leur texte par rapport à une source connue."
+      ]
+    ]
+  },
+  "grammar-checker": {
+    "name": "Correcteur grammatical",
+    "desc": "Suggestions de grammaire, orthographe, ponctuation et style",
+    "title": "Correcteur grammatical gratuit – Orthographe, ponctuation et style",
+    "description": "Corrigez grammaire, orthographe, ponctuation et style avec le correcteur grammatical gratuit de Zetawala, propulsé par DeepSeek. Obtenez des suggestions claires pour l'anglais, l'espagnol ou l'ourdou — e-mails, dissertations et textes de site. Collez votre texte, relisez les problèmes et appliquez une formulation plus nette avant de publier. Aide grammaticale en ligne gratuite, sans installation.",
+    "example": {
+      "input": "Elle n'ont pas encore le rapport prêt, et il vont être en retard.",
+      "output": "Elle n'a pas encore le rapport prêt, et ils vont être en retard. · Problèmes : accord sujet–verbe, ils/il"
+    },
+    "faqs": [
+      [
+        "Que vérifie le correcteur grammatical ?",
+        "Il cherche les problèmes de grammaire, d'orthographe, de ponctuation et de style, puis suggère des alternatives plus claires grâce à l'analyse d'écriture DeepSeek."
+      ],
+      [
+        "Le correcteur grammatical est-il gratuit ?",
+        "Oui. Le correcteur grammatical de Zetawala est gratuit pour la rédaction et la relecture du quotidien."
+      ],
+      [
+        "Quelles langues sont prises en charge ?",
+        "Anglais, espagnol et ourdou. Choisissez la langue de votre brouillon pour que les suggestions correspondent à cette grammaire."
+      ],
+      [
+        "Va-t-il réécrire tout le document ?",
+        "Il se concentre sur les corrections et les suggestions de style. Vous gardez la main : acceptez ce qui convient à votre voix et conservez les choix stylistiques voulus."
+      ],
+      [
+        "Peut-il aider pour l'écriture professionnelle ou académique ?",
+        "Oui. Il est utile pour les e-mails, rapports, articles de blog et brouillons scolaires. Vérifiez toujours les termes spécialisés et les citations."
+      ],
+      [
+        "À qui s'adresse un correcteur grammatical en ligne ?",
+        "À quiconque peaufine un texte avant envoi ou publication — non-natifs, étudiants, marketeurs et professionnels pressés."
+      ]
+    ]
+  },
+  "paraphrasing-tool": {
+    "name": "Outil de reformulation",
+    "desc": "Réécrivez un texte en modes standard, fluidité, formel, créatif ou académique",
+    "title": "Outil de reformulation gratuit – Modes fluidité, formel et académique",
+    "description": "Reformulez un texte en ligne avec l'outil gratuit de Zetawala, propulsé par DeepSeek. Réécrivez en modes standard, fluidité, formel, créatif ou académique pour l'anglais, l'espagnol ou l'ourdou. Conservez vos idées tout en renouvelant la formulation pour blogs, explications de devoirs et mises à jour clients. Essai gratuit — vérifiez l'exactitude avant de publier.",
+    "example": {
+      "input": "Mode : Académique · « Les réseaux sociaux peuvent nuire à la concentration si on les consulte toute la journée. »",
+      "output": "L'usage continu des réseaux sociaux peut altérer l'attention soutenue lorsque la consultation devient habituelle tout au long de la journée."
+    },
+    "faqs": [
+      [
+        "Quels modes de reformulation sont disponibles ?",
+        "Standard, fluidité, formel, créatif et académique. Choisissez le mode qui correspond au ton dont vous avez besoin."
+      ],
+      [
+        "L'outil de reformulation est-il gratuit ?",
+        "Oui. Le reformulateur de Zetawala est gratuit et propulsé par DeepSeek via notre API de génération d'écriture."
+      ],
+      [
+        "Dans quelles langues puis-je reformuler ?",
+        "L'anglais, l'espagnol et l'ourdou sont pris en charge. Sélectionnez la langue qui correspond à votre texte source."
+      ],
+      [
+        "Reformuler équivaut-il à un texte sans plagiat ?",
+        "Non. La reformulation change les mots ; vous devez toujours citer les sources et ne pas présenter les idées d'autrui comme les vôtres."
+      ],
+      [
+        "Quand utiliser le mode formel plutôt que créatif ?",
+        "Utilisez le formel pour les rapports et le courrier professionnel. Utilisez le créatif lorsque vous voulez un langage plus vivant pour le marketing ou le récit."
+      ],
+      [
+        "Qui tire parti d'un outil de reformulation ?",
+        "Les étudiants qui clarifient leurs notes, les rédacteurs qui rafraîchissent un brouillon, et les professionnels qui adaptent le même message à des publics différents."
+      ]
+    ]
+  },
+  "roman-urdu-to-urdu": {
+    "name": "Convertisseur Roman Urdu → ourdou",
+    "desc": "Convertissez le Roman Urdu en écriture ourdoue correcte",
+    "title": "Convertisseur Roman Urdu vers ourdou gratuit – Écriture ourdoue correcte",
+    "description": "Convertissez le Roman Urdu en écriture ourdoue correcte avec le convertisseur gratuit de Zetawala, propulsé par DeepSeek. Collez du Roman Urdu de chat et obtenez de l'اردو lisible pour publications, légendes et messages. Conçu pour les utilisateurs pakistanais et ourdophones qui tapent en lettres latines mais ont besoin d'un texte prêt pour le Nastaliq. Translittération en ligne gratuite, sans installation.",
+    "example": {
+      "input": "Aaj mausam bohot acha hai, chalo bahir chalte hain.",
+      "output": "آج موسم بہت اچھا ہے، چلو باہر چلتے ہیں۔"
+    },
+    "faqs": [
+      [
+        "Qu'est-ce que la conversion Roman Urdu vers ourdou ?",
+        "Elle associe le Roman Urdu en lettres latines (p. ex. « kya haal hai ») à l'écriture ourdoue correcte, pour que le texte s'affiche bien pour les lecteurs ourdophones."
+      ],
+      [
+        "Le convertisseur est-il gratuit ?",
+        "Oui. Le convertisseur Roman Urdu → ourdou de Zetawala est gratuit et utilise un traitement linguistique propulsé par DeepSeek."
+      ],
+      [
+        "Chaque graphie sera-t-elle convertie parfaitement ?",
+        "Le Roman Urdu a de nombreuses graphies pour un même mot. Relisez les noms et termes peu courants — les expressions fréquentes se convertissent généralement bien."
+      ],
+      [
+        "À qui s'adresse cet outil ?",
+        "À quiconque tape l'ourdou en lettres anglaises sur WhatsApp, Facebook ou Instagram mais a besoin de l'écriture ourdoue correcte pour publier."
+      ],
+      [
+        "Puis-je convertir de longs paragraphes ?",
+        "Oui. Collez des brouillons plus longs et convertissez-les en une passe, puis parcourez noms, marques et mots anglais mêlés au texte."
+      ],
+      [
+        "Cela traduit-il l'anglais vers l'ourdou ?",
+        "Non. Il translittère le Roman Urdu en écriture ourdoue. Pour changer le sens de l'anglais, utilisez plutôt un traducteur ou un outil de réécriture."
+      ]
+    ]
+  },
+  "urdu-to-roman-urdu": {
+    "name": "Convertisseur ourdou → Roman Urdu",
+    "desc": "Translittérez l'écriture ourdoue en Roman Urdu",
+    "title": "Convertisseur ourdou vers Roman Urdu gratuit – Écriture latine facile",
+    "description": "Translittérez l'écriture ourdoue en Roman Urdu avec le convertisseur gratuit de Zetawala, propulsé par DeepSeek. Choisissez le style standard, phonétique ou familier pour les chats, légendes et apprenants qui lisent les lettres latines. Collez du texte en اردو et obtenez un Roman Urdu naturel à partager partout. Outil en ligne gratuit, sans téléchargement.",
+    "example": {
+      "input": "آج میٹنگ تین بجے ہے، بروقت پہنچنا۔",
+      "output": "Aaj meeting teen baje hai, barwaqt pahunchna. (style : standard/familier)"
+    },
+    "faqs": [
+      [
+        "Quels styles de Roman Urdu puis-je obtenir ?",
+        "Standard, phonétique et familier. Le familier se rapproche de l'orthographe quotidienne WhatsApp ; le phonétique vise des indices de prononciation plus clairs."
+      ],
+      [
+        "Le convertisseur ourdou vers Roman Urdu est-il gratuit ?",
+        "Oui. Il est gratuit sur Zetawala et propulsé par le traitement linguistique DeepSeek."
+      ],
+      [
+        "Pourquoi convertir l'ourdou en Roman Urdu ?",
+        "Beaucoup d'audiences tapent et lisent plus vite les lettres latines sur téléphone. Le Roman Urdu aide lorsque l'interlocuteur ne lit pas facilement l'écriture ourdoue."
+      ],
+      [
+        "Les mots anglais dans l'ourdou restent-ils en anglais ?",
+        "En général oui pour les emprunts courants (meeting, office). Vérifiez toujours les noms de marque et termes techniques après conversion."
+      ],
+      [
+        "Qui utilise ce convertisseur ?",
+        "Vendeurs sociaux, créateurs de contenu, familles de la diaspora et apprenants qui s'entraînent à la prononciation ourdoue via l'écriture latine."
+      ],
+      [
+        "L'orthographe du Roman Urdu est-elle standardisée ?",
+        "Il n'existe pas de standard unique. Les styles varient selon la région et les habitudes de chat — choisissez celui le plus proche de votre audience."
+      ]
+    ]
+  },
+  "roman-urdu-grammar": {
+    "name": "Correcteur grammatical et orthographique Roman Urdu",
+    "desc": "Corrigez l'orthographe et la grammaire du Roman Urdu avec comparaison côte à côte",
+    "title": "Correcteur grammatical et orthographique Roman Urdu gratuit",
+    "description": "Corrigez l'orthographe et la grammaire du Roman Urdu avec le correcteur gratuit de Zetawala, propulsé par DeepSeek. Obtenez des formulations de chat et de légendes plus claires avec une comparaison côte à côte — idéal pour le commerce social pakistanais, WhatsApp et les publications Facebook. Collez du Roman Urdu, relisez les suggestions et copiez une version plus nette. Relecture en ligne gratuite pour l'ourdou en écriture latine.",
+    "example": {
+      "input": "Mujhe kal market jana tha lekin time nai mila or mein late ho gaya.",
+      "output": "Mujhe kal market jana tha lekin time nahi mila aur main late ho gaya. · Corrections affichées côte à côte"
+    },
+    "faqs": [
+      [
+        "Que corrige le correcteur grammatical Roman Urdu ?",
+        "Il cible les problèmes courants d'orthographe et de grammaire en Roman Urdu — particules comme « nahi/nai », « aur/or », « main/mein » — et propose des alternatives plus claires."
+      ],
+      [
+        "Cet outil est-il gratuit ?",
+        "Oui. Le correcteur grammatical et orthographique Roman Urdu de Zetawala est gratuit et propulsé par DeepSeek."
+      ],
+      [
+        "Puis-je comparer l'avant et l'après ?",
+        "Oui. L'outil est conçu pour une comparaison côte à côte afin que vous voyiez ce qui a changé avant de copier le résultat."
+      ],
+      [
+        "Convertit-il vers l'écriture ourdoue ?",
+        "Non. Ce correcteur reste en Roman Urdu. Utilisez le convertisseur Roman Urdu → ourdou si vous avez besoin de l'écriture اردو correcte."
+      ],
+      [
+        "À qui s'adresse la correction orthographique Roman Urdu ?",
+        "Aux vendeurs locaux, community managers et à quiconque rédige des légendes ou des diffusions WhatsApp en Roman Urdu et veut moins d'erreurs maladroites."
+      ],
+      [
+        "L'argot et les mélanges d'anglais seront-ils conservés ?",
+        "Le mélange de codes est courant en Roman Urdu. Le correcteur vise à garder ce mélange naturel tout en corrigeant les erreurs nettes — relisez vous-même l'argot créatif."
+      ]
+    ]
+  },
+  "ai-text-summarizer": {
+    "name": "Résumeur de texte IA",
+    "desc": "Résumés courts, à puces et points clés en plusieurs langues",
+    "title": "Résumeur de texte IA gratuit – Court, puces et points clés",
+    "description": "Résumez un long texte avec le résumeur gratuit de Zetawala, propulsé par DeepSeek. Choisissez une longueur courte, moyenne ou détaillée et obtenez des résumés concis, à puces ou en points clés en anglais, espagnol ou ourdou. Collez des articles, des notes ou des rapports et extrayez l'essentiel rapidement. Résumeur en ligne gratuit — vérifiez les faits avant d'agir.",
+    "example": {
+      "input": "Longueur : Courte · Article de 800 mots sur une mise à jour produit collé",
+      "output": "Résumé de 3 à 5 phrases : date de lancement, fonctionnalités et qui devrait mettre à jour"
+    },
+    "faqs": [
+      [
+        "Quelles longueurs de résumé sont disponibles ?",
+        "Courte, moyenne et détaillée. La courte convient au survol ; la détaillée conserve plus de nuances et de points d'appui."
+      ],
+      [
+        "Le résumeur de texte IA est-il gratuit ?",
+        "Oui. Le résumeur de Zetawala est gratuit et propulsé par l'analyse d'écriture DeepSeek."
+      ],
+      [
+        "Dans quelles langues puis-je résumer ?",
+        "Anglais, espagnol et ourdou. Faites correspondre le réglage de langue à votre texte source pour de meilleurs résultats."
+      ],
+      [
+        "Les résumés peuvent-ils inventer des faits ?",
+        "Les modèles peuvent omettre ou trop simplifier. Vérifiez toujours chiffres, dates et affirmations par rapport à l'original avant de publier ou de décider."
+      ],
+      [
+        "Quel contenu fonctionne le mieux ?",
+        "Articles, notes de réunion, résumés de recherche et tickets support avec un sujet clair. Un texte très bruyant ou fragmenté peut d'abord nécessiter un nettoyage."
+      ],
+      [
+        "Qui utilise un résumeur IA ?",
+        "Étudiants, chercheurs, chefs de produit et marketeurs qui ont besoin d'un condensé rapide avant de lire ou de partager le document entier."
+      ]
+    ]
+  },
+  "ai-rewrite-tool": {
+    "name": "Outil de réécriture IA",
+    "desc": "Réécrivez plus court, plus long, professionnel, amical ou orienté SEO",
+    "title": "Outil de réécriture IA gratuit – Plus court, plus long, SEO et ton",
+    "description": "Réécrivez n'importe quel brouillon avec l'outil gratuit de Zetawala, propulsé par DeepSeek. Les modes incluent plus court, plus long, professionnel, amical et orienté SEO — pour l'anglais, l'espagnol ou l'ourdou. Rafraîchissez articles de blog, textes de landing et e-mails sans tout reprendre. Réécrivain en ligne gratuit ; conservez le sens et éditez la sortie pour qu'elle colle à votre marque.",
+    "example": {
+      "input": "Mode : SEO · « Achetez des chaussures de running en ligne. Livraison rapide. »",
+      "output": "Achetez des chaussures de running légères en ligne avec options de livraison gratuite, guides des tailles et retours faciles pour les coureurs du quotidien."
+    },
+    "faqs": [
+      [
+        "Quels modes de réécriture sont pris en charge ?",
+        "Plus court, plus long, professionnel, amical et SEO. Chacun ajuste la longueur ou le ton tout en visant à conserver le message central."
+      ],
+      [
+        "L'outil de réécriture IA est-il gratuit ?",
+        "Oui. Il est gratuit sur Zetawala et utilise une réécriture propulsée par DeepSeek via notre API de génération."
+      ],
+      [
+        "Dans quelles langues puis-je réécrire ?",
+        "Anglais, espagnol et ourdou. Sélectionnez la langue qui correspond à votre brouillon."
+      ],
+      [
+        "En quoi la réécriture diffère-t-elle de la reformulation ?",
+        "Les modes de reformulation mettent l'accent sur des styles de réécriture (fluidité, académique, etc.). Les modes de réécriture visent des objectifs de longueur et de ton : plus court, plus amical ou copy orienté SEO."
+      ],
+      [
+        "Le mode SEO bourre-t-il de mots-clés ?",
+        "Il vise une formulation plus claire et adaptée à la recherche, pas un bourrage maladroit. Ajoutez votre expression cible naturellement et éditez au besoin."
+      ],
+      [
+        "À qui s'adresse un outil de réécriture IA ?",
+        "Aux marketeurs de contenu, fondateurs et rédacteurs support qui ont besoin de changements rapides de ton ou de longueur sur un texte existant."
+      ]
+    ]
+  }
+}

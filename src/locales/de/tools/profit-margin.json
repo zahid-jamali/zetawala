@@ -1,0 +1,83 @@
+{
+  "name": "Gewinnmargen-Rechner",
+  "desc": "Rohgewinn, Marge % und Aufschlag aus Kosten und Preis",
+  "metadata": {
+    "title": "Kostenloser Gewinnmargen-Rechner – Marge und Aufschlag | Zetawala",
+    "description": "Berechnen Sie Rohgewinn, Gewinnmarge % und Aufschlag aus Kosten und Verkaufspreis. Kostenloser Rechner mit klaren Formeln, ohne KI.",
+    "keywords": [
+      "Gewinnmargen-Rechner",
+      "Bruttomargen-Rechner",
+      "Aufschlag-Rechner",
+      "Marge vs Aufschlag",
+      "Gewinnprozent-Rechner"
+    ]
+  },
+  "seo": {
+    "title": "Gewinnmargen-Rechner – Marge und Aufschlag",
+    "description": "Berechnen Sie Rohgewinn, Gewinnmarge % und Aufschlag % mit Zetawalas kostenlosem Rechner. Kosten und Verkaufspreis eingeben – sofortige, deterministische Ergebnisse, ohne KI. Ideal für Händler, Freelancer und E-Commerce-Verkäufer.",
+    "example": {
+      "input": "Produktkosten: 40 $ · Verkaufspreis: 100 $",
+      "output": "Rohgewinn 60 $ · Marge 60 % · Aufschlag 150 %"
+    },
+    "faqs": [
+      {
+        "q": "Wie werden Marge und Aufschlag berechnet?",
+        "a": "Rohgewinn = Preis − Kosten. Marge % = Rohgewinn ÷ Preis × 100. Aufschlag % = Rohgewinn ÷ Kosten × 100 (wenn Kosten > 0)."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Marge und Aufschlag?",
+        "a": "Die Marge ist der Gewinnanteil am Verkaufspreis. Der Aufschlag ist der Gewinnanteil an den Kosten. 50 % Marge ist nicht 50 % Aufschlag."
+      },
+      {
+        "q": "Nutzt dieser Rechner KI?",
+        "a": "Nein. Nur deterministische Arithmetik – Sie sehen immer, wie die Prozente entstehen."
+      },
+      {
+        "q": "Wer sollte ihn nutzen?",
+        "a": "E-Commerce-Verkäufer, Großhändler, Dienstleister und alle, die Listenpreise gegen Warenkosten prüfen."
+      },
+      {
+        "q": "Sind Versand, Ads oder Gebühren enthalten?",
+        "a": "Dieses Tool vergleicht Kosten und Preis. Für die volle Profitabilität nutzen Sie die E-Commerce-, Amazon-FBA-, Etsy- oder eBay-Rechner."
+      },
+      {
+        "q": "Kann die Marge negativ sein?",
+        "a": "Ja: Liegen die Kosten über dem Preis, werden Rohgewinn und Marge negativ – Sie verkaufen die Einheit mit Verlust."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Margeneingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Transparente Marge und Aufschlag aus Kosten und Preis.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zu Marge, Aufschlag und Preisen.",
+    "fields": {
+      "productCost": "Produktkosten ($)",
+      "sellingPrice": "Verkaufspreis ($)"
+    },
+    "nextSteps": {
+      "ecommerce-profit": "E-Commerce-Profit",
+      "break-even": "Break-even",
+      "amazon-fba-profit": "Amazon-FBA-Profit"
+    },
+    "results": {
+      "headline": "Gewinnmarge: {value}",
+      "metrics": {
+        "Gross Profit": { "title": "Rohgewinn" },
+        "Profit Margin": { "title": "Gewinnmarge" },
+        "Markup": { "title": "Aufschlag" }
+      }
+    }
+  }
+}

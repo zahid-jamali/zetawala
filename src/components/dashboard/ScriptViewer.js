@@ -5,11 +5,12 @@ import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux';
 import { Check, Copy, ArrowRight, Sparkles } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
-import { getSeoPath } from '../../config/routes';
+import { useLocalizedHref } from '../../i18n/useLocalizedHref';
 
 export default function ScriptViewer({ script }) {
   const router = useRouter();
   const dispatch = useDispatch();
+  const { toolHref } = useLocalizedHref();
   const [copiedKey, setCopiedKey] = useState(null);
   const [copiedFull, setCopiedFull] = useState(false);
 
@@ -46,7 +47,7 @@ export default function ScriptViewer({ script }) {
       field: 'scriptText',
       value: fullText
     }));
-    router.push(getSeoPath('youtube', 'visuals-recommender'));
+    router.push(toolHref('youtube', 'visuals-recommender'));
   };
 
   const cardClasses = "p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2 relative group shadow-sm";

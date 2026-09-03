@@ -1,0 +1,470 @@
+{
+  "niche-finder": {
+    "name": "Buscador y recomendador de nichos de YouTube",
+    "desc": "Descubrimiento de nichos con datos para tu perfil",
+    "title": "Buscador gratuito de nichos de YouTube – Encuentra el mejor nicho | Zetawala",
+    "description": "¿Buscas un buscador gratuito de nichos de YouTube? Zetawala te ayuda a descubrir el mejor nicho de YouTube para tus habilidades, intereses y objetivos en minutos. Obtén ideas de nicho respaldadas por datos, con puntuaciones de oportunidad y de encaje basadas en señales públicas reales de YouTube, no en volúmenes de búsqueda inventados. Empieza gratis y elige una dirección rentable antes de grabar tu primer vídeo.",
+    "example": {
+      "input": "Intereses: finanzas personales, hábitos | Habilidades: investigación, narración | País: Pakistán | Sin rostro | Objetivo: ganar dinero",
+      "output": "Nicho principal: «Hábitos financieros de Pakistán explicados» · Puntuación de encaje 78/100 · Indicador de demanda 72 · Competencia 54 · Ideas para los primeros vídeos basadas en patrones de la muestra"
+    },
+    "faqs": [
+      [
+        "¿Existe un buscador de nichos de YouTube gratuito?",
+        "Sí. El buscador gratuito de nichos de YouTube de Zetawala construye nichos candidatos a partir de tus intereses y habilidades, toma una muestra de resultados públicos de YouTube y puntúa la oportunidad y el encaje, de modo que puedas encontrar el mejor nicho sin pagar herramientas de investigación caras."
+      ],
+      [
+        "¿Cómo encuentro el mejor nicho de YouTube para principiantes?",
+        "Empieza por lo que puedas crear de forma constante y valida después la demanda y la competencia. El buscador de nichos de YouTube de Zetawala combina tu perfil de creador con señales públicas de rendimiento para que quienes empiezan elijan un nicho acorde a sus habilidades y al potencial de audiencia."
+      ],
+      [
+        "¿Este buscador de nichos de YouTube inventa volúmenes de búsqueda?",
+        "No. La API de YouTube no ofrece volumen de búsqueda de palabras clave. Zetawala usa indicadores aproximados de visualizaciones y competencia a partir de datos públicos, y marca como N/D las métricas no disponibles, para que las puntuaciones sigan siendo honestas."
+      ],
+      [
+        "¿Qué es la puntuación de encaje en un buscador de nichos de YouTube?",
+        "La puntuación de encaje es una puntuación de Zetawala que combina señales públicas de rendimiento de la muestra con el grado de coincidencia del nicho con tus intereses, habilidades y formato (por ejemplo, sin rostro). No es una métrica oficial de YouTube."
+      ],
+      [
+        "¿Quién debería usar un buscador gratuito de nichos de YouTube?",
+        "Los creadores nuevos que eligen su primer nicho y los creadores establecidos que exploran temas adyacentes antes de invertir en producción. Usa primero el buscador de nichos de Zetawala y valida después con el analizador de oportunidad de nicho."
+      ],
+      [
+        "¿Qué debo hacer después de encontrar un nicho de YouTube?",
+        "Valídalo con el analizador de oportunidad de nicho de Zetawala, estima los ingresos con la calculadora de ingresos de YouTube, genera temas con el generador de ideas de vídeo y pasa después a títulos, ganchos y guiones."
+      ]
+    ]
+  },
+  "niche-opportunity": {
+    "name": "Analizador de oportunidad de nicho de YouTube",
+    "desc": "Valida la demanda del nicho frente a la competencia",
+    "title": "Analizador de nichos de YouTube – Valida la oportunidad de tu nicho | Zetawala",
+    "description": "Usa el analizador gratuito de nichos de YouTube de Zetawala para validar un nicho concreto antes de comprometerte. Buscamos en YouTube, tomamos una muestra de vídeos y canales relevantes y calculamos indicadores de demanda, competencia y huecos de contenido, además de una puntuación de oportunidad clara con un veredicto. Sabrás si entrar, pivotar o redoblar la apuesta, con métricas transparentes y sin conjeturas.",
+    "example": {
+      "input": "Nicho: «Documentales de historia sin rostro» | Formato: contenido largo",
+      "output": "Puntuación de oportunidad 67 · Veredicto: gran oportunidad · Visualizaciones medianas (muestra): 18,4 K · Competencia: media-alta"
+    },
+    "faqs": [
+      [
+        "¿Cómo valido un nicho de YouTube antes de crear un canal?",
+        "Comprueba la demanda, la densidad de competencia y los huecos de contenido con un analizador de nichos de YouTube. Zetawala toma una muestra de vídeos y canales públicos y devuelve una puntuación de oportunidad determinista con un veredicto, para que valides el nicho antes de grabar."
+      ],
+      [
+        "¿Cómo se calcula la puntuación de oportunidad?",
+        "Zetawala la calcula de forma determinista a partir de la demanda, la competencia, el hueco de contenido, un indicador de monetización, un indicador de crecimiento y la dificultad de entrada, todos ponderados. La IA interpreta los resultados, no inventa la puntuación."
+      ],
+      [
+        "¿Por qué un analizador de nichos de YouTube usa visualizaciones medianas?",
+        "Las medianas reducen la distorsión de unos pocos vídeos virales, así que la lectura del nicho es más realista que perseguir un único éxito afortunado. Eso ayuda a validar nichos en los que realmente puedes competir."
+      ],
+      [
+        "¿Una puntuación de oportunidad alta garantiza el éxito?",
+        "No. Un analizador de nichos de YouTube estima las condiciones del mercado a partir de una muestra pública. La ejecución, la presentación, las miniaturas y la constancia siguen decidiendo los resultados. Zetawala te da una señal de partida más clara, no una garantía."
+      ],
+      [
+        "¿Y si YouTube devuelve pocos resultados para mi nicho?",
+        "Zetawala informa de datos insuficientes en lugar de inventar un mercado. Prueba con una expresión de nicho más clara o vuelve al buscador de nichos para obtener ideas más amplias que sigan encajando con tus habilidades."
+      ],
+      [
+        "¿Qué herramientas debo usar después de validar un nicho?",
+        "Estima los ingresos con la calculadora de ingresos de YouTube, audita a la competencia con el analizador de salud del canal y construye tu calendario con el generador de ideas de vídeo y el resto del flujo de contenido de Zetawala."
+      ]
+    ]
+  },
+  "channel-health": {
+    "name": "Analizador de salud del canal de YouTube",
+    "desc": "Puntúa el rendimiento del canal con datos públicos",
+    "title": "Analizador de canales de YouTube – Puntuación de salud gratuita | Zetawala",
+    "description": "Pega la URL o el @usuario de un canal en el analizador gratuito de canales de YouTube de Zetawala y obtén una puntuación clara de salud del canal. Revisamos las subidas recientes, la constancia, la interacción, el impulso y los vídeos mejores y peores, para que sepas qué corregir a continuación. Las puntuaciones son estimaciones analíticas a partir de datos públicos, no métricas oficiales de YouTube Studio.",
+    "example": {
+      "input": "https://youtube.com/@example · Últimos 20 vídeos",
+      "output": "Puntuación de salud 71 · Impulso 1,3× · Visualizaciones medianas 9,2 K · Constancia alta · Recomendaciones ligadas a las carencias medidas"
+    },
+    "faqs": [
+      [
+        "¿Qué es una puntuación de salud de un canal de YouTube?",
+        "La puntuación de salud del canal es la estimación analítica de Zetawala sobre la constancia, la interacción y el impulso a partir de las subidas públicas. No es una métrica oficial de YouTube, pero facilita actuar sobre las debilidades del canal."
+      ],
+      [
+        "¿Existe un analizador de canales de YouTube gratuito?",
+        "Sí. El analizador gratuito de canales de YouTube de Zetawala audita la URL o el @usuario de un canal público y devuelve una puntuación de salud junto con recomendaciones ligadas a las carencias medidas en tus subidas recientes."
+      ],
+      [
+        "¿Cuántos vídeos revisa el analizador de canales?",
+        "Por defecto, Zetawala analiza las últimas 20 subidas (configurable a 10 o 30) para equilibrar la cuota de la API con una lectura útil de la salud y el impulso del canal."
+      ],
+      [
+        "¿Puede un analizador de canales de YouTube leer las analíticas privadas de YouTube Studio?",
+        "No. El analizador de salud del canal utiliza solo campos públicos de la Data API. Obtienes información práctica basada en señales públicas sin conectar Studio, ideal para auditar competidores y hacer revisiones rápidas."
+      ],
+      [
+        "¿Qué es el ratio de impulso en el análisis de salud del canal?",
+        "El impulso es un cálculo de Zetawala que compara la mediana de visualizaciones recientes con la de vídeos más antiguos dentro de la ventana muestreada. Un impulso creciente suele indicar que tu presentación o tus temas están mejorando."
+      ],
+      [
+        "¿Qué debo hacer después de una auditoría de salud del canal?",
+        "Abre el analizador de rendimiento de vídeos con un vídeo destacado o flojo y mejora la siguiente subida con el generador de títulos, el generador de ganchos y el redactor de guiones de Zetawala."
+      ]
+    ]
+  },
+  "video-performance": {
+    "name": "Analizador de rendimiento de vídeos de YouTube",
+    "desc": "Compara un vídeo con la referencia del canal",
+    "title": "Analizador de vídeos de YouTube – Puntuación de rendimiento e ideas | Zetawala",
+    "description": "Analiza cualquier vídeo público con el analizador gratuito de vídeos de YouTube de Zetawala. Compara visualizaciones e interacción con la referencia del canal, obtén una puntuación de rendimiento y descubre oportunidades de seguimiento basadas en lo que realmente funcionó. Perfecto para diagnosticar éxitos, corregir vídeos flojos y planificar la siguiente subida con datos, no con intuiciones.",
+    "example": {
+      "input": "https://youtube.com/watch?v=VIDEO_ID",
+      "output": "Puntuación de rendimiento 64 · 1,4× la mediana del canal · Interacción 3,1 % · 7 ideas de seguimiento ligadas a lo que funcionó"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona un analizador de vídeos de YouTube?",
+        "El analizador de vídeos de YouTube de Zetawala obtiene las métricas públicas de un vídeo, las compara con la referencia del canal (visualizaciones relativas, interacción, visualizaciones por suscriptor) y devuelve una puntuación de rendimiento junto con ideas para el próximo vídeo basadas en los patrones observados."
+      ],
+      [
+        "¿Por qué comparar un vídeo con la mediana del canal?",
+        "Las cifras absolutas de visualizaciones engañan al comparar canales de distinto tamaño. El rendimiento relativo muestra si esta subida superó tu resultado habitual, que es justo lo que debe destacar un buen analizador de vídeos de YouTube."
+      ],
+      [
+        "¿Puedo analizar vídeos de YouTube recién publicados?",
+        "Sí, pero los vídeos con menos de unos 2 días reciben una advertencia y una puntuación moderada, porque las visualizaciones iniciales no son comparables con las de subidas más antiguas. Zetawala es transparente sobre esa limitación."
+      ],
+      [
+        "¿Esto sustituye a YouTube Analytics?",
+        "No. Zetawala complementa las métricas públicas con puntuaciones y enlaces de flujo de trabajo a herramientas de contenido. Usa Studio para las gráficas privadas de retención y este analizador de vídeos de YouTube para un diagnóstico público rápido y la generación de ideas."
+      ],
+      [
+        "¿Las ideas para el próximo vídeo son aleatorias?",
+        "No. Las sugerencias de IA en Zetawala deben referirse a patrones observados en el vídeo analizado y en la referencia del canal, de modo que los seguimientos sigan ligados a lo que ya captó atención."
+      ],
+      [
+        "¿Qué herramientas debo abrir después de analizar un vídeo?",
+        "Usa el generador de ideas de vídeo para temas relacionados, el generador de títulos y el generador de ganchos para la presentación, y después el redactor de guiones para escribir el siguiente guion centrado en la retención."
+      ]
+    ]
+  },
+  "revenue-calculator": {
+    "name": "Calculadora de ingresos de YouTube",
+    "desc": "Estima ingresos a partir de visualizaciones y RPM",
+    "title": "Calculadora de ingresos de YouTube – ¿Cuánto paga YouTube? | Zetawala",
+    "description": "¿Te preguntas cuánto paga YouTube? La calculadora gratuita de ingresos de YouTube de Zetawala estima las ganancias con la fórmula visualizaciones ÷ 1000 × RPM en escenarios bajo, típico y alto. Modela tus ingresos mensuales por nicho, formato y región, sin clave de API. Las estimaciones son rangos ilustrativos, no pagos oficiales, para que planifiques de forma realista.",
+    "example": {
+      "input": "Visualizaciones mensuales: 100.000 · Formato largo · Asia del Sur · Educación · RPM estimado",
+      "output": "Estimación mensual típica: rango bajo / típico / alto con las hipótesis indicadas (visualizaciones, banda de RPM, nicho, región)"
+    },
+    "faqs": [
+      [
+        "¿Cuánto paga YouTube por cada 1.000 visualizaciones?",
+        "Depende del RPM (ingresos por mil), que varía según el nicho, la geografía, la demanda publicitaria y la estacionalidad. La calculadora de ingresos de YouTube de Zetawala modela bandas de RPM bajas, típicas y altas para que veas un rango realista y no una cifra única inventada."
+      ],
+      [
+        "¿Existe una calculadora de ingresos de YouTube gratuita?",
+        "Sí. La calculadora gratuita de ingresos de YouTube de Zetawala funciona íntegramente con la lógica de tu navegador, sin API de YouTube ni IA, así que puedes estimar los ingresos a partir de las visualizaciones mensuales en segundos."
+      ],
+      [
+        "¿Esta calculadora garantiza los ingresos de YouTube?",
+        "No. Las estimaciones son ilustrativas. Los ingresos reales varían según el estado de monetización, la geografía, el CPM del nicho y la cobertura publicitaria. Zetawala etiqueta las bandas de RPM como estimaciones para que la planificación siga siendo honesta."
+      ],
+      [
+        "¿Qué es el RPM en YouTube?",
+        "RPM significa ingresos por mil: las ganancias estimadas por cada 1.000 visualizaciones después de la parte que retiene YouTube. La calculadora de ingresos de YouTube usa el RPM como variable de modelado para los escenarios bajo, típico y alto."
+      ],
+      [
+        "¿Por qué mostrar escenarios de ingresos bajo, típico y alto?",
+        "Una estimación única induce a error. Los rangos comunican la incertidumbre con honestidad y ayudan a los creadores a planificar contenidos y nichos con casos favorables y desfavorables más claros."
+      ],
+      [
+        "¿Cómo se conecta esto con otras herramientas de Zetawala?",
+        "Valida primero el nicho con el analizador de oportunidad de nicho, estima con la calculadora de ingresos de YouTube y comprueba después las visualizaciones alcanzables con el analizador de salud del canal antes de escalar la producción."
+      ]
+    ]
+  },
+  "video-ideas": {
+    "name": "Generador de ideas de vídeo",
+    "desc": "Encuentra conceptos virales y de tendencia",
+    "title": "Generador de ideas de vídeo para YouTube – Temas gratis | Zetawala",
+    "description": "Supera el bloqueo creativo con el generador gratuito de ideas de vídeo para YouTube de Zetawala. Obtén temas buscables y con alto CTR adaptados a tu nicho, pensados para calendarios de contenido, series perennes y subidas atentas a las tendencias. Ya necesites ángulos virales o tráfico orgánico estable, genera ideas de vídeo de YouTube que coincidan con la intención de la audiencia y los objetivos del canal.",
+    "example": {
+      "input": "Nicho: «Abastecimiento para comercio electrónico local en Pakistán»",
+      "output": "1. «Gasté Rs. 50.000 en el mayorista de Daraz: desvelando los secretos»\n2. «Los 10 mejores productos de alto margen para comprar en el mercado de Shah Alami»\n3. «Cómo montar una tienda Shopify en Pakistán sin capital [paso a paso]»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de ideas de vídeo para YouTube gratuito?",
+        "Sí. El generador gratuito de ideas de vídeo para YouTube de Zetawala convierte tu nicho en listas de temas listos para grabar, de modo que creadores, especialistas en marketing y marcas puedan llenar un calendario de contenido sin mirar una página en blanco."
+      ],
+      [
+        "¿Cómo encuentra buenos temas un generador de ideas de vídeo para YouTube?",
+        "Zetawala combina el contexto del nicho, ángulos con estilo de búsqueda y formatos de vídeo probados (listas, tutoriales, experimentos, análisis) para sugerir temas que la gente realmente busca; después afinas la presentación con el generador de títulos y el generador de ganchos."
+      ],
+      [
+        "¿Puede esta herramienta generar ideas de vídeo perennes para YouTube?",
+        "Sí. Además de ángulos de actualidad, el generador de ideas de vídeo para YouTube propone conceptos perennes de tipo tutorial y explicativo que pueden atraer tráfico orgánico de búsqueda mucho después del día de publicación."
+      ],
+      [
+        "¿Por qué son importantes las ideas de vídeo originales para el SEO de YouTube?",
+        "Los temas nuevos y alineados con la intención mejoran el CTR y el tiempo de visualización cuando la presentación es buena. Mejores señales de satisfacción ayudan a que los vídeos ganen tráfico de sugeridos y de exploración, no solo subidas puntuales."
+      ],
+      [
+        "¿Cómo afectan los temas a la monetización en YouTube?",
+        "Los temas de nichos con CPM más alto e intención comercial pueden atraer mejores anuncios y patrocinios. Combina las ideas de vídeo de Zetawala con la calculadora de ingresos para comprobar el potencial antes de comprometerte con una serie."
+      ],
+      [
+        "¿Qué debo hacer después de generar ideas de vídeo para YouTube?",
+        "Elige la mejor y usa el generador de títulos para títulos con alto CTR, el redactor de descripciones para el texto SEO, el extractor de etiquetas para los metadatos y el redactor de guiones para escribir el vídeo completo."
+      ]
+    ]
+  },
+  "title-generator": {
+    "name": "Redactor de títulos",
+    "desc": "Redacción de títulos con alto CTR",
+    "title": "Generador de títulos de YouTube – Títulos gratis con alto CTR | Zetawala",
+    "description": "¿Necesitas un generador gratuito de títulos de YouTube que realmente busque un CTR alto? Zetawala crea títulos atractivos y atentos a las palabras clave que equilibran la curiosidad con promesas honestas, para que ganes en búsqueda y exploración sin clickbait tóxico. Genera títulos de YouTube con alto CTR en segundos y prueba distintas presentaciones para aumentar impresiones y visualizaciones.",
+    "example": {
+      "input": "Tema: «Abastecimiento de productos en Daraz» | Nicho: «Comercio electrónico»",
+      "output": "1. «¡Este producto de Rs 100 en Daraz me dio Rs 50.000! (secretos de abastecimiento)»\n2. «Cómo encontrar productos ganadores en Daraz Pakistán (estrategia 100 % gratuita)»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de títulos de YouTube gratuito?",
+        "Sí. El generador gratuito de títulos de YouTube de Zetawala crea opciones de título con alto CTR a partir de tu tema y tu nicho, optimizadas para la curiosidad, la claridad y las palabras clave principales, sin clickbait engañoso."
+      ],
+      [
+        "¿Qué hace que un título de YouTube reciba más clics (CTR alto)?",
+        "Coloca la palabra clave principal al inicio, añade un beneficio claro o un hueco de curiosidad y mantén promesas que puedas cumplir. El generador de títulos de YouTube de Zetawala está diseñado para equilibrar las palabras clave SEO con la psicología del clic y lograr un CTR mayor."
+      ],
+      [
+        "¿Debo cambiar los títulos de YouTube después de publicar?",
+        "Sí, si las impresiones son altas pero el CTR es bajo (a menudo por debajo del 4-5 %), reescribe el título y renueva la miniatura. Probar distintas presentaciones con las ideas del generador de títulos de Zetawala puede reactivar la distribución de un vídeo."
+      ],
+      [
+        "¿Cuál es la longitud ideal de un título de vídeo de YouTube?",
+        "Apunta a unos 50-60 caracteres para que los títulos sigan siendo legibles en móvil y en la barra de vídeos sugeridos. El generador de títulos de YouTube te ayuda a ser conciso manteniendo visible la palabra clave principal."
+      ],
+      [
+        "¿Cómo escribo títulos de YouTube sin clickbait tóxico?",
+        "Usa huecos de curiosidad que tu vídeo cumpla de verdad. Zetawala evita las afirmaciones falsas y se centra en formulaciones con alto CTR que coincidan con el contenido, mejor para la retención y para la confianza a largo plazo en tu canal."
+      ],
+      [
+        "¿Qué herramientas combinan bien con un generador de títulos de YouTube?",
+        "Después de los títulos, usa el generador de ganchos para los primeros 30 segundos, el generador de prompts de miniaturas para visuales listos para Midjourney, el redactor de descripciones para las descripciones SEO y el extractor de etiquetas para las etiquetas de YouTube."
+      ]
+    ]
+  },
+  "hook-architect": {
+    "name": "Gancho de retención de audiencia",
+    "desc": "Capta la atención del espectador",
+    "title": "Generador de ganchos de YouTube – Guiones para los primeros 30 segundos | Zetawala",
+    "description": "Frena el abandono temprano con el generador gratuito de ganchos de YouTube de Zetawala. Escribe introducciones habladas potentes para los críticos primeros 30 segundos: rupturas de patrón, tensión narrativa y promesas de valor que mantienen a la gente viendo. Los buenos ganchos elevan la duración media de visualización y aportan al algoritmo las señales de retención que tu vídeo necesita para crecer.",
+    "example": {
+      "input": "Tema del vídeo: «Cómo construí una marca en Shopify en 30 días»",
+      "output": "Guion del gancho: «El 99 % de las tiendas Shopify fracasan en su primer mes. Pero esta sencilla estrategia de 3 pasos me hizo ganar Rs. 80.000 en solo 30 días, sin anuncios pagados ni inventario costoso. Aquí está la prueba exacta y cómo puedes copiarla hoy mismo...»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de ganchos de YouTube gratuito?",
+        "Sí. El generador gratuito de ganchos de YouTube de Zetawala redacta introducciones habladas pensadas para los primeros 30 segundos, para que abras con claridad, tensión y un motivo para quedarse en lugar de una cabecera lenta de canal."
+      ],
+      [
+        "¿Por qué son tan importantes los primeros 30 segundos de un vídeo de YouTube?",
+        "La mayor parte del abandono ocurre al principio. Unos primeros 30 segundos sólidos mejoran el tiempo de visualización y la retención, señales clave para las recomendaciones. Eso es exactamente lo que debe optimizar un generador de ganchos de YouTube."
+      ],
+      [
+        "¿Qué hace que un gancho de vídeo de YouTube sea eficaz?",
+        "Plantea un problema con mucho en juego, insinúa una recompensa clara y demuestra rápido que puedes cumplir. El generador de ganchos de Zetawala estructura ese patrón para que tu apertura resulte intencionada y no divagante."
+      ],
+      [
+        "¿Puedo usar un generador de ganchos de YouTube para Shorts?",
+        "Sí. Los Shorts necesitan una apertura contundente en los primeros segundos. Usa el generador de ganchos de YouTube de Zetawala para los guiones de los primeros 30 segundos en formato largo y comprime los mismos ángulos para Shorts, Reels y TikTok."
+      ],
+      [
+        "¿Debo presentarme en los primeros 30 segundos?",
+        "Normalmente no. Las introducciones largas hunden la retención. Ofrece primero el gancho y la promesa de valor, y luego integra la marca cuando el espectador ya esté implicado; los guiones de Zetawala siguen ese enfoque moderno de retención."
+      ],
+      [
+        "¿Qué viene después de escribir un gancho de YouTube?",
+        "Desarrolla la narrativa completa con el redactor de guiones, acompaña la presentación con el generador de títulos y el generador de prompts de miniaturas, y añade la descripción SEO y las etiquetas con el redactor de descripciones y el extractor de etiquetas."
+      ]
+    ]
+  },
+  "description-builder": {
+    "name": "Redactor de descripciones SEO",
+    "desc": "Estructura semántica orientada al SEO",
+    "title": "Generador de descripciones de YouTube – Descripciones SEO gratis | Zetawala",
+    "description": "Mejora tus metadatos con el generador gratuito de descripciones de YouTube de Zetawala. Crea descripciones SEO cargadas de palabras clave principales, capítulos con marcas de tiempo, enlaces y llamadas a la acción, optimizadas para la búsqueda de YouTube y los resultados de vídeo de Google. Deja de dejar el cuadro de descripción vacío: conviértelo en un activo de posicionamiento y conversión en minutos.",
+    "example": {
+      "input": "Título: «Guía de abastecimiento en el mercado de Shah Alami»",
+      "output": "Descripción: «En esta guía completa exploramos los mejores productos al por mayor del mercado de Shah Alami en Lahore para vendedores de comercio electrónico...\n\n🕒 Capítulos:\n0:00 - La realidad del abastecimiento local\n1:20 - Las mejores tiendas de electrónica\n4:00 - Secretos de negociación con mayoristas...»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de descripciones de YouTube gratuito?",
+        "Sí. El generador gratuito de descripciones de YouTube de Zetawala crea descripciones SEO con introducciones ricas en palabras clave, ideas de capítulos y llamadas a la acción, para que tus metadatos trabajen tanto como tu título y tu miniatura."
+      ],
+      [
+        "¿Qué longitud debe tener una descripción SEO de YouTube?",
+        "Apunta a unas 250-500 palabras cuando aporte valor. Coloca las palabras clave principales en los primeros 150 caracteres aproximadamente (antes de «Mostrar más»). El redactor de descripciones de Zetawala estructura esa descripción SEO priorizando lo visible."
+      ],
+      [
+        "¿Las marcas de tiempo ayudan al posicionamiento en YouTube y Google?",
+        "Las marcas de tiempo mejoran la usabilidad y pueden destacar momentos clave en la búsqueda. Un generador de descripciones de YouTube que incluya líneas de capítulos ayuda a los espectadores a avanzar y a las plataformas a entender tu estructura."
+      ],
+      [
+        "¿Dónde debo colocar las palabras clave en una descripción de YouTube?",
+        "Pon la palabra clave principal en la primera frase y luego integra de forma natural términos secundarios y de cola larga en los párrafos y en los títulos de capítulo. Evita el amontonamiento: Zetawala mantiene las descripciones SEO legibles."
+      ],
+      [
+        "¿Cuántos hashtags debo poner en una descripción de YouTube?",
+        "YouTube permite hasta 15, pero de 3 a 5 hashtags relevantes suele bastar. Abusar de ellos parece spam. Dedica el esfuerzo primero a una buena descripción SEO y luego a un apoyo ligero de hashtags."
+      ],
+      [
+        "¿Qué debo usar junto a un generador de descripciones de YouTube?",
+        "Combina el redactor de descripciones con el generador de títulos para el CTR, el extractor de etiquetas para las etiquetas de YouTube y el redactor de guiones para que tu contenido hablado cumpla la promesa de la descripción SEO."
+      ]
+    ]
+  },
+  "tags-extractor": {
+    "name": "Extractor de etiquetas y palabras clave",
+    "desc": "Palabras clave para YouTube Studio",
+    "title": "Generador de etiquetas de YouTube – Etiquetas y palabras clave gratis | Zetawala",
+    "description": "Genera mejores etiquetas de YouTube con el generador gratuito de etiquetas de Zetawala. Obtén etiquetas relevantes amplias, de coincidencia exacta y de cola larga para Studio, que refuerzan la indexación en búsqueda, los sinónimos y el descubrimiento en vídeos relacionados. Optimiza los metadatos ocultos en segundos para que tus títulos y descripciones queden reforzados y no incompletos.",
+    "example": {
+      "input": "Tema del vídeo: «Shopify Pakistán»",
+      "output": "Etiquetas: «shopify pakistan, shopify dropshipping pakistan, ecommerce business in pakistan, how to start shopify brand, shah alami market wholesale online»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de etiquetas de YouTube gratuito?",
+        "Sí. El generador gratuito de etiquetas de YouTube de Zetawala sugiere etiquetas relevantes y variaciones de palabras clave para tu tema, de modo que completes los metadatos de Studio rápidamente sin amontonar términos al azar."
+      ],
+      [
+        "¿Las etiquetas de YouTube siguen importando para el SEO?",
+        "Los títulos y las descripciones pesan más, pero las etiquetas de YouTube todavía ayudan con sinónimos, errores de escritura y descubrimiento relacionado. Usa un generador de etiquetas para obtener etiquetas relevantes, nunca nombres de tendencias ajenas a tu tema."
+      ],
+      [
+        "¿Cuántas etiquetas de YouTube debo usar?",
+        "YouTube permite hasta 500 caracteres. Muchos creadores usan entre 200 y 300 caracteres mezclando etiquetas amplias del nicho, frases de coincidencia exacta del título y etiquetas específicas de cola larga. Zetawala te ayuda a priorizar la calidad sobre la cantidad."
+      ],
+      [
+        "¿Cuál es la diferencia entre etiquetas amplias y de cola larga en YouTube?",
+        "Las etiquetas amplias (por ejemplo, «comercio electrónico») son categorías muy competidas. Las de cola larga (por ejemplo, «cómo empezar en el comercio electrónico en Pakistán») apuntan a una intención más clara y suelen traer espectadores más cualificados. Un buen generador de etiquetas incluye ambas."
+      ],
+      [
+        "¿Pueden las etiquetas irrelevantes perjudicar mi canal?",
+        "Sí. Amontonar etiquetas sin relación confunde al algoritmo y puede dañar la retención si hace clic la audiencia equivocada. Zetawala se centra en etiquetas de YouTube pertinentes que coinciden con tu vídeo."
+      ],
+      [
+        "¿Qué herramientas debo usar con un generador de etiquetas de YouTube?",
+        "Escribe el título con el generador de títulos, la descripción SEO con el redactor de descripciones y remata los metadatos con el extractor de etiquetas. Para los visuales de presentación, pasa después al generador de prompts de miniaturas."
+      ]
+    ]
+  },
+  "thumbnail-prompt": {
+    "name": "Generador de prompts de miniaturas con IA",
+    "desc": "Prompts gráficos para Midjourney",
+    "title": "Generador de prompts para miniaturas de YouTube – Listos para Midjourney | Zetawala",
+    "description": "Crea visuales que detienen el scroll con el generador gratuito de prompts para miniaturas de YouTube de Zetawala. Obtén prompts listos para Midjourney (y compatibles con Stable Diffusion o DALL·E) diseñados para el contraste, la emoción y una composición clara. Convierte cualquier concepto de vídeo en una dirección de miniatura con alto CTR sin pelearte con software de diseño desde cero.",
+    "example": {
+      "input": "Concepto: «Programador rico frente a programador pobre»",
+      "output": "Prompt: «A dramatic split-screen portrait. Left side: stressed, exhausted software developer in a dark, messy room. Right side: relaxed, wealthy tech entrepreneur in a luxurious bright penthouse office, cyber neon ambient lighting, 8k resolution, highly detailed, cinematic render --ar 16:9 --v 6»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador gratuito de prompts para miniaturas de YouTube?",
+        "Sí. La herramienta gratuita de prompts para miniaturas de YouTube de Zetawala escribe prompts al estilo Midjourney a partir de tu concepto de vídeo, para que generes borradores de miniaturas con mucho contraste más rápido."
+      ],
+      [
+        "¿Cómo mejoran el CTR los prompts para miniaturas de YouTube?",
+        "Los sujetos nítidos, el contraste alto y los rostros expresivos detienen el scroll en feeds saturados. Un buen prompt para miniaturas de YouTube en Midjourney te ayuda a lograr ese estilo de forma consistente en lugar de adivinar la redacción del prompt."
+      ],
+      [
+        "¿Qué herramienta de imágenes con IA es mejor para las miniaturas de YouTube?",
+        "Midjourney es popular para miniaturas cinematográficas y detalladas; DALL·E destaca con texto legible y gráficos más simples. Los prompts de miniaturas de Zetawala se escriben para funcionar en Midjourney, Stable Diffusion y herramientas similares."
+      ],
+      [
+        "¿Debo poner texto en las miniaturas de YouTube?",
+        "Normalmente sí, pero limítalo a unas pocas palabras destacadas que complementen el título y sean legibles en móvil. Usa el generador de títulos de Zetawala para el título y el generador de prompts de miniaturas para el visual, y luego prueba el CTR del conjunto."
+      ],
+      [
+        "¿Qué colores funcionan mejor en las miniaturas de YouTube?",
+        "Las combinaciones de alto contraste (un sujeto luminoso sobre fondo más oscuro, con acentos complementarios) suelen destacar. Los prompts de Zetawala enfatizan el contraste y la jerarquía para que las miniaturas se lean bien en tamaño pequeño."
+      ],
+      [
+        "¿Qué debo hacer después de generar un prompt de miniatura?",
+        "Genera la imagen en Midjourney (o en tu herramienta preferida), combínala con las opciones del generador de títulos y remata el SEO con el redactor de descripciones y el extractor de etiquetas antes de subir el vídeo."
+      ]
+    ]
+  },
+  "script-master": {
+    "name": "Redactor integral de guiones",
+    "desc": "Guion de audio palabra por palabra",
+    "title": "Generador de guiones de YouTube – Redactor de guiones con IA gratis | Zetawala",
+    "description": "¿Cómo se escribe un guion de YouTube que retenga la atención? El generador gratuito de guiones de YouTube de Zetawala (redactor de guiones con IA) convierte temas en narrativas listas para retener, con ganchos, ritmo, indicaciones de recursos visuales y llamadas a la acción. Desde locuciones sin rostro hasta explicaciones frente a cámara, redacta guiones listos para producción más rápido y evita el abandono a mitad del vídeo.",
+    "example": {
+      "input": "Tema: «Mayorista de Shah Alami» | Duración: «5 minutos»",
+      "output": "Esquema del guion: «[Introducción - gancho dramático frente a cámara]: ¿Estás cansado de invertir en anuncios y no conseguir ventas? Hoy nos adentramos en la mayor mina de oro oculta de Lahore...\n[Corte a recursos visuales de callejones de mercado abarrotados y ritmo rápido con música energética de fondo]...»"
+    },
+    "faqs": [
+      [
+        "¿Existe un generador de guiones de YouTube gratuito?",
+        "Sí. El generador gratuito de guiones de YouTube de Zetawala funciona como un redactor de guiones con IA para creadores: convierte un tema y una duración objetivo en un guion estructurado con gancho, secciones de valor y llamada a la acción final."
+      ],
+      [
+        "¿Cómo escribo un guion de YouTube que mantenga a la gente viendo?",
+        "Abre con unos primeros 30 segundos potentes, elimina el relleno, añade rupturas de patrón y aporta valor en secciones claras. Usa el generador de ganchos para la apertura y el redactor de guiones como generador completo de guiones de YouTube para el resto."
+      ],
+      [
+        "¿Cuántas palabras tiene un guion de YouTube de 10 minutos?",
+        "A un ritmo conversacional de unas 130-150 palabras por minuto, calcula entre 1.300 y 1.500 palabras. El redactor de guiones con IA de Zetawala puede ajustarse a la duración para que tu borrador coincida con el tiempo deseado."
+      ],
+      [
+        "¿Cuál es la mejor estructura para un guion de vídeo de YouTube?",
+        "Un flujo probado es gancho (0:00-0:30), planteamiento, entrega del valor principal y luego llamada a la acción y cierre. El redactor de guiones de Zetawala sigue una arquitectura favorable a la retención para que la salida del redactor con IA sea utilizable en rodaje y no un muro de texto."
+      ],
+      [
+        "¿Sirve un redactor de guiones con IA para canales de YouTube sin rostro?",
+        "Sí. Zetawala puede generar guiones de YouTube pensados para locución con indicaciones de narrativa visual, ideales para canales de documentales, explicaciones y listas sin rostro."
+      ],
+      [
+        "¿Dónde deben ir las llamadas a la acción en un guion de YouTube?",
+        "Después de un bloque de valor claro (a mitad del vídeo) y en el cierre, nunca antes de que el gancho haya captado la atención. Combina el redactor de guiones con el recomendador de recursos visuales para obtener ideas de imágenes de apoyo en cada sección."
+      ]
+    ]
+  },
+  "visuals-recommender": {
+    "name": "Recomendador de recursos visuales",
+    "desc": "Encuentra vídeos de stock y prompts de imagen",
+    "title": "Ideas de recursos visuales y palabras clave de stock – Recomendador de visuales | Zetawala",
+    "description": "Acelera la edición con el recomendador de recursos visuales de Zetawala: ideas de imágenes de apoyo escena por escena, palabras clave para bancos de vídeo y prompts de vídeo con IA ajustados a tu guion. Encuentra antes los clips adecuados en Pexels, Storyblocks o Envato y mantén alta la variedad visual para que la retención se sostenga desde la introducción hasta el cierre.",
+    "example": {
+      "input": "Guion: «Empecé un negocio mayorista desde mi pequeño dormitorio...»",
+      "output": "Escena 1:\n- Idea visual: primer plano de la pantalla de un portátil con gráficos de ventas subiendo rápidamente en una habitación oscura.\n- Palabras clave de stock: «ecommerce sales graph rising, analytics on laptop screen close up»\n- Prompt de IA: «A glowing laptop screen displaying green stock growth charts in a cozy, dimly lit bedroom office, warm desk lamp lighting, macro lens, cinematic depth of field, photorealistic --ar 16:9»"
+    },
+    "faqs": [
+      [
+        "¿Cómo encuentro ideas de imágenes de apoyo para un guion de YouTube?",
+        "Divide el guion en escenas y asocia cada momento a un cambio visual. El recomendador de recursos visuales de Zetawala sugiere ideas de imágenes de apoyo y palabras clave para bancos de vídeo, así los editores buscan en las bibliotecas sin adivinar términos."
+      ],
+      [
+        "¿Qué son las palabras clave de bancos de vídeo y por qué importan?",
+        "Son las expresiones exactas de búsqueda en plataformas como Pexels, Storyblocks o Envato Elements. Mejores palabras clave significan hallazgos más rápidos y menos clips equivocados, lo que ahorra horas de posproducción."
+      ],
+      [
+        "¿Por qué son importantes las imágenes de apoyo para la retención?",
+        "Las imágenes de apoyo funcionan como ruptura de patrón visual sobre el audio de un plano fijo o una locución. Cambiar de imagen cada pocos segundos reduce el aburrimiento y favorece la duración media de visualización, clave para crecer en YouTube."
+      ],
+      [
+        "¿Cada cuánto deben cambiar los visuales en un vídeo de YouTube?",
+        "Muchas ediciones actuales cortan, hacen zoom, añaden texto o insertan imágenes de apoyo cada pocos segundos, sobre todo para el público móvil. Usa las ideas de Zetawala como lista de comprobación para que cada sección del guion tenga plan visual."
+      ],
+      [
+        "¿Puede esta herramienta ayudar con prompts de vídeo generado por IA?",
+        "Sí. Además de las palabras clave de stock, el recomendador de recursos visuales genera prompts de IA listos por escena que puedes pegar en herramientas como Runway u otras aplicaciones de texto a vídeo cuando las bibliotecas de stock se queden cortas."
+      ],
+      [
+        "¿Qué debo usar antes del recomendador de recursos visuales?",
+        "Escribe la narrativa con el redactor de guiones (y el generador de ganchos para la apertura) y genera aquí las ideas de imágenes de apoyo y las palabras clave de stock. Remata la presentación con el generador de títulos y el generador de prompts de miniaturas."
+      ]
+    ]
+  }
+}

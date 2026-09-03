@@ -1,0 +1,67 @@
+{
+  "name": "AdSense-Umsatz-Rechner",
+  "desc": "AdSense-Einnahmen aus Pageviews und RPM schätzen",
+  "metadata": {
+    "title": "Kostenloser AdSense-Umsatz-Rechner – RPM und CPC | Zetawala",
+    "description": "Schätzen Sie tägliche, monatliche und jährliche AdSense-Einnahmen aus Pageviews im RPM- oder CPC-Modus. Kostenlos für Publisher.",
+    "keywords": ["AdSense-Umsatz-Rechner", "AdSense-Einnahmen Rechner", "AdSense RPM Rechner"]
+  },
+  "seo": {
+    "title": "AdSense-Umsatz-Rechner – RPM- und CPC-Modus",
+    "description": "Schätzen Sie AdSense-Einnahmen mit Zetawalas kostenlosem Rechner. RPM-Modus (Pageviews ÷ 1.000 × RPM) oder CPC-Modus (Pageviews × CTR × CPC) für Tages-, Monats- und Jahreswerte – deterministische Mathematik, ohne KI.",
+    "example": {
+      "input": "Pageviews: 100.000/Monat · Modus: RPM · RPM: 8 $",
+      "output": "Täglich ~26,67 $ · Monatlich 800 $ · Jährlich 9.600 $"
+    },
+    "faqs": [
+      { "q": "Wie funktioniert der RPM-Modus?", "a": "Monatsumsatz = (Monatliche Pageviews ÷ 1.000) × RPM. Täglich ≈ Monat ÷ 30; jährlich = Monat × 12." },
+      { "q": "Wie funktioniert der CPC-Modus?", "a": "Klicks = Pageviews × CTR %. Umsatz = Klicks × CPC. Dieselbe Tages-/Monats-/Jahres-Skalierung gilt." },
+      { "q": "Sind das offizielle Google-AdSense-Daten?", "a": "Nein. Es ist ein kostenloser Schätzer mit dem RPM, CTR oder CPC, den Sie eingeben. Echtes AdSense schwankt nach Nische, Land, Saison und Anzeigenlayout." },
+      { "q": "Nutzt der Rechner KI?", "a": "Nein. Die Einnahmen folgen transparenten Formeln, ohne Modellschätzungen." },
+      { "q": "Wer sollte ihn nutzen?", "a": "Blogger, News-Publisher und Nischenseiten, die Display-Umsatz planen, bevor Traffic oder Anzeigenplatzierung wachsen." },
+      { "q": "Welchen Modus wählen – RPM oder CPC?", "a": "RPM, wenn Sie den Umsatz pro tausend Pageviews aus AdSense kennen. CPC, wenn Sie CTR und durchschnittlichen Klickwert tracken." }
+    ]
+  },
+  "ui": {
+    "formTitle": "AdSense-Eingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Display-Umsatzschätzung aus Pageviews, RPM oder CPC.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zu AdSense-Schätzungen.",
+    "fields": {
+      "monthlyPageviews": "Monatliche Pageviews",
+      "mode": "Schätzmodus",
+      "rpm": "RPM ($ pro 1000 Pageviews)",
+      "ctrPct": "CTR (%)",
+      "cpc": "CPC ($)"
+    },
+    "selects": {
+      "rpm": "RPM",
+      "cpc": "CTR + CPC"
+    },
+    "nextSteps": {
+      "affiliate-earnings": "Affiliate-Einnahmen",
+      "content-marketing-roi": "Content-ROI",
+      "profit-margin": "Gewinnmarge"
+    },
+    "results": {
+      "headline": "Geschätztes monatliches AdSense: {value}",
+      "metrics": {
+        "Daily Earnings": { "title": "Tägliche Einnahmen" },
+        "Monthly Earnings": { "title": "Monatliche Einnahmen" },
+        "Yearly Earnings": { "title": "Jährliche Einnahmen" },
+        "Estimated Clicks": { "title": "Geschätzte Klicks" }
+      }
+    }
+  }
+}

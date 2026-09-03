@@ -1,0 +1,434 @@
+{
+  "ai-api-cost": {
+    "name": "KI-API-Kostenrechner",
+    "desc": "OpenAI-, Anthropic-, Google- und DeepSeek-Ausgaben schätzen",
+    "title": "Kostenloser KI-API-Kostenrechner – OpenAI, Claude und mehr",
+    "description": "Schätzen Sie OpenAI-, Anthropic-, Google-, DeepSeek- oder benutzerdefinierte Modellausgaben mit Zetawalas kostenlosem KI-API-Kostenrechner. Tokens, Anfragen pro Tag und Preis je 1 Mio. Tokens eingeben – dann Kosten pro Anfrage sowie Tages-, Monats- und Jahressummen aus deterministischer Mathematik (ohne KI). Ideal für Gründer, ML-Ingenieure und SaaS-Teams, die LLM-Nutzung budgetieren. Ergebnisse aktualisieren sich sofort.",
+    "example": {
+      "input": "Anbieter: OpenAI · Modell: gpt-4o-mini · 1.500 In- / 500 Out-Tokens · 100 Anfragen/Tag · 30 Tage",
+      "output": "Kosten/Anfrage + Tages- / Monats- / Jahreswerte aus veröffentlichten $/1M Input- und Output-Tarifen"
+    },
+    "faqs": [
+      [
+        "Wie funktioniert der KI-API-Kostenrechner?",
+        "Kosten pro Anfrage = (Input-Tokens ÷ 1M × $/1M Input) + (Output-Tokens ÷ 1M × $/1M Output). Täglich = Kosten × Anfragen/Tag; Monat und Jahr skalieren daraus."
+      ],
+      [
+        "Welche Anbieter und Modelle werden unterstützt?",
+        "Eingebaute Tarife decken gängige OpenAI-, Anthropic-, Google- und DeepSeek-Modelle. Wählen Sie Benutzerdefiniert, um eigene Input- und Output-Preise je 1 Mio. Tokens einzugeben."
+      ],
+      [
+        "Entspricht diese Schätzung meiner Rechnung?",
+        "Es ist eine deterministische Projektion aus den eingegebenen Tarifen und der Nutzung. Die echte Rechnung kann durch Caching, Retries, Tool-Calls oder Preisänderungen des Anbieters abweichen."
+      ],
+      [
+        "Ruft der Rechner die KI-APIs auf?",
+        "Nein. Er sendet nie Tokens oder Anfragen an Anbieter. Die Rechnung läuft lokal aus Ihren Eingaben und der gewählten Preisliste."
+      ],
+      [
+        "Wem nützt ein KI-API-Kostenrechner?",
+        "Produktteams, unabhängigen Entwicklern und Finanzverantwortlichen, die vor dem Start von Funktionen oder vor Traffic-Skalierung ein klares monatliches LLM-Budget brauchen."
+      ],
+      [
+        "Wie senke ich die geschätzten API-Kosten?",
+        "Tokens pro Anfrage reduzieren, Prompts zwischenspeichern, günstigere Modelle für Routineaufgaben wählen oder Anfragen/Tag senken – dann den Rechner neu ausführen und die neue Monatssumme sofort sehen."
+      ]
+    ]
+  },
+  "saas-pricing": {
+    "name": "SaaS-Preisrechner",
+    "desc": "Break-even und empfohlene Abo-Preise",
+    "title": "Kostenloser SaaS-Preisrechner – Abo-Preis finden",
+    "description": "Finden Sie Break-even- und empfohlene Abo-Preise mit Zetawalas kostenlosem SaaS-Preisrechner. Monatliche Betriebskosten, Wunschgewinn und erwartete Kunden eingeben – dann erforderliches MRR und Gewinnprojektion aus deterministischen Formeln (ohne KI). Für Gründer, Product Manager und Solopreneure, die Preise validieren. Ergebnisse aktualisieren sich sofort bei geänderten Eingaben.",
+    "example": {
+      "input": "Kosten: 5.000 $/Monat · Wunschgewinn: 3.000 $ · Erwartete Kunden: 200",
+      "output": "Break-even 25 $/Monat · Empfehlung 40 $/Monat · Erforderliches MRR 8.000 $ · Gewinnprojektion 3.000 $"
+    },
+    "faqs": [
+      [
+        "Wie wird der empfohlene SaaS-Preis berechnet?",
+        "Break-even-Preis = Kosten ÷ Kunden. Empfohlener Preis = (Kosten + Wunschgewinn) ÷ Kunden. Erforderliches MRR = Kosten + Wunschgewinn."
+      ],
+      [
+        "Nutzt dieses SaaS-Preis-Tool KI?",
+        "Nein. Preise und MRR sind reine Arithmetik aus Ihren Zahlen. Kein Konkurrenz-Scraping und keine KI-„vorgeschlagenen“ Stufen."
+      ],
+      [
+        "Was, wenn die Kundenzahl eine Schätzung ist?",
+        "Nutzen Sie eine konservative erwartete Kundenzahl (oder mehrere Szenarien). Eine Änderung der Kunden revidiert Break-even und Empfehlungspreis sofort."
+      ],
+      [
+        "Ist der Break-even-Preis der Listenpreis?",
+        "Break-even ist der minimale durchschnittliche Umsatz pro Kunde zur Deckung der Kosten. Der Listenpreis liegt meist auf oder über dem Empfehlungswert, sobald Gewinnziele einfließen."
+      ],
+      [
+        "Wer sollte einen SaaS-Preisrechner nutzen?",
+        "SaaS-Gründer in der Frühphase, unabhängige Entwickler und Operations-Verantwortliche, die Abo-Stufen vor dem Start oder einer Preisänderung festlegen oder überprüfen."
+      ],
+      [
+        "Wie nutze ich das mit LTV und CAC?",
+        "Nach der Preisfindung LTV und CAC prüfen, damit das Abo-ARPU gegenüber Akquisitionskosten und Lebenszeitwert gesund bleibt."
+      ]
+    ]
+  },
+  "customer-cac": {
+    "name": "Kundenakquisitionskosten-Rechner (CAC)",
+    "desc": "CAC aus Marketing- und Vertriebsausgaben",
+    "title": "Kostenloser Kundenakquisitionskosten-Rechner (CAC)",
+    "description": "Messen Sie die Kundenakquisitionskosten mit Zetawalas kostenlosem CAC-Rechner. Marketingausgaben, Vertriebsausgaben und gewonnene Kunden eingeben – CAC und Gesamtakquisitionskosten aus deterministischer Mathematik, ohne KI. Ideal für Growth-Marketer, Gründer und Finance-Teams, die prüfen, ob Ads und Vertrieb effizient sind. Summen aktualisieren sich sofort.",
+    "example": {
+      "input": "Marketing: 10.000 $ · Vertrieb: 5.000 $ · Gewonnene Kunden: 150",
+      "output": "CAC 100 $ · Gesamtakquisitionskosten 15.000 $"
+    },
+    "faqs": [
+      [
+        "Wie wird CAC berechnet?",
+        "CAC = (Marketingkosten + Vertriebskosten) ÷ gewonnene Kunden. Die Gesamtausgaben sind die Summe aus Marketing und Vertrieb."
+      ],
+      [
+        "Nutzt dieses CAC-Tool KI oder Branchenmittelwerte?",
+        "Nein. Es teilt nur die eingegebenen Ausgaben und Kundenzahlen. Keine KI-Schätzungen und keine Benchmark-Overlays."
+      ],
+      [
+        "Welche Kosten gehören in Marketing und Vertrieb?",
+        "Ads, Content-Produktion, Tools, Provisionen, SDR-/AE-Gehälter und Agenturhonorare für den gemessenen Zeitraum – damit CAC die echten Akquisitionskosten abbildet."
+      ],
+      [
+        "Was ist ein guter CAC relativ zum LTV?",
+        "Viele Unternehmen zielen auf LTV:CAC von etwa 3:1 oder besser. Nutzen Sie Zetawalas LTV-Rechner zusammen mit CAC, um das Verhältnis zu prüfen."
+      ],
+      [
+        "Wer sollte einen Kundenakquisitionskosten-Rechner nutzen?",
+        "Performance-Marketer, SaaS-Gründer, E-Commerce-Betreiber und Agenturen, die die Effizienz von Paid- und Vertriebsakquise berichten."
+      ],
+      [
+        "Kann ich CAC für einen einzelnen Kanal berechnen?",
+        "Ja. Geben Sie nur die Ausgaben dieses Kanals und die damit gewonnenen Kunden ein. Eingaben ändern, um Google Ads, Content oder Outbound nebeneinander zu vergleichen."
+      ]
+    ]
+  },
+  "content-marketing-roi": {
+    "name": "Content-Marketing-ROI-Rechner",
+    "desc": "Traffic, Kunden und Content-ROI",
+    "title": "Kostenloser Content-Marketing-ROI-Rechner",
+    "description": "Schätzen Sie Traffic, Kunden, Umsatz und ROI aus Content mit Zetawalas kostenlosem Content-Marketing-ROI-Rechner. Artikel pro Monat, Besucher, Conversion-Rate, Umsatz pro Kunde und Content-Kosten eingeben – alles mit deterministischer Mathematik (ohne KI). Für Content-Marketer, SEO-Teams und Agenturen. Projektionen aktualisieren sich sofort.",
+    "example": {
+      "input": "8 Artikel/Monat · 1.200 Besucher je Artikel · 2 % Conv. · 120 $ AOV · 2.000 $ Content-Kosten",
+      "output": "Traffic 9.600 · Kunden 192 · Umsatz 23.040 $ · ROI ~1.052 %"
+    },
+    "faqs": [
+      [
+        "Wie wird Content-Marketing-ROI berechnet?",
+        "Traffic = Artikel × Ø-Besucher. Kunden = Traffic × Conversion %. Umsatz = Kunden × Ø-Umsatz pro Kunde. ROI % = (Umsatz − Content-Kosten) ÷ Content-Kosten × 100, wenn Kosten > 0."
+      ],
+      [
+        "Erfindet dieses Tool Traffic oder Rankings?",
+        "Nein. Es multipliziert nur Ihre Annahmen. Keine KI-Prognose von Suchvolumen oder Rankings."
+      ],
+      [
+        "Welche Conversion-Rate sollte ich nutzen?",
+        "Nutzen Sie eine realistische Sitewide- oder Landingpage-Rate aus der Analytics. Konservative Raten verhindern überhöhten ROI."
+      ],
+      [
+        "Wem nützt ein Content-Marketing-ROI-Rechner?",
+        "SEO-Leads, Content-Agenturen und Gründern, die Blog-, Video- oder Resource-Investments gegen erwarteten Pipeline-Umsatz rechtfertigen."
+      ],
+      [
+        "Warum ist ROI manchmal leer?",
+        "ROI braucht monatliche Content-Kosten größer null. Kosten setzen, um die Rendite zu sehen; ohne Kosten sehen Sie weiterhin Traffic, Kunden und Umsatz."
+      ],
+      [
+        "Kann ich eine einzelne Pillar-Page statt eines Monatsrhythmus modellieren?",
+        "Ja – Artikel auf 1 setzen und erwartete Besucher sowie Conversion dieser Seite nutzen, um den Umsatzbeitrag zu schätzen."
+      ]
+    ]
+  },
+  "google-ads-profit": {
+    "name": "Google-Ads-Gewinnrechner",
+    "desc": "Klicks, Conversions, Gewinn und Ads-ROI",
+    "title": "Kostenloser Google-Ads-Gewinnrechner – ROI und Conversions",
+    "description": "Modellieren Sie Google-Ads-Klicks, Conversions, Umsatz, Gewinn und ROI mit Zetawalas kostenlosem Google-Ads-Gewinnrechner. Budget, durchschnittlicher CPC, Conversion-Rate und Bestellwert eingeben – Ergebnisse nur mit deterministischer Mathematik (ohne KI). Für PPC-Manager, E-Commerce-Werbetreibende und Agenturen. Schätzungen aktualisieren sich sofort, wenn Sie Gebote oder Budgets anpassen.",
+    "example": {
+      "input": "Budget: 3.000 $ · CPC: 1,50 $ · Conv.-Rate: 3 % · AOV: 85 $",
+      "output": "Klicks 2.000 · Conversions 60 · Umsatz 5.100 $ · Gewinn 2.100 $ · ROI 70 %"
+    },
+    "faqs": [
+      [
+        "Wie funktioniert die Google-Ads-Gewinnformel?",
+        "Klicks = Budget ÷ CPC. Conversions = Klicks × Conversion %. Umsatz = Conversions × AOV. Gewinn = Umsatz − Budget. ROI % = Gewinn ÷ Budget × 100."
+      ],
+      [
+        "Ist das mit meinem Google-Ads-Konto verbunden?",
+        "Nein. Es ist ein Planungsrechner. Geplante oder historische Durchschnitte einfügen, um den Gewinn zu modellieren, bevor Sie Spend skalieren."
+      ],
+      [
+        "Nutzt der Rechner KI?",
+        "Nein. Jede Kennzahl ist deterministische Arithmetik aus Budget, CPC, Conversion-Rate und Bestellwert."
+      ],
+      [
+        "Wer sollte einen Google-Ads-Gewinnrechner nutzen?",
+        "Performance-Marketer, Shop-Betreiber und Agenturen, die prüfen, ob CPC und Conversion-Rate einer Kampagne Gewinnziele erreichen können."
+      ],
+      [
+        "Was, wenn der Gewinn negativ ist?",
+        "Dann liegt der projizierte Umsatz unter dem Budget. CPC senken, Conversion-Rate oder AOV erhöhen oder Spend reduzieren – und sofort einen überarbeiteten ROI sehen."
+      ],
+      [
+        "Kann ich das für Meta oder andere Paid-Kanäle nutzen?",
+        "Die Mathematik ist kanalagnostisch, wenn Sie Budget, CPC (oder Cost-per-Click), Conversion-Rate und AOV haben. Die Labels sind Google-Ads-orientiert, das Modell ist dasselbe."
+      ]
+    ]
+  },
+  "email-marketing-roi": {
+    "name": "E-Mail-Marketing-ROI-Rechner",
+    "desc": "Öffnungen, Klicks, Kunden und E-Mail-ROI",
+    "title": "Kostenloser E-Mail-Marketing-ROI-Rechner",
+    "description": "Projizieren Sie Öffnungen, Klicks, Kunden, Umsatz und ROI von E-Mail-Kampagnen mit Zetawalas kostenlosem E-Mail-Marketing-ROI-Rechner. Listengröße, Open-Rate, Click-Rate, Conversion-Rate, Bestellwert und Kampagnenkosten eingeben – berechnet mit deterministischer Mathematik (ohne KI). Ideal für E-Commerce- und Lifecycle-Marketer. Ergebnisse aktualisieren sich sofort.",
+    "example": {
+      "input": "Liste: 25.000 · Öffnung 28 % · Klick 4 % · Conv. 2,5 % · AOV 70 $ · Kosten 400 $",
+      "output": "Öffnungen 7.000 · Klicks 1.000 · Kunden 25 · Umsatz 1.750 $ · ROI ~337,5 %"
+    },
+    "faqs": [
+      [
+        "Wie wird E-Mail-Marketing-ROI berechnet?",
+        "Öffnungen = Liste × Open %. Klicks = Liste × Click %. Kunden = Klicks × Conversion %. Umsatz = Kunden × AOV. ROI % = (Umsatz − Kampagnenkosten) ÷ Kampagnenkosten × 100, wenn Kosten > 0."
+      ],
+      [
+        "Werden Open- und Click-Rate unabhängig angewendet?",
+        "Ja. Die Click-Rate gilt für die gesamte Liste (Click-to-Delivered, branchenüblich), nicht nur für Öffner – analog zu gängigen ESP-Reports."
+      ],
+      [
+        "Nutzt dieses E-Mail-ROI-Tool KI?",
+        "Nein. Projektionen sind reine Formeln aus den Raten und der Listengröße – keine generativen Prognosen."
+      ],
+      [
+        "Wer sollte einen E-Mail-Marketing-ROI-Rechner nutzen?",
+        "E-Mail-Marketer, Shopify-Marken, SaaS-Lifecycle-Teams und Freelancer, die Kampagnen- oder Newsletter-Umsatz vor dem Versand schätzen."
+      ],
+      [
+        "Warum fehlt ROI, wenn ich Kampagnenkosten weglasse?",
+        "Der Umsatz wird trotzdem berechnet. Kampagnenkosten (Tools, Copy, Design, Listenmiete) größer null eingeben, um ROI % freizuschalten."
+      ],
+      [
+        "Kann ich einen einzelnen Versand vs. eine Sequenz modellieren?",
+        "Nutzen Sie die Metriken einer Kampagne für einen Broadcast oder Durchschnittsraten und kombinierte Kosten einer kurzen Sequenz für eine gemischte ROI-Sicht."
+      ]
+    ]
+  },
+  "affiliate-earnings": {
+    "name": "Affiliate-Einnahmenrechner",
+    "desc": "Affiliate-Klicks, Verkäufe und Provisionen",
+    "title": "Kostenloser Affiliate-Einnahmenrechner – Provisions-Schätzer",
+    "description": "Schätzen Sie Affiliate-Klicks, Verkäufe und Provisionen mit Zetawalas kostenlosem Affiliate-Einnahmenrechner. Monatliche Besucher, Affiliate-CTR, Conversion-Rate und Durchschnittsprovision eingeben für deterministische Monats- und Jahreseinnahmen – ohne KI. Für Blogger, YouTuber und Nischenseiten-Betreiber. Summen aktualisieren sich sofort, wenn Traffic oder Raten sich ändern.",
+    "example": {
+      "input": "Besucher: 50.000 · CTR: 2 % · Conv.: 5 % · Provision: 40 $",
+      "output": "Klicks 1.000 · Verkäufe 50 · Monatlich 2.000 $ · Jährlich 24.000 $"
+    },
+    "faqs": [
+      [
+        "Wie werden Affiliate-Einnahmen berechnet?",
+        "Klicks = Besucher × CTR %. Verkäufe = Klicks × Conversion %. Monatseinnahmen = Verkäufe × Durchschnittsprovision. Jährlich = Monatlich × 12."
+      ],
+      [
+        "Garantiert das, was ein Netzwerk zahlt?",
+        "Nein. Es ist eine Planungsschätzung aus angenommenem CTR, Conversion und Provision. Tatsächliche Auszahlungen hängen von Netzwerkregeln, Rückerstattungen und Cookie-Fenstern ab."
+      ],
+      [
+        "Ist der Affiliate-Einnahmenrechner KI-basiert?",
+        "Nein. Zetawala nutzt nur deterministische Mathematik, damit Creator Szenarien ohne undurchsichtige KI-Projektionen modellieren können."
+      ],
+      [
+        "Wer sollte einen Affiliate-Provisionsrechner nutzen?",
+        "Blogger, Newsletter-Betreiber, YouTuber und Vergleichsseiten, die Content um Affiliate-Angebote herum planen."
+      ],
+      [
+        "Welche CTR- und Conversion-Raten sind realistisch?",
+        "Sie variieren nach Nische und Platzierung. Starten Sie mit Analytics oder Netzwerkberichten; zuerst konservative Raten modellieren, dann das Aufwärtsszenario sofort durchrechnen."
+      ],
+      [
+        "Kann ich zwei Affiliate-Programme vergleichen?",
+        "Ja. Traffic und CTR konstant halten, Provision ändern (und Conversion bei Bedarf) und Monatseinnahmen nebeneinander vergleichen."
+      ]
+    ]
+  },
+  "ecommerce-profit": {
+    "name": "E-Commerce-Gewinnrechner",
+    "desc": "Nettogewinn nach Gebühren, Versand und Ads",
+    "title": "Kostenloser E-Commerce-Gewinnrechner – Nettomarge und ROI",
+    "description": "Berechnen Sie den E-Commerce-Nettogewinn nach Produktkosten, Versand, Plattformgebühren und Ads mit Zetawalas kostenlosem E-Commerce-Gewinnrechner. Nur deterministische Mathematik – ohne KI –, damit Shopify-, WooCommerce- und Marktplatz-Verkäufer echte Stückkosten sofort sehen. Marge und ROI aktualisieren sich, sobald sich Kosten ändern.",
+    "example": {
+      "input": "Preis 79 $ · Kosten 28 $ · Versand 6 $ · Plattformgebühr 8 $ · Ads 12 $",
+      "output": "Nettogewinn 25 $ · Marge ~31,6 % · ROI ~46,3 % · Gesamtkosten 54 $"
+    },
+    "faqs": [
+      [
+        "Wie wird der E-Commerce-Nettogewinn berechnet?",
+        "Nettogewinn = Verkaufspreis − (Produktkosten + Versand + Plattformgebühr + Werbung). Marge % = Netto ÷ Preis × 100. ROI % = Netto ÷ Gesamtkosten × 100."
+      ],
+      [
+        "Sind Marktplatz- und Anzeigenkosten enthalten?",
+        "Ja. Plattformgebühren und Werbung neben COGS und Versand eingeben, damit die Nettozahl den echten Rest pro Bestellung zeigt."
+      ],
+      [
+        "Ist der E-Commerce-Gewinnrechner KI-gestützt?",
+        "Nein. Alle Ausgaben sind deterministische Arithmetik aus Ihren Eingaben – schnell, transparent und kostenlos."
+      ],
+      [
+        "Wer sollte dieses Tool nutzen?",
+        "DTC-Marken, Dropshipper und Online-Händler, die SKU-Preise prüfen, bevor sie Paid Traffic skalieren."
+      ],
+      [
+        "Worin unterscheidet er sich vom einfachen Gewinnmargen-Rechner?",
+        "Gewinnmarge vergleicht nur Kosten und Preis. E-Commerce-Gewinn legt Versand, Gebühren und Ads für vollere Stückkosten darüber."
+      ],
+      [
+        "Kann ich ein verlustbringendes SKU modellieren?",
+        "Ja. Übersteigen die Kosten den Preis, werden Nettogewinn und Marge negativ – nützlich, um unrentable Produkte früh zu erkennen."
+      ]
+    ]
+  },
+  "amazon-fba-profit": {
+    "name": "Amazon-FBA-Gewinnrechner",
+    "desc": "FBA-Nettogewinn, Marge und ROI",
+    "title": "Kostenloser Amazon-FBA-Gewinnrechner – Gebühren, Marge und ROI",
+    "description": "Schätzen Sie Amazon-FBA-Nettogewinn, Marge und ROI nach Produktkosten, Amazon-Gebühren und Versand mit Zetawalas kostenlosem FBA-Gewinnrechner. Nur deterministische Mathematik – ohne KI –, damit Amazon-Verkäufer ASINs prüfen, bevor sie Inventar bestellen. Ergebnisse aktualisieren sich sofort, wenn Gebühren oder Preis sich ändern.",
+    "example": {
+      "input": "Preis 34,99 $ · Produktkosten 11 $ · Amazon-Gebühren 12,50 $ · Versand 3,20 $",
+      "output": "Nettogewinn 8,29 $ · Marge ~23,7 % · ROI auf Kosten ~31,1 %"
+    },
+    "faqs": [
+      [
+        "Wie wird der Amazon-FBA-Gewinn berechnet?",
+        "Netto = Verkaufspreis − (Produktkosten + Amazon-Gebühren + Versand). Marge % = Netto ÷ Preis × 100. ROI % = Netto ÷ Gesamtkosten × 100."
+      ],
+      [
+        "Was gehört unter Amazon-Gebühren?",
+        "Verkaufsgebühren, FBA-Fulfillment, Lagerung und andere Amazon-Abgaben für diese Einheit summieren (Gebührenvorschau in Seller Central oder Rechnungen)."
+      ],
+      [
+        "Nutzt dieser FBA-Rechner KI?",
+        "Nein. Gewinn, Marge und ROI sind reine Formeln aus Ihren Zahlen – keine gescrapten Buy-Box-Schätzungen."
+      ],
+      [
+        "Wer sollte einen Amazon-FBA-Gewinnrechner nutzen?",
+        "Eigenmarken-, Großhandels- und Arbitrage-Verkäufer, die prüfen, ob ein Produkt die Gebühren mit genug Marge und ROI trägt."
+      ],
+      [
+        "Ist Versand Anlieferfracht oder Kundenversand?",
+        "Geben Sie die Stück-Logistikkosten ein, die Sie modellieren wollen (oft Anlieferung oder Vorbereitung anteilig je Einheit). Halten Sie das über verglichene SKUs konsistent."
+      ],
+      [
+        "Worin unterscheidet er sich vom E-Commerce-Gewinn-Tool?",
+        "FBA konzentriert sich auf Amazon-Gebühren plus Versand, typisch für Fulfillment by Amazon. Nutzen Sie E-Commerce-Gewinn für Multichannel-Shops mit eigener Ad-Zeile."
+      ]
+    ]
+  },
+  "etsy-fee-profit": {
+    "name": "Etsy-Gebühren- und Gewinnrechner",
+    "desc": "Etsy-Gebühren, Nettogewinn und Marge",
+    "title": "Kostenloser Etsy-Gebühren- und Gewinnrechner",
+    "description": "Berechnen Sie gesamte Etsy-Gebühren, Nettogewinn und Marge mit Zetawalas kostenlosem Etsy-Gebühren- und Gewinnrechner. Verkaufspreis, Produktkosten, Versand und Etsy-Gebühren eingeben für deterministische Ergebnisse – ohne KI. Für Etsy-Verkäufer und Gestalter, die handgemachte oder Print-on-Demand-Angebote preisen. Summen aktualisieren sich sofort.",
+    "example": {
+      "input": "Preis 45 $ · Kosten 14 $ · Versand 5 $ · Etsy-Gebühren 7,20 $",
+      "output": "Gesamtgebühren 7,20 $ · Nettogewinn 18,80 $ · Marge ~41,8 %"
+    },
+    "faqs": [
+      [
+        "Wie funktioniert die Etsy-Gebühren- und Gewinnformel?",
+        "Nettogewinn = Verkaufspreis − Produktkosten − Versand − Etsy-Gebühren. Marge % = Netto ÷ Preis × 100. Gesamtgebühren entsprechen den eingegebenen Etsy-Gebühren."
+      ],
+      [
+        "Welche Gebühren sollte ich einbeziehen?",
+        "Angebots-, Transaktions-, Zahlungsabwicklungs- und Offsite-Anzeigengebühren, die dieser Bestellung zugeordnet sind, in einer Etsy-Gebührenzahl bündeln – für ein realistisches Netto."
+      ],
+      [
+        "Nutzt dieser Rechner KI oder Live-Etsy-Tarife?",
+        "Nein. Er holt keine Live-Gebührenpläne. Sie geben Gebühren ein, damit die Mathematik transparent und unter Ihrer Kontrolle bleibt."
+      ],
+      [
+        "Wer sollte einen Etsy-Gewinnrechner nutzen?",
+        "Verkäufer von Handgemachtem, Vintage und Print-on-Demand, die Preise setzen, die nach Etsys Gebührenstapel und Versand noch Gewinn lassen."
+      ],
+      [
+        "Kann ich Gratisversand-Aktionen einbeziehen?",
+        "Ja – erhöhen Sie die Versandkosten, die Sie tragen (oder senken Sie den effektiven Preis), damit der Nettogewinn die Aktion abbildet."
+      ],
+      [
+        "Worin unterscheidet er sich vom eBay-Gebührenrechner?",
+        "Etsy-Gebühren und Gewinn nutzt ein einziges Gebührenfeld plus Kosten und Versand. Der eBay-Gebührenrechner trennt Marktplatz- und Zahlungsgebühren und zeigt die Auszahlung separat."
+      ]
+    ]
+  },
+  "ebay-fee": {
+    "name": "eBay-Gebührenrechner",
+    "desc": "eBay-Gebühren, Nettogewinn und Auszahlung",
+    "title": "Kostenloser eBay-Gebührenrechner – Auszahlung und Nettogewinn",
+    "description": "Schätzen Sie eBay-Gebühren, Verkäufer-Auszahlung und Nettogewinn mit Zetawalas kostenlosem eBay-Gebührenrechner. Verkaufspreis, Produktkosten, Versand, eBay-Gebühr und Zahlungsabwicklungsgebühr eingeben – nur deterministische Mathematik, ohne KI. Ideal für eBay-Verkäufer und Wiederverkäufer, die den Restbetrag prüfen. Ergebnisse aktualisieren sich sofort.",
+    "example": {
+      "input": "Preis 120 $ · Kosten 55 $ · Versand 8 $ · eBay-Gebühr 15,60 $ · Zahlungsgebühr 3,80 $",
+      "output": "Gesamtgebühren 19,40 $ · Finaler Auszahlung 100,60 $ · Nettogewinn 37,60 $"
+    },
+    "faqs": [
+      [
+        "Wie werden eBay-Gebühren, Auszahlung und Nettogewinn berechnet?",
+        "Gesamtgebühren = eBay-Gebühr + Zahlungsabwicklungsgebühr. Auszahlung = Preis − Gesamtgebühren. Nettogewinn = Auszahlung − Produktkosten − Versand."
+      ],
+      [
+        "Warum eBay-Gebühr und Zahlungsgebühr trennen?",
+        "Finale Marktplatzgebühren und Zahlungsabwicklung erscheinen oft als getrennte Zeilen. Die Trennung macht Auszahlung und Nettogewinn leichter prüfbar."
+      ],
+      [
+        "Nutzt dieser eBay-Gebührenrechner KI?",
+        "Nein. Jede Zahl ist deterministische Arithmetik aus Ihren Eingaben – keine Live-API und keine KI-Gebührenprognose."
+      ],
+      [
+        "Wer sollte einen eBay-Gebührenrechner nutzen?",
+        "Profi-Verkäufer, Secondhand-Wiederverkäufer und Shop-Betreiber, die prüfen, ob ein Angebotspreis Gebühren, Kosten und Versand deckt."
+      ],
+      [
+        "Enthält der Auszahlung den Versand, den der Käufer zahlt?",
+        "Versand sorgfältig modellieren: zahlt der Käufer Versand extra, Verkaufspreis als Artikelpreis lassen und Ihre Versandkosten ins Versandfeld setzen, damit das Netto stimmt."
+      ],
+      [
+        "Können Gebührenprozente je Kategorie wechseln?",
+        "Ja. Geben Sie die Dollarbeträge für diese Kategorie und Preisstufe ein (aus eBays Gebührenvorschau), damit der Rechner zu Ihrem Angebot passt."
+      ]
+    ]
+  },
+  "freelance-project-pricing": {
+    "name": "Freelance-Projektpreis-Rechner",
+    "desc": "Projekte mit Stunden und Risikopuffer preisen",
+    "title": "Kostenloser Freelance-Projektpreis-Rechner",
+    "description": "Preisen Sie Freelance-Projekte mit Stunden, Überarbeitungen, Risikopuffer und Stundensatz mit Zetawalas kostenlosem Projektpreis-Rechner. Nur deterministische Mathematik – ohne KI –, damit Freelancer und Agenturen Festpreise anbieten, die einen Puffer für Leistungserweiterung abdecken. Vorgeschlagener Preis und effektiver Satz aktualisieren sich sofort.",
+    "example": {
+      "input": "40 Stunden · 95 $/h · 2 Überarbeitungen × 2 Std. · Puffer 15 %",
+      "output": "Vorgeschlagener Preis 4.802 $ · Gesamtstunden (inkl. Puffer) 50,6 · Effektiver Satz auf eingeplante Stunden angezeigt"
+    },
+    "faqs": [
+      [
+        "Wie wird der Projektpreis berechnet?",
+        "Überarbeitungsstunden = Überarbeitungen × Stunden je Überarbeitung. Basisstunden = geschätzte Stunden + Überarbeitungsstunden. Gesamtstunden = Basis × (1 + Puffer %). Preis = Gesamtstunden × Stundensatz."
+      ],
+      [
+        "Warum einen Risikopuffer einbeziehen?",
+        "Der Puffer deckt unklaren Leistungsumfang, Feedback-Schleifen und Risiko, damit ein Festpreis profitabel bleibt, wenn die Arbeit leicht wächst."
+      ],
+      [
+        "Nutzt dieses Projektpreis-Tool KI?",
+        "Nein. Angebote entstehen aus Ihren Stunden, dem Satz, den Überarbeitungen und dem Pufferprozentsatz – transparent und sofort."
+      ],
+      [
+        "Wer sollte einen Freelance-Projektpreis-Rechner nutzen?",
+        "Designer, Entwickler, Texter, Berater und Studios, die Stundensätze in Festpreis-Projektangebote umwandeln."
+      ],
+      [
+        "Wie wähle ich zuerst einen Stundensatz?",
+        "Nutzen Sie Zetawalas Freiberufler-Stundensatz-Rechner für Boden und Empfehlungssatz, und setzen Sie diesen Satz dann in diesen Projektpreis-Rechner ein."
+      ],
+      [
+        "Was ist der effektive Stundensatz in den Ergebnissen?",
+        "Er zeigt Preis geteilt durch eingeplante Stunden (Schätzung + Überarbeitungen) – so sehen Sie, was Kunden effektiv zahlen, bevor der Risikopuffer greift."
+      ]
+    ]
+  }
+}

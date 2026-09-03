@@ -1,0 +1,322 @@
+{
+  "ai-notes-generator": {
+    "name": "Generador de apuntes con IA",
+    "desc": "Genera apuntes de estudio completos con puntos clave y ejemplos",
+    "title": "Generador de apuntes con IA gratuito – Apuntes por tema y nivel",
+    "description": "Genera apuntes de estudio completos con puntos clave, ejemplos y conceptos importantes. Apuntes con IA gratuitos impulsados por DeepSeek para cualquier tema y nivel educativo: copia o descarga el PDF.",
+    "example": {
+      "input": "Tema: Fotosíntesis · Nivel: Bachillerato",
+      "output": "Apuntes estructurados con puntos clave, ejemplos y lista de conceptos + recuento de palabras"
+    },
+    "faqs": [
+      [
+        "¿Qué crea el generador de apuntes con IA?",
+        "Produce apuntes de estudio estructurados para tu tema y nivel, con puntos clave, ejemplos y conceptos importantes que puedes copiar o exportar en PDF."
+      ],
+      [
+        "¿El generador de apuntes con IA es gratuito?",
+        "Sí. El generador de apuntes con IA de Zetawala es gratuito y usa la misma integración DeepSeek que el resto de la plataforma."
+      ],
+      [
+        "¿Puedo descargar los apuntes en PDF?",
+        "Sí. Tras generarlos puedes copiar los apuntes, regenerarlos y descargar un PDF para estudiar sin conexión."
+      ],
+      [
+        "¿Qué niveles educativos admite?",
+        "Introduce cualquier etiqueta de curso o nivel (por ejemplo, secundaria, bachillerato, universidad o profesional). Los apuntes adaptan el tono y la profundidad a ese nivel."
+      ],
+      [
+        "¿Debo verificar los apuntes?",
+        "Sí. Los apuntes con IA son un apoyo de estudio: contrasta siempre los datos con tu libro o fuentes fiables antes de un examen."
+      ]
+    ]
+  },
+  "ai-quiz-generator": {
+    "name": "Generador de cuestionarios con IA",
+    "desc": "Preguntas de opción múltiple interactivas con puntuación, explicaciones y modo de revisión",
+    "title": "Generador de cuestionarios con IA gratuito – Test interactivos con puntuación",
+    "description": "Crea cuestionarios interactivos de opción múltiple sobre cualquier tema. Elige dificultad fácil, media o difícil, obtén explicaciones, puntuación final y modo de revisión: gratis con DeepSeek.",
+    "example": {
+      "input": "Tema: Segunda Guerra Mundial · Dificultad: Media · 10 preguntas",
+      "output": "Preguntas de opción múltiple interactivas con respuestas, explicaciones, % de acierto y modo de revisión"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona el generador de cuestionarios con IA?",
+        "Introduce un tema, elige la dificultad y el número de preguntas, y realiza un test interactivo de opción múltiple con explicaciones, puntuación y porcentaje."
+      ],
+      [
+        "¿Qué niveles de dificultad hay?",
+        "Fácil, media y difícil, para practicar tests de clase o un repaso más avanzado."
+      ],
+      [
+        "¿Puedo revisar las respuestas incorrectas?",
+        "Sí. Al terminar, el modo de revisión muestra las respuestas correctas y las explicaciones de cada pregunta."
+      ],
+      [
+        "¿El generador de cuestionarios es gratuito?",
+        "Sí. Es gratuito en Zetawala y usa DeepSeek para generar las preguntas."
+      ],
+      [
+        "¿Cuántas preguntas puedo generar?",
+        "Puedes pedir un conjunto práctico de preguntas de opción múltiple (normalmente unas pocas hasta alrededor de veinte), según los límites del formulario."
+      ]
+    ]
+  },
+  "pdf-to-quiz": {
+    "name": "Generador de cuestionarios desde PDF",
+    "desc": "Sube un PDF y genera preguntas de práctica con respuestas",
+    "title": "Generador de cuestionarios desde PDF gratuito – Test a partir de tu PDF",
+    "description": "Sube un PDF, previsualiza el texto extraído y genera preguntas de práctica con IA, con respuestas y explicaciones. Herramienta gratuita de PDF a cuestionario impulsada por DeepSeek.",
+    "example": {
+      "input": "Sube el PDF del capítulo → genera 8 preguntas de práctica",
+      "output": "Cuestionario interactivo basado en el contenido del PDF, con puntuación y explicaciones"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona PDF a cuestionario?",
+        "Sube un PDF, previsualiza el texto extraído y genera preguntas de opción múltiple basadas en ese contenido. Haz el test y revisa las respuestas con explicaciones."
+      ],
+      [
+        "¿Qué pasa si mi PDF está escaneado o dañado?",
+        "Los PDF de texto funcionan mejor. Los archivos escaneados o dañados pueden fallar en la extracción: verás un error claro para que pruebes otro archivo."
+      ],
+      [
+        "¿PDF a cuestionario es gratuito?",
+        "Sí. La extracción usa el pipeline de texto PDF de Zetawala; las preguntas se generan con DeepSeek."
+      ],
+      [
+        "¿Las preguntas se limitan al PDF?",
+        "La instrucción pide al modelo que ancle las preguntas en el texto subido y evite inventar datos ajenos."
+      ],
+      [
+        "¿Puedo previsualizar antes de generar?",
+        "Sí. Puedes revisar el texto extraído antes de generar el cuestionario."
+      ]
+    ]
+  },
+  "ai-flashcard-generator": {
+    "name": "Generador de flashcards con IA",
+    "desc": "Tarjetas interactivas con volteo a partir de un tema o un PDF",
+    "title": "Generador de flashcards con IA gratuito – Tarjetas desde tema o PDF",
+    "description": "Genera flashcards interactivas a partir de un tema o de un PDF subido. Animación de volteo, barajar, anterior/siguiente, modo de estudio y descarga: tarjetas de estudio gratuitas impulsadas por DeepSeek.",
+    "example": {
+      "input": "Tema: Biología celular · o sube el PDF de la clase",
+      "output": "Flashcards con volteo pregunta/respuesta, barajar y navegación de estudio"
+    },
+    "faqs": [
+      [
+        "¿Puedo crear flashcards a partir de un PDF?",
+        "Sí. Pega un tema o sube un PDF; la herramienta genera tarjetas pregunta/respuesta que puedes ir volteando."
+      ],
+      [
+        "¿Qué funciones de estudio incluye?",
+        "Animación de volteo, barajar, navegación anterior/siguiente y opciones de descarga para repasar sin conexión."
+      ],
+      [
+        "¿El generador de flashcards es gratuito?",
+        "Sí. Las flashcards se generan con DeepSeek a través de la API de generación compartida de Zetawala."
+      ],
+      [
+        "¿Cuántas tarjetas obtendré?",
+        "El modelo devuelve un conjunto práctico de tarjetas según el tema o la longitud del PDF. Puedes regenerar para un juego nuevo."
+      ],
+      [
+        "¿Quién debería usar las flashcards con IA?",
+        "Estudiantes, docentes y autodidactas que quieren mazos de recuerdo activo rápidos sin crear las tarjetas a mano."
+      ]
+    ]
+  },
+  "youtube-study-notes": {
+    "name": "Apuntes de estudio con IA desde YouTube",
+    "desc": "Apuntes, resumen, puntos clave y cuestionario a partir de una URL de YouTube",
+    "title": "Generador de apuntes de YouTube gratuito – Resumen, notas y cuestionario",
+    "description": "Pega una URL de YouTube para obtener apuntes, resumen, puntos clave y un cuestionario a partir de la transcripción. Apuntes DeepSeek gratuitos; gestiona con claridad los vídeos sin subtítulos.",
+    "example": {
+      "input": "https://www.youtube.com/watch?v=…",
+      "output": "Apuntes completos, resumen, puntos clave y cuestionario a partir de los subtítulos disponibles"
+    },
+    "faqs": [
+      [
+        "¿Cómo funcionan los apuntes de estudio de YouTube?",
+        "Obtenemos una transcripción disponible del vídeo y DeepSeek la convierte en apuntes, un resumen, puntos clave y un cuestionario breve."
+      ],
+      [
+        "¿Qué pasa si el vídeo no tiene subtítulos?",
+        "Verás un error claro. Sin transcripción no podemos generar apuntes precisos: prueba otro vídeo con subtítulos activados."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. La obtención de la transcripción y la generación de apuntes con DeepSeek están disponibles como herramienta de estudio gratuita de Zetawala."
+      ],
+      [
+        "¿Admitís todas las URL de YouTube?",
+        "Se admiten las URL estándar de reproducción y de Shorts. Las URL inválidas o los vídeos privados o restringidos pueden fallar."
+      ],
+      [
+        "¿Los apuntes sustituyen ver el vídeo?",
+        "No. Úsalos como apoyo de estudio. Contrasta siempre las afirmaciones importantes con el vídeo y con fuentes fiables."
+      ]
+    ]
+  },
+  "ai-assignment-generator": {
+    "name": "Generador de trabajos con IA",
+    "desc": "Trabajos estructurados con encabezados, referencias y conclusión",
+    "title": "Generador de trabajos con IA gratuito – Ensayos y redacciones estructurados",
+    "description": "Genera trabajos estructurados con encabezados, secciones, referencias y conclusión. Define el tema y el recuento de palabras: copia o descarga archivos tipo PDF/DOCX.",
+    "example": {
+      "input": "Tema: Política de cambio climático · Palabras: 1200",
+      "output": "Trabajo estructurado con encabezados, sección de referencias y conclusión"
+    },
+    "faqs": [
+      [
+        "¿Qué produce el generador de trabajos?",
+        "Un borrador estructurado con encabezados, secciones, una sección de referencias (marcadores de ejemplo) y una conclusión ajustada a tu recuento de palabras."
+      ],
+      [
+        "¿Puedo descargar el trabajo?",
+        "Sí. Copia el texto o descarga formatos tipo PDF / DOCX para editarlos sin conexión."
+      ],
+      [
+        "¿Sirve para entregar sin editar?",
+        "No. Trátalo como un esquema borrador. Añade tu investigación, citas y voz, y nunca entregues trabajo de IA sin revisar donde esté prohibido."
+      ],
+      [
+        "¿La herramienta es gratuita?",
+        "Sí. Usa DeepSeek a través de la API de generación compartida de Zetawala."
+      ],
+      [
+        "¿Puedo controlar la longitud?",
+        "Sí. Define un recuento de palabras objetivo para que el borrador se ajuste a los requisitos del trabajo."
+      ]
+    ]
+  },
+  "ai-homework-solver": {
+    "name": "Ayudante de deberes con IA",
+    "desc": "Explicaciones paso a paso con respuesta final y conceptos clave",
+    "title": "Ayudante de deberes con IA gratuito – Explicaciones paso a paso",
+    "description": "Obtén explicaciones de deberes paso a paso, respuestas finales, conceptos clave y enfoques alternativos cuando encaje. Ayuda educativa con DeepSeek: no solo la respuesta desnuda.",
+    "example": {
+      "input": "Explica cómo resolver un problema verbal de ecuación lineal…",
+      "output": "Pasos, respuesta final, conceptos clave y un enfoque alternativo opcional"
+    },
+    "faqs": [
+      [
+        "¿Solo da la respuesta final?",
+        "No. Prioriza explicaciones paso a paso, conceptos clave y enfoques alternativos cuando sirven, para que aprendas el método."
+      ],
+      [
+        "¿El ayudante de deberes es gratuito?",
+        "Sí. Es gratuito en Zetawala y está impulsado por DeepSeek."
+      ],
+      [
+        "¿En qué asignaturas funciona mejor?",
+        "Las preguntas de texto claras de matemáticas, ciencias, historia y lengua van bien. Pega la pregunta completa para obtener mejores pasos."
+      ],
+      [
+        "¿Debo usarlo para copiar?",
+        "No. Úsalo para entender los métodos. Respeta las normas de integridad académica de tu centro."
+      ],
+      [
+        "¿Y si la IA se equivoca?",
+        "Verifica siempre. La IA puede cometer errores: contrasta los pasos con el material de clase."
+      ]
+    ]
+  },
+  "typing-speed-test": {
+    "name": "Test de velocidad de mecanografía",
+    "desc": "WPM, precisión, errores, tests cronometrados y certificado descargable",
+    "title": "Test de velocidad de mecanografía gratuito – WPM, precisión y certificado",
+    "description": "Mide tu velocidad de mecanografía con pasajes cronometrados. Sigue WPM, CPM, precisión, errores, historial local y descarga un certificado: sin IA, compatible con modo oscuro.",
+    "example": {
+      "input": "Pasaje cronometrado de 60 segundos",
+      "output": "WPM, CPM, % de precisión, errores, historial local, certificado descargable"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el WPM?",
+        "Las palabras por minuto se basan en los caracteres correctos (normalmente caracteres ÷ 5) sobre el tiempo transcurrido, junto con CPM y la precisión."
+      ],
+      [
+        "¿Se guarda el historial?",
+        "Sí. Los intentos se almacenan en LocalStorage de tu dispositivo cuando no hay autenticación: arquitectura lista para un ranking más adelante."
+      ],
+      [
+        "¿Puedo descargar un certificado?",
+        "Sí. Introduce tu nombre tras completar un test y descarga un certificado PDF con WPM y precisión."
+      ],
+      [
+        "¿Usa IA?",
+        "No. El test de velocidad de mecanografía es lógica pura en el cliente para una escritura fluida y sin retraso."
+      ],
+      [
+        "¿Qué duraciones hay?",
+        "Opciones cronometradas habituales como 30, 60 y 120 segundos."
+      ]
+    ]
+  },
+  "typing-master-course": {
+    "name": "Curso Typing Master",
+    "desc": "Lecciones guiadas con feedback en vivo, umbrales de precisión y certificado",
+    "title": "Curso Typing Master gratuito – Lecciones guiadas, WPM y certificado",
+    "description": "Tutor profesional de mecanografía con 12 lecciones guiadas, feedback de caracteres en vivo, umbrales de precisión, seguimiento de WPM, consejos del coach, progreso en LocalStorage y un certificado de finalización con estadísticas reales: sin IA.",
+    "example": {
+      "input": "Ejercicio de fila central → alcanza 94 % de precisión → desbloquea la siguiente lección",
+      "output": "Feedback verde/rojo en vivo, WPM y precisión, temario con umbrales, certificado con WPM medio"
+    },
+    "faqs": [
+      [
+        "¿El curso retoma donde lo dejé?",
+        "Sí. Las puntuaciones de las lecciones y la lección actual se guardan en LocalStorage para continuar más tarde en el mismo navegador."
+      ],
+      [
+        "¿Qué niveles incluye?",
+        "Principiante (fila central y ritmo), intermedio (filas superior/inferior y mayúsculas) y avanzado (puntuación, números, símbolos y un párrafo de velocidad)."
+      ],
+      [
+        "¿Cómo desbloqueo la siguiente lección?",
+        "Termina el ejercicio con feedback en vivo y alcanza la precisión mínima de la lección (normalmente 90–94 %). Los intentos fallidos se pueden repetir cuando quieras."
+      ],
+      [
+        "¿Hay certificado?",
+        "Sí. Al completar todas las lecciones puedes descargar un certificado PDF de Typing Master con WPM medio y precisión."
+      ],
+      [
+        "¿Usa IA?",
+        "No. Typing Master es solo lógica de práctica determinista, sin llamadas a API."
+      ]
+    ]
+  },
+  "coding-typing-test": {
+    "name": "Test de mecanografía de código",
+    "desc": "Practica mecanografía de JS, Python, Java, C++, HTML y SQL",
+    "title": "Test de mecanografía de código gratuito – JS, Python, Java, C++, HTML, SQL",
+    "description": "Practica escribiendo fragmentos de código reales con visualización consciente de la sintaxis. Sigue WPM, precisión, errores, dificultad, historial y descarga un certificado: sin IA.",
+    "example": {
+      "input": "Lenguaje: JavaScript · Dificultad: Media",
+      "output": "Conserva el formato al escribir; WPM, precisión, historial, certificado"
+    },
+    "faqs": [
+      [
+        "¿Qué lenguajes admite?",
+        "Fragmentos de JavaScript, Python, Java, C++, HTML y SQL en dificultad fácil, media y difícil."
+      ],
+      [
+        "¿Se conserva el formato?",
+        "Sí. Escribes contra el fragmento exacto, incluidos espacios en blanco y saltos de línea."
+      ],
+      [
+        "¿La mecanografía de código usa IA?",
+        "No. Los fragmentos y la puntuación son lógica pura en el cliente para practicar con baja latencia."
+      ],
+      [
+        "¿Puedo obtener un certificado?",
+        "Sí. Al terminar un fragmento puedes descargar un certificado PDF con WPM y precisión."
+      ],
+      [
+        "¿El historial se guarda en local?",
+        "Sí. Los intentos recientes se almacenan en LocalStorage de tu dispositivo."
+      ]
+    ]
+  }
+}

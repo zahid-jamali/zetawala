@@ -1,0 +1,614 @@
+{
+  "website-checker": {
+    "name": "Comprobador SEO de sitios web",
+    "desc": "Auditoría técnica y on-page con puntuaciones",
+    "title": "Comprobador SEO de sitios web – Auditoría SEO gratuita",
+    "description": "El comprobador SEO gratuito de Zetawala ejecuta una auditoría SEO técnica y on-page sobre cualquier URL pública. Rastrea una muestra limitada de páginas, calcula una puntuación determinista de auditoría a partir de títulos, metadatos, encabezados, enlaces y señales de indexabilidad, y después usa la IA únicamente para convertir esos problemas medidos en correcciones priorizadas, sin métricas inventadas.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Total 72/100 · Críticos: falta la meta descripción, H1 débil · Advertencias: páginas pobres · Correcciones prioritarias de IA ligadas a los problemas de la auditoría"
+    },
+    "faqs": [
+      [
+        "¿Qué analiza el comprobador SEO gratuito de sitios web?",
+        "Rastrea una muestra de URL públicas (hasta unas 12 páginas, profundidad 2), puntúa señales on-page y técnicas y enumera problemas críticos y advertencias. La IA solo resume y prioriza lo que la auditoría ya ha encontrado."
+      ],
+      [
+        "¿Necesito verificar la propiedad del sitio?",
+        "No. Pega cualquier URL accesible públicamente. Zetawala descarga el HTML como lo haría un rastreador: las páginas tras un inicio de sesión o bloqueadas no se pueden auditar."
+      ],
+      [
+        "¿La puntuación SEO es una puntuación oficial de Google?",
+        "No. Es una puntuación determinista de auditoría de Zetawala basada en señales medidas de la página. No es Search Console ni una puntuación de posicionamiento de Google."
+      ],
+      [
+        "¿La IA inventa problemas de SEO?",
+        "No. Primero se calculan las puntuaciones y las listas de problemas. La IA interpreta únicamente los datos de la auditoría y no puede inventar problemas nuevos."
+      ],
+      [
+        "¿Es un rastreo completo del sitio?",
+        "No. La cobertura está limitada de forma intencionada por velocidad y coste. Úsalo como una pasada rápida de auditoría SEO gratuita y profundiza después con las demás herramientas para webmasters."
+      ],
+      [
+        "¿Quién debería usar esta herramienta?",
+        "Propietarios de sitios, autónomos y agencias que quieren un comprobador SEO gratuito antes de corregir metadatos, enlaces, indexabilidad o Core Web Vitals."
+      ]
+    ]
+  },
+  "content-audit": {
+    "name": "Auditoría de contenido SEO",
+    "desc": "Estructura del contenido y factores on-page",
+    "title": "Auditoría de contenido SEO – Analizador on-page gratuito",
+    "description": "Ejecuta una auditoría de contenido SEO gratuita sobre cualquier URL pública. Zetawala mide el número de palabras, la jerarquía de encabezados, las imágenes sin texto alternativo y el número de enlaces internos y externos, puntúa la estructura on-page y utiliza la IA solo para interpretar esas métricas: ideal para corregir contenido pobre y encabezados.",
+    "example": {
+      "input": "URL: https://example.com/blog/seo-guide",
+      "output": "Palabras 840 · H1: 1 · H2: 4 · Sin texto alternativo: 2 · Enlaces internos: 6 · Puntuación on-page y mejoras de IA a partir de las carencias medidas"
+    },
+    "faqs": [
+      [
+        "¿Qué comprueba la herramienta de auditoría de contenido?",
+        "Descarga una página pública y revisa el título, la meta descripción, los encabezados, el número de palabras, las imágenes sin texto alternativo y el número de enlaces, y después puntúa la estructura SEO on-page."
+      ],
+      [
+        "¿Es un detector de plagio o de contenido duplicado?",
+        "No. Audita la estructura y las señales SEO on-page de la URL que indiques. No busca en la web texto copiado."
+      ],
+      [
+        "¿Puedo pegar texto en lugar de una URL?",
+        "La auditoría de contenido está pensada para descargar una URL en vivo. Para texto pegado, usa el comprobador gratuito de densidad de palabras clave."
+      ],
+      [
+        "¿Cómo ayuda la IA en la auditoría de contenido?",
+        "La IA interpreta las métricas medidas (número de palabras, encabezados, imágenes sin texto alternativo, número de enlaces). No inventa estadísticas de la página."
+      ],
+      [
+        "¿Mejorará el posicionamiento solo con una auditoría de contenido?",
+        "Revela carencias estructurales que a menudo perjudican la relevancia y la experiencia de usuario. Aun así hay que publicar las correcciones, conseguir enlaces y responder a la intención de búsqueda."
+      ],
+      [
+        "¿La auditoría de contenido es gratuita en Zetawala?",
+        "Sí. Es una auditoría de contenido SEO gratuita para páginas públicas, sin necesidad de verificar la propiedad."
+      ]
+    ]
+  },
+  "title-meta-analyzer": {
+    "name": "Analizador de títulos y meta descripciones",
+    "desc": "Metadatos ausentes, duplicados o débiles",
+    "title": "Comprobador de meta descripciones y analizador de etiquetas de título",
+    "description": "Comprobador gratuito de meta descripciones y analizador de etiquetas de título de Zetawala. Toma una muestra de páginas de tu sitemap o de un rastreo corto, señala los títulos y descripciones ausentes, demasiado cortos o demasiado largos, detecta duplicados y compara los problemas de longitud que perjudican los fragmentos en los resultados de búsqueda y el CTR.",
+    "example": {
+      "input": "URL: https://example.com/products/widget",
+      "output": "Páginas comprobadas: 18 · Título correcto (58 caracteres) · Falta la meta descripción · Título duplicado encontrado en 2 URL"
+    },
+    "faqs": [
+      [
+        "¿Cuál es una buena longitud para la etiqueta de título?",
+        "Apunta a unos 50-60 caracteres para que Google tenga menos probabilidad de truncarla. Aun así, la relevancia importa más que un recuento exacto de caracteres."
+      ],
+      [
+        "¿Para qué sirve un comprobador de meta descripciones?",
+        "Las meta descripciones no posicionan directamente, pero unos fragmentos convincentes mejoran los clics cuando Google las usa en los resultados."
+      ],
+      [
+        "¿Cómo encuentra Zetawala los títulos duplicados?",
+        "Toma una muestra de hasta unas 25 URL del sitemap.xml (o de un rastreo alternativo), compara las cadenas de título y descripción y marca los duplicados en esa muestra."
+      ],
+      [
+        "¿Reescribe automáticamente mis títulos?",
+        "No. Informa de los problemas de longitud y de los duplicados para que puedas editar los títulos y las meta descripciones en tu CMS o en tus plantillas."
+      ],
+      [
+        "¿Puedo analizar las etiquetas de título de la competencia?",
+        "Sí. Se puede muestrear cualquier URL accesible públicamente. Las páginas privadas o bloqueadas no se pueden descargar."
+      ],
+      [
+        "¿Se necesita IA para esta herramienta?",
+        "No. Las comprobaciones de títulos y metadatos son deterministas a partir del HTML descargado: solo patrones de ausencia, longitud corta, longitud larga y duplicados."
+      ]
+    ]
+  },
+  "pagespeed-analyzer": {
+    "name": "PageSpeed y Core Web Vitals",
+    "desc": "Rendimiento de Google PSI y Core Web Vitals",
+    "title": "Comprobador de PageSpeed Insights y Core Web Vitals",
+    "description": "Comprobador gratuito de PageSpeed Insights y Core Web Vitals impulsado por la API PageSpeed de Google. Mide LCP, INP, CLS, las puntuaciones de rendimiento de laboratorio y las oportunidades de mejora para móvil o escritorio, y recibe consejos en lenguaje claro de una IA que solo interpreta los resultados de la API.",
+    "example": {
+      "input": "URL: https://example.com/ | Estrategia: móvil",
+      "output": "Rendimiento 64 · LCP 2,8 s · CLS 0,04 · Oportunidades: reducir JavaScript sin usar · Consejos de IA priorizados a partir de los datos de PSI"
+    },
+    "faqs": [
+      [
+        "¿Qué son las Core Web Vitals?",
+        "Son las métricas clave de experiencia de usuario de Google: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) y Cumulative Layout Shift (CLS). Reflejan la carga, la interactividad y la estabilidad visual."
+      ],
+      [
+        "¿De dónde salen las cifras de PageSpeed?",
+        "Zetawala llama a la API de PageSpeed Insights de Google para la URL y la estrategia que elijas. Las puntuaciones y las oportunidades provienen de esa respuesta de la API."
+      ],
+      [
+        "¿La IA cambia mi puntuación de PageSpeed?",
+        "No. El rendimiento y las métricas web esenciales vienen de PageSpeed Insights. La IA solo explica las oportunidades y sugiere los siguientes pasos de forma comprensible a partir de esos datos."
+      ],
+      [
+        "¿Debo priorizar móvil o escritorio?",
+        "Google usa la indexación centrada en móvil para la mayoría de sitios, así que las Core Web Vitals en móvil suelen ser la primera prioridad."
+      ],
+      [
+        "¿Corregir PageSpeed garantiza mejores posiciones?",
+        "Ninguna corrección aislada garantiza el posicionamiento. Una mejor velocidad y mejores Core Web Vitals suelen mejorar la experiencia y la interacción, lo que apoya al SEO junto con el contenido y la autoridad."
+      ],
+      [
+        "¿Esta herramienta de PageSpeed es gratuita?",
+        "Sí. El analizador de PageSpeed Insights de Zetawala se puede usar gratis en URL públicas (sujeto a la disponibilidad de la API y a un uso razonable)."
+      ]
+    ]
+  },
+  "internal-link-analyzer": {
+    "name": "Analizador de enlaces internos y páginas huérfanas",
+    "desc": "Enlazado interno y riesgos de páginas huérfanas",
+    "title": "Comprobador de enlaces internos y buscador de páginas huérfanas",
+    "description": "Comprobador gratuito de enlaces internos y buscador de páginas huérfanas de Zetawala. Rastrea una muestra pública limitada para trazar los enlaces entrantes y salientes, los anclajes débiles («haz clic aquí»), las URL con pocos enlaces y las candidatas a páginas huérfanas; después la IA interpreta únicamente esos resultados del rastreo.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Páginas analizadas: 15 · Candidatas a huérfanas: 4 · Anclajes débiles: 12 · Centro de enlaces: /blog/ · Nota: la lista de huérfanas se limita a la muestra rastreada"
+    },
+    "faqs": [
+      [
+        "¿Qué es una página huérfana?",
+        "Una página sin enlaces internos entrantes en la muestra rastreada, de modo que los usuarios y los rastreadores pueden tener dificultades para descubrirla desde otras páginas."
+      ],
+      [
+        "¿Encuentra todas las páginas huérfanas de mi sitio?",
+        "No. La detección de páginas huérfanas se limita a la muestra rastreada (unas 15 páginas, profundidad 2). No es una garantía para todo el sitio."
+      ],
+      [
+        "¿Qué se considera texto de anclaje débil?",
+        "Los anclajes vacíos o las expresiones genéricas como «haz clic aquí», «aquí», «leer más» o «saber más» se marcan para que uses anclajes descriptivos."
+      ],
+      [
+        "¿Puede la herramienta añadir enlaces internos por mí?",
+        "No. Informa de las páginas huérfanas, los anclajes débiles y los centros de enlaces. Los cambios de enlazado los aplicas tú en tu CMS, tus plantillas o tu navegación."
+      ],
+      [
+        "¿Cómo usa la IA los datos de enlazado interno?",
+        "La IA resume las candidatas a huérfanas, las páginas con pocos enlaces y los anclajes débiles que se han medido. No inventa hallazgos del rastreo."
+      ],
+      [
+        "¿Por qué importa el enlazado interno para el SEO?",
+        "Un buen enlazado interno favorece el descubrimiento en el rastreo, distribuye relevancia y mantiene accesibles las páginas importantes en pocos clics."
+      ]
+    ]
+  },
+  "broken-link-checker": {
+    "name": "Comprobador de enlaces rotos",
+    "desc": "Enlaces internos y externos rotos",
+    "title": "Comprobador de enlaces rotos – Buscador gratuito de errores 404",
+    "description": "Comprobador gratuito de enlaces rotos de Zetawala. Rastrea una URL pública de partida, toma una muestra de enlaces internos y externos y señala los errores 404, los errores de servidor y los destinos inalcanzables, hasta un número máximo de URL únicas para que los análisis gratuitos sean fiables.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Enlaces comprobados: 40 · Rotos: 3 · Estado 404 en /old-offer · Enlace externo muerto detectado · Recomendaciones de corrección o eliminación"
+    },
+    "faqs": [
+      [
+        "¿El comprobador de enlaces rotos analiza los enlaces externos?",
+        "Sí. Tanto los enlaces del mismo dominio como los salientes de la muestra rastreada son candidatos; los destinos muertos se señalan con su código de estado cuando se pueden consultar."
+      ],
+      [
+        "¿Cuántos enlaces comprueba?",
+        "Rastrea un conjunto limitado de páginas y luego comprueba hasta unos 40 enlaces únicos para controlar el coste. Los sitios grandes necesitan varias URL de partida o herramientas más profundas."
+      ],
+      [
+        "¿Se trazan por completo las cadenas de redirecciones?",
+        "El comprobador se centra en las respuestas rotas o inalcanzables (4xx, 5xx y fallos). Usa la validación de sitemaps y las comprobaciones de canónicas para una revisión más amplia de las redirecciones."
+      ],
+      [
+        "¿Necesito acceso al sitio o iniciar sesión?",
+        "No. Solo descarga URL públicas. Los enlaces tras autenticación o bloqueos de bots pueden aparecer como inalcanzables."
+      ],
+      [
+        "¿Debo corregir los enlaces rotos antes de una migración?",
+        "Sí. Audita antes y después de una migración para detectar los errores 404 que desperdician presupuesto de rastreo y perjudican la experiencia de usuario."
+      ],
+      [
+        "¿Se usa IA en el informe de enlaces rotos?",
+        "No. El estado de los enlaces y las recomendaciones son deterministas a partir de los resultados de las peticiones HTTP."
+      ]
+    ]
+  },
+  "sitemap-tool": {
+    "name": "Generador y validador de sitemaps",
+    "desc": "Genera o valida sitemaps XML",
+    "title": "Generador y validador de sitemaps XML",
+    "description": "Generador y validador gratuito de sitemaps XML de Zetawala. Genera un sitemap de muestra a partir de un rastreo público limitado o valida un sitemap.xml existente en busca de URL duplicadas, errores 404, redirecciones y páginas con noindex, listo para las comprobaciones de higiene de Google Search Console.",
+    "example": {
+      "input": "Modo: validar · https://example.com/sitemap.xml",
+      "output": "URL totales: 142 · Muestreadas: 25 · Problemas: 1 error 404, 2 con noindex · Aviso de URL duplicada"
+    },
+    "faqs": [
+      [
+        "¿Puede crear un sitemap XML de todo el sitio?",
+        "El modo de generación rastrea una muestra limitada (unas 30 páginas). Usa el XML como punto de partida y amplíalo manualmente en sitios grandes."
+      ],
+      [
+        "¿Qué comprueba la validación de sitemaps?",
+        "Analiza las URL de las etiquetas <loc>, toma una muestra de hasta unas 25 entradas y señala duplicados, errores 404, redirecciones, fallos de descarga y páginas con noindex en esa muestra."
+      ],
+      [
+        "¿Los sitios pequeños necesitan un sitemap?",
+        "No siempre es obligatorio, pero un sitemap XML ayuda al descubrimiento, sobre todo en sitios grandes o que se actualizan con frecuencia."
+      ],
+      [
+        "¿Puedo enviar el sitemap a Google?",
+        "Sí. Después de generar o corregir tu sitemap, envía la URL en Google Search Console."
+      ],
+      [
+        "¿Y si no existe /sitemap.xml?",
+        "El modo de validación busca sitemap.xml en el dominio cuando lo que introduces no es ya una URL de sitemap. El modo de generación puede producir una muestra a partir de un rastreo."
+      ],
+      [
+        "¿Esta herramienta de sitemaps XML es gratuita?",
+        "Sí. El generador y validador de sitemaps de Zetawala es gratuito para URL públicas."
+      ]
+    ]
+  },
+  "canonical-indexability": {
+    "name": "Comprobador de canónicas e indexabilidad",
+    "desc": "Señales de canónica, robots e indexación",
+    "title": "Comprobador de etiquetas canónicas y herramienta de indexabilidad",
+    "description": "Comprobador gratuito de etiquetas canónicas y analizador de indexabilidad de Zetawala. Descarga una URL pública para inspeccionar la canónica, la meta robots, la cabecera X-Robots-Tag, el estado HTTP y la accesibilidad del robots.txt, y obtén una puntuación determinista de indexabilidad para detectar pronto canónicas incorrectas y noindex accidentales.",
+    "example": {
+      "input": "URL: https://example.com/page?utm_source=email",
+      "output": "Canónica → /page · Robots: index,follow · X-Robots: ninguno · Indexable: sí · robots.txt accesible"
+    },
+    "faqs": [
+      [
+        "¿Qué hace que una página no sea indexable?",
+        "Las causas habituales son un noindex (en la meta o en X-Robots-Tag), bloqueos parciales o totales, estados de error o una canónica que apunta a otra URL."
+      ],
+      [
+        "¿Todas las páginas deben tener una etiqueta canónica?",
+        "Se recomiendan las canónicas autorreferenciales, sobre todo en URL con parámetros, paginadas o casi duplicadas."
+      ],
+      [
+        "¿Qué es X-Robots-Tag?",
+        "Es una cabecera HTTP que puede fijar directivas para robots (como noindex) sin una meta robots en el HTML. Esta herramienta la muestra cuando está presente."
+      ],
+      [
+        "¿El robots.txt por sí solo elimina una página de Google?",
+        "No. El robots.txt controla el rastreo. Usa noindex (y las herramientas de indexación) cuando necesites mantener una URL fuera del índice."
+      ],
+      [
+        "¿Pueden las canónicas incorrectas perjudicar el SEO?",
+        "Sí. Pueden consolidar las señales en la URL equivocada u ocultar páginas importantes del índice."
+      ],
+      [
+        "¿La puntuación de indexabilidad viene de Google?",
+        "No. Es una puntuación determinista de Zetawala basada en las cabeceras descargadas y las señales del HTML, no una métrica oficial de Google."
+      ]
+    ]
+  },
+  "action-plan": {
+    "name": "Generador de planes de acción SEO",
+    "desc": "Hoja de ruta SEO priorizada",
+    "title": "Generador de planes de acción SEO – Hoja de ruta gratuita",
+    "description": "Convierte una auditoría SEO gratuita en un plan de acción priorizado con Zetawala. Rastrea una muestra pública, calcula de forma determinista los problemas críticos y las advertencias, y utiliza la IA solo para ordenar las tareas P0 a P2 a partir de esos hallazgos: una hoja de ruta apta para principiantes y sin problemas inventados.",
+    "example": {
+      "input": "URL: https://example.com/ | Objetivo: tráfico orgánico",
+      "output": "P0: corregir las metadescripciones ausentes en las páginas principales · P1: reparar los enlaces internos rotos · P2: reforzar el contenido pobre · Pasos para principiantes incluidos"
+    },
+    "faqs": [
+      [
+        "¿Cómo se priorizan las tareas del plan de acción SEO?",
+        "El rastreo produce una auditoría determinista con listas de problemas críticos y advertencias. La IA construye la hoja de ruta únicamente a partir de esas listas, ordenadas por impacto y urgencia."
+      ],
+      [
+        "¿La IA inventa tareas que no están en la auditoría?",
+        "No debe hacerlo. Las instrucciones exigen priorizar solo los problemas críticos y las advertencias facilitados."
+      ],
+      [
+        "¿Esto sustituye a un consultor SEO?",
+        "Acelera la planificación con una hoja de ruta SEO gratuita y estructurada. Las migraciones complejas, los aspectos legales o los sitios corporativos pueden seguir necesitando revisión experta."
+      ],
+      [
+        "¿Qué debería hacer primero quien empieza?",
+        "Empieza por las victorias rápidas P0: metadatos, enlaces rotos e indexabilidad, antes de abordar trabajos pesados de plantillas o arquitectura."
+      ],
+      [
+        "¿Puedo exportar el plan de acción?",
+        "Copia la hoja de ruta desde el panel de resultados a Notion, una hoja de cálculo o tu gestor de proyectos."
+      ],
+      [
+        "¿Hace falta verificar la propiedad del sitio?",
+        "No. Introduce una URL pública. Las páginas tras un inicio de sesión no se pueden auditar."
+      ]
+    ]
+  },
+  "robots-txt-tool": {
+    "name": "Generador y comprobador de robots.txt",
+    "desc": "Genera y prueba reglas de rastreo",
+    "title": "Generador y comprobador de robots.txt",
+    "description": "Generador y comprobador gratuito de robots.txt de Zetawala. Crea reglas de permiso y bloqueo con una referencia al sitemap, o descarga un robots.txt en vivo y comprueba si una ruta está permitida para Googlebot u otro agente de usuario, de modo que evites bloquear por error CSS, JavaScript o secciones clave.",
+    "example": {
+      "input": "Modo: probar · URL: https://example.com · Ruta: /admin/ · Agente: Googlebot",
+      "output": "robots.txt accesible · Prueba de /admin/: bloqueada · Prueba de /products/: permitida · Sitemaps listados"
+    },
+    "faqs": [
+      [
+        "¿El robots.txt mantiene las páginas fuera del índice de Google?",
+        "No. Controla el rastreo. Usa noindex (y las eliminaciones de Search Console cuando sea necesario) para gestionar la indexación."
+      ],
+      [
+        "¿Qué crea el modo de generación?",
+        "Un robots.txt inicial (o tus reglas personalizadas) con ejemplos de Allow y Disallow y una línea Sitemap que apunta a /sitemap.xml en tu dominio."
+      ],
+      [
+        "¿Puedo probar específicamente con Googlebot?",
+        "Sí. El modo de prueba evalúa una ruta frente al robots.txt analizado para el agente de usuario que elijas, incluido Googlebot."
+      ],
+      [
+        "¿Dónde debe estar el robots.txt?",
+        "Solo en la raíz del sitio, por ejemplo https://tusitio.com/robots.txt."
+      ],
+      [
+        "¿Debo bloquear /wp-admin/?",
+        "A menudo sí en las rutas de administración de WordPress, pero nunca bloquees los archivos CSS o JavaScript necesarios para el renderizado."
+      ],
+      [
+        "¿El generador de robots.txt es gratuito?",
+        "Sí. Los modos de generación y de prueba son gratuitos en Zetawala para sitios públicos."
+      ]
+    ]
+  },
+  "header-meta-inspector": {
+    "name": "Inspector de cabeceras y metaetiquetas",
+    "desc": "Auditoría de título, OG, Twitter y metadatos",
+    "title": "Comprobador de metaetiquetas – Cabeceras y etiquetas sociales",
+    "description": "Comprobador gratuito de metaetiquetas de Zetawala. Inspecciona el título, la meta descripción, robots, la canónica, viewport, charset y las etiquetas de Open Graph y Twitter Card a partir de la descarga de una URL pública: un informe estructurado para los fragmentos SEO y las vistas previas en redes sociales.",
+    "example": {
+      "input": "URL: https://example.com/article",
+      "output": "Título y descripción presentes · canónica presente · og:title correcto · twitter:card summary_large_image · viewport definido"
+    },
+    "faqs": [
+      [
+        "¿Qué metaetiquetas muestra este inspector?",
+        "Título, descripción, robots, canónica, idioma, charset, viewport y las etiquetas de Open Graph y Twitter extraídas del HTML descargado."
+      ],
+      [
+        "¿Por qué comprobar las etiquetas de Open Graph?",
+        "Las etiquetas OG controlan cómo aparecen los enlaces cuando se comparten en Facebook, LinkedIn y muchas otras plataformas."
+      ],
+      [
+        "¿Las Twitter Cards son distintas de Open Graph?",
+        "Twitter puede recurrir a las etiquetas OG, pero las etiquetas twitter: específicas dan un control más fino sobre el tipo de tarjeta y la vista previa."
+      ],
+      [
+        "¿Perjudica al SEO que falte la metaetiqueta viewport?",
+        "De forma indirecta. El renderizado adaptado a móvil depende de la configuración de viewport y afecta a la experiencia de usuario y a la calidad de la indexación móvil."
+      ],
+      [
+        "¿Necesito verificar la propiedad?",
+        "No. Pega cualquier URL pública. La herramienta descarga las cabeceras y el HTML disponibles sin iniciar sesión."
+      ],
+      [
+        "¿Se usa IA aquí?",
+        "No. El comprobador de metaetiquetas informa de resultados deterministas del análisis de la página descargada."
+      ]
+    ]
+  },
+  "traffic-revenue": {
+    "name": "Estimador de tráfico e ingresos publicitarios",
+    "desc": "Valor estimado del tráfico (claramente etiquetado)",
+    "title": "Calculadora de ingresos por tráfico – Estimador gratuito",
+    "description": "Calculadora gratuita de ingresos por tráfico de Zetawala. Estima el potencial de ingresos publicitarios de tus visitas orgánicas a partir de las visitas mensuales, las páginas por visita y el RPM, con rangos bajo, típico y alto e hipótesis claramente etiquetadas (no es una verificación de Analytics ni de AdSense).",
+    "example": {
+      "input": "Visitas: 50.000/mes · Páginas por visita: 1,5 · RPM: 8 $",
+      "output": "Páginas vistas: 75.000 · Ingresos bajo/típico/alto según bandas de RPM · Etiquetas: estimado, no verificado con AdSense"
+    },
+    "faqs": [
+      [
+        "¿Están garantizadas las cifras de tráfico e ingresos?",
+        "No. Todas las cifras son estimaciones ilustrativas a partir de tus datos. No son datos verificados de Google Analytics ni de AdSense."
+      ],
+      [
+        "¿Cómo se estiman los ingresos publicitarios?",
+        "Páginas vistas ≈ visitas × páginas por visita; ingresos ≈ (páginas vistas / 1000) × RPM, con multiplicadores de RPM bajo, típico y alto."
+      ],
+      [
+        "¿Qué RPM debo introducir?",
+        "Usa el RPM histórico de tu red publicitaria cuando sea posible. Si no, empieza con un RPM conservador para tu nicho y tu geografía."
+      ],
+      [
+        "¿Incluye los ingresos de afiliación o de venta de productos?",
+        "El modelo se centra en los ingresos publicitarios por RPM. Para afiliación o comercio electrónico, usa la calculadora de ROI del SEO o la de ROI del contenido con el valor por conversión."
+      ],
+      [
+        "¿Por qué se etiquetan las hipótesis?",
+        "Las etiquetas transparentes evitan el exceso de confianza y hacen honestas las comparaciones de escenarios cuando cambias las visitas o el RPM."
+      ],
+      [
+        "¿La calculadora de ingresos por tráfico es gratuita?",
+        "Sí. Se ejecuta al instante con tus cifras, sin necesidad de rastrear el sitio."
+      ]
+    ]
+  },
+  "health-score": {
+    "name": "Calculadora de salud SEO",
+    "desc": "Desglose general de la salud SEO",
+    "title": "Puntuación de salud SEO – Nota gratuita del sitio",
+    "description": "Calculadora gratuita de salud SEO de Zetawala. Rastrea una muestra pública, calcula puntuaciones por categoría para las señales técnicas y de contenido, incorpora opcionalmente el rendimiento de PageSpeed y obtén una puntuación global de salud SEO, claramente etiquetada como una estimación de Zetawala y no como una métrica oficial de Google. La IA solo interpreta los problemas medidos.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Total 78/100 · Categorías técnica y de contenido · Rendimiento desde PSI cuando está disponible · Principales correcciones de la lista de problemas críticos"
+    },
+    "faqs": [
+      [
+        "¿La puntuación de salud SEO son datos oficiales de Google?",
+        "No. Es una estimación analítica de Zetawala a partir de las señales de las páginas rastreadas (y de PageSpeed cuando está disponible), no una puntuación de posicionamiento de Google."
+      ],
+      [
+        "¿Cómo se calcula la puntuación global?",
+        "De forma determinista a partir de las categorías de la auditoría. Cuando el rendimiento móvil de PageSpeed está disponible, se incorpora a la puntuación global; si no, se usa la puntuación global de la auditoría."
+      ],
+      [
+        "¿Qué es una buena puntuación de salud SEO?",
+        "Por encima de 80 es sólida; entre 60 y 80 suele indicar que quedan problemas por resolver; por debajo de 60 sugiere correcciones importantes de contenido o técnicas."
+      ],
+      [
+        "¿La IA fija la puntuación de salud?",
+        "No. La puntuación se calcula primero. La IA solo resume y sugiere qué mejorar antes, a partir de los problemas críticos medidos."
+      ],
+      [
+        "¿Puedo comparar dos sitios web?",
+        "Ejecuta la herramienta por separado en cada URL pública y compara la puntuación global y el desglose por categorías."
+      ],
+      [
+        "¿Debo volver a ejecutarla tras las correcciones?",
+        "Sí. Volver a ejecutarla valida las mejoras y revela las siguientes advertencias prioritarias."
+      ]
+    ]
+  },
+  "keyword-density": {
+    "name": "Comprobador de densidad de palabras clave",
+    "desc": "Frecuencia de frases de 1 a 3 palabras",
+    "title": "Comprobador de densidad de palabras clave – Herramienta SEO gratuita",
+    "description": "Comprobador gratuito de densidad de palabras clave de Zetawala. Analiza la frecuencia de frases de una a tres palabras a partir de una URL pública o de texto pegado, detecta términos sobreutilizados (con avisos de densidad alta) y equilibra tus palabras clave principales sin amontonarlas: recuentos deterministas, sin frecuencias inventadas.",
+    "example": {
+      "input": "Texto o URL con la expresión «herramientas SEO» repetida",
+      "output": "Principales unigramas, bigramas y trigramas con su porcentaje de densidad · Términos sobreutilizados a partir del 3 % señalados · Nota sobre posible amontonamiento"
+    },
+    "faqs": [
+      [
+        "¿Existe un porcentaje ideal de densidad de palabras clave?",
+        "No hay un objetivo fijo. Escribe para las personas. Una repetición muy alta puede parecer amontonamiento; Zetawala señala los términos con una densidad de aproximadamente el 3 % o más para que los revises."
+      ],
+      [
+        "¿Puedo comprobar una URL o pegar texto?",
+        "Sí. Indica una URL pública (se descarga el texto, el título y los encabezados) o pega el texto directamente. Es necesario aportar una de las dos cosas."
+      ],
+      [
+        "¿Por qué comprobar frases de dos y tres palabras?",
+        "Las frases de varias palabras muestran el foco temático más allá de las palabras clave sueltas y te ayudan a ver el uso natural de la cola larga."
+      ],
+      [
+        "¿La densidad de palabras clave por sí sola posiciona una página?",
+        "No. La relevancia, el contenido útil, la autoridad y la experiencia de usuario importan mucho más que la simple repetición."
+      ],
+      [
+        "¿Puedo analizar páginas de la competencia?",
+        "Si la página se puede descargar públicamente, pega la URL. Las páginas bloqueadas o privadas no devolverán texto."
+      ],
+      [
+        "¿Se usa IA en los recuentos de densidad?",
+        "No. Los recuentos de frases y las densidades son deterministas. Aplica tu criterio ante cualquier aviso de exceso."
+      ]
+    ]
+  },
+  "seo-roi": {
+    "name": "Calculadora de ROI del SEO",
+    "desc": "Estima el retorno de la inversión en SEO",
+    "title": "Calculadora de ROI del SEO – Estimador de retorno gratuito",
+    "description": "Calculadora gratuita de ROI del SEO de Zetawala. Estima el retorno del marketing orgánico a partir de la inversión mensual en SEO, las sesiones orgánicas, la tasa de conversión, la tasa de conversión de contacto a cliente y el valor medio del pedido: cálculos deterministas con una advertencia de que son ilustrativos y no ingresos verificados de Analytics.",
+    "example": {
+      "input": "Coste 500 $ · Sesiones 2.000 · Conversión 2 % · Valor medio del pedido 45 $ · Contacto a cliente 100 %",
+      "output": "Ingresos estimados 1.800 $ · Beneficio 1.300 $ · ROI ~260 % · Fórmula mostrada · Solo ilustrativo"
+    },
+    "faqs": [
+      [
+        "¿Qué costes debo incluir en el ROI del SEO?",
+        "Herramientas, honorarios de agencia o autónomos, producción de contenido y las horas internas dedicadas al SEO durante el mes que estés modelando."
+      ],
+      [
+        "¿Cómo se calcula el ROI del SEO?",
+        "Ingresos ≈ sesiones × tasa de conversión × tasa de contacto a cliente × valor medio del pedido; ROI = (ingresos − inversión) / inversión. Todos los datos de partida son tuyos."
+      ],
+      [
+        "¿Puedo modelar contactos en lugar de ventas de comercio electrónico?",
+        "Sí. Trata las conversiones como contactos y ajusta el valor medio (y la tasa de contacto a cliente) a tu embudo."
+      ],
+      [
+        "¿Están garantizados los resultados?",
+        "No. Los resultados son estimaciones ilustrativas de planificación, no analíticas verificadas ni promesas de tráfico."
+      ],
+      [
+        "¿Cuánto tarda en aparecer el ROI del SEO?",
+        "A menudo varios meses en consultas competidas. Usa hipótesis conservadoras de sesiones y conversión para planificar."
+      ],
+      [
+        "¿La calculadora de ROI del SEO es gratuita?",
+        "Sí. Cálculo determinista e instantáneo en Zetawala, sin necesidad de rastreos ni de claves de API por tu parte."
+      ]
+    ]
+  },
+  "keyword-roi": {
+    "name": "Calculadora de ROI de palabras clave",
+    "desc": "Estima el tráfico y los ingresos por palabra clave",
+    "title": "Calculadora de ROI de palabras clave – Estimador del valor de la búsqueda",
+    "description": "Calculadora gratuita de ROI de palabras clave de Zetawala. Modela el potencial de ingresos mensual y anual a partir del volumen de búsqueda, el CTR estimado, la tasa de conversión y el valor del cliente: priorización determinista para decidir sobre el ROI de tus palabras clave usando tus propios datos de investigación (no descarga volúmenes de Google en vivo).",
+    "example": {
+      "input": "Volumen 8.100 · CTR 10 % · Conversión 3 % · Valor 32 $",
+      "output": "Tráfico estimado 810 · Clientes ~24 · Ingresos mensuales ~778 $ · Anuales ~9,3 K$ · Hipótesis indicadas"
+    },
+    "faqs": [
+      [
+        "¿De dónde sale el volumen de búsqueda?",
+        "Lo introduces tú desde tu herramienta de investigación de palabras clave. La calculadora no descarga datos en vivo de Google Ads ni del Planificador de palabras clave."
+      ],
+      [
+        "¿Cómo se estima el tráfico de una palabra clave?",
+        "Tráfico estimado ≈ volumen de búsqueda mensual × CTR. Después, clientes ≈ tráfico × tasa de conversión; ingresos ≈ clientes × valor."
+      ],
+      [
+        "¿Debo perseguir primero las palabras clave de mayor volumen?",
+        "Equilibra el volumen con la dificultad y la intención comercial. Un gran volumen con conversión débil suele perder frente a términos de volumen medio que sí venden."
+      ],
+      [
+        "¿Puedo modelar el ROI de palabras clave locales?",
+        "Sí. Usa estimaciones de volumen localizadas y el valor de cliente de ese mercado."
+      ],
+      [
+        "¿Están verificadas estas cifras de ROI de palabras clave?",
+        "No. Utilizan tus hipótesis de volumen, CTR y conversión, y se etiquetan como estimaciones, no como datos de Search Console."
+      ],
+      [
+        "¿La herramienta de ROI de palabras clave es gratuita?",
+        "Sí. Cálculos deterministas y gratuitos de ROI de palabras clave en Zetawala para tus hojas de priorización."
+      ]
+    ]
+  },
+  "content-roi": {
+    "name": "Calculadora de ROI del contenido",
+    "desc": "Estima el ROI del marketing de contenidos",
+    "title": "Calculadora de ROI del contenido – Blogs y páginas de destino",
+    "description": "Calculadora gratuita de ROI del contenido de Zetawala. Estima el retorno del marketing de contenidos a partir del coste de producción, el tráfico mensual previsto, la tasa de conversión, el valor medio y los meses de vida útil: compara artículos de blog, páginas de destino y recursos con cálculos de ROI transparentes y deterministas.",
+    "example": {
+      "input": "Coste 400 $ · Tráfico 600/mes · Conversión 1,5 % · Valor 80 $ · Meses 12",
+      "output": "Mensual ~720 $ · Ingresos a 12 meses ~8.640 $ · Beneficio ~8.240 $ · ROI etiquetado como ilustrativo"
+    },
+    "faqs": [
+      [
+        "¿Qué costes entran en el ROI del contenido?",
+        "Redacción, edición, diseño, promoción y herramientas asignadas a esa pieza, más los costes de actualización si modelas un rendimiento de varios años."
+      ],
+      [
+        "¿Cómo estimo el tráfico de un contenido nuevo?",
+        "Usa los datos de la calculadora de ROI de palabras clave o los resultados históricos de artículos similares de tu sitio. Introduce visitas mensuales honestas y conservadoras."
+      ],
+      [
+        "¿Cómo se calcula el ROI del contenido?",
+        "Ingresos mensuales ≈ tráfico × tasa de conversión × valor medio; ingresos totales ≈ mensuales × meses activos; ROI = (ingresos totales − coste) / coste."
+      ],
+      [
+        "¿El contenido perenne mejora el ROI?",
+        "A menudo sí: el tráfico puede acumularse mientras el coste de producción único permanece fijo. Aun así, modela las actualizaciones en temas competidos."
+      ],
+      [
+        "¿Están garantizados los resultados de ROI del contenido?",
+        "No. El modelo es ilustrativo y se basa solo en tus datos de partida, no en ingresos verificados de Analytics."
+      ],
+      [
+        "¿La calculadora de ROI del contenido es gratuita?",
+        "Sí. Estimaciones gratuitas e instantáneas de ROI del contenido en Zetawala para blogs, páginas de destino y campañas."
+      ]
+    ]
+  }
+}

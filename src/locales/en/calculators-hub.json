@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Free Business Calculators – Freelance, SaaS, Ads & Ecommerce | Zetawala",
+    "description": "Free business and marketing calculators: freelance hourly rates, AI API cost, SaaS pricing, LTV, CAC, break-even, profit margin, Google Ads, AdSense, affiliate, Amazon FBA, Etsy, and eBay fees.",
+    "keywords": [
+      "free business calculators",
+      "freelance hourly rate calculator",
+      "profit margin calculator",
+      "break even calculator",
+      "adsense revenue calculator"
+    ]
+  },
+  "hero": {
+    "title": "Business & Marketing Calculators",
+    "subtitle": "Instant freelance rates, SaaS pricing, LTV, CAC, ads ROI, AdSense, affiliate earnings, and marketplace profit math—18 free tools with deterministic formulas and no AI dependency.",
+    "cta": "Open Freelance Rate Calculator"
+  },
+  "grid": {
+    "title": "All Calculators",
+    "subtitle": "18 tools for pricing, unit economics, marketing ROI, and ecommerce margins.",
+    "localizedBadge": "Translated"
+  },
+  "pickerTitle": "Choose the Right Calculator",
+  "pickerSubtitle": "Match your goal to the right starting point in the suite.",
+  "learning": {
+    "title": "Pricing & ROI Learning",
+    "subtitle": "Core concepts behind the calculator toolkit.",
+    "blogCta": "Read Calculators blog guides",
+    "topics": [
+      {
+        "title": "Why rates beat guesswork",
+        "body": "Underpricing freelancers often ignore taxes, non-billable time, and expenses. A clear hourly floor protects cash flow."
+      },
+      {
+        "title": "LTV vs CAC",
+        "body": "Healthy growth usually needs LTV meaningfully above CAC. Pair both calculators before scaling paid acquisition."
+      },
+      {
+        "title": "Marketplace fee drag",
+        "body": "Amazon, Etsy, and eBay fees compound with shipping and ads. Model net profit per unit before listing volume."
+      },
+      {
+        "title": "AI API budgeting",
+        "body": "Token prices look small per request but scale with daily volume. Estimate monthly and yearly spend before launch."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about the Calculators suite.",
+    "items": [
+      {
+        "q": "What is the Calculators suite on Zetawala?",
+        "a": "It is a suite of 18 free deterministic calculators for freelancers, SaaS founders, marketers, and ecommerce sellers. Every result is computed from formulas in the browser—no LLM calls."
+      },
+      {
+        "q": "Do these calculators use AI?",
+        "a": "No. All math runs locally from your inputs. AI provider rates in the API cost calculator are published estimate tables only."
+      },
+      {
+        "q": "Which calculator should I start with?",
+        "a": "Freelancers should start with the Hourly Rate or Project Pricing calculator. SaaS founders often begin with SaaS Pricing, LTV, and CAC. Sellers should open Ecommerce, Amazon FBA, Etsy, or eBay profit tools."
+      },
+      {
+        "q": "Are results guaranteed accurate?",
+        "a": "They are transparent estimates from standard business formulas. Always verify fees, tax rules, and ad metrics with your own accounts."
+      }
+    ]
+  }
+}

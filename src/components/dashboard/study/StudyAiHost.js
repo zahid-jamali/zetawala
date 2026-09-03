@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
 import { getStudyTool, STUDY_AI_SLUGS } from '../../../config/study/tools';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import { downloadTextAsPdf, downloadDocxLike } from '../../../lib/study/certificates';
 import QuizPlayer from './QuizPlayer';
 import FlashcardPlayer from './FlashcardPlayer';
@@ -216,6 +216,7 @@ function SectionList({ title, items }) {
 }
 
 export default function StudyAiHost({ toolSlug }) {
+  const { toolHref } = useLocalizedHref();
   const tool = getStudyTool(toolSlug);
   const [form, setForm] = useState({
     topic: '',
@@ -454,7 +455,7 @@ export default function StudyAiHost({ toolSlug }) {
               <h4 className="text-xs font-extrabold">Recommended Next Steps</h4>
               <div className="flex flex-wrap gap-2">
                 {(NEXT[toolSlug] || []).map((l) => (
-                  <Link key={l.slug} href={getSeoPath('study', l.slug)} className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border text-[11px] font-bold text-sky-600">
+                  <Link key={l.slug} href={toolHref('study', l.slug)} className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border text-[11px] font-bold text-sky-600">
                     {l.label}
                     <ArrowRight className="w-3 h-3" />
                   </Link>

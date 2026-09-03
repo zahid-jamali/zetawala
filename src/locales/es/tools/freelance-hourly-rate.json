@@ -1,0 +1,62 @@
+{
+  "name": "Calculadora de tarifa por hora freelance",
+  "desc": "Tarifa mínima, recomendada y premium a partir de tus objetivos de ingresos",
+  "metadata": {
+    "title": "Calculadora de tarifa por hora freelance gratis | Zetawala",
+    "description": "Define tarifas freelance mínima, recomendada y premium con objetivo de ingresos, gastos, impuestos y horas facturables. Gratis y sin IA.",
+    "keywords": ["calculadora de tarifa por hora freelance", "tarifa freelance", "precio por hora autónomo", "calculadora de tarifa facturable"]
+  },
+  "seo": {
+    "title": "Calculadora de tarifa por hora freelance – Precia tu trabajo",
+    "description": "Usa la calculadora gratis de Zetawala para fijar tarifas mínima, recomendada y premium a partir de tu objetivo, gastos, impuestos y horas facturables. Solo matemáticas deterministas, sin IA.",
+    "example": {
+      "input": "Objetivo: 5.000 $/mes · Gastos: 1.500 $ · Impuestos: 25 % · Horas: 100",
+      "output": "Mínima 86,67 $/h · Recomendada 112,67 $/h · Premium 138,67 $/h · Necesidad bruta 8.666,67 $"
+    },
+    "faqs": [
+      { "q": "¿Cómo se calcula la tarifa?", "a": "Necesidad bruta mensual = (Objetivo + Gastos) ÷ (1 − Impuesto %). Tarifa mínima = Necesidad bruta ÷ Horas facturables. Recomendada = mínima × 1,3; premium = mínima × 1,6." },
+      { "q": "¿Usa inteligencia artificial?", "a": "No. Cada resultado es matemática determinista. No hay LLM ni “tarifa de mercado” inventada." },
+      { "q": "¿Qué diferencia hay entre mínima, recomendada y premium?", "a": "La mínima cubre objetivo y gastos después de impuestos. La recomendada añade un 30 % de colchón. La premium (×1,6) posiciona trabajo especializado." },
+      { "q": "¿Quién debería usarla?", "a": "Freelancers, consultores, diseñadores, developers y agencias que necesitan un suelo claro antes de cotizar." },
+      { "q": "¿Debo facturar todas las horas a la tarifa recomendada?", "a": "Úsala como tarifa objetivo. El tiempo no facturable (admin, ventas, aprendizaje) es la razón del colchón." },
+      { "q": "¿Puedo convertirla en precio de proyecto?", "a": "Sí. Combínala con la calculadora de precio de proyecto freelance para incluir horas, revisiones y contingencia." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Datos de tarifa",
+    "disclaimer": "Cálculo local instantáneo, sin llamadas a IA. Los resultados se actualizan al escribir. Son estimaciones: verifica con tus datos.",
+    "formulaLabel": "Fórmula",
+    "detailsTitle": "Detalles",
+    "nextStepsTitle": "Siguientes pasos recomendados",
+    "badge": "Cálculo Zetawala",
+    "notFound": "Calculadora no encontrada.",
+    "sectionTitle": "Cómo ayuda esta calculadora",
+    "sectionHint": "Un suelo de tarifa transparente con objetivos, gastos, impuestos y horas.",
+    "exampleTitle": "Ejemplo práctico",
+    "exampleHint": "Entradas de ejemplo y el resultado esperado.",
+    "sampleInput": "Entrada de ejemplo",
+    "sampleOutput": "Resultado",
+    "faqTitle": "Preguntas frecuentes",
+    "faqHint": "Respuestas claras sobre precios freelance.",
+    "fields": {
+      "monthlyIncomeGoal": "Objetivo de ingresos mensuales ($)",
+      "monthlyExpenses": "Gastos mensuales ($)",
+      "taxPct": "Impuestos (%)",
+      "billableHours": "Horas facturables al mes"
+    },
+    "nextSteps": {
+      "freelance-project-pricing": "Precio de proyecto",
+      "salary-to-hourly": "Salario → hora",
+      "profit-margin": "Margen de beneficio"
+    },
+    "results": {
+      "headline": "Tarifa horaria recomendada: {value}",
+      "metrics": {
+        "Minimum Hourly Rate": { "title": "Tarifa mínima", "subtitle": "Cubre objetivo + gastos después de impuestos" },
+        "Recommended Hourly Rate": { "title": "Tarifa recomendada", "subtitle": "Mínima × 1,3 de colchón" },
+        "Premium Hourly Rate": { "title": "Tarifa premium", "subtitle": "Mínima × 1,6 de posicionamiento" },
+        "Monthly Earnings @ Recommended": { "title": "Ingresos mensuales a tarifa recomendada" }
+      }
+    }
+  }
+}

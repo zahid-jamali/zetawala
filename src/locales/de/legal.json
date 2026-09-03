@@ -1,0 +1,49 @@
+{
+  "privacy-policy": {
+    "metadata": {
+      "title": "Datenschutz | Zetawala",
+      "description": "Wie Zetawala Nutzerdaten in den SEO- und Creator-Tools verarbeitet."
+    },
+    "title": "Datenschutz",
+    "updated": "Zuletzt aktualisiert: 3. Juli 2026",
+    "back": "Zurück zur Startseite",
+    "sections": [
+      { "title": "1. Umfang der Datenerhebung", "paragraphs": ["Zetawala erhebt Daten, um die Tools zu betreiben, zu verbessern und zu sichern: Kontoregistrierung, API-Nutzung und Anfrageverlauf. Wir erheben keine Daten außerhalb der Video-, Marketplace-, Schreib-, Lern- und SEO-Tools."] },
+      { "title": "2. Nutzung der Informationen", "paragraphs": ["Telemetrie und Nutzlasten werden über sichere Verbindungen verarbeitet. Der Verlauf ist an einzelne Konten gebunden und wird weder verkauft noch vermischt."] },
+      { "title": "3. Drittanbieter und generative KI", "paragraphs": ["Generatoren können Parameter an sichere Cloud-Umgebungen einschließlich der Google-Gemini-API senden. Diese Übertragungen unterliegen API-Vertraulichkeitsstandards und dienen nicht dem Training öffentlicher Basismodelle."] },
+      { "title": "4. Rechte und Löschung", "paragraphs": ["Sie können den Verlauf einsehen, herunterladen oder löschen. Anfragen zur vollständigen Löschung laufen über den Support."] },
+      { "title": "5. Sicherheit", "paragraphs": ["Verbindungen nutzen TLS 1.3. Datenbanken verwenden rollenbasierte Zugriffskontrolle."] }
+    ]
+  },
+  "terms": {
+    "metadata": {
+      "title": "Nutzungsbedingungen | Zetawala",
+      "description": "Bedingungen für die Nutzung der Zetawala-Plattform und der kostenlosen KI-SEO-Tools."
+    },
+    "title": "Nutzungsbedingungen",
+    "updated": "Zuletzt aktualisiert: 3. Juli 2026",
+    "back": "Zurück zur Startseite",
+    "sections": [
+      { "title": "1. Zulässige Nutzung", "paragraphs": ["Zetawala gewährt eine nicht-exklusive, nicht übertragbare, widerrufliche Lizenz. Sie dürfen die API nicht missbrauchen, reverse-engineeren, scrapen oder Limits umgehen."] },
+      { "title": "2. Geistiges Eigentum", "paragraphs": ["Ihre generierten Ausgaben gehören Ihnen. System, UI, Prompts und Servercode bleiben ausschließliches Eigentum von Zetawala."] },
+      { "title": "3. API-Limits und Fair Use", "paragraphs": ["Wir setzen Fair-Use-Raten durch. Automatisierte Batch-Anfragen, die den Dienst beeinträchtigen, können zur Sperre führen."] },
+      { "title": "4. Gewährleistungsausschluss", "paragraphs": ["Der Dienst wird „wie besehen“ bereitgestellt. Wir garantieren keine Conversions oder Rankings. Prüfen Sie Modellausgaben vor der Veröffentlichung."] },
+      { "title": "5. Haftungsbeschränkung", "paragraphs": ["Zetawala haftet nicht für indirekte, zufällige oder Folgeschäden durch Ausfälle, Datenverlust oder Modellfehler."] }
+    ]
+  },
+  "cookies": {
+    "metadata": {
+      "title": "Cookie-Richtlinie | Zetawala",
+      "description": "Wie Zetawala Cookies für Sitzungen und zur Verbesserung der Tools nutzt."
+    },
+    "title": "Cookie-Richtlinie",
+    "updated": "Zuletzt aktualisiert: 3. Juli 2026",
+    "back": "Zurück zur Startseite",
+    "sections": [
+      { "title": "1. Verwendung von Cookies", "paragraphs": ["Cookies sind kleine Textdateien. Zetawala nutzt sie für Sitzungen, UI-Einstellungen und Authentifizierungstoken."] },
+      { "title": "2. Essenzielle Cookies", "paragraphs": ["Erforderlich für Navigation, Sitzung und Tool-Eingaben. Das Deaktivieren verschlechtert den Dienst."] },
+      { "title": "3. Analyse und Performance", "paragraphs": ["Anonymisierte Token können Latenz messen und den Server optimieren."] },
+      { "title": "4. Kontrolle", "paragraphs": ["Sie können Cookies im Browser löschen oder blockieren. Einige Funktionen fallen aus, wenn essenzielle Cookies blockiert sind."] }
+    ]
+  }
+}

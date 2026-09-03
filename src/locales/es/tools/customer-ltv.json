@@ -1,0 +1,60 @@
+{
+  "name": "Calculadora de valor de vida del cliente (LTV)",
+  "desc": "LTV a partir del ticket medio, la frecuencia y la vida del cliente",
+  "metadata": {
+    "title": "Calculadora de valor de vida del cliente (LTV) gratis | Zetawala",
+    "description": "Calcula el LTV con ticket medio, frecuencia de compra y vida del cliente. Calculadora gratis, matemáticas deterministas, sin IA.",
+    "keywords": ["calculadora de valor de vida del cliente", "calculadora LTV", "calculadora CLV", "LTV cliente"]
+  },
+  "seo": {
+    "title": "Calculadora de valor de vida del cliente (LTV)",
+    "description": "Calcula el valor de vida del cliente con la calculadora LTV gratis de Zetawala: ticket medio, frecuencia y vida útil. Solo matemáticas deterministas, sin IA, para compararlo con el CAC.",
+    "example": {
+      "input": "Ticket medio: 80 $ · Compras/año: 4 · Vida: 3 años",
+      "output": "LTV 960 $ · Valor anual 320 $ · Ingresos proyectados por cliente 960 $"
+    },
+    "faqs": [
+      { "q": "¿Qué fórmula de LTV se usa?", "a": "LTV = Ticket medio × Compras por año × Vida del cliente (años). Valor anual = Ticket medio × Frecuencia." },
+      { "q": "¿Es gratis y sin IA?", "a": "Sí. Es gratis en Zetawala y solo usa matemáticas deterministas, sin aprendizaje automático ni benchmarks inventados." },
+      { "q": "¿Cómo se combina con el CAC?", "a": "Una regla habitual es que el LTV sea varias veces el CAC. Úsala junto a la calculadora de CAC para ver si la adquisición es sostenible." },
+      { "q": "¿El LTV incluye margen o solo ingresos?", "a": "Esta calculadora proyecta LTV de ingresos. Para márgenes de contribución, combínala con las de margen o unit economics." },
+      { "q": "¿A quién le sirve calcular el LTV?", "a": "Marcas ecommerce, suscripciones, agencias y growth marketers que deciden cuánto pueden gastar en adquirir un cliente." },
+      { "q": "¿Y si la frecuencia es irregular?", "a": "Usa una media realista anual. Puedes modelar escenarios optimistas y conservadores: el resultado se actualiza al instante." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Datos de LTV",
+    "disclaimer": "Cálculo local instantáneo, sin llamadas a IA. Los resultados se actualizan al escribir. Son estimaciones: verifica con tus datos.",
+    "formulaLabel": "Fórmula",
+    "detailsTitle": "Detalles",
+    "nextStepsTitle": "Siguientes pasos recomendados",
+    "badge": "Cálculo Zetawala",
+    "notFound": "Calculadora no encontrada.",
+    "sectionTitle": "Cómo ayuda esta calculadora",
+    "sectionHint": "LTV de ingresos con ticket, frecuencia y vida del cliente.",
+    "exampleTitle": "Ejemplo práctico",
+    "exampleHint": "Entradas de ejemplo y el resultado esperado.",
+    "sampleInput": "Entrada de ejemplo",
+    "sampleOutput": "Resultado",
+    "faqTitle": "Preguntas frecuentes",
+    "faqHint": "Respuestas claras sobre el valor de vida del cliente.",
+    "fields": {
+      "averageOrderValue": "Ticket medio ($)",
+      "purchaseFrequency": "Compras por año",
+      "customerLifespan": "Vida del cliente (años)"
+    },
+    "nextSteps": {
+      "customer-cac": "Comparar con CAC",
+      "saas-pricing": "Precio SaaS",
+      "profit-margin": "Margen de beneficio"
+    },
+    "results": {
+      "headline": "Valor de vida del cliente: {value}",
+      "metrics": {
+        "Customer Lifetime Value": { "title": "Valor de vida del cliente" },
+        "Annual Customer Value": { "title": "Valor anual del cliente" },
+        "Total Projected Revenue (per customer)": { "title": "Ingresos proyectados (por cliente)" }
+      }
+    }
+  }
+}

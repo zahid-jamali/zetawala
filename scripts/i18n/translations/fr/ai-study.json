@@ -1,0 +1,322 @@
+{
+  "ai-notes-generator": {
+    "name": "Générateur de notes IA",
+    "desc": "Générez des notes de cours complètes avec points clés et exemples",
+    "title": "Générateur de notes IA gratuit – Notes de cours par sujet et niveau",
+    "description": "Générez des notes de cours complètes avec points clés, exemples et concepts importants. Notes IA gratuites alimentées par DeepSeek pour n'importe quel sujet et niveau scolaire — copiez ou téléchargez le PDF.",
+    "example": {
+      "input": "Sujet : Photosynthèse · Niveau : lycée",
+      "output": "Notes structurées avec points clés, exemples et liste de concepts + nombre de mots"
+    },
+    "faqs": [
+      [
+        "Que crée le générateur de notes IA ?",
+        "Il produit des notes de cours structurées pour votre sujet et votre niveau, avec points clés, exemples et concepts importants que vous pouvez copier ou exporter en PDF."
+      ],
+      [
+        "Le générateur de notes IA est-il gratuit ?",
+        "Oui. Le générateur de notes IA de Zetawala est gratuit et s'appuie sur la même intégration DeepSeek que le reste de la plateforme."
+      ],
+      [
+        "Puis-je télécharger les notes en PDF ?",
+        "Oui. Après la génération, vous pouvez copier les notes, les régénérer et télécharger un PDF pour étudier hors ligne."
+      ],
+      [
+        "Quels niveaux scolaires sont pris en charge ?",
+        "Saisissez n'importe quel libellé de niveau (par exemple collège, lycée, université ou professionnel). Les notes adaptent le ton et la profondeur à ce niveau."
+      ],
+      [
+        "Dois-je vérifier les notes ?",
+        "Oui. Les notes IA sont une aide à l'étude : recoupez toujours les faits avec votre manuel ou des sources fiables avant un examen."
+      ]
+    ]
+  },
+  "ai-quiz-generator": {
+    "name": "Générateur de quiz IA",
+    "desc": "QCM interactifs avec scores, explications et mode révision",
+    "title": "Générateur de quiz IA gratuit – QCM interactifs avec scores",
+    "description": "Créez des quiz à choix multiples interactifs sur n'importe quel sujet. Choisissez une difficulté facile, moyenne ou difficile, obtenez des explications, un score final et un mode révision — gratuit avec DeepSeek.",
+    "example": {
+      "input": "Sujet : Seconde Guerre mondiale · Difficulté : Moyenne · 10 questions",
+      "output": "QCM interactifs avec réponses, explications, score en % et mode révision"
+    },
+    "faqs": [
+      [
+        "Comment fonctionne le générateur de quiz IA ?",
+        "Saisissez un sujet, choisissez la difficulté et le nombre de questions, puis passez un QCM interactif avec explications, score et pourcentage."
+      ],
+      [
+        "Quels niveaux de difficulté sont disponibles ?",
+        "Facile, moyen et difficile — pour s'entraîner aux interrogations en classe ou à une révision plus avancée."
+      ],
+      [
+        "Puis-je revoir les mauvaises réponses ?",
+        "Oui. Une fois terminé, le mode révision affiche les bonnes réponses et les explications de chaque question."
+      ],
+      [
+        "Le générateur de quiz est-il gratuit ?",
+        "Oui. Il est gratuit sur Zetawala et utilise DeepSeek pour générer les questions."
+      ],
+      [
+        "Combien de questions puis-je générer ?",
+        "Vous pouvez demander un ensemble pratique de QCM (en général de quelques questions jusqu'à une vingtaine), selon les limites du formulaire."
+      ]
+    ]
+  },
+  "pdf-to-quiz": {
+    "name": "Générateur de quiz à partir d'un PDF",
+    "desc": "Importez un PDF et générez des QCM d'entraînement avec réponses",
+    "title": "Générateur de quiz PDF gratuit – QCM à partir de votre PDF",
+    "description": "Importez un PDF, prévisualisez le texte extrait et générez des QCM d'entraînement IA avec réponses et explications. Outil gratuit PDF vers quiz alimenté par DeepSeek.",
+    "example": {
+      "input": "Importer le PDF du chapitre → générer 8 questions d'entraînement",
+      "output": "Quiz interactif ancré dans le contenu du PDF, avec score et explications"
+    },
+    "faqs": [
+      [
+        "Comment fonctionne PDF vers quiz ?",
+        "Importez un PDF, prévisualisez le texte extrait, puis générez des QCM ancrés dans ce contenu. Passez le quiz et relisez les réponses avec explications."
+      ],
+      [
+        "Que se passe-t-il si mon PDF est scanné ou corrompu ?",
+        "Les PDF textuels fonctionnent le mieux. Les fichiers scannés ou endommagés peuvent échouer à l'extraction : un message d'erreur clair vous invite à essayer un autre fichier."
+      ],
+      [
+        "PDF vers quiz est-il gratuit ?",
+        "Oui. L'extraction utilise le pipeline de texte PDF existant de Zetawala ; les questions sont générées avec DeepSeek."
+      ],
+      [
+        "Les questions se limitent-elles au PDF ?",
+        "La consigne demande au modèle d'ancrer les questions dans le texte importé et d'éviter d'inventer des faits sans rapport."
+      ],
+      [
+        "Puis-je prévisualiser avant de générer ?",
+        "Oui. Vous pouvez relire le texte extrait avant de générer le quiz."
+      ]
+    ]
+  },
+  "ai-flashcard-generator": {
+    "name": "Générateur de flashcards IA",
+    "desc": "Flashcards interactives à retourner à partir d'un sujet ou d'un PDF",
+    "title": "Générateur de flashcards IA gratuit – Cartes à partir d'un sujet ou d'un PDF",
+    "description": "Générez des flashcards interactives à partir d'un sujet ou d'un PDF importé. Animation de retournement, mélange, précédent/suivant, mode étude et téléchargement — cartes d'étude gratuites alimentées par DeepSeek.",
+    "example": {
+      "input": "Sujet : Biologie cellulaire · ou importer le PDF du cours",
+      "output": "Flashcards à retourner question/réponse, mélange et navigation d'étude"
+    },
+    "faqs": [
+      [
+        "Puis-je créer des flashcards à partir d'un PDF ?",
+        "Oui. Collez un sujet ou importez un PDF ; l'outil génère des cartes question/réponse que vous pouvez retourner."
+      ],
+      [
+        "Quelles fonctions d'étude sont incluses ?",
+        "Animation de retournement, mélange, navigation précédent/suivant et options de téléchargement pour réviser hors ligne."
+      ],
+      [
+        "Le générateur de flashcards est-il gratuit ?",
+        "Oui. Les flashcards sont générées avec DeepSeek via l'API de génération partagée de Zetawala."
+      ],
+      [
+        "Combien de cartes vais-je obtenir ?",
+        "Le modèle renvoie un jeu pratique de cartes selon le sujet ou la longueur du PDF. Vous pouvez régénérer pour un nouveau jeu."
+      ],
+      [
+        "À qui s'adressent les flashcards IA ?",
+        "Aux élèves, enseignants et autodidactes qui veulent des decks de rappel actif rapides sans créer les cartes à la main."
+      ]
+    ]
+  },
+  "youtube-study-notes": {
+    "name": "Notes d'étude IA à partir de YouTube",
+    "desc": "Notes, résumé, points clés et quiz à partir d'une URL YouTube",
+    "title": "Générateur de notes YouTube gratuit – Notes, résumé et quiz",
+    "description": "Collez une URL YouTube pour obtenir des notes de cours, un résumé, des points clés et un quiz à partir de la transcription. Notes DeepSeek gratuites ; gère clairement l'absence de sous-titres.",
+    "example": {
+      "input": "https://www.youtube.com/watch?v=…",
+      "output": "Notes complètes, résumé, points clés et quiz à partir des sous-titres disponibles"
+    },
+    "faqs": [
+      [
+        "Comment fonctionnent les notes d'étude YouTube ?",
+        "Nous récupérons une transcription disponible de la vidéo, puis DeepSeek la transforme en notes, résumé, points clés et quiz court."
+      ],
+      [
+        "Que se passe-t-il si la vidéo n'a pas de sous-titres ?",
+        "Vous verrez une erreur claire. Sans transcription, nous ne pouvons pas générer de notes fiables — essayez une autre vidéo avec sous-titres activés."
+      ],
+      [
+        "Est-ce gratuit ?",
+        "Oui. La récupération de la transcription et la génération de notes DeepSeek sont disponibles comme outil d'étude gratuit de Zetawala."
+      ],
+      [
+        "Toutes les URL YouTube sont-elles prises en charge ?",
+        "Les URL de lecture standard et les Shorts sont pris en charge. Les URL invalides ou les vidéos privées/restreintes peuvent échouer."
+      ],
+      [
+        "Les notes remplacent-elles le visionnage ?",
+        "Non. Utilisez-les comme aide à l'étude. Vérifiez toujours les affirmations importantes auprès de la vidéo et de sources fiables."
+      ]
+    ]
+  },
+  "ai-assignment-generator": {
+    "name": "Générateur de devoirs IA",
+    "desc": "Devoirs structurés avec titres, références et conclusion",
+    "title": "Générateur de devoirs IA gratuit – Dissertations et travaux structurés",
+    "description": "Générez des devoirs structurés avec titres, sections, références et conclusion. Définissez le sujet et le nombre de mots — copiez ou téléchargez des fichiers de type PDF/DOCX.",
+    "example": {
+      "input": "Sujet : Politique climatique · Nombre de mots : 1200",
+      "output": "Devoir structuré avec titres, section références et conclusion"
+    },
+    "faqs": [
+      [
+        "Que produit le générateur de devoirs ?",
+        "Un brouillon structuré avec titres, sections, une section références (espaces réservés d'exemple) et une conclusion calée sur votre nombre de mots."
+      ],
+      [
+        "Puis-je télécharger le devoir ?",
+        "Oui. Copiez le texte ou téléchargez des formats de type PDF / DOCX pour les modifier hors ligne."
+      ],
+      [
+        "Puis-je le rendre sans le retravailler ?",
+        "Non. Traitez le résultat comme un plan brouillon. Ajoutez vos recherches, citations et votre voix — et ne rendez jamais un travail IA non relu là où c'est interdit."
+      ],
+      [
+        "L'outil est-il gratuit ?",
+        "Oui. Il utilise DeepSeek via l'API de génération partagée de Zetawala."
+      ],
+      [
+        "Puis-je contrôler la longueur ?",
+        "Oui. Définissez un nombre de mots cible pour que le brouillon vise les consignes de votre devoir."
+      ]
+    ]
+  },
+  "ai-homework-solver": {
+    "name": "Aide aux devoirs IA",
+    "desc": "Explications étape par étape avec réponse finale et concepts clés",
+    "title": "Aide aux devoirs IA gratuite – Explications étape par étape",
+    "description": "Obtenez des explications de devoirs étape par étape, des réponses finales, des concepts clés et des approches alternatives le cas échéant. Aide pédagogique DeepSeek — pas seulement la réponse brute.",
+    "example": {
+      "input": "Explique comment résoudre un problème rédigé d'équation linéaire…",
+      "output": "Étapes, réponse finale, concepts clés et approche alternative optionnelle"
+    },
+    "faqs": [
+      [
+        "Donne-t-il seulement la réponse finale ?",
+        "Non. Il met l'accent sur les explications étape par étape, les concepts clés et les approches alternatives quand c'est utile — pour que vous appreniez la méthode."
+      ],
+      [
+        "L'aide aux devoirs est-elle gratuite ?",
+        "Oui. Elle est gratuite sur Zetawala et alimentée par DeepSeek."
+      ],
+      [
+        "Quelles matières fonctionnent le mieux ?",
+        "Les questions textuelles claires en maths, sciences, histoire et français/langues fonctionnent bien. Collez l'énoncé complet pour de meilleures étapes."
+      ],
+      [
+        "Dois-je l'utiliser pour tricher ?",
+        "Non. Utilisez-le pour comprendre les méthodes. Respectez les règles d'intégrité académique de votre établissement."
+      ],
+      [
+        "Et si l'IA se trompe ?",
+        "Vérifiez toujours. L'IA peut se tromper — comparez les étapes avec le cours."
+      ]
+    ]
+  },
+  "typing-speed-test": {
+    "name": "Test de vitesse de frappe",
+    "desc": "WPM, précision, fautes, tests chronométrés et certificat téléchargeable",
+    "title": "Test de vitesse de frappe gratuit – WPM, précision et certificat",
+    "description": "Testez votre vitesse de frappe avec des textes chronométrés. Suivez WPM, CPM, précision, fautes, historique local et téléchargez un certificat — sans IA, compatible mode sombre.",
+    "example": {
+      "input": "Texte chronométré de 60 secondes",
+      "output": "WPM, CPM, % de précision, fautes, historique local, certificat téléchargeable"
+    },
+    "faqs": [
+      [
+        "Comment le WPM est-il calculé ?",
+        "Les mots par minute reposent sur les caractères corrects (en général caractères ÷ 5) sur le temps écoulé, avec le CPM et la précision."
+      ],
+      [
+        "L'historique est-il enregistré ?",
+        "Oui. Les tentatives sont stockées dans le LocalStorage de votre appareil lorsqu'aucune authentification n'est disponible — architecture prête pour un classement plus tard."
+      ],
+      [
+        "Puis-je télécharger un certificat ?",
+        "Oui. Saisissez votre nom après un test terminé et téléchargez un certificat PDF avec WPM et précision."
+      ],
+      [
+        "Cet outil utilise-t-il l'IA ?",
+        "Non. Le test de vitesse de frappe est de la logique client pure pour une frappe réactive, sans latence."
+      ],
+      [
+        "Quelles durées sont disponibles ?",
+        "Des options chronométrées courantes comme 30, 60 et 120 secondes."
+      ]
+    ]
+  },
+  "typing-master-course": {
+    "name": "Cours Typing Master",
+    "desc": "Leçons guidées avec feedback en direct, seuils de précision et certificat",
+    "title": "Cours Typing Master gratuit – Leçons guidées, WPM et certificat",
+    "description": "Tuteur de frappe professionnel avec 12 leçons guidées, feedback caractère par caractère en direct, seuils de précision, suivi du WPM, conseils du coach, progression LocalStorage et un certificat de fin avec de vraies stats — sans IA.",
+    "example": {
+      "input": "Exercice rangée de repos → atteindre 94 % de précision → débloquer la leçon suivante",
+      "output": "Feedback vert/rouge en direct, WPM et précision, cursus à seuils, certificat avec WPM moyen"
+    },
+    "faqs": [
+      [
+        "Le cours reprend-il là où je me suis arrêté ?",
+        "Oui. Les scores des leçons et la leçon en cours sont enregistrés dans le LocalStorage pour continuer plus tard dans le même navigateur."
+      ],
+      [
+        "Quels niveaux sont inclus ?",
+        "Débutant (rangée de repos et rythme), intermédiaire (rangées haute/basse et majuscules) et avancé (ponctuation, chiffres, symboles et un paragraphe de vitesse)."
+      ],
+      [
+        "Comment débloquer la leçon suivante ?",
+        "Terminez l'exercice avec le feedback en direct et atteignez la précision minimale de la leçon (en général 90–94 %). Les tentatives échouées peuvent être relancées à tout moment."
+      ],
+      [
+        "Y a-t-il un certificat ?",
+        "Oui. Après avoir terminé toutes les leçons, vous pouvez télécharger un certificat PDF Typing Master avec WPM moyen et précision."
+      ],
+      [
+        "Cet outil utilise-t-il l'IA ?",
+        "Non. Typing Master n'est que de la logique d'entraînement déterministe — aucun appel d'API."
+      ]
+    ]
+  },
+  "coding-typing-test": {
+    "name": "Test de frappe de code",
+    "desc": "Entraînez-vous à taper du JS, Python, Java, C++, HTML et SQL",
+    "title": "Test de frappe de code gratuit – JS, Python, Java, C++, HTML, SQL",
+    "description": "Entraînez-vous à taper de vrais extraits de code avec un affichage conscient de la syntaxe. Suivez WPM, précision, erreurs, difficulté, historique et téléchargez un certificat — sans IA.",
+    "example": {
+      "input": "Langage : JavaScript · Difficulté : Moyenne",
+      "output": "Conserve la mise en forme pendant la frappe ; WPM, précision, historique, certificat"
+    },
+    "faqs": [
+      [
+        "Quels langages sont pris en charge ?",
+        "Extraits JavaScript, Python, Java, C++, HTML et SQL en difficulté facile, moyenne et difficile."
+      ],
+      [
+        "La mise en forme est-elle conservée ?",
+        "Oui. Vous tapez exactement l'extrait, y compris les espaces et les retours à la ligne."
+      ],
+      [
+        "La frappe de code utilise-t-elle l'IA ?",
+        "Non. Les extraits et le score sont de la logique client pure pour un entraînement à faible latence."
+      ],
+      [
+        "Puis-je obtenir un certificat ?",
+        "Oui. Après avoir terminé un extrait, vous pouvez télécharger un certificat PDF avec WPM et précision."
+      ],
+      [
+        "L'historique est-il enregistré localement ?",
+        "Oui. Les tentatives récentes sont stockées dans le LocalStorage de votre appareil."
+      ]
+    ]
+  }
+}

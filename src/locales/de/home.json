@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Kostenlose KI-Tools für YouTube, SEO und Rechner | Zetawala",
+    "description": "Zetawala bietet kostenlose KI-Tools für YouTube, SEO, Marktplätze und Business-Rechner: Freelance-Stundensatz, Gewinnmarge, Break-even, LTV und AdSense.",
+    "keywords": [
+      "kostenlose KI-Tools",
+      "Gewinnmargen-Rechner",
+      "Freelance-Rechner",
+      "SEO-Tools",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Produktivität und Automatisierung",
+    "titleBefore": "Kostenlose KI-Tools für YouTube, Daraz, Freelancer, Shopee und",
+    "titleAccent": "Lazada",
+    "subtitle": "Recherche, Audits und Berechnungen an einem Ort: YouTube, Daraz, WhatsApp, SEO, Rechner, PDF, KI-Schreiben, Upwork/Fiverr, Shopee und Lazada.",
+    "searchHint": "Oder nutzen Sie das Menü oben: Mit der Maus über eine Suite fahren, um alle Tools zu sehen.",
+    "cta": "Tool-Packs öffnen",
+    "mockupAlt": "Zetawala-Dashboard-Vorschau"
+  },
+  "localizedTools": {
+    "title": "Business-Rechner in Ihrer Sprache",
+    "subtitle": "Starten Sie mit den vollständig übersetzten Rechnern und öffnen Sie jede Suite für lokalisierte Namen, Metadaten und FAQs.",
+    "viewAll": "Alle Rechner anzeigen"
+  },
+  "suites": {
+    "title": "SEO- und Automatisierungs-Suites",
+    "subtitle": "Wählen Sie ein Pack, um den Workspace zu öffnen.",
+    "open": "{label} öffnen",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "YouTube-Automatisierungspack",
+        "body": "Nischen, Kanal- und Video-Intelligenz, Umsatzschätzung und eine Content-Pipeline: Ideen, Titel, Hooks, Skripte, Tags und Thumbnails.",
+        "cta": "YouTube öffnen",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Daraz SEO- und Conversion-Pack",
+        "body": "Titel, Beschreibungen, Keywords, Review-Antworten und FBM/FBD-Nettomargen für den pakistanischen Marktplatz.",
+        "cta": "Daraz öffnen",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "SEO- und Webmaster-Intelligenz",
+        "body": "Technische Audits, PageSpeed, Sitemaps, Canonicals, interne Links und ROI-Rechner.",
+        "cta": "SEO öffnen",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Business- und Marketing-Rechner",
+        "body": "Freelance-Sätze, LTV, CAC, Break-even, Marge, AdSense und Marktplatz-Profit: deterministische Formeln, keine KI.",
+        "cta": "Rechner öffnen",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Was ist Zetawala?",
+        "a": "Zetawala ist ein kostenloses Toolkit für Creator, Verkäufer, Freelancer und Website-Betreiber. Es kombiniert YouTube-Automatisierung, Marktplatz-SEO, WhatsApp-Commerce, SEO-Audits, Rechner, PDF-Tools, KI-Schreiben, Lern-Tools und Freelancer-Kits."
+      },
+      {
+        "q": "Welche Seiten gibt es in anderen Sprachen?",
+        "a": "Spanisch, Französisch und Deutsch decken Startseite, Hubs, Rechtstexte, Kontakt, Blog und alle öffentlichen Tools ab. Sechs Rechner haben native Slugs; die übrigen behalten den englischen Slug unter /de."
+      },
+      {
+        "q": "Nutzen die Rechner KI?",
+        "a": "Nein. Die Ergebnisse sind deterministische Mathematik aus Ihren Eingaben. Kein LLM-Aufruf, kein erfundener Marktpreis."
+      },
+      {
+        "q": "Sind die Tools kostenlos?",
+        "a": "Ja. Zetawala ist ein kostenloses, werbefinanziertes Toolkit. Einige Analyse-Endpunkte können Fair-Use-Limits haben, damit die Plattform stabil bleibt."
+      }
+    ]
+  }
+}

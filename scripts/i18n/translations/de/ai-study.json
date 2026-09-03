@@ -1,0 +1,322 @@
+{
+  "ai-notes-generator": {
+    "name": "KI-Notizen-Generator",
+    "desc": "Vollständige Lernnotizen mit Kernpunkten und Beispielen",
+    "title": "Kostenloser KI-Notizen-Generator – Lernnotizen nach Thema und Niveau",
+    "description": "Erzeuge vollständige Lernnotizen mit Kernpunkten, Beispielen und wichtigen Konzepten. Kostenlose KI-Notizen mit DeepSeek für jedes Thema und Bildungsniveau – kopieren oder als PDF herunterladen.",
+    "example": {
+      "input": "Thema: Fotosynthese · Niveau: Sekundarstufe",
+      "output": "Strukturierte Notizen mit Kernpunkten, Beispielen und Konzeptliste + Wortanzahl"
+    },
+    "faqs": [
+      [
+        "Was erstellt der KI-Notizen-Generator?",
+        "Er erzeugt strukturierte Lernnotizen zu deinem Thema und Niveau, inklusive Kernpunkten, Beispielen und wichtigen Konzepten, die du kopieren oder als PDF exportieren kannst."
+      ],
+      [
+        "Ist der KI-Notizen-Generator kostenlos?",
+        "Ja. Der KI-Notizen-Generator von Zetawala ist kostenlos und nutzt dieselbe DeepSeek-Integration wie der Rest der Plattform."
+      ],
+      [
+        "Kann ich die Notizen als PDF herunterladen?",
+        "Ja. Nach der Erzeugung kannst du die Notizen kopieren, neu generieren und ein PDF fürs Offline-Lernen herunterladen."
+      ],
+      [
+        "Welche Bildungsniveaus werden unterstützt?",
+        "Gib eine beliebige Klassen- oder Niveauangabe ein (z. B. Mittelstufe, Sekundarstufe, Hochschule oder Beruf). Ton und Tiefe der Notizen passen sich daran an."
+      ],
+      [
+        "Sollte ich die Notizen prüfen?",
+        "Ja. KI-Notizen sind Lernhilfen – gleiche Fakten vor Prüfungen immer mit Lehrbuch oder verlässlichen Quellen ab."
+      ]
+    ]
+  },
+  "ai-quiz-generator": {
+    "name": "KI-Quiz-Generator",
+    "desc": "Interaktive Multiple-Choice-Fragen mit Punktzahl, Erklärungen und Wiederholungsmodus",
+    "title": "Kostenloser KI-Quiz-Generator – interaktive MCQs mit Punktzahl",
+    "description": "Erstelle interaktive Multiple-Choice-Quizze zu jedem Thema. Wähle leicht, mittel oder schwer, erhalte Erklärungen, Endpunktzahl und Wiederholungsmodus – kostenlos mit DeepSeek.",
+    "example": {
+      "input": "Thema: Zweiter Weltkrieg · Schwierigkeit: Mittel · 10 Fragen",
+      "output": "Interaktive MCQs mit Antworten, Erklärungen, Punktzahl in % und Wiederholungsmodus"
+    },
+    "faqs": [
+      [
+        "Wie funktioniert der KI-Quiz-Generator?",
+        "Gib ein Thema ein, wähle Schwierigkeit und Fragenanzahl und absolviere ein interaktives Multiple-Choice-Quiz mit Erklärungen, Punktzahl und Prozent."
+      ],
+      [
+        "Welche Schwierigkeitsstufen gibt es?",
+        "Leicht, mittel und schwer – zum Üben für Schulquizze oder fortgeschrittene Wiederholung."
+      ],
+      [
+        "Kann ich falsche Antworten nachsehen?",
+        "Ja. Nach dem Abschluss zeigt der Wiederholungsmodus richtige Antworten und Erklärungen zu jeder Frage."
+      ],
+      [
+        "Ist der Quiz-Generator kostenlos?",
+        "Ja. Er ist bei Zetawala kostenlos und nutzt DeepSeek zur Fragenerzeugung."
+      ],
+      [
+        "Wie viele Fragen kann ich erzeugen?",
+        "Du kannst einen praktischen Satz MCQs anfordern (typisch einige wenige bis rund zwanzig), abhängig von den Formulargrenzen."
+      ]
+    ]
+  },
+  "pdf-to-quiz": {
+    "name": "PDF-zu-Quiz-Generator",
+    "desc": "PDF hochladen und Übungs-MCQs mit Antworten erzeugen",
+    "title": "Kostenloser PDF-zu-Quiz-Generator – MCQs aus deinem PDF",
+    "description": "Lade ein PDF hoch, prüfe den extrahierten Text und erzeuge KI-Übungs-MCQs mit Antworten und Erklärungen. Kostenloses PDF-zu-Quiz-Tool mit DeepSeek.",
+    "example": {
+      "input": "Kapitel-PDF hochladen → 8 Übungsfragen erzeugen",
+      "output": "Interaktives Quiz auf Basis des PDF-Inhalts mit Punktzahl und Erklärungen"
+    },
+    "faqs": [
+      [
+        "Wie funktioniert PDF zu Quiz?",
+        "Lade ein PDF hoch, prüfe den extrahierten Text und erzeuge MCQs, die in diesem Inhalt verankert sind. Absolviere das Quiz und prüfe Antworten mit Erklärungen."
+      ],
+      [
+        "Was, wenn mein PDF gescannt oder beschädigt ist?",
+        "Textbasierte PDFs funktionieren am besten. Gescannte oder beschädigte Dateien können bei der Extraktion scheitern – du siehst eine klare Fehlermeldung und kannst eine andere Datei versuchen."
+      ],
+      [
+        "Ist PDF zu Quiz kostenlos?",
+        "Ja. Die Extraktion nutzt Zetawalas bestehende PDF-Text-Pipeline; die Fragen werden mit DeepSeek erzeugt."
+      ],
+      [
+        "Sind die Fragen auf das PDF beschränkt?",
+        "Der Prompt fordert das Modell auf, Fragen im hochgeladenen Text zu verankern und keine fremden Fakten zu erfinden."
+      ],
+      [
+        "Kann ich vor der Erzeugung eine Vorschau sehen?",
+        "Ja. Du kannst den extrahierten Text prüfen, bevor das Quiz erzeugt wird."
+      ]
+    ]
+  },
+  "ai-flashcard-generator": {
+    "name": "KI-Karteikarten-Generator",
+    "desc": "Interaktive Wende-Karteikarten aus einem Thema oder PDF",
+    "title": "Kostenloser KI-Karteikarten-Generator – Wendekarten aus Thema oder PDF",
+    "description": "Erzeuge interaktive Karteikarten aus einem Thema oder einem hochgeladenen PDF. Wende-Animation, Mischen, Zurück/Weiter, Lernmodus und Download – kostenlose Lernkarten mit DeepSeek.",
+    "example": {
+      "input": "Thema: Zellbiologie · oder Vorlesungs-PDF hochladen",
+      "output": "Wende-Karteikarten mit Frage/Antwort, Mischen und Lernnavigation"
+    },
+    "faqs": [
+      [
+        "Kann ich Karteikarten aus einem PDF erstellen?",
+        "Ja. Füge ein Thema ein oder lade ein PDF hoch; das Tool erzeugt Frage/Antwort-Karten, die du durchblättern kannst."
+      ],
+      [
+        "Welche Lernfunktionen sind enthalten?",
+        "Wende-Animation, Mischen, Zurück/Weiter-Navigation und Download-Optionen fürs Offline-Lernen."
+      ],
+      [
+        "Ist der Karteikarten-Generator kostenlos?",
+        "Ja. Die Karteikarten werden mit DeepSeek über Zetawalas gemeinsame Generate-API erzeugt."
+      ],
+      [
+        "Wie viele Karten bekomme ich?",
+        "Das Modell liefert einen praktischen Kartensatz je nach Thema oder PDF-Länge. Du kannst neu generieren für einen frischen Satz."
+      ],
+      [
+        "Für wen sind KI-Karteikarten gedacht?",
+        "Für Schüler, Lehrkräfte und Selbstlerner, die schnelle Active-Recall-Decks wollen, ohne Karten von Hand zu schreiben."
+      ]
+    ]
+  },
+  "youtube-study-notes": {
+    "name": "KI-Lernnotizen aus YouTube",
+    "desc": "Notizen, Zusammenfassung, Kernpunkte und Quiz aus einer YouTube-URL",
+    "title": "Kostenloser YouTube-Lernnotizen-Generator – Notizen, Zusammenfassung und Quiz",
+    "description": "Füge eine YouTube-URL ein und erhalte Lernnotizen, Zusammenfassung, Kernpunkte und ein Quiz aus dem Videotranskript. Kostenlose DeepSeek-Notizen; geht klar mit fehlenden Untertiteln um.",
+    "example": {
+      "input": "https://www.youtube.com/watch?v=…",
+      "output": "Vollständige Notizen, Zusammenfassung, Kernpunkte und Quiz aus verfügbaren Untertiteln"
+    },
+    "faqs": [
+      [
+        "Wie funktionieren YouTube-Lernnotizen?",
+        "Wir holen ein verfügbares Transkript zum Video; DeepSeek macht daraus Notizen, eine Zusammenfassung, Kernpunkte und ein kurzes Quiz."
+      ],
+      [
+        "Was, wenn das Video keine Untertitel hat?",
+        "Du siehst eine klare Fehlermeldung. Ohne Transkript können wir keine zuverlässigen Notizen erzeugen – versuche ein anderes Video mit Untertiteln."
+      ],
+      [
+        "Ist das kostenlos?",
+        "Ja. Transkriptabruf und DeepSeek-Notizenerzeugung stehen als kostenloses Zetawala-Lernwerkzeug bereit."
+      ],
+      [
+        "Werden alle YouTube-URLs unterstützt?",
+        "Standard-Watch- und Shorts-URLs werden unterstützt. Ungültige URLs oder private/eingeschränkte Videos können scheitern."
+      ],
+      [
+        "Ersetzen die Notizen das Anschauen?",
+        "Nein. Nutze sie als Lernhilfe. Prüfe wichtige Aussagen immer am Video und an verlässlichen Quellen."
+      ]
+    ]
+  },
+  "ai-assignment-generator": {
+    "name": "KI-Aufgaben-Generator",
+    "desc": "Strukturierte Arbeiten mit Überschriften, Quellen und Schluss",
+    "title": "Kostenloser KI-Aufgaben-Generator – strukturierte Aufsätze und Arbeiten",
+    "description": "Erzeuge strukturierte Arbeiten mit Überschriften, Abschnitten, Quellen und Schluss. Thema und Wortanzahl festlegen – kopieren oder Dateien im PDF/DOCX-Stil herunterladen.",
+    "example": {
+      "input": "Thema: Klimapolitik · Wortanzahl: 1200",
+      "output": "Strukturierte Arbeit mit Überschriften, Quellenabschnitt und Schluss"
+    },
+    "faqs": [
+      [
+        "Was erzeugt der Aufgaben-Generator?",
+        "Einen strukturierten Entwurf mit Überschriften, Abschnitten, einem Quellenabschnitt (beispielhafte Platzhalter) und einem Schluss in deiner Zielwortzahl."
+      ],
+      [
+        "Kann ich die Arbeit herunterladen?",
+        "Ja. Kopiere den Text oder lade PDF-/DOCX-ähnliche Formate zum Offline-Bearbeiten herunter."
+      ],
+      [
+        "Kann ich das ungeprüft abgeben?",
+        "Nein. Behandle die Ausgabe als Entwurfsskizze. Ergänze eigene Recherche, Zitate und Stimme – und reiche ungeprüfte KI-Arbeit nie ein, wo das verboten ist."
+      ],
+      [
+        "Ist das Tool kostenlos?",
+        "Ja. Es nutzt DeepSeek über Zetawalas gemeinsame Generate-API."
+      ],
+      [
+        "Kann ich die Länge steuern?",
+        "Ja. Setze eine Zielwortzahl, damit der Entwurf deinen Aufgabenanforderungen entspricht."
+      ]
+    ]
+  },
+  "ai-homework-solver": {
+    "name": "KI-Hausaufgabenhelfer",
+    "desc": "Schritt-für-Schritt-Erklärungen mit Endergebnis und Kernkonzepten",
+    "title": "Kostenloser KI-Hausaufgabenhelfer – Erklärungen Schritt für Schritt",
+    "description": "Erhalte schrittweise Hausaufgabenerklärungen, Endergebnisse, Kernkonzepte und alternative Wege, wenn sinnvoll. Pädagogische DeepSeek-Hilfe – nicht nur die nackte Antwort.",
+    "example": {
+      "input": "Erkläre, wie man eine Textaufgabe zu linearen Gleichungen löst…",
+      "output": "Schritte, Endergebnis, Kernkonzepte und optionaler alternativer Ansatz"
+    },
+    "faqs": [
+      [
+        "Gibt es nur die Endantwort?",
+        "Nein. Im Vordergrund stehen Schritt-für-Schritt-Erklärungen, Kernkonzepte und alternative Wege, wenn sie helfen – damit du die Methode lernst."
+      ],
+      [
+        "Ist der Hausaufgabenhelfer kostenlos?",
+        "Ja. Er ist bei Zetawala kostenlos und wird von DeepSeek angetrieben."
+      ],
+      [
+        "Welche Fächer funktionieren am besten?",
+        "Klare Textfragen in Mathe, Naturwissenschaften, Geschichte und Sprachen funktionieren gut. Füge die vollständige Frage ein, damit die Schritte besser werden."
+      ],
+      [
+        "Soll ich damit schummeln?",
+        "Nein. Nutze es, um Methoden zu verstehen. Halte dich an die Regeln zur akademischen Integrität deiner Schule."
+      ],
+      [
+        "Was, wenn die KI falsch liegt?",
+        "Immer prüfen. KI kann Fehler machen – gleiche die Schritte mit dem Unterrichtsmaterial ab."
+      ]
+    ]
+  },
+  "typing-speed-test": {
+    "name": "Tippgeschwindigkeitstest",
+    "desc": "WPM, Genauigkeit, Fehler, Zeittests und herunterladbares Zertifikat",
+    "title": "Kostenloser Tippgeschwindigkeitstest – WPM, Genauigkeit und Zertifikat",
+    "description": "Teste deine Tippgeschwindigkeit mit zeitlich begrenzten Texten. Verfolge WPM, CPM, Genauigkeit, Fehler, lokale Historie und lade ein Zertifikat herunter – ohne KI, dunkelmodusfreundlich.",
+    "example": {
+      "input": "60-Sekunden-Zeittext",
+      "output": "WPM, CPM, Genauigkeit in %, Fehler, lokale Historie, herunterladbares Zertifikat"
+    },
+    "faqs": [
+      [
+        "Wie wird WPM berechnet?",
+        "Wörter pro Minute basieren auf korrekten Zeichen (typisch Zeichen ÷ 5) über die verstrichene Zeit, zusammen mit CPM und Genauigkeit."
+      ],
+      [
+        "Wird die Historie gespeichert?",
+        "Ja. Versuche werden im LocalStorage deines Geräts gespeichert, wenn keine Anmeldung verfügbar ist – Architektur später rankingfähig."
+      ],
+      [
+        "Kann ich ein Zertifikat herunterladen?",
+        "Ja. Gib nach einem abgeschlossenen Test deinen Namen ein und lade ein PDF-Zertifikat mit WPM und Genauigkeit herunter."
+      ],
+      [
+        "Nutzt das KI?",
+        "Nein. Der Tippgeschwindigkeitstest ist reine Client-Logik für reaktionsschnelles, verzögerungsfreies Tippen."
+      ],
+      [
+        "Welche Dauern gibt es?",
+        "Übliche Zeitoptionen wie 30, 60 und 120 Sekunden."
+      ]
+    ]
+  },
+  "typing-master-course": {
+    "name": "Typing-Master-Kurs",
+    "desc": "Geführte Lektionen mit Live-Feedback, Genauigkeitsschwellen und Zertifikat",
+    "title": "Kostenloser Typing-Master-Kurs – geführte Lektionen, WPM und Zertifikat",
+    "description": "Professioneller Tipplehrer mit 12 geführten Lektionen, Live-Zeichenfeedback, Genauigkeitsschwellen, WPM-Tracking, Coach-Tipps, LocalStorage-Fortschritt und einem Abschlusszertifikat mit echten Werten – ohne KI.",
+    "example": {
+      "input": "Grundreihen-Übung → 94 % Genauigkeit erreichen → nächste Lektion freischalten",
+      "output": "Grün/Rot-Live-Feedback, WPM und Genauigkeit, gestuftes Curriculum, Zertifikat mit durchschnittlichem WPM"
+    },
+    "faqs": [
+      [
+        "Macht der Kurs dort weiter, wo ich aufgehört habe?",
+        "Ja. Lektionswerte und die aktuelle Lektion werden im LocalStorage gespeichert, damit du später im selben Browser weitermachen kannst."
+      ],
+      [
+        "Welche Stufen sind enthalten?",
+        "Anfänger (Grundreihe und Rhythmus), Fortgeschritten (obere/untere Reihe und Großbuchstaben) und Profi (Satzzeichen, Zahlen, Symbole und ein Tempoabsatz)."
+      ],
+      [
+        "Wie schalte ich die nächste Lektion frei?",
+        "Beende die Übung mit Live-Feedback und erreiche die Mindestgenauigkeit der Lektion (meist 90–94 %). Fehlversuche kannst du jederzeit wiederholen."
+      ],
+      [
+        "Gibt es ein Zertifikat?",
+        "Ja. Nach allen Lektionen kannst du ein Typing-Master-Zertifikat als PDF mit durchschnittlichem WPM und Genauigkeit herunterladen."
+      ],
+      [
+        "Nutzt das KI?",
+        "Nein. Typing Master ist nur deterministische Übungslogik – keine API-Aufrufe."
+      ]
+    ]
+  },
+  "coding-typing-test": {
+    "name": "Coding-Tipp-Test",
+    "desc": "Tippen von JS, Python, Java, C++, HTML und SQL üben",
+    "title": "Kostenloser Coding-Tipp-Test – JS, Python, Java, C++, HTML, SQL",
+    "description": "Übe das Tippen echter Code-Snippets mit syntaxbewusster Anzeige. Verfolge WPM, Genauigkeit, Fehler, Schwierigkeit, Historie und lade ein Zertifikat herunter – ohne KI.",
+    "example": {
+      "input": "Sprache: JavaScript · Schwierigkeit: Mittel",
+      "output": "Formatierung beim Tippen beibehalten; WPM, Genauigkeit, Historie, Zertifikat"
+    },
+    "faqs": [
+      [
+        "Welche Sprachen werden unterstützt?",
+        "JavaScript-, Python-, Java-, C++-, HTML- und SQL-Snippets in leicht, mittel und schwer."
+      ],
+      [
+        "Bleibt die Formatierung erhalten?",
+        "Ja. Du tippst gegen das exakte Snippet inklusive Leerzeichen und Zeilenumbrüchen."
+      ],
+      [
+        "Nutzt Coding-Tippen KI?",
+        "Nein. Snippets und Bewertung sind reine Client-Logik für latenzarmes Üben."
+      ],
+      [
+        "Kann ich ein Zertifikat bekommen?",
+        "Ja. Nach einem fertigen Snippet kannst du ein PDF-Zertifikat mit WPM und Genauigkeit herunterladen."
+      ],
+      [
+        "Wird die Historie lokal gespeichert?",
+        "Ja. Aktuelle Versuche werden im LocalStorage deines Geräts gespeichert."
+      ]
+    ]
+  }
+}

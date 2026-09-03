@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Loader2, AlertTriangle, ArrowRight, Search } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
 import { getSeoTool } from '../../../config/seoWebmaster/tools';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 
 const inputClasses =
   'w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all';
@@ -38,6 +38,7 @@ const NEXT = {
 };
 
 export default function SeoToolHost({ toolSlug }) {
+  const { toolHref } = useLocalizedHref();
   const tool = getSeoTool(toolSlug);
   const [securityToken, setSecurityToken] = useState('');
   const [turnstileResetKey, setTurnstileResetKey] = useState(0);
@@ -122,7 +123,7 @@ export default function SeoToolHost({ toolSlug }) {
                   ]).map((l) => (
                     <Link
                       key={l.slug}
-                      href={getSeoPath('seo', l.slug)}
+                      href={toolHref('seo', l.slug)}
                       className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600"
                     >
                       {l.label}

@@ -6,6 +6,7 @@
 
 import { toolMetadata } from '../config/toolMetadata';
 import { getSeoPath } from '../config/routes';
+import { getToolHreflangLanguages } from '../i18n/hreflang';
 
 const SITE = 'https://zetawala.com';
 const OG_IMAGE = '/opengraph-image.png';
@@ -31,6 +32,7 @@ export function buildToolPageMetadata({
   const keywords = meta.keywords || [];
 
   const known = Boolean(meta.title);
+  const languages = getToolHreflangLanguages(internalSlug);
 
   return {
     title,
@@ -43,6 +45,7 @@ export function buildToolPageMetadata({
     applicationName: 'Zetawala',
     alternates: {
       canonical: canonicalUrl,
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       title,

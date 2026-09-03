@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Contacto | Zetawala",
+    "description": "Contacta con el soporte de Zetawala sobre herramientas SEO, YouTube, marketplaces, escritura y calculadoras."
+  },
+  "back": "Volver al inicio",
+  "title": "Contactar con soporte",
+  "subtitle": "Escríbenos sobre las herramientas, los datos o tu cuenta.",
+  "nameLabel": "Nombre completo",
+  "namePlaceholder": "Escribe tu nombre",
+  "emailLabel": "Correo electrónico",
+  "emailPlaceholder": "tu@email.com",
+  "messageLabel": "Mensaje",
+  "messagePlaceholder": "¿En qué podemos ayudarte?",
+  "submit": "Enviar mensaje",
+  "sending": "Enviando…",
+  "successTitle": "Mensaje enviado",
+  "successBody": "Hemos registrado tu consulta. La revisaremos y te responderemos en breve.",
+  "successCta": "Enviar otro mensaje",
+  "errors": {
+    "name": "El nombre es obligatorio",
+    "email": "El correo es obligatorio",
+    "emailInvalid": "Indica un correo válido",
+    "message": "El mensaje debe tener al menos 10 caracteres",
+    "send": "No se ha podido enviar el formulario."
+  }
+}

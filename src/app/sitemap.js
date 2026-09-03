@@ -1,6 +1,8 @@
 import { navigationConfig } from '../config/navigation';
 import { getSeoPath } from '../config/routes';
 import { listWritingLangSitemapPaths } from '../config/writing/languages';
+import { listLocalizedSitemapEntries } from '../i18n/sitemap';
+import { getPageHreflangLanguages, getToolHreflangLanguages } from '../i18n/hreflang';
 import dbConnect from '../lib/mongodb';
 import BlogPost from '../models/BlogPost';
 
@@ -18,6 +20,7 @@ export default async function sitemap() {
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 1.0,
+      alternates: { languages: getPageHreflangLanguages('home') },
     },
     {
       url: `${baseUrl}/contact`,
@@ -60,6 +63,7 @@ export default async function sitemap() {
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
+      alternates: { languages: getPageHreflangLanguages('calculators') },
     },
     {
       url: `${baseUrl}/pdf-utilities`,
@@ -166,11 +170,13 @@ export default async function sitemap() {
     if (category.isActive) {
       category.tools.forEach((tool) => {
         if (tool.isActive) {
+          const languages = getToolHreflangLanguages(tool.slug);
           toolRoutes.push({
             url: `${baseUrl}${getSeoPath(category.slug, tool.slug)}`,
             lastModified: currentDate,
             changeFrequency: 'weekly',
             priority: 0.8,
+            ...(languages ? { alternates: { languages } } : {}),
           });
         }
       });
@@ -204,5 +210,5 @@ export default async function sitemap() {
     console.error('Failed to fetch blog routes for sitemap:', err);
   }
 
-  return [...staticRoutes, ...toolRoutes, ...blogRoutes];
+  return [...staticRoutes, ...toolRoutes, ...blogRoutes, ...listLocalizedSitemapEntries(currentDate)];
 }

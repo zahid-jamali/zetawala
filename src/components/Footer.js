@@ -2,121 +2,122 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useCurrentLocale } from './i18n/LocaleProvider';
+import { getHomePath, getLocalizedPagePath, getLocalizedToolPath } from '../i18n/paths';
 
 export default function Footer() {
+  const { locale, t } = useCurrentLocale();
+  const year = new Date().getFullYear();
+
   return (
     <footer className="w-full border-t border-slate-200 dark:border-slate-850 bg-white dark:bg-slate-950 py-12 px-6 md:px-8 text-slate-500 dark:text-slate-400 mt-auto">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         
-        {/* Column 1: Brand */}
         <div className="space-y-4">
-          <span className="font-bold text-slate-900 dark:text-white text-lg">ZetaWala</span>
+          <span className="font-bold text-slate-900 dark:text-white text-lg">{t('brand')}</span>
           <p className="text-xs text-slate-450 dark:text-slate-500 leading-relaxed">
-            High-converting e-commerce analysis and viral content automation suites designed for growth and financial stability.
+            {t('footer.tagline')}
           </p>
         </div>
 
-        {/* Column 2: Workspace Navigation */}
         <div className="space-y-3">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Workspace Pages</h4>
+          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">{t('footer.workspace')}</h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <Link href="/tools/youtube/youtube-niche-finder" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                YouTube Automation
+              <Link href={getLocalizedToolPath(locale, 'youtube', 'niche-finder')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.youtube')}
               </Link>
             </li>
             <li>
-              <Link href="/tools/daraz/daraz-product-hunting" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Daraz SEO Suite
+              <Link href={getLocalizedToolPath(locale, 'daraz', 'product-hunting')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.daraz')}
               </Link>
             </li>
             <li>
-              <Link href="/tools/local-commerce/whatsapp-broadcast-status-copywriter" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Local Social Commerce & WhatsApp Suite
+              <Link href={getLocalizedToolPath(locale, 'local-commerce', 'whatsapp-broadcast')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.whatsapp')}
               </Link>
             </li>
             <li>
-              <Link href="/seo" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                SEO & Webmaster Intelligence
+              <Link href={getLocalizedPagePath(locale, 'seo')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.seo')}
               </Link>
             </li>
             <li>
-              <Link href="/calculators" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Calculators
+              <Link href={getLocalizedPagePath(locale, 'calculators')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.calculators')}
               </Link>
             </li>
             <li>
-              <Link href="/pdf-utilities" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                PDF & Image Utilities
+              <Link href={getLocalizedPagePath(locale, 'pdf-utilities')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.pdf')}
               </Link>
             </li>
             <li>
-              <Link href="/writing" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                AI Writing & Language Tools
+              <Link href={getLocalizedPagePath(locale, 'writing')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.writing')}
               </Link>
             </li>
             <li>
-              <Link href="/study" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                AI Study, Quizzes & Typing
+              <Link href={getLocalizedPagePath(locale, 'study')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.study')}
               </Link>
             </li>
             <li>
-              <Link href="/freelancer" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Freelancer Toolkit
+              <Link href={getLocalizedPagePath(locale, 'freelancer')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.freelancer')}
               </Link>
             </li>
             <li>
-              <Link href="/shopee" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Shopee Seller Toolkit
+              <Link href={getLocalizedPagePath(locale, 'shopee')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.shopee')}
               </Link>
             </li>
             <li>
-              <Link href="/lazada" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Lazada Seller Toolkit
+              <Link href={getLocalizedPagePath(locale, 'lazada')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.lazada')}
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Column 3: Platform Info */}
         <div className="space-y-3">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Platform Info</h4>
+          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">{t('footer.platform')}</h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <Link href="/blog" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Blog
+              <Link href={getLocalizedPagePath(locale, 'blog')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.blog')}
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Contact Support
+              <Link href={getLocalizedPagePath(locale, 'contact')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.contact')}
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Main Portal
+              <Link href={getHomePath(locale)} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.home')}
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Column 4: Compliance Legal */}
         <div className="space-y-3">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">Compliance & Legal</h4>
+          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">{t('footer.legal')}</h4>
           <ul className="space-y-2 text-xs">
             <li>
-              <Link href="/privacy-policy" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Privacy Policy
+              <Link href={getLocalizedPagePath(locale, 'privacy-policy')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.privacy')}
               </Link>
             </li>
             <li>
-              <Link href="/terms" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Terms of Service
+              <Link href={getLocalizedPagePath(locale, 'terms')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.terms')}
               </Link>
             </li>
             <li>
-              <Link href="/cookies" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                Cookie Policy
+              <Link href={getLocalizedPagePath(locale, 'cookies')} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                {t('footer.cookies')}
               </Link>
             </li>
           </ul>
@@ -125,11 +126,11 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-900 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-slate-500">
-        <p>&copy; 2026 zetawala.com. All rights reserved.</p>
+        <p>{t('footer.copyright', { year })}</p>
         <p className="flex gap-4">
-          <span>Authority SEO Platform</span>
+          <span>{t('footer.authority')}</span>
           <span>&middot;</span>
-          <span>Built for Growth</span>
+          <span>{t('footer.growth')}</span>
         </p>
       </div>
     </footer>

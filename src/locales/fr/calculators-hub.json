@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Calculateurs business gratuits – Freelance, marge, LTV et AdSense | Zetawala",
+    "description": "Calculateurs gratuits : tarif freelance, marge bénéficiaire, seuil de rentabilité, LTV, CAC, AdSense et profit. Formules déterministes, sans IA.",
+    "keywords": [
+      "calculateurs business",
+      "calculateur de taux horaire freelance",
+      "calculateur de marge bénéficiaire",
+      "calculateur de seuil de rentabilité",
+      "calculateur de revenus adsense"
+    ]
+  },
+  "hero": {
+    "title": "Calculateurs business et marketing",
+    "subtitle": "Tarifs freelance, prix SaaS, LTV, CAC, ROI pubs, AdSense et profit marketplace : 18 outils gratuits, formules déterministes, sans IA.",
+    "cta": "Ouvrir le calculateur de tarif freelance"
+  },
+  "grid": {
+    "title": "Tous les calculateurs",
+    "subtitle": "18 outils pour les prix, l’unit economics, le ROI marketing et les marges e-commerce.",
+    "localizedBadge": "Traduit"
+  },
+  "pickerTitle": "Choisir le bon calculateur",
+  "pickerSubtitle": "Associez votre objectif au bon point de départ.",
+  "learning": {
+    "title": "Prix et ROI",
+    "subtitle": "Les concepts derrière la suite.",
+    "blogCta": "Lire les guides du blog Calculateurs",
+    "topics": [
+      {
+        "title": "Un tarif clair plutôt que l’intuition",
+        "body": "Sous-facturer, c’est souvent oublier impôts, temps non facturable et charges. Un plancher horaire protège la trésorerie."
+      },
+      {
+        "title": "LTV vs CAC",
+        "body": "Une croissance saine demande un LTV nettement supérieur au CAC. Utilisez les deux calculateurs avant d’augmenter les ads."
+      },
+      {
+        "title": "Le poids des commissions",
+        "body": "Amazon, Etsy et eBay s’ajoutent à la livraison et aux pubs. Modélisez le profit net unitaire avant de scaler le catalogue."
+      },
+      {
+        "title": "Budget des API IA",
+        "body": "Le prix au token paraît faible, mais il scale avec le volume quotidien. Estimez le coût mensuel et annuel avant le lancement."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Questions fréquentes",
+    "subtitle": "Questions courantes sur la suite Calculateurs.",
+    "items": [
+      {
+        "q": "Qu’est-ce que la suite Calculateurs de Zetawala ?",
+        "a": "18 calculateurs déterministes pour freelances, fondateurs SaaS, marketeurs et vendeurs e-commerce. Tout est calculé dans le navigateur, sans appel LLM."
+      },
+      {
+        "q": "Utilisent-ils l’IA ?",
+        "a": "Non. Les maths tournent en local. Les tarifs fournisseurs du calculateur d’API sont des grilles publiées, pas des prédictions."
+      },
+      {
+        "q": "Par lequel commencer ?",
+        "a": "En freelance : tarif horaire ou prix de projet. En SaaS : prix, LTV et CAC. En vente en ligne : profit e-commerce, Amazon FBA, Etsy ou eBay."
+      },
+      {
+        "q": "Les résultats sont-ils exacts ?",
+        "a": "Ce sont des estimations transparentes avec des formules standard. Vérifiez toujours frais, fiscalité et métricas pubs dans vos comptes."
+      }
+    ]
+  }
+}

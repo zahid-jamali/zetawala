@@ -1,0 +1,642 @@
+{
+  "upwork-proposal-generator": {
+    "name": "Generador de propuestas de Upwork",
+    "desc": "Propuestas cortas y detalladas a partir de un anuncio",
+    "title": "Generador gratuito de propuestas de Upwork – Ofertas cortas y detalladas | Zetawala",
+    "description": "Redacta propuestas de Upwork personalizadas, con versión corta y detallada, a partir de cualquier anuncio. El generador gratuito de Zetawala, impulsado por DeepSeek, ayuda a los freelancers a responder más rápido sin textos genéricos de copiar y pegar.",
+    "example": {
+      "input": "Pega la descripción del trabajo + habilidades",
+      "output": "Propuesta personalizada corta + detallada"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de propuestas de Upwork?",
+        "Convierte un anuncio y tu perfil en una oferta corta y otra detallada, listas para enviar en Upwork, con el kit para freelancers de Zetawala."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-proposal-analyzer": {
+    "name": "Analizador de propuestas de Upwork",
+    "desc": "Puntúa propuestas: fortalezas, lagunas y legibilidad",
+    "title": "Analizador gratuito de propuestas de Upwork – Puntuación, fortalezas y lagunas | Zetawala",
+    "description": "Puntúa propuestas de Upwork de 0 a 100 con fortalezas, debilidades, palabras clave que faltan y análisis de legibilidad. Entrenador de ofertas gratuito con DeepSeek para mejorar tus pujas antes de enviarlas.",
+    "example": {
+      "input": "Pega el borrador de la propuesta",
+      "output": "Ficha de puntuación + lista de mejoras"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el analizador de propuestas de Upwork?",
+        "Revisa tu borrador, asigna una puntuación y señala fortalezas, lagunas y problemas de claridad para que mejores la oferta antes de enviarla en Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-job-match-analyzer": {
+    "name": "Analizador de encaje de empleos de Upwork",
+    "desc": "Porcentaje de encaje, habilidades que faltan y probabilidad de ganar",
+    "title": "Analizador gratuito de encaje de empleos de Upwork – Probabilidad de ganar | Zetawala",
+    "description": "Compara anuncios de Upwork con tu currículum o perfil: porcentaje de encaje, habilidades que faltan y probabilidad de ganar. Herramienta gratuita de coincidencia con DeepSeek para decidir a qué trabajos presentar oferta.",
+    "example": {
+      "input": "Descripción del trabajo + perfil",
+      "output": "% de encaje y mejoras sugeridas"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el analizador de encaje de empleos de Upwork?",
+        "Mide cómo encaja tu perfil con el anuncio, indica habilidades que faltan y estima la probabilidad de ganar para priorizar las ofertas que merecen Connects."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-profile-optimizer": {
+    "name": "Optimizador de perfil de Upwork",
+    "desc": "Optimiza titular, bio, habilidades y puntuación de completitud",
+    "title": "Optimizador gratuito de perfil de Upwork – Titular, bio y habilidades | Zetawala",
+    "description": "Optimiza titulares, bios y habilidades de Upwork con una puntuación de completitud y una lista de mejoras. Optimizador gratuito con DeepSeek para que tu perfil convierta más visitas en invitaciones.",
+    "example": {
+      "input": "Titular + bio + habilidades",
+      "output": "Textos optimizados + puntuación de completitud"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el optimizador de perfil de Upwork?",
+        "Reescribe titular, bio y habilidades, y te da una puntuación de completitud con una lista de mejoras para el perfil de Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-cover-letter-generator": {
+    "name": "Generador de cartas de presentación de Upwork",
+    "desc": "Cartas profesionales adaptadas al anuncio",
+    "title": "Generador gratuito de cartas de presentación de Upwork | Zetawala",
+    "description": "Genera cartas de presentación de Upwork profesionales, adaptadas a la descripción del trabajo, las habilidades y la experiencia. Herramienta gratuita con DeepSeek para enviar una carta lista, no un párrafo genérico.",
+    "example": {
+      "input": "Descripción del trabajo + habilidades",
+      "output": "Carta de presentación lista para enviar"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de cartas de presentación de Upwork?",
+        "Redacta una carta de presentación profesional alineada con el anuncio, tus habilidades y tu experiencia, lista para pegar en Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-interview-answer-generator": {
+    "name": "Generador de respuestas de entrevista de Upwork",
+    "desc": "Respuestas a preguntas del cliente con consejos y alternativas",
+    "title": "Generador gratuito de respuestas de entrevista de Upwork | Zetawala",
+    "description": "Responde a las preguntas de entrevista del cliente con réplicas sugeridas, alternativas profesionales y consejos. Entrenador de entrevistas gratuito con DeepSeek para sonar preparado en el chat de Upwork.",
+    "example": {
+      "input": "Pregunta del cliente + tipo de trabajo",
+      "output": "Respuesta sugerida + consejos"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de respuestas de entrevista de Upwork?",
+        "Propone respuestas profesionales a las preguntas del cliente, con alternativas y consejos para el chat o la entrevista en Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-hourly-rate-calculator": {
+    "name": "Calculadora de tarifa por hora de Upwork",
+    "desc": "Tarifa mínima, sugerida y premium según tus objetivos",
+    "title": "Calculadora gratuita de tarifa por hora de Upwork – Mínima, sugerida y premium | Zetawala",
+    "description": "Calcula tarifas por hora mínimas, sugeridas y premium en Upwork a partir de objetivos de ingresos, gastos, impuestos y horas facturables. Solo matemáticas, sin IA, para poner un precio sostenible a tu tiempo.",
+    "example": {
+      "input": "Objetivo 4000 $ · 80 horas facturables",
+      "output": "Mín. / sugerida / premium $/h"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de tarifa por hora de Upwork?",
+        "Convierte tus objetivos de ingresos, gastos, impuestos y horas facturables en una tarifa mínima, una sugerida y una premium para Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Esta calculadora usa únicamente lógica matemática."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-contract-generator": {
+    "name": "Generador de contratos de Upwork",
+    "desc": "Contratos profesionales de proyecto con descarga PDF/DOCX",
+    "title": "Generador gratuito de contratos de Upwork – PDF y DOCX | Zetawala",
+    "description": "Crea plantillas de contrato freelance con alcance, plazos, presupuesto y condiciones de pago. Descarga PDF o DOCX. Es una plantilla educativa, no asesoramiento jurídico.",
+    "example": {
+      "input": "Cliente + alcance + plazos",
+      "output": "Texto del contrato + descarga PDF/DOCX"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de contratos de Upwork?",
+        "Redacta una plantilla de contrato con alcance, plazos, presupuesto y pago, y permite descargarla en PDF o DOCX. No sustituye el asesoramiento de un abogado."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-portfolio-description-generator": {
+    "name": "Generador de descripciones de portafolio de Upwork",
+    "desc": "Descripciones cortas y largas de casos de portafolio",
+    "title": "Generador gratuito de descripciones de portafolio de Upwork | Zetawala",
+    "description": "Escribe descripciones cortas y largas de casos de portafolio en Upwork a partir de detalles del proyecto, tecnologías y resultados. Textos gratuitos con DeepSeek para que el trabajo destaque ante los clientes.",
+    "example": {
+      "input": "Detalles del proyecto + resultados",
+      "output": "Descripciones de portafolio cortas + largas"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de descripciones de portafolio de Upwork?",
+        "Transforma los detalles del proyecto, las tecnologías y los resultados en descripciones cortas y largas listas para el portafolio de Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "upwork-client-followup-generator": {
+    "name": "Generador de seguimientos a clientes de Upwork",
+    "desc": "Seguimientos amables y formales tras enviar la propuesta",
+    "title": "Generador gratuito de seguimientos a clientes de Upwork | Zetawala",
+    "description": "Redacta mensajes de seguimiento profesionales, amables y formales en Upwork después de enviar una propuesta. Herramienta gratuita con DeepSeek para insistir sin parecer insistente.",
+    "example": {
+      "input": "Contexto de la propuesta + días de espera",
+      "output": "Seguimientos amables + formales"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de seguimientos a clientes de Upwork?",
+        "Crea mensajes de seguimiento amables y formales según el contexto de la propuesta y los días de espera, para retomar el hilo en Upwork."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-gig-title-generator": {
+    "name": "Generador de títulos de gig de Fiverr",
+    "desc": "Variaciones de título de gig optimizadas para SEO",
+    "title": "Generador gratuito de títulos de gig de Fiverr – Títulos SEO | Zetawala",
+    "description": "Genera variaciones de título de gig de Fiverr optimizadas para SEO a partir de tu servicio y palabras clave. Generador gratuito con DeepSeek para mejorar el clic y el posicionamiento en la búsqueda de Fiverr.",
+    "example": {
+      "input": "Servicio + palabras clave",
+      "output": "Varios títulos SEO de gig"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de títulos de gig de Fiverr?",
+        "Propone varias variaciones de título SEO a partir de tu servicio y palabras clave, listas para el gig de Fiverr."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-gig-description-generator": {
+    "name": "Generador de descripciones de gig de Fiverr",
+    "desc": "Descripciones de gig estructuradas con CTA claras",
+    "title": "Generador gratuito de descripciones de gig de Fiverr | Zetawala",
+    "description": "Crea descripciones de gig de Fiverr estructuradas, con características, plazo de entrega, secciones y llamadas a la acción. Textos gratuitos con DeepSeek para convertir visitas del gig en pedidos.",
+    "example": {
+      "input": "Servicio + características + entrega",
+      "output": "Descripción completa del gig + CTA"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de descripciones de gig de Fiverr?",
+        "Escribe una descripción estructurada con características, plazos, secciones y una CTA clara para tu gig de Fiverr."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-gig-seo-analyzer": {
+    "name": "Analizador SEO de gigs de Fiverr",
+    "desc": "Puntuación SEO, palabras clave que faltan y legibilidad",
+    "title": "Analizador SEO gratuito de gigs de Fiverr – Puntuación y palabras clave | Zetawala",
+    "description": "Analiza el SEO de un gig de Fiverr: puntuaciones, palabras clave que faltan, legibilidad y sugerencias de optimización. Analizador gratuito con DeepSeek para mejorar el ranking de búsqueda del gig.",
+    "example": {
+      "input": "Título + descripción + etiquetas",
+      "output": "Puntuación SEO + sugerencias"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el analizador SEO de gigs de Fiverr?",
+        "Puntúa el título, la descripción y las etiquetas, señala palabras clave que faltan y propone mejoras de SEO y legibilidad para el gig."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-tag-generator": {
+    "name": "Generador de etiquetas de Fiverr",
+    "desc": "Etiquetas optimizadas e ideas de palabras clave de cola larga",
+    "title": "Generador gratuito de etiquetas de Fiverr – Etiquetas y cola larga | Zetawala",
+    "description": "Genera etiquetas de Fiverr optimizadas e ideas de palabras clave de cola larga para tu nicho de servicio. Herramienta gratuita con DeepSeek para rellenar el campo de tags con términos que los compradores buscan de verdad.",
+    "example": {
+      "input": "Servicio + nicho",
+      "output": "Etiquetas + palabras clave de cola larga"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de etiquetas de Fiverr?",
+        "Sugiere etiquetas y palabras clave de cola larga alineadas con tu servicio y nicho, listas para el gig de Fiverr."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-faq-generator": {
+    "name": "Generador de FAQ de Fiverr",
+    "desc": "Preguntas frecuentes del comprador con respuestas para tu gig",
+    "title": "Generador gratuito de FAQ de Fiverr – Preguntas y respuestas para gigs | Zetawala",
+    "description": "Crea FAQ de gig de Fiverr con respuestas sugeridas para tu servicio y público. Constructor gratuito con DeepSeek para reducir mensajes repetitivos y aumentar la confianza antes del pedido.",
+    "example": {
+      "input": "Servicio + audiencia",
+      "output": "Lista de FAQ con respuestas"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de FAQ de Fiverr?",
+        "Genera preguntas frecuentes del comprador y respuestas sugeridas adaptadas a tu servicio y público, listas para el gig."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-pricing-generator": {
+    "name": "Generador de precios de Fiverr",
+    "desc": "Paquetes Basic, Standard y Premium con consejos de IA",
+    "title": "Generador gratuito de precios de Fiverr – Basic, Standard y Premium | Zetawala",
+    "description": "Crea paquetes Basic, Standard y Premium de Fiverr a partir de horas estimadas y experiencia: precios deterministas más consejos de IA para posicionar los paquetes. Define tres niveles claros sin adivinar cifras.",
+    "example": {
+      "input": "Servicio + horas + nivel",
+      "output": "3 paquetes + sugerencias de IA"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de precios de Fiverr?",
+        "Calcula paquetes Basic, Standard y Premium a partir de horas y experiencia, y añade recomendaciones de IA para posicionar cada nivel."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Los precios de los paquetes usan matemáticas de negocio; la IA añade recomendaciones de posicionamiento."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-gig-image-text-generator": {
+    "name": "Generador de textos para imágenes de gig de Fiverr",
+    "desc": "Titulares de miniatura, insignias y CTA (solo texto)",
+    "title": "Generador gratuito de textos para imágenes de gig de Fiverr | Zetawala",
+    "description": "Genera titulares de miniatura, textos de insignia y llamadas a la acción para las imágenes del gig de Fiverr. Solo texto, sin generación de imágenes, para que el diseño destaque en los resultados de búsqueda.",
+    "example": {
+      "input": "Servicio + argumentos de venta",
+      "output": "Titulares, insignias y texto de CTA"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de textos para imágenes de gig de Fiverr?",
+        "Propone titulares, insignias y CTA para las miniaturas del gig. Es solo texto: no crea ni edita imágenes."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-buyer-request-reply-generator": {
+    "name": "Generador de respuestas a solicitudes de compradores de Fiverr",
+    "desc": "Respuestas cortas y detalladas a las solicitudes de compradores",
+    "title": "Generador gratuito de respuestas a solicitudes de compradores de Fiverr | Zetawala",
+    "description": "Escribe respuestas personalizadas, cortas y detalladas, a las solicitudes de compradores de Fiverr usando tus habilidades y experiencia. Herramienta gratuita con DeepSeek para ganar más buyer requests.",
+    "example": {
+      "input": "Solicitud del comprador + habilidades",
+      "output": "Respuestas cortas + detalladas"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de respuestas a solicitudes de compradores de Fiverr?",
+        "Redacta una respuesta corta y otra detallada a la solicitud del comprador, alineadas con tus habilidades y experiencia."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-profile-bio-generator": {
+    "name": "Generador de biografías de perfil de Fiverr",
+    "desc": "Bios de vendedor profesionales y optimizadas para SEO",
+    "title": "Generador gratuito de biografías de perfil de Fiverr – Bios SEO | Zetawala",
+    "description": "Crea bios de vendedor de Fiverr profesionales y optimizadas para SEO a partir de habilidades, experiencia y servicios. Redactor gratuito con DeepSeek para que el perfil posicione y convierta.",
+    "example": {
+      "input": "Habilidades + experiencia + servicios",
+      "output": "Bios profesionales + SEO"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de biografías de perfil de Fiverr?",
+        "Escribe bios de vendedor profesionales y orientadas a SEO a partir de tus habilidades, experiencia y servicios."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  },
+  "fiverr-review-response-generator": {
+    "name": "Generador de respuestas a reseñas de Fiverr",
+    "desc": "Respuestas a reseñas profesionales, amables y formales",
+    "title": "Generador gratuito de respuestas a reseñas de Fiverr | Zetawala",
+    "description": "Responde a las reseñas de clientes de Fiverr con opciones profesional, amable y formal. Herramienta gratuita con DeepSeek para agradecer, aclarar y proteger la reputación del vendedor.",
+    "example": {
+      "input": "Reseña del cliente + tono",
+      "output": "Tres estilos de respuesta"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de respuestas a reseñas de Fiverr?",
+        "Propone tres estilos de respuesta (profesional, amable y formal) a la reseña del cliente, listos para publicar en Fiverr."
+      ],
+      [
+        "¿Esta herramienta es gratuita?",
+        "Sí. Las herramientas del kit para freelancers de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Reutiliza la integración DeepSeek de Zetawala a través de la API de generación compartida."
+      ],
+      [
+        "¿Puedo reutilizar mis datos de freelancer?",
+        "Sí. Guarda un perfil de freelancer opcional una vez: las herramientas pueden rellenar habilidades, experiencia, tono, enlaces de portafolio y tarifa."
+      ],
+      [
+        "¿Quién debería usarlo?",
+        "Freelancers que consiguen clientes en Upwork y Fiverr y quieren propuestas, gigs, perfiles y mensajes más rápidos."
+      ]
+    ]
+  }
+}

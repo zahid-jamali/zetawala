@@ -1,0 +1,322 @@
+{
+  "lazada-listing-title-generator": {
+    "name": "Generador de títulos para Lazada",
+    "desc": "Títulos SEO con recuento de caracteres",
+    "title": "Generador gratuito de títulos para Lazada | Zetawala",
+    "description": "Crea títulos de ficha para Lazada listos para buscar con el generador gratuito de Zetawala. Coloca palabras clave, marca y atributos clave dentro del límite visible en móvil, con recuento de caracteres y variaciones para probar. Pensado para vendedores de Lazada en el sudeste asiático que quieren más clics en Seller Center sin relleno de palabras clave.",
+    "example": {
+      "input": "Producto: sartén antiadherente 28 cm | Marca: HomeChef | Características: inducción, mango ergonómico",
+      "output": "HomeChef Non-stick Frying Pan 28cm – Sartén de inducción con mango ergonómico, apta para vitro y gas (82 caracteres)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de títulos para Lazada?",
+        "Genera títulos de ficha optimizados para SEO, con recuento de caracteres y varias alternativas, para que los vendedores de Lazada mejoren visibilidad y CTR en el kit de herramientas de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Lazada opera en varios países del sudeste asiático. Los porcentajes de comisión y las tablas de envío son configurables para cada marketplace."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren SEO de fichas más rápido, títulos más claros y más clics desde la búsqueda."
+      ]
+    ]
+  },
+  "lazada-product-description-generator": {
+    "name": "Generador de descripciones para Lazada",
+    "desc": "Descripciones con viñetas y llamada a la acción",
+    "title": "Generador gratuito de descripciones de producto para Lazada | Zetawala",
+    "description": "Escribe descripciones de producto para Lazada orientadas a la conversión con el generador gratuito de Zetawala. Estructura especificaciones, beneficios, viñetas y una llamada a la acción clara para que los compradores confíen en la ficha y baje la tasa de devoluciones. Ideal para vendedores que necesitan texto escaneable en móvil y alineado con Seller Center.",
+    "example": {
+      "input": "Producto: mochila portátil 15,6 pulgadas | Público: oficina y universidad",
+      "output": "Viñetas:\n- Compartimento acolchado para portátil de hasta 15,6\"\n- Tela impermeable y cremalleras reforzadas\n- Puerto USB externo para power bank\nCTA: Añádela al carrito y lleva el equipo protegido cada día."
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de descripciones de producto para Lazada?",
+        "Crea descripciones optimizadas con viñetas y llamada a la acción para que los vendedores de Lazada mejoren conversión y claridad en el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Sirve para cualquier mercado de Lazada. Ajusta idioma, unidades y políticas de envío a tu región en Seller Center."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren descripciones más claras, menos preguntas en el chat y menos devoluciones por expectativas erróneas."
+      ]
+    ]
+  },
+  "lazada-keyword-generator": {
+    "name": "Generador de palabras clave para Lazada",
+    "desc": "Palabras clave principales, de cola larga e intención de búsqueda",
+    "title": "Generador gratuito de palabras clave para Lazada | Zetawala",
+    "description": "Obtén ideas de palabras clave para Lazada: principales, de cola larga y con intención de compra. El generador gratuito de Zetawala te ayuda a rellenar títulos, descripciones y campos de búsqueda de Seller Center para indexar más consultas de compradores. Combina términos de marca con variantes locales de cada mercado de Lazada.",
+    "example": {
+      "input": "Producto: humidificador ultrasónico 4 L",
+      "output": "Principales: ultrasonic humidifier, air humidifier 4l\nCola larga: humidifier for bedroom, quiet humidifier baby\nIntención: buy humidifier lazada, humidifier price"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de palabras clave para Lazada?",
+        "Propone palabras clave principales, de cola larga y de intención de búsqueda para que los vendedores de Lazada mejoren el SEO de sus fichas con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Las ideas se adaptan a cómo buscan los compradores en cada país de Lazada. Revisa siempre el volumen y el idioma locales."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren indexar más búsquedas y no depender solo de un título genérico."
+      ]
+    ]
+  },
+  "lazada-listing-seo-analyzer": {
+    "name": "Analizador SEO de fichas de Lazada",
+    "desc": "Puntuación SEO, palabras clave faltantes y legibilidad",
+    "title": "Analizador SEO gratuito de fichas de Lazada | Zetawala",
+    "description": "Pega el título y la descripción de una ficha de Lazada y obtén una puntuación SEO, palabras clave que faltan, legibilidad y sugerencias concretas. El analizador gratuito de Zetawala te indica qué corregir antes de impulsar anuncios o campañas. Úsalo para auditar fichas débiles y priorizar las que más visibilidad orgánica pueden ganar.",
+    "example": {
+      "input": "Título: lámpara mesa | Descripción: lámpara bonita para habitación",
+      "output": "Puntuación SEO: 38/100\nFaltan: vatios, tipo de bombilla, material, color\nLegibilidad: débil\nSugerencia: añade LED 12 W, E27, metal, blanco cálido y uso (estudio / mesita)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el analizador SEO de fichas de Lazada?",
+        "Evalúa la ficha con una puntuación SEO, detecta palabras clave faltantes y la legibilidad, y propone mejoras para vendedores de Lazada en el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida; la puntuación combina reglas y sugerencias."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Funciona en cualquier mercado de Lazada. Interpreta la puntuación según el idioma y las normas de tu Seller Center local."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren saber por qué una ficha no posiciona y qué cambiar primero."
+      ]
+    ]
+  },
+  "lazada-profit-calculator": {
+    "name": "Calculadora de beneficios de Lazada",
+    "desc": "Beneficio neto, margen y ROI a partir de costes y comisiones",
+    "title": "Calculadora gratuita de beneficios de Lazada | Zetawala",
+    "description": "Calcula beneficio neto, margen y ROI en Lazada a partir de coste, precio, envío, comisiones y anuncios. La calculadora gratuita de Zetawala usa solo matemáticas, sin estimaciones opacas, para que sepas si un SKU sigue siendo rentable tras las tarifas del marketplace. Prueba escenarios de descuento antes de unirse a campañas.",
+    "example": {
+      "input": "Coste: 15,00 | Precio: 39,90 | Envío vendedor: 2,50 | Comisión 5,5 % | Anuncios: 1,20",
+      "output": "Comisión: 2,19\nBeneficio neto: 19,01\nMargen: 47,6 %\nROI sobre coste: 126,7 %"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de beneficios de Lazada?",
+        "Calcula beneficio neto, margen y ROI a partir de costes, precio, envío, comisiones y anuncios para que los vendedores de Lazada vean la rentabilidad real con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas; no inventan cifras."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Los porcentajes de comisión y las tablas de envío son configurables para cada país de Lazada."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que necesitan márgenes claros antes de bajar precios o gastar en publicidad."
+      ]
+    ]
+  },
+  "lazada-fee-calculator": {
+    "name": "Calculadora de comisiones de Lazada",
+    "desc": "Comisiones de marketplace y pago configurables",
+    "title": "Calculadora gratuita de comisiones de Lazada | Zetawala",
+    "description": "Estima comisiones de marketplace y de pago en Lazada, y lo que te queda de payout. La calculadora gratuita de Zetawala deja configurar los porcentajes para tu categoría y país, y usa matemáticas puras. Úsala para comparar el neto entre SKU o entre mercados antes de fijar el precio.",
+    "example": {
+      "input": "Precio: 49,00 | Comisión marketplace 4,8 % | Pago 1,8 % | IVA sobre tarifas según región",
+      "output": "Comisión marketplace: 2,35\nTarifa de pago: 0,88\nPayout estimado del vendedor: 45,77"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de comisiones de Lazada?",
+        "Estima comisiones de marketplace y de pago configurables, y el payout del vendedor, para que los vendedores de Lazada planifiquen precios con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Los porcentajes son configurables: adapta comisión, pago e impuestos al Seller Center de tu país."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren ver el neto después de tarifas, no solo el precio de lista."
+      ]
+    ]
+  },
+  "lazada-pricing-calculator": {
+    "name": "Calculadora de precios de Lazada",
+    "desc": "Precios sugerido, de equilibrio, competitivo y premium",
+    "title": "Calculadora gratuita de precios de Lazada | Zetawala",
+    "description": "Obtén precios sugerido, de equilibrio, competitivo y premium para Lazada, con consejos de IA. La calculadora gratuita de Zetawala combina matemáticas de costes y comisiones con orientación para no vender por debajo del umbral. Ideal antes de campañas, cupones o guerra de precios.",
+    "example": {
+      "input": "Coste: 18 | Comisión 5,5 % | Envío 3 | Margen objetivo 32 % | Precio rival: 42,00",
+      "output": "Equilibrio: 26,14\nSugerido: 36,80\nCompetitivo: 41,50\nPremium: 46,90\nConsejo IA: mantén el sugerido y usa un voucher en lugar de recortar el listado."
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de precios de Lazada?",
+        "Propone precios sugerido, de equilibrio, competitivo y premium, con consejos de IA, para que los vendedores de Lazada fijen precios con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "La parte numérica es matemática determinista; los consejos de posicionamiento de precio usan IA (DeepSeek) a través de la API compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Comisiones y envío son configurables para cada mercado de Lazada."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren precios defendibles: ni tan bajos que maten el margen ni tan altos que no conviertan."
+      ]
+    ]
+  },
+  "lazada-shipping-calculator": {
+    "name": "Calculadora de envío de Lazada",
+    "desc": "Coste de envío estimado y plazo de entrega",
+    "title": "Calculadora gratuita de envío de Lazada | Zetawala",
+    "description": "Estima coste de envío y plazo de entrega en Lazada a partir de tablas regionales configurables. La calculadora gratuita de Zetawala te ayuda a decidir si asumes el envío, usas tarifa plana o LEX según peso y destino. Usa matemáticas, no conjeturas, para no erosionar el margen con logística.",
+    "example": {
+      "input": "Peso: 1,2 kg | Origen: SG | Destino: zona urbana | Servicio: estándar",
+      "output": "Coste estimado: 4,90\nEntrega: 2–5 días\nNota: el envío gratuito en pedidos > 25 reduce conversión si el margen no lo absorbe"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de envío de Lazada?",
+        "Estima coste de envío y plazo de entrega con tablas regionales configurables para que los vendedores de Lazada planifiquen la logística con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Las tablas de envío son configurables para reflejar las diferencias entre países y zonas de Lazada."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que necesitan costes de envío realistas antes de ofrecer envío gratis o elegir un servicio."
+      ]
+    ]
+  },
+  "lazada-chat-reply-generator": {
+    "name": "Generador de respuestas de chat de Lazada",
+    "desc": "Respuestas profesionales, amables y breves",
+    "title": "Generador gratuito de respuestas de chat de Lazada | Zetawala",
+    "description": "Redacta respuestas de chat de Lazada profesionales, amables o cortas a partir del mensaje del comprador. El generador gratuito de Zetawala ayuda a contestar más rápido sin tono frío ni plantillas robóticas. Úsalo para talla, envío, reembolsos y objeciones de precio manteniendo la política de tu tienda.",
+    "example": {
+      "input": "Mensaje: «¿Cuándo llega si pido hoy? Estoy en Yakarta.» | Tono: profesional",
+      "output": "Hola. Si confirmas el pedido hoy antes de las 15:00, el envío estándar suele tardar 2–4 días laborables en Yakarta. Te pasaré el número de seguimiento en cuanto salga el paquete."
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de respuestas de chat de Lazada?",
+        "Propone respuestas profesionales, amables y breves a mensajes de compradores para que los vendedores de Lazada comuniquen mejor con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Genera respuestas en el idioma que indiques. Adapta políticas de envío y devolución a tu mercado de Lazada."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren responder más rápido y con mejor tono sin perder ventas en el chat."
+      ]
+    ]
+  },
+  "lazada-listing-optimizer": {
+    "name": "Optimizador de fichas de Lazada",
+    "desc": "Título, descripción, palabras clave y puntuación de calidad",
+    "title": "Optimizador gratuito de fichas de Lazada | Zetawala",
+    "description": "Mejora de una vez título, descripción, palabras clave y puntuación de calidad de una ficha de Lazada. El optimizador gratuito de Zetawala señala huecos SEO y reescribe el texto para buscar más impresiones orgánicas. Úsalo en fichas con ventas débiles antes de gastar en anuncios.",
+    "example": {
+      "input": "Título actual: funda móvil | Descripción corta sin modelo",
+      "output": "Título: Funda iPhone 15 Pro Max transparente antishock – Protección de esquinas, compatible MagSafe\nPalabras clave: iphone 15 pro max case, magsafe clear case\nPuntuación de calidad: 81 (antes 44)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el optimizador de fichas de Lazada?",
+        "Optimiza título, descripción y palabras clave, y estima una puntuación de calidad, para que los vendedores de Lazada mejoren el SEO de la ficha con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Lazada de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Sirve para cualquier país de Lazada. Ajusta el texto al idioma y a las normas de calidad locales de Seller Center."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Lazada que quieren reforzar fichas débiles de forma integral, no solo cambiar el título."
+      ]
+    ]
+  }
+}

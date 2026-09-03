@@ -1,0 +1,670 @@
+{
+  "brand": "Zetawala",
+  "nav": {
+    "openHub": "Ouvrir le hub",
+    "openHubNamed": "Ouvrir le hub {label}",
+    "toolsCount": "{count} outils",
+    "toolsHint": "{count} outils · utilisez la recherche pour aller plus vite",
+    "allCategories": "Toutes les catégories",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "toggleTheme": "Changer de thème",
+    "closeMega": "Fermer le menu"
+  },
+  "categories": {
+    "youtube": {
+      "label": "YouTube",
+      "desc": "Niches, monétisation et pipeline de contenu"
+    },
+    "daraz": {
+      "label": "Daraz",
+      "desc": "Produits, fiches et marge"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "desc": "Diffusions, pubs et copy locale"
+    },
+    "shopee": {
+      "label": "Shopee",
+      "desc": "SEO des fiches, frais et livraisons"
+    },
+    "lazada": {
+      "label": "Lazada",
+      "desc": "Titres, mots-clés, marges et optimiseur"
+    },
+    "writing": {
+      "label": "Rédaction",
+      "desc": "Humaniseur, grammaire, ourdou et réécriture"
+    },
+    "study": {
+      "label": "Études",
+      "desc": "Notes, quiz, flashcards et dactylo"
+    },
+    "freelancer": {
+      "label": "Freelance",
+      "desc": "Propositions Upwork et Fiverr, gigs et tarifs"
+    },
+    "seo": {
+      "label": "SEO",
+      "desc": "Audits, PageSpeed, sitemaps et ROI"
+    },
+    "calculators": {
+      "label": "Calculateurs",
+      "desc": "Tarifs freelance, LTV, pubs et marges"
+    },
+    "pdf": {
+      "label": "PDF",
+      "desc": "Extraire, convertir, EXIF et OCR"
+    }
+  },
+  "search": {
+    "placeholder": "Rechercher un outil…",
+    "placeholderHero": "Recherchez parmi 100+ outils gratuits…",
+    "noResults": "Aucun outil ne correspond à « {query} »",
+    "hint": "Appuyez sur Entrée pour ouvrir le premier résultat"
+  },
+  "switcher": {
+    "label": "Langue",
+    "choose": "Choisir la langue",
+    "current": "Langue actuelle : {name}"
+  },
+  "footer": {
+    "tagline": "Suites d’analyse e-commerce et d’automatisation de contenu conçues pour la croissance et la clarté financière.",
+    "workspace": "Espaces de travail",
+    "platform": "Plateforme",
+    "legal": "Mentions légales",
+    "youtube": "Automatisation YouTube",
+    "daraz": "Suite SEO Daraz",
+    "whatsapp": "Commerce social local et WhatsApp",
+    "seo": "SEO et intelligence webmaster",
+    "calculators": "Calculateurs",
+    "pdf": "Utilitaires PDF et image",
+    "writing": "Outils d’écriture IA",
+    "study": "Études, quiz et dactylo",
+    "freelancer": "Kit freelance",
+    "shopee": "Kit vendeur Shopee",
+    "lazada": "Kit vendeur Lazada",
+    "blog": "Blog",
+    "contact": "Contact",
+    "home": "Accueil",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "cookies": "Politique cookies",
+    "copyright": "© {year} zetawala.com. Tous droits réservés.",
+    "authority": "Plateforme SEO",
+    "growth": "Conçu pour grandir"
+  },
+  "errors": {
+    "notFoundTitle": "Page introuvable",
+    "notFoundBody": "Cette page n’est pas disponible dans cette langue."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu"
+  },
+  "tools": {
+    "profit-margin": {
+      "name": "Calculateur de marge bénéficiaire",
+      "desc": "Marge brute, marge % et markup à partir du coût et du prix"
+    },
+    "break-even": {
+      "name": "Calculateur de seuil de rentabilité",
+      "desc": "Unités et chiffre d’affaires pour couvrir les coûts fixes"
+    },
+    "freelance-hourly-rate": {
+      "name": "Calculateur de taux horaire freelance",
+      "desc": "Taux minimum, recommandé et premium à partir de vos objectifs"
+    },
+    "salary-to-hourly": {
+      "name": "Calculateur salaire vers taux horaire",
+      "desc": "Convertir un salaire annuel ou mensuel en taux horaire"
+    },
+    "customer-ltv": {
+      "name": "Calculateur de valeur vie client (LTV)",
+      "desc": "LTV à partir du panier moyen, de la fréquence et de la durée de vie"
+    },
+    "adsense-revenue": {
+      "name": "Calculateur de revenus AdSense",
+      "desc": "Estimer les revenus AdSense à partir des pages vues et du RPM"
+    },
+    "niche-finder": {
+      "name": "Chercheur et recommandeur de niches YouTube",
+      "desc": "Découverte de niches guidée par les données"
+    },
+    "niche-opportunity": {
+      "name": "Analyseur d'opportunité de niche YouTube",
+      "desc": "Validez la demande d'une niche face à la concurrence"
+    },
+    "channel-health": {
+      "name": "Analyseur de santé de chaîne YouTube",
+      "desc": "Notez la performance d'une chaîne via les données publiques"
+    },
+    "video-performance": {
+      "name": "Analyseur de performance vidéo YouTube",
+      "desc": "Comparez une vidéo à la référence de la chaîne"
+    },
+    "revenue-calculator": {
+      "name": "Calculateur de revenus YouTube",
+      "desc": "Estimez les gains à partir des vues et du RPM"
+    },
+    "video-ideas": {
+      "name": "Générateur d'idées de vidéos",
+      "desc": "Trouvez des concepts viraux et tendance"
+    },
+    "title-generator": {
+      "name": "Rédacteur de titres",
+      "desc": "Rédaction de titres à fort CTR"
+    },
+    "hook-architect": {
+      "name": "Accroche de rétention d'audience",
+      "desc": "Captez l'attention du spectateur"
+    },
+    "description-builder": {
+      "name": "Rédacteur de descriptions SEO",
+      "desc": "Structure sémantique orientée SEO"
+    },
+    "tags-extractor": {
+      "name": "Extracteur de tags et de mots-clés",
+      "desc": "Mots-clés pour YouTube Studio"
+    },
+    "thumbnail-prompt": {
+      "name": "Générateur de prompts de miniatures par IA",
+      "desc": "Prompts graphiques pour Midjourney"
+    },
+    "script-master": {
+      "name": "Rédacteur de scripts complet",
+      "desc": "Script audio mot à mot"
+    },
+    "visuals-recommender": {
+      "name": "Recommandateur de visuels",
+      "desc": "Trouvez des vidéos de stock et des prompts d'images"
+    },
+    "product-hunting": {
+      "name": "Intelligence de recherche de produits",
+      "desc": "Simulez la demande et les marges"
+    },
+    "roman-urdu-keywords": {
+      "name": "Chercheur de mots-clés en Roman Urdu",
+      "desc": "Termes de recherche du marché pakistanais"
+    },
+    "product-title": {
+      "name": "Générateur de titres de produits",
+      "desc": "Titres optimisés à fort CTR"
+    },
+    "product-description": {
+      "name": "Générateur de descriptions de produits",
+      "desc": "Puces et texte de description"
+    },
+    "listing-optimizer": {
+      "name": "Optimiseur de fiches produit",
+      "desc": "Améliorez le texte pour le classement"
+    },
+    "competitor-rewriter": {
+      "name": "Réécriveur de fiches concurrentes",
+      "desc": "Rendez les fiches concurrentes uniques"
+    },
+    "daraz-keywords": {
+      "name": "Générateur de mots-clés Daraz",
+      "desc": "Générez des tags à fort trafic"
+    },
+    "customer-reply": {
+      "name": "Générateur de réponses clients",
+      "desc": "Rédigez des réponses au service client"
+    },
+    "faq-generator": {
+      "name": "Générateur de FAQ",
+      "desc": "Générez les questions-réponses des acheteurs"
+    },
+    "benefits-generator": {
+      "name": "Générateur de bénéfices produit",
+      "desc": "Formulez la valeur de vos produits"
+    },
+    "negative-reply": {
+      "name": "Générateur de réponses aux avis négatifs",
+      "desc": "Traitez les avis négatifs avec courtoisie"
+    },
+    "sales-copy": {
+      "name": "Générateur de textes de vente persuasifs",
+      "desc": "Rédaction fondée sur les formules AIDA"
+    },
+    "profit-calculator": {
+      "name": "Analyseur de bénéfices Daraz",
+      "desc": "Analysez marges et bénéfice net"
+    },
+    "whatsapp-broadcast": {
+      "name": "Rédacteur de diffusions et de statuts WhatsApp",
+      "desc": "Textes AIDA pour diffusions et statuts en Roman Urdu"
+    },
+    "local-ad-script": {
+      "name": "Script publicitaire local Facebook/Instagram",
+      "desc": "Scripts et légendes courts pour publicités locales"
+    },
+    "wholesale-negotiation": {
+      "name": "Rédacteur de négociations avec les grossistes",
+      "desc": "Modèles de demande et de négociation pour Shah Alami"
+    },
+    "social-comment-responder": {
+      "name": "Répondeur aux prix et commentaires sur les réseaux",
+      "desc": "Réponses automatiques polies orientées conversion"
+    },
+    "product-storyboard": {
+      "name": "Storyboard produit d'une page",
+      "desc": "Publications narratives à partir des points de douleur"
+    },
+    "website-checker": {
+      "name": "Vérificateur SEO de site web",
+      "desc": "Audit technique et on-page avec scores"
+    },
+    "content-audit": {
+      "name": "Audit de contenu SEO",
+      "desc": "Structure du contenu et facteurs on-page"
+    },
+    "title-meta-analyzer": {
+      "name": "Analyseur de titres et méta descriptions",
+      "desc": "Métadonnées manquantes, dupliquées ou faibles"
+    },
+    "pagespeed-analyzer": {
+      "name": "PageSpeed et Core Web Vitals",
+      "desc": "Performance Google PSI et Core Web Vitals"
+    },
+    "internal-link-analyzer": {
+      "name": "Analyseur de liens internes et de pages orphelines",
+      "desc": "Maillage interne et risques de pages orphelines"
+    },
+    "broken-link-checker": {
+      "name": "Vérificateur de liens morts",
+      "desc": "Liens internes et externes cassés"
+    },
+    "sitemap-tool": {
+      "name": "Générateur et validateur de sitemaps",
+      "desc": "Générez ou validez des sitemaps XML"
+    },
+    "canonical-indexability": {
+      "name": "Vérificateur de canoniques et d'indexabilité",
+      "desc": "Signaux de canonique, robots et indexation"
+    },
+    "action-plan": {
+      "name": "Générateur de plan d'action SEO",
+      "desc": "Feuille de route SEO priorisée"
+    },
+    "robots-txt-tool": {
+      "name": "Générateur et testeur de robots.txt",
+      "desc": "Créez et testez vos règles d'exploration"
+    },
+    "header-meta-inspector": {
+      "name": "Inspecteur d'en-têtes et de balises meta",
+      "desc": "Audit du titre, des balises OG, Twitter et meta"
+    },
+    "traffic-revenue": {
+      "name": "Estimateur de trafic et de revenus publicitaires",
+      "desc": "Valeur estimée du trafic (clairement indiquée)"
+    },
+    "health-score": {
+      "name": "Calculateur de score de santé SEO",
+      "desc": "Vue d'ensemble de la santé SEO"
+    },
+    "keyword-density": {
+      "name": "Vérificateur de densité de mots-clés",
+      "desc": "Fréquence des expressions de 1 à 3 mots"
+    },
+    "seo-roi": {
+      "name": "Calculateur de retour sur investissement SEO",
+      "desc": "Estimez le retour de votre investissement SEO"
+    },
+    "keyword-roi": {
+      "name": "Calculateur de rentabilité des mots-clés",
+      "desc": "Estimez le trafic et les revenus d'un mot-clé"
+    },
+    "content-roi": {
+      "name": "Calculateur de rentabilité du contenu",
+      "desc": "Estimez le retour du marketing de contenu"
+    },
+    "ai-api-cost": {
+      "name": "Calculateur de coût d’API IA",
+      "desc": "Estimer les dépenses OpenAI, Anthropic, Google et DeepSeek"
+    },
+    "saas-pricing": {
+      "name": "Calculateur de tarification SaaS",
+      "desc": "Prix d’équilibre et tarifs d’abonnement recommandés"
+    },
+    "customer-cac": {
+      "name": "Calculateur de coût d’acquisition client (CAC)",
+      "desc": "CAC à partir des dépenses marketing et commerciales"
+    },
+    "content-marketing-roi": {
+      "name": "Calculateur de ROI du content marketing",
+      "desc": "Trafic, clients et ROI du contenu"
+    },
+    "google-ads-profit": {
+      "name": "Calculateur de profit Google Ads",
+      "desc": "Clics, conversions, profit et ROI publicitaire"
+    },
+    "email-marketing-roi": {
+      "name": "Calculateur de ROI de l’email marketing",
+      "desc": "Ouvertures, clics, clients et ROI email"
+    },
+    "affiliate-earnings": {
+      "name": "Calculateur de revenus d’affiliation",
+      "desc": "Clics, ventes et commissions d’affiliation"
+    },
+    "ecommerce-profit": {
+      "name": "Calculateur de profit e-commerce",
+      "desc": "Profit net après frais, livraison et pubs"
+    },
+    "amazon-fba-profit": {
+      "name": "Calculateur de profit Amazon FBA",
+      "desc": "Profit net FBA, marge et ROI"
+    },
+    "etsy-fee-profit": {
+      "name": "Calculateur de frais et profit Etsy",
+      "desc": "Frais Etsy, profit net et marge"
+    },
+    "ebay-fee": {
+      "name": "Calculateur de frais eBay",
+      "desc": "Frais eBay, profit net et versement"
+    },
+    "freelance-project-pricing": {
+      "name": "Calculateur de tarification de projet freelance",
+      "desc": "Tarifer des projets avec heures et contingence"
+    },
+    "pdf-to-markdown": {
+      "name": "Convertisseur PDF vers Markdown",
+      "desc": "Convertit des PDF en Markdown propre avec titres et listes"
+    },
+    "pdf-table-extractor": {
+      "name": "Extracteur de tableaux PDF",
+      "desc": "Détecte les tableaux et exporte CSV, Excel ou JSON"
+    },
+    "pdf-link-extractor": {
+      "name": "Extracteur de liens PDF",
+      "desc": "Extrait URL, e-mails, téléphones et liens internes"
+    },
+    "pdf-metadata-viewer": {
+      "name": "Visualiseur de métadonnées PDF",
+      "desc": "Affiche auteur, dates, chiffrement et permissions PDF"
+    },
+    "pdf-image-extractor": {
+      "name": "Extracteur d’images PDF",
+      "desc": "Extrait les images intégrées avec galerie et téléchargement ZIP"
+    },
+    "excel-formula-generator": {
+      "name": "Générateur de formules Excel",
+      "desc": "Formules par règles pour recherche, calcul, date, texte et logique"
+    },
+    "excel-formula-explainer": {
+      "name": "Explicateur de formules Excel",
+      "desc": "Explique formules Excel, arguments et résultat attendu"
+    },
+    "excel-to-json": {
+      "name": "Convertisseur Excel vers JSON",
+      "desc": "Convertit des feuilles Excel en JSON structuré"
+    },
+    "json-to-excel": {
+      "name": "Convertisseur JSON vers Excel",
+      "desc": "Valide le JSON et télécharge en XLSX"
+    },
+    "csv-to-excel": {
+      "name": "Convertisseur CSV vers Excel",
+      "desc": "Importez un CSV, prévisualisez les lignes, téléchargez XLSX"
+    },
+    "image-metadata-viewer": {
+      "name": "Visualiseur de métadonnées d’image",
+      "desc": "Affiche EXIF appareil, GPS, ISO, ouverture et résolution"
+    },
+    "exif-metadata-remover": {
+      "name": "Suppresseur de métadonnées EXIF",
+      "desc": "Retire les métadonnées d’image en préservant la qualité"
+    },
+    "image-color-palette": {
+      "name": "Extracteur de palette de couleurs d’image",
+      "desc": "Couleurs dominantes avec indices HEX, RGB, CSS et Tailwind"
+    },
+    "social-image-resizer": {
+      "name": "Redimensionneur d’images pour réseaux sociaux",
+      "desc": "Redimensionne pour Instagram, Facebook, LinkedIn, X, TikTok et plus"
+    },
+    "screenshot-to-text": {
+      "name": "Capture d’écran vers texte (OCR)",
+      "desc": "OCR de captures vers texte copiable, TXT ou Markdown"
+    },
+    "ai-humanizer": {
+      "name": "Humaniseur d'IA",
+      "desc": "Réécrivez un texte d'IA pour qu'il sonne naturel en anglais, espagnol ou ourdou"
+    },
+    "ai-content-detector": {
+      "name": "Détecteur de contenu IA",
+      "desc": "Estimez l'écriture IA vs humaine avec des signaux par phrase"
+    },
+    "plagiarism-checker": {
+      "name": "Détecteur de plagiat",
+      "desc": "Analyse locale de similarité pour documents collés ou importés"
+    },
+    "grammar-checker": {
+      "name": "Correcteur grammatical",
+      "desc": "Suggestions de grammaire, orthographe, ponctuation et style"
+    },
+    "paraphrasing-tool": {
+      "name": "Outil de reformulation",
+      "desc": "Réécrivez un texte en modes standard, fluidité, formel, créatif ou académique"
+    },
+    "roman-urdu-to-urdu": {
+      "name": "Convertisseur Roman Urdu → ourdou",
+      "desc": "Convertissez le Roman Urdu en écriture ourdoue correcte"
+    },
+    "urdu-to-roman-urdu": {
+      "name": "Convertisseur ourdou → Roman Urdu",
+      "desc": "Translittérez l'écriture ourdoue en Roman Urdu"
+    },
+    "roman-urdu-grammar": {
+      "name": "Correcteur grammatical et orthographique Roman Urdu",
+      "desc": "Corrigez l'orthographe et la grammaire du Roman Urdu avec comparaison côte à côte"
+    },
+    "ai-text-summarizer": {
+      "name": "Résumeur de texte IA",
+      "desc": "Résumés courts, à puces et points clés en plusieurs langues"
+    },
+    "ai-rewrite-tool": {
+      "name": "Outil de réécriture IA",
+      "desc": "Réécrivez plus court, plus long, professionnel, amical ou orienté SEO"
+    },
+    "ai-notes-generator": {
+      "name": "Générateur de notes IA",
+      "desc": "Générez des notes de cours complètes avec points clés et exemples"
+    },
+    "ai-quiz-generator": {
+      "name": "Générateur de quiz IA",
+      "desc": "QCM interactifs avec scores, explications et mode révision"
+    },
+    "pdf-to-quiz": {
+      "name": "Générateur de quiz à partir d'un PDF",
+      "desc": "Importez un PDF et générez des QCM d'entraînement avec réponses"
+    },
+    "ai-flashcard-generator": {
+      "name": "Générateur de flashcards IA",
+      "desc": "Flashcards interactives à retourner à partir d'un sujet ou d'un PDF"
+    },
+    "youtube-study-notes": {
+      "name": "Notes d'étude IA à partir de YouTube",
+      "desc": "Notes, résumé, points clés et quiz à partir d'une URL YouTube"
+    },
+    "ai-assignment-generator": {
+      "name": "Générateur de devoirs IA",
+      "desc": "Devoirs structurés avec titres, références et conclusion"
+    },
+    "ai-homework-solver": {
+      "name": "Aide aux devoirs IA",
+      "desc": "Explications étape par étape avec réponse finale et concepts clés"
+    },
+    "typing-speed-test": {
+      "name": "Test de vitesse de frappe",
+      "desc": "WPM, précision, fautes, tests chronométrés et certificat téléchargeable"
+    },
+    "typing-master-course": {
+      "name": "Cours Typing Master",
+      "desc": "Leçons guidées avec feedback en direct, seuils de précision et certificat"
+    },
+    "coding-typing-test": {
+      "name": "Test de frappe de code",
+      "desc": "Entraînez-vous à taper du JS, Python, Java, C++, HTML et SQL"
+    },
+    "upwork-proposal-generator": {
+      "name": "Générateur de propositions Upwork",
+      "desc": "Propositions courtes et détaillées à partir d'une offre"
+    },
+    "upwork-proposal-analyzer": {
+      "name": "Analyseur de propositions Upwork",
+      "desc": "Note les propositions : forces, lacunes et lisibilité"
+    },
+    "upwork-job-match-analyzer": {
+      "name": "Analyseur de correspondance d'offres Upwork",
+      "desc": "Taux de correspondance, compétences manquantes et chance de gagner"
+    },
+    "upwork-profile-optimizer": {
+      "name": "Optimiseur de profil Upwork",
+      "desc": "Optimise titre, bio, compétences et score de complétude"
+    },
+    "upwork-cover-letter-generator": {
+      "name": "Générateur de lettres de motivation Upwork",
+      "desc": "Lettres professionnelles adaptées à l'offre"
+    },
+    "upwork-interview-answer-generator": {
+      "name": "Générateur de réponses d'entretien Upwork",
+      "desc": "Réponses aux questions client avec conseils et alternatives"
+    },
+    "upwork-hourly-rate-calculator": {
+      "name": "Calculateur de tarif horaire Upwork",
+      "desc": "Tarifs minimum, suggéré et premium selon vos objectifs"
+    },
+    "upwork-contract-generator": {
+      "name": "Générateur de contrats Upwork",
+      "desc": "Contrats de projet professionnels avec téléchargement PDF/DOCX"
+    },
+    "upwork-portfolio-description-generator": {
+      "name": "Générateur de descriptions de portfolio Upwork",
+      "desc": "Descriptions courtes et longues d'études de cas"
+    },
+    "upwork-client-followup-generator": {
+      "name": "Générateur de relances client Upwork",
+      "desc": "Relances amicales et formelles après envoi de la proposition"
+    },
+    "fiverr-gig-title-generator": {
+      "name": "Générateur de titres de gig Fiverr",
+      "desc": "Variantes de titre de gig optimisées SEO"
+    },
+    "fiverr-gig-description-generator": {
+      "name": "Générateur de descriptions de gig Fiverr",
+      "desc": "Descriptions de gig structurées avec CTA clairs"
+    },
+    "fiverr-gig-seo-analyzer": {
+      "name": "Analyseur SEO de gig Fiverr",
+      "desc": "Score SEO, mots-clés manquants et lisibilité"
+    },
+    "fiverr-tag-generator": {
+      "name": "Générateur de tags Fiverr",
+      "desc": "Tags optimisés et idées de mots-clés de longue traîne"
+    },
+    "fiverr-faq-generator": {
+      "name": "Générateur de FAQ Fiverr",
+      "desc": "FAQ acheteur avec réponses suggérées pour votre gig"
+    },
+    "fiverr-pricing-generator": {
+      "name": "Générateur de tarifs Fiverr",
+      "desc": "Packs Basic, Standard et Premium avec conseils IA"
+    },
+    "fiverr-gig-image-text-generator": {
+      "name": "Générateur de textes d'image de gig Fiverr",
+      "desc": "Titres de miniature, badges et CTA (texte seulement)"
+    },
+    "fiverr-buyer-request-reply-generator": {
+      "name": "Générateur de réponses aux demandes d'acheteurs Fiverr",
+      "desc": "Réponses courtes et détaillées aux buyer requests"
+    },
+    "fiverr-profile-bio-generator": {
+      "name": "Générateur de bio de profil Fiverr",
+      "desc": "Bios vendeur professionnelles et optimisées SEO"
+    },
+    "fiverr-review-response-generator": {
+      "name": "Générateur de réponses aux avis Fiverr",
+      "desc": "Réponses aux avis professionnelles, amicales et formelles"
+    },
+    "shopee-listing-title-generator": {
+      "name": "Générateur de titres Shopee",
+      "desc": "Titres SEO avec compteur de caractères"
+    },
+    "shopee-product-description-generator": {
+      "name": "Générateur de descriptions Shopee",
+      "desc": "Descriptions avec puces et appel à l'action"
+    },
+    "shopee-keyword-generator": {
+      "name": "Générateur de mots-clés Shopee",
+      "desc": "Mots-clés principaux, longue traîne et intention de recherche"
+    },
+    "shopee-listing-seo-analyzer": {
+      "name": "Analyseur SEO d'annonces Shopee",
+      "desc": "Score SEO, mots-clés manquants et lisibilité"
+    },
+    "shopee-profit-calculator": {
+      "name": "Calculateur de profit Shopee",
+      "desc": "Profit net, marge et ROI à partir des coûts et frais"
+    },
+    "shopee-fee-calculator": {
+      "name": "Calculateur de frais Shopee",
+      "desc": "Frais marketplace et de paiement configurables"
+    },
+    "shopee-pricing-calculator": {
+      "name": "Calculateur de prix Shopee",
+      "desc": "Prix suggéré, seuil de rentabilité, concurrentiel et premium"
+    },
+    "shopee-shipping-calculator": {
+      "name": "Calculateur d'expédition Shopee",
+      "desc": "Coût d'expédition estimé et délai de livraison"
+    },
+    "shopee-chat-reply-generator": {
+      "name": "Générateur de réponses de chat Shopee",
+      "desc": "Réponses professionnelles, amicales et courtes"
+    },
+    "shopee-listing-optimizer": {
+      "name": "Optimiseur d'annonces Shopee",
+      "desc": "Titre, description, mots-clés et score de qualité"
+    },
+    "lazada-listing-title-generator": {
+      "name": "Générateur de titres Lazada",
+      "desc": "Titres SEO avec compteur de caractères"
+    },
+    "lazada-product-description-generator": {
+      "name": "Générateur de descriptions Lazada",
+      "desc": "Descriptions avec puces et appel à l'action"
+    },
+    "lazada-keyword-generator": {
+      "name": "Générateur de mots-clés Lazada",
+      "desc": "Mots-clés principaux, longue traîne et intention de recherche"
+    },
+    "lazada-listing-seo-analyzer": {
+      "name": "Analyseur SEO d'annonces Lazada",
+      "desc": "Score SEO, mots-clés manquants et lisibilité"
+    },
+    "lazada-profit-calculator": {
+      "name": "Calculateur de profit Lazada",
+      "desc": "Profit net, marge et ROI à partir des coûts et frais"
+    },
+    "lazada-fee-calculator": {
+      "name": "Calculateur de frais Lazada",
+      "desc": "Frais marketplace et de paiement configurables"
+    },
+    "lazada-pricing-calculator": {
+      "name": "Calculateur de prix Lazada",
+      "desc": "Prix suggéré, seuil de rentabilité, concurrentiel et premium"
+    },
+    "lazada-shipping-calculator": {
+      "name": "Calculateur d'expédition Lazada",
+      "desc": "Coût d'expédition estimé et délai de livraison"
+    },
+    "lazada-chat-reply-generator": {
+      "name": "Générateur de réponses de chat Lazada",
+      "desc": "Réponses professionnelles, amicales et courtes"
+    },
+    "lazada-listing-optimizer": {
+      "name": "Optimiseur d'annonces Lazada",
+      "desc": "Titre, description, mots-clés et score de qualité"
+    }
+  }
+}

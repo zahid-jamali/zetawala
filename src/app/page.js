@@ -4,6 +4,7 @@ import PipelineFlowShowcase from '../components/sections/PipelineFlowShowcase';
 import FeaturesGrid from '../components/sections/FeaturesGrid';
 import TrustAnalytics from '../components/sections/TrustAnalytics';
 import FAQSection from '../components/sections/FAQSection';
+import { getPageHreflangLanguages } from '../i18n/hreflang';
 
 export const metadata = {
   title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',
@@ -11,6 +12,7 @@ export const metadata = {
     'Zetawala offers free AI tools for YouTube automation, Daraz SEO, WhatsApp social commerce, and SEO webmaster audits—titles, scripts, niche research, PageSpeed, and more.',
   alternates: {
     canonical: 'https://zetawala.com/',
+    languages: getPageHreflangLanguages('home'),
   },
   openGraph: {
     title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',

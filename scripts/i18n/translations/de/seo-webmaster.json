@@ -1,0 +1,614 @@
+{
+  "website-checker": {
+    "name": "SEO-Website-Prüfer",
+    "desc": "Technisches und Onpage-Audit mit Scores",
+    "title": "SEO-Website-Prüfer – kostenloses SEO-Audit",
+    "description": "Der kostenlose SEO-Website-Prüfer von Zetawala führt ein technisches und Onpage-SEO-Audit für jede öffentliche URL durch. Er crawlt eine begrenzte Seitenstichprobe, berechnet einen deterministischen Audit-Score aus Titeln, Metadaten, Überschriften, Links und Indexierbarkeitssignalen und nutzt KI ausschließlich, um diese gemessenen Probleme in priorisierte Maßnahmen zu übersetzen – keine erfundenen Kennzahlen.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Gesamt 72/100 · Kritisch: Meta-Description fehlt, schwache H1 · Warnungen: dünne Seiten · Priorisierte KI-Maßnahmen zu den Audit-Problemen"
+    },
+    "faqs": [
+      [
+        "Was analysiert der kostenlose SEO-Website-Prüfer?",
+        "Er crawlt eine Stichprobe öffentlicher URLs (bis zu etwa 12 Seiten, Tiefe 2), bewertet Onpage- und technische Signale und listet kritische Probleme und Warnungen auf. Die KI fasst nur zusammen und priorisiert, was das Audit bereits gefunden hat."
+      ],
+      [
+        "Muss ich den Besitz der Website nachweisen?",
+        "Nein. Füge einfach eine öffentlich erreichbare URL ein. Zetawala lädt das HTML wie ein Crawler – Seiten hinter einer Anmeldung oder gesperrte Seiten lassen sich nicht prüfen."
+      ],
+      [
+        "Ist der SEO-Score ein offizieller Google-Wert?",
+        "Nein. Es ist ein deterministischer Audit-Score von Zetawala auf Basis gemessener Seitensignale. Er ist weder Search Console noch ein Google-Ranking-Score."
+      ],
+      [
+        "Erfindet die KI SEO-Probleme?",
+        "Nein. Scores und Problemlisten werden zuerst berechnet. Die KI interpretiert ausschließlich die übergebenen Audit-Daten und darf keine neuen Probleme erfinden."
+      ],
+      [
+        "Ist das ein vollständiger Website-Crawl?",
+        "Nein. Der Umfang ist aus Gründen von Geschwindigkeit und Kosten bewusst begrenzt. Nutze ihn als schnellen kostenlosen SEO-Audit-Durchlauf und prüfe anschließend tiefer mit den anderen Webmaster-Tools."
+      ],
+      [
+        "Für wen ist dieses Tool gedacht?",
+        "Für Websitebetreiber, Freelancer und Agenturen, die einen kostenlosen SEO-Website-Prüfer wollen, bevor sie Metadaten, Links, Indexierbarkeit oder Core Web Vitals korrigieren."
+      ]
+    ]
+  },
+  "content-audit": {
+    "name": "SEO-Content-Audit",
+    "desc": "Contentstruktur und Onpage-Faktoren",
+    "title": "SEO-Content-Audit – kostenlose Onpage-Analyse",
+    "description": "Führe ein kostenloses SEO-Content-Audit für jede öffentliche Seiten-URL durch. Zetawala misst Wortanzahl, Überschriftenhierarchie, fehlende Alt-Texte bei Bildern sowie die Zahl interner und externer Links, bewertet die Onpage-Struktur und nutzt KI nur zur Interpretation dieser Messwerte – ideal für die Korrektur dünner Inhalte und Überschriften.",
+    "example": {
+      "input": "URL: https://example.com/blog/seo-guide",
+      "output": "Wortanzahl 840 · H1: 1 · H2: 4 · Fehlender Alt-Text: 2 · Interne Links: 6 · Onpage-Score und KI-Verbesserungen aus den gemessenen Lücken"
+    },
+    "faqs": [
+      [
+        "Was prüft das Content-Audit-Tool?",
+        "Es ruft eine öffentliche Seite ab und prüft Titel, Meta-Description, Überschriften, Wortanzahl, Bilder ohne Alt-Text und die Anzahl der Links und bewertet anschließend die Onpage-SEO-Struktur."
+      ],
+      [
+        "Ist das ein Plagiats- oder Duplicate-Content-Prüfer?",
+        "Nein. Es prüft die Struktur und die Onpage-SEO-Signale der angegebenen URL. Es durchsucht das Web nicht nach kopierten Texten."
+      ],
+      [
+        "Kann ich reinen Text statt einer URL einfügen?",
+        "Das Content-Audit ist auf den Abruf einer Live-URL ausgelegt. Für eingefügten Text nutze den kostenlosen Keyword-Dichte-Prüfer."
+      ],
+      [
+        "Wie hilft die KI beim Content-Audit?",
+        "Die KI interpretiert die gemessenen Werte (Wortanzahl, Überschriften, fehlende Alt-Texte, Linkanzahl). Sie erfindet keine Seitenstatistiken."
+      ],
+      [
+        "Verbessert ein Content-Audit allein das Ranking?",
+        "Es macht strukturelle Lücken sichtbar, die Relevanz und Nutzererlebnis oft schaden. Du musst die Korrekturen dennoch veröffentlichen, Links gewinnen und die Suchintention treffen."
+      ],
+      [
+        "Ist das Content-Audit bei Zetawala kostenlos?",
+        "Ja. Es ist ein kostenloses SEO-Content-Audit für öffentliche Seiten – ohne Nachweis des Websitebesitzes."
+      ]
+    ]
+  },
+  "title-meta-analyzer": {
+    "name": "Analysator für Titel und Meta-Descriptions",
+    "desc": "Fehlende, doppelte und schwache Metadaten",
+    "title": "Meta-Description-Prüfer und Title-Tag-Analysator",
+    "description": "Kostenloser Meta-Description-Prüfer und Title-Tag-Analysator von Zetawala. Nimm Seiten aus deiner Sitemap oder einem kurzen Crawl als Stichprobe, erkenne fehlende, zu kurze oder zu lange Titel und Beschreibungen, finde Duplikate und vergleiche Längenprobleme, die Suchergebnis-Snippets und Klickrate beeinträchtigen.",
+    "example": {
+      "input": "URL: https://example.com/products/widget",
+      "output": "Geprüfte Seiten: 18 · Titel in Ordnung (58 Zeichen) · Meta-Description fehlt · Doppelter Titel auf 2 URLs gefunden"
+    },
+    "faqs": [
+      [
+        "Wie lang sollte ein Title-Tag sein?",
+        "Ziel sind etwa 50 bis 60 Zeichen, damit Google ihn seltener abschneidet. Relevanz zählt dennoch mehr als eine exakte Zeichenzahl."
+      ],
+      [
+        "Warum einen Meta-Description-Prüfer nutzen?",
+        "Meta-Descriptions ranken Seiten nicht direkt, doch starke Snippets verbessern die Klickrate, wenn Google sie in den Ergebnissen verwendet."
+      ],
+      [
+        "Wie findet Zetawala doppelte Titel?",
+        "Es nimmt bis zu etwa 25 URLs aus der sitemap.xml (oder alternativ aus einem Crawl) als Stichprobe, vergleicht Titel- und Beschreibungstexte und markiert Duplikate innerhalb dieser Stichprobe."
+      ],
+      [
+        "Schreibt das Tool meine Titel automatisch um?",
+        "Nein. Es meldet Längen- und Duplikatprobleme, damit du Titel und Meta-Descriptions in deinem CMS oder deinen Vorlagen bearbeiten kannst."
+      ],
+      [
+        "Kann ich Title-Tags von Wettbewerbern analysieren?",
+        "Ja. Jede öffentlich zugängliche URL kann als Stichprobe dienen. Private oder gesperrte Seiten lassen sich nicht abrufen."
+      ],
+      [
+        "Wird für dieses Tool KI benötigt?",
+        "Nein. Die Prüfungen von Titeln und Metadaten sind deterministisch aus dem abgerufenen HTML – nur fehlende, zu kurze, zu lange und doppelte Muster."
+      ]
+    ]
+  },
+  "pagespeed-analyzer": {
+    "name": "PageSpeed und Core Web Vitals",
+    "desc": "Google-PSI-Leistung und Core Web Vitals",
+    "title": "PageSpeed Insights- und Core-Web-Vitals-Prüfer",
+    "description": "Kostenloser Prüfer für PageSpeed Insights und Core Web Vitals auf Basis der PageSpeed-API von Google. Miss LCP, INP, CLS, Laborwerte der Leistung und Optimierungspotenziale für Mobilgeräte oder Desktop – und erhalte verständliche Hinweise von einer KI, die ausschließlich die API-Ergebnisse interpretiert.",
+    "example": {
+      "input": "URL: https://example.com/ | Strategie: mobil",
+      "output": "Leistung 64 · LCP 2,8 s · CLS 0,04 · Potenziale: ungenutztes JavaScript reduzieren · Priorisierte KI-Hinweise aus den PSI-Daten"
+    },
+    "faqs": [
+      [
+        "Was sind Core Web Vitals?",
+        "Die zentralen Nutzererlebnis-Kennzahlen von Google: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) und Cumulative Layout Shift (CLS). Sie spiegeln Laden, Interaktivität und visuelle Stabilität."
+      ],
+      [
+        "Woher kommen die PageSpeed-Werte?",
+        "Zetawala ruft die Google-PageSpeed-Insights-API für die von dir gewählte URL und Strategie auf. Scores und Potenziale stammen aus dieser API-Antwort."
+      ],
+      [
+        "Verändert die KI meinen PageSpeed-Wert?",
+        "Nein. Leistung und Web-Vitals kommen von PageSpeed Insights. Die KI erklärt nur die Potenziale und schlägt aus diesen Daten einsteigerfreundliche nächste Schritte vor."
+      ],
+      [
+        "Sollte ich Mobilgeräte oder Desktop priorisieren?",
+        "Google indexiert die meisten Websites mobil zuerst, daher sind die mobilen Core Web Vitals meist die erste Priorität."
+      ],
+      [
+        "Garantiert eine bessere PageSpeed bessere Platzierungen?",
+        "Keine einzelne Maßnahme garantiert Platzierungen. Bessere Geschwindigkeit und Core Web Vitals verbessern häufig Nutzererlebnis und Engagement, was das SEO neben Inhalt und Autorität stützt."
+      ],
+      [
+        "Ist dieses PageSpeed-Tool kostenlos?",
+        "Ja. Der PageSpeed-Insights-Analysator von Zetawala ist für öffentliche URLs kostenlos (abhängig von der API-Verfügbarkeit und faire Nutzung vorausgesetzt)."
+      ]
+    ]
+  },
+  "internal-link-analyzer": {
+    "name": "Analysator für interne Links und Waisenseiten",
+    "desc": "Interne Verlinkung und Waisenseiten-Risiken",
+    "title": "Prüfer für interne Links und Finder für Waisenseiten",
+    "description": "Kostenloser Prüfer für interne Links und Finder für Waisenseiten von Zetawala. Crawle eine begrenzte öffentliche Stichprobe, um eingehende und ausgehende Links, schwache Ankertexte („hier klicken“), schwach verlinkte URLs und mögliche Waisenseiten abzubilden – die KI interpretiert danach ausschließlich diese Crawl-Ergebnisse.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Analysierte Seiten: 15 · Mögliche Waisenseiten: 4 · Schwache Ankertexte: 12 · Knotenpunkt: /blog/ · Hinweis: Waisenliste beschränkt auf die Crawl-Stichprobe"
+    },
+    "faqs": [
+      [
+        "Was ist eine Waisenseite?",
+        "Eine Seite ohne eingehende interne Links innerhalb der gecrawlten Stichprobe, sodass Nutzer und Crawler sie von anderen Seiten aus kaum entdecken können."
+      ],
+      [
+        "Findet das Tool jede Waisenseite meiner Website?",
+        "Nein. Die Erkennung ist auf die gecrawlte Stichprobe begrenzt (etwa 15 Seiten, Tiefe 2). Es ist keine Garantie für die gesamte Website."
+      ],
+      [
+        "Was gilt als schwacher Ankertext?",
+        "Leere Anker oder allgemeine Formulierungen wie „hier klicken“, „hier“, „weiterlesen“ oder „mehr erfahren“ werden markiert, damit du beschreibende Ankertexte verwendest."
+      ],
+      [
+        "Kann das Tool interne Links für mich ergänzen?",
+        "Nein. Es meldet Waisenseiten, schwache Ankertexte und Knotenpunkte. Die Verlinkungsänderungen setzt du in deinem CMS, deinen Vorlagen oder der Navigation um."
+      ],
+      [
+        "Wie nutzt die KI die Daten zur internen Verlinkung?",
+        "Die KI fasst die gemessenen möglichen Waisenseiten, schwach verlinkten Seiten und schwachen Ankertexte zusammen. Sie erfindet keine Crawl-Befunde."
+      ],
+      [
+        "Warum ist interne Verlinkung für SEO wichtig?",
+        "Starke interne Links unterstützen die Auffindbarkeit beim Crawling, verteilen Relevanz und halten wichtige Seiten in wenigen Klicks erreichbar."
+      ]
+    ]
+  },
+  "broken-link-checker": {
+    "name": "Prüfer für defekte Links",
+    "desc": "Defekte interne und externe Links",
+    "title": "Prüfer für defekte Links – kostenloser 404-Finder",
+    "description": "Kostenloser Prüfer für defekte Links von Zetawala. Crawle eine öffentliche Start-URL, prüfe eine Stichprobe interner und externer Links und erkenne 404-Fehler, Serverfehler und nicht erreichbare Ziele – bis zu einer begrenzten Anzahl eindeutiger URLs für verlässliche kostenlose Scans.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Geprüfte Links: 40 · Defekt: 3 · Status 404 bei /old-offer · Toter externer Link erkannt · Empfehlungen zum Korrigieren oder Entfernen"
+    },
+    "faqs": [
+      [
+        "Prüft der Prüfer für defekte Links auch externe Links?",
+        "Ja. Sowohl Links derselben Domain als auch ausgehende Links aus der Crawl-Stichprobe kommen infrage; tote Ziele werden mit Statuscode markiert, sofern sie abrufbar sind."
+      ],
+      [
+        "Wie viele Links werden geprüft?",
+        "Das Tool crawlt eine begrenzte Zahl von Seiten und prüft dann bis zu etwa 40 eindeutige Links, um die Kosten zu begrenzen. Große Websites brauchen mehrere Start-URLs oder tiefere Werkzeuge."
+      ],
+      [
+        "Werden Weiterleitungsketten vollständig abgebildet?",
+        "Der Prüfer konzentriert sich auf defekte oder nicht erreichbare Antworten (4xx, 5xx und Fehlschläge). Nutze die Sitemap-Validierung und Canonical-Prüfungen für eine umfassendere Weiterleitungs-Hygiene."
+      ],
+      [
+        "Brauche ich Zugang zur Website oder eine Anmeldung?",
+        "Nein. Es werden nur öffentliche URLs abgerufen. Links hinter einer Authentifizierung oder Bot-Sperre können als nicht erreichbar erscheinen."
+      ],
+      [
+        "Sollte ich defekte Links vor einer Migration beheben?",
+        "Ja. Prüfe vor und nach Migrationen, um 404-Fehler zu erkennen, die Crawl-Budget verschwenden und das Nutzererlebnis verschlechtern."
+      ],
+      [
+        "Wird im Bericht zu defekten Links KI eingesetzt?",
+        "Nein. Der Status und die Empfehlungen ergeben sich deterministisch aus den Ergebnissen der HTTP-Abrufe."
+      ]
+    ]
+  },
+  "sitemap-tool": {
+    "name": "Sitemap-Generator und -Validator",
+    "desc": "XML-Sitemaps erzeugen oder validieren",
+    "title": "XML-Sitemap-Generator und -Validator",
+    "description": "Kostenloser XML-Sitemap-Generator und -Validator von Zetawala. Erzeuge eine Beispiel-Sitemap aus einem begrenzten öffentlichen Crawl oder prüfe eine bestehende sitemap.xml auf doppelte Einträge, 404-Fehler, Weiterleitungen und noindex-URLs – passend für Hygiene-Prüfungen in der Google Search Console.",
+    "example": {
+      "input": "Modus: validieren · https://example.com/sitemap.xml",
+      "output": "URLs insgesamt: 142 · Stichprobe: 25 · Probleme: 1× 404, 2× noindex · Warnung zu doppeltem Eintrag"
+    },
+    "faqs": [
+      [
+        "Kann das Tool eine XML-Sitemap für die ganze Website erstellen?",
+        "Der Erzeugungsmodus crawlt eine begrenzte Stichprobe (etwa 30 Seiten). Nutze das XML als Ausgangspunkt und erweitere es bei großen Websites manuell."
+      ],
+      [
+        "Was prüft die Sitemap-Validierung?",
+        "Sie liest die URLs in den <loc>-Elementen, nimmt bis zu etwa 25 Einträge als Stichprobe und markiert Duplikate, 404-Fehler, Weiterleitungen, Abruffehler und noindex-Seiten in dieser Stichprobe."
+      ],
+      [
+        "Brauchen kleine Websites eine Sitemap?",
+        "Nicht immer verpflichtend, doch eine XML-Sitemap unterstützt die Auffindbarkeit – besonders bei größeren oder häufig aktualisierten Websites."
+      ],
+      [
+        "Kann ich die Sitemap bei Google einreichen?",
+        "Ja. Nach dem Erzeugen oder Korrigieren reiche die Sitemap-URL in der Google Search Console ein."
+      ],
+      [
+        "Was, wenn /sitemap.xml fehlt?",
+        "Der Validierungsmodus sucht sitemap.xml auf der Domain, wenn deine Eingabe nicht bereits eine Sitemap-URL ist. Der Erzeugungsmodus kann stattdessen eine Beispieldatei aus einem Crawl erstellen."
+      ],
+      [
+        "Ist dieses XML-Sitemap-Tool kostenlos?",
+        "Ja. Der Sitemap-Generator und -Validator von Zetawala ist für öffentliche URLs kostenlos."
+      ]
+    ]
+  },
+  "canonical-indexability": {
+    "name": "Prüfer für Canonicals und Indexierbarkeit",
+    "desc": "Canonical-, Robots- und Indexierungssignale",
+    "title": "Canonical-Tag-Prüfer und Indexierbarkeits-Tool",
+    "description": "Kostenloser Canonical-Tag-Prüfer und Indexierbarkeits-Analysator von Zetawala. Rufe eine öffentliche URL ab, um Canonical, Meta-Robots, X-Robots-Tag, HTTP-Status und die Erreichbarkeit der robots.txt zu prüfen – und erhalte einen deterministischen Indexierbarkeits-Score, damit du falsche Canonicals und versehentliche noindex-Angaben früh erkennst.",
+    "example": {
+      "input": "URL: https://example.com/page?utm_source=email",
+      "output": "Canonical → /page · Robots: index,follow · X-Robots: keine · Indexierbar: ja · robots.txt erreichbar"
+    },
+    "faqs": [
+      [
+        "Was macht eine Seite nicht indexierbar?",
+        "Häufige Ursachen sind noindex (per Meta-Tag oder X-Robots-Tag), teilweise oder vollständige Sperren, Fehlerstatus oder ein Canonical, das auf eine andere URL zeigt."
+      ],
+      [
+        "Sollte jede Seite ein Canonical-Tag haben?",
+        "Selbstreferenzierende Canonicals sind empfehlenswert – besonders bei URLs mit Parametern, bei Paginierung oder nahezu doppelten Inhalten."
+      ],
+      [
+        "Was ist der X-Robots-Tag?",
+        "Ein HTTP-Header, der Robots-Anweisungen (etwa noindex) ohne Meta-Robots-Tag im HTML setzen kann. Dieses Tool weist ihn aus, wenn er vorhanden ist."
+      ],
+      [
+        "Entfernt die robots.txt allein eine Seite aus Google?",
+        "Nein. Die robots.txt steuert das Crawling. Nutze noindex (und Indexierungswerkzeuge), wenn eine URL aus dem Index bleiben soll."
+      ],
+      [
+        "Können falsche Canonicals dem SEO schaden?",
+        "Ja. Sie können Signale auf die falsche URL bündeln oder wichtige Seiten aus dem Index halten."
+      ],
+      [
+        "Stammt der Indexierbarkeits-Score von Google?",
+        "Nein. Es ist ein deterministischer Zetawala-Score aus abgerufenen Headern und HTML-Signalen – keine offizielle Google-Kennzahl."
+      ]
+    ]
+  },
+  "action-plan": {
+    "name": "Generator für SEO-Maßnahmenpläne",
+    "desc": "Priorisierte SEO-Roadmap",
+    "title": "Generator für SEO-Maßnahmenpläne – kostenlose Roadmap",
+    "description": "Verwandle mit Zetawala ein kostenloses SEO-Audit in einen priorisierten Maßnahmenplan. Crawle eine öffentliche Stichprobe, berechne deterministisch kritische Probleme und Warnungen und lass die KI ausschließlich die P0- bis P2-Aufgaben aus diesen Befunden ordnen – eine einsteigerfreundliche Roadmap ohne erfundene Probleme.",
+    "example": {
+      "input": "URL: https://example.com/ | Ziel: organischer Traffic",
+      "output": "P0: fehlende Metadaten auf den Top-Seiten ergänzen · P1: defekte interne Links reparieren · P2: dünne Inhalte stärken · Einsteigerschritte aufgeführt"
+    },
+    "faqs": [
+      [
+        "Wie wird der SEO-Maßnahmenplan priorisiert?",
+        "Der Crawl erzeugt ein deterministisches Audit mit Listen kritischer Probleme und Warnungen. Die KI baut die Roadmap ausschließlich aus diesen Listen, geordnet nach Wirkung und Dringlichkeit."
+      ],
+      [
+        "Erfindet die KI Aufgaben, die nicht im Audit stehen?",
+        "Sie darf es nicht. Die Anweisungen verlangen, ausschließlich die übergebenen kritischen Probleme und Warnungen zu priorisieren."
+      ],
+      [
+        "Ersetzt das eine SEO-Beratung?",
+        "Es beschleunigt die Planung mit einer strukturierten kostenlosen SEO-Roadmap. Komplexe Migrationen, rechtliche Fragen oder Unternehmensseiten brauchen weiterhin fachliche Prüfung."
+      ],
+      [
+        "Was sollten Einsteiger zuerst tun?",
+        "Beginne mit den schnellen P0-Erfolgen – Metadaten, defekte Links und Indexierbarkeit – bevor du aufwendige Vorlagen- oder Architekturarbeiten angehst."
+      ],
+      [
+        "Kann ich den Maßnahmenplan exportieren?",
+        "Kopiere die Roadmap aus dem Ergebnisbereich nach Notion, in eine Tabelle oder in dein Projekt-Tool."
+      ],
+      [
+        "Ist ein Nachweis des Websitebesitzes nötig?",
+        "Nein. Gib eine öffentliche URL ein. Seiten hinter einer Anmeldung lassen sich nicht prüfen."
+      ]
+    ]
+  },
+  "robots-txt-tool": {
+    "name": "robots.txt-Generator und -Tester",
+    "desc": "Crawling-Regeln erstellen und testen",
+    "title": "robots.txt-Generator und -Tester",
+    "description": "Kostenloser robots.txt-Generator und -Tester von Zetawala. Erstelle Erlaubnis- und Sperrregeln mit Sitemap-Verweis oder rufe eine aktive robots.txt ab und teste, ob ein Pfad für Googlebot oder einen anderen User-Agent erlaubt ist – so blockierst du CSS, JavaScript oder wichtige Bereiche nicht versehentlich.",
+    "example": {
+      "input": "Modus: testen · URL: https://example.com · Pfad: /admin/ · User-Agent: Googlebot",
+      "output": "robots.txt erreichbar · Test /admin/: blockiert · Test /products/: erlaubt · Sitemaps aufgeführt"
+    },
+    "faqs": [
+      [
+        "Hält die robots.txt Seiten aus dem Google-Index?",
+        "Nein. Sie steuert das Crawling. Nutze noindex (und bei Bedarf Entfernungen in der Search Console), um die Indexierung zu steuern."
+      ],
+      [
+        "Was erzeugt der Generierungsmodus?",
+        "Eine robots.txt-Vorlage (oder deine eigenen Regeln) mit Allow- und Disallow-Beispielen und einer Sitemap-Zeile, die auf /sitemap.xml deiner Domain zeigt."
+      ],
+      [
+        "Kann ich speziell Googlebot testen?",
+        "Ja. Der Testmodus prüft einen Pfad gegen die eingelesene robots.txt für den von dir gewählten User-Agent, einschließlich Googlebot."
+      ],
+      [
+        "Wo muss die robots.txt liegen?",
+        "Ausschließlich im Wurzelverzeichnis der Website – zum Beispiel https://deineseite.com/robots.txt."
+      ],
+      [
+        "Sollte ich /wp-admin/ sperren?",
+        "Bei WordPress-Adminpfaden oft ja, aber blockiere niemals CSS- oder JavaScript-Dateien, die für das Rendern nötig sind."
+      ],
+      [
+        "Ist der robots.txt-Generator kostenlos?",
+        "Ja. Generierungs- und Testmodus sind bei Zetawala für öffentliche Websites kostenlos."
+      ]
+    ]
+  },
+  "header-meta-inspector": {
+    "name": "Inspektor für Header und Meta-Tags",
+    "desc": "Prüfung von Titel, OG-, Twitter- und Meta-Tags",
+    "title": "Meta-Tag-Prüfer – Header und Social-Tags",
+    "description": "Kostenloser Meta-Tag-Prüfer von Zetawala. Prüfe Titel, Meta-Description, Robots, Canonical, Viewport, Zeichensatz sowie Open-Graph- und Twitter-Card-Tags aus dem Abruf einer öffentlichen URL – ein strukturierter Bericht für SEO-Snippets und Social-Vorschauen.",
+    "example": {
+      "input": "URL: https://example.com/article",
+      "output": "Titel und Beschreibung vorhanden · Canonical vorhanden · og:title in Ordnung · twitter:card summary_large_image · Viewport gesetzt"
+    },
+    "faqs": [
+      [
+        "Welche Meta-Tags zeigt dieser Inspektor?",
+        "Titel, Beschreibung, Robots, Canonical, Sprache, Zeichensatz, Viewport sowie Open-Graph- und Twitter-Tags, ausgelesen aus dem abgerufenen HTML."
+      ],
+      [
+        "Warum Open-Graph-Tags prüfen?",
+        "OG-Tags steuern, wie Links beim Teilen auf Facebook, LinkedIn und vielen weiteren Plattformen erscheinen."
+      ],
+      [
+        "Sind Twitter Cards etwas anderes als Open Graph?",
+        "Twitter kann auf OG-Tags zurückgreifen, doch eigene twitter:-Tags geben feinere Kontrolle über Kartentyp und Vorschauen."
+      ],
+      [
+        "Schadet ein fehlender Viewport-Meta-Tag dem SEO?",
+        "Indirekt. Die mobilgerechte Darstellung hängt von den Viewport-Einstellungen ab und beeinflusst Nutzererlebnis und Qualität der mobilen Indexierung."
+      ],
+      [
+        "Muss ich den Websitebesitz nachweisen?",
+        "Nein. Füge eine beliebige öffentliche URL ein. Das Tool ruft Header und HTML ab, die ohne Anmeldung verfügbar sind."
+      ],
+      [
+        "Wird hier KI eingesetzt?",
+        "Nein. Der Meta-Tag-Prüfer gibt deterministische Analyseergebnisse aus dem Live-Abruf der Seite aus."
+      ]
+    ]
+  },
+  "traffic-revenue": {
+    "name": "Schätzer für Traffic und Werbeeinnahmen",
+    "desc": "Geschätzter Traffic-Wert (klar gekennzeichnet)",
+    "title": "Traffic-Einnahmenrechner – kostenloser Schätzer",
+    "description": "Kostenloser Traffic-Einnahmenrechner von Zetawala. Schätze das Werbeeinnahmen-Potenzial deiner organischen Besuche aus monatlichen Besuchen, Seiten pro Besuch und RPM – mit niedrigen, typischen und hohen Bandbreiten und klar gekennzeichneten Annahmen (keine Verifizierung über Analytics oder AdSense).",
+    "example": {
+      "input": "Besuche: 50.000/Monat · Seiten pro Besuch: 1,5 · RPM: 8 $",
+      "output": "Seitenaufrufe: 75.000 · Einnahmen niedrig/typisch/hoch nach RPM-Bändern · Kennzeichnung: geschätzt, nicht über AdSense verifiziert"
+    },
+    "faqs": [
+      [
+        "Sind die Zahlen zu Traffic und Einnahmen garantiert?",
+        "Nein. Alle Werte sind veranschaulichende Schätzungen aus deinen Eingaben. Es handelt sich nicht um verifizierte Daten aus Google Analytics oder AdSense."
+      ],
+      [
+        "Wie werden die Werbeeinnahmen geschätzt?",
+        "Seitenaufrufe ≈ Besuche × Seiten pro Besuch; Einnahmen ≈ (Seitenaufrufe / 1000) × RPM, mit Multiplikatoren für niedriges, typisches und hohes RPM."
+      ],
+      [
+        "Welches RPM soll ich eintragen?",
+        "Nutze möglichst das historische RPM deines Werbenetzwerks. Andernfalls beginne mit einem konservativen RPM für deine Nische und Region."
+      ],
+      [
+        "Sind Affiliate- oder Produkteinnahmen enthalten?",
+        "Das Modell konzentriert sich auf RPM-basierte Werbeeinnahmen. Für Affiliate oder E-Commerce nutze den SEO- oder Content-Kapitalertragsrechner mit einem Wert pro Conversion."
+      ],
+      [
+        "Warum werden die Annahmen gekennzeichnet?",
+        "Transparente Kennzeichnungen verhindern Überschätzung und machen Szenarienvergleiche ehrlich, wenn du Besuche oder RPM änderst."
+      ],
+      [
+        "Ist der Traffic-Einnahmenrechner kostenlos?",
+        "Ja. Er läuft sofort mit deinen Zahlen – ein Website-Crawl ist nicht nötig."
+      ]
+    ]
+  },
+  "health-score": {
+    "name": "Rechner für den SEO-Gesundheits-Score",
+    "desc": "Gesamtübersicht der SEO-Gesundheit",
+    "title": "SEO-Gesundheits-Score – kostenlose Bewertung deiner Website",
+    "description": "Kostenloser Rechner für den SEO-Gesundheits-Score von Zetawala. Crawle eine öffentliche Stichprobe, berechne Kategoriewerte für technische und inhaltliche Signale, beziehe optional die PageSpeed-Leistung ein und erhalte einen Gesamtwert für die SEO-Gesundheit – klar als Zetawala-Schätzung gekennzeichnet und nicht als offizielle Google-Kennzahl. Die KI interpretiert ausschließlich gemessene Probleme.",
+    "example": {
+      "input": "URL: https://example.com/",
+      "output": "Gesamt 78/100 · Kategorien Technik und Inhalt · Leistung aus PSI, sofern verfügbar · Wichtigste Maßnahmen aus der Liste kritischer Probleme"
+    },
+    "faqs": [
+      [
+        "Ist der SEO-Gesundheits-Score eine offizielle Google-Angabe?",
+        "Nein. Es ist eine analytische Schätzung von Zetawala aus den Signalen der gecrawlten Seiten (und aus PageSpeed, sofern verfügbar) – kein Google-Ranking-Score."
+      ],
+      [
+        "Wie wird der Gesamtwert berechnet?",
+        "Deterministisch aus den Audit-Kategorien. Ist die mobile PageSpeed-Leistung verfügbar, wird sie in den Gesamtwert einbezogen; andernfalls gilt der Gesamtwert des Audits."
+      ],
+      [
+        "Was ist ein guter SEO-Gesundheits-Score?",
+        "Über etwa 80 ist stark; 60 bis 80 bedeutet meist, dass noch behebbare Probleme bestehen; unter 60 deutet auf größere technische oder inhaltliche Baustellen hin."
+      ],
+      [
+        "Legt die KI den Gesundheits-Score fest?",
+        "Nein. Der Wert wird zuerst berechnet. Die KI fasst nur zusammen und schlägt anhand der gemessenen kritischen Probleme vor, was du zuerst verbessern solltest."
+      ],
+      [
+        "Kann ich zwei Websites vergleichen?",
+        "Führe das Tool für jede öffentliche URL separat aus und vergleiche Gesamtwerte und Kategorieaufschlüsselungen."
+      ],
+      [
+        "Sollte ich die Analyse nach den Korrekturen wiederholen?",
+        "Ja. Ein erneuter Lauf bestätigt die Verbesserungen und zeigt die nächsten vorrangigen Warnungen."
+      ]
+    ]
+  },
+  "keyword-density": {
+    "name": "Keyword-Dichte-Prüfer",
+    "desc": "Häufigkeit von Phrasen aus 1 bis 3 Wörtern",
+    "title": "Keyword-Dichte-Prüfer – kostenloses SEO-Tool",
+    "description": "Kostenloser Keyword-Dichte-Prüfer von Zetawala. Analysiere die Häufigkeit von Phrasen aus einem bis drei Wörtern aus einer öffentlichen URL oder eingefügtem Text, erkenne überstrapazierte Begriffe (Warnungen bei hoher Dichte) und balanciere deine Hauptkeywords ohne Keyword-Stuffing – deterministische Zählungen ohne erfundene Häufigkeiten.",
+    "example": {
+      "input": "Text oder URL mit mehrfach wiederholter Phrase „SEO-Tools“",
+      "output": "Häufigste Ein-, Zwei- und Dreiwortphrasen mit Dichte in Prozent · Überstrapazierte Begriffe ab 3 % markiert · Hinweis zur Einschätzung von Keyword-Stuffing"
+    },
+    "faqs": [
+      [
+        "Gibt es einen idealen Prozentsatz für die Keyword-Dichte?",
+        "Es gibt keinen festen Zielwert. Schreibe für Leser. Sehr hohe Wiederholung kann wie Keyword-Stuffing wirken; Zetawala markiert Begriffe ab etwa 3 % Dichte zur Prüfung."
+      ],
+      [
+        "Kann ich eine URL prüfen oder Text einfügen?",
+        "Ja. Gib eine öffentliche URL an (Text, Titel und Überschriften werden abgerufen) oder füge deinen Text direkt ein. Eines von beidem ist erforderlich."
+      ],
+      [
+        "Warum Phrasen aus zwei bis drei Wörtern prüfen?",
+        "Mehrwortphrasen zeigen den thematischen Fokus über einzelne Keywords hinaus und machen die natürliche Longtail-Nutzung sichtbar."
+      ],
+      [
+        "Rankt Keyword-Dichte allein eine Seite?",
+        "Nein. Relevanz, hilfreiche Inhalte, Autorität und Nutzererlebnis zählen weit mehr als reine Wiederholung."
+      ],
+      [
+        "Kann ich Seiten von Wettbewerbern analysieren?",
+        "Wenn die Seite öffentlich abrufbar ist, füge die URL ein. Gesperrte oder private Seiten liefern keinen Text."
+      ],
+      [
+        "Wird bei den Dichtezählungen KI eingesetzt?",
+        "Nein. Phrasenzählungen und Dichten sind deterministisch. Nutze dein eigenes Urteil bei Warnungen zu übermäßiger Verwendung."
+      ]
+    ]
+  },
+  "seo-roi": {
+    "name": "SEO-Kapitalertragsrechner",
+    "desc": "Ertrag der SEO-Investition schätzen",
+    "title": "SEO-Kapitalertragsrechner – kostenloser Ertragsschätzer",
+    "description": "Kostenloser SEO-Kapitalertragsrechner von Zetawala. Schätze den Ertrag des organischen Marketings aus monatlicher SEO-Investition, organischen Sitzungen, Conversion-Rate, Anteil der Kontakte, die Kunden werden, und durchschnittlichem Bestellwert – deterministische Rechnung mit dem klaren Hinweis, dass es sich um Beispielwerte und nicht um verifizierte Analytics-Umsätze handelt.",
+    "example": {
+      "input": "Kosten 500 $ · Sitzungen 2.000 · Conversion 2 % · Bestellwert 45 $ · Kontakt zu Kunde 100 %",
+      "output": "Geschätzter Umsatz 1.800 $ · Gewinn 1.300 $ · Ertrag ~260 % · Formel angezeigt · Nur veranschaulichend"
+    },
+    "faqs": [
+      [
+        "Welche Kosten gehören in den SEO-Kapitalertrag?",
+        "Tools, Honorare für Agenturen oder Freelancer, Content-Produktion und die interne Arbeitszeit, die du dem SEO im modellierten Monat zurechnest."
+      ],
+      [
+        "Wie wird der SEO-Kapitalertrag berechnet?",
+        "Umsatz ≈ Sitzungen × Conversion-Rate × Anteil Kontakt zu Kunde × durchschnittlicher Bestellwert; Ertrag = (Umsatz − Investition) / Investition. Alle Eingaben stammen von dir."
+      ],
+      [
+        "Kann ich Kontakte statt E-Commerce-Verkäufe modellieren?",
+        "Ja. Behandle Conversions als Kontakte und passe den Durchschnittswert (und den Anteil Kontakt zu Kunde) an deinen Funnel an."
+      ],
+      [
+        "Sind die Ergebnisse garantiert?",
+        "Nein. Die Ausgaben sind veranschaulichende Planungsschätzungen – keine verifizierten Analysedaten und keine Traffic-Versprechen."
+      ],
+      [
+        "Wie lange dauert es, bis sich SEO auszahlt?",
+        "Bei wettbewerbsintensiven Suchanfragen oft mehrere Monate. Verwende für die Planung konservative Annahmen zu Sitzungen und Conversions."
+      ],
+      [
+        "Ist der SEO-Kapitalertragsrechner kostenlos?",
+        "Ja. Sofortige deterministische Berechnung bei Zetawala – ohne Crawl oder API-Schlüssel von dir."
+      ]
+    ]
+  },
+  "keyword-roi": {
+    "name": "Keyword-Ertragsrechner",
+    "desc": "Traffic und Umsatz eines Keywords schätzen",
+    "title": "Keyword-Ertragsrechner – Schätzer für den Suchwert",
+    "description": "Kostenloser Keyword-Ertragsrechner von Zetawala. Modelliere das monatliche und jährliche Umsatzpotenzial aus Suchvolumen, geschätzter Klickrate, Conversion-Rate und Kundenwert – eine deterministische Priorisierung für Keyword-Entscheidungen auf Basis deiner eigenen Recherchedaten (ohne Live-Abruf von Google-Volumina).",
+    "example": {
+      "input": "Volumen 8.100 · Klickrate 10 % · Conversion 3 % · Wert 32 $",
+      "output": "Geschätzter Traffic 810 · Kunden ~24 · Monatsumsatz ~778 $ · Jahresumsatz ~9,3 Tsd. $ · Annahmen aufgeführt"
+    },
+    "faqs": [
+      [
+        "Woher kommt das Suchvolumen?",
+        "Du trägst das Volumen aus deinem Keyword-Recherche-Tool ein. Der Rechner ruft keine Live-Daten aus Google Ads oder dem Keyword-Planer ab."
+      ],
+      [
+        "Wie wird der Keyword-Traffic geschätzt?",
+        "Geschätzter Traffic ≈ monatliches Suchvolumen × Klickrate. Danach Kunden ≈ Traffic × Conversion-Rate; Umsatz ≈ Kunden × Wert."
+      ],
+      [
+        "Sollte ich zuerst die Keywords mit dem höchsten Volumen angehen?",
+        "Wäge Volumen gegen Schwierigkeit und kommerzielle Absicht ab. Hohes Volumen mit schwacher Conversion verliert oft gegen mittelgroße, aber kaufstarke Begriffe."
+      ],
+      [
+        "Kann ich den Ertrag lokaler Keywords modellieren?",
+        "Ja. Verwende lokalisierte Volumenschätzungen und den Kundenwert für diesen Markt."
+      ],
+      [
+        "Sind diese Ertragszahlen verifiziert?",
+        "Nein. Sie beruhen auf deinen Annahmen zu Volumen, Klickrate und Conversion und sind als Schätzungen gekennzeichnet – nicht als Belege aus der Search Console."
+      ],
+      [
+        "Ist das Keyword-Ertragstool kostenlos?",
+        "Ja. Kostenlose deterministische Keyword-Ertragsrechnung bei Zetawala für deine Priorisierungstabellen."
+      ]
+    ]
+  },
+  "content-roi": {
+    "name": "Content-Ertragsrechner",
+    "desc": "Ertrag des Content-Marketings schätzen",
+    "title": "Content-Ertragsrechner – Blogbeiträge und Landingpages",
+    "description": "Kostenloser Content-Ertragsrechner von Zetawala. Schätze den Ertrag deines Content-Marketings aus Produktionskosten, erwartetem Monats-Traffic, Conversion-Rate, Durchschnittswert und aktiven Monaten – vergleiche Blogbeiträge, Landingpages und Ressourcen mit transparenter, deterministischer Rechnung.",
+    "example": {
+      "input": "Kosten 400 $ · Traffic 600/Monat · Conversion 1,5 % · Wert 80 $ · Monate 12",
+      "output": "Monatlich ~720 $ · Umsatz über 12 Monate ~8.640 $ · Gewinn ~8.240 $ · Ertrag als veranschaulichend gekennzeichnet"
+    },
+    "faqs": [
+      [
+        "Welche Kosten gehören in den Content-Ertrag?",
+        "Text, Redaktion, Design, Promotion und Tools, die diesem Beitrag zugerechnet werden – dazu Aktualisierungskosten, wenn du mehrere Jahre modellierst."
+      ],
+      [
+        "Wie schätze ich den Traffic für neue Inhalte?",
+        "Nutze die Eingaben aus dem Keyword-Ertragsrechner oder historische Ergebnisse ähnlicher Beiträge deiner Website. Trage ehrliche, konservative Monatsbesuche ein."
+      ],
+      [
+        "Wie wird der Content-Ertrag berechnet?",
+        "Monatsumsatz ≈ Traffic × Conversion-Rate × Durchschnittswert; Gesamtumsatz ≈ Monatsumsatz × aktive Monate; Ertrag = (Gesamtumsatz − Kosten) / Kosten."
+      ],
+      [
+        "Verbessern zeitlose Inhalte den Ertrag?",
+        "Häufig ja – der Traffic kann sich aufsummieren, während die einmaligen Produktionskosten fix bleiben. Modelliere bei wettbewerbsintensiven Themen dennoch Aktualisierungen."
+      ],
+      [
+        "Sind die Ergebnisse zum Content-Ertrag garantiert?",
+        "Nein. Das Modell ist veranschaulichend und beruht ausschließlich auf deinen Eingaben – nicht auf verifizierten Analytics-Umsätzen."
+      ],
+      [
+        "Ist der Content-Ertragsrechner kostenlos?",
+        "Ja. Sofortige kostenlose Schätzungen bei Zetawala für Blogs, Landingpages und Kampagnen."
+      ]
+    ]
+  }
+}

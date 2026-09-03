@@ -1,0 +1,60 @@
+{
+  "name": "Calculateur de valeur vie client (LTV)",
+  "desc": "LTV à partir du panier moyen, de la fréquence et de la durée de vie",
+  "metadata": {
+    "title": "Calculateur de valeur vie client (LTV) gratuit | Zetawala",
+    "description": "Calculez le LTV avec panier moyen, fréquence d’achat et durée de vie. Gratuit, maths déterministes, sans IA.",
+    "keywords": ["calculateur de valeur vie client", "calculateur LTV", "calculateur CLV", "LTV client"]
+  },
+  "seo": {
+    "title": "Calculateur de valeur vie client (LTV)",
+    "description": "Calculez la valeur vie client avec le calculateur LTV gratuit de Zetawala : panier moyen, fréquence et durée de vie. Maths déterministes uniquement, sans IA, pour le comparer au CAC.",
+    "example": {
+      "input": "Panier moyen : 80 $ · Achats/an : 4 · Durée : 3 ans",
+      "output": "LTV 960 $ · Valeur annuelle 320 $ · CA projeté par client 960 $"
+    },
+    "faqs": [
+      { "q": "Quelle formule LTV est utilisée ?", "a": "LTV = Panier moyen × Achats par an × Durée de vie (années). Valeur annuelle = Panier moyen × Fréquence." },
+      { "q": "Est-ce gratuit et sans IA ?", "a": "Oui. C’est gratuit sur Zetawala et n’utilise que des maths déterministes, sans apprentissage automatique ni benchmarks inventés." },
+      { "q": "Comment l’utiliser avec le CAC ?", "a": "Une règle courante est un LTV plusieurs fois supérieur au CAC. Associez-le au calculateur CAC pour juger si l’acquisition est soutenable." },
+      { "q": "Le LTV inclut-il la marge ou seulement le CA ?", "a": "Ce calculateur projette un LTV de chiffre d’affaires. Pour les marges de contribution, combinez avec les outils de marge." },
+      { "q": "À qui sert le LTV ?", "a": "Marques e-commerce, abonnements, agences et growth marketers qui décident combien dépenser pour acquérir un client." },
+      { "q": "Et si la fréquence est irrégulière ?", "a": "Utilisez une moyenne annuelle réaliste. Vous pouvez tester des scénarios optimistes et conservateurs : le résultat se met à jour tout de suite." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Données LTV",
+    "disclaimer": "Calcul local instantané, sans appel IA. Les résultats se mettent à jour à la saisie. Estimations uniquement : vérifiez avec vos données.",
+    "formulaLabel": "Formule",
+    "detailsTitle": "Détails",
+    "nextStepsTitle": "Étapes suivantes recommandées",
+    "badge": "Calcul Zetawala",
+    "notFound": "Calculateur introuvable.",
+    "sectionTitle": "À quoi sert ce calculateur",
+    "sectionHint": "LTV de CA à partir du panier, de la fréquence et de la durée de vie.",
+    "exampleTitle": "Exemple concret",
+    "exampleHint": "Entrées d’exemple et résultat attendu.",
+    "sampleInput": "Entrée d’exemple",
+    "sampleOutput": "Résultat",
+    "faqTitle": "Questions fréquentes",
+    "faqHint": "Réponses claires sur la valeur vie client.",
+    "fields": {
+      "averageOrderValue": "Panier moyen ($)",
+      "purchaseFrequency": "Achats par an",
+      "customerLifespan": "Durée de vie client (années)"
+    },
+    "nextSteps": {
+      "customer-cac": "Comparer au CAC",
+      "saas-pricing": "Prix SaaS",
+      "profit-margin": "Marge bénéficiaire"
+    },
+    "results": {
+      "headline": "Valeur vie client : {value}",
+      "metrics": {
+        "Customer Lifetime Value": { "title": "Valeur vie client" },
+        "Annual Customer Value": { "title": "Valeur annuelle client" },
+        "Total Projected Revenue (per customer)": { "title": "CA projeté (par client)" }
+      }
+    }
+  }
+}

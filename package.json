@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --import ./scripts/i18n/register-hooks.mjs --experimental-default-type=module --test tests/i18n.test.js",
+    "i18n:build": "node --import ./scripts/i18n/register-hooks.mjs scripts/i18n/build-locale-packs.mjs",
+    "i18n:check": "node scripts/i18n/check-keys.mjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

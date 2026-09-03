@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Calculadoras de negocio gratis – Freelance, margen, LTV y AdSense | Zetawala",
+    "description": "Calculadoras gratis de tarifas freelance, margen de beneficio, punto de equilibrio, LTV, CAC, AdSense y rentabilidad. Fórmulas deterministas, sin IA.",
+    "keywords": [
+      "calculadoras de negocio",
+      "calculadora de tarifa por hora freelance",
+      "calculadora de margen de beneficio",
+      "calculadora de punto de equilibrio",
+      "calculadora de ingresos adsense"
+    ]
+  },
+  "hero": {
+    "title": "Calculadoras de negocio y marketing",
+    "subtitle": "Tarifas freelance, precios SaaS, LTV, CAC, ROI de anuncios, AdSense y beneficio en marketplaces: 18 herramientas gratis con fórmulas deterministas y sin IA.",
+    "cta": "Abrir calculadora de tarifa freelance"
+  },
+  "grid": {
+    "title": "Todas las calculadoras",
+    "subtitle": "18 herramientas para precios, unit economics, ROI de marketing y márgenes ecommerce.",
+    "localizedBadge": "Traducida"
+  },
+  "pickerTitle": "Elige la calculadora adecuada",
+  "pickerSubtitle": "Empareja tu objetivo con el punto de partida correcto.",
+  "learning": {
+    "title": "Precios y ROI",
+    "subtitle": "Conceptos clave detrás de las calculadoras.",
+    "blogCta": "Leer guías del blog de calculadoras",
+    "topics": [
+      {
+        "title": "Por qué una tarifa clara gana a la intuición",
+        "body": "Quien cobra de menos suele olvidar impuestos, tiempo no facturable y gastos. Un suelo horario protege el flujo de caja."
+      },
+      {
+        "title": "LTV frente a CAC",
+        "body": "Un crecimiento sano suele exigir un LTV claramente por encima del CAC. Combina ambas calculadoras antes de escalar ads."
+      },
+      {
+        "title": "El lastre de las comisiones",
+        "body": "Amazon, Etsy y eBay suman envío y anuncios. Modela el beneficio neto por unidad antes de subir volumen."
+      },
+      {
+        "title": "Presupuesto de APIs de IA",
+        "body": "El precio por token parece pequeño, pero escala con el volumen diario. Estima el gasto mensual y anual antes de lanzar."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Dudas habituales sobre las calculadoras.",
+    "items": [
+      {
+        "q": "¿Qué es la suite de calculadoras de Zetawala?",
+        "a": "Son 18 calculadoras deterministas para freelancers, founders SaaS, marketers y vendedores ecommerce. Todo se calcula en el navegador, sin llamadas a un LLM."
+      },
+      {
+        "q": "¿Usan inteligencia artificial?",
+        "a": "No. Las matemáticas corren en local con tus datos. Las tarifas de proveedores en la calculadora de API son tablas publicadas, no predicciones."
+      },
+      {
+        "q": "¿Por cuál empiezo?",
+        "a": "Si eres freelance, empieza por tarifa horaria o precio de proyecto. Si tienes SaaS, usa precio, LTV y CAC. Si vendes online, abre las de beneficio ecommerce, Amazon FBA, Etsy o eBay."
+      },
+      {
+        "q": "¿Los resultados son exactos?",
+        "a": "Son estimaciones transparentes con fórmulas estándar. Verifica siempre comisiones, impuestos y métricas de anuncios en tus propias cuentas."
+      }
+    ]
+  }
+}

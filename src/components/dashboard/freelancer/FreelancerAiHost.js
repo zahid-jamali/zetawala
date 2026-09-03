@@ -14,7 +14,7 @@ import {
 import TurnstileWidget from '../TurnstileWidget';
 import FreelancerProfilePanel from './FreelancerProfilePanel';
 import { getFreelancerTool } from '../../../config/freelancer/tools';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import {
   loadFreelancerProfile,
   profilePrefillForTool,
@@ -422,6 +422,7 @@ function emptyForm(fields) {
 }
 
 export default function FreelancerAiHost({ toolSlug }) {
+  const { toolHref } = useLocalizedHref();
   const tool = getFreelancerTool(toolSlug);
   const fields = FIELDS[toolSlug] || [];
   const [form, setForm] = useState(() => emptyForm(fields));
@@ -612,7 +613,7 @@ export default function FreelancerAiHost({ toolSlug }) {
               {related.map((r) => (
                 <Link
                   key={r.slug}
-                  href={getSeoPath('freelancer', r.slug)}
+                  href={toolHref('freelancer', r.slug)}
                   className="inline-flex items-center gap-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400"
                 >
                   {r.label} <ArrowRight className="w-3 h-3" />

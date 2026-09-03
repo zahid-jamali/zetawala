@@ -1,0 +1,322 @@
+{
+  "shopee-listing-title-generator": {
+    "name": "Generador de títulos para Shopee",
+    "desc": "Títulos SEO con recuento de caracteres",
+    "title": "Generador gratuito de títulos para Shopee | Zetawala",
+    "description": "Crea títulos de ficha para Shopee listos para buscar con el generador gratuito de Zetawala. Coloca palabras clave, marca y atributos clave dentro del límite visible en móvil, con recuento de caracteres y variaciones para probar. Pensado para vendedores de Shopee en el sudeste asiático y otros mercados que quieren más clics sin relleno de palabras clave.",
+    "example": {
+      "input": "Producto: auriculares inalámbricos | Marca: SoundMax | Características: cancelación de ruido, 30 h de batería",
+      "output": "SoundMax ANC Wireless Earbuds – Auriculares Bluetooth con cancelación de ruido, 30 h de batería, deporte y oficina (78 caracteres)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de títulos para Shopee?",
+        "Genera títulos de ficha optimizados para SEO, con recuento de caracteres y varias alternativas, para que los vendedores de Shopee mejoren visibilidad y CTR en el kit de herramientas de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Shopee opera en varios países. Los porcentajes de comisión y las tablas de envío son configurables para adaptarse a cada marketplace."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren SEO de fichas más rápido, títulos más claros y más clics desde la búsqueda."
+      ]
+    ]
+  },
+  "shopee-product-description-generator": {
+    "name": "Generador de descripciones para Shopee",
+    "desc": "Descripciones con viñetas y llamada a la acción",
+    "title": "Generador gratuito de descripciones de producto para Shopee | Zetawala",
+    "description": "Escribe descripciones de producto para Shopee orientadas a la conversión con el generador gratuito de Zetawala. Estructura especificaciones, beneficios, viñetas y una llamada a la acción clara para que los compradores confíen en la ficha y baje la tasa de devoluciones. Ideal para vendedores que necesitan texto escaneable en móvil, no párrafos genéricos.",
+    "example": {
+      "input": "Producto: botella de acero inoxidable 750 ml | Público: oficina y gimnasio",
+      "output": "Viñetas:\n- Aislamiento de doble pared: frío ~24 h / calor ~12 h\n- Acero 18/8 de grado alimentario, sin BPA\n- Tapa antifugas para mochila y gym\nCTA: Añádela al carrito y bebe a temperatura todo el día."
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de descripciones de producto para Shopee?",
+        "Crea descripciones optimizadas con viñetas y llamada a la acción para que los vendedores de Shopee mejoren conversión y claridad en el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Sirve para cualquier mercado de Shopee. Ajusta idioma, unidades y políticas de envío a tu región en Seller Center."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren descripciones más claras, menos preguntas en el chat y menos devoluciones por expectativas erróneas."
+      ]
+    ]
+  },
+  "shopee-keyword-generator": {
+    "name": "Generador de palabras clave para Shopee",
+    "desc": "Palabras clave principales, de cola larga e intención de búsqueda",
+    "title": "Generador gratuito de palabras clave para Shopee | Zetawala",
+    "description": "Obtén ideas de palabras clave para Shopee: principales, de cola larga y con intención de compra. El generador gratuito de Zetawala te ayuda a rellenar títulos, descripciones y campos de búsqueda de Seller Center para indexar más consultas de compradores. Combina términos de marca con variantes locales de cada mercado de Shopee.",
+    "example": {
+      "input": "Producto: aro de luz LED con trípode",
+      "output": "Principales: led ring light, ring light with stand\nCola larga: ring light for tiktok, 10 inch ring light tripod\nIntención: buy ring light shopee, ring light price"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de palabras clave para Shopee?",
+        "Propone palabras clave principales, de cola larga y de intención de búsqueda para que los vendedores de Shopee mejoren el SEO de sus fichas con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Las ideas se adaptan a cómo buscan los compradores en cada país de Shopee. Revisa siempre el volumen y el idioma locales."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren indexar más búsquedas y no depender solo de un título genérico."
+      ]
+    ]
+  },
+  "shopee-listing-seo-analyzer": {
+    "name": "Analizador SEO de fichas de Shopee",
+    "desc": "Puntuación SEO, palabras clave faltantes y legibilidad",
+    "title": "Analizador SEO gratuito de fichas de Shopee | Zetawala",
+    "description": "Pega el título y la descripción de una ficha de Shopee y obtén una puntuación SEO, palabras clave que faltan, legibilidad y sugerencias concretas. El analizador gratuito de Zetawala te indica qué corregir antes de impulsar anuncios o campañas. Úsalo para auditar fichas débiles y priorizar las que más visibilidad orgánica pueden ganar.",
+    "example": {
+      "input": "Título: cable negro | Descripción: buen cable de carga",
+      "output": "Puntuación SEO: 42/100\nFaltan: tipo de conector, amperaje, longitud, marca\nLegibilidad: débil\nSugerencia: añade USB-C, 2,4 A, 1,5 m y uso (móvil / power bank)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el analizador SEO de fichas de Shopee?",
+        "Evalúa la ficha con una puntuación SEO, detecta palabras clave faltantes y la legibilidad, y propone mejoras para vendedores de Shopee en el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida; la puntuación combina reglas y sugerencias."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Funciona en cualquier mercado de Shopee. Interpreta la puntuación según el idioma y las normas de tu Seller Center local."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren saber por qué una ficha no posiciona y qué cambiar primero."
+      ]
+    ]
+  },
+  "shopee-profit-calculator": {
+    "name": "Calculadora de beneficios de Shopee",
+    "desc": "Beneficio neto, margen y ROI a partir de costes y comisiones",
+    "title": "Calculadora gratuita de beneficios de Shopee | Zetawala",
+    "description": "Calcula beneficio neto, margen y ROI en Shopee a partir de coste, precio, envío, comisiones y anuncios. La calculadora gratuita de Zetawala usa solo matemáticas, sin estimaciones opacas, para que sepas si un SKU sigue siendo rentable tras las tarifas del marketplace. Prueba escenarios de descuento antes de unirse a campañas.",
+    "example": {
+      "input": "Coste: 8,50 | Precio: 19,90 | Envío vendedor: 1,20 | Comisión 6 % | Anuncios: 0,80",
+      "output": "Comisión: 1,19\nBeneficio neto: 8,21\nMargen: 41,3 %\nROI sobre coste: 96,6 %"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de beneficios de Shopee?",
+        "Calcula beneficio neto, margen y ROI a partir de costes, precio, envío, comisiones y anuncios para que los vendedores de Shopee vean la rentabilidad real con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas; no inventan cifras."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Los porcentajes de comisión y las tablas de envío son configurables para cada país de Shopee."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que necesitan márgenes claros antes de bajar precios o gastar en publicidad."
+      ]
+    ]
+  },
+  "shopee-fee-calculator": {
+    "name": "Calculadora de comisiones de Shopee",
+    "desc": "Comisiones de marketplace y pago configurables",
+    "title": "Calculadora gratuita de comisiones de Shopee | Zetawala",
+    "description": "Estima comisiones de marketplace y de pago en Shopee, y lo que te queda de payout. La calculadora gratuita de Zetawala deja configurar los porcentajes para tu categoría y país, y usa matemáticas puras. Úsala para comparar el neto entre SKU o entre mercados antes de fijar el precio.",
+    "example": {
+      "input": "Precio: 25,00 | Comisión marketplace 5,5 % | Pago 2 % | IVA sobre tarifas según región",
+      "output": "Comisión marketplace: 1,38\nTarifa de pago: 0,50\nPayout estimado del vendedor: 23,12"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de comisiones de Shopee?",
+        "Estima comisiones de marketplace y de pago configurables, y el payout del vendedor, para que los vendedores de Shopee planifiquen precios con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Los porcentajes son configurables: adapta comisión, pago e impuestos al Seller Center de tu país."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren ver el neto después de tarifas, no solo el precio de lista."
+      ]
+    ]
+  },
+  "shopee-pricing-calculator": {
+    "name": "Calculadora de precios de Shopee",
+    "desc": "Precios sugerido, de equilibrio, competitivo y premium",
+    "title": "Calculadora gratuita de precios de Shopee | Zetawala",
+    "description": "Obtén precios sugerido, de equilibrio, competitivo y premium para Shopee, con consejos de IA. La calculadora gratuita de Zetawala combina matemáticas de costes y comisiones con orientación para no vender por debajo del umbral. Ideal antes de campañas, cupones o guerra de precios.",
+    "example": {
+      "input": "Coste: 12 | Comisión 6 % | Envío 2 | Margen objetivo 35 % | Precio rival: 24,90",
+      "output": "Equilibrio: 17,02\nSugerido: 23,15\nCompetitivo: 24,50\nPremium: 27,90\nConsejo IA: mantén el sugerido y usa un cupón de 1 $ en lugar de bajar el listado."
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de precios de Shopee?",
+        "Propone precios sugerido, de equilibrio, competitivo y premium, con consejos de IA, para que los vendedores de Shopee fijen precios con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "La parte numérica es matemática determinista; los consejos de posicionamiento de precio usan IA (DeepSeek) a través de la API compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Comisiones y envío son configurables para cada mercado de Shopee."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren precios defendibles: ni tan bajos que maten el margen ni tan altos que no conviertan."
+      ]
+    ]
+  },
+  "shopee-shipping-calculator": {
+    "name": "Calculadora de envío de Shopee",
+    "desc": "Coste de envío estimado y plazo de entrega",
+    "title": "Calculadora gratuita de envío de Shopee | Zetawala",
+    "description": "Estima coste de envío y plazo de entrega en Shopee a partir de tablas regionales configurables. La calculadora gratuita de Zetawala te ayuda a decidir si asumes el envío, usas tarifa plana o Shopee Express según peso y destino. Usa matemáticas, no conjeturas, para no erosionar el margen con logística.",
+    "example": {
+      "input": "Peso: 0,45 kg | Origen: MY | Destino: zona urbana | Servicio: estándar",
+      "output": "Coste estimado: 3,80\nEntrega: 2–4 días\nNota: el envío gratuito en pedidos > 15 reduce conversión si el margen no lo absorbe"
+    },
+    "faqs": [
+      [
+        "¿Qué hace la calculadora de envío de Shopee?",
+        "Estima coste de envío y plazo de entrega con tablas regionales configurables para que los vendedores de Shopee planifiquen la logística con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuita?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "No. Las calculadoras de beneficio, comisiones y envío usan matemáticas deterministas."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Las tablas de envío son configurables para reflejar las diferencias entre países y zonas de Shopee."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que necesitan costes de envío realistas antes de ofrecer envío gratis o elegir un servicio."
+      ]
+    ]
+  },
+  "shopee-chat-reply-generator": {
+    "name": "Generador de respuestas de chat de Shopee",
+    "desc": "Respuestas profesionales, amables y breves",
+    "title": "Generador gratuito de respuestas de chat de Shopee | Zetawala",
+    "description": "Redacta respuestas de chat de Shopee profesionales, amables o cortas a partir del mensaje del comprador. El generador gratuito de Zetawala ayuda a contestar más rápido sin tono frío ni plantillas robóticas. Úsalo para talla, envío, reembolsos y objeciones de precio manteniendo la política de tu tienda.",
+    "example": {
+      "input": "Mensaje: «¿Este vestido encoge al lavarlo? Talla M.» | Tono: amable",
+      "output": "¡Hola! La tela no debería encoger si lavas en frío y tiendes. La M equivale a EU 38; si estás entre dos tallas, te recomiendo la L. ¿Quieres que te pase la tabla de medidas?"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el generador de respuestas de chat de Shopee?",
+        "Propone respuestas profesionales, amables y breves a mensajes de compradores para que los vendedores de Shopee comuniquen mejor con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Genera respuestas en el idioma que indiques. Adapta políticas de envío y devolución a tu mercado de Shopee."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren responder más rápido y con mejor tono sin perder ventas en el chat."
+      ]
+    ]
+  },
+  "shopee-listing-optimizer": {
+    "name": "Optimizador de fichas de Shopee",
+    "desc": "Título, descripción, palabras clave y puntuación de calidad",
+    "title": "Optimizador gratuito de fichas de Shopee | Zetawala",
+    "description": "Mejora de una vez título, descripción, palabras clave y puntuación de calidad de una ficha de Shopee. El optimizador gratuito de Zetawala señala huecos SEO y reescribe el texto para buscar más impresiones orgánicas. Úsalo en fichas con ventas débiles antes de gastar en anuncios.",
+    "example": {
+      "input": "Título actual: power bank barato | Descripción corta sin capacidad",
+      "output": "Título: Power Bank 20000 mAh carga rápida PD – Batería portátil USB-C para móvil y tablet\nPalabras clave: 20000mah powerbank, pd fast charge\nPuntuación de calidad: 78 (antes 41)"
+    },
+    "faqs": [
+      [
+        "¿Qué hace el optimizador de fichas de Shopee?",
+        "Optimiza título, descripción y palabras clave, y estima una puntuación de calidad, para que los vendedores de Shopee mejoren el SEO de la ficha con el kit de Zetawala."
+      ],
+      [
+        "¿Es gratuito?",
+        "Sí. Las herramientas del kit para vendedores de Shopee de Zetawala son gratuitas."
+      ],
+      [
+        "¿Usa inteligencia artificial?",
+        "Sí. Las herramientas de fichas y respuestas usan DeepSeek a través de la API de generación compartida."
+      ],
+      [
+        "¿Qué regiones admite?",
+        "Sirve para cualquier país de Shopee. Ajusta el texto al idioma y a las normas de calidad locales de Seller Center."
+      ],
+      [
+        "¿Para quién es?",
+        "Vendedores de Shopee que quieren reforzar fichas débiles de forma integral, no solo cambiar el título."
+      ]
+    ]
+  }
+}

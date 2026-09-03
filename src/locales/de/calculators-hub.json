@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Kostenlose Business-Rechner – Freelance, Marge, LTV und AdSense | Zetawala",
+    "description": "Kostenlose Rechner für Freelance-Stundensatz, Gewinnmarge, Break-even, LTV, CAC, AdSense und Profit. Deterministische Formeln, ohne KI.",
+    "keywords": [
+      "Business-Rechner",
+      "Freiberufler-Stundensatz-Rechner",
+      "Gewinnmargen-Rechner",
+      "Break-even-Rechner",
+      "AdSense-Umsatz-Rechner"
+    ]
+  },
+  "hero": {
+    "title": "Business- und Marketing-Rechner",
+    "subtitle": "Freelance-Sätze, SaaS-Preise, LTV, CAC, Ads-ROI, AdSense und Marktplatz-Profit: 18 kostenlose Tools mit deterministischen Formeln, ohne KI.",
+    "cta": "Freelance-Stundensatz-Rechner öffnen"
+  },
+  "grid": {
+    "title": "Alle Rechner",
+    "subtitle": "18 Tools für Preise, Unit Economics, Marketing-ROI und E-Commerce-Margen.",
+    "localizedBadge": "Übersetzt"
+  },
+  "pickerTitle": "Den richtigen Rechner wählen",
+  "pickerSubtitle": "Passen Sie Ihr Ziel zum Einstiegspunkt.",
+  "learning": {
+    "title": "Preise und ROI",
+    "subtitle": "Die Ideen hinter der Rechner-Suite.",
+    "blogCta": "Rechner-Blogleitfäden lesen",
+    "topics": [
+      {
+        "title": "Klare Sätze schlagen Bauchgefühl",
+        "body": "Wer zu günstig anbietet, vergisst oft Steuern, unbezahlte Zeit und Kosten. Ein Stundenboden schützt den Cashflow."
+      },
+      {
+        "title": "LTV vs. CAC",
+        "body": "Gesundes Wachstum braucht LTV klar über CAC. Nutzen Sie beide Rechner, bevor Sie Paid Acquisition skalieren."
+      },
+      {
+        "title": "Gebühren fressen Marge",
+        "body": "Amazon, Etsy und eBay kommen zu Versand und Ads hinzu. Modellieren Sie den Nettogewinn pro Stück vor dem Volumen."
+      },
+      {
+        "title": "KI-API-Budget",
+        "body": "Tokenpreise wirken klein, skalieren aber mit dem Tagesvolumen. Schätzen Sie Monats- und Jahreskosten vor dem Launch."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Häufige Fragen",
+    "subtitle": "Typische Fragen zur Rechner-Suite.",
+    "items": [
+      {
+        "q": "Was ist die Rechner-Suite von Zetawala?",
+        "a": "18 deterministische Rechner für Freelancer, SaaS-Gründer, Marketer und E-Commerce-Verkäufer. Alles läuft im Browser, ohne LLM-Aufruf."
+      },
+      {
+        "q": "Nutzen die Rechner KI?",
+        "a": "Nein. Die Mathematik läuft lokal. API-Preise in dem Kostenrechner sind veröffentlichte Tabellen, keine Prognosen."
+      },
+      {
+        "q": "Womit soll ich starten?",
+        "a": "Freelancer: Stundensatz oder Projektpreis. SaaS: Preis, LTV und CAC. Online-Seller: E-Commerce-, Amazon-FBA-, Etsy- oder eBay-Profit."
+      },
+      {
+        "q": "Sind die Ergebnisse exakt?",
+        "a": "Es sind transparente Schätzungen mit Standardformeln. Prüfen Sie Gebühren, Steuern und Ad-Metriken immer in Ihren eigenen Konten."
+      }
+    ]
+  }
+}

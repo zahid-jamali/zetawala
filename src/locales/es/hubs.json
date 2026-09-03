@@ -1,0 +1,254 @@
+{
+  "seo": {
+    "metadata": {
+      "title": "Herramientas SEO gratis – Auditoría, PageSpeed y webmaster | Zetawala",
+      "description": "Herramientas SEO e inteligencia webmaster: auditor de web, PageSpeed y Core Web Vitals, enlaces rotos, sitemaps, canónicas y calculadoras de ROI."
+    },
+    "hero": {
+      "title": "SEO e inteligencia webmaster",
+      "subtitle": "Diagnostica SEO técnico, valida indexabilidad, audita contenido, mide Core Web Vitals y modela el ROI: 17 herramientas en un solo espacio.",
+      "cta": "Auditar el SEO de un sitio"
+    },
+    "grid": { "title": "Todas las herramientas SEO", "subtitle": "17 herramientas para auditorías, indexación, rendimiento y ROI." },
+    "picker": {
+      "title": "Elige la herramienta SEO adecuada",
+      "subtitle": "Empieza por el objetivo que tengas hoy.",
+      "items": [
+        { "title": "Auditoría completa", "desc": "Usa el auditor SEO o la puntuación de salud para una línea base.", "slugs": ["website-checker", "health-score"] },
+        { "title": "Rastreo e indexación", "desc": "Valida sitemaps, robots.txt, canónicas e indexabilidad.", "slugs": ["sitemap-tool", "robots-txt-tool", "canonical-indexability"] },
+        { "title": "Páginas y contenido", "desc": "Títulos, meta, densidad de keywords y estructura on-page.", "slugs": ["title-meta-analyzer", "content-audit", "keyword-density"] },
+        { "title": "Rendimiento y ROI", "desc": "Core Web Vitals y modelos de ROI de SEO o contenido.", "slugs": ["pagespeed-analyzer", "traffic-revenue", "seo-roi"] }
+      ]
+    },
+    "learning": {
+      "title": "Aprende SEO",
+      "subtitle": "Conceptos detrás del kit webmaster.",
+      "topics": [
+        { "title": "SEO técnico", "body": "Cómo descubren las páginas los rastreadores, por qué importan sitemaps y robots.txt, y cómo las canónicas evitan contenido duplicado." },
+        { "title": "Core Web Vitals y PageSpeed", "body": "LCP, INP y CLS, y cómo los datos de laboratorio y de campo de PageSpeed Insights guían las correcciones." },
+        { "title": "Señales on-page", "body": "Títulos, meta, jerarquía de encabezados, enlaces internos y keywords siguen impulsando la relevancia." },
+        { "title": "Flujos webmaster", "body": "Prioriza correcciones con un plan de acción y relaciona el esfuerzo SEO con tráfico e ingresos." }
+      ]
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre la suite SEO y webmaster.",
+      "items": [
+        { "q": "¿Qué es SEO e inteligencia webmaster en Zetawala?", "a": "Una suite de 17 herramientas gratis de auditorías técnicas, indexabilidad, PageSpeed, contenido y ROI." },
+        { "q": "¿Con cuál debo empezar?", "a": "Empieza por el auditor SEO o la puntuación de salud y luego usa las herramientas especializadas según los problemas detectados." },
+        { "q": "¿Sirven para principiantes?", "a": "Sí. Las salidas incluyen explicaciones claras y el plan de acción SEO prioriza los siguientes pasos." }
+      ]
+    }
+  },
+  "writing": {
+    "metadata": {
+      "title": "Herramientas de escritura IA gratis – Humanizador, gramática y urdu | Zetawala",
+      "description": "Herramientas de escritura IA: humanizador, detector, plagio, gramática, parafraseo, conversor urdu ↔ roman urdu, resumen y reescritura."
+    },
+    "hero": {
+      "title": "Escritura IA e idiomas",
+      "subtitle": "Humaniza texto IA, detecta escritura automática, corrige gramática, convierte roman urdu, resume y reescribe: 10 herramientas gratis.",
+      "cta": "Abrir humanizador IA"
+    },
+    "grid": { "title": "Todas las herramientas de escritura", "subtitle": "Humaniza, detecta, pule, convierte, resume y reescribe." },
+    "picker": {
+      "title": "Elige un flujo de escritura",
+      "subtitle": "Empieza por la tarea de hoy.",
+      "items": [
+        { "title": "Humanizar y detectar IA", "desc": "Haz que los borradores suenen naturales y puntúa señales de IA frente a texto humano.", "slugs": ["ai-humanizer", "ai-content-detector"] },
+        { "title": "Pulir y proteger originalidad", "desc": "Gramática, plagio y parafraseo.", "slugs": ["grammar-checker", "plagiarism-checker", "paraphrasing-tool"] },
+        { "title": "Urdu y roman urdu", "desc": "Convierte entre escrituras y corrige el roman urdu.", "slugs": ["roman-urdu-to-urdu", "urdu-to-roman-urdu", "roman-urdu-grammar"] },
+        { "title": "Resumir y reescribir", "desc": "Comprime textos largos o cambia tono, longitud y SEO.", "slugs": ["ai-text-summarizer", "ai-rewrite-tool"] }
+      ]
+    },
+    "learning": {
+      "title": "Notas de escritura",
+      "subtitle": "Cómo sacar mejores borradores.",
+      "topics": [
+        { "title": "Por qué humanizar borradores IA", "body": "La salida cruda suele sonar repetitiva. El humanizador conserva el sentido y mejora el ritmo." },
+        { "title": "El detector es una estimación", "body": "Los detectores puntúan patrones, no prueban autoría. Úsalos como segunda opinión." },
+        { "title": "Roman urdu ↔ urdu", "body": "Los conversores aceleran el borrador; la gramática atrapa errores frecuentes del roman urdu." },
+        { "title": "Reescribe con intención", "body": "Modos más corto, más largo, profesional, cercano y SEO adaptan el mismo texto a cada canal." }
+      ]
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre la suite de escritura.",
+      "items": [
+        { "q": "¿Qué es la suite de escritura IA?", "a": "Diez herramientas gratis para humanizar, detectar, gramática, plagio, parafraseo, conversión urdu, resumen y reescritura." },
+        { "q": "¿Por cuál empiezo?", "a": "Empieza por el humanizador para borradores, el corrector gramatical para pulir o el conversor roman urdu → urdu." }
+      ]
+    }
+  },
+  "study": {
+    "metadata": {
+      "title": "Herramientas de estudio IA, quizzes y mecanografía | Zetawala",
+      "description": "Herramientas de estudio: notas IA, quizzes, PDF a quiz, flashcards, notas de YouTube, deberes y tests de mecanografía."
+    },
+    "hero": {
+      "title": "Estudio IA, quizzes y mecanografía",
+      "subtitle": "Notas, quizzes, flashcards, notas de YouTube, ayuda con deberes y práctica de mecanografía: 10 herramientas educativas gratis.",
+      "cta": "Generar notas de estudio"
+    },
+    "grid": { "title": "Todas las herramientas de estudio", "subtitle": "Aprende más rápido con notas, quizzes y mecanografía." },
+    "picker": {
+      "title": "Elige un camino de estudio",
+      "subtitle": "Encaja la herramienta con cómo aprendes.",
+      "items": [
+        { "title": "Notas, quizzes y flashcards", "desc": "Genera notas y práctica interactiva de cualquier tema.", "slugs": ["ai-notes-generator", "ai-quiz-generator", "ai-flashcard-generator"] },
+        { "title": "PDFs y YouTube", "desc": "Convierte documentos y vídeos en quizzes y notas.", "slugs": ["pdf-to-quiz", "youtube-study-notes"] },
+        { "title": "Tareas y deberes", "desc": "Borradores de trabajos y explicaciones paso a paso.", "slugs": ["ai-assignment-generator", "ai-homework-solver"] },
+        { "title": "Mecanografía y código", "desc": "Tests cronometrados, lecciones y mecanografía de código con certificado.", "slugs": ["typing-speed-test", "typing-master-course", "coding-typing-test"] }
+      ]
+    },
+    "learning": {
+      "title": "Consejos de estudio",
+      "subtitle": "Saca más de cada sesión.",
+      "topics": [
+        { "title": "El recuerdo activo gana", "body": "Quizzes y flashcards fuerzan la recuperación, más efectiva que releer notas." },
+        { "title": "Ancla la IA en tus fuentes", "body": "PDF y YouTube funcionan mejor cerca del texto extraído: verifica siempre los datos." },
+        { "title": "La mecanografía se acumula", "body": "Práctica diaria corta, primero precisión, luego velocidad." }
+      ]
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre la suite de estudio.",
+      "items": [
+        { "q": "¿Qué es la suite de estudio IA?", "a": "Diez herramientas gratis de notas, quizzes, flashcards, notas de YouTube, tareas, deberes y mecanografía." },
+        { "q": "¿Las de mecanografía usan IA?", "a": "No. Velocidad, curso y mecanografía de código usan lógica determinista en el cliente." }
+      ]
+    }
+  },
+  "freelancer": {
+    "metadata": {
+      "title": "Kit freelance gratis – Herramientas Upwork y Fiverr | Zetawala",
+      "description": "Kit freelance para Upwork y Fiverr: propuestas, gigs, perfiles, precios, contratos y respuestas a compradores."
+    },
+    "hero": {
+      "title": "Kit para freelancers",
+      "subtitle": "Consigue más clientes en Upwork y Fiverr con propuestas, SEO de gigs, perfiles, precios, contratos y seguimientos.",
+      "cta": "Abrir kit de Upwork"
+    },
+    "grid": { "title": "Todas las herramientas freelance", "subtitle": "20 herramientas para Upwork y Fiverr." },
+    "picker": {
+      "title": "Elige un marketplace",
+      "subtitle": "Entra en la plataforma donde vendes.",
+      "items": [
+        { "title": "Upwork", "desc": "Propuestas, encaje de jobs, perfil, cartas, contratos y seguimientos.", "slugs": ["upwork-proposal-generator", "upwork-profile-optimizer", "upwork-hourly-rate-calculator"] },
+        { "title": "Fiverr", "desc": "Títulos de gig, descripciones, SEO, tags, precios y respuestas.", "slugs": ["fiverr-gig-title-generator", "fiverr-gig-seo-analyzer", "fiverr-pricing-generator"] }
+      ]
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre el kit freelance.",
+      "items": [
+        { "q": "¿Qué es el kit freelance?", "a": "Veinte herramientas gratis de Upwork y Fiverr para propuestas, gigs, perfiles, precios, contratos y mensajes." },
+        { "q": "¿Necesito una cuenta?", "a": "No. Abre una herramienta y empieza. Las de IA usan DeepSeek cuando hay generación." }
+      ]
+    }
+  },
+  "freelancer-upwork": {
+    "metadata": {
+      "title": "Kit Upwork gratis – Propuestas, perfil y tarifas | Zetawala",
+      "description": "Herramientas Upwork: generador de propuestas, encaje de jobs, perfil, cartas, tarifa horaria y contratos."
+    },
+    "hero": {
+      "title": "Kit Upwork",
+      "subtitle": "Redacta propuestas, optimiza tu perfil, fija tarifas y haz seguimiento a clientes.",
+      "cta": "Generar propuesta Upwork"
+    },
+    "grid": { "title": "Todas las herramientas Upwork", "subtitle": "Propuestas, perfil, precios y comunicación." },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre el kit Upwork.",
+      "items": [
+        { "q": "¿Por cuál herramienta Upwork empiezo?", "a": "Empieza por el generador de propuestas y luego usa el optimizador de perfil y la calculadora de tarifa horaria." }
+      ]
+    }
+  },
+  "freelancer-fiverr": {
+    "metadata": {
+      "title": "Kit Fiverr gratis – SEO de gigs, títulos y precios | Zetawala",
+      "description": "Herramientas Fiverr: títulos, descripciones, analizador SEO, tags, paquetes, respuestas a compradores y reseñas."
+    },
+    "hero": {
+      "title": "Kit Fiverr",
+      "subtitle": "Escribe títulos y descripciones de gig, revisa el SEO, define paquetes y responde a compradores.",
+      "cta": "Generar título de gig"
+    },
+    "grid": { "title": "Todas las herramientas Fiverr", "subtitle": "SEO de gigs, precios y mensajes." },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre el kit Fiverr.",
+      "items": [
+        { "q": "¿Por cuál herramienta Fiverr empiezo?", "a": "Empieza por el generador de títulos, luego el analizador SEO y el generador de precios." }
+      ]
+    }
+  },
+  "shopee": {
+    "metadata": {
+      "title": "Kit vendedor Shopee gratis – SEO de fichas, beneficio y tarifas | Zetawala",
+      "description": "Herramientas Shopee: títulos, descripciones, keywords, analizador SEO, beneficio, tarifas, envío y respuestas de chat."
+    },
+    "hero": {
+      "title": "Kit vendedor Shopee",
+      "subtitle": "Optimiza fichas, keywords, márgenes, comisiones, envío y chat de clientes en Shopee.",
+      "cta": "Abrir generador de títulos"
+    },
+    "grid": { "title": "Todas las herramientas Shopee", "subtitle": "SEO de fichas, números de vendedor y chat." },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre el kit Shopee.",
+      "items": [
+        { "q": "¿Qué es el kit vendedor Shopee?", "a": "Diez herramientas gratis de SEO de fichas, keywords, beneficio, comisiones, envío y respuestas de chat." }
+      ]
+    }
+  },
+  "lazada": {
+    "metadata": {
+      "title": "Kit vendedor Lazada gratis – SEO de fichas y márgenes | Zetawala",
+      "description": "Herramientas Lazada: títulos, keywords, SEO, beneficio, envío, chat y optimizador de ficha."
+    },
+    "hero": {
+      "title": "Kit vendedor Lazada",
+      "subtitle": "El mismo motor de vendedor para Lazada: SEO de fichas, keywords, calculadoras y chat.",
+      "cta": "Abrir generador de títulos"
+    },
+    "grid": { "title": "Todas las herramientas Lazada", "subtitle": "SEO de fichas, números de vendedor y chat." },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre el kit Lazada.",
+      "items": [
+        { "q": "¿Qué es el kit vendedor Lazada?", "a": "Diez herramientas gratis que comparten motor con Shopee, ajustadas a fichas y tarifas de Lazada." }
+      ]
+    }
+  },
+  "pdf-utilities": {
+    "metadata": {
+      "title": "Utilidades PDF e imagen gratis – Convertir, extraer, redimensionar y OCR | Zetawala",
+      "description": "Utilidades PDF e imagen: PDF a Markdown, tablas, enlaces, Excel, EXIF, paletas, tamaños sociales y OCR de capturas."
+    },
+    "hero": {
+      "title": "Utilidades PDF e imagen",
+      "subtitle": "Convierte PDFs, extrae tablas y enlaces, transforma Excel/JSON/CSV, gestiona metadatos de imagen y ejecuta OCR: 15 utilidades gratis.",
+      "cta": "Convertir PDF a Markdown"
+    },
+    "grid": { "title": "Todas las utilidades PDF e imagen", "subtitle": "Convierte, extrae, redimensiona y lee imágenes, sin APIs de pago." },
+    "picker": {
+      "title": "Elige una utilidad",
+      "subtitle": "Empieza por el archivo que tienes.",
+      "items": [
+        { "title": "Extractores PDF", "desc": "Markdown, tablas, enlaces, imágenes y metadatos.", "slugs": ["pdf-to-markdown", "pdf-table-extractor", "pdf-link-extractor"] },
+        { "title": "Excel y datos", "desc": "Fórmulas y conversiones Excel/JSON/CSV.", "slugs": ["excel-formula-generator", "excel-to-json", "csv-to-excel"] },
+        { "title": "Imágenes", "desc": "EXIF, paletas, tamaños sociales y OCR.", "slugs": ["image-metadata-viewer", "social-image-resizer", "screenshot-to-text"] }
+      ]
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Sobre las utilidades PDF e imagen.",
+      "items": [
+        { "q": "¿Estas utilidades usan IA?", "a": "La mayoría son deterministas. El OCR de capturas usa Tesseract. No se requieren APIs de pago." }
+      ]
+    }
+  }
+}

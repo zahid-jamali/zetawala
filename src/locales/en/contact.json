@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Contact Support | Zetawala",
+    "description": "Contact Zetawala support about free SEO, YouTube, marketplace, writing, and calculator tools."
+  },
+  "back": "Back to home",
+  "title": "Contact Support",
+  "subtitle": "Get in touch with our support team about tools, data, or account questions.",
+  "nameLabel": "Full name",
+  "namePlaceholder": "Enter your name",
+  "emailLabel": "Email address",
+  "emailPlaceholder": "you@example.com",
+  "messageLabel": "Message",
+  "messagePlaceholder": "How can we help?",
+  "submit": "Send message",
+  "sending": "Sending…",
+  "successTitle": "Message sent",
+  "successBody": "Your inquiry has been logged. We will review it and follow up shortly.",
+  "successCta": "Send another message",
+  "errors": {
+    "name": "Full name is required",
+    "email": "Email address is required",
+    "emailInvalid": "Please provide a valid email address",
+    "message": "Message must be at least 10 characters",
+    "send": "Failed to submit the form."
+  }
+}

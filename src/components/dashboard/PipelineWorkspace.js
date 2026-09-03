@@ -18,7 +18,9 @@ import StudyHost, { STUDY_HOST_SLUGS } from './study/StudyHost';
 import FreelancerHost, { FREELANCER_HOST_SLUGS } from './freelancer/FreelancerHost';
 import MarketplaceHost, { SHOPEE_HOST_SLUGS, LAZADA_HOST_SLUGS } from './marketplace/MarketplaceHost';
 import { navigationConfig } from '../../config/navigation';
-import { getSeoPath } from '../../config/routes';
+import { getLocalizedToolPath } from '../../i18n/paths';
+import { DEFAULT_LOCALE } from '../../i18n/config';
+import { useLocale } from '../i18n/LocaleProvider';
 
 const youtubeCategory = navigationConfig.find(c => c.slug === 'youtube-automation');
 const youtubeSteps = youtubeCategory 
@@ -103,7 +105,9 @@ const categoryRouteKeys = {
   'lazada-seller': 'lazada'
 };
 
-export default function PipelineWorkspace({ toolSlug, categorySlug, initialLanguage = null }) {
+export default function PipelineWorkspace({ toolSlug, categorySlug, initialLanguage = null, locale: localeProp, toolCopy = null }) {
+  const { locale: ctxLocale, t } = useLocale();
+  const locale = localeProp || ctxLocale || DEFAULT_LOCALE;
   const router = useRouter();
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -186,17 +190,17 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
   };
 
   const handleStepClick = (slug) => {
-    router.push(getSeoPath(routeCategory, slug));
+    router.push(getLocalizedToolPath(locale, routeCategory, slug));
   };
 
   const handleSendToTitle = (idea) => {
     dispatch(setToolInput({ toolSlug: 'title-generator', field: 'idea', value: idea }));
-    router.push(getSeoPath('youtube', 'title-generator'));
+    router.push(getLocalizedToolPath(locale, 'youtube', 'title-generator'));
   };
 
   const handleSendToTool = (title, targetSlug) => {
     dispatch(setToolInput({ toolSlug: targetSlug, field: 'title', value: title }));
-    router.push(getSeoPath('youtube', targetSlug));
+    router.push(getLocalizedToolPath(locale, 'youtube', targetSlug));
   };
 
   const handleCopyText = (text) => {
@@ -234,7 +238,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
                 onClick={() => handleStepClick(step.slug)}
                 className={`px-3 py-1.5 rounded-xl text-[10px] font-bold border transition-all cursor-pointer ${isCurrent ? 'bg-sky-500 text-white border-transparent shadow-sm' : isPast ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350 border-slate-200 dark:border-slate-800' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500'}`}
               >
-                {String(idx + 1).padStart(2, '0')} {step.name}
+                {String(idx + 1).padStart(2, '0')} {t(`tools.${step.slug}.name`) !== `tools.${step.slug}.name` ? t(`tools.${step.slug}.name`) : step.name}
               </button>
             );
           })}
@@ -249,7 +253,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
       ) : SEO_HOST_SLUGS.includes(toolSlug) ? (
         <SeoToolHost toolSlug={toolSlug} />
       ) : CALCULATOR_HOST_SLUGS.includes(toolSlug) ? (
-        <CalculatorsHost toolSlug={toolSlug} />
+        <CalculatorsHost toolSlug={toolSlug} locale={locale} toolCopy={toolCopy} />
       ) : PDF_UTILITY_HOST_SLUGS.includes(toolSlug) ? (
         <PdfUtilitiesHost toolSlug={toolSlug} />
       ) : WRITING_HOST_SLUGS.includes(toolSlug) ? (
@@ -302,7 +306,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
       )}
 
       {/* Bottom SEO Section: Description, Example and FAQs */}
-      <ToolSeoSection toolSlug={toolSlug} language={initialLanguage} />
+      <ToolSeoSection toolSlug={toolSlug} language={initialLanguage} toolCopy={toolCopy} />
 
     </div>
   );

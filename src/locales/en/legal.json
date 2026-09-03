@@ -1,0 +1,119 @@
+{
+  "privacy-policy": {
+    "metadata": {
+      "title": "Privacy Policy | Zetawala",
+      "description": "Understand how Zetawala handles user data and maintains privacy standards across free SEO and creator tools."
+    },
+    "title": "Privacy Policy",
+    "updated": "Last updated: July 3, 2026",
+    "back": "Back to home",
+    "sections": [
+      {
+        "title": "1. Scope of Data Collection",
+        "paragraphs": [
+          "Zetawala gathers user data to operate, improve, and secure our tools. Collection covers account registration information, API usage parameters, and generation query history. We do not collect data outside the specific usage of the video, marketplace, writing, study, and SEO tools."
+        ]
+      },
+      {
+        "title": "2. Utilization of Information",
+        "paragraphs": [
+          "Telemetry and payload values are processed to generate relevant outputs (YouTube metadata, marketplace listings, WhatsApp copy, SEO audits) over secure connections. User history is locked to individual accounts and is never cross-pollinated or sold."
+        ]
+      },
+      {
+        "title": "3. Third-Party Integrations & Generative AI",
+        "paragraphs": [
+          "When you use generators, payload parameters such as search queries, niche descriptions, and titles may be forwarded to secure cloud processing environments including Google Gemini API endpoints. These transmittals are covered by corporate API confidentiality standards and are not used to train public base models."
+        ]
+      },
+      {
+        "title": "4. User Rights & Data Deletion",
+        "paragraphs": [
+          "Users may inspect, download, or purge generation history and stored states. Requests for complete profile and history erasure are executed via our support channels."
+        ]
+      },
+      {
+        "title": "5. Security Standards",
+        "paragraphs": [
+          "Connections to our servers, databases, and third-party models use modern Transport Layer Security (TLS 1.3). Database assets use role-based access control."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "metadata": {
+      "title": "Terms of Service | Zetawala",
+      "description": "Review the Terms of Service governing the use of Zetawala platforms and free AI SEO tools."
+    },
+    "title": "Terms of Service",
+    "updated": "Last updated: July 3, 2026",
+    "back": "Back to home",
+    "sections": [
+      {
+        "title": "1. Acceptable Use of Services",
+        "paragraphs": [
+          "Zetawala grants you a non-exclusive, non-transferable, revocable license to access the platform for generating marketing and metadata outputs. You agree not to abuse, reverse engineer, scrape, or flood API endpoints, or circumvent usage restrictions."
+        ]
+      },
+      {
+        "title": "2. Intellectual Property Rights",
+        "paragraphs": [
+          "Output you generate (outlines, descriptions, keywords) belongs to you. Underlying system configurations, UI, prompts, and server code remain the exclusive intellectual property of Zetawala."
+        ]
+      },
+      {
+        "title": "3. API Usage Limits & Fair Use",
+        "paragraphs": [
+          "To maintain service quality we enforce fair-use rates. Automated batch requests that degrade performance for other users may result in temporary or permanent suspension."
+        ]
+      },
+      {
+        "title": "4. Disclaimer of Warranties",
+        "paragraphs": [
+          "Services are provided “as is” and “as available”. We do not guarantee conversion rates, keyword positions, YouTube analytics gains, or campaign results. Review LLM outputs before you publish them."
+        ]
+      },
+      {
+        "title": "5. Limitation of Liability",
+        "paragraphs": [
+          "Zetawala and its developers shall not be liable for indirect, incidental, special, consequential, or punitive damages from downtime, data loss, or model errors."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "metadata": {
+      "title": "Cookie Policy | Zetawala",
+      "description": "Learn how cookies are used on Zetawala to secure sessions and improve free SEO and creator tool experiences."
+    },
+    "title": "Cookie Policy",
+    "updated": "Last updated: July 3, 2026",
+    "back": "Back to home",
+    "sections": [
+      {
+        "title": "1. Use of Cookies",
+        "paragraphs": [
+          "Cookies are small text files stored on your device. Zetawala uses cookies to identify sessions, preserve UI preferences, and maintain authentication tokens."
+        ]
+      },
+      {
+        "title": "2. Essential Cookies",
+        "paragraphs": [
+          "These cookies are required to navigate the dashboard, hold a session, and keep tool inputs. Disabling them degrades the service."
+        ]
+      },
+      {
+        "title": "3. Analytical & Performance Settings",
+        "paragraphs": [
+          "We may use anonymized tokens to measure latency and optimize server performance. Analytical telemetry is processed solely for that purpose."
+        ]
+      },
+      {
+        "title": "4. Control & Management",
+        "paragraphs": [
+          "You can delete or block cookies in your browser settings. Some features may stop working if essential cookies are blocked."
+        ]
+      }
+    ]
+  }
+}

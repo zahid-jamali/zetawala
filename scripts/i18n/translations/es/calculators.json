@@ -1,0 +1,434 @@
+{
+  "ai-api-cost": {
+    "name": "Calculadora de coste de API de IA",
+    "desc": "Estima el gasto en OpenAI, Anthropic, Google y DeepSeek",
+    "title": "Calculadora de coste de API de IA gratis – OpenAI, Claude y más",
+    "description": "Estima el gasto en OpenAI, Anthropic, Google, DeepSeek o un modelo personalizado con la calculadora gratis de coste de API de IA de Zetawala. Introduce tokens, solicitudes al día y precio por millón de tokens, y verás el coste por solicitud y los totales diario, mensual y anual con matemáticas deterministas (sin IA). Ideal para fundadores, ingenieros de ML y equipos SaaS que presupuestan el uso de LLM. Los resultados se actualizan al instante.",
+    "example": {
+      "input": "Proveedor: OpenAI · Modelo: gpt-4o-mini · 1.500 tokens de entrada / 500 de salida · 100 solicitudes/día · 30 días",
+      "output": "Coste/solicitud + totales diario / mensual / anual según las tarifas publicadas en $/1M de entrada y salida"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona la calculadora de coste de API de IA?",
+        "Coste por solicitud = (Tokens de entrada ÷ 1M × $/1M de entrada) + (Tokens de salida ÷ 1M × $/1M de salida). Diario = coste × solicitudes/día; mensual y anual se escalan a partir de ahí."
+      ],
+      [
+        "¿Qué proveedores y modelos admite?",
+        "Las tarifas incluidas cubren modelos habituales de OpenAI, Anthropic, Google y DeepSeek. Elige Personalizado para introducir tus propios precios de entrada y salida por millón de tokens."
+      ],
+      [
+        "¿Esta estimación coincide con mi factura?",
+        "Es una proyección determinista a partir de las tarifas y el uso que introduces. La factura real puede variar por caché, reintentos, llamadas a herramientas o cambios de precio del proveedor."
+      ],
+      [
+        "¿La calculadora llama a las API de IA?",
+        "No. Nunca envía tokens ni solicitudes a los proveedores. El cálculo se ejecuta en local con tus datos y la tarifa seleccionada."
+      ],
+      [
+        "¿A quién le sirve una calculadora de coste de API de IA?",
+        "A equipos de producto, desarrolladores independientes y responsables financieros que necesitan un presupuesto mensual claro de LLM antes de lanzar funciones o escalar el tráfico."
+      ],
+      [
+        "¿Cómo reduzco el gasto estimado en API?",
+        "Baja los tokens por solicitud, cachea prompts, usa modelos más baratos para tareas rutinarias o reduce las solicitudes/día, y vuelve a calcular para ver el nuevo total mensual al instante."
+      ]
+    ]
+  },
+  "saas-pricing": {
+    "name": "Calculadora de precios SaaS",
+    "desc": "Precio de equilibrio y de suscripción recomendado",
+    "title": "Calculadora de precios SaaS gratis – Encuentra tu precio de suscripción",
+    "description": "Obtén el precio de equilibrio y el precio de suscripción recomendado con la calculadora gratis de precios SaaS de Zetawala. Introduce gastos operativos mensuales, beneficio deseado y clientes esperados, y calcula el MRR necesario y la proyección de beneficio con fórmulas deterministas (sin IA). Pensada para fundadores, product managers y solopreneurs que validan precios. Los resultados se actualizan al instante al cambiar los datos.",
+    "example": {
+      "input": "Gastos: 5.000 $/mes · Beneficio deseado: 3.000 $ · Clientes esperados: 200",
+      "output": "Equilibrio 25 $/mes · Recomendado 40 $/mes · MRR necesario 8.000 $ · Proyección de beneficio 3.000 $"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el precio SaaS recomendado?",
+        "Precio de equilibrio = Gastos ÷ Clientes. Precio recomendado = (Gastos + Beneficio deseado) ÷ Clientes. MRR necesario = Gastos + Beneficio deseado."
+      ],
+      [
+        "¿Esta herramienta de precios SaaS usa IA?",
+        "No. Precios y MRR son aritmética pura a partir de tus cifras. No hay scraping de competidores ni un tramo “sugerido” por IA."
+      ],
+      [
+        "¿Y si el número de clientes es una estimación?",
+        "Usa una cifra conservadora de clientes esperados (o modela varios escenarios). Al cambiar clientes se recalculan al instante el equilibrio y el precio recomendado."
+      ],
+      [
+        "¿El precio de equilibrio es el precio de lista?",
+        "El equilibrio es el ingreso medio mínimo por cliente para cubrir gastos. El precio de lista suele situarse en o por encima del recomendado cuando incluyes objetivos de beneficio."
+      ],
+      [
+        "¿Quién debería usar una calculadora de precios SaaS?",
+        "Fundadores SaaS en etapa temprana, desarrolladores independientes y responsables de operaciones que fijan o revisan tramos de suscripción antes del lanzamiento o de un cambio de precio."
+      ],
+      [
+        "¿Cómo la combino con LTV y CAC?",
+        "Después de fijar el precio, revisa el LTV y el CAC del cliente para que el ARPU de la suscripción se mantenga sano frente al coste de adquisición y el valor de vida."
+      ]
+    ]
+  },
+  "customer-cac": {
+    "name": "Calculadora de coste de adquisición de cliente (CAC)",
+    "desc": "CAC a partir del gasto en marketing y ventas",
+    "title": "Calculadora de coste de adquisición de cliente (CAC) gratis",
+    "description": "Mide el coste de adquisición de cliente con la calculadora CAC gratis de Zetawala. Suma gasto en marketing, gasto en ventas y clientes adquiridos para obtener el CAC y el gasto total de adquisición con matemáticas deterministas, sin IA. Perfecta para growth marketers, fundadores y equipos financieros que comprueban si anuncios y ventas son eficientes. Los totales se actualizan al instante.",
+    "example": {
+      "input": "Marketing: 10.000 $ · Ventas: 5.000 $ · Clientes adquiridos: 150",
+      "output": "CAC 100 $ · Gasto total de adquisición 15.000 $"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el CAC?",
+        "CAC = (Gastos de marketing + Gastos de ventas) ÷ Clientes adquiridos. El gasto total es la suma de marketing y ventas."
+      ],
+      [
+        "¿Esta herramienta de CAC usa IA o medias del sector?",
+        "No. Solo divide el gasto y el recuento de clientes que introduces. No hay estimaciones de IA ni capas de benchmarks."
+      ],
+      [
+        "¿Qué costes debo incluir en marketing y ventas?",
+        "Incluye anuncios, producción de contenido, herramientas, comisiones, sueldos de SDR/AE y agencias del periodo que mides, para que el CAC refleje el coste real de adquisición."
+      ],
+      [
+        "¿Qué CAC es bueno respecto al LTV?",
+        "Muchos negocios buscan un LTV:CAC de unos 3:1 o mejor. Usa la calculadora de LTV de Zetawala junto al CAC para comprobar el ratio."
+      ],
+      [
+        "¿Quién debería usar una calculadora de coste de adquisición?",
+        "Performance marketers, fundadores SaaS, operadores ecommerce y agencias que reportan la eficiencia de la adquisición de pago y de ventas."
+      ],
+      [
+        "¿Puedo calcular el CAC de un solo canal?",
+        "Sí. Introduce solo el gasto de ese canal y los clientes que adquirió. Cambia los datos para comparar Google Ads, contenido u outbound lado a lado."
+      ]
+    ]
+  },
+  "content-marketing-roi": {
+    "name": "Calculadora de ROI de marketing de contenidos",
+    "desc": "Tráfico, clientes y ROI del contenido",
+    "title": "Calculadora de ROI de marketing de contenidos gratis",
+    "description": "Estima tráfico, clientes, ingresos y ROI del contenido con la calculadora gratis de ROI de marketing de contenidos de Zetawala. Introduce artículos al mes, visitas, tasa de conversión, ingresos por cliente y coste de contenido: todo se calcula con matemáticas deterministas (sin IA). Pensada para content marketers, equipos SEO y agencias. Las proyecciones se actualizan al instante.",
+    "example": {
+      "input": "8 artículos/mes · 1.200 visitas cada uno · 2 % conv. · AOV 120 $ · Coste de contenido 2.000 $",
+      "output": "Tráfico 9.600 · Clientes 192 · Ingresos 23.040 $ · ROI ~1.052 %"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el ROI del marketing de contenidos?",
+        "Tráfico = Artículos × Visitas medias. Clientes = Tráfico × Conversión %. Ingresos = Clientes × Ingreso medio por cliente. ROI % = (Ingresos − Coste de contenido) ÷ Coste de contenido × 100 cuando el coste > 0."
+      ],
+      [
+        "¿Esta herramienta inventa tráfico o rankings?",
+        "No. Solo multiplica las hipótesis que introduces. No hay previsión de IA de volumen de búsqueda ni de posiciones."
+      ],
+      [
+        "¿Qué tasa de conversión debo usar?",
+        "Usa una tasa realista de todo el sitio o de la página de destino, tomada de analítica. Tasas conservadoras evitan inflar el ROI."
+      ],
+      [
+        "¿A quién le sirve una calculadora de ROI de contenidos?",
+        "A responsables SEO, agencias de contenido y fundadores que justifican inversión en blog, vídeo o recursos frente a ingresos esperados del pipeline."
+      ],
+      [
+        "¿Por qué a veces el ROI aparece en blanco?",
+        "El ROI necesita un coste mensual de contenido mayor que cero. Pon un coste para ver el retorno; sin coste sigues viendo tráfico, clientes e ingresos."
+      ],
+      [
+        "¿Puedo modelar una sola página pilar en vez de una cadencia mensual?",
+        "Sí: pon artículos en 1 y usa las visitas y la conversión esperadas de esa página para estimar su contribución a ingresos."
+      ]
+    ]
+  },
+  "google-ads-profit": {
+    "name": "Calculadora de beneficio de Google Ads",
+    "desc": "Clics, conversiones, beneficio y ROI de anuncios",
+    "title": "Calculadora de beneficio de Google Ads gratis – ROI y conversiones",
+    "description": "Modela clics, conversiones, ingresos, beneficio y ROI de Google Ads con la calculadora gratis de Zetawala. Introduce presupuesto, CPC medio, tasa de conversión y valor del pedido: los resultados usan solo matemáticas deterministas (sin IA). Pensada para gestores PPC, anunciantes ecommerce y agencias. Las estimaciones se actualizan al instante al ajustar pujas o presupuestos.",
+    "example": {
+      "input": "Presupuesto: 3.000 $ · CPC: 1,50 $ · Conv.: 3 % · AOV: 85 $",
+      "output": "Clics 2.000 · Conversiones 60 · Ingresos 5.100 $ · Beneficio 2.100 $ · ROI 70 %"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona la fórmula de beneficio de Google Ads?",
+        "Clics = Presupuesto ÷ CPC. Conversiones = Clics × Conversión %. Ingresos = Conversiones × AOV. Beneficio = Ingresos − Presupuesto. ROI % = Beneficio ÷ Presupuesto × 100."
+      ],
+      [
+        "¿Está conectada a mi cuenta de Google Ads?",
+        "No. Es una calculadora de planificación. Pega medias previstas o históricas para modelar el beneficio antes de escalar el gasto."
+      ],
+      [
+        "¿La calculadora usa IA?",
+        "No. Cada métrica es aritmética determinista a partir de presupuesto, CPC, tasa de conversión y valor del pedido."
+      ],
+      [
+        "¿Quién debería usar una calculadora de beneficio de Google Ads?",
+        "Performance marketers, tiendas y agencias que comprueban si el CPC y la conversión de una campaña pueden alcanzar objetivos de beneficio."
+      ],
+      [
+        "¿Y si el beneficio es negativo?",
+        "Significa que los ingresos proyectados quedan por debajo del presupuesto. Baja el CPC, sube la conversión o el AOV, o reduce el gasto, y recalcula para un ROI revisado al instante."
+      ],
+      [
+        "¿Puedo usarla para Meta u otros canales de pago?",
+        "La matemática es agnóstica al canal si tienes presupuesto, CPC (o coste por clic), tasa de conversión y AOV. Las etiquetas están orientadas a Google Ads, pero el modelo es el mismo."
+      ]
+    ]
+  },
+  "email-marketing-roi": {
+    "name": "Calculadora de ROI de email marketing",
+    "desc": "Aperturas, clics, clientes y ROI del email",
+    "title": "Calculadora de ROI de email marketing gratis",
+    "description": "Proyecta aperturas, clics, clientes, ingresos y ROI de campañas de email con la calculadora gratis de ROI de email marketing de Zetawala. Introduce tamaño de lista, tasa de apertura, de clic, de conversión, valor del pedido y coste de campaña, calculado con matemáticas deterministas (sin IA). Ideal para ecommerce y marketers de ciclo de vida. Los resultados se actualizan al instante.",
+    "example": {
+      "input": "Lista: 25.000 · Apertura 28 % · Clic 4 % · Conv. 2,5 % · AOV 70 $ · Coste 400 $",
+      "output": "Aperturas 7.000 · Clics 1.000 · Clientes 25 · Ingresos 1.750 $ · ROI ~337,5 %"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el ROI del email marketing?",
+        "Aperturas = Lista × Apertura %. Clics = Lista × Clic %. Clientes = Clics × Conversión %. Ingresos = Clientes × AOV. ROI % = (Ingresos − Coste de campaña) ÷ Coste de campaña × 100 cuando el coste > 0."
+      ],
+      [
+        "¿Las tasas de apertura y de clic se aplican por separado?",
+        "Sí. La tasa de clic se aplica a toda la lista (clic sobre entregados, al estilo del sector), no solo a quienes abren, en línea con los informes habituales de los ESP."
+      ],
+      [
+        "¿Esta herramienta de ROI de email usa IA?",
+        "No. Las proyecciones son fórmulas puras a partir de las tasas y el tamaño de lista que indiques: sin previsiones generativas."
+      ],
+      [
+        "¿Quién debería usar una calculadora de ROI de email marketing?",
+        "Email marketers, marcas Shopify, equipos de ciclo de vida SaaS y freelancers que estiman ingresos de una campaña o newsletter antes de enviarla."
+      ],
+      [
+        "¿Por qué falta el ROI si omito el coste de campaña?",
+        "Los ingresos sí se calculan. Introduce un coste de campaña (herramientas, copy, diseño, alquiler de listas) mayor que cero para desbloquear el ROI %."
+      ],
+      [
+        "¿Puedo modelar un envío único frente a una secuencia?",
+        "Usa las métricas de una campaña para un envío puntual, o tasas medias y coste combinado de una secuencia corta para una visión de ROI mezclada."
+      ]
+    ]
+  },
+  "affiliate-earnings": {
+    "name": "Calculadora de ingresos de afiliados",
+    "desc": "Clics, ventas y comisiones de afiliado",
+    "title": "Calculadora de ingresos de afiliados gratis – Estimador de comisiones",
+    "description": "Estima clics, ventas y comisiones de afiliado con la calculadora gratis de ingresos de afiliados de Zetawala. Introduce visitas mensuales, CTR de afiliado, tasa de conversión y comisión media para ingresos mensuales y anuales deterministas, sin IA. Pensada para bloggers, YouTubers y dueños de sitios de nicho. Los totales se actualizan al instante cuando cambian el tráfico o las tasas.",
+    "example": {
+      "input": "Visitas: 50.000 · CTR: 2 % · Conv.: 5 % · Comisión: 40 $",
+      "output": "Clics 1.000 · Ventas 50 · Mensual 2.000 $ · Anual 24.000 $"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calculan los ingresos de afiliado?",
+        "Clics = Visitas × CTR %. Ventas = Clics × Conversión %. Ingresos mensuales = Ventas × Comisión media. Anual = Mensual × 12."
+      ],
+      [
+        "¿Garantiza lo que pagará una red?",
+        "No. Es una estimación de planificación a partir del CTR, la conversión y la comisión que asumes. Los pagos reales dependen de las reglas de la red, reembolsos y ventanas de cookie."
+      ],
+      [
+        "¿La calculadora de ingresos de afiliados se basa en IA?",
+        "No. Zetawala usa solo matemáticas deterministas para que los creadores modelen escenarios sin proyecciones opacas de IA."
+      ],
+      [
+        "¿Quién debería usar una calculadora de comisiones de afiliado?",
+        "Bloggers, operadores de newsletters, YouTubers y dueños de comparadores que planifican contenido alrededor de ofertas de afiliado."
+      ],
+      [
+        "¿Qué CTR y tasas de conversión son realistas?",
+        "Varían según el nicho y la ubicación. Empieza con analítica o informes de la red; modela primero tasas conservadoras y luego prueba el escenario alcista al instante."
+      ],
+      [
+        "¿Puedo comparar dos programas de afiliados?",
+        "Sí. Mantén tráfico y CTR fijos, cambia la comisión (y la conversión si hace falta) y compara los ingresos mensuales lado a lado."
+      ]
+    ]
+  },
+  "ecommerce-profit": {
+    "name": "Calculadora de beneficio ecommerce",
+    "desc": "Beneficio neto tras comisiones, envío y anuncios",
+    "title": "Calculadora de beneficio ecommerce gratis – Margen neto y ROI",
+    "description": "Calcula el beneficio neto ecommerce tras coste del producto, envío, comisiones de plataforma y anuncios con la calculadora gratis de Zetawala. Solo matemáticas deterministas, sin IA, para que vendedores de Shopify, WooCommerce y marketplaces vean la economía unitaria real al instante. Margen y ROI se actualizan en cuanto cambian los costes.",
+    "example": {
+      "input": "Precio 79 $ · Coste 28 $ · Envío 6 $ · Comisión de plataforma 8 $ · Anuncios 12 $",
+      "output": "Beneficio neto 25 $ · Margen ~31,6 % · ROI ~46,3 % · Costes totales 54 $"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el beneficio neto ecommerce?",
+        "Beneficio neto = Precio de venta − (Coste del producto + Envío + Comisión de plataforma + Publicidad). Margen % = Neto ÷ Precio × 100. ROI % = Neto ÷ Costes totales × 100."
+      ],
+      [
+        "¿Incluye costes de marketplace y de anuncios?",
+        "Sí. Introduce comisiones de plataforma y publicidad junto a COGS y envío para que el neto refleje lo que te queda por pedido."
+      ],
+      [
+        "¿La calculadora de beneficio ecommerce usa IA?",
+        "No. Todas las salidas son aritmética determinista a partir de tus datos: rápida, transparente y gratis."
+      ],
+      [
+        "¿Quién debería usar esta herramienta?",
+        "Marcas DTC, dropshippers y retailers online que validan el precio de un SKU antes de escalar el tráfico de pago."
+      ],
+      [
+        "¿En qué se diferencia de la calculadora simple de margen?",
+        "Margen de beneficio compara solo coste frente a precio. Beneficio ecommerce añade envío, comisiones y anuncios para una economía unitaria más completa."
+      ],
+      [
+        "¿Puedo modelar un SKU que pierde dinero?",
+        "Sí. Si los costes superan el precio, el beneficio neto y el margen salen negativos: útil para detectar productos no rentables a tiempo."
+      ]
+    ]
+  },
+  "amazon-fba-profit": {
+    "name": "Calculadora de beneficio Amazon FBA",
+    "desc": "Beneficio neto FBA, margen y ROI",
+    "title": "Calculadora de beneficio Amazon FBA gratis – Comisiones, margen y ROI",
+    "description": "Estima el beneficio neto, el margen y el ROI de Amazon FBA tras coste del producto, comisiones de Amazon y envío con la calculadora FBA gratis de Zetawala. Solo matemáticas deterministas, sin IA, para que los vendedores de Amazon pongan a prueba los ASIN antes de pedir inventario. Los resultados se actualizan al instante cuando cambian las comisiones o el precio.",
+    "example": {
+      "input": "Precio 34,99 $ · Coste del producto 11 $ · Comisiones Amazon 12,50 $ · Envío 3,20 $",
+      "output": "Beneficio neto 8,29 $ · Margen ~23,7 % · ROI sobre costes ~31,1 %"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el beneficio de Amazon FBA?",
+        "Neto = Precio de venta − (Coste del producto + Comisiones de Amazon + Envío). Margen % = Neto ÷ Precio × 100. ROI % = Neto ÷ Costes totales × 100."
+      ],
+      [
+        "¿Qué debo poner en comisiones de Amazon?",
+        "Suma la comisión de referido, el fulfillment FBA, el almacenamiento y otros cargos de Amazon de esa unidad (desde la previsualización de tarifas de Seller Central o las facturas)."
+      ],
+      [
+        "¿Esta calculadora FBA usa IA?",
+        "No. Beneficio, margen y ROI son fórmulas puras a partir de las cifras que introduces: sin conjeturas extraídas de la Buy Box."
+      ],
+      [
+        "¿Quién debería usar una calculadora de beneficio Amazon FBA?",
+        "Vendedores de marca blanca, mayoristas y de arbitraje que comprueban si un producto cubre las comisiones con margen y ROI suficientes."
+      ],
+      [
+        "¿El envío es flete de entrada o envío al cliente?",
+        "Introduce el coste logístico por unidad que quieras modelar (a menudo inbound o prep prorrateado por unidad). Mantén el criterio al comparar SKUs."
+      ],
+      [
+        "¿En qué se diferencia de la herramienta de beneficio ecommerce?",
+        "FBA se centra en el apilado de comisiones de Amazon más envío típico de Fulfillment by Amazon. Usa Beneficio ecommerce para tiendas multicanal con una línea de anuncios aparte."
+      ]
+    ]
+  },
+  "etsy-fee-profit": {
+    "name": "Calculadora de comisiones y beneficio de Etsy",
+    "desc": "Comisiones de Etsy, beneficio neto y margen",
+    "title": "Calculadora de comisiones y beneficio de Etsy gratis",
+    "description": "Calcula las comisiones totales de Etsy, el beneficio neto y el margen con la calculadora gratis de Zetawala. Introduce precio de venta, coste del producto, envío y comisiones de Etsy para resultados deterministas, sin IA. Pensada para vendedores y creadores de Etsy que ponen precio a anuncios artesanales o de impresión bajo demanda. Los totales se actualizan al instante.",
+    "example": {
+      "input": "Precio 45 $ · Coste 14 $ · Envío 5 $ · Comisiones Etsy 7,20 $",
+      "output": "Comisiones totales 7,20 $ · Beneficio neto 18,80 $ · Margen ~41,8 %"
+    },
+    "faqs": [
+      [
+        "¿Cómo funciona la fórmula de comisiones y beneficio de Etsy?",
+        "Beneficio neto = Precio de venta − Coste del producto − Envío − Comisiones de Etsy. Margen % = Neto ÷ Precio × 100. Las comisiones totales equivalen a las de Etsy que introduces."
+      ],
+      [
+        "¿Qué comisiones debo incluir?",
+        "Combina listing, transacción, procesamiento de pago y anuncios offsite atribuidos a ese pedido en una sola cifra de comisiones de Etsy para un neto realista."
+      ],
+      [
+        "¿Esta calculadora usa IA o tarifas Etsy en vivo?",
+        "No. No consulta tarifas en tiempo real. Tú introduces las comisiones para que el cálculo siga siendo transparente y bajo tu control."
+      ],
+      [
+        "¿Quién debería usar una calculadora de beneficio de Etsy?",
+        "Vendedores de artesanía, vintage e impresión bajo demanda que fijan precios que sigan siendo rentables tras el apilado de comisiones de Etsy y el envío."
+      ],
+      [
+        "¿Puedo incluir promociones de envío gratis?",
+        "Sí: sube el coste de envío que asumes (o baja el precio efectivo) para que el beneficio neto refleje la promoción."
+      ],
+      [
+        "¿En qué se diferencia de la calculadora de comisiones de eBay?",
+        "Comisiones y beneficio de Etsy usa un solo campo de comisiones más coste y envío. La de eBay separa marketplace y procesamiento de pago y muestra el cobro por separado."
+      ]
+    ]
+  },
+  "ebay-fee": {
+    "name": "Calculadora de comisiones de eBay",
+    "desc": "Comisiones de eBay, beneficio neto y cobro",
+    "title": "Calculadora de comisiones de eBay gratis – Cobro y beneficio neto",
+    "description": "Estima comisiones de eBay, cobro del vendedor y beneficio neto con la calculadora gratis de Zetawala. Introduce precio de venta, coste del producto, envío, comisión de eBay y de procesamiento de pago: solo matemáticas deterministas, sin IA. Ideal para vendedores y revendedores de eBay que comprueban lo que les queda. Los resultados se actualizan al instante.",
+    "example": {
+      "input": "Precio 120 $ · Coste 55 $ · Envío 8 $ · Comisión eBay 15,60 $ · Comisión de pago 3,80 $",
+      "output": "Comisiones totales 19,40 $ · Cobro final 100,60 $ · Beneficio neto 37,60 $"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calculan comisiones, cobro y beneficio neto de eBay?",
+        "Comisiones totales = Comisión de eBay + Comisión de procesamiento de pago. Cobro = Precio − Comisiones totales. Beneficio neto = Cobro − Coste del producto − Envío."
+      ],
+      [
+        "¿Por qué separar comisión de eBay y de pago?",
+        "Las comisiones finales de venta del marketplace y el procesamiento de pago suelen aparecer como líneas distintas. Separarlas facilita auditar cobro y beneficio neto."
+      ],
+      [
+        "¿Esta calculadora de comisiones de eBay usa IA?",
+        "No. Cada cifra es aritmética determinista a partir de tus datos: sin API en vivo ni predicción de comisiones por IA."
+      ],
+      [
+        "¿Quién debería usar una calculadora de comisiones de eBay?",
+        "Vendedores profesionales, revendedores de segunda mano y dueños de tiendas que validan si el precio del anuncio cubre comisiones, coste y envío."
+      ],
+      [
+        "¿El cobro al vendedor incluye el envío que paga el comprador?",
+        "Modélalo con cuidado: si el comprador paga el envío aparte, deja el precio de venta como precio del artículo y pon tu coste de envío en el campo de envío para que el neto sea exacto."
+      ],
+      [
+        "¿Los porcentajes de comisión cambian por categoría?",
+        "Sí. Introduce los importes en dólares de esa categoría y punto de precio (desde la previsualización de comisiones de eBay) para que el cálculo coincida con tu anuncio."
+      ]
+    ]
+  },
+  "freelance-project-pricing": {
+    "name": "Calculadora de precios de proyectos freelance",
+    "desc": "Precia proyectos con horas y contingencia",
+    "title": "Calculadora de precios de proyectos freelance gratis",
+    "description": "Precia proyectos freelance con horas, revisiones, contingencia y tarifa horaria usando la calculadora gratis de Zetawala. Solo matemáticas deterministas, sin IA, para que freelancers y agencias coticen honorarios fijos que cubran un colchón por ampliación del alcance. El precio sugerido y la tarifa efectiva se actualizan al instante.",
+    "example": {
+      "input": "40 horas · 95 $/h · 2 revisiones × 2 h · Contingencia 15 %",
+      "output": "Precio sugerido 4.802 $ · Horas totales (con contingencia) 50,6 · Tarifa efectiva sobre horas de alcance indicada"
+    },
+    "faqs": [
+      [
+        "¿Cómo se calcula el precio del proyecto?",
+        "Horas de revisión = Revisiones × Horas por revisión. Horas base = Horas estimadas + Horas de revisión. Horas totales = Base × (1 + Contingencia %). Precio = Horas totales × Tarifa horaria."
+      ],
+      [
+        "¿Por qué incluir contingencia?",
+        "La contingencia cubre un alcance poco claro, idas y vueltas de feedback y el riesgo, para que un presupuesto fijo siga siendo rentable si el trabajo se amplía un poco."
+      ],
+      [
+        "¿Esta herramienta de precios de proyecto usa IA?",
+        "No. Las cotizaciones se calculan a partir de tus horas, tarifa, revisiones y porcentaje de contingencia: transparente e instantáneo."
+      ],
+      [
+        "¿Quién debería usar una calculadora de precios de proyectos freelance?",
+        "Diseñadores, developers, redactores, consultores y estudios que convierten tarifas horarias en propuestas de proyecto a precio fijo."
+      ],
+      [
+        "¿Cómo elijo primero una tarifa horaria?",
+        "Usa la calculadora de tarifa por hora freelance de Zetawala para fijar un suelo y una tarifa recomendada, y luego introdúcela en este precificador de proyectos."
+      ],
+      [
+        "¿Qué es la tarifa horaria efectiva en los resultados?",
+        "Muestra el precio dividido entre las horas de alcance (estimación + revisiones), para ver lo que el cliente paga de forma efectiva antes del colchón de contingencia."
+      ]
+    ]
+  }
+}

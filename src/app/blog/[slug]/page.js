@@ -3,8 +3,53 @@ import { notFound } from 'next/navigation';
 import dbConnect from '../../../lib/mongodb';
 import BlogPost from '../../../models/BlogPost';
 import BlogPostClient from '../../../components/blog/BlogPostClient';
+import BlogListingClient from '../../../components/blog/BlogListingClient';
+import AdminDashboardPage from '../admin/page';
 
 const SITE_URL = 'https://zetawala.com';
+
+const BLOG_CATEGORY_PAGES = {
+  'seo-webmaster': {
+    category: 'seo-webmaster',
+    heroTitle: 'SEO & Webmaster Guides',
+    heroDescription: 'Technical SEO, PageSpeed, sitemaps, and webmaster workflow guides from Zetawala.',
+  },
+  calculators: {
+    category: 'calculators',
+    heroTitle: 'Business & Marketing Calculator Guides',
+    heroDescription: 'Freelance pricing, SaaS unit economics, marketing ROI, AdSense, affiliates, and ecommerce margin playbooks.',
+  },
+  'pdf-utilities': {
+    category: 'pdf-utilities',
+    heroTitle: 'PDF & Image Utility Guides',
+    heroDescription: 'Guides for PDF, Excel, and image tools on Zetawala.',
+  },
+  writing: {
+    category: 'writing',
+    heroTitle: 'AI Writing Guides',
+    heroDescription: 'Humanizer, grammar, Urdu, and rewrite tips from Zetawala.',
+  },
+  study: {
+    category: 'study',
+    heroTitle: 'Study & Learning Guides',
+    heroDescription: 'Notes, quizzes, and typing workflow guides from Zetawala.',
+  },
+  freelancer: {
+    category: 'freelancer',
+    heroTitle: 'Freelancer Toolkit Guides',
+    heroDescription: 'Upwork and Fiverr workflow guides from Zetawala.',
+  },
+  shopee: {
+    category: 'shopee',
+    heroTitle: 'Shopee Seller Guides',
+    heroDescription: 'Listing SEO and profit guides for Shopee sellers.',
+  },
+  lazada: {
+    category: 'lazada',
+    heroTitle: 'Lazada Seller Guides',
+    heroDescription: 'Listing SEO and profit guides for Lazada sellers.',
+  },
+};
 
 async function getPostBySlug(slug) {
   try {
@@ -20,6 +65,12 @@ async function getPostBySlug(slug) {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  if (slug === 'admin') {
+    return { title: 'Admin | Zetawala', robots: { index: false, follow: false } };
+  }
+  if (BLOG_CATEGORY_PAGES[slug]) {
+    return { title: BLOG_CATEGORY_PAGES[slug].heroTitle, robots: { index: true, follow: true } };
+  }
   const post = await getPostBySlug(slug);
 
   const canonicalUrl = `${SITE_URL}/blog/${slug}`;
@@ -85,6 +136,19 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogPostDetailPage({ params }) {
   const { slug } = await params;
+  if (slug === 'admin') {
+    return <AdminDashboardPage />;
+  }
+  const categoryPage = BLOG_CATEGORY_PAGES[slug];
+  if (categoryPage) {
+    return (
+      <BlogListingClient
+        category={categoryPage.category}
+        heroTitle={categoryPage.heroTitle}
+        heroDescription={categoryPage.heroDescription}
+      />
+    );
+  }
   const post = await getPostBySlug(slug);
 
   if (!post) {

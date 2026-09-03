@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Outils IA gratuits YouTube, SEO et calculateurs | Zetawala",
+    "description": "Zetawala propose des outils IA gratuits pour YouTube, le SEO, les marketplaces et les calculateurs business : tarif freelance, marge, seuil de rentabilité, LTV et AdSense.",
+    "keywords": [
+      "outils IA gratuits",
+      "calculateur de marge",
+      "calculateur freelance",
+      "outils SEO",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Systèmes de productivité et d’automatisation",
+    "titleBefore": "Outils IA gratuits pour YouTube, Daraz, freelances, Shopee et",
+    "titleAccent": "Lazada",
+    "subtitle": "Recherche, audits et calculs au même endroit : YouTube, Daraz, WhatsApp, SEO, calculateurs, PDF, écriture IA, Upwork/Fiverr, Shopee et Lazada.",
+    "searchHint": "Ou parcourez les catégories du menu : survolez une suite pour voir tous les outils.",
+    "cta": "Voir les packs d’outils",
+    "mockupAlt": "Aperçu du tableau de bord Zetawala"
+  },
+  "localizedTools": {
+    "title": "Calculateurs business dans votre langue",
+    "subtitle": "Commencez par les calculateurs entièrement traduits, puis ouvrez n’importe quelle suite pour les noms, métadonnées et FAQ localisés.",
+    "viewAll": "Voir tous les calculateurs"
+  },
+  "suites": {
+    "title": "Suites SEO et automatisation",
+    "subtitle": "Choisissez un pack pour ouvrir l’espace de travail.",
+    "open": "Ouvrir {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Pack automatisation YouTube",
+        "body": "Niches, intelligence de chaîne et de vidéo, revenus estimés et un pipeline complet : idées, titres, hooks, scripts, tags et miniatures.",
+        "cta": "Ouvrir YouTube",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Pack SEO et conversion Daraz",
+        "body": "Titres, descriptions, mots-clés, réponses aux avis et marges nettes FBM/FBD pour la marketplace pakistanaise.",
+        "cta": "Ouvrir Daraz",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "SEO et intelligence webmaster",
+        "body": "Audits techniques, PageSpeed, sitemaps, canonicals, maillage interne et calculateurs de ROI.",
+        "cta": "Ouvrir le SEO",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Calculateurs business et marketing",
+        "body": "Tarifs freelance, LTV, CAC, seuil de rentabilité, marge, AdSense et profit marketplace : formules déterministes, sans IA.",
+        "cta": "Ouvrir les calculateurs",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu’est-ce que Zetawala ?",
+        "a": "Zetawala est une boîte à outils gratuite pour créateurs, vendeurs, freelances et propriétaires de sites. Elle combine YouTube, SEO marketplace, WhatsApp, audits SEO, calculateurs, PDF, écriture IA, études et kits freelance."
+      },
+      {
+        "q": "Quelles pages sont traduites ?",
+        "a": "Le français couvre l’accueil, les hubs, les pages légales, le contact, le blog et tous les outils publics. Six calculateurs ont un slug natif ; les autres gardent le slug anglais sous /fr."
+      },
+      {
+        "q": "Les calculateurs utilisent-ils l’IA ?",
+        "a": "Non. Les résultats sont des calculs déterministes à partir de vos données. Aucun appel LLM, aucun tarif marché inventé."
+      },
+      {
+        "q": "Les outils sont-ils gratuits ?",
+        "a": "Oui. Zetawala est un kit gratuit financé par la publicité. Certains analyses peuvent avoir des limites d’usage pour rester stables."
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Kundenlebenswert-Rechner (LTV)",
+  "desc": "LTV aus Bestellwert, Frequenz und Lebensdauer",
+  "metadata": {
+    "title": "Kostenloser Kundenlebenswert-Rechner (LTV) | Zetawala",
+    "description": "Berechnen Sie den LTV aus durchschnittlichem Bestellwert, Kauffrequenz und Lebensdauer. Kostenlos, deterministische Mathematik, ohne KI.",
+    "keywords": ["Kundenlebenswert-Rechner", "LTV Rechner", "CLV Rechner", "Customer Lifetime Value Rechner"]
+  },
+  "seo": {
+    "title": "Kundenlebenswert-Rechner (LTV)",
+    "description": "Berechnen Sie den Customer Lifetime Value mit Zetawalas kostenlosem LTV-Rechner: durchschnittlicher Bestellwert, Kauffrequenz und Lebensdauer. Nur deterministische Mathematik, ohne KI – zum Vergleich mit CAC.",
+    "example": {
+      "input": "AOV: 80 $ · Käufe/Jahr: 4 · Lebensdauer: 3 Jahre",
+      "output": "LTV 960 $ · Jahreswert 320 $ · Projizierter Umsatz je Kunde 960 $"
+    },
+    "faqs": [
+      { "q": "Welche LTV-Formel wird verwendet?", "a": "LTV = Durchschnittlicher Bestellwert × Käufe pro Jahr × Kundenlebensdauer (Jahre). Jahreswert = AOV × Frequenz." },
+      { "q": "Ist der Rechner kostenlos und ohne KI?", "a": "Ja. Er ist auf Zetawala kostenlos und nutzt nur deterministische Mathematik – kein Machine Learning, keine erfundenen Benchmarks." },
+      { "q": "Wie nutze ich LTV mit CAC?", "a": "Eine gängige Faustregel: LTV mehrfach über CAC. Kombinieren Sie ihn mit dem CAC-Rechner, um zu prüfen, ob Acquisition tragfähig ist." },
+      { "q": "Enthält LTV die Marge oder nur Umsatz?", "a": "Dieser Rechner projiziert Umsatz-LTV. Für Deckungsbeiträge kombinieren Sie ihn mit Margen-Tools." },
+      { "q": "Wem nützt die LTV-Berechnung?", "a": "E-Commerce-Marken, Abo-Modelle, Agenturen und Growth-Marketer, die entscheiden, wie viel Acquisition kosten darf." },
+      { "q": "Was, wenn die Frequenz unregelmäßig ist?", "a": "Nutzen Sie einen realistischen Jahresdurchschnitt. Optimistische und konservative Szenarien aktualisieren das Ergebnis sofort." }
+    ]
+  },
+  "ui": {
+    "formTitle": "LTV-Eingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Umsatz-LTV aus Bestellwert, Frequenz und Lebensdauer.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zum Kundenlebenswert.",
+    "fields": {
+      "averageOrderValue": "Durchschnittlicher Bestellwert ($)",
+      "purchaseFrequency": "Käufe pro Jahr",
+      "customerLifespan": "Kundenlebensdauer (Jahre)"
+    },
+    "nextSteps": {
+      "customer-cac": "Mit CAC vergleichen",
+      "saas-pricing": "SaaS-Preis",
+      "profit-margin": "Gewinnmarge"
+    },
+    "results": {
+      "headline": "Kundenlebenswert: {value}",
+      "metrics": {
+        "Customer Lifetime Value": { "title": "Kundenlebenswert" },
+        "Annual Customer Value": { "title": "Jährlicher Kundenwert" },
+        "Total Projected Revenue (per customer)": { "title": "Projizierter Umsatz (je Kunde)" }
+      }
+    }
+  }
+}

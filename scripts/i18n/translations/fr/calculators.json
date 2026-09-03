@@ -1,0 +1,434 @@
+{
+  "ai-api-cost": {
+    "name": "Calculateur de coût d’API IA",
+    "desc": "Estimer les dépenses OpenAI, Anthropic, Google et DeepSeek",
+    "title": "Calculateur de coût d’API IA gratuit – OpenAI, Claude et plus",
+    "description": "Estimez vos dépenses OpenAI, Anthropic, Google, DeepSeek ou modèle personnalisé avec le calculateur gratuit de coût d’API IA de Zetawala. Saisissez tokens, requêtes par jour et tarif au million de tokens, puis voyez le coût par requête et les totaux quotidien, mensuel et annuel en maths déterministes (sans IA). Idéal pour fondateurs, ingénieurs ML et équipes SaaS qui budgètent l’usage LLM. Les résultats se mettent à jour instantanément.",
+    "example": {
+      "input": "Fournisseur : OpenAI · Modèle : gpt-4o-mini · 1 500 tokens in / 500 out · 100 requêtes/jour · 30 jours",
+      "output": "Coût/requête + totaux quotidien / mensuel / annuel d’après les tarifs publiés en $/1M input et output"
+    },
+    "faqs": [
+      [
+        "Comment fonctionne le calculateur de coût d’API IA ?",
+        "Coût par requête = (Tokens d’entrée ÷ 1M × $/1M input) + (Tokens de sortie ÷ 1M × $/1M output). Quotidien = coût × requêtes/jour ; mensuel et annuel en découlent."
+      ],
+      [
+        "Quels fournisseurs et modèles sont pris en charge ?",
+        "Les tarifs intégrés couvrent des modèles courants OpenAI, Anthropic, Google et DeepSeek. Choisissez Personnalisé pour saisir vos propres prix input et output au million de tokens."
+      ],
+      [
+        "Cette estimation correspond-elle à ma facture ?",
+        "C’est une projection déterministe à partir des tarifs et de l’usage saisis. La facture réelle peut différer avec le cache, les retries, les appels d’outils ou les changements de prix du fournisseur."
+      ],
+      [
+        "Le calculateur appelle-t-il les API IA ?",
+        "Non. Il n’envoie jamais de tokens ni de requêtes aux fournisseurs. Le calcul s’exécute en local à partir de vos données et de la grille tarifaire choisie."
+      ],
+      [
+        "À qui sert un calculateur de coût d’API IA ?",
+        "Aux équipes produit, développeurs indépendants et responsables finance qui ont besoin d’un budget LLM mensuel clair avant de livrer des fonctionnalités ou d’augmenter le trafic."
+      ],
+      [
+        "Comment réduire le coût API estimé ?",
+        "Réduisez les tokens par requête, mettez les prompts en cache, choisissez des modèles moins chers pour les tâches courantes, ou baissez les requêtes/jour, puis relancez le calculateur pour voir le nouveau total mensuel."
+      ]
+    ]
+  },
+  "saas-pricing": {
+    "name": "Calculateur de tarification SaaS",
+    "desc": "Prix d’équilibre et tarifs d’abonnement recommandés",
+    "title": "Calculateur de tarification SaaS gratuit – Trouvez votre prix d’abonnement",
+    "description": "Trouvez le prix d’équilibre et le tarif d’abonnement recommandé avec le calculateur gratuit de tarification SaaS de Zetawala. Saisissez charges d’exploitation mensuelles, profit souhaité et clients attendus, puis obtenez le MRR requis et la projection de profit via des formules déterministes (sans IA). Conçu pour fondateurs, product managers et solopreneurs qui valident leurs prix. Les résultats se mettent à jour dès que vous ajustez les données.",
+    "example": {
+      "input": "Charges : 5 000 $/mois · Profit souhaité : 3 000 $ · Clients attendus : 200",
+      "output": "Équilibre 25 $/mois · Recommandé 40 $/mois · MRR requis 8 000 $ · Projection de profit 3 000 $"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le tarif SaaS recommandé ?",
+        "Prix d’équilibre = Charges ÷ Clients. Prix recommandé = (Charges + Profit souhaité) ÷ Clients. MRR requis = Charges + Profit souhaité."
+      ],
+      [
+        "Cet outil de tarification SaaS utilise-t-il l’IA ?",
+        "Non. Prix et MRR sont de l’arithmétique pure à partir de vos chiffres. Pas de scraping concurrent ni de palier « suggéré » par l’IA."
+      ],
+      [
+        "Et si le nombre de clients est une estimation ?",
+        "Utilisez un chiffre conservateur de clients attendus (ou plusieurs scénarios). Changer les clients recalcule aussitôt l’équilibre et le prix recommandé."
+      ],
+      [
+        "Le prix d’équilibre est-il le prix affiché ?",
+        "L’équilibre est le revenu moyen minimum par client pour couvrir les charges. Le prix affiché se situe en général au niveau ou au-dessus du recommandé une fois les objectifs de profit inclus."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de tarification SaaS ?",
+        "Fondateurs SaaS en phase de lancement, développeurs indépendants et responsables opérations qui fixent ou revoient des paliers d’abonnement avant le lancement ou un changement de prix."
+      ],
+      [
+        "Comment l’utiliser avec LTV et CAC ?",
+        "Après la tarification, vérifiez le LTV et le CAC client pour que l’ARPU d’abonnement reste sain face au coût d’acquisition et à la valeur vie."
+      ]
+    ]
+  },
+  "customer-cac": {
+    "name": "Calculateur de coût d’acquisition client (CAC)",
+    "desc": "CAC à partir des dépenses marketing et commerciales",
+    "title": "Calculateur de coût d’acquisition client (CAC) gratuit",
+    "description": "Mesurez le coût d’acquisition client avec le calculateur CAC gratuit de Zetawala. Ajoutez dépenses marketing, dépenses commerciales et clients acquis pour obtenir le CAC et la dépense d’acquisition totale en maths déterministes — sans IA. Parfait pour growth marketers, fondateurs et équipes finance qui vérifient l’efficacité des pubs et des ventes. Les totaux se rafraîchissent instantanément.",
+    "example": {
+      "input": "Marketing : 10 000 $ · Ventes : 5 000 $ · Clients acquis : 150",
+      "output": "CAC 100 $ · Dépense d’acquisition totale 15 000 $"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le CAC ?",
+        "CAC = (Dépenses marketing + Dépenses commerciales) ÷ Clients acquis. La dépense totale est la somme du marketing et des ventes."
+      ],
+      [
+        "Cet outil CAC utilise-t-il l’IA ou des moyennes sectorielles ?",
+        "Non. Il divise uniquement les dépenses et le nombre de clients saisis. Pas d’estimations IA ni de benchmarks superposés."
+      ],
+      [
+        "Quels coûts inclure en marketing et ventes ?",
+        "Incluez pubs, production de contenu, outils, commissions, salaires SDR/AE et honoraires d’agence sur la période mesurée, pour que le CAC reflète le vrai coût d’acquisition."
+      ],
+      [
+        "Quel CAC est bon par rapport au LTV ?",
+        "Beaucoup d’entreprises visent un LTV:CAC d’environ 3:1 ou mieux. Utilisez le calculateur LTV de Zetawala avec le CAC pour vérifier le ratio."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de coût d’acquisition client ?",
+        "Performance marketers, fondateurs SaaS, opérateurs e-commerce et agences qui reportent l’efficacité de l’acquisition payante et commerciale."
+      ],
+      [
+        "Puis-je calculer le CAC d’un seul canal ?",
+        "Oui. Saisissez uniquement la dépense de ce canal et les clients qu’il a acquis. Changez les données pour comparer Google Ads, le contenu ou l’outbound côte à côte."
+      ]
+    ]
+  },
+  "content-marketing-roi": {
+    "name": "Calculateur de ROI du content marketing",
+    "desc": "Trafic, clients et ROI du contenu",
+    "title": "Calculateur de ROI du content marketing gratuit",
+    "description": "Estimez trafic, clients, revenu et ROI du contenu avec le calculateur gratuit de ROI du content marketing de Zetawala. Saisissez articles par mois, visiteurs, taux de conversion, revenu par client et coût du contenu — tout est calculé en maths déterministes (sans IA). Conçu pour content marketers, équipes SEO et agences. Les projections se mettent à jour instantanément.",
+    "example": {
+      "input": "8 articles/mois · 1 200 visiteurs chacun · 2 % conv. · AOV 120 $ · Coût contenu 2 000 $",
+      "output": "Trafic 9 600 · Clients 192 · Revenu 23 040 $ · ROI ~1 052 %"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le ROI du content marketing ?",
+        "Trafic = Articles × Visiteurs moyens. Clients = Trafic × Conversion %. Revenu = Clients × Revenu moyen par client. ROI % = (Revenu − Coût du contenu) ÷ Coût du contenu × 100 lorsque le coût > 0."
+      ],
+      [
+        "Cet outil invente-t-il le trafic ou les classements ?",
+        "Non. Il ne multiplie que les hypothèses que vous saisissez. Pas de prévision IA du volume de recherche ni des positions."
+      ],
+      [
+        "Quel taux de conversion utiliser ?",
+        "Utilisez un taux réaliste pour tout le site ou pour une page d’atterrissage, issu de vos analytics. Des taux conservateurs évitent de surévaluer le ROI."
+      ],
+      [
+        "À qui sert un calculateur de ROI du content marketing ?",
+        "Aux responsables SEO, agences de contenu et fondateurs qui justifient un investissement blog, vidéo ou ressources face au revenu pipeline attendu."
+      ],
+      [
+        "Pourquoi le ROI est-il parfois vide ?",
+        "Le ROI exige un coût de contenu mensuel supérieur à zéro. Indiquez un coût pour voir le retour ; sans coût, trafic, clients et revenu s’affichent toujours."
+      ],
+      [
+        "Puis-je modéliser une page pilier unique plutôt qu’un rythme mensuel ?",
+        "Oui : mettez articles à 1 et utilisez les visiteurs et le taux de conversion attendus de cette page pour estimer sa contribution au revenu."
+      ]
+    ]
+  },
+  "google-ads-profit": {
+    "name": "Calculateur de profit Google Ads",
+    "desc": "Clics, conversions, profit et ROI publicitaire",
+    "title": "Calculateur de profit Google Ads gratuit – ROI et conversions",
+    "description": "Modélisez clics, conversions, revenu, profit et ROI Google Ads avec le calculateur gratuit de Zetawala. Saisissez budget, CPC moyen, taux de conversion et valeur de commande : les résultats n’utilisent que des maths déterministes (sans IA). Conçu pour gestionnaires PPC, annonceurs e-commerce et agences. Les estimations se rafraîchissent dès que vous ajustez enchères ou budgets.",
+    "example": {
+      "input": "Budget : 3 000 $ · CPC : 1,50 $ · Taux conv. : 3 % · AOV : 85 $",
+      "output": "Clics 2 000 · Conversions 60 · Revenu 5 100 $ · Profit 2 100 $ · ROI 70 %"
+    },
+    "faqs": [
+      [
+        "Comment fonctionne la formule de profit Google Ads ?",
+        "Clics = Budget ÷ CPC. Conversions = Clics × Conversion %. Revenu = Conversions × AOV. Profit = Revenu − Budget. ROI % = Profit ÷ Budget × 100."
+      ],
+      [
+        "Est-ce connecté à mon compte Google Ads ?",
+        "Non. C’est un calculateur de planification. Collez des moyennes prévues ou historiques pour modéliser le profit avant d’augmenter les dépenses."
+      ],
+      [
+        "Le calculateur utilise-t-il l’IA ?",
+        "Non. Chaque métrique est de l’arithmétique déterministe à partir du budget, du CPC, du taux de conversion et de la valeur de commande."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de profit Google Ads ?",
+        "Performance marketers, e-commerçants et agences qui testent si le CPC et le taux de conversion d’une campagne peuvent atteindre les objectifs de profit."
+      ],
+      [
+        "Et si le profit est négatif ?",
+        "Cela signifie que le revenu projeté est inférieur au budget. Baissez le CPC, augmentez le taux de conversion ou l’AOV, ou réduisez la dépense, puis relancez pour un ROI révisé immédiat."
+      ],
+      [
+        "Puis-je l’utiliser pour Meta ou d’autres canaux payants ?",
+        "Les maths sont agnostiques au canal si vous avez budget, CPC (ou coût par clic), taux de conversion et AOV. Les libellés sont orientés Google Ads, mais le modèle est identique."
+      ]
+    ]
+  },
+  "email-marketing-roi": {
+    "name": "Calculateur de ROI de l’email marketing",
+    "desc": "Ouvertures, clics, clients et ROI email",
+    "title": "Calculateur de ROI de l’email marketing gratuit",
+    "description": "Projetez ouvertures, clics, clients, revenu et ROI des campagnes email avec le calculateur gratuit de ROI de l’email marketing de Zetawala. Saisissez taille de liste, taux d’ouverture, de clic, de conversion, valeur de commande et coût de campagne — calculés en maths déterministes (sans IA). Idéal pour l’e-commerce et les marketers lifecycle. Les résultats se mettent à jour instantanément.",
+    "example": {
+      "input": "Liste : 25 000 · Ouverture 28 % · Clic 4 % · Conv. 2,5 % · AOV 70 $ · Coût 400 $",
+      "output": "Ouvertures 7 000 · Clics 1 000 · Clients 25 · Revenu 1 750 $ · ROI ~337,5 %"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le ROI de l’email marketing ?",
+        "Ouvertures = Liste × Ouverture %. Clics = Liste × Clic %. Clients = Clics × Conversion %. Revenu = Clients × AOV. ROI % = (Revenu − Coût de campagne) ÷ Coût de campagne × 100 lorsque le coût > 0."
+      ],
+      [
+        "Les taux d’ouverture et de clic s’appliquent-ils indépendamment ?",
+        "Oui. Le taux de clic s’applique à toute la liste (clic sur délivrés, style secteur), pas seulement aux ouvreurs — comme dans les rapports ESP courants."
+      ],
+      [
+        "Cet outil de ROI email utilise-t-il l’IA ?",
+        "Non. Les projections sont des formules pures à partir des taux et de la taille de liste fournis — pas de prévisions génératives."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de ROI de l’email marketing ?",
+        "Email marketers, marques Shopify, équipes lifecycle SaaS et freelances qui estiment le revenu d’une campagne ou d’une newsletter avant l’envoi."
+      ],
+      [
+        "Pourquoi le ROI manque-t-il si j’omets le coût de campagne ?",
+        "Le revenu se calcule quand même. Saisissez un coût de campagne (outils, copy, design, location de listes) supérieur à zéro pour débloquer le ROI %."
+      ],
+      [
+        "Puis-je modéliser un envoi unique vs une séquence ?",
+        "Utilisez les métriques d’une campagne pour un envoi unique, ou des taux moyens et un coût combiné sur une courte séquence pour une vue ROI mixte."
+      ]
+    ]
+  },
+  "affiliate-earnings": {
+    "name": "Calculateur de revenus d’affiliation",
+    "desc": "Clics, ventes et commissions d’affiliation",
+    "title": "Calculateur de revenus d’affiliation gratuit – Estimateur de commissions",
+    "description": "Estimez clics, ventes et commissions d’affiliation avec le calculateur gratuit de revenus d’affiliation de Zetawala. Saisissez visiteurs mensuels, CTR affiliation, taux de conversion et commission moyenne pour des revenus mensuels et annuels déterministes — sans IA. Conçu pour blogueurs, YouTubers et propriétaires de sites de niche. Les totaux se mettent à jour dès que le trafic ou les taux changent.",
+    "example": {
+      "input": "Visiteurs : 50 000 · CTR : 2 % · Conv. : 5 % · Commission : 40 $",
+      "output": "Clics 1 000 · Ventes 50 · Mensuel 2 000 $ · Annuel 24 000 $"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on les revenus d’affiliation ?",
+        "Clics = Visiteurs × CTR %. Ventes = Clics × Conversion %. Revenu mensuel = Ventes × Commission moyenne. Annuel = Mensuel × 12."
+      ],
+      [
+        "Cela garantit-il ce qu’un réseau paiera ?",
+        "Non. C’est une estimation de planification à partir du CTR, de la conversion et de la commission supposés. Les paiements réels dépendent des règles du réseau, des remboursements et des fenêtres de cookies."
+      ],
+      [
+        "Le calculateur de revenus d’affiliation est-il basé sur l’IA ?",
+        "Non. Zetawala n’utilise que des maths déterministes pour que les créateurs modélisent des scénarios sans projections IA opaques."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de commissions d’affiliation ?",
+        "Blogueurs, opérateurs de newsletters, YouTubers et sites comparateurs qui planifient du contenu autour d’offres d’affiliation."
+      ],
+      [
+        "Quels CTR et taux de conversion sont réalistes ?",
+        "Ils varient selon la niche et le placement. Partez des analytics ou des rapports réseau ; modélisez d’abord des taux conservateurs, puis testez le scénario haut instantanément."
+      ],
+      [
+        "Puis-je comparer deux programmes d’affiliation ?",
+        "Oui. Gardez trafic et CTR fixes, changez la commission (et la conversion si besoin), et comparez les revenus mensuels côte à côte."
+      ]
+    ]
+  },
+  "ecommerce-profit": {
+    "name": "Calculateur de profit e-commerce",
+    "desc": "Profit net après frais, livraison et pubs",
+    "title": "Calculateur de profit e-commerce gratuit – Marge nette et ROI",
+    "description": "Calculez le profit net e-commerce après coût produit, livraison, frais de plateforme et pubs avec le calculateur gratuit de Zetawala. Maths déterministes uniquement — sans IA — pour que les vendeurs Shopify, WooCommerce et marketplaces voient la vraie économie unitaire instantanément. Marge et ROI se mettent à jour dès que les coûts changent.",
+    "example": {
+      "input": "Prix 79 $ · Coût 28 $ · Livraison 6 $ · Frais plateforme 8 $ · Pubs 12 $",
+      "output": "Profit net 25 $ · Marge ~31,6 % · ROI ~46,3 % · Coûts totaux 54 $"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le profit net e-commerce ?",
+        "Profit net = Prix de vente − (Coût produit + Livraison + Frais de plateforme + Publicité). Marge % = Net ÷ Prix × 100. ROI % = Net ÷ Coûts totaux × 100."
+      ],
+      [
+        "Cela inclut-il les frais marketplace et publicitaires ?",
+        "Oui. Saisissez frais de plateforme et publicité avec le COGS et la livraison pour que le net reflète le vrai reste par commande."
+      ],
+      [
+        "Le calculateur de profit e-commerce est-il propulsé par l’IA ?",
+        "Non. Toutes les sorties sont de l’arithmétique déterministe à partir de vos saisies — rapide, transparent et gratuit."
+      ],
+      [
+        "Qui devrait utiliser cet outil ?",
+        "Marques DTC, dropshippers et détaillants en ligne qui valident le prix d’un SKU avant d’augmenter le trafic payant."
+      ],
+      [
+        "En quoi diffère-t-il du calculateur de marge simple ?",
+        "La marge bénéficiaire compare seulement coût et prix. Le profit e-commerce ajoute livraison, frais et pubs pour une économie unitaire plus complète."
+      ],
+      [
+        "Puis-je modéliser un SKU déficitaire ?",
+        "Oui. Si les coûts dépassent le prix, profit net et marge deviennent négatifs — utile pour repérer tôt les produits non rentables."
+      ]
+    ]
+  },
+  "amazon-fba-profit": {
+    "name": "Calculateur de profit Amazon FBA",
+    "desc": "Profit net FBA, marge et ROI",
+    "title": "Calculateur de profit Amazon FBA gratuit – Frais, marge et ROI",
+    "description": "Estimez profit net, marge et ROI Amazon FBA après coût produit, frais Amazon et livraison avec le calculateur FBA gratuit de Zetawala. Maths déterministes uniquement — sans IA — pour que les vendeurs Amazon testent les ASIN avant de commander du stock. Les résultats se mettent à jour dès que les frais ou le prix changent.",
+    "example": {
+      "input": "Prix 34,99 $ · Coût produit 11 $ · Frais Amazon 12,50 $ · Livraison 3,20 $",
+      "output": "Profit net 8,29 $ · Marge ~23,7 % · ROI sur coûts ~31,1 %"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on le profit Amazon FBA ?",
+        "Net = Prix de vente − (Coût produit + Frais Amazon + Livraison). Marge % = Net ÷ Prix × 100. ROI % = Net ÷ Coûts totaux × 100."
+      ],
+      [
+        "Que mettre dans les frais Amazon ?",
+        "Additionnez la commission de recommandation, les frais de fulfillment FBA, le stockage et les autres charges Amazon pour cette unité (aperçu des frais Seller Central ou factures)."
+      ],
+      [
+        "Ce calculateur FBA utilise-t-il l’IA ?",
+        "Non. Profit, marge et ROI sont des formules pures à partir des chiffres saisis — pas de conjectures extraites de la Buy Box."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de profit Amazon FBA ?",
+        "Vendeurs marque propre, wholesale et arbitrage qui vérifient qu’un produit couvre les frais avec assez de marge et de ROI."
+      ],
+      [
+        "La livraison est-elle le fret inbound ou l’expédition client ?",
+        "Saisissez le coût logistique unitaire que vous voulez dans le modèle (souvent inbound ou prep alloué par unité). Gardez la même règle pour comparer les SKU."
+      ],
+      [
+        "En quoi diffère-t-il de l’outil de profit e-commerce ?",
+        "FBA se concentre sur l’empilement des frais Amazon et de la livraison, typique de Fulfillment by Amazon. Utilisez Profit e-commerce pour les boutiques multi-canaux avec une ligne pubs séparée."
+      ]
+    ]
+  },
+  "etsy-fee-profit": {
+    "name": "Calculateur de frais et profit Etsy",
+    "desc": "Frais Etsy, profit net et marge",
+    "title": "Calculateur de frais et profit Etsy gratuit",
+    "description": "Calculez les frais Etsy totaux, le profit net et la marge avec le calculateur gratuit de Zetawala. Saisissez prix de vente, coût produit, livraison et frais Etsy pour des résultats déterministes — sans IA. Conçu pour vendeurs et créateurs Etsy qui tarifient des annonces artisanales ou en impression à la demande. Les totaux se rafraîchissent instantanément.",
+    "example": {
+      "input": "Prix 45 $ · Coût 14 $ · Livraison 5 $ · Frais Etsy 7,20 $",
+      "output": "Frais totaux 7,20 $ · Profit net 18,80 $ · Marge ~41,8 %"
+    },
+    "faqs": [
+      [
+        "Comment fonctionne la formule frais et profit Etsy ?",
+        "Profit net = Prix de vente − Coût produit − Livraison − Frais Etsy. Marge % = Net ÷ Prix × 100. Les frais totaux égalent les frais Etsy saisis."
+      ],
+      [
+        "Quels frais dois-je inclure ?",
+        "Regroupez listing, transaction, traitement du paiement et pubs offsite attribués à cette commande en un seul montant de frais Etsy pour un net réaliste."
+      ],
+      [
+        "Ce calculateur utilise-t-il l’IA ou des tarifs Etsy en direct ?",
+        "Non. Il ne récupère pas les grilles en direct. Vous saisissez les frais pour que le calcul reste transparent et sous votre contrôle."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de profit Etsy ?",
+        "Vendeurs d’artisanat, vintage et d’impression à la demande qui fixent des prix encore rentables après la pile de frais Etsy et la livraison."
+      ],
+      [
+        "Puis-je inclure les promotions de livraison gratuite ?",
+        "Oui — augmentez le coût de livraison que vous absorbez (ou baissez le prix effectif) pour que le profit net reflète la promotion."
+      ],
+      [
+        "En quoi diffère-t-il du calculateur de frais eBay ?",
+        "Frais et profit Etsy utilise un seul champ de frais plus coût et livraison. Le calculateur eBay sépare marketplace et traitement du paiement, et affiche le versement à part."
+      ]
+    ]
+  },
+  "ebay-fee": {
+    "name": "Calculateur de frais eBay",
+    "desc": "Frais eBay, profit net et versement",
+    "title": "Calculateur de frais eBay gratuit – Versement et profit net",
+    "description": "Estimez frais eBay, versement vendeur et profit net avec le calculateur gratuit de Zetawala. Saisissez prix de vente, coût produit, livraison, frais eBay et frais de traitement du paiement — maths déterministes uniquement, sans IA. Idéal pour vendeurs et revendeurs eBay qui vérifient le reste à emporter. Les résultats se mettent à jour instantanément.",
+    "example": {
+      "input": "Prix 120 $ · Coût 55 $ · Livraison 8 $ · Frais eBay 15,60 $ · Frais de paiement 3,80 $",
+      "output": "Frais totaux 19,40 $ · Versement final 100,60 $ · Profit net 37,60 $"
+    },
+    "faqs": [
+      [
+        "Comment calcule-t-on frais eBay, versement et profit net ?",
+        "Frais totaux = Frais eBay + Frais de traitement du paiement. Versement = Prix − Frais totaux. Profit net = Versement − Coût produit − Livraison."
+      ],
+      [
+        "Pourquoi séparer frais eBay et frais de paiement ?",
+        "Les frais de valeur finale marketplace et le traitement du paiement apparaissent souvent comme des lignes distinctes. Les séparer facilite l’audit du versement et du profit net."
+      ],
+      [
+        "Ce calculateur de frais eBay utilise-t-il l’IA ?",
+        "Non. Chaque chiffre est de l’arithmétique déterministe à partir de vos saisies — pas d’API en direct ni de prédiction IA des frais."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de frais eBay ?",
+        "Vendeurs professionnels, revendeurs de seconde main et propriétaires de boutiques qui valident qu’un prix d’annonce couvre frais, coût et livraison."
+      ],
+      [
+        "Le versement inclut-il la livraison facturée à l’acheteur ?",
+        "Modélisez la livraison avec soin : si l’acheteur paie la livraison à part, gardez le prix de vente comme prix de l’article et mettez votre coût d’expédition dans le champ livraison pour un net exact."
+      ],
+      [
+        "Les pourcentages de frais peuvent-ils changer selon la catégorie ?",
+        "Oui. Saisissez les montants en dollars pour cette catégorie et ce prix (aperçu des frais eBay) afin que le calculateur corresponde à votre annonce."
+      ]
+    ]
+  },
+  "freelance-project-pricing": {
+    "name": "Calculateur de tarification de projet freelance",
+    "desc": "Tarifer des projets avec heures et contingence",
+    "title": "Calculateur de tarification de projet freelance gratuit",
+    "description": "Tarifez des projets freelance avec heures, révisions, contingence et taux horaire grâce au calculateur gratuit de Zetawala. Maths déterministes uniquement — sans IA — pour que freelances et agences proposent des forfaits qui couvrent une marge pour la dérive du périmètre. Prix suggéré et taux effectif se mettent à jour instantanément.",
+    "example": {
+      "input": "40 heures · 95 $/h · 2 révisions × 2 h · Contingence 15 %",
+      "output": "Prix suggéré 4 802 $ · Heures totales (avec contingence) 50,6 · Taux effectif sur les heures de périmètre indiqué"
+    },
+    "faqs": [
+      [
+        "Comment le prix du projet est-il calculé ?",
+        "Heures de révision = Révisions × Heures par révision. Heures de base = Heures estimées + Heures de révision. Heures totales = Base × (1 + Contingence %). Prix = Heures totales × Taux horaire."
+      ],
+      [
+        "Pourquoi inclure une contingence ?",
+        "La contingence couvre un périmètre flou, les allers-retours de feedback et le risque, pour qu’un forfait reste rentable si le travail s’étend un peu."
+      ],
+      [
+        "Cet outil de tarification de projet utilise-t-il l’IA ?",
+        "Non. Les devis sont calculés à partir de vos heures, taux, révisions et pourcentage de contingence — transparent et instantané."
+      ],
+      [
+        "Qui devrait utiliser un calculateur de tarification de projet freelance ?",
+        "Designers, développeurs, rédacteurs, consultants et studios qui transforment un taux horaire en proposition de projet au forfait."
+      ],
+      [
+        "Comment choisir d’abord un taux horaire ?",
+        "Utilisez le calculateur de taux horaire freelance de Zetawala pour fixer un plancher et un taux recommandé, puis injectez ce taux dans ce tarificateur de projet."
+      ],
+      [
+        "Qu’est-ce que le taux horaire effectif dans les résultats ?",
+        "Il montre le prix divisé par les heures de périmètre (estimation + révisions), pour voir ce que le client paie réellement avant la marge de contingence."
+      ]
+    ]
+  }
+}

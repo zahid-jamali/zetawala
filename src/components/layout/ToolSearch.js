@@ -4,7 +4,8 @@ import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Search, ArrowRight } from 'lucide-react';
-import { searchTools } from '../../config/navSuites';
+import { useCurrentLocale } from '../i18n/LocaleProvider';
+import { searchToolsLocalized } from '../../i18n/nav';
 
 /**
  * Global tool finder — navbar + homepage.
@@ -17,6 +18,7 @@ export default function ToolSearch({
   className = '',
 }) {
   const router = useRouter();
+  const { locale, t } = useCurrentLocale();
   const listId = useId();
   const inputRef = useRef(null);
   const rootRef = useRef(null);
@@ -24,7 +26,10 @@ export default function ToolSearch({
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const results = useMemo(() => searchTools(query, variant === 'hero' ? 8 : 10), [query, variant]);
+  const results = useMemo(
+    () => searchToolsLocalized(query, variant === 'hero' ? 8 : 10, locale, t),
+    [query, variant, locale, t]
+  );
   const showPanel = open && query.trim().length > 0;
 
   useEffect(() => {
@@ -111,8 +116,8 @@ export default function ToolSearch({
           }}
           onFocus={() => setOpen(true)}
           onKeyDown={onKeyDown}
-          placeholder={isHero ? 'Search any tool — niche finder, profit calculator, humanizer…' : 'Search tools…'}
-          aria-label="Search tools"
+          placeholder={isHero ? t('search.placeholderHero') : t('search.placeholder')}
+          aria-label={t('search.placeholder')}
           aria-autocomplete="list"
           aria-controls={listId}
           aria-expanded={showPanel}
@@ -136,7 +141,7 @@ export default function ToolSearch({
           } rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl overflow-hidden`}
         >
           {results.length === 0 ? (
-            <p className="px-4 py-6 text-center text-xs text-slate-500">No tools match “{query.trim()}”.</p>
+            <p className="px-4 py-6 text-center text-xs text-slate-500">{t('search.noResults', { query: query.trim() })}</p>
           ) : (
             <ul className="max-h-[min(360px,50vh)] overflow-y-auto py-1.5 custom-scrollbar">
               {results.map((tool, i) => (

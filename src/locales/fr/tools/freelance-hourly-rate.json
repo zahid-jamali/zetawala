@@ -1,0 +1,62 @@
+{
+  "name": "Calculateur de taux horaire freelance",
+  "desc": "Taux minimum, recommandé et premium à partir de vos objectifs",
+  "metadata": {
+    "title": "Calculateur de taux horaire freelance gratuit | Zetawala",
+    "description": "Fixez un taux freelance minimum, recommandé et premium selon objectif, charges, impôts et heures facturables. Gratuit, sans IA.",
+    "keywords": ["calculateur de taux horaire freelance", "tarif freelance", "taux facturable", "comment fixer un tarif freelance"]
+  },
+  "seo": {
+    "title": "Calculateur de taux horaire freelance – Prixez votre travail",
+    "description": "Utilisez le calculateur gratuit de Zetawala pour fixer des taux minimum, recommandé et premium à partir de votre objectif, charges, impôts et heures facturables. Maths déterministes uniquement, sans IA.",
+    "example": {
+      "input": "Objectif : 5 000 $/mois · Charges : 1 500 $ · Impôt : 25 % · Heures : 100",
+      "output": "Minimum 86,67 $/h · Recommandé 112,67 $/h · Premium 138,67 $/h · Besoin brut 8 666,67 $"
+    },
+    "faqs": [
+      { "q": "Comment le taux est-il calculé ?", "a": "Besoin brut mensuel = (Objectif + Charges) ÷ (1 − Impôt %). Taux minimum = Besoin brut ÷ Heures facturables. Recommandé = minimum × 1,3 ; premium = minimum × 1,6." },
+      { "q": "Utilise-t-il l’IA ?", "a": "Non. Chaque résultat est déterministe. Pas de LLM ni de “tarif marché” inventé." },
+      { "q": "Quelle différence entre minimum, recommandé et premium ?", "a": "Le minimum couvre objectif et charges après impôt. Le recommandé ajoute 30 % de marge. Le premium (×1,6) positionne un travail spécialisé." },
+      { "q": "Qui devrait l’utiliser ?", "a": "Freelances, consultants, designers, développeurs et agences qui ont besoin d’un plancher avant de chiffrer." },
+      { "q": "Faut-il facturer toutes les heures au taux recommandé ?", "a": "Utilisez-le comme taux cible. Le temps non facturable (admin, vente, apprentissage) justifie le buffer." },
+      { "q": "Puis-je en faire un prix de projet ?", "a": "Oui. Associez-le au calculateur de prix de projet freelance pour intégrer heures, révisions et contingence." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Données de tarif",
+    "disclaimer": "Calcul local instantané, sans appel IA. Les résultats se mettent à jour à la saisie. Estimations uniquement : vérifiez avec vos données.",
+    "formulaLabel": "Formule",
+    "detailsTitle": "Détails",
+    "nextStepsTitle": "Étapes suivantes recommandées",
+    "badge": "Calcul Zetawala",
+    "notFound": "Calculateur introuvable.",
+    "sectionTitle": "À quoi sert ce calculateur",
+    "sectionHint": "Un plancher de tarif transparent selon objectifs, charges, impôts et heures.",
+    "exampleTitle": "Exemple concret",
+    "exampleHint": "Entrées d’exemple et résultat attendu.",
+    "sampleInput": "Entrée d’exemple",
+    "sampleOutput": "Résultat",
+    "faqTitle": "Questions fréquentes",
+    "faqHint": "Réponses claires sur les tarifs freelance.",
+    "fields": {
+      "monthlyIncomeGoal": "Objectif de revenu mensuel ($)",
+      "monthlyExpenses": "Charges mensuelles ($)",
+      "taxPct": "Impôt (%)",
+      "billableHours": "Heures facturables par mois"
+    },
+    "nextSteps": {
+      "freelance-project-pricing": "Prix d’un projet",
+      "salary-to-hourly": "Salaire → horaire",
+      "profit-margin": "Marge bénéficiaire"
+    },
+    "results": {
+      "headline": "Taux horaire recommandé : {value}",
+      "metrics": {
+        "Minimum Hourly Rate": { "title": "Taux minimum", "subtitle": "Couvre objectif + charges après impôt" },
+        "Recommended Hourly Rate": { "title": "Taux recommandé", "subtitle": "Minimum × 1,3 de buffer" },
+        "Premium Hourly Rate": { "title": "Taux premium", "subtitle": "Minimum × 1,6 de positionnement" },
+        "Monthly Earnings @ Recommended": { "title": "Revenu mensuel au taux recommandé" }
+      }
+    }
+  }
+}

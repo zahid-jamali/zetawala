@@ -1,0 +1,470 @@
+{
+  "product-hunting": {
+    "name": "Intelligence de recherche de produits",
+    "desc": "Simulez la demande et les marges",
+    "title": "Outil de recherche de produits Daraz – Produits gagnants au Pakistan",
+    "description": "Trouvez des produits gagnants avec l'outil gratuit de recherche de produits Daraz de Zetawala, conçu pour les vendeurs du Pakistan. Repérez les niches à forte demande et faible concurrence, estimez la vitesse de vente, comparez les coûts d'approvisionnement sur les marchés locaux et présélectionnez les articles capables de se classer dans la recherche Daraz et les campagnes Seller Center. Pensé pour les vendeurs FBM, FBD et en dropshipping qui veulent une recherche produit appuyée sur des données — pas des suppositions — avant d'engager du capital en stock.",
+    "example": {
+      "input": "Niche : maison et cuisine | Budget : 30 000 Rs | Modèle : FBM",
+      "output": "Sélection : lot de couvercles extensibles en silicone\nDemande : forte (~12 k recherches/mois)\nConcurrence : faible (peu de vendeurs notés)\nApprovisionnement : 45 Rs (Shah Alami)\nPrix de vente : 299 Rs | Marge estimée : saine après commission"
+    },
+    "faqs": [
+      [
+        "Qu'est-ce que la recherche de produits Daraz et pourquoi les vendeurs en ont-ils besoin ?",
+        "La recherche de produits Daraz consiste à identifier des articles à forte demande, avec une concurrence gérable et des marges viables après commission et frais Daraz. L'outil gratuit de Zetawala aide les vendeurs pakistanais à valider une niche avant d'acheter du stock."
+      ],
+      [
+        "Quelle marge viser pour des produits sur Daraz Pakistan ?",
+        "Visez environ 30 à 50 % net après commission de catégorie, frais de paiement d'environ 1,25 %, emballage, expédition et TVA provinciale sur les frais de service Daraz. Les marges trop fines s'effondrent pendant les grandes remises."
+      ],
+      [
+        "Comment la recherche de produits améliore-t-elle le classement des meilleures ventes sur Daraz ?",
+        "Les produits à forte demande et faible concurrence convertissent plus vite. La vitesse de vente envoie un signal à l'algorithme Daraz, ce qui peut faire progresser le classement organique et le rang des meilleures ventes lorsque la fiche a aussi de bons titres, images et score de contenu."
+      ],
+      [
+        "Faut-il chercher des produits pour FBM ou pour FBD (traité par Daraz) ?",
+        "Les articles légers à rotation rapide fonctionnent souvent bien en FBD avec le badge Daraz Express. Les références plus volumineuses ou en test peuvent démarrer en FBM jusqu'à ce que la demande soit prouvée. Adaptez vos critères à votre modèle logistique dans Seller Center."
+      ],
+      [
+        "Comment évaluer la force des concurrents lors de la recherche de produits Daraz ?",
+        "Examinez les fiches de la première page : notes, volume d'avis, lacunes de score de contenu, prix et rotation du stock. Des photos faibles ou des descriptions maigres sont des ouvertures pour une fiche mieux optimisée."
+      ],
+      [
+        "Qu'est-ce qui fait un produit gagnant pour le 11.11 Daraz ou les mégacampagnes ?",
+        "Des articles d'achat impulsif avec une marge suffisante pour absorber les remises obligatoires de campagne tout en restant rentables. Un attrait large et un approvisionnement fiable comptent plus qu'une référence tendance éphémère."
+      ]
+    ]
+  },
+  "roman-urdu-keywords": {
+    "name": "Chercheur de mots-clés en Roman Urdu",
+    "desc": "Termes de recherche du marché pakistanais",
+    "title": "Chercheur de mots-clés en Roman Urdu – Termes de recherche Daraz Pakistan",
+    "description": "Découvrez les mots-clés en Roman Urdu que les acheteurs pakistanais tapent réellement sur Daraz — des termes que les outils SEO anglophones ignorent. L'outil gratuit de Zetawala fait remonter des expressions localisées pour les titres, les points forts et les champs de recherche de Seller Center, afin que vous vous classiez selon la façon dont les clients cherchent à Lahore, Karachi, Islamabad et dans les villes plus petites. Réduisez la concurrence en PPC, captez l'intention de longue traîne et associez des titres de marque en anglais à des tags internes en Roman Urdu.",
+    "example": {
+      "input": "Produit : mini rafraîchisseur d'air",
+      "output": "Roman Urdu et termes locaux : mini cooler, chota cooler, portable cooler price, mini cooler for room, rechargeable fan cooler, sasta AC, room cooler Pakistan"
+    },
+    "faqs": [
+      [
+        "Pourquoi les mots-clés en Roman Urdu sont-ils importants pour le SEO Daraz ?",
+        "Beaucoup d'acheteurs pakistanais cherchent en Roman Urdu (ourdou écrit en caractères latins). Reprendre ces expressions dans votre fiche et vos mots-clés Seller Center améliore la pertinence, le CTR et la portée organique face aux concurrents uniquement anglophones."
+      ],
+      [
+        "Où placer les mots-clés en Roman Urdu sur une fiche Daraz ?",
+        "Gardez le titre visible professionnel (souvent en anglais avec la marque), puis intégrez le Roman Urdu dans les points forts, la description et les champs internes de mots-clés ou d'attributs dans Daraz Seller Center."
+      ],
+      [
+        "Les fautes d'orthographe et l'argot aident-ils au classement sur Daraz ?",
+        "Oui pour les variantes locales à fort volume (par exemple blootooth). La recherche Daraz ne corrige pas toujours l'argot, et les tags internes sont un endroit sûr pour les fautes courantes sans encombrer le titre."
+      ],
+      [
+        "Les mots-clés en Roman Urdu conviennent-ils au trafic de longue traîne ?",
+        "Souvent oui. Des requêtes comme « baal straight karne wali machine » traduisent une forte intention d'achat et affrontent généralement moins de concurrence que les termes anglais génériques."
+      ],
+      [
+        "Puis-je enchérir sur des mots-clés en Roman Urdu dans les annonces sponsorisées Daraz ?",
+        "Oui. Beaucoup de grandes marques négligent le Roman Urdu : le coût par clic peut donc être plus bas et le retour publicitaire plus élevé quand votre fiche emploie déjà cette langue dans le texte et les tags."
+      ],
+      [
+        "L'outil de mots-clés en Roman Urdu de Zetawala est-il gratuit pour les vendeurs Daraz ?",
+        "Oui. C'est un outil Zetawala gratuit conçu pour les vendeurs Daraz Pakistan qui étudient la langue de recherche locale sans suites de mots-clés payantes."
+      ]
+    ]
+  },
+  "product-title": {
+    "name": "Générateur de titres de produits",
+    "desc": "Titres optimisés à fort CTR",
+    "title": "Générateur de titres de produits Daraz – Titres SEO qui se classent",
+    "description": "Créez des titres de produits Daraz cliquables et prêts pour la recherche avec le générateur gratuit de Zetawala. Placez en tête les mots-clés principaux, la marque (le cas échéant), les matériaux et les caractéristiques clés dans la longueur visible sur mobile, tout en respectant les limites de caractères de Seller Center. Conçu pour améliorer le CTR, le classement organique et la clarté des fiches des vendeurs Daraz au Pakistan — sans accumulation de mots-clés susceptible de déclencher un refus au contrôle qualité.",
+    "example": {
+      "input": "Marque : Havit | Article : souris sans fil | Caractéristiques : clics silencieux, rechargeable, 1600 DPI",
+      "output": "Havit Silent Wireless Mouse – Souris optique rechargeable 1600 DPI, design ergonomique pour ordinateur portable et PC gaming"
+    },
+    "faqs": [
+      [
+        "Quelle est la limite de caractères d'un titre de produit Daraz ?",
+        "Daraz autorise environ 255 caractères, mais placez vos mots-clés principaux dans les 60 à 80 premiers caractères afin qu'ils s'affichent dans la recherche mobile et les pages de catégorie."
+      ],
+      [
+        "Comment écrire un titre de produit Daraz qui se classe ?",
+        "Commencez par la marque (article de marque ou Daraz Mall) ou par le mot-clé produit principal, puis ajoutez les attributs différenciants (taille, matériau, usage). Évitez les répétitions spammeuses : optimisez pour les humains et pour l'algorithme de recherche Daraz."
+      ],
+      [
+        "L'accumulation de mots-clés peut-elle faire refuser mon titre Daraz ?",
+        "Oui. Des formulations comme « souris sans fil souris pas chère souris » nuisent à la confiance et peuvent échouer au contrôle qualité. Utilisez un langage naturel avec des termes à forte intention, une fois chacun, là où ils s'insèrent."
+      ],
+      [
+        "La marque doit-elle figurer en premier dans un titre Daraz ?",
+        "Pour les marques connues et les articles Daraz Mall, oui : commencez par la marque. Pour les produits sans marque ou génériques, commencez par le mot-clé principal que tapent les acheteurs."
+      ],
+      [
+        "Est-il prudent de modifier un titre quand j'ai déjà des ventes ?",
+        "Les ajustements mineurs ne posent pas de problème ; les changements majeurs de mots-clés peuvent perturber l'indexation et le classement temporaire. Conservez si possible les termes centraux déjà éprouvés."
+      ],
+      [
+        "Puis-je utiliser des barres verticales, des tirets ou des emojis dans les titres Daraz ?",
+        "Les tirets et barres verticales aident à la lisibilité. Évitez l'abus d'emojis et les symboles promotionnels : le contrôle qualité Daraz refuse souvent les titres surchargés ou trop chargés d'allégations."
+      ]
+    ]
+  },
+  "product-description": {
+    "name": "Générateur de descriptions de produits",
+    "desc": "Puces et texte de description",
+    "title": "Générateur de descriptions de produits Daraz – Points forts SEO",
+    "description": "Rédigez des descriptions et points forts de produits Daraz orientés conversion avec le générateur gratuit de Zetawala. Structurez caractéristiques, dimensions, garantie et mots-clés sémantiques pour que les acheteurs fassent confiance à la fiche et que le score de contenu de Seller Center progresse. Idéal pour les vendeurs pakistanais qui ont besoin d'un texte de description clair, réduisant les retours pour « article non conforme » et compatible avec la mise en forme Lorikeet.",
+    "example": {
+      "input": "Produit : gourde en acier inoxydable 750 ml",
+      "output": "Points forts :\n- Isolation sous vide double paroi – froid ~24 h / chaud ~12 h\n- Acier inoxydable 18/8 de qualité alimentaire, résistant à la rouille\n- Bouchon étanche à verrouillage sûr pour le sac et la salle de sport\n- Contenance : 750 ml | Sans BPA | Idéal pour le bureau et les voyages"
+    },
+    "faqs": [
+      [
+        "En quoi une description de produit Daraz aide-t-elle le SEO ?",
+        "Un texte détaillé donne à Daraz davantage de contenu à indexer — mots-clés secondaires, cas d'usage et attributs — ce qui permet d'apparaître sur plus de recherches que le seul titre."
+      ],
+      [
+        "Que sont les points forts dans Daraz Seller Center ?",
+        "Les points forts sont de courtes puces situées près du prix (surtout sur ordinateur). Ce sont des lignes très visibles de caractéristiques et de bénéfices : gardez-les faciles à parcourir et pensées pour les mots-clés."
+      ],
+      [
+        "Une meilleure description peut-elle réduire les retours sur Daraz ?",
+        "Oui. Préciser clairement la taille, le matériau, le contenu du colis et les consignes d'usage fixe les attentes et réduit les retours dus aux mauvaises suppositions des acheteurs."
+      ],
+      [
+        "Faut-il utiliser du HTML ou de la mise en forme dans les descriptions Daraz ?",
+        "Adoptez une structure propre : paragraphes courts, puces et gras là où Seller Center ou Lorikeet l'autorisent. Les visuels lifestyle dans le contenu enrichi améliorent souvent la conversion sur mobile."
+      ],
+      [
+        "Comment la longueur de la description influe-t-elle sur le score de contenu Daraz ?",
+        "Un bon score de contenu demande généralement une description suffisamment longue (souvent plus de 50 mots), plusieurs points forts et des attributs complétés. Des champs incomplets réduisent la visibilité."
+      ],
+      [
+        "Le générateur de descriptions Daraz de Zetawala est-il gratuit ?",
+        "Oui. Rédaction gratuite assistée par IA de descriptions et de points forts Daraz pour les vendeurs pakistanais qui optimisent leurs fiches dans Seller Center."
+      ]
+    ]
+  },
+  "listing-optimizer": {
+    "name": "Optimiseur de fiches produit",
+    "desc": "Améliorez le texte pour le classement",
+    "title": "Optimiseur de fiches Daraz – Score de contenu et corrections SEO",
+    "description": "Auditez et améliorez vos fiches Daraz faibles avec l'optimiseur gratuit de Zetawala. Améliorez titres, points forts, attributs et termes de recherche pour porter le score de contenu à un niveau compatible avec les campagnes, augmenter les impressions organiques et vous aligner sur les bonnes pratiques Daraz Seller Center appliquées par les meilleurs vendeurs pakistanais avant le 11.11 et les autres mégaventes.",
+    "example": {
+      "input": "Titre actuel : câble de charge noir",
+      "output": "Optimisé : Câble Micro USB de charge rapide premium – Synchronisation haute vitesse 2,4 A, cordon tressé nylon 1,5 m (noir)"
+    },
+    "faqs": [
+      [
+        "Qu'est-ce que le score de contenu Daraz ?",
+        "Une note de qualité algorithmique (sur 100) fondée sur le titre, la description, les images et les attributs remplis. Les scores à partir d'environ 80 bénéficient généralement d'un meilleur traitement organique que les fiches pauvres."
+      ],
+      [
+        "À quelle fréquence lancer une vérification avec un optimiseur de fiches Daraz ?",
+        "Une fois par mois constitue une bonne base. Optimisez 3 à 4 semaines avant les mégacampagnes pour que les nouveaux mots-clés et attributs soient indexés avant le pic de trafic."
+      ],
+      [
+        "Les attributs facultatifs de Seller Center comptent-ils pour le SEO ?",
+        "Oui. Les attributs facultatifs alimentent les filtres (couleur, matériau, garantie). Incomplets, ils vous excluent des résultats filtrés que les acheteurs utilisent chaque jour."
+      ],
+      [
+        "L'optimisation des fiches peut-elle réduire les coûts PPC sur Daraz ?",
+        "Une meilleure pertinence peut améliorer l'efficacité publicitaire : les fiches très pertinentes et optimisées rivalisent souvent plus efficacement sur Sponsored Discovery que des textes mal ciblés."
+      ],
+      [
+        "Pourquoi ma fiche optimisée a-t-elle été refusée par le contrôle qualité Daraz ?",
+        "Causes fréquentes : allégations interdites, numéros de téléphone, liens externes, mauvaise catégorie ou mots-clés prohibés. Gardez un texte conforme aux règles et fidèle à la catégorie."
+      ],
+      [
+        "L'optimiseur de fiches de Zetawala est-il gratuit pour les vendeurs Daraz ?",
+        "Oui. Des recommandations gratuites pour renforcer le SEO de vos fiches Daraz et votre score de contenu, sans remplacer votre flux de travail Seller Center."
+      ]
+    ]
+  },
+  "competitor-rewriter": {
+    "name": "Réécriveur de fiches concurrentes",
+    "desc": "Rendez les fiches concurrentes uniques",
+    "title": "Réécriveur de fiches concurrentes Daraz – Texte de fiche unique",
+    "description": "Réécrivez les titres et descriptions concurrents sur Daraz en un texte unique et solide en SEO avec le réécriveur gratuit de Zetawala. Conservez l'intention de recherche et les mots-clés déjà bien classés, ajoutez une proposition de valeur plus claire et évitez le contenu dupliqué ou les risques de propriété intellectuelle qui pourraient nuire à votre compte Daraz Seller Center. Conçu pour une veille concurrentielle éthique — pas pour le copier-coller.",
+    "example": {
+      "input": "Titre concurrent : gobelet blender presse-agrumes portable rechargeable",
+      "output": "Blender presse-agrumes portable rechargeable par USB – Mixeur à smoothies sans fil 6 lames, gobelet de voyage 400 ml sans BPA"
+    },
+    "faqs": [
+      [
+        "Copier la fiche d'un concurrent sur Daraz est-il contraire aux règles ?",
+        "Le copier-coller direct peut être pénalisé comme contenu dupliqué et déclencher des plaintes pour propriété intellectuelle. Réécrivez toujours un texte original tout en visant des mots-clés acheteurs similaires."
+      ],
+      [
+        "Pourquoi utiliser un réécriveur concurrentiel plutôt que d'écrire de zéro ?",
+        "Les fiches de première page ont déjà prouvé l'adéquation entre mot-clé et marché. La réécriture capte cette intention validée plus vite tout en renforçant votre proposition de valeur et vos preuves."
+      ],
+      [
+        "Comment faire pour que le texte réécrit surpasse la fiche d'origine ?",
+        "Exploitez leurs avis 1 étoile pour repérer les plaintes, puis traitez explicitement ces points dans vos points forts et votre description. Associez un texte unique à de meilleures images et à un meilleur prix."
+      ],
+      [
+        "Les mêmes mots-clés garantissent-ils de dépasser un concurrent ?",
+        "Non. Les mots-clés créent la pertinence ; le classement exige aussi un prix compétitif, de bons visuels, des avis et une vitesse de vente ainsi qu'un score de contenu solide dans Seller Center."
+      ],
+      [
+        "Puis-je réutiliser les images produit d'un concurrent sur Daraz ?",
+        "Non. Le vol d'images est une cause classique de sanction pour propriété intellectuelle. Utilisez des photos originales ou des visuels du fabricant dûment licenciés et retravaillés pour être clairement les vôtres."
+      ],
+      [
+        "Le réécriveur de fiches concurrentes Daraz de Zetawala est-il gratuit ?",
+        "Oui. Des brouillons de réécriture uniques et gratuits pour les vendeurs pakistanais qui veulent se différencier en respectant le SEO, sans plagier leurs rivaux."
+      ]
+    ]
+  },
+  "daraz-keywords": {
+    "name": "Générateur de mots-clés Daraz",
+    "desc": "Générez des tags à fort trafic",
+    "title": "Générateur de mots-clés Daraz – Termes de recherche vendeurs gratuits",
+    "description": "Générez des mots-clés et termes de recherche Daraz à forte intention pour vos titres, tags internes et champs Seller Center avec le générateur gratuit de Zetawala. Couvrez les variantes larges, exactes, de longue traîne et locales afin que votre produit s'indexe sur davantage de requêtes d'acheteurs au Pakistan — en soutenant la visibilité organique aux côtés des expressions en Roman Urdu et en anglais.",
+    "example": {
+      "input": "Produit : anneau lumineux LED avec support",
+      "output": "ring light, led ring light with stand, tripod ring light, ringlight for tiktok, vlogging light, mobile lighting setup, selfie ring light Pakistan"
+    },
+    "faqs": [
+      [
+        "Où ajouter les mots-clés de recherche dans Daraz Seller Center ?",
+        "Dans « Ajouter / Modifier un produit », ouvrez les sections de détails supplémentaires ou liées au SEO et utilisez les champs de mots-clés de recherche ou d'attributs clés tels qu'ils apparaissent dans votre interface Seller Center."
+      ],
+      [
+        "Comment formater les mots-clés internes Daraz ?",
+        "Suivez le comportement du champ : souvent la touche Entrée crée des tags, ou les termes sont séparés par des espaces. Évitez l'accumulation de virgules sauf si l'interface les attend explicitement."
+      ],
+      [
+        "Les mots-clés internes Daraz influencent-ils le classement ?",
+        "Oui. Ils sont invisibles pour l'acheteur mais explorés pour la pertinence — idéaux pour les synonymes, les fautes d'orthographe et les variantes ourdoues que vous ne voulez pas dans le titre visible."
+      ],
+      [
+        "Existe-t-il une limite aux mots-clés de recherche Daraz ?",
+        "Oui, des plafonds de caractères ou de tags s'appliquent. Privilégiez les termes à forte intention et pertinents pour le produit plutôt que des mots à gros volume sans rapport qui nuisent à la pertinence."
+      ],
+      [
+        "Faut-il mettre à jour les mots-clés avant les mégacampagnes Daraz ?",
+        "Les vendeurs avisés ajoutent des requêtes liées à la campagne (quand les règles le permettent) plusieurs semaines à l'avance, afin que les recherches de tendance correspondent à leur fiche pendant les ventes."
+      ],
+      [
+        "Quel est le meilleur générateur de mots-clés Daraz gratuit pour le Pakistan ?",
+        "Le générateur de mots-clés Daraz gratuit de Zetawala est conçu pour les termes de recherche Seller Center, les titres et le langage des acheteurs locaux — pas pour des listes SEO mondiales génériques."
+      ]
+    ]
+  },
+  "customer-reply": {
+    "name": "Générateur de réponses clients",
+    "desc": "Rédigez des réponses au service client",
+    "title": "Générateur de réponses clients Daraz – Modèles de chat",
+    "description": "Rédigez des réponses Daraz polies et rapides qui protègent votre taux de réponse au chat grâce au générateur gratuit de Zetawala. Traitez les retards de livraison, les questions de taille, les vérifications de stock et les demandes de retour sur un ton professionnel auquel les acheteurs pakistanais font confiance. De bonnes performances de chat dans Seller Center soutiennent les conversions et l'éligibilité aux campagnes.",
+    "example": {
+      "input": "Client : pourquoi ma livraison est-elle en retard ?",
+      "output": "Cher client, merci de nous avoir contactés. Nous sommes désolés pour l'attente : votre commande a quitté notre entrepôt et se trouve chez Daraz Logistics. Nous suivons le colis et vous aiderons si une escalade est nécessaire. Merci de votre patience !"
+    },
+    "faqs": [
+      [
+        "Comment le taux de réponse au chat influe-t-il sur la performance vendeur Daraz ?",
+        "Un taux de réponse élevé (souvent visé à 85-90 % ou plus) est un signal de santé essentiel dans Seller Center. De bonnes réponses soutiennent la visibilité, la confiance et les critères d'éligibilité aux campagnes."
+      ],
+      [
+        "Quel est le délai de réponse attendu sur le chat Daraz ?",
+        "Répondez vite — généralement en une trentaine de minutes pendant les heures ouvrables. Des réponses rapides gagnent des ventes même lorsque les fenêtres officielles diffèrent le week-end ou en dehors des horaires."
+      ],
+      [
+        "Comment répondre à des clients désagréables sur le chat Daraz ?",
+        "Restez professionnel et appuyez-vous sur les règles. Ne polémiquez pas. Signalez les abus via le support vendeurs Daraz. Utilisez des modèles calmes issus d'un générateur de réponses."
+      ],
+      [
+        "De meilleures réponses au chat peuvent-elles augmenter le taux de conversion Daraz ?",
+        "Oui. Beaucoup d'acheteurs pakistanais cherchent à être rassurés sur le stock, l'authenticité et la livraison. Des réponses claires et humaines réduisent l'hésitation et l'abandon de panier."
+      ],
+      [
+        "Faut-il se reposer uniquement sur les réponses rapides de Seller Center ?",
+        "Les réponses rapides aident à accuser réception et à tenir les délais, mais complétez ensuite par des réponses précises. L'association de modèles et de personnalisation fonctionne le mieux."
+      ],
+      [
+        "L'outil de réponses clients Daraz de Zetawala est-il gratuit ?",
+        "Oui. Des brouillons de réponses gratuits pour les scénarios courants du chat vendeur Daraz, afin de protéger votre taux de réponse et la cohérence du ton."
+      ]
+    ]
+  },
+  "faq-generator": {
+    "name": "Générateur de FAQ",
+    "desc": "Générez les questions-réponses des acheteurs",
+    "title": "Générateur de FAQ Daraz – Questions-réponses produit pour vos fiches",
+    "description": "Générez des FAQ produit prêtes pour les acheteurs avec le générateur gratuit de Zetawala pour les fiches Daraz. Répondez aux questions de taille, de compatibilité, de garantie, de batterie et de contenu du colis avant que les clients n'ouvrent le chat — vous réduisez les frictions, les retours et la charge de support tout en ajoutant des expressions SEO de longue traîne à votre description dans Seller Center.",
+    "example": {
+      "input": "Produit : écouteurs Bluetooth",
+      "output": "Q : Battery backup kitna hai ?\nR : Jusqu'à environ 5 heures d'écoute par charge et environ 20 heures au total avec le boîtier de charge magnétique.\nQ : Laptop se connect hoga ?\nR : Oui — compatibles Bluetooth 5.x avec la plupart des téléphones, tablettes et ordinateurs portables."
+    },
+    "faqs": [
+      [
+        "Une section FAQ produit réduit-elle les retours sur Daraz ?",
+        "Oui. Clarifier d'emblée la tension, la taille, les matériaux et le contenu évite les achats inadaptés — la première cause de retours pour « article non conforme »."
+      ],
+      [
+        "Où placer les FAQ sur une fiche Daraz ?",
+        "Ajoutez-les dans la description longue et, en option, sous forme de visuel informatif compatible Lorikeet pour les acheteurs mobiles qui parcourent d'abord les images."
+      ],
+      [
+        "Les FAQ peuvent-elles améliorer le classement organique sur Daraz ?",
+        "Des questions-réponses conversationnelles intègrent naturellement des requêtes de longue traîne (par exemple comment connecter des écouteurs à un ordinateur portable) que le robot peut associer à votre fiche."
+      ],
+      [
+        "Que doit couvrir un générateur de FAQ Daraz ?",
+        "Les points de friction : dimensions, matériaux, garantie, autonomie, compatibilité et contenu du colis — ainsi que les formulations courantes en Roman Urdu utilisées par les acheteurs."
+      ],
+      [
+        "Les FAQ doivent-elles promettre des délais de livraison Daraz ?",
+        "Évitez de garantir une logistique que vous ne maîtrisez pas. Concentrez les FAQ sur le produit et laissez Daraz afficher les estimations de livraison sur la page produit."
+      ],
+      [
+        "Le générateur de FAQ de Zetawala est-il gratuit pour les vendeurs Daraz ?",
+        "Oui. Des brouillons de FAQ produit gratuits, adaptés aux pages de fiches Daraz et au traitement des objections des acheteurs."
+      ]
+    ]
+  },
+  "benefits-generator": {
+    "name": "Générateur de bénéfices produit",
+    "desc": "Formulez la valeur de vos produits",
+    "title": "Générateur de bénéfices produit – Des caractéristiques aux bénéfices",
+    "description": "Transformez des caractéristiques techniques arides en bénéfices persuasifs avec le générateur gratuit de Zetawala pour les vendeurs Daraz. Traduisez les caractéristiques en résultats concrets qui comptent pour les acheteurs pakistanais — autonomie pendant les coupures de courant, protection en saison des pluies, confort des trajets quotidiens — pour que vos points forts et vos annonces convertissent mieux que les textes génériques de la concurrence.",
+    "example": {
+      "input": "Caractéristique : batterie externe de 2000 mAh",
+      "output": "Bénéfice : restez alimenté en déplacement et pendant les coupures de courant — de l'énergie en plus pour les appels, les cartes et WhatsApp sans chercher une prise. Idéal pour les journées au bureau et les trajets hors de la ville."
+    },
+    "faqs": [
+      [
+        "Quelle différence entre une caractéristique et un bénéfice ?",
+        "Une caractéristique est un fait (nylon imperméable). Un bénéfice est le résultat (garder votre ordinateur portable au sec sous une pluie de mousson). Les acheteurs décident selon les résultats."
+      ],
+      [
+        "Pourquoi les bénéfices comptent-ils plus que les caractéristiques sur Daraz ?",
+        "Les caractéristiques informent ; les bénéfices convainquent. La clarté émotionnelle réduit la sensibilité au prix et augmente les ajouts au panier sur des pages de catégorie encombrées."
+      ],
+      [
+        "Où placer les bénéfices sur ma fiche Daraz ?",
+        "En tête des points forts sous le prix, dans les premières lignes de la description, et sous forme d'accroches de bénéfices sur les images de la galerie pour ceux qui font défiler sur mobile."
+      ],
+      [
+        "Puis-je utiliser un texte de bénéfices dans les annonces Daraz et le trafic social ?",
+        "Oui. Les accroches axées sur les bénéfices surpassent souvent les annonces purement techniques sur le trafic Facebook ou TikTok dirigé vers les boutiques Daraz."
+      ],
+      [
+        "Comment identifier les points de douleur des clients pour ce texte ?",
+        "Lisez les avis 1 et 2 étoiles des concurrents. Présentez vos caractéristiques comme des solutions directes à ces plaintes répétées."
+      ],
+      [
+        "Le générateur de bénéfices produit de Zetawala est-il gratuit ?",
+        "Oui. Réécriture gratuite des caractéristiques en bénéfices pour les fiches Daraz et l'e-commerce en général au Pakistan."
+      ]
+    ]
+  },
+  "negative-reply": {
+    "name": "Générateur de réponses aux avis négatifs",
+    "desc": "Traitez les avis négatifs avec courtoisie",
+    "title": "Générateur de réponses aux avis négatifs – Réponses vendeur Daraz",
+    "description": "Répondez aux avis 1 étoile et aux commentaires sévères sur Daraz avec des réponses calmes et axées sur la solution grâce au générateur gratuit de Zetawala. Protégez votre note vendeur, rassurez les futurs acheteurs qui lisent les avis publics et invitez à une résolution par chat — sans polémiquer ni faire pression pour supprimer un avis, ce qui va contre les règles Daraz.",
+    "example": {
+      "input": "Avis : article reçu cassé, mauvaise qualité",
+      "output": "Cher client, nous sommes vraiment désolés que votre commande soit arrivée endommagée. La qualité nous tient à cœur : écrivez-nous sur le chat Daraz avec votre numéro de commande afin que nous organisions immédiatement un remplacement dans le cadre de notre processus de support. Merci de nous donner l'occasion de corriger cela."
+    },
+    "faqs": [
+      [
+        "Répondre aux avis négatifs Daraz aide-t-il les ventes ?",
+        "Oui. Les futurs acheteurs lisent les réponses. Une proposition de solution professionnelle témoigne de votre responsabilité et réduit la crainte d'acheter dans votre boutique."
+      ],
+      [
+        "Puis-je demander à un client de supprimer un avis négatif sur Daraz ?",
+        "Ne faites pas pression pour une suppression. Résolvez correctement le problème, puis vous pouvez demander poliment si la personne souhaite mettre à jour son avis au vu de la nouvelle expérience, dans le respect des règles."
+      ],
+      [
+        "À quel point un avis 1 étoile nuit-il au classement Daraz ?",
+        "Des moyennes basses nuisent à la conversion et au traitement algorithmique. Des notes durablement faibles peuvent réduire la visibilité, car les acheteurs filtrent par articles mieux notés."
+      ],
+      [
+        "Faut-il contester un avis négatif qui semble injuste ?",
+        "Ne polémiquez jamais en public. Exposez les faits avec courtoisie, renvoyez à la politique de retour et de remboursement, et déplacez la résolution vers le chat. L'agressivité abîme la confiance en votre marque."
+      ],
+      [
+        "À quelle vitesse répondre à un avis négatif sur Daraz ?",
+        "Visez moins de 24 heures. Une empathie rapide peut éviter l'escalade en litige formel et montre un service après-vente actif."
+      ],
+      [
+        "Le générateur de réponses aux avis négatifs de Zetawala est-il gratuit ?",
+        "Oui. Des brouillons de réponses professionnelles gratuits pour la gestion de réputation des vendeurs Daraz au Pakistan."
+      ]
+    ]
+  },
+  "sales-copy": {
+    "name": "Générateur de textes de vente persuasifs",
+    "desc": "Rédaction fondée sur les formules AIDA",
+    "title": "Générateur de textes de vente – Copy AIDA pour les fiches Daraz",
+    "description": "Rédigez des textes de vente persuasifs pour Daraz avec le générateur AIDA gratuit de Zetawala. Utilisez les cadres Attention-Intérêt-Désir-Action (et PAS) pour transformer les curieux en acheteurs pendant les ventes flash et les mégacampagnes. Des textes lisibles sur mobile et conscients de l'urgence, pour les vendeurs pakistanais qui affrontent des niches encombrées.",
+    "example": {
+      "input": "Produit : sac à dos antivol",
+      "output": "AIDA : Attention – Arrêtez de faciliter le travail des pickpockets.\nIntérêt – Fermetures dissimulées et tissu résistant aux coupures et à l'eau.\nDésir – Déplacez-vous en bus ou au travail avec ordinateur et argent mieux protégés.\nAction – Commandez aujourd'hui tant qu'il y a du stock et sécurisez vos affaires."
+    },
+    "faqs": [
+      [
+        "Qu'est-ce qu'un texte de vente AIDA pour des produits Daraz ?",
+        "AIDA signifie Attention, Intérêt, Désir, Action — une structure éprouvée pour accrocher l'acheteur, apporter des preuves, susciter l'envie et déclencher l'ajout au panier."
+      ],
+      [
+        "Comment un texte de vente persuasif améliore-t-il la conversion sur Daraz ?",
+        "Il ajoute émotion, clarté et urgence là où les caractéristiques restent arides, ce qui réduit l'hésitation et l'abandon de panier sur un trafic Daraz très majoritairement mobile."
+      ],
+      [
+        "Qu'est-ce que le cadre PAS et puis-je l'utiliser sur Daraz ?",
+        "Problème-Agitation-Solution : nommez la douleur, accentuez le coût de l'inaction, puis présentez votre produit comme la solution. Excellent pour les points forts et les créations publicitaires."
+      ],
+      [
+        "Les textes de vente Daraz doivent-ils être longs ou courts sur mobile ?",
+        "Les blocs courts gagnent. Des paragraphes d'une à deux phrases, des expressions clés en gras et des puces : plus de 80 % de la navigation Daraz se fait sur mobile."
+      ],
+      [
+        "Un bon texte AIDA peut-il justifier un prix plus élevé sur Daraz ?",
+        "Souvent oui. Un message clair sur la valeur, la durabilité et la réduction du risque augmente la valeur perçue face à des fiches moins chères et pauvres."
+      ],
+      [
+        "Le générateur de textes de vente AIDA de Zetawala est-il gratuit ?",
+        "Oui. Des brouillons de textes e-commerce persuasifs et gratuits, adaptés aux fiches et campagnes Daraz Pakistan."
+      ]
+    ]
+  },
+  "profit-calculator": {
+    "name": "Analyseur de bénéfices Daraz",
+    "desc": "Analysez marges et bénéfice net",
+    "title": "Calculateur de bénéfices Daraz – Commission, frais et marge",
+    "description": "Calculez votre bénéfice réel sur Daraz après commission, frais de paiement, emballage et TVA provinciale avec le calculateur gratuit de Zetawala. Modélisez les coûts FBM et FBD pour les vendeurs pakistanais afin que chaque référence de Seller Center soit lancée avec une marge nette et un retour sur investissement clairs — sans surprise après les versements.",
+    "example": {
+      "input": "Vente : 1 500 Rs | Coût : 600 Rs | Catégorie : mode | FBM",
+      "output": "Frais Daraz estimés (commission + paiement) : 210 Rs\nEmballage : 30 Rs | TVA sur les frais : ~35 Rs\nBénéfice net : ~625 Rs | Marge : ~41,6 % | Retour sur coût : ~104 %"
+    },
+    "faqs": [
+      [
+        "Comment le calculateur de bénéfices Daraz traite-t-il la commission ?",
+        "Saisissez votre prix de vente, votre coût produit et la catégorie afin que la commission de catégorie estimée et les frais de paiement soient déduits avant le bénéfice net — un point essentiel pour la planification des vendeurs pakistanais."
+      ],
+      [
+        "Comment la TVA provinciale est-elle calculée sur les frais Daraz Pakistan ?",
+        "La TVA s'applique généralement aux frais de service Daraz (commission, paiement, charges liées) et non au prix de vente complet. Les taux varient selon la province (par exemple environ 16 % pour la PRA au Pendjab)."
+      ],
+      [
+        "Quels sont les frais de traitement des paiements Daraz ?",
+        "Daraz facture couramment environ 1,25 % de frais de traitement sur la valeur des commandes réussies, couvrant le paiement par carte, par virement et à la livraison."
+      ],
+      [
+        "Y a-t-il des frais FBD au-delà de la commission ?",
+        "Le FBD peut inclure des frais de réception, d'expédition et de stockage au volume. En échange, vous économisez sur votre propre emballage et gagnez les avantages de conversion d'Express — modélisez les deux côtés."
+      ],
+      [
+        "Quel retour sur investissement les vendeurs Daraz devraient-ils viser ?",
+        "Beaucoup visent environ 80 à 100 % ou plus sur le coût d'approvisionnement afin d'absorber retours, publicité et remises de mégacampagne. Les objectifs exacts dépendent de la catégorie et de la vitesse de rotation du capital."
+      ],
+      [
+        "Comment les retours affectent-ils les marges Daraz ?",
+        "Les retours peuvent effacer les coûts d'emballage et abîmer du stock, même lorsque certains frais sont ajustés. Intégrez votre taux de retour aux hypothèses du calculateur avant de passer à l'échelle."
+      ]
+    ]
+  }
+}

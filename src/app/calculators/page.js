@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Calculator, ArrowRight, BookOpen, ChevronDown, HelpCircle } from 'lucide-react';
 import { calculatorTools } from '../../config/calculators/tools';
 import { getSeoPath } from '../../config/routes';
+import { getPageHreflangLanguages } from '../../i18n/hreflang';
 
 export const metadata = {
   title: 'Free Business Calculators – Freelance, SaaS, Ads & Ecommerce | Zetawala',
@@ -22,6 +23,7 @@ export const metadata = {
   ],
   alternates: {
     canonical: 'https://zetawala.com/calculators',
+    languages: getPageHreflangLanguages('calculators'),
   },
   openGraph: {
     title: 'Free Business Calculators – Freelance, SaaS, Ads & Ecommerce | Zetawala',

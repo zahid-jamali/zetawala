@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { TYPING_LESSONS, TYPING_LEVELS } from '../../../lib/study/typingContent';
 import { downloadCertificate } from '../../../lib/study/certificates';
-import { getSeoPath } from '../../../config/routes';
+import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 
 const PROGRESS_KEY = 'zetawala_typing_master_v2';
 
@@ -41,6 +41,7 @@ function emptyProgress() {
 }
 
 export default function TypingMasterCourse() {
+  const { toolHref } = useLocalizedHref();
   const [progress, setProgress] = useState(emptyProgress);
   const [typed, setTyped] = useState('');
   const [startedAt, setStartedAt] = useState(null);
@@ -400,13 +401,13 @@ export default function TypingMasterCourse() {
           </div>
           <div className="flex flex-wrap gap-2">
             <Link
-              href={getSeoPath('study', 'typing-speed-test')}
+              href={toolHref('study', 'typing-speed-test')}
               className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400 hover:border-sky-300"
             >
               Typing Speed Test <ArrowRight className="w-3 h-3" />
             </Link>
             <Link
-              href={getSeoPath('study', 'coding-typing-test')}
+              href={toolHref('study', 'coding-typing-test')}
               className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-800 text-[11px] font-bold text-sky-600 dark:text-sky-400 hover:border-sky-300"
             >
               Coding Typing Test <ArrowRight className="w-3 h-3" />

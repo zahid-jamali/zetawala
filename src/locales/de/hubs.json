@@ -1,0 +1,254 @@
+{
+  "seo": {
+    "metadata": {
+      "title": "Kostenlose SEO-Tools – Website-Audit, PageSpeed und Webmaster-Suite | Zetawala",
+      "description": "Kostenlose SEO- und Webmaster-Tools: Website-SEO-Prüfer, PageSpeed und Core Web Vitals, Broken-Link-Checker, Sitemap-Generator, Canonical-Prüfer und SEO-ROI-Rechner."
+    },
+    "hero": {
+      "title": "SEO- und Webmaster-Intelligenz",
+      "subtitle": "Diagnostizieren Sie technisches SEO, prüfen Sie die Indexierbarkeit, auditieren Sie Inhalte, messen Sie Core Web Vitals und modellieren Sie den ROI – 17 spezialisierte Tools in einem Workspace.",
+      "cta": "Website-SEO-Audit starten"
+    },
+    "grid": { "title": "Alle SEO- und Webmaster-Tools", "subtitle": "17 Tools für Audits, Indexierbarkeit, Performance und ROI-Analyse." },
+    "picker": {
+      "title": "Das richtige SEO-Tool wählen",
+      "subtitle": "Ordnen Sie Ihr Ziel dem richtigen Einstieg in der Suite zu.",
+      "items": [
+        { "title": "Mit einem vollständigen Audit starten", "desc": "Nutzen Sie den SEO-Website-Prüfer oder den Health-Score, wenn Sie eine breite Basis brauchen.", "slugs": ["website-checker", "health-score"] },
+        { "title": "Crawl- und Indexprobleme beheben", "desc": "Prüfen Sie Sitemaps, robots.txt, Canonical-Tags und Indexierbarkeitssignale.", "slugs": ["sitemap-tool", "robots-txt-tool", "canonical-indexability"] },
+        { "title": "Seiten und Inhalte optimieren", "desc": "Prüfen Sie Titel, Meta-Descriptions, Keyword-Dichte und Onpage-Struktur.", "slugs": ["title-meta-analyzer", "content-audit", "keyword-density"] },
+        { "title": "Performance und ROI messen", "desc": "Prüfen Sie Core Web Vitals und modellieren Sie SEO- oder Content-ROI.", "slugs": ["pagespeed-analyzer", "traffic-revenue", "seo-roi"] }
+      ]
+    },
+    "learning": {
+      "title": "SEO lernen",
+      "subtitle": "Die Konzepte hinter dem Webmaster-Toolkit.",
+      "topics": [
+        { "title": "Grundlagen des technischen SEO", "body": "Verstehen Sie, wie Crawler Seiten finden, warum Sitemaps und robots.txt zählen und wie Canonical-Tags verhindern, dass Duplicate Content die Sichtbarkeit verwässert." },
+        { "title": "Core Web Vitals und PageSpeed", "body": "Verstehen Sie LCP, INP und CLS – und wie Labor- und Felddaten von Google PageSpeed Insights Performance-Fixes steuern." },
+        { "title": "Onpage- und Content-Signale", "body": "Titel, Meta-Descriptions, Überschriftenhierarchie, interne Links und Keyword-Nutzung treiben weiterhin die Relevanz." },
+        { "title": "Webmaster-Workflows", "body": "Priorisieren Sie Fixes mit einem Maßnahmenplan und knüpfen Sie SEO-Aufwand an Traffic- und Umsatzschätzungen." }
+      ]
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Typische Fragen zur SEO- und Webmaster-Suite.",
+      "items": [
+        { "q": "Was ist SEO- und Webmaster-Intelligenz auf Zetawala?", "a": "Eine Suite aus 17 kostenlosen Tools für technische Audits, Indexierbarkeit, PageSpeed, Content-Analyse und ROI-Modellierung." },
+        { "q": "Mit welchem Tool sollte ich starten?", "a": "Beginnen Sie mit dem SEO-Website-Prüfer oder dem Health-Score-Rechner und nutzen Sie danach spezialisierte Tools je nach gefundenen Problemen." },
+        { "q": "Eignen sich diese Tools für Einsteiger?", "a": "Ja. Die Ausgaben enthalten verständliche Erklärungen, und der SEO-Maßnahmenplan liefert eine priorisierte Roadmap." }
+      ]
+    }
+  },
+  "writing": {
+    "metadata": {
+      "title": "Kostenlose KI-Schreib- und Sprachtools – Humanizer, Grammatik und Urdu | Zetawala",
+      "description": "Kostenlose KI-Schreibtools: KI-Humanizer, Content-Detektor, Plagiats- und Grammatikprüfer, Paraphrase-Tool, Roman-Urdu-↔-Urdu-Konverter, Zusammenfassen und Umschreiben."
+    },
+    "hero": {
+      "title": "KI-Schreib- und Sprachtools",
+      "subtitle": "Humanisieren Sie KI-Text, erkennen Sie KI-generierte Texte, korrigieren Sie Grammatik, konvertieren Sie Roman Urdu, fassen Sie zusammen und schreiben Sie um – 10 kostenlose Sprachtools.",
+      "cta": "KI-Humanizer öffnen"
+    },
+    "grid": { "title": "Alle Schreibtools", "subtitle": "Humanisieren, erkennen, polieren, konvertieren, zusammenfassen und umschreiben." },
+    "picker": {
+      "title": "Einen Schreib-Workflow wählen",
+      "subtitle": "Starten Sie mit der Aufgabe, die Sie heute erledigen müssen.",
+      "items": [
+        { "title": "KI-Text humanisieren und erkennen", "desc": "Machen Sie KI-Entwürfe natürlicher und bewerten Sie KI- vs. Mensch-Signale.", "slugs": ["ai-humanizer", "ai-content-detector"] },
+        { "title": "Polieren und Originalität schützen", "desc": "Grammatik korrigieren, Plagiate prüfen und paraphrasieren.", "slugs": ["grammar-checker", "plagiarism-checker", "paraphrasing-tool"] },
+        { "title": "In Urdu und Roman Urdu arbeiten", "desc": "Zwischen Schriften konvertieren und Roman-Urdu-Rechtschreibung korrigieren.", "slugs": ["roman-urdu-to-urdu", "urdu-to-roman-urdu", "roman-urdu-grammar"] },
+        { "title": "Zusammenfassen und umschreiben", "desc": "Lange Texte kürzen oder Ton, Länge und SEO anpassen.", "slugs": ["ai-text-summarizer", "ai-rewrite-tool"] }
+      ]
+    },
+    "learning": {
+      "title": "Schreibhinweise",
+      "subtitle": "So holen Sie bessere Entwürfe aus der Suite.",
+      "topics": [
+        { "title": "Warum KI-Entwürfe humanisieren", "body": "Rohe Modellausgaben klingen oft repetitiv. Ein Humanizer behält die Bedeutung und verbessert Rhythmus und natürliche Formulierungen." },
+        { "title": "Detektor-Signale sind Schätzungen", "body": "KI-Detektoren bewerten Muster, nicht den Beweis der Autorschaft. Nutzen Sie sie als Zweitmeinung." },
+        { "title": "Roman Urdu ↔ Urdu", "body": "Konverter beschleunigen den Entwurf, während Grammatiktools häufige Roman-Urdu-Fehler abfangen." },
+        { "title": "Mit Absicht umschreiben", "body": "Kürzer, länger, professionell, freundlich und SEO: dieselben Entwürfe für unterschiedliche Kanäle." }
+      ]
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zur Schreib-Suite.",
+      "items": [
+        { "q": "Was ist die KI-Schreib-Suite?", "a": "Zehn kostenlose Tools zum Humanisieren, Erkennen, Korrigieren der Grammatik, Prüfen auf Plagiate, Paraphrasieren, Konvertieren von Urdu, Zusammenfassen und Umschreiben." },
+        { "q": "Mit welchem Tool sollte ich starten?", "a": "Starten Sie mit dem KI-Humanizer für Entwürfe, dem Grammatikprüfer zum Polieren oder dem Roman-Urdu-→-Urdu-Konverter für die Schriftumwandlung." }
+      ]
+    }
+  },
+  "study": {
+    "metadata": {
+      "title": "Kostenlose KI-Lern-, Quiz- und Tipp-Tools | Zetawala",
+      "description": "Kostenlose Lern-Tools: KI-Notizen, Quizzes, PDF-zu-Quiz, Karteikarten, YouTube-Notizen, Aufgaben, Hausaufgabenhilfe und Tipp-Tests."
+    },
+    "hero": {
+      "title": "KI-Lernen, Quizzes und Tippen",
+      "subtitle": "Notizen, Quizzes, Karteikarten, YouTube-Lernnotizen, Hausaufgabenhilfe und Tipp-Übung – 10 kostenlose Bildungstools.",
+      "cta": "Lernnotizen erstellen"
+    },
+    "grid": { "title": "Alle Lern-Tools", "subtitle": "Schneller lernen mit Notizen, Quizzes und Tipp-Übung." },
+    "picker": {
+      "title": "Einen Lernweg wählen",
+      "subtitle": "Passen Sie das Tool an Ihre Lernweise an.",
+      "items": [
+        { "title": "Notizen, Quizzes und Karteikarten", "desc": "Erstellen Sie Notizen und interaktive Übungen zu jedem Thema.", "slugs": ["ai-notes-generator", "ai-quiz-generator", "ai-flashcard-generator"] },
+        { "title": "Aus PDFs und YouTube lernen", "desc": "Verwandeln Sie Dokumente und Videos in Quizzes und Lernnotizen.", "slugs": ["pdf-to-quiz", "youtube-study-notes"] },
+        { "title": "Aufgaben und Hausaufgabenhilfe", "desc": "Entwerfen Sie strukturierte Arbeiten und erhalten Sie Schritt-für-Schritt-Erklärungen.", "slugs": ["ai-assignment-generator", "ai-homework-solver"] },
+        { "title": "Tippgeschwindigkeit und Code-Übung", "desc": "Zeitgesteuerte Tests, geführte Lektionen und Code-Tippen mit Zertifikaten.", "slugs": ["typing-speed-test", "typing-master-course", "coding-typing-test"] }
+      ]
+    },
+    "learning": {
+      "title": "Lerntipps",
+      "subtitle": "Holen Sie mehr aus jeder Session.",
+      "topics": [
+        { "title": "Aktiver Abruf schlägt passives Lesen", "body": "Quizzes und Karteikarten erzwingen Abrufübung – das stärkt das Gedächtnis mehr als bloßes Wiederlesen." },
+        { "title": "KI an Ihre Quellen binden", "body": "PDF- und YouTube-Tools funktionieren am besten nah am extrahierten Text – prüfen Sie Fakten immer nach." },
+        { "title": "Tippen ist eine kumulative Fähigkeit", "body": "Kurze tägliche Übung mit Genauigkeit zuerst baut Tempo auf, ohne schlechte Gewohnheiten." }
+      ]
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zur Lern-Suite.",
+      "items": [
+        { "q": "Was ist die KI-Lern-Suite?", "a": "Zehn kostenlose Tools für Notizen, Quizzes, Karteikarten, YouTube-Notizen, Aufgaben, Hausaufgabenhilfe und Tipp-Übung." },
+        { "q": "Nutzen die Tipp-Tools KI?", "a": "Nein. Tippgeschwindigkeitstest, Typing-Master-Kurs und Code-Tipp-Test nutzen deterministische Client-Logik." }
+      ]
+    }
+  },
+  "freelancer": {
+    "metadata": {
+      "title": "Kostenloses Freelancer-Toolkit – Upwork- und Fiverr-Tools | Zetawala",
+      "description": "Kostenloses Freelancer-Toolkit für Upwork und Fiverr: Angebote, Gigs, Profile, Preise, Verträge und Käuferantworten."
+    },
+    "hero": {
+      "title": "Freelancer-Toolkit",
+      "subtitle": "Gewinnen Sie mehr Kunden auf Upwork und Fiverr mit Angeboten, Gig-SEO, Profilen, Preisen, Verträgen und Follow-ups.",
+      "cta": "Upwork-Toolkit öffnen"
+    },
+    "grid": { "title": "Alle Freelancer-Tools", "subtitle": "20 Tools für Upwork und Fiverr." },
+    "picker": {
+      "title": "Einen Marktplatz wählen",
+      "subtitle": "Springen Sie zur Plattform, auf der Sie verkaufen.",
+      "items": [
+        { "title": "Upwork", "desc": "Angebote, Job-Match, Profil, Anschreiben, Verträge und Follow-ups.", "slugs": ["upwork-proposal-generator", "upwork-profile-optimizer", "upwork-hourly-rate-calculator"] },
+        { "title": "Fiverr", "desc": "Gig-Titel, Beschreibungen, SEO, Tags, Preise und Käuferantworten.", "slugs": ["fiverr-gig-title-generator", "fiverr-gig-seo-analyzer", "fiverr-pricing-generator"] }
+      ]
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zum Freelancer-Toolkit.",
+      "items": [
+        { "q": "Was ist das Freelancer-Toolkit?", "a": "Zwanzig kostenlose Upwork- und Fiverr-Tools für Angebote, Gigs, Profile, Preise, Verträge und Kundennachrichten." },
+        { "q": "Brauche ich ein Konto?", "a": "Nein. Öffnen Sie ein Tool und beginnen Sie zu schreiben. KI-Tools nutzen DeepSeek, wenn eine Generierung nötig ist." }
+      ]
+    }
+  },
+  "freelancer-upwork": {
+    "metadata": {
+      "title": "Kostenloses Upwork-Toolkit – Angebote, Profil und Preise | Zetawala",
+      "description": "Kostenlose Upwork-Tools: Angebotsgenerator, Job-Match-Analysator, Profil-Optimizer, Anschreiben, Stundensatz-Rechner und Verträge."
+    },
+    "hero": {
+      "title": "Upwork-Toolkit",
+      "subtitle": "Entwerfen Sie Angebote, optimieren Sie Ihr Profil, legen Sie Stundensätze fest und schreiben Sie Follow-ups an Kunden.",
+      "cta": "Upwork-Angebot erstellen"
+    },
+    "grid": { "title": "Alle Upwork-Tools", "subtitle": "Angebote, Profil, Preise und Kundenkommunikation." },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zum Upwork-Toolkit.",
+      "items": [
+        { "q": "Mit welchem Upwork-Tool sollte ich starten?", "a": "Starten Sie mit dem Angebotsgenerator für einen aktuellen Job, danach Profil-Optimizer und Stundensatz-Rechner." }
+      ]
+    }
+  },
+  "freelancer-fiverr": {
+    "metadata": {
+      "title": "Kostenloses Fiverr-Toolkit – Gig-SEO, Titel und Preise | Zetawala",
+      "description": "Kostenlose Fiverr-Tools: Gig-Titel, Beschreibungen, SEO-Analysator, Tags, Preis-Pakete, Käuferantworten und Review-Antworten."
+    },
+    "hero": {
+      "title": "Fiverr-Toolkit",
+      "subtitle": "Schreiben Sie Gig-Titel und -Beschreibungen, prüfen Sie SEO, setzen Sie Pakete und antworten Sie Käufern.",
+      "cta": "Gig-Titel erstellen"
+    },
+    "grid": { "title": "Alle Fiverr-Tools", "subtitle": "Gig-SEO, Preise und Käuferkommunikation." },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zum Fiverr-Toolkit.",
+      "items": [
+        { "q": "Mit welchem Fiverr-Tool sollte ich starten?", "a": "Starten Sie mit dem Gig-Titel-Generator, danach Gig-SEO-Analysator und Preis-Generator." }
+      ]
+    }
+  },
+  "shopee": {
+    "metadata": {
+      "title": "Kostenloses Shopee-Verkäufer-Toolkit – Listing-SEO, Profit und Gebühren | Zetawala",
+      "description": "Kostenlose Shopee-Verkäufer-Tools: Listing-Titel, Beschreibungen, Keywords, SEO-Analysator, Profit-/Gebühren-/Preis-/Versand-Rechner und Chat-Antworten."
+    },
+    "hero": {
+      "title": "Shopee-Verkäufer-Toolkit",
+      "subtitle": "Optimieren Sie Shopee-Listings, Keywords, Margen, Gebühren, Versand und Kunden-Chat.",
+      "cta": "Titel-Generator öffnen"
+    },
+    "grid": { "title": "Alle Shopee-Tools", "subtitle": "Listing-SEO, Verkäuferkalkulation und Chat-Antworten." },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zum Shopee-Toolkit.",
+      "items": [
+        { "q": "Was ist das Shopee-Verkäufer-Toolkit?", "a": "Zehn kostenlose Tools für Listing-SEO, Keywords, Profit- und Gebührenrechnung, Versandschätzungen und Chat-Antworten." }
+      ]
+    }
+  },
+  "lazada": {
+    "metadata": {
+      "title": "Kostenloses Lazada-Verkäufer-Toolkit – Listing-SEO und Margen | Zetawala",
+      "description": "Kostenlose Lazada-Verkäufer-Tools: Titel, Keywords, SEO-Scores, Profitrechnung, Versandschätzungen, Chat-Antworten und Listing-Optimizer."
+    },
+    "hero": {
+      "title": "Lazada-Verkäufer-Toolkit",
+      "subtitle": "Dieselbe gemeinsame Verkäufer-Engine für Lazada – Listing-SEO, Keywords, Rechner und Chat-Antworten.",
+      "cta": "Titel-Generator öffnen"
+    },
+    "grid": { "title": "Alle Lazada-Tools", "subtitle": "Listing-SEO, Verkäuferkalkulation und Chat-Antworten." },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zum Lazada-Toolkit.",
+      "items": [
+        { "q": "Was ist das Lazada-Verkäufer-Toolkit?", "a": "Zehn kostenlose Tools, die die Verkäufer-Engine mit Shopee teilen, abgestimmt auf Lazada-Listings und Gebühren." }
+      ]
+    }
+  },
+  "pdf-utilities": {
+    "metadata": {
+      "title": "Kostenlose PDF- und Bild-Tools – Konvertieren, extrahieren, skalieren und OCR | Zetawala",
+      "description": "Kostenlose PDF- und Bild-Tools: PDF zu Markdown, Tabellen- und Link-Extraktoren, Excel-Konverter, EXIF-Tools, Farbpaletten, Social-Image-Größen und Screenshot-OCR."
+    },
+    "hero": {
+      "title": "PDF- und Bild-Tools",
+      "subtitle": "Konvertieren Sie PDFs, extrahieren Sie Tabellen und Links, wandeln Sie Excel/JSON/CSV um, verwalten Sie Bildmetadaten und führen Sie OCR aus – 15 kostenlose Tools.",
+      "cta": "PDF in Markdown umwandeln"
+    },
+    "grid": { "title": "Alle PDF- und Bild-Tools", "subtitle": "Konvertieren, extrahieren, skalieren und Bilder lesen – ohne bezahlte APIs." },
+    "picker": {
+      "title": "Ein Tool wählen",
+      "subtitle": "Starten Sie mit der Datei, die Sie haben.",
+      "items": [
+        { "title": "PDF-Extraktoren", "desc": "Markdown, Tabellen, Links, Bilder und Metadaten aus PDFs.", "slugs": ["pdf-to-markdown", "pdf-table-extractor", "pdf-link-extractor"] },
+        { "title": "Excel und Daten", "desc": "Formeln und Excel-/JSON-/CSV-Konverter.", "slugs": ["excel-formula-generator", "excel-to-json", "csv-to-excel"] },
+        { "title": "Bilder", "desc": "EXIF, Paletten, Social-Größen und Screenshot-OCR.", "slugs": ["image-metadata-viewer", "social-image-resizer", "screenshot-to-text"] }
+      ]
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "subtitle": "Zu PDF- und Bild-Tools.",
+      "items": [
+        { "q": "Nutzen diese Tools KI?", "a": "Die meisten laufen lokal oder auf dem Server mit deterministischen Bibliotheken. Screenshot-OCR nutzt Tesseract. Keine bezahlten Drittanbieter-APIs nötig." }
+      ]
+    }
+  }
+}

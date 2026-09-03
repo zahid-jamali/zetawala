@@ -1,0 +1,566 @@
+{
+  "niche-finder": {
+    "name": "YouTube Niche Finder & Recommender",
+    "desc": "Data-driven niche discovery for your profile"
+  },
+  "niche-opportunity": {
+    "name": "YouTube Niche Opportunity Analyzer",
+    "desc": "Validate niche demand vs competition"
+  },
+  "channel-health": {
+    "name": "YouTube Channel Health Analyzer",
+    "desc": "Score channel performance from public data"
+  },
+  "video-performance": {
+    "name": "YouTube Video Performance Analyzer",
+    "desc": "Compare a video against channel baseline"
+  },
+  "revenue-calculator": {
+    "name": "YouTube Revenue Calculator",
+    "desc": "Estimate earnings from views & RPM"
+  },
+  "video-ideas": {
+    "name": "Video Idea Generator",
+    "desc": "Find viral trending concepts"
+  },
+  "title-generator": {
+    "name": "Title Copywriter",
+    "desc": "High-CTR CTR copywriting"
+  },
+  "hook-architect": {
+    "name": "Audience Retention Hook",
+    "desc": "Capture viewer attention"
+  },
+  "description-builder": {
+    "name": "SEO Description Writer",
+    "desc": "SEO semantic structure"
+  },
+  "tags-extractor": {
+    "name": "Tags & Keyword Extractor",
+    "desc": "YouTube Studio keywords"
+  },
+  "thumbnail-prompt": {
+    "name": "AI Thumbnail Prompter",
+    "desc": "Midjourney graphic prompter"
+  },
+  "script-master": {
+    "name": "Comprehensive Script Writer",
+    "desc": "Word-for-word audio script"
+  },
+  "visuals-recommender": {
+    "name": "Visuals Recommender",
+    "desc": "Find stock footage & image prompts"
+  },
+  "product-hunting": {
+    "name": "Product Hunting Intelligence",
+    "desc": "Simulate demand & margins"
+  },
+  "roman-urdu-keywords": {
+    "name": "Roman Urdu Keyword Finder",
+    "desc": "Pakistan search volume tags"
+  },
+  "product-title": {
+    "name": "Product Title Generator",
+    "desc": "Rank high-CTR optimized titles"
+  },
+  "product-description": {
+    "name": "Product Description Generator",
+    "desc": "Bullet points & description copy"
+  },
+  "listing-optimizer": {
+    "name": "Product Listing Optimizer",
+    "desc": "Improve search ranking copy"
+  },
+  "competitor-rewriter": {
+    "name": "Competitor Listing Rewriter",
+    "desc": "Make competitor listings unique"
+  },
+  "daraz-keywords": {
+    "name": "Daraz Keyword Generator",
+    "desc": "Generate high-traffic tags"
+  },
+  "customer-reply": {
+    "name": "Customer Reply Generator",
+    "desc": "Draft customer support replies"
+  },
+  "faq-generator": {
+    "name": "FAQ Generator",
+    "desc": "Generate buyer FAQs & answers"
+  },
+  "benefits-generator": {
+    "name": "Product Benefits Generator",
+    "desc": "Craft product value features"
+  },
+  "negative-reply": {
+    "name": "Negative Review Reply Generator",
+    "desc": "Handle negative reviews politely"
+  },
+  "sales-copy": {
+    "name": "Persuasive Sales Copy Generator",
+    "desc": "Copywriting using AIDA formulas"
+  },
+  "profit-calculator": {
+    "name": "Daraz Profit Analyzer",
+    "desc": "Analyze margins & net profit"
+  },
+  "whatsapp-broadcast": {
+    "name": "WhatsApp Broadcast & Status Copywriter",
+    "desc": "AIDA Roman Urdu broadcast & status copy"
+  },
+  "local-ad-script": {
+    "name": "Facebook/Instagram Local Ad Script",
+    "desc": "Short local ad scripts & captions"
+  },
+  "wholesale-negotiation": {
+    "name": "Wholesale Negotiation Drafter",
+    "desc": "Shah Alami inquiry & negotiation templates"
+  },
+  "social-comment-responder": {
+    "name": "Social Price & Comment Responder",
+    "desc": "Polite conversion-focused auto-replies"
+  },
+  "product-storyboard": {
+    "name": "One-Page Product Storyboard",
+    "desc": "Story-driven social posts from pain points"
+  },
+  "website-checker": {
+    "name": "SEO Website Checker",
+    "desc": "Technical & on-page audit with scores"
+  },
+  "content-audit": {
+    "name": "SEO Content Audit",
+    "desc": "Content structure & on-page factors"
+  },
+  "title-meta-analyzer": {
+    "name": "Title & Meta Description Analyzer",
+    "desc": "Missing, duplicate & weak metadata"
+  },
+  "pagespeed-analyzer": {
+    "name": "PageSpeed & Core Web Vitals",
+    "desc": "Google PSI performance & CWV"
+  },
+  "internal-link-analyzer": {
+    "name": "Internal Link & Orphan Analyzer",
+    "desc": "Internal linking & orphan risks"
+  },
+  "broken-link-checker": {
+    "name": "Broken Link Checker",
+    "desc": "Broken internal & external links"
+  },
+  "sitemap-tool": {
+    "name": "Sitemap Generator & Validator",
+    "desc": "Generate or validate XML sitemaps"
+  },
+  "canonical-indexability": {
+    "name": "Canonical & Indexability Checker",
+    "desc": "Canonical, robots & index signals"
+  },
+  "action-plan": {
+    "name": "SEO Action Plan Generator",
+    "desc": "Prioritized SEO roadmap"
+  },
+  "robots-txt-tool": {
+    "name": "Robots.txt Generator & Tester",
+    "desc": "Generate and test crawl rules"
+  },
+  "header-meta-inspector": {
+    "name": "Header & Meta Tags Inspector",
+    "desc": "Title, OG, Twitter & meta audit"
+  },
+  "traffic-revenue": {
+    "name": "Traffic & Ad Revenue Estimator",
+    "desc": "Estimated traffic value (labeled)"
+  },
+  "health-score": {
+    "name": "SEO Health Score Calculator",
+    "desc": "Overall SEO health breakdown"
+  },
+  "keyword-density": {
+    "name": "Keyword Density Checker",
+    "desc": "1–3 word phrase frequency"
+  },
+  "seo-roi": {
+    "name": "SEO ROI Calculator",
+    "desc": "Estimate SEO return on investment"
+  },
+  "keyword-roi": {
+    "name": "Keyword ROI Calculator",
+    "desc": "Estimate keyword traffic & revenue"
+  },
+  "content-roi": {
+    "name": "Content ROI Calculator",
+    "desc": "Estimate content marketing ROI"
+  },
+  "freelance-hourly-rate": {
+    "name": "Freelance Hourly Rate Calculator",
+    "desc": "Set minimum, recommended & premium hourly rates from income goals"
+  },
+  "ai-api-cost": {
+    "name": "AI API Cost Calculator",
+    "desc": "Estimate OpenAI, Anthropic, Google & DeepSeek spend"
+  },
+  "saas-pricing": {
+    "name": "SaaS Pricing Calculator",
+    "desc": "Break-even and recommended subscription prices"
+  },
+  "customer-ltv": {
+    "name": "Customer Lifetime Value (LTV) Calculator",
+    "desc": "Calculate LTV from order value, frequency & lifespan"
+  },
+  "customer-cac": {
+    "name": "Customer Acquisition Cost (CAC) Calculator",
+    "desc": "CAC from marketing and sales spend"
+  },
+  "break-even": {
+    "name": "Break-even Calculator",
+    "desc": "Find break-even units and revenue for any product"
+  },
+  "profit-margin": {
+    "name": "Profit Margin Calculator",
+    "desc": "Gross profit, margin % and markup from cost & price"
+  },
+  "content-marketing-roi": {
+    "name": "Content Marketing ROI Calculator",
+    "desc": "Traffic, customers & content ROI"
+  },
+  "google-ads-profit": {
+    "name": "Google Ads Profit Calculator",
+    "desc": "Clicks, conversions, profit and ads ROI"
+  },
+  "email-marketing-roi": {
+    "name": "Email Marketing ROI Calculator",
+    "desc": "Opens, clicks, customers & email ROI"
+  },
+  "affiliate-earnings": {
+    "name": "Affiliate Earnings Calculator",
+    "desc": "Affiliate clicks, sales and commissions"
+  },
+  "adsense-revenue": {
+    "name": "AdSense Revenue Calculator",
+    "desc": "Estimate AdSense earnings from pageviews & RPM"
+  },
+  "ecommerce-profit": {
+    "name": "Ecommerce Profit Calculator",
+    "desc": "Net profit after fees, shipping and ads"
+  },
+  "amazon-fba-profit": {
+    "name": "Amazon FBA Profit Calculator",
+    "desc": "FBA net profit, margin and ROI"
+  },
+  "etsy-fee-profit": {
+    "name": "Etsy Fee & Profit Calculator",
+    "desc": "Etsy fees, net profit and margin"
+  },
+  "ebay-fee": {
+    "name": "eBay Fee Calculator",
+    "desc": "eBay fees, net profit and payout"
+  },
+  "freelance-project-pricing": {
+    "name": "Freelance Project Pricing Calculator",
+    "desc": "Price projects with hours and contingency"
+  },
+  "salary-to-hourly": {
+    "name": "Salary to Hourly Rate Calculator",
+    "desc": "Convert annual or monthly salary to hourly rate"
+  },
+  "pdf-to-markdown": {
+    "name": "PDF to Markdown Converter",
+    "desc": "Convert PDFs to clean Markdown with headings and lists"
+  },
+  "pdf-table-extractor": {
+    "name": "PDF Table Extractor",
+    "desc": "Detect tables and export CSV, Excel, or JSON"
+  },
+  "pdf-link-extractor": {
+    "name": "PDF Link Extractor",
+    "desc": "Extract URLs, emails, phones, and internal links"
+  },
+  "pdf-metadata-viewer": {
+    "name": "PDF Metadata Viewer",
+    "desc": "View author, dates, encryption, and PDF permissions"
+  },
+  "pdf-image-extractor": {
+    "name": "PDF Image Extractor",
+    "desc": "Extract embedded images with gallery and ZIP download"
+  },
+  "excel-formula-generator": {
+    "name": "Excel Formula Generator",
+    "desc": "Rule-based formulas for lookup, math, date, text & logic"
+  },
+  "excel-formula-explainer": {
+    "name": "Excel Formula Explainer",
+    "desc": "Explain Excel formulas, arguments, and expected output"
+  },
+  "excel-to-json": {
+    "name": "Excel to JSON Converter",
+    "desc": "Convert Excel worksheets to structured JSON"
+  },
+  "json-to-excel": {
+    "name": "JSON to Excel Converter",
+    "desc": "Validate JSON and download as XLSX"
+  },
+  "csv-to-excel": {
+    "name": "CSV to Excel Converter",
+    "desc": "Upload CSV, preview rows, download XLSX"
+  },
+  "image-metadata-viewer": {
+    "name": "Image Metadata Viewer",
+    "desc": "View EXIF camera, GPS, ISO, aperture, and resolution"
+  },
+  "exif-metadata-remover": {
+    "name": "EXIF Metadata Remover",
+    "desc": "Strip image metadata while preserving quality"
+  },
+  "image-color-palette": {
+    "name": "Image Color Palette Extractor",
+    "desc": "Dominant colors with HEX, RGB, CSS & Tailwind hints"
+  },
+  "social-image-resizer": {
+    "name": "Social Media Image Resizer",
+    "desc": "Resize for Instagram, Facebook, LinkedIn, X, TikTok & more"
+  },
+  "screenshot-to-text": {
+    "name": "Screenshot to Text (OCR)",
+    "desc": "OCR screenshots to copyable text, TXT, or Markdown"
+  },
+  "ai-humanizer": {
+    "name": "AI Humanizer",
+    "desc": "Rewrite AI text to sound natural in English, Spanish, or Urdu"
+  },
+  "ai-content-detector": {
+    "name": "AI Content Detector",
+    "desc": "Estimate AI vs human writing with sentence-level signals"
+  },
+  "plagiarism-checker": {
+    "name": "Plagiarism Checker",
+    "desc": "Local similarity analysis for pasted or uploaded documents"
+  },
+  "grammar-checker": {
+    "name": "Grammar Checker",
+    "desc": "Grammar, spelling, punctuation, and style suggestions"
+  },
+  "paraphrasing-tool": {
+    "name": "Paraphrasing Tool",
+    "desc": "Rewrite text in standard, fluency, formal, creative, or academic modes"
+  },
+  "roman-urdu-to-urdu": {
+    "name": "Roman Urdu → Urdu Converter",
+    "desc": "Convert Roman Urdu to proper Urdu script"
+  },
+  "urdu-to-roman-urdu": {
+    "name": "Urdu → Roman Urdu Converter",
+    "desc": "Transliterate Urdu script into Roman Urdu"
+  },
+  "roman-urdu-grammar": {
+    "name": "Roman Urdu Grammar & Spell Checker",
+    "desc": "Fix Roman Urdu spelling and grammar with side-by-side compare"
+  },
+  "ai-text-summarizer": {
+    "name": "AI Text Summarizer",
+    "desc": "Short, bullet, and key-point summaries in multiple languages"
+  },
+  "ai-rewrite-tool": {
+    "name": "AI Rewrite Tool",
+    "desc": "Rewrite shorter, longer, professional, friendly, or SEO-focused"
+  },
+  "ai-notes-generator": {
+    "name": "AI Notes Generator",
+    "desc": "Generate complete study notes with key points and examples"
+  },
+  "ai-quiz-generator": {
+    "name": "AI Quiz Generator",
+    "desc": "Interactive MCQs with scores, explanations, and review mode"
+  },
+  "pdf-to-quiz": {
+    "name": "PDF to Quiz Generator",
+    "desc": "Upload a PDF and generate practice MCQs with answers"
+  },
+  "ai-flashcard-generator": {
+    "name": "AI Flashcard Generator",
+    "desc": "Interactive flip flashcards from a topic or PDF"
+  },
+  "youtube-study-notes": {
+    "name": "AI Study Notes from YouTube",
+    "desc": "Notes, summary, key points, and quiz from a YouTube URL"
+  },
+  "ai-assignment-generator": {
+    "name": "AI Assignment Generator",
+    "desc": "Structured assignments with headings, references, and conclusion"
+  },
+  "ai-homework-solver": {
+    "name": "AI Homework Solver",
+    "desc": "Step-by-step explanations with final answer and key concepts"
+  },
+  "typing-speed-test": {
+    "name": "Typing Speed Test",
+    "desc": "WPM, accuracy, mistakes, timed tests, and downloadable certificate"
+  },
+  "typing-master-course": {
+    "name": "Typing Master Course",
+    "desc": "Guided lessons with live feedback, accuracy gates & certificate"
+  },
+  "coding-typing-test": {
+    "name": "Coding Typing Test",
+    "desc": "Practice typing JS, Python, Java, C++, HTML, and SQL"
+  },
+  "upwork-proposal-generator": {
+    "name": "Upwork Proposal Generator",
+    "desc": "Personalized short and detailed proposals from a job post"
+  },
+  "upwork-proposal-analyzer": {
+    "name": "Upwork Proposal Analyzer",
+    "desc": "Score proposals with strengths, gaps, and readability"
+  },
+  "upwork-job-match-analyzer": {
+    "name": "Upwork Job Match Analyzer",
+    "desc": "Match percentage, missing skills, and win probability"
+  },
+  "upwork-profile-optimizer": {
+    "name": "Upwork Profile Optimizer",
+    "desc": "Optimize headline, bio, skills, and completeness score"
+  },
+  "upwork-cover-letter-generator": {
+    "name": "Upwork Cover Letter Generator",
+    "desc": "Professional cover letters tailored to the job post"
+  },
+  "upwork-interview-answer-generator": {
+    "name": "Upwork Interview Answer Generator",
+    "desc": "Client Q&A answers with tips and alternatives"
+  },
+  "upwork-hourly-rate-calculator": {
+    "name": "Upwork Hourly Rate Calculator",
+    "desc": "Minimum, suggested, and premium rates from goals"
+  },
+  "upwork-contract-generator": {
+    "name": "Upwork Contract Generator",
+    "desc": "Professional project contracts with PDF/DOCX download"
+  },
+  "upwork-portfolio-description-generator": {
+    "name": "Upwork Portfolio Description Generator",
+    "desc": "Short and long portfolio case-study descriptions"
+  },
+  "upwork-client-followup-generator": {
+    "name": "Upwork Client Follow-up Generator",
+    "desc": "Friendly and formal follow-ups after proposal submission"
+  },
+  "fiverr-gig-title-generator": {
+    "name": "Fiverr Gig Title Generator",
+    "desc": "SEO-optimized gig title variations"
+  },
+  "fiverr-gig-description-generator": {
+    "name": "Fiverr Gig Description Generator",
+    "desc": "Structured gig descriptions with clear CTAs"
+  },
+  "fiverr-gig-seo-analyzer": {
+    "name": "Fiverr Gig SEO Analyzer",
+    "desc": "SEO score, missing keywords, and readability"
+  },
+  "fiverr-tag-generator": {
+    "name": "Fiverr Tag Generator",
+    "desc": "Optimized tags and long-tail keyword ideas"
+  },
+  "fiverr-faq-generator": {
+    "name": "Fiverr FAQ Generator",
+    "desc": "Buyer FAQs with suggested answers for your gig"
+  },
+  "fiverr-pricing-generator": {
+    "name": "Fiverr Pricing Generator",
+    "desc": "Basic, Standard, and Premium packages with AI tips"
+  },
+  "fiverr-gig-image-text-generator": {
+    "name": "Fiverr Gig Image Text Generator",
+    "desc": "Thumbnail headlines, badges, and CTA text (text only)"
+  },
+  "fiverr-buyer-request-reply-generator": {
+    "name": "Fiverr Buyer Request Reply Generator",
+    "desc": "Short and detailed replies to buyer requests"
+  },
+  "fiverr-profile-bio-generator": {
+    "name": "Fiverr Profile Bio Generator",
+    "desc": "Professional and SEO-optimized seller bios"
+  },
+  "fiverr-review-response-generator": {
+    "name": "Fiverr Review Response Generator",
+    "desc": "Professional, friendly, and formal review replies"
+  },
+  "shopee-listing-title-generator": {
+    "name": "Shopee Listing Title Generator",
+    "desc": "SEO-optimized listing titles with character counts"
+  },
+  "shopee-product-description-generator": {
+    "name": "Shopee Product Description Generator",
+    "desc": "Optimized descriptions with bullets and CTA"
+  },
+  "shopee-keyword-generator": {
+    "name": "Shopee Keyword Generator",
+    "desc": "Primary, long-tail, and search-intent keywords"
+  },
+  "shopee-listing-seo-analyzer": {
+    "name": "Shopee Listing SEO Analyzer",
+    "desc": "SEO score, missing keywords, and readability"
+  },
+  "shopee-profit-calculator": {
+    "name": "Shopee Profit Calculator",
+    "desc": "Net profit, margin, and ROI from costs and fees"
+  },
+  "shopee-fee-calculator": {
+    "name": "Shopee Fee Calculator",
+    "desc": "Configurable marketplace and payment fees"
+  },
+  "shopee-pricing-calculator": {
+    "name": "Shopee Pricing Calculator",
+    "desc": "Suggested, break-even, competitive, and premium prices"
+  },
+  "shopee-shipping-calculator": {
+    "name": "Shopee Shipping Calculator",
+    "desc": "Estimated shipping cost and delivery time"
+  },
+  "shopee-chat-reply-generator": {
+    "name": "Shopee Chat Reply Generator",
+    "desc": "Professional, friendly, and short customer replies"
+  },
+  "shopee-listing-optimizer": {
+    "name": "Shopee Listing Optimizer",
+    "desc": "Optimized title, description, keywords, and quality score"
+  },
+  "lazada-listing-title-generator": {
+    "name": "Lazada Listing Title Generator",
+    "desc": "SEO-optimized listing titles with character counts"
+  },
+  "lazada-product-description-generator": {
+    "name": "Lazada Product Description Generator",
+    "desc": "Optimized descriptions with bullets and CTA"
+  },
+  "lazada-keyword-generator": {
+    "name": "Lazada Keyword Generator",
+    "desc": "Primary, long-tail, and search-intent keywords"
+  },
+  "lazada-listing-seo-analyzer": {
+    "name": "Lazada Listing SEO Analyzer",
+    "desc": "SEO score, missing keywords, and readability"
+  },
+  "lazada-profit-calculator": {
+    "name": "Lazada Profit Calculator",
+    "desc": "Net profit, margin, and ROI from costs and fees"
+  },
+  "lazada-fee-calculator": {
+    "name": "Lazada Fee Calculator",
+    "desc": "Configurable marketplace and payment fees"
+  },
+  "lazada-pricing-calculator": {
+    "name": "Lazada Pricing Calculator",
+    "desc": "Suggested, break-even, competitive, and premium prices"
+  },
+  "lazada-shipping-calculator": {
+    "name": "Lazada Shipping Calculator",
+    "desc": "Estimated shipping cost and delivery time"
+  },
+  "lazada-chat-reply-generator": {
+    "name": "Lazada Chat Reply Generator",
+    "desc": "Professional, friendly, and short customer replies"
+  },
+  "lazada-listing-optimizer": {
+    "name": "Lazada Listing Optimizer",
+    "desc": "Optimized title, description, keywords, and quality score"
+  }
+}

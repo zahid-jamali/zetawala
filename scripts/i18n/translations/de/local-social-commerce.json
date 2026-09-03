@@ -1,0 +1,182 @@
+{
+  "whatsapp-broadcast": {
+    "name": "WhatsApp-Broadcast- und Status-Texter",
+    "desc": "AIDA-Texte für Broadcasts und Status in Roman Urdu",
+    "title": "WhatsApp-Broadcast-Texter und Status-Texte in Roman Urdu",
+    "description": "Schreibe mit Zetawala WhatsApp-Broadcast-Nachrichten und Status-Texte in Roman Urdu mit hoher Conversion für den pakistanischen Social Commerce. Erstelle AIDA-strukturierte Aktionen, Nachschub-Hinweise, Flash-Angebote und CTAs für Nachnahme in natürlichem Roman Urdu mit englischen Einschüben – inklusive Verknappungssignalen, Emojis und CTAs, die direkt in den Chat führen. Ideal für Händler in Lahore, Karatschi und Islamabad, die täglich Status-Zeilen und Listen-Broadcasts brauchen, die persönlich statt aufdringlich wirken und Angebote in Sekunden in Antworten verwandeln.",
+    "example": {
+      "input": "Produkt: „Seiden-Dupatta-Set“ | Angebot: „2 kaufen, 1 gratis + Gratisversand“ | Zielgruppe: „Frauen von 18 bis 35 in Lahore“ | Kanal: „Broadcast + Status“",
+      "output": "Broadcast:\nAssalam o Alaikum ladies! 🌸\nSilk Dupatta Set ab sirf aaj ke liye special offer pe!\nBuy 2 Get 1 Free + Free Delivery 🚚\nLimited stock — order ke liye inbox karein.\n\nStatus:\nBuy 2 Get 1 Free 🔥 Silk Dupatta\nFree Delivery | COD\nInbox abhi — stock limited!"
+    },
+    "faqs": [
+      [
+        "Was ist eine WhatsApp-Broadcast-Nachricht und warum nutzen pakistanische Händler sie?",
+        "Eine WhatsApp-Broadcast-Nachricht sendet dieselbe Aktion gleichzeitig an viele gespeicherte Kontakte, während die Chats privat bleiben. Lokale Händler setzen sie für Flash-Deals, Nachschub-Hinweise und Nachnahme-Angebote ein, weil die Öffnungsraten E-Mail übertreffen und die Nachricht wie eine persönliche Notiz wirkt."
+      ],
+      [
+        "Warum sollten WhatsApp-Broadcasts und Status-Texte in Roman Urdu geschrieben sein?",
+        "Die meisten pakistanischen Käufer chatten auf WhatsApp in Roman Urdu. Muttersprachlich klingende Texte schaffen schneller Vertrauen und konvertieren besser als formelle, rein englische Nachrichten – besonders bei Status-Zuschauern, die zügig weiterwischen."
+      ],
+      [
+        "Wie strukturiert Zetawala Broadcast- und Status-Texte in Roman Urdu?",
+        "Zetawala wendet die AIDA-Formel an – Aufmerksamkeit, Interesse, Verlangen, Handlung – und verdichtet dasselbe Angebot anschließend zu prägnanten Status-Zeilen mit Emojis, Verknappung und einem klaren CTA zur Antwort per Chat oder WhatsApp."
+      ],
+      [
+        "Kann ich denselben Text für WhatsApp-Status und Broadcast-Listen verwenden?",
+        "Ja, aber der Status braucht eine knappere Fassung. Behalte die vollständige AIDA-Botschaft für Broadcast-Listen und nutze die eigene Status-Ausgabe für kurze, visuell taugliche Roman-Urdu-Zeilen, die in wenigen Bildern funktionieren."
+      ],
+      [
+        "Wie oft sollte ich WhatsApp-Broadcasts senden, ohne aufdringlich zu wirken?",
+        "Für die meisten lokalen Händler wirken 2 bis 4 hochwertige Broadcasts pro Woche besser als täglicher Spam. Beginne mit einem klaren Angebot, wechsle die Produktperspektive und respektiere immer das Vertrauen deiner Kontaktliste."
+      ],
+      [
+        "Sollte der Preis schon in der ersten WhatsApp-Broadcast-Nachricht stehen?",
+        "Wenn Preis oder Rabatt der wichtigste Aufhänger ist, nenne ihn direkt. Andernfalls deute den Nutzen an und lade zu einer Antwort im Chat ein, um ernsthafte Käufer zu qualifizieren und Details zu Nachnahme oder Varianten privat zu teilen."
+      ]
+    ]
+  },
+  "local-ad-script": {
+    "name": "Lokales Anzeigenskript für Facebook/Instagram",
+    "desc": "Kurze Skripte und Captions für lokale Anzeigen",
+    "title": "Facebook-Anzeigenskript-Generator für Pakistan – lokale Instagram-Anzeigen",
+    "description": "Erstelle mit Zetawala Facebook-Anzeigenskripte für Pakistan und Instagram-Meta-Ads, die den Feed stoppen. Generiere Voiceover-Skripte, Captions und Hook-Varianten in einer natürlichen Mischung aus Roman Urdu und Englisch, abgestimmt auf 15- und 30-Sekunden-Creatives, lokale Vertrauenssignale, Nachnahme-CTAs und Social-Commerce-Angebote. Gemacht für pakistanische Händler, die Facebook- und Instagram-Anzeigen schalten und Hooks brauchen, die den Feed in drei Sekunden anhalten, sowie Captions, die Zuschauer in WhatsApp- oder DM-Anfragen verwandeln.",
+    "example": {
+      "input": "Kategorie: „Küchengadgets“ | Alleinstellungsmerkmal: „Schneidet Gemüse in 10 Sekunden“ | Länge: „15 s“ | Markt: „Meta Ads Pakistan“",
+      "output": "Hook (0–3 s): Ghar ki cutting se tang aa gaye?\nHauptteil: Yeh chopper 10 seconds mein kaam khatam karta hai — bilkul easy!\nBeweis: Demo zeigen, Schneiden ohne Chaos.\nCTA: Order abhi — Cash on Delivery available!\nCaption: Gemüsehacker in 10 Sekunden | COD Pakistan | Für den Preis schreiben 🔥"
+    },
+    "faqs": [
+      [
+        "Was macht ein starkes Facebook-Anzeigenskript für Pakistan aus?",
+        "Ein starkes Facebook-Anzeigenskript für Pakistan beginnt mit einem Problem oder einem Preisschock in Roman Urdu, zeigt schnell den Nutzen per Demo, ergänzt ein lokales Vertrauenssignal wie Nachnahme und endet innerhalb von 15 bis 30 Sekunden mit einem klaren CTA zu Chat oder WhatsApp."
+      ],
+      [
+        "Welche Videolänge funktioniert für lokale Meta-Anzeigen in Pakistan am besten?",
+        "15-Sekunden-Anzeigen gewinnen oft bei Impulsprodukten, während 30-Sekunden-Anzeigen besser abschneiden, wenn du eine kurze Demo, einen Vorher-Nachher-Beweis oder etwas Storytelling zum Vertrauensaufbau brauchst."
+      ],
+      [
+        "Sollten Facebook- und Instagram-Anzeigenskripte Roman Urdu und Englisch mischen?",
+        "Ja. Eine natürliche Mischung spiegelt, wie Pakistaner online sprechen, und übertrifft steife, rein englische Skripte bei lokalen Social-Commerce-Angeboten auf Facebook und Instagram meist deutlich."
+      ],
+      [
+        "Was gehört in die ersten 3 Sekunden eines Facebook-Anzeigenskripts?",
+        "Nenne sofort ein Problem, ein überraschendes Ergebnis oder einen Preisschock. Wenn Zuschauer in den ersten drei Sekunden nicht innehalten, wird der Rest der Meta-Anzeige selten gesehen."
+      ],
+      [
+        "Kann ich Zetawala-Anzeigenskripte für organische Reels und bezahlte Meta-Ads nutzen?",
+        "Auf jeden Fall. Caption und Hook funktionieren sowohl für bezahlte Facebook- und Instagram-Anzeigen als auch für organische Reels – passe nur den CTA an, wenn du keine bezahlte Kampagne schaltest."
+      ],
+      [
+        "Brauche ich getrennte Skripte für den Facebook-Feed und Instagram Stories?",
+        "Die Kernbotschaft kann gleich bleiben. Behalte identische Hooks und passe Tempo und CTA-Formulierung für Stories gegenüber dem Feed leicht an; ein starkes lokales Skript trägt meist über beide Platzierungen."
+      ]
+    ]
+  },
+  "wholesale-negotiation": {
+    "name": "Verhandlungstexter für Großhändler",
+    "desc": "Anfrage- und Verhandlungsvorlagen für Shah Alami",
+    "title": "Shah-Alami-Großhandelsverhandlung und WhatsApp-Texter für Lieferanten",
+    "description": "Erstelle mit Zetawala professionelle WhatsApp-Vorlagen für Anfragen und Verhandlungen im Großhandelsmarkt Shah Alami und anderen pakistanischen Großmärkten. Erhalte höfliche, händlertaugliche Nachrichten zu Menge, Zielpreis, Mustern, Lieferung, Mindestbestellmenge und Bestätigungs-Checklisten, damit du in Shah Alami, Bolton Market und ähnlichen Zentren ohne zähes Hin und Her einkaufst. Gemacht für Einzelhändler und Social Seller, die klare Verhandlungschats brauchen, die respektvoll, souverän und abschlussbereit klingen.",
+    "example": {
+      "input": "Produkt: „Bluetooth-Nackenbügel-Headset“ | Menge: „100 Stück“ | Ziel: „Rs. 450 pro Stück“ | Markt: „Großhandel Shah Alami“ | Anfrage: „Muster verfügbar?“",
+      "output": "Assalam o Alaikum bhai, Bluetooth Neckband ka wholesale rate chahiye tha (Shah Alami).\n100 pcs chahiye hain, target rate Rs. 450 around.\nSample available hai kya? Delivery aur payment terms bhi bata dein please."
+    },
+    "faqs": [
+      [
+        "Wie schreibe ich einen Großhändler in Shah Alami zum ersten Mal über WhatsApp an?",
+        "Halte es kurz und respektvoll: nenne das Produkt, gib die Menge an, frage nach Preis und Musterverfügbarkeit und erbitte Liefer- und Zahlungsbedingungen klar in Roman Urdu mit einigen englischen Geschäftsbegriffen."
+      ],
+      [
+        "Wird bei Großhändlern in Shah Alami Feilschen erwartet?",
+        "Ja, höfliches Verhandeln ist üblich. Starte mit einem fairen Zielpreis, erwähne das Bestellvolumen und frage nach einer besseren Preisstaffel, wenn du in Menge oder wiederholt einkaufst."
+      ],
+      [
+        "Welche Details sollte ich vor einer Großhandelsbestellung klären?",
+        "Bestätige Endpreis, Mindestbestellmenge, Farb- oder Modellvarianten, Musterfreigabe, Lieferzeit, Verpackung und Zahlungsart (Barzahlung, Banküberweisung oder Anzahlungsanteil)."
+      ],
+      [
+        "Funktionieren die Großhandelsvorlagen von Zetawala auch außerhalb von Shah Alami?",
+        "Ja. Ton und Struktur passen für Bolton Market, die Großhandelszentren in Karatschi und ähnliche Märkte – tausche einfach Ortsangaben und Produktdetails aus."
+      ],
+      [
+        "Sollten Verhandlungsnachrichten in Urdu-Schrift oder in Roman Urdu geschrieben sein?",
+        "Roman Urdu mit einigen englischen Geschäftsbegriffen ist der natürlichste WhatsApp-Stil für den Großhandel in Shah Alami und Gespräche mit lokalen Lieferanten in Pakistan."
+      ],
+      [
+        "Wie frage ich nach einem Muster, ohne unseriös zu wirken?",
+        "Nenne zuerst die geplante Bestellmenge und frage dann, ob ein kostenpflichtiges oder kostenloses Muster verfügbar ist. Ein glaubwürdiges Volumen macht Lieferanten eher bereit, Muster und bessere Preise anzubieten."
+      ]
+    ]
+  },
+  "social-comment-responder": {
+    "name": "Preis- und Kommentar-Responder für Social Media",
+    "desc": "Höfliche, conversion-orientierte Auto-Antworten",
+    "title": "Antwortgenerator für „Preis bitte“-Kommentare auf Facebook und Instagram",
+    "description": "Erstelle mit Zetawala höfliche, conversion-orientierte Antworten auf „Preis bitte“-Kommentare und andere Käuferfragen auf Facebook und Instagram. Bearbeite „Preis?“, „Was kostet das?“, Beschwerden und typische Kommentare in den Tonlagen Höflich, Professionell oder Entschuldigend in Roman Urdu und Englisch – so schützt du das Markenvertrauen und lenkst Interessenten in die DMs oder zu WhatsApp. Gemacht für pakistanische Social Seller, die schnelle Antwortvorlagen brauchen, um öffentliche Preiskämpfe zu vermeiden und Kommentarverläufe in abgeschlossene Bestellungen zu verwandeln.",
+    "example": {
+      "input": "Kommentar: „Preis bitte?“ | Produkt: „Kabellose Earbuds“ | Ton: „Höflich“ | Ziel: „In die DMs verlagern“",
+      "output": "Jee bilkul! Wireless Earbuds ki price aur available colors inbox mein share kar dete hain.\nKindly DM karein — jaldi reply mil jayega 😊 COD available."
+    },
+    "faqs": [
+      [
+        "Warum sollte man auf „Preis bitte“ per DM antworten statt öffentlich zu kommentieren?",
+        "Antworten per DM verringern öffentliche Preiskämpfe, erlauben dir, den Käufer zu qualifizieren, und schaffen einen privaten Raum für den Abschluss mit Nachnahme-Details, Varianten und Zusatzverkäufen, ohne dass Wettbewerber in den Kommentaren unterbieten."
+      ],
+      [
+        "Wie antworte ich auf verärgerte Kommentare oder Beschwerden auf Facebook und Instagram?",
+        "Nutze einen entschuldigenden Ton bei Beschwerden und einen professionellen bei sachlichen Streitpunkten. Erkenne das Problem zuerst an und biete dann einen klaren Lösungsweg per DM oder WhatsApp."
+      ],
+      [
+        "Verbessern die „Preis bitte“-Antworten von Zetawala die Conversion im Social Commerce?",
+        "Ja. Schnelle, freundliche und lokal passende Antworten signalisieren Vertrauen und Reaktionsfähigkeit – zwei der stärksten Conversion-Treiber für pakistanische Händler auf Facebook und Instagram."
+      ],
+      [
+        "Sollte jeder „Preis?“-Kommentar genau dieselbe Antwort erhalten?",
+        "Nutze eine einheitliche Struktur, personalisiere aber wenn möglich mit Produktname, Angebot oder Dringlichkeit, damit die Antworten nicht mechanisch wirken und trotzdem zur DM einladen."
+      ],
+      [
+        "Ist Roman Urdu besser als formelles Urdu für Kommentarantworten?",
+        "Für die meisten Käufer in Pakistan auf Facebook und Instagram liest sich Roman Urdu schneller und passt zur alltäglichen Kommentarkultur unter Social-Commerce-Beiträgen."
+      ],
+      [
+        "Welcher Ton passt am besten zu einem ersten „Preis bitte“-Kommentar?",
+        "Beginne höflich: bedanke dich für den Kommentar, bestätige, dass du den Preis per DM sendest, erwähne Nachnahme falls verfügbar und lade zu einer kurzen Nachricht ein, damit das Gespräch privat und conversion-orientiert bleibt."
+      ]
+    ]
+  },
+  "product-storyboard": {
+    "name": "Einseitiges Produkt-Storyboard",
+    "desc": "Story-basierte Social-Posts aus Kundenproblemen",
+    "title": "Produkt-Storyboard-Generator für Social-Commerce-Beiträge",
+    "description": "Verwandle mit Zetawala Produktmerkmale und Kundenprobleme in ein einseitiges Produkt-Storyboard. Baue Erzählungen nach dem Muster Problem → Empathie → Lösung → CTA in Roman Urdu und Englisch, damit deine Inhalte für Facebook, Instagram und WhatsApp-Status Erleichterung statt technischer Daten verkaufen. Ideal für pakistanische Social-Commerce-Händler, die story-basierte Beiträge, Reels-Sequenzen und Status-Bilder brauchen, die Interessenten in Bestellungen per Chat verwandeln – ohne Feature-Bombardement.",
+    "example": {
+      "input": "Merkmale: „USB-aufladbar, 3 Wärmestufen“ | Problem: „Winter me haath thand se sooj jate hain“ | Kanäle: „Instagram + WhatsApp-Status“",
+      "output": "Problem: Winter me haath itne thand ho jate hain ke kaam bhi mushkil ho jata hai...\nEmpathie: Har saal same struggle, gloves se bhi kaam nahi chalta.\nLösung: Aufladbarer Handwärmer — USB-Ladung, 3 Wärmestufen.\nCTA: Inbox karein for COD order.\n\nStatus-Sequenz: 1) Problemzeile 2) Produktenthüllung 3) Wärmestufen 4) CTA zum Chat"
+    },
+    "faqs": [
+      [
+        "Was ist ein Produkt-Storyboard im Social Commerce?",
+        "Ein Produkt-Storyboard skizziert eine kurze Erzählung – Problem, Empathie, Lösung und CTA –, damit dein Beitrag oder deine Status-Sequenz zuerst die Erleichterung für den Kunden verkauft und nicht die Merkmalsliste."
+      ],
+      [
+        "Warum sollte ein Produkt-Storyboard mit dem Kundenproblem beginnen?",
+        "Menschen kaufen Erleichterung, keine Merkmalslisten. Der Einstieg über das Problem schafft emotionale Relevanz, bevor du das Produkt auf Facebook, Instagram oder WhatsApp als Lösung vorstellst."
+      ],
+      [
+        "Wie lang sollte ein story-basierter Social-Post aus einem Produkt-Storyboard sein?",
+        "Halte ihn überfliegbar: wenige kurze Zeilen für Feed-Beiträge und eine noch knappere Fassung für WhatsApp-Status oder Reels-Captions, damit die Story in Sekunden verständlich ist."
+      ],
+      [
+        "Kann ich das Produkt-Storyboard von Zetawala für WhatsApp-Status nutzen?",
+        "Ja. Nutze die Storyboard-Abschnitte, um 3 bis 4 Status-Bilder zu planen, die von Problem über Empathie und Lösung bis zu einem sanften CTA in den Chat führen."
+      ],
+      [
+        "Was ist ein sanfter CTA in einem Produkt-Storyboard?",
+        "Ein sanfter CTA lädt ohne Druck zum Handeln ein – etwa „Inbox karein details ke liye“ – und konvertiert im lokalen Social Commerce oft besser als aggressive Verkaufssprache."
+      ],
+      [
+        "Funktioniert Produkt-Storytelling auch bei günstigen Impulsprodukten?",
+        "Absolut. Selbst kleine Impulsprodukte konvertieren besser, wenn das Storyboard eine echte alltägliche Frustration deiner pakistanischen Zielgruppe aufgreift und dann eine einfache Lösung mit Nachnahme anbietet."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Calculadora de margen de beneficio",
+  "desc": "Beneficio bruto, margen % y markup a partir del coste y el precio",
+  "metadata": {
+    "title": "Calculadora de margen de beneficio gratis – Margen y markup | Zetawala",
+    "description": "Calcula beneficio bruto, margen de beneficio % y markup a partir del coste y el precio de venta. Calculadora gratis, con fórmulas claras y sin IA.",
+    "keywords": [
+      "calculadora de margen de beneficio",
+      "calculadora de margen bruto",
+      "calculadora de markup",
+      "margen vs markup",
+      "calculadora de porcentaje de beneficio"
+    ]
+  },
+  "seo": {
+    "title": "Calculadora de margen de beneficio – Margen y markup",
+    "description": "Calcula el beneficio bruto, el margen % y el markup % con la calculadora gratis de Zetawala. Introduce coste y precio de venta y obtén resultados instantáneos y deterministas, sin IA. Ideal para retailers, freelancers y vendedores ecommerce.",
+    "example": {
+      "input": "Coste del producto: 40 $ · Precio de venta: 100 $",
+      "output": "Beneficio bruto 60 $ · Margen 60 % · Markup 150 %"
+    },
+    "faqs": [
+      {
+        "q": "¿Cómo se calculan el margen y el markup?",
+        "a": "Beneficio bruto = Precio − Coste. Margen % = Beneficio bruto ÷ Precio × 100. Markup % = Beneficio bruto ÷ Coste × 100 (si el coste > 0)."
+      },
+      {
+        "q": "¿Cuál es la diferencia entre margen y markup?",
+        "a": "El margen es el beneficio como parte del precio de venta. El markup es el beneficio como parte del coste. Un margen del 50 % no es un markup del 50 %."
+      },
+      {
+        "q": "¿Esta calculadora usa inteligencia artificial?",
+        "a": "No. Solo usa aritmética determinista, así siempre sabes de dónde salen los porcentajes."
+      },
+      {
+        "q": "¿Quién debería usarla?",
+        "a": "Vendedores ecommerce, mayoristas, negocios de servicios y cualquiera que fije o revise precios frente al coste."
+      },
+      {
+        "q": "¿Incluye envío, anuncios o comisiones?",
+        "a": "Esta herramienta se centra en coste frente a precio. Para la rentabilidad completa usa las calculadoras de beneficio ecommerce, Amazon FBA, Etsy o eBay."
+      },
+      {
+        "q": "¿Puede el margen ser negativo?",
+        "a": "Sí: si el coste supera el precio, el beneficio bruto y el margen son negativos: estás vendiendo a pérdidas en esa unidad."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Datos de margen",
+    "disclaimer": "Cálculo local instantáneo, sin llamadas a IA. Los resultados se actualizan al escribir. Son estimaciones: verifica con tus datos.",
+    "formulaLabel": "Fórmula",
+    "detailsTitle": "Detalles",
+    "nextStepsTitle": "Siguientes pasos recomendados",
+    "badge": "Cálculo Zetawala",
+    "notFound": "Calculadora no encontrada.",
+    "sectionTitle": "Cómo ayuda esta calculadora",
+    "sectionHint": "Margen y markup transparentes a partir del coste y el precio.",
+    "exampleTitle": "Ejemplo práctico",
+    "exampleHint": "Entradas de ejemplo y el resultado esperado.",
+    "sampleInput": "Entrada de ejemplo",
+    "sampleOutput": "Resultado",
+    "faqTitle": "Preguntas frecuentes",
+    "faqHint": "Respuestas claras sobre margen, markup y precios.",
+    "fields": {
+      "productCost": "Coste del producto ($)",
+      "sellingPrice": "Precio de venta ($)"
+    },
+    "nextSteps": {
+      "ecommerce-profit": "Beneficio ecommerce",
+      "break-even": "Punto de equilibrio",
+      "amazon-fba-profit": "Beneficio Amazon FBA"
+    },
+    "results": {
+      "headline": "Margen de beneficio: {value}",
+      "metrics": {
+        "Gross Profit": { "title": "Beneficio bruto" },
+        "Profit Margin": { "title": "Margen de beneficio" },
+        "Markup": { "title": "Markup" }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Break-even-Rechner",
+  "desc": "Stückzahl und Umsatz, um Fixkosten zu decken",
+  "metadata": {
+    "title": "Kostenloser Break-even-Rechner – Stück und Umsatz | Zetawala",
+    "description": "Berechnen Sie Break-even-Stückzahl und -Umsatz aus Fixkosten, Preis und variablen Kosten. Kostenlos, mit Deckungsbeitrag, ohne KI.",
+    "keywords": ["Break-even-Rechner", "Gewinnschwelle Rechner", "Break-even-Menge", "Deckungsbeitrag Rechner"]
+  },
+  "seo": {
+    "title": "Break-even-Rechner – Stück und Umsatz",
+    "description": "Finden Sie Break-even-Stückzahl und -Umsatz mit Zetawalas kostenlosem Rechner. Fixkosten, Verkaufspreis und variable Stückkosten eingeben – deterministische Mathematik, ohne KI.",
+    "example": {
+      "input": "Fixkosten: 12.000 $ · Preis: 50 $ · Variable Kosten: 20 $",
+      "output": "Break-even 400 Stück · Umsatz 20.000 $ · Deckungsbeitrag 30 $/Stück"
+    },
+    "faqs": [
+      { "q": "Wie lautet die Break-even-Formel?", "a": "Stück = Fixkosten ÷ (Preis − variable Stückkosten). Umsatz = Stück × Preis. Deckungsbeitrag = Preis − variable Kosten." },
+      { "q": "Warum muss der Preis über den variablen Kosten liegen?", "a": "Ist der Preis ≤ variable Kosten, ist der Deckungsbeitrag null oder negativ – Fixkosten werden nie gedeckt. Der Rechner verlangt einen positiven Deckungsbeitrag." },
+      { "q": "Nutzt der Rechner KI?", "a": "Nein. Stück und Umsatz folgen Standardformeln der Kostenrechnung." },
+      { "q": "Was sind fixe vs. variable Kosten?", "a": "Fixe bleiben weitgehend konstant (Miete, Gehälter, Software). Variable steigen mit jeder Einheit (Material, Verpackung, Versand pro Auftrag)." },
+      { "q": "Wer sollte ihn nutzen?", "a": "Produktgründer, Händler, Cafés und Hersteller, die wissen müssen, wie viele Einheiten vor dem Gewinn nötig sind." },
+      { "q": "Was passiert nach dem Break-even?", "a": "Jede Extra-Einheit bringt ungefähr den Deckungsbeitrag als Gewinn. Das Tool zeigt den Gewinn je Extra-Stück." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Break-even-Eingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Stückzahl und Umsatz zur Deckung der Fixkosten.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zur Break-even-Analyse.",
+    "fields": {
+      "fixedCosts": "Fixkosten ($)",
+      "sellingPrice": "Verkaufspreis je Stück ($)",
+      "variableCost": "Variable Kosten je Stück ($)"
+    },
+    "nextSteps": {
+      "profit-margin": "Gewinnmarge",
+      "saas-pricing": "SaaS-Preis",
+      "ecommerce-profit": "E-Commerce-Profit"
+    },
+    "results": {
+      "headline": "Break-even bei {value}",
+      "metrics": {
+        "Break-even Units": { "title": "Break-even-Stückzahl" },
+        "Break-even Revenue": { "title": "Break-even-Umsatz" },
+        "Contribution Margin / Unit": { "title": "Deckungsbeitrag / Stück" },
+        "Profit After Break-even (per extra unit)": { "title": "Gewinn nach Break-even (je Extra-Stück)" }
+      }
+    }
+  }
+}

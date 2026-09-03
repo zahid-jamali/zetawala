@@ -1,0 +1,362 @@
+{
+  "ai-humanizer": {
+    "name": "KI-Humanizer",
+    "desc": "KI-Text so umschreiben, dass er auf Englisch, Spanisch oder Urdu natürlich klingt",
+    "title": "Kostenloser KI-Humanizer – KI-Text natürlich klingen lassen",
+    "description": "Humanisiere KI-generierten Text mit dem kostenlosen DeepSeek-gestützten KI-Humanizer von Zetawala. Schreibe steife ChatGPT-ähnliche Texte in natürliche, lesbare Prosa auf Englisch, Spanisch oder Urdu um – ideal für Blogs, E-Mails und Studententwürfe. Füge deinen Entwurf ein, wähle eine Sprache und erhalte flüssigere Formulierungen, die die Bedeutung behalten. Keine Anmeldung zum Ausprobieren.",
+    "example": {
+      "input": "In der heutigen, sich rasant entwickelnden digitalen Landschaft ist es unerlässlich, synergetische Lösungen zu nutzen…",
+      "output": "Online-Tools ändern sich schnell – wähle deshalb solche, die deinem Team wirklich helfen, die Arbeit zu erledigen…"
+    },
+    "faqs": [
+      [
+        "Was macht der KI-Humanizer?",
+        "Er schreibt KI-lastigen oder steifen Text so um, dass er natürlicher klingt – klarerer Rhythmus, weniger Formelphrasen – und zielt darauf ab, die ursprüngliche Bedeutung zu behalten."
+      ],
+      [
+        "Ist der KI-Humanizer kostenlos?",
+        "Ja. Der KI-Humanizer von Zetawala ist kostenlos. Ergebnisse entstehen durch DeepSeek-gestützte Schreibanalyse über unsere Generate-API."
+      ],
+      [
+        "Welche Sprachen werden unterstützt?",
+        "Du kannst Text auf Englisch, Spanisch und Urdu humanisieren. Wähle die Sprache, die zu deinem Entwurf passt, für beste Ergebnisse."
+      ],
+      [
+        "Entfernt das Humanisieren Fakten oder Zitate?",
+        "Das Tool konzentriert sich auf Ton und Flüssigkeit. Namen, Zahlen und Zitate solltest du trotzdem prüfen – erfinde keine Fakten und verifiziere Wichtiges vor der Veröffentlichung."
+      ],
+      [
+        "Wer sollte einen KI-Humanizer nutzen?",
+        "Texter, Marketer, Studierende und Support-Teams, die KI-Entwürfe weniger roboterhaft klingen lassen wollen, bevor sie veröffentlichen oder senden."
+      ],
+      [
+        "Ist das eine Garantie gegen KI-Detektoren?",
+        "Nein. Detektoren unterscheiden sich und sind ungenau. Nutze den Humanizer für Lesbarkeit und Stimme – nicht als Versprechen, dass ein Detektor „100 % menschlich“ bewertet."
+      ]
+    ]
+  },
+  "ai-content-detector": {
+    "name": "KI-Inhaltsdetektor",
+    "desc": "Schätzt KI- vs. menschliches Schreiben mit satzweisen Signalen",
+    "title": "Kostenloser KI-Inhaltsdetektor – KI vs. menschliches Schreiben schätzen",
+    "description": "Prüfe, ob ein Text KI-geschrieben wirkt, mit dem kostenlosen DeepSeek-gestützten KI-Inhaltsdetektor von Zetawala. Du erhältst eine Gesamtschätzung plus satzweise Signale auf Englisch, Spanisch oder Urdu – nützlich für Redaktionen, Lehrkräfte und Verlage, die Entwürfe prüfen. Füge Inhalt ein und lies die Scores vorsichtig, nicht als absoluten Beweis. Kostenlos testen, ohne Konto.",
+    "example": {
+      "input": "Füge eine 200-Wörter-Blog-Intro ein, die KI-generiert sein könnte",
+      "output": "Gesamt: Wahrscheinlich KI-unterstützt · Beispielsätze wegen formelhafter Einstiege und repetitiver Struktur markiert"
+    },
+    "faqs": [
+      [
+        "Wie genau ist der KI-Inhaltsdetektor?",
+        "Er schätzt die Wahrscheinlichkeit anhand von Schreibmustern über DeepSeek-gestützte Analyse. Behandle Scores als Orientierung – nicht als Gerichtsbeweis –, besonders bei kurzem oder stark überarbeitetem Text."
+      ],
+      [
+        "Ist der KI-Detektor kostenlos?",
+        "Ja. Zetawala bietet einen kostenlosen KI-Inhaltsdetektor für englischen, spanischen und Urdu-Text."
+      ],
+      [
+        "Hebt er bestimmte Sätze hervor?",
+        "Ja. Neben einer Gesamtschätzung erhältst du satzweise Signale, die zeigen, welche Teile formelhafter oder KI-ähnlicher klingen."
+      ],
+      [
+        "Kann gemischter Mensch+KI-Text den Score verwirren?",
+        "Oft ja. Stark überarbeitete KI-Entwürfe oder kollaboratives Schreiben landen oft im mittleren Bereich. Nutze die Satzansicht, um Grenzfälle zu prüfen."
+      ],
+      [
+        "Welche Sprachen kann ich prüfen?",
+        "Englisch, Spanisch und Urdu werden unterstützt. Wähle die Sprache, die zum eingefügten Text passt."
+      ],
+      [
+        "Wer nutzt einen KI-Inhaltsdetektor?",
+        "Redaktionen, Lehrkräfte, Agenturen und Website-Betreiber, die eine Zweitmeinung wollen, bevor sie KI-unterstütztes Schreiben veröffentlichen oder bewerten."
+      ]
+    ]
+  },
+  "plagiarism-checker": {
+    "name": "Plagiatsprüfer",
+    "desc": "Lokale Ähnlichkeitsanalyse für eingefügte oder hochgeladene Dokumente",
+    "title": "Kostenloser Plagiatsprüfer – lokale Dokumentenähnlichkeit",
+    "description": "Vergleiche zwei Texte auf Überschneidungen mit dem kostenlosen DeepSeek-gestützten Plagiatsprüfer von Zetawala. Das ist eine LOKALE Ähnlichkeitsanalyse zwischen dem eingefügten oder hochgeladenen Entwurf und einer Referenz, die du lieferst – keine internetweite Plagiatssuche. Ideal für englische, spanische oder Urdu-Entwürfe, wenn du Überschneidungen gegen eine bekannte Quelle schätzen willst. Kostenlos; prüfe Treffer immer selbst.",
+    "example": {
+      "input": "Quelle: dein Aufsatz · Referenz: Entwurf eines Mitstudierenden oder Quellennotizen (einfügen oder hochladen)",
+      "output": "Ähnlichkeitsschätzung + überlappende Phrasen (nur lokaler/Dokumentenvergleich – kein Web-Crawl)"
+    },
+    "faqs": [
+      [
+        "Durchsucht das Tool das ganze Internet nach Plagiaten?",
+        "Nein. Es führt eine LOKALE Dokumentenähnlichkeit zwischen dem Text, den du angibst, und einer Referenz durch, die du einfügst oder hochlädst. Es ist keine webweite Plagiatserkennung."
+      ],
+      [
+        "Ist der Plagiatsprüfer kostenlos?",
+        "Ja. Der lokale Ähnlichkeitsprüfer von Zetawala ist kostenlos. Die Analyse nutzt DeepSeek-gestützten Vergleich der von dir gelieferten Dokumente."
+      ],
+      [
+        "Was kann ich hochladen?",
+        "Du kannst Text einfügen oder ein unterstütztes Dokument zur Extraktion hochladen und dann gegen eine Referenz vergleichen. Bleibe bei Dateien, die du analysieren darfst."
+      ],
+      [
+        "Welche Sprachen werden unterstützt?",
+        "Vergleiche funktionieren für englischen, spanischen und Urdu-Inhalt, wenn du die passende Sprache wählst."
+      ],
+      [
+        "Wie soll ich einen hohen Ähnlichkeitsscore deuten?",
+        "Hohe Überschneidung heißt, dass die beiden Dokumente Formulierung oder Struktur teilen. Zitate in Anführungszeichen und gemeinsames Boilerplate können den Score heben – prüfe markierte Passagen immer im Kontext."
+      ],
+      [
+        "Wer sollte lokale Dokumentenähnlichkeit nutzen?",
+        "Lehrkräfte, die Abgaben vergleichen, Redaktionen, die Entwürfe gegen ein Briefing prüfen, und Texter, die ihren Text gegen ein bekanntes Quelldokument abgleichen."
+      ]
+    ]
+  },
+  "grammar-checker": {
+    "name": "Grammatikprüfer",
+    "desc": "Vorschläge zu Grammatik, Rechtschreibung, Zeichensetzung und Stil",
+    "title": "Kostenloser Grammatikprüfer – Rechtschreibung, Zeichensetzung und Stil",
+    "description": "Korrigiere Grammatik, Rechtschreibung, Zeichensetzung und Stil mit dem kostenlosen DeepSeek-gestützten Grammatikprüfer von Zetawala. Klare Vorschläge für Englisch, Spanisch oder Urdu – E-Mails, Aufsätze und Website-Texte. Füge deinen Text ein, prüfe die Hinweise und übernimm klarere Formulierungen vor der Veröffentlichung. Kostenlose Online-Grammatikhilfe, ohne Installation.",
+    "example": {
+      "input": "Sie haben den Bericht noch nicht fertig, und da werden zu spät kommen.",
+      "output": "Sie hat den Bericht noch nicht fertig, und sie werden zu spät kommen. · Probleme: Subjekt–Verb, da/sie"
+    },
+    "faqs": [
+      [
+        "Was prüft der Grammatikprüfer?",
+        "Er sucht nach Problemen bei Grammatik, Rechtschreibung, Zeichensetzung und Stil und schlägt klarere Alternativen vor – unterstützt durch DeepSeek-Schreibanalyse."
+      ],
+      [
+        "Ist der Grammatikprüfer kostenlos?",
+        "Ja. Der Grammatikprüfer von Zetawala ist kostenlos für alltägliches Schreiben und Korrekturlesen."
+      ],
+      [
+        "Welche Sprachen werden unterstützt?",
+        "Englisch, Spanisch und Urdu. Wähle die Sprache deines Entwurfs, damit die Vorschläge zu dieser Grammatik passen."
+      ],
+      [
+        "Schreibt es das ganze Dokument um?",
+        "Es konzentriert sich auf Korrekturen und Stilvorschläge. Du bleibst in Kontrolle: übernimm, was zu deiner Stimme passt, und behalte bewusste stilistische Entscheidungen."
+      ],
+      [
+        "Hilft es bei geschäftlichem oder akademischem Schreiben?",
+        "Ja. Es eignet sich für E-Mails, Berichte, Blogposts und Schulentwürfe. Fachbegriffe und Zitate solltest du trotzdem doppelt prüfen."
+      ],
+      [
+        "Wer sollte einen Online-Grammatikprüfer nutzen?",
+        "Alle, die Text vor dem Senden oder Veröffentlichen glätten – Nicht-Muttersprachler, Studierende, Marketer und vielbeschäftigte Profis."
+      ]
+    ]
+  },
+  "paraphrasing-tool": {
+    "name": "Paraphrasierungstool",
+    "desc": "Text in den Modi Standard, Flüssigkeit, formell, kreativ oder akademisch umschreiben",
+    "title": "Kostenloses Paraphrasierungstool – Flüssigkeit, formell und akademisch",
+    "description": "Paraphrasiere Text online mit dem kostenlosen DeepSeek-gestützten Paraphrasierungstool von Zetawala. Schreibe in den Modi Standard, Flüssigkeit, formell, kreativ oder akademisch auf Englisch, Spanisch oder Urdu um. Behalte deine Ideen und erneuere die Formulierung für Blogs, Hausaufgaben-Erklärungen und Kunden-Updates. Kostenlos testen – prüfe die Ausgabe vor der Veröffentlichung auf Genauigkeit.",
+    "example": {
+      "input": "Modus: Akademisch · „Soziale Medien können der Konzentration schaden, wenn du sie den ganzen Tag checkst.“",
+      "output": "Anhaltende Nutzung sozialer Medien kann die Aufmerksamkeitsdauer beeinträchtigen, wenn das Prüfen über den Tag hinweg zur Gewohnheit wird."
+    },
+    "faqs": [
+      [
+        "Welche Paraphrase-Modi gibt es?",
+        "Standard, Flüssigkeit, formell, kreativ und akademisch. Wähle den Modus, der zum gewünschten Ton passt."
+      ],
+      [
+        "Ist das Paraphrasierungstool kostenlos?",
+        "Ja. Der Paraphraser von Zetawala ist kostenlos und wird von DeepSeek über unsere Writing-Generate-API betrieben."
+      ],
+      [
+        "In welchen Sprachen kann ich paraphrasieren?",
+        "Englisch, Spanisch und Urdu werden unterstützt. Wähle die Sprache, die zu deinem Quelltext passt."
+      ],
+      [
+        "Ist Paraphrasieren gleich plagiatfreies Schreiben?",
+        "Nein. Paraphrasieren ändert die Formulierung; du musst Quellen trotzdem zitieren und fremde Ideen nicht als eigene ausgeben."
+      ],
+      [
+        "Wann formell, wann kreativ?",
+        "Nutze formell für Berichte und geschäftliche Mails. Nutze kreativ, wenn du lebendigere Marketing- oder Erzählsprachen willst."
+      ],
+      [
+        "Wem nützt ein Paraphrasierungstool?",
+        "Studierenden, die Notizen klären, Content-Autoren, die Entwürfe auffrischen, und Profis, die dieselbe Botschaft an unterschiedliche Zielgruppen anpassen."
+      ]
+    ]
+  },
+  "roman-urdu-to-urdu": {
+    "name": "Roman-Urdu-zu-Urdu-Konverter",
+    "desc": "Roman Urdu in korrekte Urdu-Schrift umwandeln",
+    "title": "Kostenloser Roman-Urdu-zu-Urdu-Konverter – korrekte Urdu-Schrift",
+    "description": "Wandle Roman Urdu in korrekte Urdu-Schrift mit dem kostenlosen DeepSeek-gestützten Roman-Urdu-zu-Urdu-Konverter von Zetawala. Füge Chat-artiges Roman Urdu ein und erhalte lesbares اردو für Posts, Captions und Nachrichten. Gebaut für pakistanische und urdusprachige Nutzer, die in lateinischen Buchstaben tippen, aber Nastaliq-fertigen Text brauchen. Kostenlose Online-Transliteration – ohne Installation.",
+    "example": {
+      "input": "Aaj mausam bohot acha hai, chalo bahir chalte hain.",
+      "output": "آج موسم بہت اچھا ہے، چلو باہر چلتے ہیں۔"
+    },
+    "faqs": [
+      [
+        "Was ist die Umwandlung von Roman Urdu nach Urdu?",
+        "Sie mappt lateinisch geschriebenes Roman Urdu (z. B. „kya haal hai“) auf korrekte Urdu-Schrift, damit der Text für Urdu-Leser richtig angezeigt wird."
+      ],
+      [
+        "Ist der Konverter kostenlos?",
+        "Ja. Der Roman-Urdu-→-Urdu-Konverter von Zetawala ist kostenlos und nutzt DeepSeek-gestützte Sprachverarbeitung."
+      ],
+      [
+        "Wird jede Schreibweise perfekt umgewandelt?",
+        "Roman Urdu hat viele Schreibweisen für dasselbe Wort. Prüfe Namen und ungewöhnliche Begriffe – gängige Phrasen werden meist gut umgewandelt."
+      ],
+      [
+        "Wer sollte dieses Tool nutzen?",
+        "Alle, die Urdu in englischen Buchstaben für WhatsApp, Facebook oder Instagram tippen, aber korrekte Urdu-Schrift zum Veröffentlichen brauchen."
+      ],
+      [
+        "Kann ich lange Absätze umwandeln?",
+        "Ja. Füge längere Entwürfe ein und wandle sie in einem Durchgang um; prüfe danach Namen, Marken und englische Wörter, die im Text gemischt sind."
+      ],
+      [
+        "Übersetzt das Englisch nach Urdu?",
+        "Nein. Es transliteriert Roman Urdu in Urdu-Schrift. Für Bedeutungsänderungen aus dem Englischen nutze einen Übersetzer oder ein Umschreibtool."
+      ]
+    ]
+  },
+  "urdu-to-roman-urdu": {
+    "name": "Urdu-zu-Roman-Urdu-Konverter",
+    "desc": "Urdu-Schrift in Roman Urdu transliterieren",
+    "title": "Kostenloser Urdu-zu-Roman-Urdu-Konverter – einfache lateinische Schrift",
+    "description": "Transliteriere Urdu-Schrift in Roman Urdu mit dem kostenlosen DeepSeek-gestützten Urdu-zu-Roman-Urdu-Konverter von Zetawala. Wähle Standard, phonetisch oder locker für Chats, Captions und Lernende, die lateinische Buchstaben lesen. Füge اردو-Text ein und erhalte natürliches Roman Urdu zum Teilen. Kostenloses Online-Tool – kein Download.",
+    "example": {
+      "input": "آج میٹنگ تین بجے ہے، بروقت پہنچنا۔",
+      "output": "Aaj meeting teen baje hai, barwaqt pahunchna. (Stil: Standard/locker)"
+    },
+    "faqs": [
+      [
+        "Welche Roman-Urdu-Stile kann ich bekommen?",
+        "Standard, phonetisch und locker. Locker neigt zur alltäglichen WhatsApp-Schreibweise; phonetisch zielt auf klarere Aussprachehinweise."
+      ],
+      [
+        "Ist der Urdu-zu-Roman-Urdu-Konverter kostenlos?",
+        "Ja. Er ist auf Zetawala kostenlos und wird von DeepSeek-Sprachverarbeitung betrieben."
+      ],
+      [
+        "Warum Urdu in Roman Urdu umwandeln?",
+        "Viele Zielgruppen tippen und lesen lateinische Buchstaben schneller am Handy. Roman Urdu hilft, wenn die andere Person Urdu-Schrift nicht leicht lesen kann."
+      ],
+      [
+        "Bleiben englische Wörter im Urdu auf Englisch?",
+        "Meist ja bei gängigen Lehnwörtern (meeting, office). Prüfe Markennamen und Fachbegriffe nach der Umwandlung immer."
+      ],
+      [
+        "Wer nutzt diesen Konverter?",
+        "Social Seller, Content Creator, Diaspora-Familien und Lernende, die Urdu-Aussprache über lateinische Schrift üben."
+      ],
+      [
+        "Ist die Roman-Urdu-Schreibweise standardisiert?",
+        "Es gibt keinen einheitlichen Standard. Stile unterscheiden sich nach Region und Chat-Gewohnheiten – wähle den Stil, der deiner Zielgruppe am nächsten kommt."
+      ]
+    ]
+  },
+  "roman-urdu-grammar": {
+    "name": "Roman-Urdu-Grammatik- und Rechtschreibprüfer",
+    "desc": "Roman-Urdu-Rechtschreibung und -Grammatik mit Vergleich nebeneinander korrigieren",
+    "title": "Kostenloser Roman-Urdu-Grammatik- und Rechtschreibprüfer",
+    "description": "Korrigiere Roman-Urdu-Rechtschreibung und -Grammatik mit dem kostenlosen DeepSeek-gestützten Roman-Urdu-Grammatikprüfer von Zetawala. Klarere Chat- und Caption-Formulierungen mit Vergleich nebeneinander – ideal für pakistanischen Social Commerce, WhatsApp und Facebook-Posts. Füge Roman Urdu ein, prüfe Vorschläge und kopiere eine sauberere Version. Kostenloses Online-Korrekturlesen für Urdu in lateinischer Schrift.",
+    "example": {
+      "input": "Mujhe kal market jana tha lekin time nai mila or mein late ho gaya.",
+      "output": "Mujhe kal market jana tha lekin time nahi mila aur main late ho gaya. · Korrekturen im Vergleich nebeneinander"
+    },
+    "faqs": [
+      [
+        "Was korrigiert der Roman-Urdu-Grammatikprüfer?",
+        "Er zielt auf gängige Roman-Urdu-Rechtschreib- und Grammatikprobleme – Partikel wie „nahi/nai“, „aur/or“, „main/mein“ – und schlägt klarere Alternativen vor."
+      ],
+      [
+        "Ist dieses Tool kostenlos?",
+        "Ja. Der Roman-Urdu-Grammatik- und Rechtschreibprüfer von Zetawala ist kostenlos und DeepSeek-gestützt."
+      ],
+      [
+        "Kann ich Vorher und Nachher vergleichen?",
+        "Ja. Das Tool ist für den Vergleich nebeneinander gebaut, damit du siehst, was sich geändert hat, bevor du das Ergebnis kopierst."
+      ],
+      [
+        "Wandelt es in Urdu-Schrift um?",
+        "Nein. Dieser Prüfer bleibt bei Roman Urdu. Nutze den Roman-Urdu-→-Urdu-Konverter, wenn du korrekte اردو-Schrift brauchst."
+      ],
+      [
+        "Wer sollte Roman-Urdu-Rechtschreibprüfung nutzen?",
+        "Lokale Verkäufer, Community-Manager und alle, die Roman-Urdu-Captions oder WhatsApp-Broadcasts schreiben und weniger ungeschickte Fehler wollen."
+      ],
+      [
+        "Bleiben Slang und englische Mischungen erhalten?",
+        "Alltägliches Code-Mixing ist in Roman Urdu üblich. Der Prüfer will die natürliche Mischung behalten und klare Fehler korrigieren – kreativen Slang prüfe selbst."
+      ]
+    ]
+  },
+  "ai-text-summarizer": {
+    "name": "KI-Textzusammenfasser",
+    "desc": "Kurze, Stichpunkt- und Kernpunkt-Zusammenfassungen in mehreren Sprachen",
+    "title": "Kostenloser KI-Textzusammenfasser – kurz, Stichpunkte und Kernpunkte",
+    "description": "Fasse langen Text mit dem kostenlosen DeepSeek-gestützten KI-Textzusammenfasser von Zetawala zusammen. Wähle kurze, mittlere oder detaillierte Länge und erhalte knappe, Stichpunkt- oder Kernpunkt-Zusammenfassungen auf Englisch, Spanisch oder Urdu. Füge Artikel, Notizen oder Berichte ein und ziehe das Wesentliche schnell heraus. Kostenloser Online-Zusammenfasser – prüfe Fakten, bevor du danach handelst.",
+    "example": {
+      "input": "Länge: Kurz · 800-Wörter-Produktupdate-Blog eingefügt",
+      "output": "Zusammenfassung in 3–5 Sätzen zu Launch-Datum, Funktionen und wer upgraden sollte"
+    },
+    "faqs": [
+      [
+        "Welche Zusammenfassungslängen gibt es?",
+        "Kurz, mittel und detailliert. Kurz eignet sich zum Überfliegen; detailliert behält mehr Nuancen und Stützpunkte."
+      ],
+      [
+        "Ist der KI-Textzusammenfasser kostenlos?",
+        "Ja. Der Zusammenfasser von Zetawala ist kostenlos und wird von DeepSeek-Schreibanalyse betrieben."
+      ],
+      [
+        "In welchen Sprachen kann ich zusammenfassen?",
+        "Englisch, Spanisch und Urdu. Stimme die Spracheinstellung auf deinen Quelltext ab für bessere Ergebnisse."
+      ],
+      [
+        "Können Zusammenfassungen Fakten erfinden?",
+        "Modelle können Details übersehen oder zu stark vereinfachen. Prüfe Zahlen, Daten und Behauptungen immer am Original, bevor du veröffentlichst oder entscheidest."
+      ],
+      [
+        "Welcher Inhalt funktioniert am besten?",
+        "Artikel, Meeting-Notizen, Forschungsabstracts und Support-Tickets mit klarem Thema. Sehr verrauschter oder fragmentierter Text braucht oft zuerst Aufräumen."
+      ],
+      [
+        "Wer nutzt einen KI-Zusammenfasser?",
+        "Studierende, Forschende, Product Manager und Marketer, die eine schnelle Kurzfassung brauchen, bevor sie das volle Dokument lesen oder teilen."
+      ]
+    ]
+  },
+  "ai-rewrite-tool": {
+    "name": "KI-Umschreibtool",
+    "desc": "Kürzer, länger, professionell, freundlich oder SEO-orientiert umschreiben",
+    "title": "Kostenloses KI-Umschreibtool – kürzer, länger, SEO und Ton",
+    "description": "Schreibe jeden Entwurf mit dem kostenlosen DeepSeek-gestützten KI-Umschreibtool von Zetawala um. Modi umfassen kürzer, länger, professionell, freundlich und SEO-orientiert – für Englisch, Spanisch oder Urdu. Frische Blogposts, Landing-Copy und E-Mails auf, ohne von vorn zu beginnen. Kostenloser Online-Umschreiber; behalte die Bedeutung und passe die Ausgabe an deine Marke an.",
+    "example": {
+      "input": "Modus: SEO · „Laufschuhe online kaufen. Schneller Versand.“",
+      "output": "Leichte Laufschuhe online kaufen mit kostenlosen Versandoptionen, Größenratgebern und einfachen Rückgaben für Alltagsläufer."
+    },
+    "faqs": [
+      [
+        "Welche Umschreibmodi werden unterstützt?",
+        "Kürzer, länger, professionell, freundlich und SEO. Jeder formt Länge oder Ton um und zielt darauf, die Kernbotschaft zu behalten."
+      ],
+      [
+        "Ist das KI-Umschreibtool kostenlos?",
+        "Ja. Es ist auf Zetawala kostenlos und nutzt DeepSeek-gestütztes Umschreiben über unsere Generate-API."
+      ],
+      [
+        "In welchen Sprachen kann ich umschreiben?",
+        "Englisch, Spanisch und Urdu. Wähle die Sprache, die zu deinem Entwurf passt."
+      ],
+      [
+        "Worin unterscheidet sich Umschreiben von Paraphrasieren?",
+        "Paraphrase-Modi betonen Umformulierungsstile (Flüssigkeit, akademisch usw.). Umschreibmodi zielen auf Länge und Ton: kürzer, freundlicher oder SEO-orientierte Copy."
+      ],
+      [
+        "Stopft der SEO-Modus Keywords?",
+        "Er zielt auf klarere, suchfreundliche Formulierungen – nicht auf ungeschicktes Keyword-Stuffing. Füge deine Zielphrase natürlich ein und editiere bei Bedarf."
+      ],
+      [
+        "Wer sollte ein KI-Umschreibtool nutzen?",
+        "Content-Marketer, Gründer und Support-Texter, die schnelle Ton- oder Längenänderungen an bestehender Copy brauchen."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Calculateur de seuil de rentabilité",
+  "desc": "Unités et chiffre d’affaires pour couvrir les coûts fixes",
+  "metadata": {
+    "title": "Calculateur de seuil de rentabilité gratuit – Unités et CA | Zetawala",
+    "description": "Calculez les unités et le chiffre d’affaires de rentabilité à partir des coûts fixes, du prix et du coût variable. Gratuit, sans IA.",
+    "keywords": ["calculateur de seuil de rentabilité", "seuil de rentabilité", "unités de rentabilité", "marge sur coûts variables"]
+  },
+  "seo": {
+    "title": "Calculateur de seuil de rentabilité – Unités et CA",
+    "description": "Trouvez les unités et le CA de rentabilité avec le calculateur gratuit de Zetawala. Saisissez coûts fixes, prix de vente et coût variable unitaire : maths déterministes, sans IA.",
+    "example": {
+      "input": "Coûts fixes : 12 000 $ · Prix : 50 $ · Coût variable : 20 $",
+      "output": "Seuil 400 unités · CA 20 000 $ · Contribution 30 $/unité"
+    },
+    "faqs": [
+      { "q": "Quelle est la formule du seuil de rentabilité ?", "a": "Unités = Coûts fixes ÷ (Prix − Coût variable unitaire). CA = Unités × Prix. Marge sur coûts variables = Prix − Coût variable." },
+      { "q": "Pourquoi le prix doit-il dépasser le coût variable ?", "a": "Si le prix ≤ coût variable, la contribution est nulle ou négative et vous ne couvrez jamais les coûts fixes. Le calculateur exige une contribution positive." },
+      { "q": "Utilise-t-il l’IA ?", "a": "Non. Unités et CA suivent les formules classiques de comptabilité de gestion." },
+      { "q": "Coût fixe ou variable ?", "a": "Les fixes restent stables (loyer, salaires, logiciels). Les variables suivent chaque unité (matières, packaging, livraison par commande)." },
+      { "q": "Qui devrait l’utiliser ?", "a": "Fondateurs produit, commerçants, cafés et industriels qui doivent savoir combien d’unités vendre avant d’être rentables." },
+      { "q": "Et après le seuil ?", "a": "Chaque unité supplémentaire ajoute à peu près la marge sur coûts variables au profit. L’outil affiche ce profit unitaire." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Données de rentabilité",
+    "disclaimer": "Calcul local instantané, sans appel IA. Les résultats se mettent à jour à la saisie. Estimations uniquement : vérifiez avec vos données.",
+    "formulaLabel": "Formule",
+    "detailsTitle": "Détails",
+    "nextStepsTitle": "Étapes suivantes recommandées",
+    "badge": "Calcul Zetawala",
+    "notFound": "Calculateur introuvable.",
+    "sectionTitle": "À quoi sert ce calculateur",
+    "sectionHint": "Unités et CA pour couvrir les coûts fixes.",
+    "exampleTitle": "Exemple concret",
+    "exampleHint": "Entrées d’exemple et résultat attendu.",
+    "sampleInput": "Entrée d’exemple",
+    "sampleOutput": "Résultat",
+    "faqTitle": "Questions fréquentes",
+    "faqHint": "Réponses claires sur le seuil de rentabilité.",
+    "fields": {
+      "fixedCosts": "Coûts fixes ($)",
+      "sellingPrice": "Prix de vente unitaire ($)",
+      "variableCost": "Coût variable unitaire ($)"
+    },
+    "nextSteps": {
+      "profit-margin": "Marge bénéficiaire",
+      "saas-pricing": "Prix SaaS",
+      "ecommerce-profit": "Profit e-commerce"
+    },
+    "results": {
+      "headline": "Seuil de rentabilité : {value}",
+      "metrics": {
+        "Break-even Units": { "title": "Unités de rentabilité" },
+        "Break-even Revenue": { "title": "CA de rentabilité" },
+        "Contribution Margin / Unit": { "title": "Marge / unité" },
+        "Profit After Break-even (per extra unit)": { "title": "Profit après seuil (par unité extra)" }
+      }
+    }
+  }
+}

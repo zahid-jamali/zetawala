@@ -1,0 +1,470 @@
+{
+  "product-hunting": {
+    "name": "Produktrecherche-Intelligenz",
+    "desc": "Nachfrage und Margen simulieren",
+    "title": "Daraz-Produktrecherche-Tool – Gewinnerprodukte in Pakistan",
+    "description": "Finde Gewinnerprodukte mit dem kostenlosen Daraz-Produktrecherche-Tool von Zetawala für Händler in Pakistan. Erkenne Nischen mit hoher Nachfrage und geringem Wettbewerb, schätze die Verkaufsgeschwindigkeit, vergleiche Beschaffungskosten auf lokalen Märkten und erstelle eine Auswahlliste von Artikeln, die in der Daraz-Suche und in Seller-Center-Kampagnen ranken können. Gemacht für FBM-, FBD- und Dropshipping-Händler, die vor der Kapitalbindung im Lager datenbasierte Produktrecherche statt Vermutungen wollen.",
+    "example": {
+      "input": "Nische: Haus und Küche | Budget: Rs. 30.000 | Modell: FBM",
+      "output": "Auswahl: Silikon-Stretchdeckel-Set\nNachfrage: hoch (~12 Tsd. Suchen/Monat)\nWettbewerb: gering (wenige bewertete Händler)\nBeschaffung: Rs. 45 (Shah Alami)\nVerkaufspreis: Rs. 299 | Geschätzte Marge: solide nach Provision"
+    },
+    "faqs": [
+      [
+        "Was ist Daraz-Produktrecherche und warum brauchen Händler sie?",
+        "Daraz-Produktrecherche bedeutet, Artikel mit starker Käufernachfrage, überschaubarem Wettbewerb und tragfähigen Margen nach Daraz-Provision und Gebühren zu finden. Das kostenlose Tool von Zetawala hilft Händlern in Pakistan, Nischen vor dem Wareneinkauf zu validieren."
+      ],
+      [
+        "Welche Gewinnmarge ist für Produkte bei Daraz Pakistan gut?",
+        "Ziel sind etwa 30 bis 50 % netto nach Kategorieprovision, Zahlungsgebühr von rund 1,25 %, Verpackung, Versand und provinzieller Umsatzsteuer auf Daraz-Servicegebühren. Zu knappe Margen brechen bei großen Rabattaktionen weg."
+      ],
+      [
+        "Wie verbessert Produktrecherche den Bestseller-Rang bei Daraz?",
+        "Produkte mit hoher Nachfrage und geringem Wettbewerb konvertieren schneller. Die Verkaufsgeschwindigkeit sendet Signale an den Daraz-Algorithmus, was den organischen Rang und den Bestseller-Rang heben kann, wenn das Angebot zusätzlich starke Titel, Bilder und einen guten Content-Score hat."
+      ],
+      [
+        "Sollte ich Produkte für FBM oder FBD (Versand durch Daraz) suchen?",
+        "Leichte Schnelldreher schneiden mit dem Daraz-Express-Abzeichen bei FBD oft gut ab. Sperrige oder Test-Artikel können bei FBM starten, bis die Nachfrage belegt ist. Passe die Suchkriterien an dein Fulfillment-Modell im Seller Center an."
+      ],
+      [
+        "Wie beurteile ich die Stärke der Konkurrenz bei der Daraz-Produktrecherche?",
+        "Prüfe die Angebote auf Seite eins: Bewertungen, Anzahl der Rezensionen, Lücken im Content-Score, Preise und Lagerbewegung. Schwache Fotos oder dünne Beschreibungen sind Chancen für ein besser optimiertes Angebot."
+      ],
+      [
+        "Was macht ein Gewinnerprodukt für Daraz 11.11 oder Mega-Kampagnen aus?",
+        "Impulsfreundliche Artikel mit genug Marge, um verpflichtende Kampagnenrabatte zu verkraften und trotzdem profitabel zu bleiben. Breite Nachfrage und verlässliche Lieferung zählen mehr als ein einmaliger Trendartikel."
+      ]
+    ]
+  },
+  "roman-urdu-keywords": {
+    "name": "Keyword-Finder für Roman Urdu",
+    "desc": "Suchbegriffe des pakistanischen Marktes",
+    "title": "Roman-Urdu-Keyword-Finder – Suchbegriffe für Daraz Pakistan",
+    "description": "Entdecke die Roman-Urdu-Keywords, die pakistanische Käufer bei Daraz wirklich eingeben – Begriffe, die rein englische SEO-Tools übersehen. Das kostenlose Roman-Urdu-Keyword-Tool von Zetawala zeigt lokalisierte Formulierungen für Titel, Highlights und Suchfelder im Seller Center, damit du so rankst, wie Kunden in Lahore, Karatschi, Islamabad und kleineren Städten suchen. Senke den Wettbewerb bei bezahlter Werbung, erfasse Longtail-Absichten und kombiniere englische Markentitel mit internen Roman-Urdu-Tags.",
+    "example": {
+      "input": "Produkt: Mini-Luftkühler",
+      "output": "Roman Urdu und lokale Begriffe: mini cooler, chota cooler, portable cooler price, mini cooler for room, rechargeable fan cooler, sasta AC, room cooler Pakistan"
+    },
+    "faqs": [
+      [
+        "Warum sind Roman-Urdu-Keywords für Daraz-SEO wichtig?",
+        "Viele Käufer in Pakistan suchen in Roman Urdu (Urdu in lateinischer Schrift). Wenn dein Angebot und deine Seller-Center-Keywords diese Formulierungen aufgreifen, verbessern sich Relevanz, Klickrate und organische Reichweite gegenüber rein englischen Wettbewerbern."
+      ],
+      [
+        "Wo sollte ich Roman-Urdu-Keywords in einem Daraz-Angebot platzieren?",
+        "Halte den sichtbaren Titel professionell (oft Englisch plus Marke) und arbeite Roman Urdu in Highlights, Beschreibung und die internen Felder für Suchbegriffe oder Attribute im Daraz Seller Center ein."
+      ],
+      [
+        "Helfen Schreibfehler und Slang beim Daraz-Ranking?",
+        "Ja, bei lokalen Varianten mit hohem Volumen (z. B. blootooth). Die Daraz-Suche korrigiert Slang nicht immer, und interne Tags sind ein sicherer Ort für häufige Schreibfehler, ohne den Titel zu überladen."
+      ],
+      [
+        "Sind Roman-Urdu-Keywords gut für Longtail-Traffic?",
+        "Häufig ja. Anfragen wie „baal straight karne wali machine“ zeigen starke Kaufabsicht und haben meist weniger Wettbewerb als breite englische Hauptbegriffe."
+      ],
+      [
+        "Kann ich auf Roman-Urdu-Keywords in gesponserten Daraz-Anzeigen bieten?",
+        "Ja. Viele große Marken übersehen Roman Urdu, daher können die Kosten pro Klick niedriger und die Werbeausgabenrendite höher sein, wenn dein Angebot diese Sprache bereits in Text und Tags nutzt."
+      ],
+      [
+        "Ist das Roman-Urdu-Keyword-Tool von Zetawala für Daraz-Händler kostenlos?",
+        "Ja. Es ist ein kostenloses Zetawala-Tool für Daraz-Händler in Pakistan, die lokale Suchsprache ohne kostenpflichtige Keyword-Suiten erforschen."
+      ]
+    ]
+  },
+  "product-title": {
+    "name": "Produkttitel-Generator",
+    "desc": "Optimierte Titel mit hoher Klickrate",
+    "title": "Daraz-Produkttitel-Generator – SEO-Titel, die ranken",
+    "description": "Erstelle klickstarke, suchtaugliche Daraz-Produkttitel mit dem kostenlosen Titelgenerator von Zetawala. Stelle Hauptkeywords, Marke (wenn relevant), Materialien und Kernmerkmale nach vorn – innerhalb der auf dem Smartphone sichtbaren Länge und unter Beachtung der Zeichenlimits im Seller Center. Entwickelt, um Klickrate, organisches Ranking und Klarheit der Angebote pakistanischer Daraz-Händler zu verbessern, ohne Keyword-Stuffing, das eine Ablehnung in der Qualitätsprüfung auslöst.",
+    "example": {
+      "input": "Marke: Havit | Artikel: kabellose Maus | Merkmale: geräuschlose Tasten, aufladbar, 1600 DPI",
+      "output": "Havit Silent Wireless Mouse – aufladbare optische Maus mit 1600 DPI, ergonomisches Design für Laptop und Gaming-PC"
+    },
+    "faqs": [
+      [
+        "Wie lang darf ein Daraz-Produkttitel sein?",
+        "Daraz erlaubt bis zu etwa 255 Zeichen, doch setze deine Hauptkeywords in die ersten 60 bis 80 Zeichen, damit sie in der mobilen Suche und auf Kategorieseiten sichtbar bleiben."
+      ],
+      [
+        "Wie schreibe ich einen Daraz-Produkttitel, der rankt?",
+        "Beginne mit der Marke (bei Markenartikeln oder Daraz Mall) oder mit dem zentralen Produkt-Keyword und ergänze dann unterscheidende Merkmale (Größe, Material, Einsatzzweck). Vermeide spammige Wiederholungen: optimiere für Menschen und den Daraz-Suchalgorithmus."
+      ],
+      [
+        "Kann Keyword-Stuffing zur Ablehnung meines Daraz-Titels führen?",
+        "Ja. Formulierungen wie „Maus kabellose Maus günstige Maus“ schaden dem Vertrauen und können die Qualitätsprüfung nicht bestehen. Nutze natürliche Sprache mit kaufstarken Begriffen jeweils einmal an passender Stelle."
+      ],
+      [
+        "Sollte der Markenname im Daraz-Titel zuerst stehen?",
+        "Bei bekannten Marken und Daraz-Mall-Artikeln ja – beginne mit der Marke. Bei Produkten ohne Marke oder Generika beginne mit dem Hauptsuchbegriff, den Käufer eingeben."
+      ],
+      [
+        "Ist es sicher, einen Titel zu ändern, wenn ich schon Verkäufe habe?",
+        "Kleine Feinschliffe sind unproblematisch; große Keyword-Wechsel können Indexierung und Rang zeitweise stören. Behalte bewährte Kernbegriffe möglichst bei."
+      ],
+      [
+        "Darf ich senkrechte Striche, Bindestriche oder Emojis in Daraz-Titeln verwenden?",
+        "Bindestriche und senkrechte Striche helfen der Lesbarkeit. Verzichte auf Emoji-Spam und Werbesymbole – die Daraz-Qualitätsprüfung lehnt überladene oder werblich übertriebene Titel häufig ab."
+      ]
+    ]
+  },
+  "product-description": {
+    "name": "Produktbeschreibungs-Generator",
+    "desc": "Stichpunkte und Beschreibungstext",
+    "title": "Daraz-Produktbeschreibungs-Generator – SEO-Highlights",
+    "description": "Schreibe conversion-orientierte Daraz-Produktbeschreibungen und Highlights mit dem kostenlosen Generator von Zetawala. Strukturiere technische Daten, Maße, Garantie und semantische Keywords, damit Käufer dem Angebot vertrauen und der Content-Score im Seller Center steigt. Ideal für Händler in Pakistan, die klare Beschreibungstexte brauchen, die Rücksendungen wegen „Artikel weicht von der Beschreibung ab“ senken und Lorikeet-taugliche Formatierung unterstützen.",
+    "example": {
+      "input": "Produkt: Edelstahl-Trinkflasche 750 ml",
+      "output": "Highlights:\n- Doppelwandige Vakuumisolierung – kalt ca. 24 Std. / warm ca. 12 Std.\n- Lebensmittelechter 18/8-Edelstahl, rostbeständig\n- Auslaufsicherer Deckel mit sicherem Verschluss für Tasche und Fitnessstudio\n- Volumen: 750 ml | BPA-frei | Ideal für Büro und Reise"
+    },
+    "faqs": [
+      [
+        "Wie hilft eine Daraz-Produktbeschreibung dem SEO?",
+        "Ausführlicher Text gibt Daraz mehr Inhalte zum Indexieren – Nebenkeywords, Anwendungsfälle und Merkmale – sodass du bei mehr Suchanfragen erscheinst als nur über den Titel."
+      ],
+      [
+        "Was sind Highlights im Daraz Seller Center?",
+        "Highlights sind kurze Stichpunkte in der Nähe des Preises (besonders auf dem Desktop). Es sind gut sichtbare Merkmal- und Nutzenzeilen: halte sie überfliegbar und keyword-bewusst."
+      ],
+      [
+        "Kann eine bessere Beschreibung die Rücksendequote bei Daraz senken?",
+        "Ja. Klare Angaben zu Größe, Material, Lieferumfang und Nutzung setzen Erwartungen und verringern Rücksendungen aufgrund falscher Käuferannahmen."
+      ],
+      [
+        "Sollte ich HTML oder Formatierung in Daraz-Beschreibungen nutzen?",
+        "Nutze eine klare Struktur: kurze Absätze, Stichpunkte und Fettungen, wo Seller Center oder Lorikeet es erlauben. Lifestyle-Bilder in Rich Content erhöhen die Conversion auf dem Smartphone häufig."
+      ],
+      [
+        "Wie wirkt die Länge der Beschreibung auf den Daraz-Content-Score?",
+        "Starke Content-Scores brauchen meist eine ausreichend lange Beschreibung (oft mehr als 50 Wörter), mehrere Highlights und vollständig gefüllte Attribute. Unvollständige Felder senken die Sichtbarkeit."
+      ],
+      [
+        "Ist der Daraz-Beschreibungsgenerator von Zetawala kostenlos?",
+        "Ja. Kostenlose KI-gestützte Entwürfe für Daraz-Beschreibungen und Highlights für Händler in Pakistan, die ihre Angebote im Seller Center optimieren."
+      ]
+    ]
+  },
+  "listing-optimizer": {
+    "name": "Angebots-Optimierer",
+    "desc": "Text für besseres Ranking verbessern",
+    "title": "Daraz-Angebots-Optimierer – Content-Score und SEO-Korrektur",
+    "description": "Prüfe und verbessere schwache Daraz-Angebote mit dem kostenlosen Angebots-Optimierer von Zetawala. Verbessere Titel, Highlights, Attribute und Suchbegriffe, um den Content-Score auf kampagnentaugliche Qualität zu bringen, organische Impressionen zu steigern und dich an den Daraz-Seller-Center-Praktiken auszurichten, die Spitzenhändler in Pakistan vor dem 11.11 und anderen Mega-Sales nutzen.",
+    "example": {
+      "input": "Aktueller Titel: Ladekabel schwarz",
+      "output": "Optimiert: Premium Micro-USB-Schnellladekabel – 2,4 A Hochgeschwindigkeits-Datensynchronisation, nylonumflochtenes Kabel 1,5 m (schwarz)"
+    },
+    "faqs": [
+      [
+        "Was ist der Daraz-Content-Score?",
+        "Eine algorithmische Qualitätsnote (von 100) auf Basis von Titel, Beschreibung, Bildern und gefüllten Attributen. Werte ab etwa 80 werden organisch in der Regel besser behandelt als dünne Angebote."
+      ],
+      [
+        "Wie oft sollte ich eine Prüfung mit dem Daraz-Angebots-Optimierer durchführen?",
+        "Monatlich ist eine gute Grundlage. Optimiere 3 bis 4 Wochen vor Mega-Kampagnen, damit neue Keywords und Attribute vor dem Traffic-Anstieg indexiert werden."
+      ],
+      [
+        "Sind optionale Attribute im Seller Center für SEO wichtig?",
+        "Ja. Optionale Attribute steuern Filter (Farbe, Material, Garantie). Unvollständige Attribute verbergen dich in den gefilterten Suchergebnissen, die Käufer täglich nutzen."
+      ],
+      [
+        "Kann Angebotsoptimierung die Kosten bezahlter Daraz-Werbung senken?",
+        "Bessere Relevanz kann die Werbeeffizienz erhöhen: hochrelevante, optimierte Angebote konkurrieren bei Sponsored Discovery oft effizienter als schlecht passende Texte."
+      ],
+      [
+        "Warum wurde mein optimiertes Angebot von der Daraz-Qualitätsprüfung abgelehnt?",
+        "Häufige Gründe: unzulässige Aussagen, Telefonnummern, externe Links, falsche Kategorie oder verbotene Keywords. Halte den Text richtlinienkonform und kategoriegenau."
+      ],
+      [
+        "Ist der Angebots-Optimierer von Zetawala für Daraz-Händler kostenlos?",
+        "Ja. Kostenlose Hinweise zur Stärkung von Daraz-Angebots-SEO und Content-Score, ohne deinen Seller-Center-Workflow zu ersetzen."
+      ]
+    ]
+  },
+  "competitor-rewriter": {
+    "name": "Umschreiber für Wettbewerbsangebote",
+    "desc": "Wettbewerbsangebote einzigartig machen",
+    "title": "Daraz-Wettbewerbs-Umschreiber – einzigartiger Angebotstext",
+    "description": "Schreibe konkurrierende Daraz-Titel und -Beschreibungen mit dem kostenlosen Umschreiber von Zetawala in einzigartige, SEO-starke Texte um. Behalte Suchabsicht und Keywords, die bereits ranken, ergänze ein klareres Wertversprechen und vermeide doppelte Inhalte oder Risiken beim geistigen Eigentum, die deinem Daraz-Seller-Center-Konto schaden können. Gemacht für faire Wettbewerbsanalyse – nicht für Copy-and-paste-Plagiate.",
+    "example": {
+      "input": "Titel des Wettbewerbers: tragbarer aufladbarer Entsafter-Mixbecher",
+      "output": "USB-aufladbarer tragbarer Entsafter und Mixer – kabelloser Smoothie-Maker mit 6 Klingen, Reisebecher 400 ml, BPA-frei"
+    },
+    "faqs": [
+      [
+        "Verstößt das Kopieren eines Daraz-Wettbewerbsangebots gegen die Richtlinien?",
+        "Direktes Kopieren kann als doppelter Inhalt herabgestuft werden und Beschwerden zum geistigen Eigentum auslösen. Schreibe immer in eigene Worte um, auch wenn du ähnliche Käufer-Keywords anvisierst."
+      ],
+      [
+        "Warum einen Wettbewerbs-Umschreiber nutzen statt von Null zu schreiben?",
+        "Angebote auf Seite eins haben die Passung von Keyword und Markt bereits bewiesen. Umschreiben greift diese bestätigte Absicht schneller auf und lässt dein Wertversprechen und deine Belege stärker wirken."
+      ],
+      [
+        "Wie schlägt mein umgeschriebener Text das Originalangebot?",
+        "Werte deren 1-Stern-Bewertungen nach Beschwerden aus und behandle diese Punkte ausdrücklich in deinen Highlights und deiner Beschreibung. Verbinde einzigartigen Text mit besseren Bildern und Preisen."
+      ],
+      [
+        "Garantieren dieselben Keywords, dass ich einen Wettbewerber überhole?",
+        "Nein. Keywords schaffen Relevanz; für das Ranking braucht es außerdem einen wettbewerbsfähigen Preis, gute Bilder, Bewertungen und Verkaufsgeschwindigkeit sowie einen soliden Content-Score im Seller Center."
+      ],
+      [
+        "Darf ich Produktbilder von Wettbewerbern bei Daraz weiterverwenden?",
+        "Nein. Bilddiebstahl ist ein häufiger Weg zu Verstößen beim geistigen Eigentum. Nutze eigene Fotos oder korrekt lizenzierte Herstellerbilder, die klar als deine bearbeitet sind."
+      ],
+      [
+        "Ist der Daraz-Wettbewerbs-Umschreiber von Zetawala kostenlos?",
+        "Ja. Kostenlose Entwürfe für einzigartige Umschreibungen für Händler in Pakistan, die SEO-freundliche Differenzierung ohne Plagiat wollen."
+      ]
+    ]
+  },
+  "daraz-keywords": {
+    "name": "Daraz-Keyword-Generator",
+    "desc": "Erzeuge Tags mit hohem Suchvolumen",
+    "title": "Daraz-Keyword-Generator – kostenlose Suchbegriffe für Händler",
+    "description": "Erzeuge mit dem kostenlosen Keyword-Generator von Zetawala kaufstarke Daraz-Keywords und Suchbegriffe für Titel, interne Tags und Seller-Center-Felder. Deckt breite, exakte, Longtail- und lokale Varianten ab, damit dein Produkt für mehr Käuferanfragen in ganz Pakistan indexiert wird – als Unterstützung der organischen Sichtbarkeit neben Formulierungen in Roman Urdu und Englisch.",
+    "example": {
+      "input": "Produkt: LED-Ringlicht mit Stativ",
+      "output": "ring light, led ring light with stand, tripod ring light, ringlight for tiktok, vlogging light, mobile lighting setup, selfie ring light Pakistan"
+    },
+    "faqs": [
+      [
+        "Wo trage ich Suchbegriffe im Daraz Seller Center ein?",
+        "Öffne unter „Produkt hinzufügen/bearbeiten“ die Abschnitte für weitere Details oder SEO und nutze die Felder für Suchbegriffe oder zentrale Attribute, wie sie in deiner Seller-Center-Oberfläche erscheinen."
+      ],
+      [
+        "Wie formatiere ich interne Daraz-Keywords?",
+        "Richte dich nach dem Feldverhalten – oft erzeugt die Eingabetaste Tags, oder Begriffe werden durch Leerzeichen getrennt. Vermeide Komma-Spam, sofern die Oberfläche Kommas nicht ausdrücklich erwartet."
+      ],
+      [
+        "Wirken interne Daraz-Keywords auf das Ranking?",
+        "Ja. Sie sind für Käufer unsichtbar, werden aber für die Relevanz erfasst – ideal für Synonyme, Schreibfehler und Urdu-Varianten, die du nicht im sichtbaren Titel haben willst."
+      ],
+      [
+        "Gibt es eine Obergrenze für Daraz-Suchbegriffe?",
+        "Ja, es gelten Zeichen- oder Tag-Grenzen. Setze auf kaufstarke, produktrelevante Begriffe statt auf unpassende Wörter mit hohem Volumen, die der Relevanz schaden."
+      ],
+      [
+        "Sollte ich Keywords vor Daraz-Mega-Kampagnen aktualisieren?",
+        "Clevere Händler ergänzen kampagnenbezogene Suchanfragen (soweit richtlinienkonform) Wochen im Voraus, damit Trendsuchen während der Aktionen zu ihrem Angebot passen."
+      ],
+      [
+        "Was ist der beste kostenlose Daraz-Keyword-Generator für Pakistan?",
+        "Der kostenlose Daraz-Keyword-Generator von Zetawala ist auf Seller-Center-Suchbegriffe, Titel und die Sprache lokaler Käufer ausgelegt – nicht auf generische globale SEO-Listen."
+      ]
+    ]
+  },
+  "customer-reply": {
+    "name": "Generator für Kundenantworten",
+    "desc": "Antworten für den Kundenservice entwerfen",
+    "title": "Daraz-Kundenantwort-Generator – Chat-Vorlagen",
+    "description": "Entwirf höfliche, schnelle Daraz-Kundenantworten, die deine Chat-Antwortrate schützen – mit dem kostenlosen Generator von Zetawala. Behandle Lieferverzögerungen, Größenfragen, Lagerabfragen und Rücksendeanliegen in einem professionellen Ton, dem pakistanische Käufer vertrauen. Starke Chat-Leistung im Seller Center unterstützt Conversions und die Teilnahme an Kampagnen.",
+    "example": {
+      "input": "Kunde: Warum ist meine Lieferung verspätet?",
+      "output": "Sehr geehrte Kundin, sehr geehrter Kunde, vielen Dank für Ihre Nachricht. Wir entschuldigen uns für die Wartezeit – Ihre Bestellung hat unser Lager verlassen und liegt bei Daraz Logistics. Wir verfolgen die Sendung und helfen, falls eine Eskalation nötig ist. Vielen Dank für Ihre Geduld!"
+    },
+    "faqs": [
+      [
+        "Wie wirkt die Chat-Antwortrate auf die Händlerleistung bei Daraz?",
+        "Eine hohe Antwortrate (oft mit Ziel von 85 bis 90 % oder mehr) ist ein zentrales Gesundheitssignal im Seller Center. Gute Antwortraten stützen Sichtbarkeit, Vertrauen und Kennzahlen für Kampagnenteilnahme."
+      ],
+      [
+        "Welche Antwortzeit erwartet der Daraz-Chat?",
+        "Antworte schnell – üblich sind etwa 30 Minuten innerhalb der Geschäftszeiten. Schnelle Antworten gewinnen Verkäufe, auch wenn die offiziellen Zeitfenster am Wochenende oder außerhalb der Geschäftszeiten abweichen."
+      ],
+      [
+        "Wie soll ich auf unhöfliche Kunden im Daraz-Chat reagieren?",
+        "Bleib professionell und richtliniengestützt. Diskutiere nicht. Melde Beleidigungen über den Daraz-Händlersupport. Nutze sachliche Vorlagen aus einem Antwortgenerator."
+      ],
+      [
+        "Können bessere Chat-Antworten die Conversion bei Daraz erhöhen?",
+        "Ja. Viele Käufer in Pakistan suchen Sicherheit zu Verfügbarkeit, Echtheit und Lieferung. Klare, menschliche Antworten verringern Zögern und Kaufabbrüche."
+      ],
+      [
+        "Sollte ich mich nur auf Schnellantworten im Seller Center verlassen?",
+        "Schnellantworten helfen bei Bestätigung und Reaktionszeit-Kennzahlen, doch liefere danach konkrete Antworten. Vorlagen plus Personalisierung funktionieren am besten."
+      ],
+      [
+        "Ist das Daraz-Kundenantwort-Tool von Zetawala kostenlos?",
+        "Ja. Kostenlose Antwortentwürfe für häufige Chat-Szenarien von Daraz-Händlern, um Antwortrate und Tonalität konsistent zu halten."
+      ]
+    ]
+  },
+  "faq-generator": {
+    "name": "FAQ-Generator",
+    "desc": "Käufer-FAQs und Antworten erzeugen",
+    "title": "Daraz-FAQ-Generator – Produktfragen für deine Angebote",
+    "description": "Erzeuge mit dem kostenlosen FAQ-Generator von Zetawala käufergerechte Produkt-FAQs für Daraz-Angebote. Beantworte Fragen zu Größe, Kompatibilität, Garantie, Akku und Lieferumfang, bevor Kunden den Chat öffnen – das senkt Reibung, Rücksendungen und Supportaufwand und ergänzt deine Beschreibung im Seller Center um SEO-relevante Longtail-Formulierungen.",
+    "example": {
+      "input": "Produkt: Bluetooth-Ohrhörer",
+      "output": "F: Battery backup kitna hai?\nA: Bis zu etwa 5 Stunden Wiedergabe pro Ladung und rund 20 Stunden insgesamt mit dem magnetischen Ladecase.\nF: Laptop se connect hoga?\nA: Ja – kompatibel mit Bluetooth 5.x und den meisten Smartphones, Tablets und Laptops."
+    },
+    "faqs": [
+      [
+        "Senkt ein FAQ-Bereich die Rücksendungen bei Daraz?",
+        "Ja. Wenn Spannung, Größe, Materialien und Lieferumfang vorab klar sind, verhindert das Fehlkäufe – die häufigste Ursache für Rücksendungen wegen abweichender Beschreibung."
+      ],
+      [
+        "Wo sollte ich FAQs in einem Daraz-Angebot platzieren?",
+        "Füge sie in die ausführliche Beschreibung ein und optional als Info-Grafik im Lorikeet-Format für mobile Käufer, die zuerst die Bilder durchsehen."
+      ],
+      [
+        "Können FAQs das organische Ranking bei Daraz verbessern?",
+        "Dialogische Fragen und Antworten enthalten natürlich Longtail-Anfragen (z. B. wie verbinde ich Ohrhörer mit dem Laptop), die der Crawler deinem Angebot zuordnen kann."
+      ],
+      [
+        "Was sollte ein Daraz-FAQ-Generator abdecken?",
+        "Reibungspunkte: Maße, Materialien, Garantie, Akkulaufzeit, Kompatibilität und Lieferumfang – dazu die typischen Roman-Urdu-Formulierungen der Käufer."
+      ],
+      [
+        "Sollten FAQs Daraz-Lieferzeiten versprechen?",
+        "Vermeide Garantien für Logistik, die du nicht steuerst. Halte die FAQs beim Produkt und lass Daraz die Lieferschätzungen auf der Produktseite anzeigen."
+      ],
+      [
+        "Ist der FAQ-Generator von Zetawala für Daraz-Händler kostenlos?",
+        "Ja. Kostenlose Produkt-FAQ-Entwürfe, zugeschnitten auf Daraz-Angebotsseiten und die Behandlung von Käufereinwänden."
+      ]
+    ]
+  },
+  "benefits-generator": {
+    "name": "Generator für Produktnutzen",
+    "desc": "Den Wert deiner Produkte formulieren",
+    "title": "Produktnutzen-Generator – von Merkmalen zu Nutzen",
+    "description": "Verwandle trockene technische Daten mit dem kostenlosen Nutzen-Generator von Zetawala für Daraz-Händler in überzeugende Produktvorteile. Übersetze Merkmale in Alltagsergebnisse, die pakistanischen Käufern wichtig sind – Notstrom bei Stromabschaltungen, Schutz im Monsun, bequemere Pendelwege – damit Highlights und Anzeigen besser konvertieren als generische Wettbewerbstexte.",
+    "example": {
+      "input": "Merkmal: Powerbank mit 2000 mAh",
+      "output": "Nutzen: Bleib auf Reisen und bei Stromabschaltungen versorgt – zusätzliche Energie für Anrufe, Karten und WhatsApp, ohne eine Steckdose zu suchen. Ideal für Bürotage und Fahrten in andere Städte."
+    },
+    "faqs": [
+      [
+        "Was ist der Unterschied zwischen einem Merkmal und einem Nutzen?",
+        "Ein Merkmal ist eine Tatsache (wasserfestes Nylon). Ein Nutzen ist das Ergebnis (dein Laptop bleibt im starken Monsunregen trocken). Käufer entscheiden anhand von Ergebnissen."
+      ],
+      [
+        "Warum zählen Vorteile bei Daraz mehr als technische Daten?",
+        "Daten informieren, Vorteile überzeugen. Emotionale Klarheit senkt die Preissensibilität und erhöht die Rate der Warenkorb-Hinzufügungen auf überfüllten Kategorieseiten."
+      ],
+      [
+        "Wo sollte ich die Vorteile in meinem Daraz-Angebot platzieren?",
+        "Beginne die Highlights unter dem Preis damit, arbeite sie in die ersten Zeilen der Beschreibung ein und zeige Nutzenhinweise auf den Galeriebildern für Nutzer, die mobil scrollen."
+      ],
+      [
+        "Kann ich Nutzentexte in Daraz-Anzeigen und im Social-Traffic verwenden?",
+        "Ja. Nutzenorientierte Hooks schlagen rein technische Anzeigen häufig beim Facebook- oder TikTok-Traffic, der zu Daraz-Shops führt."
+      ],
+      [
+        "Wie finde ich die Probleme der Kunden für Nutzentexte?",
+        "Lies die 1- und 2-Stern-Bewertungen der Konkurrenz. Formuliere deine Merkmale als direkte Lösungen für diese wiederkehrenden Beschwerden."
+      ],
+      [
+        "Ist der Produktnutzen-Generator von Zetawala kostenlos?",
+        "Ja. Kostenlose Umschreibung von Merkmalen zu Nutzen für Daraz-Angebote und den allgemeinen E-Commerce in Pakistan."
+      ]
+    ]
+  },
+  "negative-reply": {
+    "name": "Generator für Antworten auf negative Bewertungen",
+    "desc": "Negative Bewertungen höflich beantworten",
+    "title": "Generator für Antworten auf negative Bewertungen – Daraz-Händlerantworten",
+    "description": "Reagiere auf 1-Stern-Bewertungen und harte Daraz-Rückmeldungen mit ruhigen, lösungsorientierten Antworten aus dem kostenlosen Generator von Zetawala. Schütze deine Händlerbewertung, beruhige künftige Käufer, die öffentliche Bewertungen lesen, und lade zur Klärung im Chat ein – ohne zu streiten oder auf eine Löschung der Bewertung zu drängen, was gegen die Daraz-Richtlinien verstößt.",
+    "example": {
+      "input": "Bewertung: Artikel kaputt angekommen, schlechte Qualität",
+      "output": "Sehr geehrte Kundin, sehr geehrter Kunde, es tut uns wirklich leid, dass Ihre Bestellung beschädigt angekommen ist. Qualität ist uns wichtig – bitte schreiben Sie uns im Daraz-Chat mit Ihrer Bestellnummer, damit wir sofort über unseren Supportprozess einen Ersatz veranlassen. Danke, dass Sie uns die Möglichkeit geben, das zu korrigieren."
+    },
+    "faqs": [
+      [
+        "Hilft es dem Umsatz, auf negative Daraz-Bewertungen zu antworten?",
+        "Ja. Künftige Käufer lesen die Antworten. Ein professionelles Lösungsangebot signalisiert Verantwortung und verringert die Angst, in deinem Shop zu kaufen."
+      ],
+      [
+        "Darf ich einen Kunden bitten, eine negative Daraz-Bewertung zu löschen?",
+        "Dränge nicht auf Löschungen. Löse das Problem sauber und frage anschließend höflich, ob die Person ihre Bewertung anhand der neuen Erfahrung aktualisieren möchte – im Rahmen der Richtlinien."
+      ],
+      [
+        "Wie stark schadet eine 1-Stern-Bewertung dem Daraz-Ranking?",
+        "Niedrige Durchschnitte schaden Conversion und algorithmischer Bevorzugung. Dauerhaft schlechte Bewertungen können die Sichtbarkeit senken, weil Käufer nach besser bewerteten Artikeln filtern."
+      ],
+      [
+        "Soll ich widersprechen, wenn eine negative Bewertung unfair erscheint?",
+        "Streite niemals öffentlich. Nenne die Fakten höflich, verweise auf die Rückgabe- und Rückerstattungsrichtlinie und verlagere die Klärung in den Chat. Aggression schadet dem Markenvertrauen."
+      ],
+      [
+        "Wie schnell sollte ich auf eine negative Daraz-Bewertung antworten?",
+        "Ziel sind unter 24 Stunden. Schnelles Verständnis kann eine Eskalation zu einem formalen Streitfall verhindern und zeigt aktive Nachbetreuung."
+      ],
+      [
+        "Ist der Generator für Antworten auf negative Bewertungen von Zetawala kostenlos?",
+        "Ja. Kostenlose professionelle Antwortentwürfe für das Reputationsmanagement von Daraz-Händlern in Pakistan."
+      ]
+    ]
+  },
+  "sales-copy": {
+    "name": "Generator für überzeugende Verkaufstexte",
+    "desc": "Texten mit der AIDA-Formel",
+    "title": "Verkaufstext-Generator – AIDA-Texte für Daraz-Angebote",
+    "description": "Schreibe überzeugende Daraz-Verkaufstexte mit dem kostenlosen AIDA-Generator von Zetawala. Nutze die Modelle Aufmerksamkeit-Interesse-Verlangen-Handlung (und PAS), um Interessenten während Flash-Sales und Mega-Kampagnen zu Käufern zu machen. Mobil überfliegbare, dringlichkeitsbewusste Texte für Händler in Pakistan, die in überfüllten Nischen konkurrieren.",
+    "example": {
+      "input": "Produkt: diebstahlsicherer Rucksack",
+      "output": "AIDA: Aufmerksamkeit – Mach es Taschendieben nicht länger leicht.\nInteresse – Versteckte Reißverschlüsse und schnittfestes, wasserabweisendes Gewebe.\nVerlangen – Pendle mit Laptop und Bargeld deutlich sicherer.\nHandlung – Bestelle heute, solange der Vorrat reicht, und sichere deine Sachen."
+    },
+    "faqs": [
+      [
+        "Was ist ein AIDA-Verkaufstext für Daraz-Produkte?",
+        "AIDA steht für Aufmerksamkeit, Interesse, Verlangen und Handlung – eine bewährte Struktur, um Käufer zu fesseln, Belege zu liefern, Verlangen zu wecken und den Klick auf „In den Warenkorb“ auszulösen."
+      ],
+      [
+        "Wie verbessert ein überzeugender Verkaufstext die Conversion bei Daraz?",
+        "Er ergänzt Emotion, Klarheit und Dringlichkeit über trockene Daten hinaus und verringert Zögern und Kaufabbrüche im überwiegend mobilen Daraz-Traffic."
+      ],
+      [
+        "Was ist das PAS-Modell und kann ich es bei Daraz nutzen?",
+        "Problem-Verschärfung-Lösung: benenne den Schmerz, verdeutliche die Kosten des Nichthandelns und präsentiere dein Produkt als Lösung. Hervorragend für Highlights und Werbemittel."
+      ],
+      [
+        "Sollten Daraz-Verkaufstexte auf dem Smartphone lang oder kurz sein?",
+        "Kurze Blöcke gewinnen. Absätze aus einem bis zwei Sätzen, fett gesetzte Schlüsselbegriffe und Stichpunkte – über 80 % des Daraz-Stöberns findet mobil statt."
+      ],
+      [
+        "Kann ein starker AIDA-Text einen höheren Preis bei Daraz rechtfertigen?",
+        "Oft ja. Klare Aussagen zu Wert, Haltbarkeit und Risikominderung erhöhen den wahrgenommenen Wert gegenüber billigeren, dünnen Angeboten."
+      ],
+      [
+        "Ist der AIDA-Verkaufstext-Generator von Zetawala kostenlos?",
+        "Ja. Kostenlose Entwürfe für überzeugende E-Commerce-Texte, zugeschnitten auf Angebote und Kampagnen bei Daraz Pakistan."
+      ]
+    ]
+  },
+  "profit-calculator": {
+    "name": "Daraz-Gewinnanalysator",
+    "desc": "Margen und Nettogewinn analysieren",
+    "title": "Daraz-Gewinnrechner – Provision, Gebühren und Marge",
+    "description": "Berechne mit dem kostenlosen Daraz-Gewinnrechner von Zetawala den echten Gewinn nach Provision, Zahlungsgebühren, Verpackung und provinzieller Umsatzsteuer. Modelliere FBM- gegen FBD-Kosten für Händler in Pakistan, damit jeder Artikel im Seller Center mit klarer Nettomarge und klarem Kapitalertrag startet – ohne Überraschungen nach der Auszahlung.",
+    "example": {
+      "input": "Verkauf: Rs. 1.500 | Kosten: Rs. 600 | Kategorie: Mode | FBM",
+      "output": "Geschätzte Daraz-Gebühren (Provision + Zahlung): Rs. 210\nVerpackung: Rs. 30 | Umsatzsteuer auf Gebühren: ~Rs. 35\nNettogewinn: ~Rs. 625 | Marge: ~41,6 % | Ertrag auf die Kosten: ~104 %"
+    },
+    "faqs": [
+      [
+        "Wie behandelt der Daraz-Gewinnrechner die Provision?",
+        "Gib Verkaufspreis, Produktkosten und Kategorie ein, damit die geschätzte Kategorieprovision und die Zahlungsgebühren vor dem Nettogewinn abgezogen werden – entscheidend für die Planung von Händlern in Pakistan."
+      ],
+      [
+        "Wie wird die provinzielle Umsatzsteuer auf Daraz-Gebühren in Pakistan berechnet?",
+        "Die Umsatzsteuer gilt in der Regel für Daraz-Servicegebühren (Provision, Zahlung, zugehörige Kosten), nicht für den vollen Verkaufspreis. Die Sätze unterscheiden sich je Provinz (z. B. etwa 16 % der PRA im Punjab)."
+      ],
+      [
+        "Wie hoch ist die Daraz-Gebühr für die Zahlungsabwicklung?",
+        "Daraz berechnet üblicherweise etwa 1,25 % für die Zahlungsabwicklung auf den Wert erfolgreicher Bestellungen, was Karten-, Überweisungs- und Nachnahme-Abwicklung abdeckt."
+      ],
+      [
+        "Gibt es neben der Provision zusätzliche FBD-Gebühren?",
+        "FBD kann Gebühren für Wareneingang, Warenausgang und volumenbasierte Lagerung umfassen. Dafür sparst du eigene Verpackungskosten und gewinnst Conversion-Vorteile durch Express – rechne beide Seiten."
+      ],
+      [
+        "Welchen Kapitalertrag sollten Daraz-Händler anstreben?",
+        "Viele streben rund 80 bis 100 % oder mehr auf die Beschaffungskosten an, um Rücksendungen, Werbung und Kampagnenrabatte abzufedern. Die genauen Ziele hängen von Kategorie und Kapitalumschlag ab."
+      ],
+      [
+        "Wie beeinflussen Rücksendungen die Margen bei Daraz?",
+        "Rücksendungen können Verpackungskosten aufzehren und beschädigte Ware verursachen, selbst wenn einige Gebühren angepasst werden. Berücksichtige deine Rücksendequote in den Annahmen, bevor du skalierst."
+      ]
+    ]
+  }
+}

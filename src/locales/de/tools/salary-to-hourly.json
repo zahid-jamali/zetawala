@@ -1,0 +1,68 @@
+{
+  "name": "Gehalt-Stundensatz-Rechner",
+  "desc": "Jahres- oder Monatsgehalt in einen Stundensatz umrechnen",
+  "metadata": {
+    "title": "Kostenloser Gehalt-Stundensatz-Rechner | Zetawala",
+    "description": "Rechnen Sie Jahres- oder Monatsgehalt in Stunden-, Tages-, Wochen- und Monatssätze um. Kostenlos, ohne KI.",
+    "keywords": ["Gehalt in Stundensatz", "Jahresgehalt Stundensatz Rechner", "Gehalt umrechnen Stunde"]
+  },
+  "seo": {
+    "title": "Gehalt-Stundensatz-Rechner",
+    "description": "Wandeln Sie Jahres- oder Monatsgehalt in Stunden-, Tages-, Wochen- und Monatsäquivalente mit Zetawalas kostenlosem Rechner. Arbeitstage, Stunden und Wochen – deterministische Mathematik, ohne KI.",
+    "example": {
+      "input": "Jahr 78.000 $ · 5 Tage/Woche · 8 Stunden/Tag · 52 Wochen",
+      "output": "Stunde 37,50 $ · Tag 300 $ · Woche 1.500 $ · Monat 6.500 $"
+    },
+    "faqs": [
+      { "q": "Wie wird Gehalt in einen Stundensatz umgerechnet?", "a": "Jahresgehalt (Monat × 12 falls nötig) ÷ (Wochen × Tage/Woche × Stunden/Tag) = Stundensatz. Tages-, Wochen- und Monatswerte folgen aus diesem Kalender." },
+      { "q": "Sollen Freelancer das als Honorarsatz nutzen?", "a": "Das Angestellten-Äquivalent ist nur ein Startpunkt. Freelancer brauchen meist mehr für Steuern, Benefits und unbezahlte Zeit – als Nächstes den Freelance-Stundensatz-Rechner." },
+      { "q": "Nutzt der Rechner KI?", "a": "Nein. Die Umrechnung ist reine Arithmetik aus Gehalt und Arbeitszeit." },
+      { "q": "Welche Wochenanzahl pro Jahr?", "a": "52 nimmt keinen unbezahlten Urlaub an. Manche nutzen 48–50; weniger Wochen erhöhen den impliziten Stundensatz." },
+      { "q": "Wer sollte ihn nutzen?", "a": "Bewerber beim Angebotsvergleich, HR bei der Gehaltserklärung und Freelancer, die ein Gehalt in einen Auftragnehmersatz übersetzen." },
+      { "q": "Kann ich mit einem Monatsgehalt starten?", "a": "Ja. Wählen Sie den Monatszeitraum; das Tool annualisiert (×12) vor Stunde, Tag und Woche." }
+    ]
+  },
+  "ui": {
+    "formTitle": "Gehaltseingaben",
+    "disclaimer": "Sofortige lokale Berechnung – keine KI-Aufrufe. Ergebnisse aktualisieren sich beim Tippen. Nur Schätzungen; mit eigenen Daten prüfen.",
+    "formulaLabel": "Formel",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Empfohlene nächste Schritte",
+    "badge": "Zetawala-Berechnung",
+    "notFound": "Rechner nicht gefunden.",
+    "sectionTitle": "Wozu dieser Rechner hilft",
+    "sectionHint": "Gehalt in Stunden-, Tages-, Wochen- und Monatsäquivalente umrechnen.",
+    "exampleTitle": "Praktisches Beispiel",
+    "exampleHint": "Beispielwerte und erwartetes Ergebnis.",
+    "sampleInput": "Beispieleingabe",
+    "sampleOutput": "Ergebnis",
+    "faqTitle": "Häufige Fragen",
+    "faqHint": "Klare Antworten zur Gehaltsumrechnung.",
+    "fields": {
+      "salaryPeriod": "Gehaltszeitraum",
+      "salaryAnnual": "Jahresgehalt ($)",
+      "salaryMonthly": "Monatsgehalt ($)",
+      "workingDaysPerWeek": "Arbeitstage pro Woche",
+      "workingHoursPerDay": "Arbeitsstunden pro Tag",
+      "weeksPerYear": "Wochen pro Jahr"
+    },
+    "selects": {
+      "annual": "Jährlich",
+      "monthly": "Monatlich"
+    },
+    "nextSteps": {
+      "freelance-hourly-rate": "Freelance-Stundensatz",
+      "freelance-project-pricing": "Projektpreis",
+      "profit-margin": "Gewinnmarge"
+    },
+    "results": {
+      "headline": "Stundensatz: {value}",
+      "metrics": {
+        "Hourly Rate": { "title": "Stundensatz" },
+        "Daily Salary": { "title": "Tagesgehalt" },
+        "Weekly Salary": { "title": "Wochengehalt" },
+        "Monthly Salary": { "title": "Monatsgehalt" }
+      }
+    }
+  }
+}
