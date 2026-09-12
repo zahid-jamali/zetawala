@@ -3,7 +3,12 @@ import dbConnect from "../../../lib/mongodb";
 import ProductHunt from "../../../models/ProductHunt";
 import { getUserPrompt } from "../../../lib/promptEngine";
 
-import { getClientIp, detectBot, checkRateLimit, verifyTurnstileToken } from "../../../lib/security";
+import {
+  getClientIp,
+  detectBot,
+  checkRateLimit,
+  verifyTurnstileToken,
+} from "../../../lib/security";
 import { fetchYouTubeTranscript } from "../../../lib/study/youtubeTranscript";
 
 const apiKey = process.env.DEEPSEEK_API_KEY;
@@ -32,13 +37,19 @@ export async function POST(request) {
     // 1. Scan for bot signatures
     const botCheck = detectBot(reqHeaders);
     if (!botCheck.success) {
-      return NextResponse.json({ success: false, error: botCheck.error }, { status: 403 });
+      return NextResponse.json(
+        { success: false, error: botCheck.error },
+        { status: 403 },
+      );
     }
 
     // 2. Enforce IP-based sliding window rate limits
     const limitCheck = checkRateLimit(ip);
     if (!limitCheck.success) {
-      return NextResponse.json({ success: false, error: limitCheck.error }, { status: 429 });
+      return NextResponse.json(
+        { success: false, error: limitCheck.error },
+        { status: 429 },
+      );
     }
 
     if (!apiKey) {
@@ -57,7 +68,10 @@ export async function POST(request) {
     // 3. Verify Turnstile captcha token if configured
     const turnstileCheck = await verifyTurnstileToken(securityToken, ip);
     if (!turnstileCheck.success) {
-      return NextResponse.json({ success: false, error: turnstileCheck.error }, { status: 400 });
+      return NextResponse.json(
+        { success: false, error: turnstileCheck.error },
+        { status: 400 },
+      );
     }
 
     if (!action || !payload || typeof payload !== "object") {
@@ -69,7 +83,11 @@ export async function POST(request) {
 
     // YouTube study notes: fetch transcript server-side so one Turnstile covers the full flow
     let resolvedPayload = payload;
-    if (action === "youtube-study-notes" && payload.youtubeUrl && !payload.transcript) {
+    if (
+      action === "youtube-study-notes" &&
+      payload.youtubeUrl &&
+      !payload.transcript
+    ) {
       try {
         const transcriptData = await fetchYouTubeTranscript(payload.youtubeUrl);
         resolvedPayload = {
@@ -80,7 +98,7 @@ export async function POST(request) {
       } catch (err) {
         return NextResponse.json(
           { success: false, error: err.message || "Transcript fetch failed." },
-          { status: 400 }
+          { status: 400 },
         );
       }
     }
@@ -105,7 +123,7 @@ export async function POST(request) {
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-chat",
+        model: "deepseek-flash",
         messages: [
           { role: "system", content: systemInstruction },
           {
