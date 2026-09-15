@@ -221,14 +221,14 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
   };
 
   return (
-    <div className="flex-1 p-6 md:p-8 max-w-7xl mx-auto w-full space-y-8 text-slate-900 dark:text-slate-100">
+    <div className="flex-1 px-3 py-4 sm:p-6 md:p-8 max-w-7xl mx-auto w-full space-y-6 sm:space-y-8 text-slate-900 dark:text-slate-100">
       
       {/* Step Tracker */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
-        <span className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest">
+      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 shadow-sm">
+        <span className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest text-center md:text-left">
           {pipelineLabel}
         </span>
-        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
+        <div className="flex items-center gap-2 overflow-x-auto w-full pb-2 scrollbar-none md:flex-wrap md:justify-center md:w-auto md:pb-0">
           {steps.map((step, idx) => {
             const isCurrent = step.slug === toolSlug;
             const isPast = idx < currentStepIndex;
@@ -236,7 +236,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
               <button
                 key={step.slug}
                 onClick={() => handleStepClick(step.slug)}
-                className={`px-3 py-1.5 rounded-xl text-[10px] font-bold border transition-all cursor-pointer ${isCurrent ? 'bg-sky-500 text-white border-transparent shadow-sm' : isPast ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350 border-slate-200 dark:border-slate-800' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500'}`}
+                className={`px-3 py-1.5 rounded-xl text-[10px] font-bold border transition-all cursor-pointer shrink-0 whitespace-nowrap ${isCurrent ? 'bg-sky-500 text-white border-transparent shadow-sm' : isPast ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350 border-slate-200 dark:border-slate-800' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500'}`}
               >
                 {String(idx + 1).padStart(2, '0')} {t(`tools.${step.slug}.name`) !== `tools.${step.slug}.name` ? t(`tools.${step.slug}.name`) : step.name}
               </button>

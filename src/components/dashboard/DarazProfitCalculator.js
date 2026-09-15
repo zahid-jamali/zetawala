@@ -113,28 +113,28 @@ export default function DarazProfitCalculator() {
     <div className="space-y-8 w-full">
       
       {/* Page Header */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl p-6 shadow-sm flex items-center justify-between">
+      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm flex items-center justify-between">
         <div>
-          <h1 className="text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
-            <Calculator className="w-5 h-5 text-sky-500" />
+          <h1 className="text-base sm:text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
+            <Calculator className="w-5 h-5 text-sky-500 shrink-0" />
             Daraz Professional Profit Calculator (2026)
           </h1>
           <p className="text-xs text-slate-500 mt-1">Deterministic frontend calculations engine mapping commission slabs, VAT rates, and weight indices.</p>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+      <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
         
         {/* Left Input Pane */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl space-y-6 shadow-sm">
+          <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-6 shadow-sm">
             
             {/* Section 1: Product Information */}
             <div className="space-y-4">
               <span className="text-[10px] font-extrabold text-sky-500 uppercase tracking-widest block border-b border-slate-100 dark:border-slate-850 pb-1.5">
                 Product Details
               </span>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className={labelCl}>Cost Price (Rs) *</label>
                   <input type="number" value={costPrice} onChange={(e) => setCostPrice(Math.max(0, Number(e.target.value)))} className={inputCl} />
@@ -187,7 +187,7 @@ export default function DarazProfitCalculator() {
               <span className="text-[10px] font-extrabold text-sky-500 uppercase tracking-widest block border-b border-slate-100 dark:border-slate-850 pb-1.5">
                 Fulfillment & Handling Slabs
               </span>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className={labelCl}>Fulfillment Model</label>
                   <select value={fulfillment} onChange={(e) => setFulfillment(e.target.value)} className={inputCl}>
@@ -212,7 +212,7 @@ export default function DarazProfitCalculator() {
               <span className="text-[10px] font-extrabold text-sky-500 uppercase tracking-widest block border-b border-slate-100 dark:border-slate-850 pb-1.5">
                 Logistics & Provincial Tax
               </span>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="space-y-1.5">
                   <label className={labelCl}>Weight (kg)</label>
                   <input type="number" step="0.01" value={weight} onChange={(e) => setWeight(e.target.value)} className={inputCl} />
@@ -234,7 +234,7 @@ export default function DarazProfitCalculator() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1.5">
                   <label className={labelCl}>Province (VAT Rule)</label>
                   <select value={province} onChange={(e) => setProvince(e.target.value)} className={inputCl}>

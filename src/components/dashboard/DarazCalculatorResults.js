@@ -48,7 +48,7 @@ export default function DarazCalculatorResults({
         </div>
       )}
 
-      <div className="p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl space-y-6 shadow-sm">
+      <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-5 sm:space-y-6 shadow-sm">
         <div className="border-b border-slate-100 dark:border-slate-800 pb-3">
           <span className="text-[10px] font-extrabold text-indigo-500 uppercase tracking-widest block">
             Real-Time Financial Dashboard
@@ -56,29 +56,29 @@ export default function DarazCalculatorResults({
         </div>
 
         {/* Core Stats Cards */}
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850">
             <span className={labelCl}>Net Payout</span>
-            <p className="text-base font-extrabold mt-1 text-slate-900 dark:text-white">{formatCurrency(netPayout)}</p>
+            <p className="text-sm sm:text-base font-extrabold mt-1 text-slate-900 dark:text-white">{formatCurrency(netPayout)}</p>
           </div>
-          <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850">
             <span className={labelCl}>Total Daraz Fees</span>
-            <p className="text-base font-extrabold mt-1 text-slate-900 dark:text-white">{formatCurrency(totalDarazFees)}</p>
+            <p className="text-sm sm:text-base font-extrabold mt-1 text-slate-900 dark:text-white">{formatCurrency(totalDarazFees)}</p>
           </div>
         </div>
 
         {/* ROI and Profit Margin */}
-        <div className="grid grid-cols-2 gap-4">
-          <div className={`p-4 rounded-2xl border ${cardStyle(profit)}`}>
+        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className={`p-3.5 sm:p-4 rounded-2xl border ${cardStyle(profit)}`}>
             <span className="text-[9px] font-bold uppercase tracking-wider block opacity-75">ROI (%)</span>
-            <p className="text-base font-extrabold mt-1 flex items-center gap-1">
+            <p className="text-sm sm:text-base font-extrabold mt-1 flex items-center gap-1">
               <TrendingUp className="w-3.5 h-3.5" />
               {formatPercent(roi)}
             </p>
           </div>
-          <div className={`p-4 rounded-2xl border ${cardStyle(profit)}`}>
+          <div className={`p-3.5 sm:p-4 rounded-2xl border ${cardStyle(profit)}`}>
             <span className="text-[9px] font-bold uppercase tracking-wider block opacity-75">Profit Margin</span>
-            <p className="text-base font-extrabold mt-1 flex items-center gap-1">
+            <p className="text-sm sm:text-base font-extrabold mt-1 flex items-center gap-1">
               <Percent className="w-3.5 h-3.5" />
               {formatPercent(profitMargin)}
             </p>
@@ -86,12 +86,12 @@ export default function DarazCalculatorResults({
         </div>
 
         {/* Net Profit Card */}
-        <div className={`p-5 rounded-2xl border ${cardStyle(profit)} flex items-center justify-between`}>
+        <div className={`p-4 sm:p-5 rounded-2xl border ${cardStyle(profit)} flex items-center justify-between`}>
           <div>
             <span className="text-[10px] font-bold uppercase tracking-wider block opacity-75">Estimated Net Profit</span>
-            <p className="text-2xl font-black mt-1">{formatCurrency(profit)}</p>
+            <p className="text-xl sm:text-2xl font-black mt-1">{formatCurrency(profit)}</p>
           </div>
-          <div className="p-2.5 bg-white/20 dark:bg-black/10 rounded-xl">
+          <div className="p-2 sm:p-2.5 bg-white/20 dark:bg-black/10 rounded-xl">
             <DollarSign className="w-5 h-5" />
           </div>
         </div>

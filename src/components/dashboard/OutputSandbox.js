@@ -31,7 +31,7 @@ export default function OutputSandbox({
   handleStepClick
 }) {
   return (
-    <div className="p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-3xl min-h-[400px] flex flex-col justify-between h-full shadow-sm">
+    <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl min-h-[300px] sm:min-h-[400px] flex flex-col justify-between h-full shadow-sm">
       
       {/* Header toolbar */}
       <div className="flex justify-between items-center border-b border-slate-200 dark:border-slate-800 pb-4 mb-5">
@@ -173,7 +173,7 @@ export default function OutputSandbox({
         <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-850 flex justify-end">
           <button
             onClick={() => handleStepClick(steps[currentStepIndex + 1].slug)}
-            className="px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-xs font-bold text-white border border-slate-205 dark:border-slate-800 flex items-center gap-1.5 transition-all cursor-pointer"
+            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 text-xs font-bold text-white border border-slate-205 dark:border-slate-800 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
           >
             Proceed to Step 0{currentStepIndex + 2} ({steps[currentStepIndex + 1].name})
             <span className="opacity-60">&rarr;</span>

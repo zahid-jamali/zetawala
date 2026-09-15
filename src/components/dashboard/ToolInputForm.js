@@ -18,7 +18,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
   const inputClasses = "w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all";
 
   return (
-    <form onSubmit={onSubmit} className="p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-5 shadow-sm">
+    <form onSubmit={onSubmit} className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-4 sm:space-y-5 shadow-sm">
       
       {toolSlug === 'video-ideas' && (
         <div className="space-y-2">
