@@ -110,6 +110,9 @@ export const metadata = {
 
   verification: {
     bing: "4406A082AA2050BF85F493274149D6D4",
+    other: {
+      "google-adsense-account": "ca-pub-4790157238007445",
+    },
   },
 };
 
@@ -125,6 +128,7 @@ export default async function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <meta name="google-adsense-account" content="ca-pub-4790157238007445" />
         <meta name="theme-color" content="#0F172A" />
         <meta name="author" content="Zetawala" />
         <meta name="application-name" content="Zetawala" />
