@@ -12,17 +12,24 @@
   --foreground: #f8fafc;
 }
 
-/* Ensure full viewport */
-html,
-body {
+/* Ensure full viewport and prevent any horizontal scrollbar */
+html {
   width: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overflow-x: clip !important;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  overflow-x: clip !important;
+  position: relative;
   background-color: var(--background);
   color: var(--foreground);
   font-family:
@@ -34,6 +41,12 @@ body {
   transition-duration: 200ms;
 }
 
+main {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
 /* Prevent all elements from causing horizontal overflow */
 *,
 *::before,
@@ -41,14 +54,17 @@ body {
   box-sizing: border-box;
 }
 
-/* Images should never overflow */
-/* img,
+/* Media elements should never overflow horizontally */
 svg,
 video,
 canvas {
   max-width: 100%;
   height: auto;
-} */
+}
+
+img {
+  max-width: 100%;
+}
 
 /* Custom scrollbar for premium aesthetics */
 .custom-scrollbar::-webkit-scrollbar {

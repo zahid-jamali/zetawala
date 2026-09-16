@@ -31,7 +31,7 @@ export default function OutputSandbox({
   handleStepClick
 }) {
   return (
-    <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl min-h-[300px] sm:min-h-[400px] flex flex-col justify-between h-full shadow-sm">
+    <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl min-h-[300px] sm:min-h-[400px] flex flex-col justify-between h-full shadow-sm w-full max-w-full min-w-0 overflow-hidden">
       
       {/* Header toolbar */}
       <div className="flex justify-between items-center border-b border-slate-200 dark:border-slate-800 pb-4 mb-5">
@@ -140,7 +140,7 @@ export default function OutputSandbox({
               <div className="space-y-4">
                 {outputData.content && (
                   <div className="p-5 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl relative group shadow-sm">
-                    <p className="text-slate-850 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{outputData.content}</p>
+                    <p className="text-slate-850 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap break-words [overflow-wrap:anywhere]">{outputData.content}</p>
                   </div>
                 )}
                 {outputData.results && Array.isArray(outputData.results) && (
@@ -148,7 +148,7 @@ export default function OutputSandbox({
                     {outputData.results.map((item, idx) => (
                       <div key={idx} className="p-4 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl relative group shadow-sm">
                         {item.title && <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block mb-1">{item.title}</span>}
-                        <p className="text-slate-805 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{item.content}</p>
+                        <p className="text-slate-805 dark:text-slate-200 text-xs leading-relaxed whitespace-pre-wrap break-words [overflow-wrap:anywhere]">{item.content}</p>
                       </div>
                     ))}
                   </div>

@@ -34,11 +34,11 @@ export default function DarazCalculatorResults({
   const formatPercent = (val) => `${val.toFixed(2)}%`;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-full max-w-full min-w-0">
       
       {/* 1. Dynamic Validations/Warnings Banner */}
       {validations.length > 0 && (
-        <div className="p-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-250 dark:border-amber-900/30 rounded-2xl space-y-1.5">
+        <div className="p-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-250 dark:border-amber-900/30 rounded-2xl space-y-1.5 w-full max-w-full min-w-0">
           {validations.map((v, idx) => (
             <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-amber-800 dark:text-amber-400">
               <AlertCircle className="w-4 h-4 shrink-0" />
@@ -48,7 +48,7 @@ export default function DarazCalculatorResults({
         </div>
       )}
 
-      <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-5 sm:space-y-6 shadow-sm">
+      <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-5 sm:space-y-6 shadow-sm w-full max-w-full min-w-0">
         <div className="border-b border-slate-100 dark:border-slate-800 pb-3">
           <span className="text-[10px] font-extrabold text-indigo-500 uppercase tracking-widest block">
             Real-Time Financial Dashboard

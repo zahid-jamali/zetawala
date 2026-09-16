@@ -11,17 +11,18 @@ import { useCurrentLocale } from '../i18n/LocaleProvider';
 import { localizeNavCategories } from '../../i18n/nav';
 import { getHomePath } from '../../i18n/paths';
 
-/**
- * Hybrid nav:
- *  - Top row: logo + tool search + theme
- *  - Category strip: every suite visible on first screen
- *  - Hover / focus a category → full tool list (not truncated)
- */
+function BrandLogo({ height = 34 }) {
+  return (
+    <span className="flex items-center shrink-0" style={{ height: `${height}px` }}>
+      <img src="/images/logo-light.png" alt="Zetawala" className="h-full w-auto object-contain dark:hidden" style={{ height: `${height}px`, width: 'auto' }} />
+      <img src="/images/logo-dark.png" alt="Zetawala" className="h-full w-auto object-contain hidden dark:block" style={{ height: `${height}px`, width: 'auto' }} />
+    </span>
+  );
+}
 
 function CategoryMegaPanel({ category, onNavigate, t }) {
   const Icon = category.icon;
-  const cols =
-    category.tools.length > 12 ? 'sm:grid-cols-3' : category.tools.length > 6 ? 'sm:grid-cols-2' : 'sm:grid-cols-1';
+  const cols = category.tools.length > 12 ? 'sm:grid-cols-3' : category.tools.length > 6 ? 'sm:grid-cols-2' : 'sm:grid-cols-1';
 
   return (
     <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl overflow-hidden">
@@ -86,15 +87,10 @@ function DesktopCategoryNav({ categories, t }) {
     closeTimer.current = setTimeout(() => setActiveId(null), 160);
   };
 
-  useEffect(() => () => {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-  }, []);
-
+  useEffect(() => () => closeTimer.current && clearTimeout(closeTimer.current), []);
   useEffect(() => {
     if (!activeId) return undefined;
-    const onKey = (e) => {
-      if (e.key === 'Escape') setActiveId(null);
-    };
+    const onKey = (e) => e.key === 'Escape' && setActiveId(null);
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [activeId]);
@@ -217,13 +213,9 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md text-slate-800 dark:text-slate-200">
       {/* Row 1 — brand + search */}
       <div className="h-14 md:h-16 max-w-7xl mx-auto flex items-center justify-between gap-3 px-4 md:px-8">
-        <Link href={getHomePath(locale)} className="h-8 md:h-9 relative flex items-center shrink-0 transition-opacity hover:opacity-90">
-          <img src="/images/Logo.png" alt="Zetawala" className="h-full w-auto object-contain rounded-2xl dark:brightness-110" />
+        <Link href={getHomePath(locale)} className="h-8 md:h-9 flex items-center shrink-0 transition-opacity hover:opacity-90">
+          <BrandLogo height={34} />
         </Link>
-
-        <div className="hidden md:block flex-1 max-w-md mx-4">
-          <ToolSearch variant="navbar" />
-        </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
           <LanguageSwitcher compact />
@@ -252,8 +244,8 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed h-screen inset-0 z-50 lg:hidden transition-opacity duration-300 ${
-          mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        className={`fixed inset-0 h-screen z-50 lg:hidden overflow-hidden transition-all duration-300 ${
+          mobileOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'
         }`}
       >
         <div onClick={closeMobile} className="absolute inset-0 bg-slate-900/40 dark:bg-slate-950/70 backdrop-blur-sm" />
@@ -263,7 +255,7 @@ export default function Navbar() {
           }`}
         >
           <div className="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
-            <img src="/images/Logo.png" alt="Zetawala" className="h-9 w-auto rounded-full" />
+            <BrandLogo height={30} />
             <button type="button" onClick={closeMobile} className="p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer" aria-label={t('nav.closeMenu')}>
               <X className="w-4 h-4" />
             </button>

@@ -85,18 +85,18 @@ export default function BlogCarousel({ category }) {
                         : 'Learn Sourcing & Ranking Strategies';
 
   return (
-    <div className="space-y-6 pt-10 border-t border-slate-200 dark:border-slate-800">
+    <div className="space-y-6 pt-10 border-t border-slate-200 dark:border-slate-800 w-full max-w-full min-w-0 overflow-hidden">
       
       {/* Carousel Toolbar */}
-      <div className="flex items-center justify-between">
-        <div className="space-y-1">
-          <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <BookOpen className="w-4.5 h-4.5 text-sky-500" />
-            {sectionTitle}
+      <div className="flex items-center justify-between gap-3 w-full max-w-full">
+        <div className="space-y-1 min-w-0 flex-1">
+          <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-2 truncate">
+            <BookOpen className="w-4.5 h-4.5 text-sky-500 shrink-0" />
+            <span className="truncate">{sectionTitle}</span>
           </h3>
-          <p className="text-[11px] text-slate-500">Related guides and latest trends matching the {headerLabel.toLowerCase()} category.</p>
+          <p className="text-[11px] text-slate-500 line-clamp-1">Related guides and latest trends matching the {headerLabel.toLowerCase()} category.</p>
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5 shrink-0">
           <button 
             onClick={() => handleScroll('left')} 
             className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer hover:bg-slate-50 transition-colors"
@@ -115,7 +115,7 @@ export default function BlogCarousel({ category }) {
       {/* Cards Scroll list */}
       <div 
         ref={scrollRef}
-        className="flex gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory scrollbar-none"
+        className="flex gap-4 sm:gap-6 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory scrollbar-none w-full max-w-full"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {posts.map((post) => (

@@ -37,44 +37,20 @@ export default function DarazProfitCalculator() {
   const [voucherEnabled, setVoucherEnabled] = useState(false);
   const [freeShippingEnabled, setFreeShippingEnabled] = useState(false);
 
-  // Reusable Local Utility Calculation Functions
+  // Calculation helpers
   const calculateCommission = (price, commPercent) => price * (commPercent / 100);
-  
-  const calculateCampaignFees = (price, voucher, freeShip) => {
-    let rate = 0;
-    if (voucher) rate += darazCalculatorConfig.campaignVoucherRate;
-    if (freeShip) rate += darazCalculatorConfig.campaignFreeShippingRate;
-    return price * rate;
-  };
-
-  const calculateHandlingFee = (mode, method, price, wt) => {
-    if (mode === 'FBD') return darazCalculatorConfig.fbdPickPackFee;
-    return method === 'Drop-Off' ? getFbmItemHandlingFee(price) : getFbmPickupFee(parseFloat(wt) || 0);
-  };
-
+  const calculateCampaignFees = (price, voucher, freeShip) =>
+    price * ((voucher ? darazCalculatorConfig.campaignVoucherRate : 0) + (freeShip ? darazCalculatorConfig.campaignFreeShippingRate : 0));
+  const calculateHandlingFee = (mode, method, price, wt) =>
+    mode === 'FBD' ? darazCalculatorConfig.fbdPickPackFee : method === 'Drop-Off' ? getFbmItemHandlingFee(price) : getFbmPickupFee(parseFloat(wt) || 0);
   const calculateShipping = (zone, wt, type) => {
     const brackets = [0.1, 0.25, 0.5, 1, 2, 3, 5, 8, 10, 15, 20];
     const parsedWt = parseFloat(wt) || 0;
-    
-    let matchedBracket = "0.1";
-    for (let b of brackets) {
-      if (parsedWt <= b) {
-        matchedBracket = b.toString();
-        break;
-      }
-      matchedBracket = "20"; // Fallback to max bracket
-    }
-    
-    let fee = darazCalculatorConfig.shippingMatrix[zone]?.[matchedBracket] || 170;
-    if (type === 'Collection Point') {
-      fee = Math.max(0, fee - darazCalculatorConfig.collectionPointDiscount);
-    }
-    return fee;
+    const matchedBracket = (brackets.find((b) => parsedWt <= b) || 20).toString();
+    const fee = darazCalculatorConfig.shippingMatrix[zone]?.[matchedBracket] || 170;
+    return type === 'Collection Point' ? Math.max(0, fee - darazCalculatorConfig.collectionPointDiscount) : fee;
   };
-
-  const calculateVAT = (comm, payFee, shipFee, vatRate) => {
-    return (comm + payFee + shipFee) * vatRate;
-  };
+  const calculateVAT = (comm, payFee, shipFee, vatRate) => (comm + payFee + shipFee) * vatRate;
 
   // Perform Computations dynamically
   const activeCommissionRate = selectedCategory.commission;
@@ -110,10 +86,10 @@ export default function DarazProfitCalculator() {
   const labelCl = "text-[10px] font-bold text-slate-500 dark:text-slate-450 uppercase tracking-wider block";
 
   return (
-    <div className="space-y-8 w-full">
+    <div className="space-y-8 w-full max-w-full min-w-0">
       
       {/* Page Header */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm flex items-center justify-between">
+      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm flex items-center justify-between w-full max-w-full min-w-0">
         <div>
           <h1 className="text-base sm:text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">
             <Calculator className="w-5 h-5 text-sky-500 shrink-0" />
@@ -123,11 +99,11 @@ export default function DarazProfitCalculator() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+      <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 items-stretch w-full max-w-full min-w-0">
         
         {/* Left Input Pane */}
-        <div className="lg:col-span-7 space-y-6">
-          <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-6 shadow-sm">
+        <div className="lg:col-span-7 space-y-6 w-full max-w-full min-w-0">
+          <div className="p-4 sm:p-6 bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl space-y-6 shadow-sm w-full max-w-full min-w-0">
             
             {/* Section 1: Product Information */}
             <div className="space-y-4">
@@ -280,7 +256,7 @@ export default function DarazProfitCalculator() {
         </div>
 
         {/* Right Cost Summary Results Dashboard Column */}
-        <div className="lg:col-span-5">
+        <div className="lg:col-span-5 w-full max-w-full min-w-0">
           <DarazCalculatorResults
             sellingPrice={sellingPrice}
             costPrice={costPrice}

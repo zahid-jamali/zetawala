@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import { setActiveTool, setActiveCategory } from '../../store/uiSlice';
 import { setLoading, setError, setOutput, setToolInput } from '../../store/toolSlice';
+import PipelineStepTracker from './PipelineStepTracker';
 import ToolInputForm from './ToolInputForm';
 import OutputSandbox from './OutputSandbox';
 import ToolSeoSection from './ToolSeoSection';
@@ -22,60 +23,10 @@ import { getLocalizedToolPath } from '../../i18n/paths';
 import { DEFAULT_LOCALE } from '../../i18n/config';
 import { useLocale } from '../i18n/LocaleProvider';
 
-const youtubeCategory = navigationConfig.find(c => c.slug === 'youtube-automation');
-const youtubeSteps = youtubeCategory 
-  ? youtubeCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) 
-  : [];
-
-const darazCategory = navigationConfig.find(c => c.slug === 'daraz-seo');
-const darazSteps = darazCategory 
-  ? darazCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) 
-  : [];
-
-const localCommerceCategory = navigationConfig.find(c => c.slug === 'local-social-commerce');
-const localCommerceSteps = localCommerceCategory
-  ? localCommerceCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const seoCategory = navigationConfig.find(c => c.slug === 'seo-webmaster');
-const seoSteps = seoCategory
-  ? seoCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const calculatorsCategory = navigationConfig.find(c => c.slug === 'calculators');
-const calculatorsSteps = calculatorsCategory
-  ? calculatorsCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const pdfUtilitiesCategory = navigationConfig.find(c => c.slug === 'pdf-image-utilities');
-const pdfUtilitiesSteps = pdfUtilitiesCategory
-  ? pdfUtilitiesCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const writingCategory = navigationConfig.find(c => c.slug === 'ai-writing');
-const writingSteps = writingCategory
-  ? writingCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const studyCategory = navigationConfig.find(c => c.slug === 'ai-study');
-const studySteps = studyCategory
-  ? studyCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const freelancerCategory = navigationConfig.find(c => c.slug === 'freelancer-toolkit');
-const freelancerSteps = freelancerCategory
-  ? freelancerCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const shopeeCategory = navigationConfig.find(c => c.slug === 'shopee-seller');
-const shopeeSteps = shopeeCategory
-  ? shopeeCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
-
-const lazadaCategory = navigationConfig.find(c => c.slug === 'lazada-seller');
-const lazadaSteps = lazadaCategory
-  ? lazadaCategory.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug }))
-  : [];
+function getCategorySteps(categorySlug) {
+  const cat = navigationConfig.find(c => c.slug === categorySlug) || navigationConfig.find(c => c.slug === 'daraz-seo');
+  return cat ? cat.tools.filter(t => t.isActive).map(t => ({ name: t.name, slug: t.slug })) : [];
+}
 
 const pipelineLabels = {
   'youtube-automation': 'YouTube Automation pipeline',
@@ -122,28 +73,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
   const [securityToken, setSecurityToken] = useState('');
   const [turnstileResetKey, setTurnstileResetKey] = useState(0);
 
-  const isYoutube = categorySlug === 'youtube-automation';
-  const steps = isYoutube
-    ? youtubeSteps
-    : categorySlug === 'local-social-commerce'
-      ? localCommerceSteps
-      : categorySlug === 'seo-webmaster'
-        ? seoSteps
-        : categorySlug === 'calculators'
-          ? calculatorsSteps
-          : categorySlug === 'pdf-image-utilities'
-            ? pdfUtilitiesSteps
-            : categorySlug === 'ai-writing'
-              ? writingSteps
-              : categorySlug === 'ai-study'
-                ? studySteps
-                : categorySlug === 'freelancer-toolkit'
-                  ? freelancerSteps
-                  : categorySlug === 'shopee-seller'
-                    ? shopeeSteps
-                    : categorySlug === 'lazada-seller'
-                      ? lazadaSteps
-                      : darazSteps;
+  const steps = getCategorySteps(categorySlug);
   const currentStepIndex = steps.findIndex(s => s.slug === toolSlug);
   const routeCategory = categoryRouteKeys[categorySlug] || 'daraz';
   const pipelineLabel = pipelineLabels[categorySlug] || 'Tool pipeline';
@@ -221,29 +151,16 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
   };
 
   return (
-    <div className="flex-1 px-3 py-4 sm:p-6 md:p-8 max-w-7xl mx-auto w-full space-y-6 sm:space-y-8 text-slate-900 dark:text-slate-100">
-      
+    <div className="flex-1 px-3 py-4 sm:p-6 md:p-8 max-w-7xl mx-auto w-full max-w-full min-w-0 overflow-hidden space-y-6 sm:space-y-8 text-slate-900 dark:text-slate-100">
       {/* Step Tracker */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 shadow-sm">
-        <span className="text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-widest text-center md:text-left">
-          {pipelineLabel}
-        </span>
-        <div className="flex items-center gap-2 overflow-x-auto w-full pb-2 scrollbar-none md:flex-wrap md:justify-center md:w-auto md:pb-0">
-          {steps.map((step, idx) => {
-            const isCurrent = step.slug === toolSlug;
-            const isPast = idx < currentStepIndex;
-            return (
-              <button
-                key={step.slug}
-                onClick={() => handleStepClick(step.slug)}
-                className={`px-3 py-1.5 rounded-xl text-[10px] font-bold border transition-all cursor-pointer shrink-0 whitespace-nowrap ${isCurrent ? 'bg-sky-500 text-white border-transparent shadow-sm' : isPast ? 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-350 border-slate-200 dark:border-slate-800' : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-400 dark:text-slate-500'}`}
-              >
-                {String(idx + 1).padStart(2, '0')} {t(`tools.${step.slug}.name`) !== `tools.${step.slug}.name` ? t(`tools.${step.slug}.name`) : step.name}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      <PipelineStepTracker
+        steps={steps}
+        toolSlug={toolSlug}
+        currentStepIndex={currentStepIndex}
+        pipelineLabel={pipelineLabel}
+        routeCategory={routeCategory}
+        locale={locale}
+      />
 
       {/* Main Form/Output Grid */}
       {toolSlug === 'profit-calculator' ? (
@@ -267,10 +184,10 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
       ) : LAZADA_HOST_SLUGS.includes(toolSlug) ? (
         <MarketplaceHost marketplace="lazada" toolSlug={toolSlug} />
       ) : (
-        <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 items-stretch w-full max-w-full min-w-0">
           
           {/* Left Input Pane */}
-          <div className="lg:col-span-4 flex flex-col">
+          <div className="lg:col-span-4 flex flex-col w-full max-w-full min-w-0">
             <ToolInputForm 
               toolSlug={toolSlug} 
               onSubmit={handleSubmit} 
@@ -282,7 +199,7 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
           </div>
 
           {/* Right Output Pane */}
-          <div className="lg:col-span-8 flex flex-col">
+          <div className="lg:col-span-8 flex flex-col w-full max-w-full min-w-0">
             <OutputSandbox
               toolSlug={toolSlug}
               outputData={outputData}

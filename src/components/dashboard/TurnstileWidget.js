@@ -96,7 +96,7 @@ const TurnstileWidget = forwardRef(function TurnstileWidget(
       </label>
       <div
         ref={containerRef}
-        className="w-full bg-slate-50 dark:bg-slate-650 p-3 rounded-xl border border-slate-200 dark:border-slate-800 flex justify-center"
+        className="w-full max-w-full overflow-hidden bg-slate-50 dark:bg-slate-650 p-2 sm:p-3 rounded-xl border border-slate-200 dark:border-slate-800 flex justify-center"
       />
     </div>
   );

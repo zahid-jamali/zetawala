@@ -10,8 +10,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-slate-200 dark:border-slate-850 bg-white dark:bg-slate-950 py-12 px-6 md:px-8 text-slate-500 dark:text-slate-400 mt-auto">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="w-full max-w-full overflow-hidden border-t border-slate-200 dark:border-slate-850 bg-white dark:bg-slate-950 py-12 px-4 sm:px-6 md:px-8 text-slate-500 dark:text-slate-400 mt-auto">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 w-full max-w-full min-w-0">
         
         <div className="space-y-4">
           <span className="font-bold text-slate-900 dark:text-white text-lg">{t('brand')}</span>
@@ -125,9 +125,9 @@ export default function Footer() {
 
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-900 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-slate-500">
-        <p>{t('footer.copyright', { year })}</p>
-        <p className="flex gap-4">
+      <div className="max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-900 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-slate-500 w-full max-w-full min-w-0">
+        <p className="text-center sm:text-left">{t('footer.copyright', { year })}</p>
+        <p className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-4 text-center">
           <span>{t('footer.authority')}</span>
           <span>&middot;</span>
           <span>{t('footer.growth')}</span>

@@ -10,6 +10,12 @@ import { getLocaleMeta } from "../i18n/config";
 const geistSans = { variable: "--font-geist-sans" };
 const geistMono = { variable: "--font-geist-mono" };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata = {
   metadataBase: new URL("https://zetawala.com"),
   icons: {
@@ -128,6 +134,7 @@ export default async function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="google-adsense-account" content="ca-pub-4790157238007445" />
         <meta name="theme-color" content="#0F172A" />
         <meta name="author" content="Zetawala" />
@@ -155,7 +162,7 @@ export default async function RootLayout({ children }) {
         />
       </head>
 
-      <body className="min-h-screen w-screen overflow-x-hidden font-sans">
+      <body className="min-h-screen w-full max-w-full overflow-x-hidden font-sans">
         <ReduxProvider>
           <LocaleProvider>
             <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
