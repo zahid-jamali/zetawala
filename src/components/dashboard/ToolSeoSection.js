@@ -145,7 +145,7 @@ export default function ToolSeoSection({ toolSlug, language = null, toolCopy = n
               provider: {
                 '@type': 'Organization',
                 name: 'Zetawala',
-                url: 'https://zetawala.com',
+                url: 'https://www.zetawala.com',
               },
             }),
           }}

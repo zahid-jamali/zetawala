@@ -22,13 +22,13 @@ export const metadata = {
     'technical seo audit',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/seo',
+    canonical: 'https://www.zetawala.com/seo',
   },
   openGraph: {
     title: 'Free SEO Tools – Website Audit, PageSpeed & Webmaster Suite | Zetawala',
     description:
       'Run free technical SEO audits, validate indexability, check Core Web Vitals, and prioritize fixes with Zetawala webmaster tools.',
-    url: 'https://zetawala.com/seo',
+    url: 'https://www.zetawala.com/seo',
     siteName: 'Zetawala',
     type: 'website',
   },

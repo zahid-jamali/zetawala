@@ -174,14 +174,14 @@ describe('language switching', () => {
 describe('metadata, canonical and hreflang', () => {
   it('builds self-referencing canonicals and reciprocal hreflang', () => {
     const languages = getToolHreflangLanguages('profit-margin');
-    assert.equal(languages.en, 'https://zetawala.com/tools/calculators/profit-margin-calculator');
-    assert.equal(languages.es, 'https://zetawala.com/es/tools/calculators/calculadora-de-margen-de-beneficio');
-    assert.equal(languages.fr, 'https://zetawala.com/fr/tools/calculators/calculateur-de-marge-beneficiaire');
-    assert.equal(languages.de, 'https://zetawala.com/de/tools/calculators/gewinnmargen-rechner');
-    assert.equal(languages['x-default'], 'https://zetawala.com/tools/calculators/profit-margin-calculator');
+    assert.equal(languages.en, 'https://www.zetawala.com/tools/calculators/profit-margin-calculator');
+    assert.equal(languages.es, 'https://www.zetawala.com/es/tools/calculators/calculadora-de-margen-de-beneficio');
+    assert.equal(languages.fr, 'https://www.zetawala.com/fr/tools/calculators/calculateur-de-marge-beneficiaire');
+    assert.equal(languages.de, 'https://www.zetawala.com/de/tools/calculators/gewinnmargen-rechner');
+    assert.equal(languages['x-default'], 'https://www.zetawala.com/tools/calculators/profit-margin-calculator');
     const niche = getToolHreflangLanguages('niche-finder');
-    assert.equal(niche.en, 'https://zetawala.com/tools/youtube/youtube-niche-finder');
-    assert.equal(niche.es, 'https://zetawala.com/es/tools/youtube/youtube-niche-finder');
+    assert.equal(niche.en, 'https://www.zetawala.com/tools/youtube/youtube-niche-finder');
+    assert.equal(niche.es, 'https://www.zetawala.com/es/tools/youtube/youtube-niche-finder');
   });
 
   it('builds localized tool metadata with canonical and hreflang', () => {
@@ -196,7 +196,7 @@ describe('metadata, canonical and hreflang', () => {
         },
       },
     });
-    assert.equal(meta.alternates.canonical, 'https://zetawala.com/es/tools/calculators/calculadora-de-margen-de-beneficio');
+    assert.equal(meta.alternates.canonical, 'https://www.zetawala.com/es/tools/calculators/calculadora-de-margen-de-beneficio');
     assert.equal(meta.openGraph.locale, 'es_ES');
     assert.ok(meta.alternates.languages.es);
     assert.ok(meta.alternates.languages['x-default']);
@@ -209,8 +209,8 @@ describe('metadata, canonical and hreflang', () => {
       pageId: 'home',
       dict: { metadata: { title: 'Accueil', description: 'Outils gratuits' } },
     });
-    assert.equal(meta.alternates.canonical, 'https://zetawala.com/fr');
-    assert.equal(getPageHreflangLanguages('home').en, 'https://zetawala.com/');
+    assert.equal(meta.alternates.canonical, 'https://www.zetawala.com/fr');
+    assert.equal(getPageHreflangLanguages('home').en, 'https://www.zetawala.com/');
   });
 });
 
@@ -218,11 +218,11 @@ describe('sitemap localization', () => {
   it('includes prefix-locale URLs for published hubs and tools', () => {
     const entries = listLocalizedSitemapEntries('2026-01-01T00:00:00.000Z');
     const urls = entries.map((e) => e.url);
-    assert.ok(urls.includes('https://zetawala.com/es'));
-    assert.ok(urls.includes('https://zetawala.com/fr/calculateurs'));
-    assert.ok(urls.includes('https://zetawala.com/de/tools/calculators/gewinnmargen-rechner'));
-    assert.ok(urls.includes('https://zetawala.com/es/tools/youtube/youtube-niche-finder'));
-    assert.ok(urls.includes('https://zetawala.com/es/escritura'));
+    assert.ok(urls.includes('https://www.zetawala.com/es'));
+    assert.ok(urls.includes('https://www.zetawala.com/fr/calculateurs'));
+    assert.ok(urls.includes('https://www.zetawala.com/de/tools/calculators/gewinnmargen-rechner'));
+    assert.ok(urls.includes('https://www.zetawala.com/es/tools/youtube/youtube-niche-finder'));
+    assert.ok(urls.includes('https://www.zetawala.com/es/escritura'));
     assert.ok(!urls.some((u) => u.includes('/en/')));
     const unique = new Set(urls);
     assert.equal(unique.size, urls.length);

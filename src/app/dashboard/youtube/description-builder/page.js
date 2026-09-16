@@ -25,7 +25,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://zetawala.com/tools/youtube/youtube-description-generator",
+    canonical: "https://www.zetawala.com/tools/youtube/youtube-description-generator",
   },
 
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata = {
     description:
       "Create professional, SEO-optimized YouTube descriptions using AI. Improve search rankings, increase visibility, and grow your channel with Zetawala.",
 
-    url: "https://zetawala.com/tools/youtube/youtube-description-generator",
+    url: "https://www.zetawala.com/tools/youtube/youtube-description-generator",
 
     type: "website",
 

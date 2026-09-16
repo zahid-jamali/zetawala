@@ -18,13 +18,13 @@ export const metadata = {
     'free pdf tools',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/pdf-utilities',
+    canonical: 'https://www.zetawala.com/pdf-utilities',
   },
   openGraph: {
     title: 'Free PDF & Image Utilities – Convert, Extract, Resize & OCR | Zetawala',
     description:
       'Convert PDFs, extract tables and links, transform Excel/JSON/CSV, manage image metadata, and run OCR—15 free utilities with no paid APIs.',
-    url: 'https://zetawala.com/pdf-utilities',
+    url: 'https://www.zetawala.com/pdf-utilities',
     siteName: 'Zetawala',
     type: 'website',
   },

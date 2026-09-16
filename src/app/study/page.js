@@ -19,13 +19,13 @@ export const metadata = {
     'free study tools',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/study',
+    canonical: 'https://www.zetawala.com/study',
   },
   openGraph: {
     title: 'Free AI Study, Quizzes & Typing Tools | Zetawala',
     description:
       'AI notes, quizzes, flashcards, YouTube study notes, homework help, and typing practice with certificates—10 free educational tools.',
-    url: 'https://zetawala.com/study',
+    url: 'https://www.zetawala.com/study',
     siteName: 'Zetawala',
     type: 'website',
   },

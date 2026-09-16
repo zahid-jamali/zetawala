@@ -11,14 +11,14 @@ export const metadata = {
   description:
     'Zetawala offers free AI tools for YouTube automation, Daraz SEO, WhatsApp social commerce, and SEO webmaster audits—titles, scripts, niche research, PageSpeed, and more.',
   alternates: {
-    canonical: 'https://zetawala.com/',
+    canonical: 'https://www.zetawala.com/',
     languages: getPageHreflangLanguages('home'),
   },
   openGraph: {
     title: 'Free AI YouTube, Daraz, WhatsApp & SEO Tools | Zetawala',
     description:
       'Free AI tools for YouTube creators, Daraz sellers, WhatsApp marketers, and website owners—research, audit, and create faster with Zetawala.',
-    url: 'https://zetawala.com/',
+    url: 'https://www.zetawala.com/',
     siteName: 'Zetawala',
     type: 'website',
   },

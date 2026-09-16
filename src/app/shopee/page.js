@@ -7,11 +7,11 @@ export const metadata = {
   title: 'Free Shopee Seller Toolkit – Listing SEO Profit Fees | Zetawala',
   description:
     'Free Shopee seller tools: listing titles, descriptions, keywords, SEO analyzer, profit/fee/pricing/shipping calculators, chat replies, and listing optimizer.',
-  alternates: { canonical: 'https://zetawala.com/shopee' },
+  alternates: { canonical: 'https://www.zetawala.com/shopee' },
   openGraph: {
     title: 'Free Shopee Seller Toolkit | Zetawala',
     description: 'Listing SEO, profit math, shipping estimates, and chat replies for Shopee sellers.',
-    url: 'https://zetawala.com/shopee',
+    url: 'https://www.zetawala.com/shopee',
     siteName: 'Zetawala',
     type: 'website',
   },

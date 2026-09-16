@@ -17,7 +17,7 @@ export const viewport = {
 };
 
 export const metadata = {
-  metadataBase: new URL("https://zetawala.com"),
+  metadataBase: new URL("https://www.zetawala.com"),
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -79,7 +79,7 @@ export const metadata = {
       "Free AI Tools for YouTube, Daraz, Shopee, Lazada, Freelancers & SEO | Zetawala",
     description:
       "Free AI tools for YouTube creators, marketplace sellers (Daraz, Shopee, Lazada), freelancers (Upwork & Fiverr), writers, students, and website owners—on Zetawala.",
-    url: "https://zetawala.com",
+    url: "https://www.zetawala.com",
     siteName: "Zetawala",
     locale: "en_US",
     type: "website",
@@ -149,12 +149,12 @@ export default async function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Zetawala",
-              url: "https://zetawala.com",
+              url: "https://www.zetawala.com",
               description:
                 "Free AI tools for YouTube, Daraz, Shopee, Lazada, freelancers, writing, study, calculators, PDF utilities, and SEO.",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://zetawala.com/search?q={search_term_string}",
+                target: "https://www.zetawala.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

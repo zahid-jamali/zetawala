@@ -5,11 +5,11 @@ import { ShieldCheck, ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Cookie Policy | Zetawala',
   description: 'Learn how cookies are used on Zetawala to secure sessions and improve free SEO and creator tool experiences.',
-  alternates: { canonical: 'https://zetawala.com/cookies' },
+  alternates: { canonical: 'https://www.zetawala.com/cookies' },
   openGraph: {
     title: 'Cookie Policy | Zetawala',
     description: 'Learn how cookies are used on Zetawala to secure sessions and improve free SEO and creator tool experiences.',
-    url: 'https://zetawala.com/cookies',
+    url: 'https://www.zetawala.com/cookies',
     siteName: 'Zetawala',
     type: 'website',
   },

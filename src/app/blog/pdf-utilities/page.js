@@ -5,13 +5,13 @@ export const metadata = {
   description:
     'Read ZetaWala guides on PDF conversion, table extraction, Excel transforms, EXIF privacy, image color palettes, social resizing, and OCR.',
   alternates: {
-    canonical: 'https://zetawala.com/blog/pdf-utilities',
+    canonical: 'https://www.zetawala.com/blog/pdf-utilities',
   },
   openGraph: {
     title: 'PDF & Image Utility Guides',
     description:
       'PDF conversion, Excel transforms, EXIF privacy, social resizing, and OCR guides from ZetaWala.',
-    url: 'https://zetawala.com/blog/pdf-utilities',
+    url: 'https://www.zetawala.com/blog/pdf-utilities',
     siteName: 'Zetawala',
     type: 'website',
   },

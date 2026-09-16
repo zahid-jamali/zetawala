@@ -132,7 +132,7 @@ export function getWritingPageSeo(publicSeoSlug) {
   const tool = writingTools.find((t) => t.slug === parsed.internalSlug);
   if (!tool) return null;
 
-  const SITE = 'https://zetawala.com';
+  const SITE = 'https://www.zetawala.com';
   const basePath = `/tools/writing/${parsed.baseSeoSlug}`;
   const path = `/tools/writing/${parsed.publicSeoSlug}`;
   const langLabel = parsed.language ? LANG_LABELS[parsed.language] : null;

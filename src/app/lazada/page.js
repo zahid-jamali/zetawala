@@ -7,11 +7,11 @@ export const metadata = {
   title: 'Free Lazada Seller Toolkit – Listing SEO Profit Fees | Zetawala',
   description:
     'Free Lazada seller tools: listing titles, descriptions, keywords, SEO analyzer, profit/fee/pricing/shipping calculators, chat replies, and listing optimizer.',
-  alternates: { canonical: 'https://zetawala.com/lazada' },
+  alternates: { canonical: 'https://www.zetawala.com/lazada' },
   openGraph: {
     title: 'Free Lazada Seller Toolkit | Zetawala',
     description: 'Listing SEO, profit math, shipping estimates, and chat replies for Lazada sellers.',
-    url: 'https://zetawala.com/lazada',
+    url: 'https://www.zetawala.com/lazada',
     siteName: 'Zetawala',
     type: 'website',
   },

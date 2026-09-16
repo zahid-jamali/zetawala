@@ -5,13 +5,13 @@ export const metadata = {
   description:
     'Read ZetaWala guides on technical SEO, Core Web Vitals, indexability, sitemaps, and webmaster best practices.',
   alternates: {
-    canonical: 'https://zetawala.com/blog/seo-webmaster',
+    canonical: 'https://www.zetawala.com/blog/seo-webmaster',
   },
   openGraph: {
     title: 'SEO & Webmaster Intelligence Guides',
     description:
       'Technical SEO, PageSpeed, indexability, and webmaster optimization guides from ZetaWala.',
-    url: 'https://zetawala.com/blog/seo-webmaster',
+    url: 'https://www.zetawala.com/blog/seo-webmaster',
     siteName: 'Zetawala',
     type: 'website',
   },

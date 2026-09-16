@@ -6,7 +6,7 @@
  * all read from this file so a new language does not require a refactor.
  */
 
-export const SITE_URL = 'https://zetawala.com';
+export const SITE_URL = 'https://www.zetawala.com';
 
 export const DEFAULT_LOCALE = 'en';
 

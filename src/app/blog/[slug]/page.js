@@ -6,7 +6,7 @@ import BlogPostClient from '../../../components/blog/BlogPostClient';
 import BlogListingClient from '../../../components/blog/BlogListingClient';
 import AdminDashboardPage from '../admin/page';
 
-const SITE_URL = 'https://zetawala.com';
+const SITE_URL = 'https://www.zetawala.com';
 
 const BLOG_CATEGORY_PAGES = {
   'seo-webmaster': {

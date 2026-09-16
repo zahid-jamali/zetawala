@@ -5,11 +5,11 @@ import { BookOpen, ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Terms of Service | Zetawala',
   description: 'Review the Terms of Service governing the use of Zetawala platforms and free AI SEO tools.',
-  alternates: { canonical: 'https://zetawala.com/terms' },
+  alternates: { canonical: 'https://www.zetawala.com/terms' },
   openGraph: {
     title: 'Terms of Service | Zetawala',
     description: 'Review the Terms of Service governing the use of Zetawala platforms and free AI SEO tools.',
-    url: 'https://zetawala.com/terms',
+    url: 'https://www.zetawala.com/terms',
     siteName: 'Zetawala',
     type: 'website',
   },

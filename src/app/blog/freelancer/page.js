@@ -4,11 +4,11 @@ export const metadata = {
   title: 'Freelancer Toolkit Guides – Upwork & Fiverr | ZetaWala Blog',
   description:
     'Read ZetaWala guides on Upwork proposals, Fiverr gig SEO, freelancer pricing, profiles, and client messaging.',
-  alternates: { canonical: 'https://zetawala.com/blog/freelancer' },
+  alternates: { canonical: 'https://www.zetawala.com/blog/freelancer' },
   openGraph: {
     title: 'Freelancer Toolkit Guides',
     description: 'Upwork and Fiverr growth guides from ZetaWala.',
-    url: 'https://zetawala.com/blog/freelancer',
+    url: 'https://www.zetawala.com/blog/freelancer',
     siteName: 'Zetawala',
     type: 'website',
   },

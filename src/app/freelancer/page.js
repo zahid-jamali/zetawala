@@ -7,11 +7,11 @@ export const metadata = {
   title: 'Free Freelancer Toolkit – Upwork & Fiverr Tools | Zetawala',
   description:
     'Free Freelancer Toolkit for Upwork and Fiverr: proposals, gigs, profiles, pricing, contracts, buyer replies, and more—powered by DeepSeek where AI is needed.',
-  alternates: { canonical: 'https://zetawala.com/freelancer' },
+  alternates: { canonical: 'https://www.zetawala.com/freelancer' },
   openGraph: {
     title: 'Free Freelancer Toolkit – Upwork & Fiverr | Zetawala',
     description: 'Win more clients with Upwork and Fiverr tools for proposals, gigs, profiles, and pricing.',
-    url: 'https://zetawala.com/freelancer',
+    url: 'https://www.zetawala.com/freelancer',
     siteName: 'Zetawala',
     type: 'website',
   },

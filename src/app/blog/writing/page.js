@@ -5,13 +5,13 @@ export const metadata = {
   description:
     'Read ZetaWala guides on AI humanizing, content detection, grammar, paraphrasing, Roman Urdu ↔ Urdu conversion, summarizing, and rewriting.',
   alternates: {
-    canonical: 'https://zetawala.com/blog/writing',
+    canonical: 'https://www.zetawala.com/blog/writing',
   },
   openGraph: {
     title: 'AI Writing & Language Guides',
     description:
       'AI humanizer, detector, grammar, Urdu converters, summarizer, and rewrite guides from ZetaWala.',
-    url: 'https://zetawala.com/blog/writing',
+    url: 'https://www.zetawala.com/blog/writing',
     siteName: 'Zetawala',
     type: 'website',
   },

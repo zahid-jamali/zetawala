@@ -7,11 +7,11 @@ export const metadata = {
   title: 'Free Fiverr Toolkit – Gig SEO Pricing Bios | Zetawala',
   description:
     'Free Fiverr tools: gig titles, descriptions, SEO analyzer, tags, FAQs, pricing packages, image text, buyer request replies, profile bios, and review responses.',
-  alternates: { canonical: 'https://zetawala.com/freelancer/fiverr' },
+  alternates: { canonical: 'https://www.zetawala.com/freelancer/fiverr' },
   openGraph: {
     title: 'Free Fiverr Toolkit | Zetawala',
     description: 'Gig SEO, pricing packages, buyer replies, and seller bios for Fiverr freelancers.',
-    url: 'https://zetawala.com/freelancer/fiverr',
+    url: 'https://www.zetawala.com/freelancer/fiverr',
     siteName: 'Zetawala',
     type: 'website',
   },

@@ -22,14 +22,14 @@ export const metadata = {
     'ai api cost calculator',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/calculators',
+    canonical: 'https://www.zetawala.com/calculators',
     languages: getPageHreflangLanguages('calculators'),
   },
   openGraph: {
     title: 'Free Business Calculators – Freelance, SaaS, Ads & Ecommerce | Zetawala',
     description:
       'Instant deterministic calculators for freelancers, SaaS founders, marketers, and ecommerce sellers—no AI required.',
-    url: 'https://zetawala.com/calculators',
+    url: 'https://www.zetawala.com/calculators',
     siteName: 'Zetawala',
     type: 'website',
   },

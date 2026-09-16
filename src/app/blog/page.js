@@ -12,13 +12,13 @@ export const metadata = {
     'zetawala blog',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/blog',
+    canonical: 'https://www.zetawala.com/blog',
   },
   openGraph: {
     title: 'Zetawala Blog – YouTube, Daraz, WhatsApp & SEO Guides',
     description:
       'Practical guides for YouTube creators, Daraz sellers, WhatsApp marketers, and SEO webmasters.',
-    url: 'https://zetawala.com/blog',
+    url: 'https://www.zetawala.com/blog',
     siteName: 'Zetawala',
     type: 'website',
   },

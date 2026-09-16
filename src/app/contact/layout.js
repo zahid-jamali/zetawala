@@ -3,13 +3,13 @@ export const metadata = {
   description:
     'Contact Zetawala for support, feedback, or partnership questions about free YouTube, Daraz, WhatsApp, and SEO webmaster tools.',
   alternates: {
-    canonical: 'https://zetawala.com/contact',
+    canonical: 'https://www.zetawala.com/contact',
   },
   openGraph: {
     title: 'Contact Zetawala – Support for Free SEO & Creator Tools',
     description:
       'Contact Zetawala for support, feedback, or partnership questions about free YouTube, Daraz, WhatsApp, and SEO webmaster tools.',
-    url: 'https://zetawala.com/contact',
+    url: 'https://www.zetawala.com/contact',
     siteName: 'Zetawala',
     type: 'website',
   },

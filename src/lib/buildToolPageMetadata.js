@@ -8,7 +8,7 @@ import { toolMetadata } from '../config/toolMetadata';
 import { getSeoPath } from '../config/routes';
 import { getToolHreflangLanguages } from '../i18n/hreflang';
 
-const SITE = 'https://zetawala.com';
+const SITE = 'https://www.zetawala.com';
 const OG_IMAGE = '/opengraph-image.png';
 
 /**

@@ -7,11 +7,11 @@ export const metadata = {
   title: 'Free Upwork Toolkit – Proposals Profiles Rates | Zetawala',
   description:
     'Free Upwork tools: proposal generator & analyzer, job match, profile optimizer, cover letters, interview answers, hourly rate calculator, contracts, portfolio copy, and follow-ups.',
-  alternates: { canonical: 'https://zetawala.com/freelancer/upwork' },
+  alternates: { canonical: 'https://www.zetawala.com/freelancer/upwork' },
   openGraph: {
     title: 'Free Upwork Toolkit | Zetawala',
     description: 'Proposals, profiles, rates, contracts, and client follow-ups for Upwork freelancers.',
-    url: 'https://zetawala.com/freelancer/upwork',
+    url: 'https://www.zetawala.com/freelancer/upwork',
     siteName: 'Zetawala',
     type: 'website',
   },

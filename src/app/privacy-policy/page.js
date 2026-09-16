@@ -5,11 +5,11 @@ import { Shield, ArrowLeft } from 'lucide-react';
 export const metadata = {
   title: 'Privacy Policy | Zetawala',
   description: 'Understand how Zetawala handles user data and maintains privacy standards across free SEO and creator tools.',
-  alternates: { canonical: 'https://zetawala.com/privacy-policy' },
+  alternates: { canonical: 'https://www.zetawala.com/privacy-policy' },
   openGraph: {
     title: 'Privacy Policy | Zetawala',
     description: 'Understand how Zetawala handles user data and maintains privacy standards across free SEO and creator tools.',
-    url: 'https://zetawala.com/privacy-policy',
+    url: 'https://www.zetawala.com/privacy-policy',
     siteName: 'Zetawala',
     type: 'website',
   },

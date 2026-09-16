@@ -5,13 +5,13 @@ export const metadata = {
   description:
     'Read ZetaWala guides on AI study notes, quizzes, flashcards, YouTube notes, homework help, and typing practice.',
   alternates: {
-    canonical: 'https://zetawala.com/blog/study',
+    canonical: 'https://www.zetawala.com/blog/study',
   },
   openGraph: {
     title: 'AI Study, Quizzes & Typing Guides',
     description:
       'Study notes, quizzes, flashcards, YouTube notes, homework, and typing guides from ZetaWala.',
-    url: 'https://zetawala.com/blog/study',
+    url: 'https://www.zetawala.com/blog/study',
     siteName: 'Zetawala',
     type: 'website',
   },

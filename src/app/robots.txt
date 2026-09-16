@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://zetawala.com/sitemap.xml
+Sitemap: https://www.zetawala.com/sitemap.xml

@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function sitemap() {
-  const baseUrl = 'https://zetawala.com';
+  const baseUrl = 'https://www.zetawala.com';
   const currentDate = new Date().toISOString();
 
   // 1. Core static landing, support & conversion routes

@@ -21,13 +21,13 @@ export const metadata = {
     'free ai writing tools',
   ],
   alternates: {
-    canonical: 'https://zetawala.com/writing',
+    canonical: 'https://www.zetawala.com/writing',
   },
   openGraph: {
     title: 'Free AI Writing & Language Tools – Humanizer, Grammar & Urdu | Zetawala',
     description:
       'Humanize AI text, detect AI writing, fix grammar, convert Roman Urdu, summarize, and rewrite—10 free language tools powered by DeepSeek.',
-    url: 'https://zetawala.com/writing',
+    url: 'https://www.zetawala.com/writing',
     siteName: 'Zetawala',
     type: 'website',
   },

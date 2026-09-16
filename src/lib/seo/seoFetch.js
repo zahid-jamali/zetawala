@@ -42,7 +42,7 @@ export async function safeFetch(urlInput, { method = 'GET', maxBytes = 1_500_000
       redirect: followRedirects ? 'follow' : 'manual',
       signal: controller.signal,
       headers: {
-        'User-Agent': 'ZetawalaSEOBot/1.0 (+https://zetawala.com; SEO audit)',
+        'User-Agent': 'ZetawalaSEOBot/1.0 (+https://www.zetawala.com; SEO audit)',
         Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       },
     });
