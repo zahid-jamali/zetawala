@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Alat AI YouTube, Daraz, WhatsApp & SEO Gratis | Zetawala",
+    "description": "Zetawala menawarkan alat AI gratis untuk otomatisasi YouTube, SEO Daraz, perdagangan sosial WhatsApp, dan audit webmaster SEO—judul, skrip, riset niche, PageSpeed, dan banyak lagi.",
+    "keywords": [
+      "alat AI gratis",
+      "alat YouTube",
+      "SEO Daraz",
+      "kalkulator",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Aset Otomatis & Sistem Produktivitas",
+    "titleBefore": "Alat AI Gratis untuk YouTube, Daraz, Freelancer, Shopee &",
+    "titleAccent": "Lazada",
+    "subtitle": "Riset, audit, alat belajar, alur kerja freelancer, dan toolkit penjual marketplace dalam satu tempat—YouTube, Daraz, WhatsApp, SEO, kalkulator, utilitas PDF, penulisan AI, Upwork/Fiverr, ditambah SEO listing Shopee dan Lazada serta perhitungan laba.",
+    "searchHint": "Atau jelajahi kategori di menu atas — arahkan kursor ke suite mana pun untuk membuka setiap alat.",
+    "cta": "Buka Paket Alat",
+    "mockupAlt": "Mockup dasbor Zetawala"
+  },
+  "localizedTools": {
+    "title": "Kalkulator bisnis dalam bahasa Anda",
+    "subtitle": "Mulai dengan kalkulator yang diterjemahkan sepenuhnya, lalu buka suite mana pun untuk nama lokal, metadata, dan FAQ.",
+    "viewAll": "Lihat semua kalkulator"
+  },
+  "suites": {
+    "title": "Akses Suite SEO & Otomatisasi",
+    "subtitle": "Pilih paket suite di bawah ini untuk masuk ke dasbor ruang kerja langsung.",
+    "open": "Buka {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Paket Otomatisasi YouTube",
+        "body": "Riset niche, intelijen channel dan video, estimasi pendapatan, plus pipeline konten lengkap—ide, judul, hook, skrip, tag, thumbnail, dan visual.",
+        "cta": "Buka Ruang Kerja YouTube",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Paket SEO & Konversi Daraz",
+        "body": "Judul, deskripsi, kata kunci, balasan ulasan teroptimalkan, dan margin laba bersih FBM/FBD untuk pasar Pakistan.",
+        "cta": "Buka Ruang Kerja Daraz",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "Intelijen SEO & Webmaster",
+        "body": "Audit teknis, PageSpeed, peta situs, canonical, tautan internal, dan kalkulator ROI untuk pemilik situs web.",
+        "cta": "Buka Ruang Kerja SEO",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Kalkulator Bisnis & Pemasaran",
+        "body": "Tarif freelance, LTV, CAC, titik impas, margin laba, AdSense, dan matematika laba marketplace—rumus deterministik, tanpa AI.",
+        "cta": "Buka Kalkulator",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Pertanyaan yang sering diajukan",
+    "items": [
+      {
+        "q": "Apa itu Zetawala?",
+        "a": "Zetawala adalah toolkit gratis untuk kreator, penjual, freelancer, dan pemilik situs web. Menggabungkan otomatisasi YouTube, SEO marketplace, perdagangan WhatsApp, audit SEO, kalkulator bisnis, utilitas PDF, penulisan AI, dan alat belajar."
+      },
+      {
+        "q": "Halaman mana saja yang tersedia dalam bahasa lain?",
+        "a": "Semua halaman publik, beranda, hub suite, halaman hukum, kontak, blog, dan setiap alat publik tersedia dalam berbagai bahasa dengan URL terindeks."
+      },
+      {
+        "q": "Apakah kalkulator menggunakan AI?",
+        "a": "Tidak. Hasil kalkulator adalah perhitungan matematis deterministik dari input Anda. Tidak ada panggilan LLM."
+      },
+      {
+        "q": "Apakah alat Zetawala gratis?",
+        "a": "Ya. Zetawala adalah toolkit gratis yang didukung iklan."
+      }
+    ]
+  }
+}

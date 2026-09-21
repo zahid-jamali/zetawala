@@ -73,10 +73,27 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
   const [securityToken, setSecurityToken] = useState('');
   const [turnstileResetKey, setTurnstileResetKey] = useState(0);
 
+  const routeCategory = categoryRouteKeys[categorySlug] || 'youtube';
   const steps = getCategorySteps(categorySlug);
   const currentStepIndex = steps.findIndex(s => s.slug === toolSlug);
-  const routeCategory = categoryRouteKeys[categorySlug] || 'daraz';
-  const pipelineLabel = pipelineLabels[categorySlug] || 'Tool pipeline';
+  const categoryToFooterKey = {
+    'youtube-automation': 'youtube',
+    'daraz-seo': 'daraz',
+    'local-social-commerce': 'whatsapp',
+    'seo-webmaster': 'seo',
+    'calculators': 'calculators',
+    'pdf-image-utilities': 'pdf',
+    'ai-writing': 'writing',
+    'ai-study': 'study',
+    'freelancer-toolkit': 'freelancer',
+    'shopee-seller': 'shopee',
+    'lazada-seller': 'lazada'
+  };
+  const footerKey = categoryToFooterKey[categorySlug];
+  const translatedLabel = footerKey ? t(`footer.${footerKey}`) : t(`categories.${routeCategory}.label`);
+  const pipelineLabel = (translatedLabel && !translatedLabel.startsWith('footer.') && !translatedLabel.startsWith('categories.'))
+    ? translatedLabel
+    : (pipelineLabels[categorySlug] || 'Tool pipeline');
 
   useEffect(() => {
     dispatch(setActiveTool(toolSlug));

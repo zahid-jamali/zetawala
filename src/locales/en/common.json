@@ -12,17 +12,50 @@
     "closeMega": "Close menu"
   },
   "categories": {
-    "youtube": { "label": "YouTube", "desc": "Niche research, monetization & content pipeline" },
-    "daraz": { "label": "Daraz", "desc": "Product hunting, listings & profit math" },
-    "whatsapp": { "label": "WhatsApp", "desc": "Broadcasts, ads & local seller copy" },
-    "shopee": { "label": "Shopee", "desc": "Listing SEO, fees, shipping & chat replies" },
-    "lazada": { "label": "Lazada", "desc": "Titles, keywords, margins & optimizer" },
-    "writing": { "label": "Writing", "desc": "Humanizer, grammar, Urdu & rewrite" },
-    "study": { "label": "Study", "desc": "Notes, quizzes, flashcards & typing" },
-    "freelancer": { "label": "Freelancer", "desc": "Upwork & Fiverr proposals, gigs & rates" },
-    "seo": { "label": "SEO", "desc": "Audits, PageSpeed, sitemaps & ROI" },
-    "calculators": { "label": "Calculators", "desc": "Freelance rates, LTV, ads & margins" },
-    "pdf": { "label": "PDF", "desc": "Extract, convert, EXIF & OCR" }
+    "youtube": {
+      "label": "YouTube",
+      "desc": "Niche research, monetization & content pipeline"
+    },
+    "daraz": {
+      "label": "Daraz",
+      "desc": "Product hunting, listings & profit math"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "desc": "Broadcasts, ads & local seller copy"
+    },
+    "shopee": {
+      "label": "Shopee",
+      "desc": "Listing SEO, fees, shipping & chat replies"
+    },
+    "lazada": {
+      "label": "Lazada",
+      "desc": "Titles, keywords, margins & optimizer"
+    },
+    "writing": {
+      "label": "Writing",
+      "desc": "Humanizer, grammar, Urdu & rewrite"
+    },
+    "study": {
+      "label": "Study",
+      "desc": "Notes, quizzes, flashcards & typing"
+    },
+    "freelancer": {
+      "label": "Freelancer",
+      "desc": "Upwork & Fiverr proposals, gigs & rates"
+    },
+    "seo": {
+      "label": "SEO",
+      "desc": "Audits, PageSpeed, sitemaps & ROI"
+    },
+    "calculators": {
+      "label": "Calculators",
+      "desc": "Freelance rates, LTV, ads & margins"
+    },
+    "pdf": {
+      "label": "PDF",
+      "desc": "Extract, convert, EXIF & OCR"
+    }
   },
   "search": {
     "placeholder": "Search tools…",
@@ -69,11 +102,97 @@
     "skipToContent": "Skip to content"
   },
   "tools": {
-    "profit-margin": { "name": "Profit Margin Calculator", "desc": "Gross profit, margin % and markup from cost & price" },
-    "break-even": { "name": "Break-even Calculator", "desc": "Find break-even units and revenue for any product" },
-    "freelance-hourly-rate": { "name": "Freelance Hourly Rate Calculator", "desc": "Set minimum, recommended & premium hourly rates from income goals" },
-    "salary-to-hourly": { "name": "Salary to Hourly Rate Calculator", "desc": "Convert annual or monthly salary to hourly rate" },
-    "customer-ltv": { "name": "Customer Lifetime Value (LTV) Calculator", "desc": "Calculate LTV from order value, frequency & lifespan" },
-    "adsense-revenue": { "name": "AdSense Revenue Calculator", "desc": "Estimate AdSense earnings from pageviews & RPM" }
+    "profit-margin": {
+      "name": "Profit Margin Calculator",
+      "desc": "Gross profit, margin % and markup from cost & price"
+    },
+    "break-even": {
+      "name": "Break-even Calculator",
+      "desc": "Find break-even units and revenue for any product"
+    },
+    "freelance-hourly-rate": {
+      "name": "Freelance Hourly Rate Calculator",
+      "desc": "Set minimum, recommended & premium hourly rates from income goals"
+    },
+    "salary-to-hourly": {
+      "name": "Salary to Hourly Rate Calculator",
+      "desc": "Convert annual or monthly salary to hourly rate"
+    },
+    "customer-ltv": {
+      "name": "Customer Lifetime Value (LTV) Calculator",
+      "desc": "Calculate LTV from order value, frequency & lifespan"
+    },
+    "adsense-revenue": {
+      "name": "AdSense Revenue Calculator",
+      "desc": "Estimate AdSense earnings from pageviews & RPM"
+    }
+  },
+  "toolPage": {
+    "stepOf": "of",
+    "prev": "Prev",
+    "next": "Next",
+    "previousLabel": "Previous:",
+    "nextLabel": "Next:",
+    "generate": "Generate Output",
+    "generating": "Interrogating Model...",
+    "sandboxTitle": "Live Output Sandbox",
+    "copyOutput": "Copy output",
+    "copied": "Copied",
+    "processing": "Generative model is processing search parameters...",
+    "seoTitle": "Algorithm Optimization & SEO Insights",
+    "seoHint": "How this metadata tool helps search visibility & content ranking.",
+    "exampleTitle": "Practical Usage Example",
+    "exampleHint": "Standard input parameters and the expected optimization output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Essential answers to technical ranking & search indexing questions.",
+    "badge": "Zetawala Calculation",
+    "nextSteps": "Recommended Next Steps",
+    "formula": "Formula",
+    "details": "Details",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "notFound": "Calculator not found.",
+    "awaitingTrigger": "Awaiting Search Trigger",
+    "awaitingHint": "Fill out the parameters form on the left and click Generate to analyze content logs.",
+    "proceedToStep": "Proceed to Step",
+    "dedicatedLanguagePages": "Dedicated language pages:",
+    "copy": "Copy",
+    "download": "Download",
+    "runTool": "Run Tool",
+    "runAnalysis": "Run Analysis",
+    "analyzing": "Analyzing…"
+  },
+  "toolForm": {
+    "targetChannelNiche": "Target Channel Niche",
+    "targetNiche": "Target Niche",
+    "videoConcept": "Video Concept / Idea",
+    "optimizedVideoTitle": "Optimized Video Title",
+    "requiredVisuals": "Required Visual Recommendations",
+    "videoScript": "Video Narration Script",
+    "targetDuration": "Target Duration / Format",
+    "productSeed": "Product Niche or Seed query",
+    "productFocus": "Specific Product Focus",
+    "productKeywords": "Product Focus or Seed Keywords",
+    "productNameFocus": "Product Name / Focus",
+    "keyFeatures": "Key Features / Specs",
+    "competitorText": "Competitor Listing Text",
+    "customerMessage": "Customer Message",
+    "customerReview": "Customer Review",
+    "currentTitle": "Current Title",
+    "currentDesc": "Current Description / Highlights",
+    "productName": "Product Name",
+    "productOffer": "Product Details / Offer",
+    "targetAudience": "Target Audience",
+    "productCategory": "Product Category",
+    "usp": "Unique Selling Proposition (USP)",
+    "videoLength": "Video Length",
+    "productToSource": "Product to Source",
+    "expectedQty": "Expected Quantity",
+    "targetPrice": "Target Price / Questions",
+    "customerComment": "Customer's Comment",
+    "desiredTone": "Desired Tone",
+    "productFeatures": "Product Features",
+    "painPoint": "Customer Pain Point It Solves"
   }
 }

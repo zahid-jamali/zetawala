@@ -28,7 +28,7 @@ const root = process.cwd();
 const src = (rel) => pathToFileURL(path.join(root, rel)).href;
 const { listPublicTools } = await import(src('src/i18n/registry.js'));
 
-const LOCALES = ['es', 'fr', 'de'];
+const LOCALES = ['es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt'];
 const PER_TOOL_SLUGS = [
   'profit-margin',
   'break-even',

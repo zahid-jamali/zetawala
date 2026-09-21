@@ -16,6 +16,7 @@ import {
 import TurnstileWidget from '../TurnstileWidget';
 import { getStudyTool, STUDY_AI_SLUGS } from '../../../config/study/tools';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
+import { useLocale } from '../../i18n/LocaleProvider';
 import { downloadTextAsPdf, downloadDocxLike } from '../../../lib/study/certificates';
 import QuizPlayer from './QuizPlayer';
 import FlashcardPlayer from './FlashcardPlayer';
@@ -216,6 +217,7 @@ function SectionList({ title, items }) {
 }
 
 export default function StudyAiHost({ toolSlug }) {
+  const { t } = useLocale();
   const { toolHref } = useLocalizedHref();
   const tool = getStudyTool(toolSlug);
   const [form, setForm] = useState({
@@ -429,9 +431,9 @@ export default function StudyAiHost({ toolSlug }) {
           className="w-full py-4 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 text-white font-semibold text-sm disabled:opacity-50 cursor-pointer inline-flex items-center justify-center gap-2"
         >
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-          {loading ? 'Working…' : result ? (
-            <><RefreshCw className="w-4 h-4" /> Regenerate</>
-          ) : 'Generate'}
+          {loading ? (t('toolPage.generating') || 'Working…') : result ? (
+            <><RefreshCw className="w-4 h-4" /> {t('toolPage.generate') || 'Regenerate'}</>
+          ) : (t('toolPage.generate') || 'Generate')}
         </button>
       </form>
 
@@ -452,7 +454,7 @@ export default function StudyAiHost({ toolSlug }) {
           <>
             <ResultView toolSlug={toolSlug} data={result} />
             <div className="p-5 rounded-3xl bg-sky-50/50 dark:bg-sky-950/10 border border-sky-100 dark:border-sky-900/30 space-y-3">
-              <h4 className="text-xs font-extrabold">Recommended Next Steps</h4>
+              <h4 className="text-xs font-extrabold">{t('toolPage.nextSteps') || 'Recommended Next Steps'}</h4>
               <div className="flex flex-wrap gap-2">
                 {(NEXT[toolSlug] || []).map((l) => (
                   <Link key={l.slug} href={toolHref('study', l.slug)} className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border text-[11px] font-bold text-sky-600">
@@ -466,7 +468,7 @@ export default function StudyAiHost({ toolSlug }) {
         )}
         {!loading && !result && !error && (
           <div className="p-10 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
-            Fill in the form and generate study materials.
+            {t('toolPage.awaitingHint') || 'Fill in the form and generate study materials.'}
           </div>
         )}
       </div>

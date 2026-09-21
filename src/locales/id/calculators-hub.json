@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Kalkulator Bisnis Gratis – Freelance, SaaS, Iklan & E-commerce | Zetawala",
+    "description": "Kalkulator bisnis dan pemasaran gratis: tarif per jam freelance, biaya API AI, penetapan harga SaaS, LTV, CAC, titik impas, margin laba, Google Ads, AdSense, afiliasi, biaya Amazon FBA, Etsy, dan eBay.",
+    "keywords": [
+      "kalkulator bisnis gratis",
+      "kalkulator tarif per jam freelance",
+      "kalkulator margin laba",
+      "kalkulator titik impas",
+      "kalkulator pendapatan adsense"
+    ]
+  },
+  "hero": {
+    "title": "Kalkulator Bisnis & Pemasaran",
+    "subtitle": "Hitung tarif freelance instan, harga SaaS, LTV, CAC, ROI iklan, AdSense, penghasilan afiliasi, dan laba marketplace—18 alat gratis dengan rumus deterministik tanpa ketergantungan AI.",
+    "cta": "Buka Kalkulator Tarif Freelance"
+  },
+  "grid": {
+    "title": "Semua Kalkulator",
+    "subtitle": "18 alat untuk penetapan harga, ekonomi unit, ROI pemasaran, dan margin e-commerce.",
+    "localizedBadge": "Diterjemahkan"
+  },
+  "pickerTitle": "Pilih Kalkulator yang Tepat",
+  "pickerSubtitle": "Cocokkan tujuan Anda dengan titik awal yang tepat dalam suite.",
+  "learning": {
+    "title": "Pembelajaran Penetapan Harga & ROI",
+    "subtitle": "Konsep inti di balik toolkit kalkulator.",
+    "blogCta": "Baca panduan blog Kalkulator",
+    "topics": [
+      {
+        "title": "Mengapa tarif mengalahkan tebakan",
+        "body": "Freelancer yang memasang harga terlalu rendah sering kali mengabaikan pajak, waktu non-tagihan, dan pengeluaran. Batas minimum per jam yang jelas melindungi arus kas."
+      },
+      {
+        "title": "LTV vs CAC",
+        "body": "Pertumbuhan yang sehat membutuhkan LTV yang lebih tinggi dari CAC secara signifikan. Gabungkan kedua kalkulator sebelum meningkatkan akuisisi berbayar."
+      },
+      {
+        "title": "Beban biaya marketplace",
+        "body": "Biaya Amazon, Etsy, dan eBay berlipat ganda dengan pengiriman dan iklan. Modelkan laba bersih per unit sebelum menambah volume listing."
+      },
+      {
+        "title": "Penganggaran API AI",
+        "body": "Harga token terlihat kecil per permintaan tetapi bertambah seiring volume harian. Perkirakan pengeluaran bulanan dan tahunan sebelum peluncuran."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Pertanyaan umum seputar suite Kalkulator.",
+    "items": [
+      {
+        "q": "Apa itu suite Kalkulator di Zetawala?",
+        "a": "Ini adalah rangkaian 18 kalkulator deterministik gratis untuk freelancer, pendiri SaaS, pemasar, dan penjual e-commerce. Setiap hasil dihitung dari rumus di browser—tanpa panggilan LLM."
+      },
+      {
+        "q": "Apakah kalkulator ini menggunakan AI?",
+        "a": "Tidak. Semua perhitungan matematika berjalan secara lokal dari input Anda."
+      },
+      {
+        "q": "Kalkulator mana yang harus saya mulai?",
+        "a": "Freelancer sebaiknya mulai dengan kalkulator Tarif per Jam atau Penetapan Harga Proyek. Pendiri SaaS sering memulai dengan Penetapan Harga SaaS, LTV, dan CAC."
+      },
+      {
+        "q": "Apakah hasilnya dijamin akurat?",
+        "a": "Hasilnya adalah estimasi transparan dari rumus bisnis standar. Selalu verifikasi biaya dan metrik akun Anda sendiri."
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Fale com o Suporte | Zetawala",
+    "description": "Entre em contato com o suporte da Zetawala sobre ferramentas gratuitas de SEO, YouTube, marketplaces, escrita e calculadoras."
+  },
+  "back": "Voltar para o início",
+  "title": "Fale com o Suporte",
+  "subtitle": "Entre em contato com nossa equipe sobre ferramentas, dados ou dúvidas sobre sua conta.",
+  "nameLabel": "Nome completo",
+  "namePlaceholder": "Digite seu nome",
+  "emailLabel": "Endereço de e-mail",
+  "emailPlaceholder": "voce@example.com",
+  "messageLabel": "Mensagem",
+  "messagePlaceholder": "Como podemos ajudar?",
+  "submit": "Enviar mensagem",
+  "sending": "Enviando…",
+  "successTitle": "Mensagem enviada",
+  "successBody": "Sua solicitação foi registrada. Analisaremos e responderemos em breve.",
+  "successCta": "Enviar outra mensagem",
+  "errors": {
+    "name": "O nome completo é obrigatório",
+    "email": "O endereço de e-mail é obrigatório",
+    "emailInvalid": "Por favor, informe um e-mail válido",
+    "message": "A mensagem deve ter pelo menos 10 caracteres",
+    "send": "Falha ao enviar o formulário."
+  }
+}

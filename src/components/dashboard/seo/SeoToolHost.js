@@ -6,6 +6,7 @@ import { Loader2, AlertTriangle, ArrowRight, Search } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
 import { getSeoTool } from '../../../config/seoWebmaster/tools';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
+import { useLocale } from '../../i18n/LocaleProvider';
 
 const inputClasses =
   'w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition-all';
@@ -38,6 +39,7 @@ const NEXT = {
 };
 
 export default function SeoToolHost({ toolSlug }) {
+  const { t } = useLocale();
   const { toolHref } = useLocalizedHref();
   const tool = getSeoTool(toolSlug);
   const [securityToken, setSecurityToken] = useState('');
@@ -93,7 +95,7 @@ export default function SeoToolHost({ toolSlug }) {
           disabled={loading || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !securityToken)}
           className="w-full py-4 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 text-white font-semibold text-sm disabled:opacity-50"
         >
-          {loading ? 'Analyzing…' : 'Run Analysis'}
+          {loading ? (t('toolPage.analyzing') || 'Analyzing…') : (t('toolPage.runAnalysis') || 'Run Analysis')}
         </button>
       </form>
 
@@ -115,7 +117,7 @@ export default function SeoToolHost({ toolSlug }) {
             <ResultView data={result} />
             {(NEXT[toolSlug] || [{ slug: 'website-checker', label: 'SEO Website Checker' }, { slug: 'action-plan', label: 'SEO Action Plan' }]).length > 0 && (
               <div className="p-5 rounded-3xl bg-sky-50/50 dark:bg-sky-950/10 border border-sky-100 dark:border-sky-900/30 space-y-3">
-                <h4 className="text-xs font-extrabold">Recommended Next Steps</h4>
+                <h4 className="text-xs font-extrabold">{t('toolPage.nextSteps') || 'Recommended Next Steps'}</h4>
                 <div className="flex flex-wrap gap-2">
                   {(NEXT[toolSlug] || [
                     { slug: 'health-score', label: 'Health Score' },
@@ -137,7 +139,7 @@ export default function SeoToolHost({ toolSlug }) {
         )}
         {!loading && !result && !error && (
           <div className="p-10 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
-            Enter your inputs and run analysis to see deterministic SEO results.
+            {t('toolPage.awaitingHint') || 'Enter your inputs and run analysis to see deterministic SEO results.'}
           </div>
         )}
       </div>

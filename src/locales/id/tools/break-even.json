@@ -1,0 +1,92 @@
+{
+  "name": "Kalkulator Titik Impas",
+  "desc": "Hitung unit dan pendapatan impas untuk produk apa pun",
+  "metadata": {
+    "title": "Kalkulator Titik Impas | Zetawala",
+    "description": "Hitung unit dan pendapatan impas untuk produk apa pun",
+    "keywords": [
+      "break even calculator",
+      "break even point calculator",
+      "break even units",
+      "contribution margin calculator"
+    ]
+  },
+  "seo": {
+    "title": "Kalkulator Titik Impas",
+    "description": "Hitung unit dan pendapatan impas untuk produk apa pun",
+    "example": {
+      "input": "Fixed costs: $12,000 · Price: $50 · Variable cost: $20",
+      "output": "Break-even 400 units · Break-even revenue $20,000 · Contribution $30/unit"
+    },
+    "faqs": [
+      {
+        "q": "What is the break-even formula?",
+        "a": "Break-even units = Fixed costs ÷ (Selling price − Variable cost per unit). Break-even revenue = Units × Selling price. Contribution margin per unit = Price − Variable cost."
+      },
+      {
+        "q": "Why must price be higher than variable cost?",
+        "a": "If price ≤ variable cost, contribution margin is zero or negative and you can never cover fixed costs. The calculator requires a positive contribution margin."
+      },
+      {
+        "q": "Does this break-even calculator use AI?",
+        "a": "No. Units and revenue are computed with standard cost accounting formulas. Nothing is estimated by a model."
+      },
+      {
+        "q": "What counts as fixed vs variable cost?",
+        "a": "Fixed costs stay roughly constant (rent, salaries, software). Variable costs scale with each unit (materials, packaging, per-order shipping)."
+      },
+      {
+        "q": "Who should use a break-even calculator?",
+        "a": "Product founders, retailers, cafés, and manufacturers deciding how many units they must sell before a product or campaign becomes profitable."
+      },
+      {
+        "q": "What happens after break-even?",
+        "a": "Each extra unit adds roughly the contribution margin to profit. The tool shows profit per extra unit after break-even so you can model upside quickly."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Break-even Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "Units and revenue needed to cover fixed costs.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about break-even analysis.",
+    "fields": {
+      "fixedCosts": "Fixed Costs ($)",
+      "sellingPrice": "Selling Price per Unit ($)",
+      "variableCost": "Variable Cost per Unit ($)"
+    },
+    "nextSteps": {
+      "profit-margin": "Profit Margin",
+      "saas-pricing": "SaaS Pricing",
+      "ecommerce-profit": "Ecommerce Profit"
+    },
+    "results": {
+      "headline": "Break-even at {value}",
+      "metrics": {
+        "Break-even Units": {
+          "title": "Break-even Units"
+        },
+        "Break-even Revenue": {
+          "title": "Break-even Revenue"
+        },
+        "Contribution Margin / Unit": {
+          "title": "Contribution Margin / Unit"
+        },
+        "Profit After Break-even (per extra unit)": {
+          "title": "Profit After Break-even (per extra unit)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Ingyenes üzleti kalkulátorok – Szabadúszó, SaaS, Hirdetések és E-kereskedelem | Zetawala",
+    "description": "Ingyenes üzleti és marketing kalkulátorok: szabadúszó óradíjak, AI API költségek, SaaS árazás, LTV, CAC, fedezeti pont, haszonkulcs, Google Ads, AdSense, affiliate és piactéri díjak.",
+    "keywords": [
+      "ingyenes üzleti kalkulátorok",
+      "szabadúszó óradíj kalkulátor",
+      "haszonkulcs kalkulátor",
+      "fedezeti pont kalkulátor",
+      "adsense bevétel kalkulátor"
+    ]
+  },
+  "hero": {
+    "title": "Üzleti és marketing kalkulátorok",
+    "subtitle": "Azonnali szabadúszó díjak, SaaS árazás, LTV, CAC, hirdetési megtérülés, AdSense és piactéri profitmatematika—18 ingyenes eszköz determinisztikus képletekkel, AI függőség nélkül.",
+    "cta": "Szabadúszó óradíj kalkulátor"
+  },
+  "grid": {
+    "title": "Minden kalkulátor",
+    "subtitle": "18 eszköz árazáshoz, egységgazdaságtanhoz, marketing ROI-hoz és e-kereskedelmi árrésekhez.",
+    "localizedBadge": "Lefordítva"
+  },
+  "pickerTitle": "Válassza ki a megfelelő kalkulátort",
+  "pickerSubtitle": "Igazítsa célját a csomag megfelelő kiindulópontjához.",
+  "learning": {
+    "title": "Árazási és ROI ismeretek",
+    "subtitle": "A kalkulátor eszköztár mögött álló alapfogalmak.",
+    "blogCta": "Olvassa el a blog útmutatóit",
+    "topics": [
+      {
+        "title": "Miért jobb a számítás a becslésnél",
+        "body": "Az alulárazó szabadúszók gyakran figyelmen kívül hagyják az adókat, a nem számlázható időt és a kiadásokat. Egy világos óradíjpadló védi a pénzáramlást."
+      },
+      {
+        "title": "LTV kontra CAC",
+        "body": "Az egészséges növekedéshez az LTV-nek jelentősen meg kell haladnia a CAC-ot. Használja mindkét kalkulátort a fizetett hirdetések növelése előtt."
+      },
+      {
+        "title": "Piactéri díjak hatása",
+        "body": "Az Amazon, Etsy és eBay díjak összeadódnak a szállítással és hirdetésekkel. Mindig modellezze az egységenkénti nettó profitot."
+      },
+      {
+        "title": "AI API költségvetés",
+        "body": "A tokenárak kérésenként csekélynek tűnnek, de a napi forgalommal gyorsan növekednek. Becsülje meg a havi és éves kiadásokat indulás előtt."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Gyakran Ismételt Kérdések",
+    "subtitle": "Gyakori kérdések a kalkulátor csomagról.",
+    "items": [
+      {
+        "q": "Mi az a Kalkulátor csomag a Zetawala-n?",
+        "a": "Ez 18 ingyenes, determinisztikus kalkulátorból álló csomag szabadúszóknak, SaaS alapítóknak, marketingszakembereknek és e-kereskedőknek. Minden eredmény böngészőben futó képletekből számítódik ki."
+      },
+      {
+        "q": "Használnak ezek a kalkulátorok AI-t?",
+        "a": "Nem. Minden matematikai számítás helyben fut az Ön által megadott adatokból."
+      },
+      {
+        "q": "Melyik kalkulátorral érdemes kezdeni?",
+        "a": "A szabadúszók az Óradíj vagy Projektárazás kalkulátorral kezdjenek. A SaaS alapítók gyakran a SaaS árazással, LTV-vel és CAC-cal indítanak."
+      },
+      {
+        "q": "Garantáltan pontosak az eredmények?",
+        "a": "Ezek szabványos üzleti képleteken alapuló átlátható becslések. Mindig egyeztesse a pontos díjakat saját fiókjaival."
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Ingyenes AI eszközök YouTube-hoz, Darazhoz, WhatsApphoz és SEO-hoz | Zetawala",
+    "description": "A Zetawala ingyenes AI eszközöket kínál YouTube automatizáláshoz, Daraz SEO-hoz, WhatsApp közösségi kereskedelemhez és webmester SEO auditokhoz—címek, szkriptek, niche kutatás, PageSpeed és még sok más.",
+    "keywords": [
+      "ingyenes AI eszközök",
+      "YouTube eszközök",
+      "Daraz SEO",
+      "kalkulátorok",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Automatizált rendszerek és termelékenység",
+    "titleBefore": "Ingyenes AI eszközök YouTube-hoz, Darazhoz, Szabadúszóknak, Shopee-hoz &",
+    "titleAccent": "Lazada",
+    "subtitle": "Kutatás, auditok, tanulási eszközök, szabadúszó munkafolyamatok és piactéri eladói eszköztárak egy helyen—YouTube, Daraz, WhatsApp, SEO, kalkulátorok, PDF segédprogramok, AI írás, Upwork/Fiverr és piactéri profitmatematika.",
+    "searchHint": "Vagy böngésszen a fenti menü kategóriái között — vigye az egeret bármelyik csomagra az eszközök megnyitásához.",
+    "cta": "Eszközcsomagok indítása",
+    "mockupAlt": "Zetawala irányítópult előnézet"
+  },
+  "localizedTools": {
+    "title": "Üzleti kalkulátorok az Ön nyelvén",
+    "subtitle": "Kezdje a teljesen lefordított kalkulátorokkal, majd nyisson meg bármelyik csomagot a honosított nevekhez, metaadatokhoz és GYIK-hez.",
+    "viewAll": "Összes kalkulátor megtekintése"
+  },
+  "suites": {
+    "title": "Hozzáférés a SEO és automatizálási csomagokhoz",
+    "subtitle": "Válasszon egy csomagot alább a munkaterület megnyitásához.",
+    "open": "{label} megnyitása",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "YouTube automatizálási csomag",
+        "body": "Niche kutatás, csatorna- és videóelemzés, bevételbecslések és teljes tartalomtervezés—ötletek, címek, horgok, szkriptek, címkék és indexképek.",
+        "cta": "YouTube munkaterület",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Daraz SEO és konverziós csomag",
+        "body": "Optimalizált címek, leírások, kulcsszavak, értékelési válaszok és nettó haszonkulcs számítások a pakisztáni piachoz.",
+        "cta": "Daraz munkaterület",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "SEO és webmester intelligencia",
+        "body": "Technikai auditok, PageSpeed, webhelytérképek, kanonikus címkék, belső linkek és ROI kalkulátorok webhelytulajdonosoknak.",
+        "cta": "SEO munkaterület",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Üzleti és marketing kalkulátorok",
+        "body": "Szabadúszó díjak, LTV, CAC, fedezeti pont, haszonkulcs, AdSense és piactéri profitmatematika—determinisztikus képletek, AI nélkül.",
+        "cta": "Kalkulátorok megnyitása",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Gyakran Ismételt Kérdések",
+    "items": [
+      {
+        "q": "Mi az a Zetawala?",
+        "a": "A Zetawala egy ingyenes eszköztár tartalomkészítőknek, eladóknak, szabadúszóknak és webhelytulajdonosoknak. Egyesíti a YouTube automatizálást, a piactéri SEO-t, a WhatsApp kereskedelmet, a SEO auditokat és a kalkulátorokat."
+      },
+      {
+        "q": "Mely oldalak érhetők el más nyelveken?",
+        "a": "Minden nyilvános oldal, a kezdőlap, a csomagközpontok, a jogi oldalak, a kapcsolat, a blog és minden nyilvános eszköz elérhető több nyelven."
+      },
+      {
+        "q": "Használnak AI-t a kalkulátorok?",
+        "a": "Nem. A kalkulátorok eredményei determinisztikus matematikai számítások az Ön adatai alapján. Nincs LLM hívás."
+      },
+      {
+        "q": "Ingyenesek a Zetawala eszközei?",
+        "a": "Igen. A Zetawala egy ingyenes, hirdetések által támogatott eszköztár."
+      }
+    ]
+  }
+}

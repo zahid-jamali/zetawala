@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Bezplatné AI nástroje pro YouTube, Daraz, WhatsApp a SEO | Zetawala",
+    "description": "Zetawala nabízí bezplatné AI nástroje pro automatizaci YouTube, SEO pro Daraz, sociální obchod na WhatsAppu a webmaster audity—názvy, scénáře, průzkum trhu, PageSpeed a další.",
+    "keywords": [
+      "bezplatné AI nástroje",
+      "YouTube nástroje",
+      "Daraz SEO",
+      "kalkulačky",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Automatizované systémy a produktivita",
+    "titleBefore": "Bezplatné AI nástroje pro YouTube, Daraz, Freelancery, Shopee &",
+    "titleAccent": "Lazada",
+    "subtitle": "Průzkum, audity, studijní pomůcky, pracovní postupy pro freelancery a sady pro prodejce na tržištích na jednom místě—YouTube, Daraz, WhatsApp, SEO, kalkulačky, PDF nástroje, AI psaní, Upwork/Fiverr a optimalizace pro Shopee a Lazada.",
+    "searchHint": "Nebo procházejte kategorie v horní nabídce — najeďte na libovolnou sadu pro otevření nástrojů.",
+    "cta": "Spustit sady nástrojů",
+    "mockupAlt": "Náhled ovládacího panelu Zetawala"
+  },
+  "localizedTools": {
+    "title": "Obchodní kalkulačky ve vašem jazyce",
+    "subtitle": "Začněte s plně přeloženými kalkulačkami a poté otevřete jakoukoli sadu pro lokalizované názvy, metadata a časté dotazy.",
+    "viewAll": "Zobrazit všechny kalkulačky"
+  },
+  "suites": {
+    "title": "Přístup k sadám SEO a automatizace",
+    "subtitle": "Vyberte balíček níže a vstupte do pracovního prostoru.",
+    "open": "Otevřít {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Sada automatizace pro YouTube",
+        "body": "Průzkum trhu, analýza kanálů a videí, odhady příjmů a kompletní obsahový plán—nápady, názvy, háčky, scénáře, tagy, miniatury a vizuály.",
+        "cta": "Otevřít YouTube prostor",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Sada SEO a konverzí pro Daraz",
+        "body": "Optimalizované názvy, popisy, klíčová slova, odpovědi na recenze a marže čistého zisku FBM/FBD pro pákistánský trh.",
+        "cta": "Otevřít Daraz prostor",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "SEO a webmaster inteligence",
+        "body": "Technické audity, PageSpeed, mapy stránek, kanonické tagy, interní odkazy a kalkulačky návratnosti investic (ROI).",
+        "cta": "Otevřít SEO prostor",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Obchodní a marketingové kalkulačky",
+        "body": "Hodinové sazby na volné noze, LTV, CAC, bod zvratu, zisková marže, AdSense a matematika zisku na tržištích—deterministické vzorce, bez AI.",
+        "cta": "Otevřít kalkulačky",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Často kladené otázky",
+    "items": [
+      {
+        "q": "Co je Zetawala?",
+        "a": "Zetawala je bezplatná sada nástrojů pro tvůrce, prodejce, freelancery a majitele webů. Spojuje automatizaci YouTube, SEO pro tržiště, WhatsApp obchod, SEO audity, kalkulačky, PDF nástroje a AI psaní."
+      },
+      {
+        "q": "Které stránky jsou dostupné v jiných jazycích?",
+        "a": "Všechny veřejné stránky, domovská stránka, centra sad, právní stránky, kontakt, blog i všechny veřejné nástroje jsou dostupné ve více jazycích."
+      },
+      {
+        "q": "Používají kalkulačky umělou inteligenci?",
+        "a": "Ne. Výsledky kalkulaček jsou čisté matematické výpočty z vašich vstupů. Neprobíhá žádné volání LLM."
+      },
+      {
+        "q": "Jsou nástroje Zetawala zdarma?",
+        "a": "Ano. Zetawala je bezplatná sada nástrojů podporovaná reklamou."
+      }
+    ]
+  }
+}

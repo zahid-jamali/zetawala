@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Kapcsolatfelvétel a támogatással | Zetawala",
+    "description": "Vegye fel a kapcsolatot a Zetawala támogatásával az ingyenes SEO, YouTube, piactéri, író és kalkulátor eszközökkel kapcsolatban."
+  },
+  "back": "Vissza a kezdőlapra",
+  "title": "Kapcsolatfelvétel a támogatással",
+  "subtitle": "Lépjen kapcsolatba csapatunkkal eszközökkel, adatokkal vagy fiókokkal kapcsolatos kérdésekben.",
+  "nameLabel": "Teljes név",
+  "namePlaceholder": "Adja meg a nevét",
+  "emailLabel": "E-mail cím",
+  "emailPlaceholder": "on@example.com",
+  "messageLabel": "Üzenet",
+  "messagePlaceholder": "Miben segíthetünk?",
+  "submit": "Üzenet küldése",
+  "sending": "Küldés…",
+  "successTitle": "Üzenet elküldve",
+  "successBody": "Megkeresését rögzítettük. Hamarosan áttekintjük és jelentkezünk.",
+  "successCta": "Újabb üzenet küldése",
+  "errors": {
+    "name": "A teljes név megadása kötelező",
+    "email": "Az e-mail cím megadása kötelező",
+    "emailInvalid": "Kérjük, érvényes e-mail címet adjon meg",
+    "message": "Az üzenetnek legalább 10 karakter hosszúnak kell lennie",
+    "send": "Nem sikerült elküldeni az űrlapot."
+  }
+}

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
+import { useLocale } from '../../i18n/LocaleProvider';
 import { getShopeeTool } from '../../../config/shopee/tools';
 import { getLazadaTool } from '../../../config/lazada/tools';
 import {
@@ -230,6 +231,7 @@ function List({ title, items }) {
 }
 
 function MarketplaceAiPanel({ marketplace, toolSlug }) {
+  const { t } = useLocale();
   const { toolHref } = useLocalizedHref();
   const tool = getTool(marketplace, toolSlug);
   const base = baseOf(toolSlug);
@@ -316,7 +318,7 @@ function MarketplaceAiPanel({ marketplace, toolSlug }) {
         <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
         <button type="submit" disabled={loading || (turnstileRequired && !securityToken)} className="w-full py-3 rounded-xl bg-orange-600 hover:bg-orange-700 disabled:opacity-50 text-white text-xs font-bold cursor-pointer inline-flex items-center justify-center gap-2">
           {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-          {loading ? 'Generating…' : 'Generate'}
+          {loading ? (t('toolPage.generating') || 'Generating…') : (t('toolPage.generate') || 'Generate')}
         </button>
       </form>
       <div className="lg:col-span-8 space-y-4">
@@ -332,7 +334,9 @@ function MarketplaceAiPanel({ marketplace, toolSlug }) {
         )}
         {!loading && result && <ResultView base={base} data={result} />}
         {!loading && !result && !error && (
-          <div className="p-8 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 text-sm text-slate-400">Fill the form and generate to see results.</div>
+          <div className="p-8 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 text-sm text-slate-400">
+            {t('toolPage.awaitingHint') || 'Fill the form and generate to see results.'}
+          </div>
         )}
         <div className="flex flex-wrap gap-2">
           {related.map((slug) => (

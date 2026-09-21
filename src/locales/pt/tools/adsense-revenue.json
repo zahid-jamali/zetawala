@@ -1,0 +1,98 @@
+{
+  "name": "Calculadora de receita do AdSense",
+  "desc": "Estime os ganhos do AdSense a partir de visualizações de página e RPM",
+  "metadata": {
+    "title": "Calculadora de receita do AdSense | Zetawala",
+    "description": "Estime os ganhos do AdSense a partir de visualizações de página e RPM",
+    "keywords": [
+      "adsense revenue calculator",
+      "adsense earnings calculator",
+      "adsense rpm calculator",
+      "pageview revenue calculator"
+    ]
+  },
+  "seo": {
+    "title": "Calculadora de receita do AdSense",
+    "description": "Estime os ganhos do AdSense a partir de visualizações de página e RPM",
+    "example": {
+      "input": "Pageviews: 100,000/mo · Mode: RPM · RPM: $8",
+      "output": "Daily ~$26.67 · Monthly $800 · Yearly $9,600"
+    },
+    "faqs": [
+      {
+        "q": "How does RPM mode work?",
+        "a": "Monthly revenue = (Monthly pageviews ÷ 1,000) × RPM. Daily ≈ monthly ÷ 30; yearly = monthly × 12."
+      },
+      {
+        "q": "How does CPC mode work?",
+        "a": "Clicks = Pageviews × CTR%. Revenue = Clicks × CPC. The same daily/monthly/yearly scaling applies."
+      },
+      {
+        "q": "Is this official Google AdSense data?",
+        "a": "No. It is a free estimator using the RPM, CTR, or CPC you enter. Real AdSense varies by niche, geo, seasonality, and ad layout."
+      },
+      {
+        "q": "Does the AdSense calculator use AI?",
+        "a": "No. Earnings are computed with transparent formulas so publishers can plan without model-generated guesses."
+      },
+      {
+        "q": "Who should use an AdSense revenue calculator?",
+        "a": "Bloggers, news publishers, and niche site owners forecasting display revenue before growing traffic or redesigning ad placements."
+      },
+      {
+        "q": "Which mode should I choose—RPM or CPC?",
+        "a": "Use RPM if you know earnings per thousand pageviews from AdSense reports. Use CPC if you track click-through rate and average click value instead."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "AdSense Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "Display revenue estimates from pageviews, RPM, or CPC.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about AdSense estimates.",
+    "fields": {
+      "monthlyPageviews": "Monthly Pageviews",
+      "mode": "Estimate Mode",
+      "rpm": "RPM ($ per 1000 pageviews)",
+      "ctrPct": "CTR (%)",
+      "cpc": "CPC ($)"
+    },
+    "selects": {
+      "rpm": "RPM",
+      "cpc": "CTR + CPC"
+    },
+    "nextSteps": {
+      "affiliate-earnings": "Affiliate Earnings",
+      "content-marketing-roi": "Content ROI",
+      "profit-margin": "Profit Margin"
+    },
+    "results": {
+      "headline": "Estimated monthly AdSense: {value}",
+      "metrics": {
+        "Daily Earnings": {
+          "title": "Daily Earnings"
+        },
+        "Monthly Earnings": {
+          "title": "Monthly Earnings"
+        },
+        "Yearly Earnings": {
+          "title": "Yearly Earnings"
+        },
+        "Estimated Clicks": {
+          "title": "Estimated Clicks"
+        }
+      }
+    }
+  }
+}

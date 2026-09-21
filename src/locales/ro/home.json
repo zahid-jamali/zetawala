@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Instrumente AI gratuite pentru YouTube, Daraz, WhatsApp & SEO | Zetawala",
+    "description": "Zetawala oferă instrumente AI gratuite pentru automatizarea YouTube, SEO Daraz, comerț social WhatsApp și audituri SEO webmaster—titluri, scenarii, cercetare de nișă, PageSpeed și multe altele.",
+    "keywords": [
+      "instrumente AI gratuite",
+      "instrumente YouTube",
+      "SEO Daraz",
+      "calculatoare",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Sisteme automate și productivitate",
+    "titleBefore": "Instrumente AI gratuite pentru YouTube, Daraz, Freelanceri, Shopee &",
+    "titleAccent": "Lazada",
+    "subtitle": "Cercetare, audituri, instrumente de studiu, fluxuri de lucru pentru freelanceri și truse pentru vânzători pe marketplace într-un singur loc—YouTube, Daraz, WhatsApp, SEO, calculatoare, utilitare PDF, scriere AI, Upwork/Fiverr și optimizare pentru Shopee și Lazada.",
+    "searchHint": "Sau navigați prin categoriile din meniul de sus — treceți cursorul peste orice suită pentru a deschide instrumentele.",
+    "cta": "Lansează pachetele de instrumente",
+    "mockupAlt": "Previzualizare panou de control Zetawala"
+  },
+  "localizedTools": {
+    "title": "Calculatoare de afaceri în limba ta",
+    "subtitle": "Începeți cu calculatoarele traduse complet, apoi deschideți orice suită pentru denumiri localizate, metadate și întrebări frecvente.",
+    "viewAll": "Vezi toate calculatoarele"
+  },
+  "suites": {
+    "title": "Accesează suitele de SEO și automatizare",
+    "subtitle": "Selectați un pachet de mai jos pentru a intra în panoul de lucru live.",
+    "open": "Deschide {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Pachet de automatizare YouTube",
+        "body": "Cercetare de nișă, analiză canale și videoclipuri, estimări de venituri și flux complet de conținut—idei, titluri, cârlige, scenarii, etichete și miniaturi.",
+        "cta": "Deschide spațiul YouTube",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Pachet SEO și conversie Daraz",
+        "body": "Titluri optimizate, descrieri, cuvinte cheie, răspunsuri la recenzii și marje de profit net FBM/FBD pentru piața din Pakistan.",
+        "cta": "Deschide spațiul Daraz",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "Inteligență SEO și webmaster",
+        "body": "Audituri tehnice, PageSpeed, sitemap-uri, etichete canonice, linkuri interne și calculatoare de rentabilitate (ROI) pentru proprietarii de site-uri.",
+        "cta": "Deschide spațiul SEO",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Calculatoare de afaceri și marketing",
+        "body": "Tarife orare freelance, LTV, CAC, punct de echilibru, marjă de profit, AdSense și calcule de profit pe marketplace—formule deterministe, fără AI.",
+        "cta": "Deschide calculatoarele",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Întrebări frecvente",
+    "items": [
+      {
+        "q": "Ce este Zetawala?",
+        "a": "Zetawala este un set gratuit de instrumente pentru creatori, vânzători, freelanceri și proprietari de site-uri web. Combină automatizarea YouTube, SEO pentru marketplace, comerț WhatsApp, audituri SEO și calculatoare de afaceri."
+      },
+      {
+        "q": "Ce pagini sunt disponibile în alte limbi?",
+        "a": "Toate paginile publice, pagina principală, hub-urile suitelor, paginile legale, contactul, blogul și fiecare instrument public sunt disponibile în mai multe limbi."
+      },
+      {
+        "q": "Calculatoarele folosesc inteligență artificială?",
+        "a": "Nu. Rezultatele calculatoarelor sunt calcule matematice deterministe din datele introduse. Nu există apeluri către modele lingvistice."
+      },
+      {
+        "q": "Instrumentele Zetawala sunt gratuite?",
+        "a": "Da. Zetawala este un set de instrumente gratuit, susținut de reclame."
+      }
+    ]
+  }
+}

@@ -5,8 +5,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Send, Loader2 } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
 import TurnstileWidget from './TurnstileWidget';
+import { useLocale } from '../i18n/LocaleProvider';
 
 export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurityTokenChange, securityToken, turnstileResetKey = 0 }) {
+  const { t } = useLocale();
   const dispatch = useDispatch();
   const { loading, inputs } = useSelector((state) => state.tools);
   const toolInputs = inputs[toolSlug] || {};
@@ -22,7 +24,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       
       {toolSlug === 'video-ideas' && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Channel Niche</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetChannelNiche') || 'Target Channel Niche'}</label>
           <input
             ref={inputRef}
             type="text"
@@ -38,7 +40,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'title-generator' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Niche</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetNiche') || 'Target Niche'}</label>
             <input
               type="text"
               required
@@ -49,7 +51,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Video Concept / Idea</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.videoConcept') || 'Video Concept / Idea'}</label>
             <textarea
               ref={inputRef}
               required
@@ -65,7 +67,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
 
       {['hook-architect', 'description-builder', 'tags-extractor', 'thumbnail-prompt'].includes(toolSlug) && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-450 uppercase tracking-wider block">Optimized Video Title</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-450 uppercase tracking-wider block">{t('toolForm.optimizedVideoTitle') || 'Optimized Video Title'}</label>
           <input
             ref={inputRef}
             type="text"
@@ -81,7 +83,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'visuals-recommender' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">Required Visual Recommendations</label>
+            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">{t('toolForm.requiredVisuals') || 'Required Visual Recommendations'}</label>
             <select
               value={toolInputs.visualsType || 'all'}
               onChange={(e) => handleInputChange('visualsType', e.target.value)}
@@ -95,7 +97,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
           </div>
           
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">Video Narration Script</label>
+            <label className="text-xs font-semibold text-slate-650 dark:text-slate-450 uppercase tracking-wider block">{t('toolForm.videoScript') || 'Video Narration Script'}</label>
             <textarea
               ref={inputRef}
               required
@@ -112,7 +114,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'script-master' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Optimized Video Title</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.optimizedVideoTitle') || 'Optimized Video Title'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -124,7 +126,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Duration / Format</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetDuration') || 'Target Duration / Format'}</label>
             <select
               value={toolInputs.duration || '5'}
               onChange={(e) => handleInputChange('duration', e.target.value)}
@@ -142,7 +144,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
 
       {toolSlug === 'product-hunting' && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Niche or Seed query</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productSeed') || 'Product Niche or Seed query'}</label>
           <input
             ref={inputRef}
             type="text"
@@ -157,7 +159,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
 
       {toolSlug === 'roman-urdu-keywords' && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Specific Product Focus</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productFocus') || 'Specific Product Focus'}</label>
           <input
             ref={inputRef}
             type="text"
@@ -173,7 +175,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {/* Group A: Keywords & FAQs */}
       {['daraz-keywords', 'faq-generator'].includes(toolSlug) && (
         <div className="space-y-2">
-          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Focus or Seed Keywords</label>
+          <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productKeywords') || 'Product Focus or Seed Keywords'}</label>
           <input
             ref={inputRef}
             type="text"
@@ -190,7 +192,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {['product-title', 'product-description', 'benefits-generator', 'sales-copy'].includes(toolSlug) && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Name / Focus</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productNameFocus') || 'Product Name / Focus'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -202,7 +204,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Key Features / Specs</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.keyFeatures') || 'Key Features / Specs'}</label>
             <textarea
               required
               value={toolInputs.features || ''}
@@ -219,7 +221,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {['competitor-rewriter', 'customer-reply', 'negative-reply'].includes(toolSlug) && (
         <div className="space-y-2">
           <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">
-            {toolSlug === 'competitor-rewriter' ? 'Competitor Listing Text' : toolSlug === 'customer-reply' ? 'Customer Message' : 'Customer Review'}
+            {toolSlug === 'competitor-rewriter' ? (t('toolForm.competitorText') || 'Competitor Listing Text') : toolSlug === 'customer-reply' ? (t('toolForm.customerMessage') || 'Customer Message') : (t('toolForm.customerReview') || 'Customer Review')}
           </label>
           <textarea
             ref={inputRef}
@@ -243,7 +245,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'listing-optimizer' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Current Title</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.currentTitle') || 'Current Title'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -255,7 +257,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Current Description / Highlights</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.currentDesc') || 'Current Description / Highlights'}</label>
             <textarea
               required
               value={toolInputs.description || ''}
@@ -272,7 +274,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'whatsapp-broadcast' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Name</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productName') || 'Product Name'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -284,7 +286,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Details / Offer</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productOffer') || 'Product Details / Offer'}</label>
             <textarea
               required
               value={toolInputs.productDetails || ''}
@@ -295,7 +297,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Audience</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetAudience') || 'Target Audience'}</label>
             <input
               type="text"
               required
@@ -312,7 +314,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'local-ad-script' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Category</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productCategory') || 'Product Category'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -324,7 +326,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Unique Selling Proposition (USP)</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.usp') || 'Unique Selling Proposition (USP)'}</label>
             <textarea
               required
               value={toolInputs.usp || ''}
@@ -335,7 +337,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Video Length</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.videoLength') || 'Video Length'}</label>
             <select
               value={toolInputs.videoLength || '15s'}
               onChange={(e) => handleInputChange('videoLength', e.target.value)}
@@ -353,7 +355,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'wholesale-negotiation' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product to Source</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productToSource') || 'Product to Source'}</label>
             <input
               ref={inputRef}
               type="text"
@@ -365,7 +367,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Expected Quantity</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.expectedQty') || 'Expected Quantity'}</label>
             <input
               type="text"
               required
@@ -376,7 +378,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Target Price / Questions</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetPrice') || 'Target Price / Questions'}</label>
             <textarea
               required
               value={toolInputs.targetPriceQuestions || ''}
@@ -393,7 +395,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'social-comment-responder' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Customer&apos;s Comment</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.customerComment') || "Customer's Comment"}</label>
             <textarea
               ref={inputRef}
               required
@@ -405,7 +407,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Desired Tone</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.desiredTone') || 'Desired Tone'}</label>
             <select
               value={toolInputs.desiredTone || 'Polite'}
               onChange={(e) => handleInputChange('desiredTone', e.target.value)}
@@ -423,7 +425,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
       {toolSlug === 'product-storyboard' && (
         <>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Product Features</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productFeatures') || 'Product Features'}</label>
             <textarea
               ref={inputRef}
               required
@@ -435,7 +437,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">Customer Pain Point It Solves</label>
+            <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.painPoint') || 'Customer Pain Point It Solves'}</label>
             <textarea
               required
               value={toolInputs.customerPainPoint || ''}
@@ -459,12 +461,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
         {loading ? (
           <>
             <Loader2 className="w-4 h-4 animate-spin" />
-            Interrogating Model...
+            {t('toolPage.generating') || 'Interrogating Model...'}
           </>
         ) : (
           <>
             <Send className="w-4 h-4" />
-            Generate Output
+            {t('toolPage.generate') || 'Generate Output'}
           </>
         )}
       </button>

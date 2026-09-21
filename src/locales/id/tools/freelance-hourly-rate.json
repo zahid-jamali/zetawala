@@ -1,0 +1,96 @@
+{
+  "name": "Kalkulator Tarif per Jam Freelance",
+  "desc": "Tentukan tarif minimum, rekomendasi & premium dari target pendapatan",
+  "metadata": {
+    "title": "Kalkulator Tarif per Jam Freelance | Zetawala",
+    "description": "Tentukan tarif minimum, rekomendasi & premium dari target pendapatan",
+    "keywords": [
+      "freelance hourly rate calculator",
+      "freelancer rate calculator",
+      "billable rate calculator",
+      "how to set freelance rates"
+    ]
+  },
+  "seo": {
+    "title": "Kalkulator Tarif per Jam Freelance",
+    "description": "Tentukan tarif minimum, rekomendasi & premium dari target pendapatan",
+    "example": {
+      "input": "Goal: $5,000/mo · Expenses: $1,500 · Tax: 25% · Billable hours: 100",
+      "output": "Minimum $86.67/hr · Recommended $112.67/hr · Premium $138.67/hr · Pre-tax need $8,666.67"
+    },
+    "faqs": [
+      {
+        "q": "How is the freelance hourly rate calculated?",
+        "a": "Pre-tax monthly need = (Income goal + Expenses) ÷ (1 − Tax%). Minimum rate = Pre-tax need ÷ Billable hours. Recommended is minimum × 1.3; premium is minimum × 1.6."
+      },
+      {
+        "q": "Does this calculator use AI?",
+        "a": "No. Every result is deterministic math from your inputs. There is no LLM, API call, or estimated “market rate”—only transparent formulas that update instantly."
+      },
+      {
+        "q": "What is the difference between minimum, recommended, and premium rates?",
+        "a": "Minimum covers your goal and expenses after tax. Recommended adds a 30% buffer for unpaid work and risk. Premium (×1.6) positions you for specialized or high-demand work."
+      },
+      {
+        "q": "Who should use a freelance hourly rate calculator?",
+        "a": "Freelancers, consultants, designers, developers, and agencies who need a clear floor rate before quoting clients or converting to project pricing."
+      },
+      {
+        "q": "Should I bill every hour at the recommended rate?",
+        "a": "Use recommended as your target billable rate. Non-billable time (admin, sales, learning) is why the buffer exists—so your take-home still hits the goal."
+      },
+      {
+        "q": "Can I convert this hourly rate into a project price?",
+        "a": "Yes. Pair this tool with Zetawala’s Freelance Project Pricing Calculator to fold in hours, revisions, and contingency into a fixed quote."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Rate Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "A transparent floor rate from goals, expenses, tax, and hours.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about freelance pricing.",
+    "fields": {
+      "monthlyIncomeGoal": "Monthly Income Goal ($)",
+      "monthlyExpenses": "Monthly Expenses ($)",
+      "taxPct": "Tax (%)",
+      "billableHours": "Billable Hours per Month"
+    },
+    "nextSteps": {
+      "freelance-project-pricing": "Price a Project",
+      "salary-to-hourly": "Salary → Hourly",
+      "profit-margin": "Profit Margin"
+    },
+    "results": {
+      "headline": "Recommended hourly rate: {value}",
+      "metrics": {
+        "Minimum Hourly Rate": {
+          "title": "Minimum Hourly Rate",
+          "subtitle": "Covers goal + expenses after tax"
+        },
+        "Recommended Hourly Rate": {
+          "title": "Recommended Hourly Rate",
+          "subtitle": "Minimum × 1.3 buffer"
+        },
+        "Premium Hourly Rate": {
+          "title": "Premium Hourly Rate",
+          "subtitle": "Minimum × 1.6 positioning"
+        },
+        "Monthly Earnings @ Recommended": {
+          "title": "Monthly Earnings @ Recommended"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "ai-notes-generator": {
+    "name": "AI Notes Generator",
+    "desc": "Generate complete study notes with key points and examples",
+    "title": "Free AI Notes Generator – Study Notes by Topic & Level",
+    "description": "Generate complete study notes with key points, examples, and important concepts. Free DeepSeek-powered AI notes for any topic and education level—copy or download PDF.",
+    "example": {
+      "input": "Topic: Photosynthesis · Level: High School",
+      "output": "Structured notes with key points, examples, and concept list + word count"
+    },
+    "faqs": [
+      [
+        "What does the AI Notes Generator create?",
+        "It produces structured study notes for your topic and grade level, including key points, examples, and important concepts you can copy or export as PDF."
+      ],
+      [
+        "Is the AI Notes Generator free?",
+        "Yes. Zetawala’s AI Notes Generator is free to use and powered by the same DeepSeek integration used across the platform."
+      ],
+      [
+        "Can I download notes as PDF?",
+        "Yes. After generation you can copy the notes, regenerate, and download a PDF for offline study."
+      ],
+      [
+        "Which education levels are supported?",
+        "Enter any grade or level label (for example Middle School, High School, College, or Professional). The notes adapt tone and depth to that level."
+      ],
+      [
+        "Should I verify the notes?",
+        "Yes. AI notes are study aids—always cross-check facts against your textbook or trusted sources before exams."
+      ]
+    ]
+  },
+  "ai-quiz-generator": {
+    "name": "AI Quiz Generator",
+    "desc": "Interactive MCQs with scores, explanations, and review mode",
+    "title": "Free AI Quiz Generator – Interactive MCQs with Scores",
+    "description": "Create interactive multiple-choice quizzes from any topic. Choose easy, medium, or hard difficulty, get explanations, final score, and review mode—free with DeepSeek.",
+    "example": {
+      "input": "Topic: World War II · Difficulty: Medium · 10 questions",
+      "output": "Interactive MCQs with answers, explanations, score %, and review mode"
+    },
+    "faqs": [
+      [
+        "How does the AI Quiz Generator work?",
+        "Enter a topic, pick difficulty and question count, then take an interactive MCQ quiz with explanations, score, and percentage."
+      ],
+      [
+        "Which difficulty levels are available?",
+        "Easy, Medium, and Hard—so you can practice for classroom quizzes or more advanced review."
+      ],
+      [
+        "Can I review wrong answers?",
+        "Yes. After you finish, review mode shows correct answers and explanations for each question."
+      ],
+      [
+        "Is the quiz generator free?",
+        "Yes. It is free on Zetawala and uses DeepSeek for question generation."
+      ],
+      [
+        "How many questions can I generate?",
+        "You can request a practical set of MCQs (typically a handful up to around twenty) depending on the tool form limits."
+      ]
+    ]
+  },
+  "pdf-to-quiz": {
+    "name": "PDF to Quiz Generator",
+    "desc": "Upload a PDF and generate practice MCQs with answers",
+    "title": "Free PDF to Quiz Generator – MCQs from Your PDF",
+    "description": "Upload a PDF, preview extracted text, and generate AI practice MCQs with answers and explanations. Free PDF-to-quiz tool powered by DeepSeek.",
+    "example": {
+      "input": "Upload chapter PDF → generate 8 practice questions",
+      "output": "Interactive quiz grounded in the PDF content with score and explanations"
+    },
+    "faqs": [
+      [
+        "How does PDF to Quiz work?",
+        "Upload a PDF, preview extracted text, then generate MCQs grounded in that content. Take the quiz and review answers with explanations."
+      ],
+      [
+        "What if my PDF is scanned or corrupted?",
+        "Text-based PDFs work best. Scanned or damaged files may fail extraction—you’ll see a clear error so you can try another file."
+      ],
+      [
+        "Is PDF to Quiz free?",
+        "Yes. Extraction uses Zetawala’s existing PDF text pipeline; questions are generated with DeepSeek."
+      ],
+      [
+        "Are questions limited to the PDF?",
+        "The prompt asks the model to ground questions in the uploaded text and avoid inventing unrelated facts."
+      ],
+      [
+        "Can I preview before generating?",
+        "Yes. You can review extracted text before generating the quiz."
+      ]
+    ]
+  },
+  "ai-flashcard-generator": {
+    "name": "AI Flashcard Generator",
+    "desc": "Interactive flip flashcards from a topic or PDF",
+    "title": "Free AI Flashcard Generator – Flip Cards from Topic or PDF",
+    "description": "Generate interactive flashcards from a topic or uploaded PDF. Flip animation, shuffle, previous/next, study mode, and download—free DeepSeek-powered study cards.",
+    "example": {
+      "input": "Topic: Cell Biology · or upload lecture PDF",
+      "output": "Flip flashcards with question/answer, shuffle, and study navigation"
+    },
+    "faqs": [
+      [
+        "Can I make flashcards from a PDF?",
+        "Yes. Paste a topic or upload a PDF; the tool generates question/answer cards you can flip through."
+      ],
+      [
+        "What study features are included?",
+        "Flip animation, shuffle, previous/next navigation, and download options for offline review."
+      ],
+      [
+        "Is the flashcard generator free?",
+        "Yes. Flashcards are generated with DeepSeek through Zetawala’s shared generate API."
+      ],
+      [
+        "How many cards will I get?",
+        "The model returns a practical set of cards for the topic or PDF length. You can regenerate for a fresh set."
+      ],
+      [
+        "Who should use AI flashcards?",
+        "Students, teachers, and self-learners who want quick active-recall decks without making cards by hand."
+      ]
+    ]
+  },
+  "youtube-study-notes": {
+    "name": "AI Study Notes from YouTube",
+    "desc": "Notes, summary, key points, and quiz from a YouTube URL",
+    "title": "Free YouTube Study Notes Generator – Notes Summary & Quiz",
+    "description": "Paste a YouTube URL to get study notes, summary, key points, and a quiz from the video transcript. Free DeepSeek notes; handles missing captions gracefully.",
+    "example": {
+      "input": "https://www.youtube.com/watch?v=…",
+      "output": "Complete notes, summary, key points, and quiz from available captions"
+    },
+    "faqs": [
+      [
+        "How do YouTube study notes work?",
+        "We fetch an available transcript for the video, then DeepSeek turns it into notes, a summary, key points, and a short quiz."
+      ],
+      [
+        "What if the video has no captions?",
+        "You’ll see a clear error. Without a transcript we cannot generate accurate notes—try another video with captions enabled."
+      ],
+      [
+        "Is this free?",
+        "Yes. Transcript fetching and DeepSeek note generation are available as a free Zetawala study tool."
+      ],
+      [
+        "Do you support all YouTube URLs?",
+        "Standard watch and short URLs are supported. Invalid URLs or private/restricted videos may fail."
+      ],
+      [
+        "Are notes a substitute for watching?",
+        "No. Use them as study aids. Always verify important claims against the video and trusted sources."
+      ]
+    ]
+  },
+  "ai-assignment-generator": {
+    "name": "AI Assignment Generator",
+    "desc": "Structured assignments with headings, references, and conclusion",
+    "title": "Free AI Assignment Generator – Structured Essays & Papers",
+    "description": "Generate structured assignments with headings, body sections, references, and conclusion. Set topic and word count—copy or download PDF/DOCX-like files.",
+    "example": {
+      "input": "Topic: Climate change policy · Word count: 1200",
+      "output": "Structured assignment with headings, references section, and conclusion"
+    },
+    "faqs": [
+      [
+        "What does the assignment generator produce?",
+        "A structured draft with headings, body sections, a references section (example-style placeholders), and a conclusion sized to your word count."
+      ],
+      [
+        "Can I download the assignment?",
+        "Yes. Copy the text or download PDF / DOCX-like formats for editing offline."
+      ],
+      [
+        "Is this for submitting without editing?",
+        "No. Treat output as a draft outline. Add your research, citations, and voice—and never submit unreviewed AI work where prohibited."
+      ],
+      [
+        "Is the tool free?",
+        "Yes. It uses DeepSeek via Zetawala’s shared generate API."
+      ],
+      [
+        "Can I control length?",
+        "Yes. Set a target word count so the draft aims for your assignment requirements."
+      ]
+    ]
+  },
+  "ai-homework-solver": {
+    "name": "AI Homework Solver",
+    "desc": "Step-by-step explanations with final answer and key concepts",
+    "title": "Free AI Homework Solver – Step-by-Step Explanations",
+    "description": "Get step-by-step homework explanations, final answers, key concepts, and alternative approaches when appropriate. Educational DeepSeek help—not just bare answers.",
+    "example": {
+      "input": "Explain how to solve a linear equation word problem…",
+      "output": "Steps, final answer, key concepts, and optional alternative approach"
+    },
+    "faqs": [
+      [
+        "Does it only give the final answer?",
+        "No. It emphasizes step-by-step explanations, key concepts, and alternative approaches when useful—so you learn the method."
+      ],
+      [
+        "Is the homework solver free?",
+        "Yes. It is free on Zetawala and powered by DeepSeek."
+      ],
+      [
+        "What subjects work best?",
+        "Clear text questions in math, science, history, and language arts work well. Paste the full question for better steps."
+      ],
+      [
+        "Should I use it to cheat?",
+        "No. Use it to understand methods. Follow your school’s academic integrity rules."
+      ],
+      [
+        "What if the AI is wrong?",
+        "Always verify. AI can make mistakes—check steps against class materials."
+      ]
+    ]
+  },
+  "typing-speed-test": {
+    "name": "Typing Speed Test",
+    "desc": "WPM, accuracy, mistakes, timed tests, and downloadable certificate",
+    "title": "Free Typing Speed Test – WPM Accuracy & Certificate",
+    "description": "Test typing speed with timed passages. Track WPM, CPM, accuracy, mistakes, local history, and download a certificate—no AI required, dark-mode friendly.",
+    "example": {
+      "input": "60-second timed passage",
+      "output": "WPM, CPM, accuracy %, mistakes, local history, downloadable certificate"
+    },
+    "faqs": [
+      [
+        "How is WPM calculated?",
+        "Words per minute is based on correct characters (typically characters ÷ 5) over elapsed time, alongside CPM and accuracy."
+      ],
+      [
+        "Is history saved?",
+        "Yes. Attempts are stored in LocalStorage on your device when authentication is unavailable—leaderboard-ready architecture for later."
+      ],
+      [
+        "Can I download a certificate?",
+        "Yes. Enter your name after a completed test and download a PDF certificate with WPM and accuracy."
+      ],
+      [
+        "Does this use AI?",
+        "No. The typing speed test is pure client logic for responsive, lag-free typing."
+      ],
+      [
+        "Which durations are available?",
+        "Common timed options such as 30, 60, and 120 seconds."
+      ]
+    ]
+  },
+  "typing-master-course": {
+    "name": "Typing Master Course",
+    "desc": "Guided lessons with live feedback, accuracy gates & certificate",
+    "title": "Free Typing Master Course – Guided Lessons WPM & Certificate",
+    "description": "Professional typing tutor with 12 guided lessons, live character feedback, accuracy gates, WPM tracking, coach tips, LocalStorage progress, and a completion certificate with real stats—no AI required.",
+    "example": {
+      "input": "Home-row drill → reach 94% accuracy → unlock next lesson",
+      "output": "Live green/red feedback, WPM & accuracy, gated curriculum, certificate with avg WPM"
+    },
+    "faqs": [
+      [
+        "Will the course resume where I left off?",
+        "Yes. Lesson scores and your current lesson are saved in LocalStorage so you can continue later on the same browser."
+      ],
+      [
+        "What levels are included?",
+        "Beginner (home row & rhythm), Intermediate (top/bottom rows & capitals), and Advanced (punctuation, numbers, symbols, and a speed paragraph)."
+      ],
+      [
+        "How do I unlock the next lesson?",
+        "Finish the prompt with live feedback and meet the lesson’s minimum accuracy (usually 90–94%). Failed attempts can be retried anytime."
+      ],
+      [
+        "Is there a certificate?",
+        "Yes. After completing all lessons you can download a Typing Master certificate PDF with average WPM and accuracy."
+      ],
+      [
+        "Does this use AI?",
+        "No. Typing Master is deterministic practice logic only—no API calls."
+      ]
+    ]
+  },
+  "coding-typing-test": {
+    "name": "Coding Typing Test",
+    "desc": "Practice typing JS, Python, Java, C++, HTML, and SQL",
+    "title": "Free Coding Typing Test – JS Python Java C++ HTML SQL",
+    "description": "Practice typing real code snippets with syntax-aware display. Track WPM, accuracy, errors, difficulty, history, and download a certificate—no AI required.",
+    "example": {
+      "input": "Language: JavaScript · Difficulty: Medium",
+      "output": "Preserve formatting while typing; WPM, accuracy, history, certificate"
+    },
+    "faqs": [
+      [
+        "Which languages are supported?",
+        "JavaScript, Python, Java, C++, HTML, and SQL snippets at easy, medium, and hard difficulty."
+      ],
+      [
+        "Is formatting preserved?",
+        "Yes. You type against the exact snippet including whitespace and newlines."
+      ],
+      [
+        "Does coding typing use AI?",
+        "No. Snippets and scoring are pure client logic for low-latency practice."
+      ],
+      [
+        "Can I get a certificate?",
+        "Yes. After finishing a snippet you can download a PDF certificate with WPM and accuracy."
+      ],
+      [
+        "Is history saved locally?",
+        "Yes. Recent attempts are stored in LocalStorage on your device."
+      ]
+    ]
+  }
+}

@@ -15,6 +15,7 @@ import TurnstileWidget from '../TurnstileWidget';
 import FreelancerProfilePanel from './FreelancerProfilePanel';
 import { getFreelancerTool } from '../../../config/freelancer/tools';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
+import { useLocale } from '../../i18n/LocaleProvider';
 import {
   loadFreelancerProfile,
   profilePrefillForTool,
@@ -422,6 +423,7 @@ function emptyForm(fields) {
 }
 
 export default function FreelancerAiHost({ toolSlug }) {
+  const { t } = useLocale();
   const { toolHref } = useLocalizedHref();
   const tool = getFreelancerTool(toolSlug);
   const fields = FIELDS[toolSlug] || [];
@@ -585,7 +587,7 @@ export default function FreelancerAiHost({ toolSlug }) {
             className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white text-xs font-bold cursor-pointer inline-flex items-center justify-center gap-2"
           >
             {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-            {loading ? 'Generating…' : 'Generate'}
+            {loading ? (t('toolPage.generating') || 'Generating…') : (t('toolPage.generate') || 'Generate')}
           </button>
         </form>
 
@@ -605,7 +607,7 @@ export default function FreelancerAiHost({ toolSlug }) {
           {!loading && result && <ResultView toolSlug={toolSlug} data={result} />}
           {!loading && !result && !error && (
             <div className="p-8 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 text-sm text-slate-400">
-              Fill the form and generate to see results here.
+              {t('toolPage.awaitingHint') || 'Fill the form and generate to see results here.'}
             </div>
           )}
           {related.length > 0 && (

@@ -8,7 +8,7 @@ import path from 'node:path';
 const root = process.cwd();
 const enDir = path.join(root, 'scripts/i18n/en-split');
 const trDir = path.join(root, 'scripts/i18n/translations');
-const locales = ['es', 'fr', 'de'];
+const locales = ['es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt'];
 
 const HANDWRITTEN = new Set(
   [

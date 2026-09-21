@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Contactează asistența | Zetawala",
+    "description": "Contactați asistența Zetawala cu privire la instrumentele gratuite de SEO, YouTube, marketplace, scriere și calculatoare."
+  },
+  "back": "Înapoi la pagina principală",
+  "title": "Contactează asistența",
+  "subtitle": "Luați legătura cu echipa noastră de asistență pentru întrebări despre instrumente, date sau cont.",
+  "nameLabel": "Nume complet",
+  "namePlaceholder": "Introduceți numele dvs.",
+  "emailLabel": "Adresă de e-mail",
+  "emailPlaceholder": "tu@example.com",
+  "messageLabel": "Mesaj",
+  "messagePlaceholder": "Cu ce vă putem ajuta?",
+  "submit": "Trimite mesajul",
+  "sending": "Se trimite…",
+  "successTitle": "Mesaj trimis",
+  "successBody": "Solicitarea dvs. a fost înregistrată. O vom analiza și vom reveni în curând.",
+  "successCta": "Trimite un alt mesaj",
+  "errors": {
+    "name": "Numele complet este obligatoriu",
+    "email": "Adresa de e-mail este obligatorie",
+    "emailInvalid": "Vă rugăm să introduceți o adresă de e-mail validă",
+    "message": "Mesajul trebuie să aibă cel puțin 10 caractere",
+    "send": "Trimiterea formularului a eșuat."
+  }
+}

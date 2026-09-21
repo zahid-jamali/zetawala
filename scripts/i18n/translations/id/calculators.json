@@ -1,0 +1,434 @@
+{
+  "ai-api-cost": {
+    "name": "AI API Cost Calculator",
+    "desc": "Estimate OpenAI, Anthropic, Google & DeepSeek spend",
+    "title": "Free AI API Cost Calculator – OpenAI, Claude & More",
+    "description": "Estimate OpenAI, Anthropic, Google, DeepSeek, or custom model spend with Zetawala’s free AI API cost calculator. Enter tokens, requests per day, and pricing per 1M tokens—then see cost per request, daily, monthly, and yearly totals from deterministic math (no AI). Ideal for founders, ML engineers, and SaaS teams budgeting LLM usage. Results update instantly.",
+    "example": {
+      "input": "Provider: OpenAI · Model: gpt-4o-mini · 1,500 in / 500 out tokens · 100 requests/day · 30 days",
+      "output": "Cost/request + Daily / Monthly / Yearly totals from published $/1M input & output rates"
+    },
+    "faqs": [
+      [
+        "How does the AI API cost calculator work?",
+        "Cost per request = (Input tokens ÷ 1M × $/1M input) + (Output tokens ÷ 1M × $/1M output). Daily = cost × requests/day; monthly and yearly scale from that."
+      ],
+      [
+        "Which providers and models are supported?",
+        "Built-in rates cover common OpenAI, Anthropic, Google, and DeepSeek models. Choose Custom to enter your own input and output $/1M prices."
+      ],
+      [
+        "Is this estimate the same as my invoice?",
+        "It is a deterministic projection from the rates and usage you enter. Actual bills may differ with caching, retries, tool calls, or provider price changes."
+      ],
+      [
+        "Does the calculator call the AI APIs?",
+        "No. It never sends tokens or requests to providers. Math runs locally from your inputs and the selected rate card."
+      ],
+      [
+        "Who benefits from an AI API cost calculator?",
+        "Product teams, indie hackers, and finance leads who need a clear monthly LLM budget before shipping features or scaling traffic."
+      ],
+      [
+        "How do I lower estimated API spend?",
+        "Reduce tokens per request, cache prompts, pick cheaper models for routine tasks, or lower requests/day—then re-run the calculator to see the new monthly total instantly."
+      ]
+    ]
+  },
+  "saas-pricing": {
+    "name": "SaaS Pricing Calculator",
+    "desc": "Break-even and recommended subscription prices",
+    "title": "Free SaaS Pricing Calculator – Find Your Subscription Price",
+    "description": "Find break-even and recommended subscription prices with Zetawala’s free SaaS pricing calculator. Enter monthly operating expenses, desired profit, and expected customers—then get required MRR and profit projection from deterministic formulas (no AI). Built for founders, product managers, and solopreneurs validating pricing. Results update instantly as you tweak inputs.",
+    "example": {
+      "input": "Expenses: $5,000/mo · Desired profit: $3,000 · Expected customers: 200",
+      "output": "Break-even $25/mo · Recommended $40/mo · Required MRR $8,000 · Profit projection $3,000"
+    },
+    "faqs": [
+      [
+        "How is recommended SaaS pricing calculated?",
+        "Break-even price = Expenses ÷ Customers. Recommended price = (Expenses + Desired profit) ÷ Customers. Required MRR = Expenses + Desired profit."
+      ],
+      [
+        "Does this SaaS pricing tool use AI?",
+        "No. Prices and MRR are pure arithmetic from your numbers. There is no competitor scraping or AI “suggested” tier."
+      ],
+      [
+        "What if my customer count is a guess?",
+        "Use a conservative expected-customer figure (or model a few scenarios). Changing customers instantly revises break-even and recommended price."
+      ],
+      [
+        "Is break-even price the same as list price?",
+        "Break-even is the minimum average revenue per customer to cover expenses. List price usually sits at or above the recommended figure once you include profit goals."
+      ],
+      [
+        "Who should use a SaaS pricing calculator?",
+        "Early-stage SaaS founders, indie hackers, and ops leads setting or revisiting subscription tiers before launch or a price change."
+      ],
+      [
+        "How should I use this with LTV and CAC?",
+        "After pricing, check Customer LTV and CAC so subscription ARPU stays healthy versus acquisition cost and lifetime value."
+      ]
+    ]
+  },
+  "customer-cac": {
+    "name": "Customer Acquisition Cost (CAC) Calculator",
+    "desc": "CAC from marketing and sales spend",
+    "title": "Free Customer Acquisition Cost (CAC) Calculator",
+    "description": "Measure customer acquisition cost with Zetawala’s free CAC calculator. Add marketing spend, sales spend, and customers acquired to get CAC and total acquisition spend from deterministic math—no AI. Perfect for growth marketers, founders, and finance teams checking whether ads and sales are efficient. Totals refresh instantly.",
+    "example": {
+      "input": "Marketing: $10,000 · Sales: $5,000 · Customers acquired: 150",
+      "output": "CAC $100 · Total acquisition spend $15,000"
+    },
+    "faqs": [
+      [
+        "How is CAC calculated?",
+        "CAC = (Marketing expenses + Sales expenses) ÷ Customers acquired. Total spend is the sum of marketing and sales costs."
+      ],
+      [
+        "Does this CAC tool use AI or industry averages?",
+        "No. It only divides the spend and customer counts you enter. There are no AI estimates or benchmark overlays."
+      ],
+      [
+        "What costs should I include in marketing and sales?",
+        "Include ads, content production, tools, commissions, SDR/AE salaries, and agency fees for the period you are measuring—so CAC reflects true acquisition cost."
+      ],
+      [
+        "What is a good CAC relative to LTV?",
+        "Many businesses aim for LTV:CAC of about 3:1 or better. Use Zetawala’s LTV calculator alongside CAC to check the ratio."
+      ],
+      [
+        "Who should use a customer acquisition cost calculator?",
+        "Performance marketers, SaaS founders, ecommerce operators, and agencies reporting paid and sales-driven acquisition efficiency."
+      ],
+      [
+        "Can I calculate CAC for a single channel?",
+        "Yes. Enter only that channel’s spend and the customers it acquired. Change inputs to compare Google Ads, content, or outbound side by side."
+      ]
+    ]
+  },
+  "content-marketing-roi": {
+    "name": "Content Marketing ROI Calculator",
+    "desc": "Traffic, customers & content ROI",
+    "title": "Free Content Marketing ROI Calculator",
+    "description": "Estimate traffic, customers, revenue, and ROI from content with Zetawala’s free content marketing ROI calculator. Enter articles per month, visitors, conversion rate, revenue per customer, and content cost—all computed with deterministic math (no AI). Built for content marketers, SEO teams, and agencies. Projections update instantly.",
+    "example": {
+      "input": "8 articles/mo · 1,200 visitors each · 2% conv · $120 AOV · $2,000 content cost",
+      "output": "Traffic 9,600 · Customers 192 · Revenue $23,040 · ROI ~1,052%"
+    },
+    "faqs": [
+      [
+        "How is content marketing ROI calculated?",
+        "Traffic = Articles × Avg visitors. Customers = Traffic × Conversion%. Revenue = Customers × Avg revenue per customer. ROI% = (Revenue − Content cost) ÷ Content cost × 100 when cost > 0."
+      ],
+      [
+        "Does this tool invent traffic or rankings?",
+        "No. It only multiplies the assumptions you enter. There is no AI forecasting of search volume or rankings."
+      ],
+      [
+        "What conversion rate should I use?",
+        "Use a realistic sitewide or landing-page conversion rate from analytics. Conservative rates help avoid overstating ROI."
+      ],
+      [
+        "Who benefits from a content marketing ROI calculator?",
+        "SEO leads, content agencies, and founders justifying blog, video, or resource investment against expected pipeline revenue."
+      ],
+      [
+        "Why is ROI blank sometimes?",
+        "ROI needs a monthly content cost greater than zero. Set cost to see return; without cost you still see traffic, customers, and revenue."
+      ],
+      [
+        "Can I model one pillar page instead of a monthly cadence?",
+        "Yes—set articles to 1 and use that page’s expected visitors and conversion rate to estimate its revenue contribution."
+      ]
+    ]
+  },
+  "google-ads-profit": {
+    "name": "Google Ads Profit Calculator",
+    "desc": "Clicks, conversions, profit and ads ROI",
+    "title": "Free Google Ads Profit Calculator – ROI & Conversions",
+    "description": "Model Google Ads clicks, conversions, revenue, profit, and ROI with Zetawala’s free Google Ads profit calculator. Enter budget, average CPC, conversion rate, and order value—results use deterministic math only (no AI). Built for PPC managers, ecommerce advertisers, and agencies. Estimates refresh instantly as you adjust bids or budgets.",
+    "example": {
+      "input": "Budget: $3,000 · CPC: $1.50 · Conv rate: 3% · AOV: $85",
+      "output": "Clicks 2,000 · Conversions 60 · Revenue $5,100 · Profit $2,100 · ROI 70%"
+    },
+    "faqs": [
+      [
+        "How does the Google Ads profit formula work?",
+        "Clicks = Budget ÷ CPC. Conversions = Clicks × Conversion%. Revenue = Conversions × AOV. Profit = Revenue − Budget. ROI% = Profit ÷ Budget × 100."
+      ],
+      [
+        "Is this connected to my Google Ads account?",
+        "No. It is a planning calculator. Paste planned or historical averages to model profit before you scale spend."
+      ],
+      [
+        "Does the calculator use AI?",
+        "No. Every metric is deterministic arithmetic from budget, CPC, conversion rate, and order value."
+      ],
+      [
+        "Who should use a Google Ads profit calculator?",
+        "Performance marketers, shop owners, and agencies stress-testing whether a campaign’s CPC and conversion rate can hit profit goals."
+      ],
+      [
+        "What if profit is negative?",
+        "That means projected revenue is below budget. Lower CPC, raise conversion rate or AOV, or reduce spend—and re-run for an instant revised ROI."
+      ],
+      [
+        "Can I use this for Meta or other paid channels?",
+        "The math is channel-agnostic if you have budget, CPC (or cost per click), conversion rate, and AOV. Labels are Google Ads–oriented, but the model works the same."
+      ]
+    ]
+  },
+  "email-marketing-roi": {
+    "name": "Email Marketing ROI Calculator",
+    "desc": "Opens, clicks, customers & email ROI",
+    "title": "Free Email Marketing ROI Calculator",
+    "description": "Project opens, clicks, customers, revenue, and ROI from email campaigns with Zetawala’s free email marketing ROI calculator. Enter list size, open rate, click rate, conversion rate, order value, and campaign cost—computed with deterministic math (no AI). Ideal for ecommerce and lifecycle marketers. Results update instantly.",
+    "example": {
+      "input": "List: 25,000 · Open 28% · Click 4% · Conv 2.5% · AOV $70 · Cost $400",
+      "output": "Opens 7,000 · Clicks 1,000 · Customers 25 · Revenue $1,750 · ROI ~337.5%"
+    },
+    "faqs": [
+      [
+        "How is email marketing ROI calculated?",
+        "Opens = List × Open%. Clicks = List × Click%. Customers = Clicks × Conversion%. Revenue = Customers × AOV. ROI% = (Revenue − Campaign cost) ÷ Campaign cost × 100 when cost > 0."
+      ],
+      [
+        "Are open and click rates applied independently?",
+        "Yes. Click rate is applied to the full list (industry-style click-to-delivered), not only to openers—matching common ESP reporting."
+      ],
+      [
+        "Does this email ROI tool use AI?",
+        "No. Projections are pure formulas from the rates and list size you provide—no generative forecasts."
+      ],
+      [
+        "Who should use an email marketing ROI calculator?",
+        "Email marketers, Shopify brands, SaaS lifecycle teams, and freelancers estimating campaign or newsletter revenue before send."
+      ],
+      [
+        "Why is ROI missing when I skip campaign cost?",
+        "Revenue still calculates. Enter campaign cost (tools, copy, design, list rentals) greater than zero to unlock ROI%."
+      ],
+      [
+        "Can I model a single broadcast vs a sequence?",
+        "Use one campaign’s metrics for a broadcast, or average rates and combined cost across a short sequence for a blended ROI view."
+      ]
+    ]
+  },
+  "affiliate-earnings": {
+    "name": "Affiliate Earnings Calculator",
+    "desc": "Affiliate clicks, sales and commissions",
+    "title": "Free Affiliate Earnings Calculator – Commission Estimator",
+    "description": "Estimate affiliate clicks, sales, and commissions with Zetawala’s free affiliate earnings calculator. Enter monthly visitors, affiliate CTR, conversion rate, and average commission for deterministic monthly and yearly earnings—no AI. Built for bloggers, YouTubers, and niche site owners. Totals update instantly when traffic or rates change.",
+    "example": {
+      "input": "Visitors: 50,000 · CTR: 2% · Conv: 5% · Commission: $40",
+      "output": "Clicks 1,000 · Sales 50 · Monthly $2,000 · Yearly $24,000"
+    },
+    "faqs": [
+      [
+        "How are affiliate earnings calculated?",
+        "Clicks = Visitors × CTR%. Sales = Clicks × Conversion%. Monthly earnings = Sales × Average commission. Yearly = Monthly × 12."
+      ],
+      [
+        "Does this guarantee what a network will pay?",
+        "No. It is a planning estimate from your assumed CTR, conversion, and commission. Actual payouts depend on network rules, refunds, and cookie windows."
+      ],
+      [
+        "Is the affiliate earnings calculator AI-based?",
+        "No. Zetawala uses deterministic math only so creators can model scenarios without opaque AI projections."
+      ],
+      [
+        "Who should use an affiliate commission calculator?",
+        "Bloggers, newsletter operators, YouTubers, and comparison-site owners planning content around affiliate offers."
+      ],
+      [
+        "What CTR and conversion rates are realistic?",
+        "They vary by niche and placement. Start with analytics or network reports; model conservative rates first, then stress-test upside instantly."
+      ],
+      [
+        "Can I compare two affiliate programs?",
+        "Yes. Keep traffic and CTR fixed, change commission (and conversion if needed), and compare monthly earnings side by side."
+      ]
+    ]
+  },
+  "ecommerce-profit": {
+    "name": "Ecommerce Profit Calculator",
+    "desc": "Net profit after fees, shipping and ads",
+    "title": "Free Ecommerce Profit Calculator – Net Margin & ROI",
+    "description": "Calculate ecommerce net profit after product cost, shipping, platform fees, and ads with Zetawala’s free ecommerce profit calculator. Deterministic math only—no AI—so Shopify, WooCommerce, and marketplace sellers see true unit economics instantly. Margin and ROI update as soon as costs change.",
+    "example": {
+      "input": "Price $79 · Cost $28 · Shipping $6 · Platform fee $8 · Ads $12",
+      "output": "Net profit $25 · Margin ~31.6% · ROI ~46.3% · Total costs $54"
+    },
+    "faqs": [
+      [
+        "How is ecommerce net profit calculated?",
+        "Net profit = Selling price − (Product cost + Shipping + Platform fee + Advertising). Margin% = Net ÷ Price × 100. ROI% = Net ÷ Total costs × 100."
+      ],
+      [
+        "Does this include marketplace and ad costs?",
+        "Yes. Enter platform fees and advertising alongside COGS and shipping so the net figure reflects real take-home per order."
+      ],
+      [
+        "Is the ecommerce profit calculator AI-powered?",
+        "No. All outputs are deterministic arithmetic from your inputs—fast, transparent, and free."
+      ],
+      [
+        "Who should use this tool?",
+        "DTC brands, dropshippers, and online retailers validating SKU pricing before scaling paid traffic."
+      ],
+      [
+        "How is this different from the simple profit margin calculator?",
+        "Profit Margin compares cost vs price only. Ecommerce Profit layers shipping, fees, and ads for fuller unit economics."
+      ],
+      [
+        "Can I model a loss-making SKU?",
+        "Yes. If costs exceed price, net profit and margin go negative—useful for spotting unprofitable products early."
+      ]
+    ]
+  },
+  "amazon-fba-profit": {
+    "name": "Amazon FBA Profit Calculator",
+    "desc": "FBA net profit, margin and ROI",
+    "title": "Free Amazon FBA Profit Calculator – Fees, Margin & ROI",
+    "description": "Estimate Amazon FBA net profit, margin, and ROI after product cost, Amazon fees, and shipping with Zetawala’s free FBA profit calculator. Uses deterministic math only—no AI—so Amazon sellers can stress-test ASINs before ordering inventory. Results update instantly when fees or price change.",
+    "example": {
+      "input": "Price $34.99 · Product cost $11 · Amazon fees $12.50 · Shipping $3.20",
+      "output": "Net profit $8.29 · Margin ~23.7% · ROI on costs ~31.1%"
+    },
+    "faqs": [
+      [
+        "How is Amazon FBA profit calculated?",
+        "Net = Selling price − (Product cost + Amazon fees + Shipping). Margin% = Net ÷ Price × 100. ROI% = Net ÷ Total costs × 100."
+      ],
+      [
+        "What should I put under Amazon fees?",
+        "Sum referral fees, FBA fulfillment fees, storage, and other Amazon charges for that unit (from Seller Central fee previews or invoices)."
+      ],
+      [
+        "Does this FBA calculator use AI?",
+        "No. Profit, margin, and ROI are pure formulas from the numbers you enter—no scraped Buy Box guesses."
+      ],
+      [
+        "Who should use an Amazon FBA profit calculator?",
+        "Private-label, wholesale, and arbitrage sellers checking whether a product clears fees with enough margin and ROI."
+      ],
+      [
+        "Is shipping inbound freight or customer shipping?",
+        "Enter the per-unit shipping/logistics cost you want in the model (often inbound or prep allocated per unit). Keep it consistent across SKUs you compare."
+      ],
+      [
+        "How does this differ from the ecommerce profit tool?",
+        "FBA focuses on Amazon fee + shipping stacks common to Fulfillment by Amazon. Use Ecommerce Profit for multi-channel stores with separate ad lines."
+      ]
+    ]
+  },
+  "etsy-fee-profit": {
+    "name": "Etsy Fee & Profit Calculator",
+    "desc": "Etsy fees, net profit and margin",
+    "title": "Free Etsy Fee & Profit Calculator",
+    "description": "Calculate total Etsy fees, net profit, and margin with Zetawala’s free Etsy fee & profit calculator. Enter selling price, product cost, shipping, and Etsy fees for deterministic results—no AI. Built for Etsy sellers and makers pricing handmade or print-on-demand listings. Totals refresh instantly.",
+    "example": {
+      "input": "Price $45 · Cost $14 · Shipping $5 · Etsy fees $7.20",
+      "output": "Total fees $7.20 · Net profit $18.80 · Margin ~41.8%"
+    },
+    "faqs": [
+      [
+        "How does the Etsy fee & profit formula work?",
+        "Net profit = Selling price − Product cost − Shipping − Etsy fees. Margin% = Net ÷ Price × 100. Total fees equals the Etsy fees you enter."
+      ],
+      [
+        "What fees should I include?",
+        "Combine listing fees, transaction fees, payment processing, and offsite ads attributed to that order into one Etsy fees figure for a realistic net."
+      ],
+      [
+        "Does this calculator use AI or live Etsy rates?",
+        "No. It does not fetch live fee schedules. You enter fees so math stays transparent and under your control."
+      ],
+      [
+        "Who should use an Etsy profit calculator?",
+        "Handmade, vintage, and POD sellers setting prices that still profit after Etsy’s fee stack and shipping."
+      ],
+      [
+        "Can I include free shipping promotions?",
+        "Yes—raise the shipping cost you absorb (or lower effective price) so net profit reflects the promotion."
+      ],
+      [
+        "How is this different from eBay fee calculator?",
+        "Etsy Fee & Profit uses a single fees field plus cost and shipping. eBay Fee Calculator splits marketplace and payment processing fees and shows payout separately."
+      ]
+    ]
+  },
+  "ebay-fee": {
+    "name": "eBay Fee Calculator",
+    "desc": "eBay fees, net profit and payout",
+    "title": "Free eBay Fee Calculator – Payout & Net Profit",
+    "description": "Estimate eBay fees, seller payout, and net profit with Zetawala’s free eBay fee calculator. Enter selling price, product cost, shipping, eBay fee, and payment processing fee—deterministic math only, no AI. Ideal for eBay sellers and resellers checking final take-home. Results update instantly.",
+    "example": {
+      "input": "Price $120 · Cost $55 · Shipping $8 · eBay fee $15.60 · Payment fee $3.80",
+      "output": "Total fees $19.40 · Final payout $100.60 · Net profit $37.60"
+    },
+    "faqs": [
+      [
+        "How are eBay fees, payout, and net profit calculated?",
+        "Total fees = eBay fee + Payment processing fee. Payout = Price − Total fees. Net profit = Payout − Product cost − Shipping."
+      ],
+      [
+        "Why separate eBay fee and payment fee?",
+        "Marketplace final value fees and payment processing often appear as distinct line items. Splitting them makes payout and net profit easier to audit."
+      ],
+      [
+        "Does this eBay fee calculator use AI?",
+        "No. Every figure is deterministic arithmetic from your inputs—no live API or AI fee prediction."
+      ],
+      [
+        "Who should use an eBay fee calculator?",
+        "Power sellers, thrift resellers, and store owners validating whether a listing price covers fees, cost, and shipping."
+      ],
+      [
+        "Does payout include shipping charged to the buyer?",
+        "Model shipping carefully: if the buyer pays shipping separately, keep selling price as item price and put your shipping cost in the shipping field so net stays accurate."
+      ],
+      [
+        "Can fee percentages change by category?",
+        "Yes. Enter the dollar fee amounts for that category and price point (from eBay’s fee preview) so the calculator matches your listing."
+      ]
+    ]
+  },
+  "freelance-project-pricing": {
+    "name": "Freelance Project Pricing Calculator",
+    "desc": "Price projects with hours and contingency",
+    "title": "Free Freelance Project Pricing Calculator",
+    "description": "Price freelance projects with hours, revisions, contingency, and hourly rate using Zetawala’s free project pricing calculator. Deterministic math only—no AI—so freelancers and agencies can quote fixed fees that cover scope creep buffers. Suggested price and effective rate update instantly.",
+    "example": {
+      "input": "40 hours · $95/hr · 2 revisions × 2 hrs · Contingency 15%",
+      "output": "Suggested price $4,802 · Total hours (w/ contingency) 50.6 · Effective rate on scoped hours shown"
+    },
+    "faqs": [
+      [
+        "How is the project price calculated?",
+        "Revision hours = Revisions × Hours per revision. Base hours = Estimated hours + Revision hours. Total hours = Base × (1 + Contingency%). Price = Total hours × Hourly rate."
+      ],
+      [
+        "Why include contingency?",
+        "Contingency covers unclear scope, feedback loops, and risk so a fixed quote remains profitable when work expands slightly."
+      ],
+      [
+        "Does this project pricing tool use AI?",
+        "No. Quotes are computed from your hours, rate, revisions, and contingency percentage—transparent and instant."
+      ],
+      [
+        "Who should use a freelance project pricing calculator?",
+        "Designers, developers, writers, consultants, and studios converting hourly rates into fixed project proposals."
+      ],
+      [
+        "How do I choose an hourly rate first?",
+        "Use Zetawala’s Freelance Hourly Rate Calculator to set a floor and recommended rate, then plug that rate into this project pricer."
+      ],
+      [
+        "What is effective hourly rate in the results?",
+        "It shows price divided by scoped hours (estimate + revisions), helping you see the rate clients effectively pay before contingency padding."
+      ]
+    ]
+  }
+}

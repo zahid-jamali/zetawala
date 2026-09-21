@@ -1,0 +1,99 @@
+{
+  "name": "Kalkulačka převodu platu na hodinovou mzdu",
+  "desc": "Přepočítejte roční nebo měsíční plat na hodinovou sazbu",
+  "metadata": {
+    "title": "Kalkulačka převodu platu na hodinovou mzdu | Zetawala",
+    "description": "Přepočítejte roční nebo měsíční plat na hodinovou sazbu",
+    "keywords": [
+      "salary to hourly calculator",
+      "annual salary to hourly rate",
+      "hourly rate from salary",
+      "convert salary to hourly"
+    ]
+  },
+  "seo": {
+    "title": "Kalkulačka převodu platu na hodinovou mzdu",
+    "description": "Přepočítejte roční nebo měsíční plat na hodinovou sazbu",
+    "example": {
+      "input": "Annual $78,000 · 5 days/week · 8 hours/day · 52 weeks",
+      "output": "Hourly $37.50 · Daily $300 · Weekly $1,500 · Monthly $6,500"
+    },
+    "faqs": [
+      {
+        "q": "How is salary converted to an hourly rate?",
+        "a": "Annual salary (monthly × 12 if needed) ÷ (Weeks per year × Days per week × Hours per day) = Hourly rate. Daily, weekly, and monthly figures follow from that calendar."
+      },
+      {
+        "q": "Should freelancers use this as a billable rate?",
+        "a": "Employee-equivalent hourly is a starting point only. Freelancers usually need a higher billable rate to cover taxes, benefits, and non-billable time—use the Freelance Hourly Rate Calculator next."
+      },
+      {
+        "q": "Does this salary calculator use AI?",
+        "a": "No. Conversions are pure arithmetic from the salary and schedule you enter."
+      },
+      {
+        "q": "What weeks-per-year value should I use?",
+        "a": "52 assumes no unpaid time off. Some people use ~48–50 to reflect vacation; lowering weeks raises the implied hourly rate."
+      },
+      {
+        "q": "Who should use a salary to hourly calculator?",
+        "a": "Job seekers comparing offers, HR teams explaining pay, and freelancers translating W-2 salaries into contractor rate discussions."
+      },
+      {
+        "q": "Can I start from a monthly salary?",
+        "a": "Yes. Choose the monthly period; the tool annualizes (×12) before computing hourly, daily, and weekly equivalents."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Salary Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "Turn salary into hourly, daily, weekly, and monthly equivalents.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about salary conversion.",
+    "fields": {
+      "salaryPeriod": "Salary Period",
+      "salaryAnnual": "Annual Salary ($)",
+      "salaryMonthly": "Monthly Salary ($)",
+      "workingDaysPerWeek": "Working Days per Week",
+      "workingHoursPerDay": "Working Hours per Day",
+      "weeksPerYear": "Weeks per Year"
+    },
+    "selects": {
+      "annual": "Annual",
+      "monthly": "Monthly"
+    },
+    "nextSteps": {
+      "freelance-hourly-rate": "Freelance Hourly Rate",
+      "freelance-project-pricing": "Project Pricing",
+      "profit-margin": "Profit Margin"
+    },
+    "results": {
+      "headline": "Hourly rate: {value}",
+      "metrics": {
+        "Hourly Rate": {
+          "title": "Hourly Rate"
+        },
+        "Daily Salary": {
+          "title": "Daily Salary"
+        },
+        "Weekly Salary": {
+          "title": "Weekly Salary"
+        },
+        "Monthly Salary": {
+          "title": "Monthly Salary"
+        }
+      }
+    }
+  }
+}

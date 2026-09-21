@@ -59,7 +59,7 @@ export default function LanguageSwitcher({ compact = false }) {
           id={listId}
           role="listbox"
           aria-label={t('switcher.label')}
-          className="absolute right-0 mt-1 min-w-[11.5rem] z-[70] rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-xl py-1 overflow-hidden"
+          className="absolute right-0 mt-1 min-w-[12.5rem] max-h-[min(480px,80vh)] overflow-y-auto custom-scrollbar z-[70] rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-xl py-1"
         >
           {ENABLED_LOCALES.map((code) => {
             const meta = LOCALE_META[code];

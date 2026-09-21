@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Công cụ AI miễn phí cho YouTube, Daraz, WhatsApp & SEO | Zetawala",
+    "description": "Zetawala cung cấp các công cụ AI miễn phí cho tự động hóa YouTube, SEO Daraz, thương mại xã hội WhatsApp và kiểm toán webmaster SEO—tiêu đề, kịch bản, nghiên cứu ngách, PageSpeed và nhiều hơn nữa.",
+    "keywords": [
+      "công cụ AI miễn phí",
+      "công cụ YouTube",
+      "SEO Daraz",
+      "máy tính",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Hệ thống tự động hóa & năng suất",
+    "titleBefore": "Công cụ AI miễn phí cho YouTube, Daraz, Freelancer, Shopee &",
+    "titleAccent": "Lazada",
+    "subtitle": "Nghiên cứu, kiểm toán, công cụ học tập, quy trình làm việc cho freelancer và bộ công cụ cho người bán trên sàn thương mại điện tử tại một nơi—YouTube, Daraz, WhatsApp, SEO, máy tính, tiện ích PDF, viết AI, Upwork/Fiverr cùng SEO danh sách và tính lợi nhuận Shopee & Lazada.",
+    "searchHint": "Hoặc duyệt các danh mục ở menu trên cùng — rê chuột qua bất kỳ bộ công cụ nào để xem tất cả công cụ.",
+    "cta": "Khám phá bộ công cụ",
+    "mockupAlt": "Hình ảnh giao diện Zetawala"
+  },
+  "localizedTools": {
+    "title": "Máy tính kinh doanh bằng ngôn ngữ của bạn",
+    "subtitle": "Bắt đầu với các máy tính được dịch đầy đủ, sau đó mở bất kỳ bộ công cụ nào để xem tên bản địa hóa, siêu dữ liệu và câu hỏi thường gặp.",
+    "viewAll": "Xem tất cả máy tính"
+  },
+  "suites": {
+    "title": "Truy cập bộ công cụ SEO & Tự động hóa",
+    "subtitle": "Chọn một bộ công cụ bên dưới để vào bảng điều khiển không gian làm việc trực tiếp.",
+    "open": "Mở {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Bộ tự động hóa YouTube",
+        "body": "Nghiên cứu ngách, phân tích kênh và video, ước tính doanh thu cùng quy trình nội dung hoàn chỉnh—ý tưởng, tiêu đề, hook, kịch bản, thẻ tag, hình thu nhỏ và hình ảnh.",
+        "cta": "Mở không gian YouTube",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Bộ SEO & Chuyển đổi Daraz",
+        "body": "Tiêu đề, mô tả, từ khóa tối ưu hóa, phản hồi đánh giá và tỷ suất lợi nhuận ròng FBM/FBD cho thị trường Pakistan.",
+        "cta": "Mở không gian Daraz",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "Thông tin chuyên sâu SEO & Webmaster",
+        "body": "Kiểm toán kỹ thuật, PageSpeed, sơ đồ trang web, thẻ chuẩn hóa, liên kết nội bộ và máy tính ROI cho chủ sở hữu trang web.",
+        "cta": "Mở không gian SEO",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Máy tính kinh doanh & Tiếp thị",
+        "body": "Giá theo giờ freelance, LTV, CAC, điểm hòa vốn, tỷ suất lợi nhuận, AdSense và tính toán lợi nhuận sàn thương mại—công thức chính xác, không dùng AI.",
+        "cta": "Mở máy tính",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "q": "Zetawala là gì?",
+        "a": "Zetawala là bộ công cụ miễn phí dành cho người sáng tạo, người bán hàng, freelancer và chủ sở hữu trang web. Kết hợp tự động hóa YouTube, SEO sàn TMĐT, thương mại WhatsApp, kiểm toán SEO, máy tính kinh doanh, tiện ích PDF, viết AI và công cụ học tập."
+      },
+      {
+        "q": "Những trang nào có sẵn bằng các ngôn ngữ khác?",
+        "a": "Tất cả các trang công khai, trang chủ, trung tâm bộ công cụ, trang pháp lý, liên hệ, blog và mọi công cụ công khai đều có sẵn bằng nhiều ngôn ngữ."
+      },
+      {
+        "q": "Các máy tính có sử dụng AI không?",
+        "a": "Không. Kết quả máy tính là phép toán chính xác từ dữ liệu bạn nhập vào. Không có lệnh gọi LLM."
+      },
+      {
+        "q": "Các công cụ của Zetawala có miễn phí không?",
+        "a": "Có. Zetawala là bộ công cụ miễn phí được hỗ trợ bởi quảng cáo."
+      }
+    ]
+  }
+}

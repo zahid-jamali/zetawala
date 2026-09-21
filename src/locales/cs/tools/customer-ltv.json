@@ -1,0 +1,89 @@
+{
+  "name": "Kalkulačka celoživotní hodnoty zákazníka (LTV)",
+  "desc": "Vypočítejte LTV z hodnoty objednávky, frekvence a doby trvání",
+  "metadata": {
+    "title": "Kalkulačka celoživotní hodnoty zákazníka (LTV) | Zetawala",
+    "description": "Vypočítejte LTV z hodnoty objednávky, frekvence a doby trvání",
+    "keywords": [
+      "customer lifetime value calculator",
+      "ltv calculator",
+      "clv calculator",
+      "customer ltv"
+    ]
+  },
+  "seo": {
+    "title": "Kalkulačka celoživotní hodnoty zákazníka (LTV)",
+    "description": "Vypočítejte LTV z hodnoty objednávky, frekvence a doby trvání",
+    "example": {
+      "input": "AOV: $80 · Purchases/year: 4 · Lifespan: 3 years",
+      "output": "LTV $960 · Annual customer value $320 · Projected revenue per customer $960"
+    },
+    "faqs": [
+      {
+        "q": "What is the LTV formula used here?",
+        "a": "LTV = Average Order Value × Purchases per Year × Customer Lifespan (years). Annual value = AOV × Frequency."
+      },
+      {
+        "q": "Is this customer LTV calculator free and AI-free?",
+        "a": "Yes. It is free on Zetawala and uses only deterministic math—no machine learning or invented benchmarks."
+      },
+      {
+        "q": "How do I use LTV with CAC?",
+        "a": "A healthy rule of thumb is LTV several times higher than CAC. Pair this tool with the Customer CAC Calculator to see whether acquisition spend is sustainable."
+      },
+      {
+        "q": "Does LTV include profit margin or only revenue?",
+        "a": "This calculator projects revenue LTV from order value and repeat purchases. For contribution margins, combine with profit-margin or unit-economics tools."
+      },
+      {
+        "q": "Who benefits from calculating customer LTV?",
+        "a": "Ecommerce brands, subscription businesses, agencies, and growth marketers deciding how much they can spend to acquire a customer."
+      },
+      {
+        "q": "What if purchase frequency is irregular?",
+        "a": "Use a realistic average over a year. You can model optimistic and conservative frequency scenarios—results update instantly for each."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "LTV Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "Revenue LTV from order value, frequency, and lifespan.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about customer lifetime value.",
+    "fields": {
+      "averageOrderValue": "Average Order Value ($)",
+      "purchaseFrequency": "Purchase Frequency per Year",
+      "customerLifespan": "Customer Lifespan (Years)"
+    },
+    "nextSteps": {
+      "customer-cac": "Compare with CAC",
+      "saas-pricing": "SaaS Pricing",
+      "profit-margin": "Profit Margin"
+    },
+    "results": {
+      "headline": "Customer Lifetime Value: {value}",
+      "metrics": {
+        "Customer Lifetime Value": {
+          "title": "Customer Lifetime Value"
+        },
+        "Annual Customer Value": {
+          "title": "Annual Customer Value"
+        },
+        "Total Projected Revenue (per customer)": {
+          "title": "Total Projected Revenue (per customer)"
+        }
+      }
+    }
+  }
+}

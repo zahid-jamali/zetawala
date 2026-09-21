@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Ferramentas de IA Gratuitas para YouTube, Daraz, WhatsApp & SEO | Zetawala",
+    "description": "A Zetawala oferece ferramentas gratuitas de IA para automação do YouTube, SEO para Daraz, comércio social no WhatsApp e auditorias de webmaster SEO—títulos, roteiros, pesquisa de nicho, PageSpeed e muito mais.",
+    "keywords": [
+      "ferramentas de IA gratuitas",
+      "ferramentas do YouTube",
+      "SEO Daraz",
+      "calculadoras",
+      "Zetawala"
+    ]
+  },
+  "hero": {
+    "badge": "Sistemas Automatizados e Produtividade",
+    "titleBefore": "Ferramentas de IA Gratuitas para YouTube, Daraz, Freelancers, Shopee &",
+    "titleAccent": "Lazada",
+    "subtitle": "Pesquisa, auditorias, ferramentas de estudo, fluxos de trabalho para freelancers e kits de ferramentas para vendedores em marketplaces em um só lugar—YouTube, Daraz, WhatsApp, SEO, calculadoras, utilitários de PDF, escrita com IA, Upwork/Fiverr e matemática de lucro para Shopee e Lazada.",
+    "searchHint": "Ou navegue pelas categorias no menu superior — passe o mouse sobre qualquer suíte para abrir as ferramentas.",
+    "cta": "Explorar Ferramentas",
+    "mockupAlt": "Mockup do painel da Zetawala"
+  },
+  "localizedTools": {
+    "title": "Calculadoras de negócios no seu idioma",
+    "subtitle": "Comece com as calculadoras totalmente traduzidas e depois abra qualquer suíte para conferir nomes localizados, metadados e perguntas frequentes.",
+    "viewAll": "Ver todas as calculadoras"
+  },
+  "suites": {
+    "title": "Acesse as Suítes de SEO e Automação",
+    "subtitle": "Selecione um pacote abaixo para entrar no painel de trabalho ao vivo.",
+    "open": "Abrir {label}",
+    "items": [
+      {
+        "id": "youtube",
+        "title": "Pacote de Automação do YouTube",
+        "body": "Pesquisa de nicho, inteligência de canais e vídeos, estimativas de receita e um pipeline completo de conteúdo—ideias, títulos, ganchos, roteiros, tags e miniaturas.",
+        "cta": "Abrir Espaço do YouTube",
+        "href": "/tools/youtube/youtube-niche-finder"
+      },
+      {
+        "id": "daraz",
+        "title": "Pacote de SEO e Conversão Daraz",
+        "body": "Títulos, descrições, palavras-chave otimizadas, respostas a avaliações e margens de lucro líquido FBM/FBD para o mercado do Paquistão.",
+        "cta": "Abrir Espaço Daraz",
+        "href": "/tools/daraz/daraz-product-hunting"
+      },
+      {
+        "id": "seo",
+        "title": "Inteligência SEO e Webmaster",
+        "body": "Auditorias técnicas, PageSpeed, sitemaps, tags canônicas, links internos e calculadoras de ROI para proprietários de sites.",
+        "cta": "Abrir Espaço SEO",
+        "href": "/seo"
+      },
+      {
+        "id": "calculators",
+        "title": "Calculadoras de Negócios e Marketing",
+        "body": "Tarifas freelance, LTV, CAC, ponto de equilíbrio, margem de lucro, AdSense e matemática de lucro para marketplaces—fórmulas determinísticas, sem IA.",
+        "cta": "Abrir Calculadoras",
+        "hrefKey": "calculators"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "O que é a Zetawala?",
+        "a": "A Zetawala é um conjunto gratuito de ferramentas para criadores, vendedores, freelancers e proprietários de sites. Combina automação do YouTube, SEO para marketplaces, comércio via WhatsApp, auditorias de SEO, calculadoras de negócios e utilitários de PDF."
+      },
+      {
+        "q": "Quais páginas estão disponíveis em outros idiomas?",
+        "a": "Todas as páginas públicas, página inicial, hubs de suítes, páginas legais, contato, blog e cada ferramenta pública estão disponíveis em múltiplos idiomas."
+      },
+      {
+        "q": "As calculadoras usam inteligência artificial?",
+        "a": "Não. Os resultados das calculadoras são cálculos matemáticos determinísticos a partir dos seus dados. Não há chamadas de LLM."
+      },
+      {
+        "q": "As ferramentas da Zetawala são gratuitas?",
+        "a": "Sim. A Zetawala é um conjunto de ferramentas gratuito e mantido por anúncios."
+      }
+    ]
+  }
+}

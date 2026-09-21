@@ -1,0 +1,470 @@
+{
+  "product-hunting": {
+    "name": "Product Hunting Intelligence",
+    "desc": "Simulate demand & margins",
+    "title": "Daraz Product Hunting Tool – Winning Products Pakistan",
+    "description": "Find winning products with Zetawala's free Daraz product hunting tool for Pakistan sellers. Spot high-demand, low-competition niches, estimate sales velocity, compare sourcing costs from local markets, and shortlist items that can rank in Daraz search and Seller Center campaigns. Built for FBM, FBD, and dropshipping sellers who want data-backed product research—not guesswork—before investing inventory capital.",
+    "example": {
+      "input": "Niche: Home & Kitchen | Budget: Rs. 30,000 | Model: FBM",
+      "output": "Pick: Silicone Stretch Lids Set\nDemand: High (~12K/mo searches)\nCompetition: Low (few rated sellers)\nSource: Rs. 45 (Shah Alami)\nSell at: Rs. 299 | Est. margin: healthy after commission"
+    },
+    "faqs": [
+      [
+        "What is Daraz product hunting and why do sellers need it?",
+        "Daraz product hunting is researching items with strong buyer demand, manageable competition, and workable margins after Daraz commission and fees. Zetawala's free tool helps Pakistan sellers validate niches before sourcing stock."
+      ],
+      [
+        "What profit margin is good for Daraz Pakistan products?",
+        "Aim for roughly 30–50% net after category commission, the ~1.25% payment fee, packaging, shipping, and provincial VAT on Daraz service fees. Thin margins break during mega-sale discounts."
+      ],
+      [
+        "How does product hunting improve Best Seller Rank on Daraz?",
+        "High-demand, low-competition products convert faster. Sales velocity signals the Daraz algorithm, which can lift organic rank and BSR when listings also have solid titles, images, and Content Score."
+      ],
+      [
+        "Should I hunt for FBM or FBD (Fulfilled by Daraz) products?",
+        "Lightweight, fast movers often perform well on FBD with the Daraz Express badge. Bulkier or test SKUs may start on FBM until demand is proven. Match hunting criteria to your fulfillment model in Seller Center."
+      ],
+      [
+        "How do I judge competitor strength when hunting Daraz products?",
+        "Review the top page-one listings: ratings, review volume, Content Score gaps, pricing, and stock movement. Weak photos or thin descriptions are openings for a stronger optimized listing."
+      ],
+      [
+        "What makes a winning product for Daraz 11.11 or mega campaigns?",
+        "Impulse-friendly items with enough margin to absorb mandatory campaign discounts while staying profitable. Broad appeal and reliable supply matter more than one-off trendy SKUs."
+      ]
+    ]
+  },
+  "roman-urdu-keywords": {
+    "name": "Roman Urdu Keyword Finder",
+    "desc": "Pakistan search volume tags",
+    "title": "Roman Urdu Keywords Finder – Daraz Pakistan Search Terms",
+    "description": "Discover Roman Urdu keywords Pakistani buyers actually type on Daraz—terms English-only SEO tools miss. Zetawala's free Roman Urdu keyword tool surfaces localized phrases for titles, highlights, and Seller Center search fields so you rank for how customers search in Lahore, Karachi, Islamabad, and smaller cities. Lower PPC competition, capture long-tail intent, and pair English brand titles with Roman Urdu backend tags.",
+    "example": {
+      "input": "Product: Mini Air Cooler",
+      "output": "Roman Urdu + local terms: mini cooler, chota cooler, portable cooler price, mini cooler for room, rechargeable fan cooler, sasta AC, room cooler Pakistan"
+    },
+    "faqs": [
+      [
+        "Why are Roman Urdu keywords important for Daraz SEO?",
+        "Many Pakistan shoppers search in Roman Urdu (Urdu typed in Latin letters). Matching those phrases in your listing and Seller Center keywords improves relevance, CTR, and organic reach versus English-only competitors."
+      ],
+      [
+        "Where should I put Roman Urdu keywords on a Daraz listing?",
+        "Keep the visible title professional (often English + brand), then weave Roman Urdu into highlights, description, and backend Search Keywords / attributes in Daraz Seller Center."
+      ],
+      [
+        "Do misspellings and slang help Daraz ranking?",
+        "Yes for high-volume local variants (e.g. blootooth). Daraz search does not always correct slang—backend tags are a safe place for common misspellings without cluttering the title."
+      ],
+      [
+        "Are Roman Urdu keywords good for long-tail traffic?",
+        "Often yes. Queries like 'baal straight karne wali machine' show strong purchase intent and usually face less competition than broad English head terms."
+      ],
+      [
+        "Can I bid on Roman Urdu keywords in Daraz Sponsored ads?",
+        "Yes. Many large brands overlook Roman Urdu, so CPC can be lower and ROAS higher when your listing already matches that language in copy and tags."
+      ],
+      [
+        "Is Zetawala's Roman Urdu keyword tool free for Daraz sellers?",
+        "Yes. It is a free Zetawala tool built for Daraz Pakistan sellers researching local search language without paid keyword suites."
+      ]
+    ]
+  },
+  "product-title": {
+    "name": "Product Title Generator",
+    "desc": "Rank high-CTR optimized titles",
+    "title": "Daraz Product Title Generator – SEO Titles That Rank",
+    "description": "Create clickable, search-ready Daraz product titles with Zetawala's free Daraz product title generator. Front-load primary keywords, brand (when relevant), materials, and key features within mobile-visible length while respecting Seller Center character limits. Built to improve CTR, organic ranking, and listing clarity for Pakistan Daraz sellers—without keyword stuffing that triggers QC rejection.",
+    "example": {
+      "input": "Brand: Havit | Item: Wireless Mouse | Features: silent keys, rechargeable, 1600 DPI",
+      "output": "Havit Silent Wireless Mouse – Rechargeable Optical Mouse 1600 DPI, Ergonomic Design for Laptop & PC Gaming"
+    },
+    "faqs": [
+      [
+        "What is the Daraz product title character limit?",
+        "Daraz allows up to about 255 characters, but put your main keywords in the first 60–80 characters so they show on mobile search and category pages."
+      ],
+      [
+        "How do I write a Daraz product title that ranks?",
+        "Start with brand (if branded/Mall) or the core product keyword, then add differentiating attributes (size, material, use case). Avoid spammy repeats; optimize for humans and the Daraz search algorithm."
+      ],
+      [
+        "Can keyword stuffing get my Daraz title rejected?",
+        "Yes. Phrases like 'mouse wireless mouse cheap mouse' hurt trust and can fail QC. Use natural language with high-intent terms once each where they fit."
+      ],
+      [
+        "Should the brand name come first in a Daraz title?",
+        "For known brands and Daraz Mall items, yes—lead with the brand. For No Brand/generic goods, lead with the primary search keyword buyers type."
+      ],
+      [
+        "Is it safe to change a title after I already have sales?",
+        "Minor refinements are fine; major keyword swaps can disrupt indexing and temporary rank. Preserve proven core terms when possible."
+      ],
+      [
+        "Can I use pipes, hyphens, or emojis in Daraz titles?",
+        "Hyphens and pipes help readability. Skip emoji spam and promotional symbols—Daraz QC often rejects cluttered or claim-heavy titles."
+      ]
+    ]
+  },
+  "product-description": {
+    "name": "Product Description Generator",
+    "desc": "Bullet points & description copy",
+    "title": "Daraz Product Description Generator – SEO Highlights",
+    "description": "Write conversion-focused Daraz product descriptions and highlights with Zetawala's free generator. Structure specs, dimensions, warranty, and LSI keywords so buyers trust the listing and Seller Center Content Score improves. Ideal for Pakistan sellers who need clear Daraz description copy that reduces 'item not as described' returns and supports Lorikeet-ready formatting.",
+    "example": {
+      "input": "Product: Stainless Steel Water Bottle 750ml",
+      "output": "Highlights:\n- Double-wall vacuum insulation – cold ~24 hrs / hot ~12 hrs\n- Food-grade 18/8 stainless steel, rust-resistant\n- Leak-proof lid with secure lock for bags & gym\n- Capacity: 750ml | BPA-free | Ideal for office & travel"
+    },
+    "faqs": [
+      [
+        "How does a Daraz product description help SEO?",
+        "Detailed copy gives Daraz more text to index—secondary keywords, use cases, and attributes—so you can appear for more searches beyond the title alone."
+      ],
+      [
+        "What are Highlights in Daraz Seller Center?",
+        "Highlights are short bullets near the price (especially on desktop). They are high-visibility feature/benefit lines—keep them scannable and keyword-aware."
+      ],
+      [
+        "Can a better description reduce Daraz return rates?",
+        "Yes. Clear size, material, package contents, and usage notes set expectations and cut returns from mismatched buyer assumptions."
+      ],
+      [
+        "Should I use HTML or formatting in Daraz descriptions?",
+        "Use clean structure: short paragraphs, bullets, and bold where Seller Center/Lorikeet allows. Lifestyle images in rich content often lift conversion on mobile."
+      ],
+      [
+        "How does description length affect Daraz Content Score?",
+        "Strong Content Scores typically need sufficient description length (often 50+ words), multiple highlights, and completed attributes. Incomplete fields suppress visibility."
+      ],
+      [
+        "Is Zetawala's Daraz description generator free?",
+        "Yes. Free AI-assisted Daraz description and highlights drafting for Pakistan sellers optimizing listings in Seller Center."
+      ]
+    ]
+  },
+  "listing-optimizer": {
+    "name": "Product Listing Optimizer",
+    "desc": "Improve search ranking copy",
+    "title": "Daraz Listing Optimizer – Content Score & SEO Fix",
+    "description": "Audit and upgrade weak Daraz listings with Zetawala's free Daraz listing optimizer. Improve titles, highlights, attributes, and search terms to push Content Score toward campaign-ready quality, boost organic impressions, and align with Daraz Seller Center best practices used by top Pakistan sellers before 11.11 and other mega sales.",
+    "example": {
+      "input": "Current title: Charging cable wire black",
+      "output": "Optimized: Premium Fast Charging Micro USB Cable – 2.4A High-Speed Data Sync, Nylon Braided Cord 1.5M (Black)"
+    },
+    "faqs": [
+      [
+        "What is the Daraz Content Score?",
+        "An algorithmic quality grade (out of 100) based on title, description, images, and filled attributes. Scores roughly 80+ generally get better organic treatment than thin listings."
+      ],
+      [
+        "How often should I run a Daraz listing optimizer check?",
+        "Monthly is a solid baseline. Optimize 3–4 weeks before mega campaigns so new keywords and attributes can index before traffic spikes."
+      ],
+      [
+        "Do optional attributes in Seller Center matter for SEO?",
+        "Yes. Optional attributes power filters (color, material, warranty). Incomplete attributes hide you from filtered search results buyers use daily."
+      ],
+      [
+        "Can listing optimization lower Daraz PPC costs?",
+        "Better relevance can improve ad efficiency—highly relevant optimized listings often compete more efficiently on Sponsored Discovery than poorly matched copy."
+      ],
+      [
+        "Why was my optimized listing rejected by Daraz QC?",
+        "Common causes: restricted claims, phone numbers, external links, wrong category, or prohibited keywords. Keep copy policy-safe and category-accurate."
+      ],
+      [
+        "Is Zetawala's listing optimizer free for Daraz sellers?",
+        "Yes. Free guidance to strengthen Daraz listing SEO and Content Score without replacing your Seller Center workflow."
+      ]
+    ]
+  },
+  "competitor-rewriter": {
+    "name": "Competitor Listing Rewriter",
+    "desc": "Make competitor listings unique",
+    "title": "Daraz Competitor Rewriter – Unique Listing Copy",
+    "description": "Rewrite rival Daraz titles and descriptions into unique, SEO-strong copy with Zetawala's free competitor rewriter. Keep the search intent and keywords that already rank, add a clearer value proposition, and avoid duplicate-content or IP risk that can hurt your Daraz Seller Center account. Built for ethical competitive research—not copy-paste plagiarism.",
+    "example": {
+      "input": "Competitor title: Portable Rechargeable Juicer Blender Cup",
+      "output": "USB Rechargeable Portable Juicer Blender – 6-Blade Wireless Smoothie Maker, Travel Cup 400ml BPA-Free"
+    },
+    "faqs": [
+      [
+        "Is copying a competitor Daraz listing against policy?",
+        "Direct copy-paste can be suppressed as duplicate content and may trigger IP complaints. Always rewrite into original copy while targeting similar buyer keywords."
+      ],
+      [
+        "Why use a competitor rewriter instead of writing from scratch?",
+        "Page-one listings already proved keyword-market fit. Rewriting captures that validated intent faster while making your UVP and proof points stronger."
+      ],
+      [
+        "How do I make rewritten copy beat the original listing?",
+        "Mine their 1-star reviews for complaints, then address those fixes explicitly in your highlights and description. Pair unique copy with better images and pricing."
+      ],
+      [
+        "Will the same keywords guarantee I outrank a competitor?",
+        "No. Keywords build relevance; ranking also needs price competitiveness, imagery, reviews/sales velocity, and solid Content Score in Seller Center."
+      ],
+      [
+        "Can I reuse competitor product images on Daraz?",
+        "No. Image theft is a common IP strike path. Use original photos or properly licensed manufacturer assets edited to be clearly yours."
+      ],
+      [
+        "Is Zetawala's Daraz competitor rewriter free?",
+        "Yes. Free unique rewrite drafts for Pakistan sellers who want SEO-friendly differentiation without plagiarizing rivals."
+      ]
+    ]
+  },
+  "daraz-keywords": {
+    "name": "Daraz Keyword Generator",
+    "desc": "Generate high-traffic tags",
+    "title": "Daraz Keyword Generator – Seller Search Terms Free",
+    "description": "Generate high-intent Daraz keywords and search terms for titles, backend tags, and Seller Center fields with Zetawala's free Daraz keyword generator. Cover broad, exact, long-tail, and local variations so your product indexes for more buyer queries across Pakistan—supporting organic visibility alongside Roman Urdu and English phrases.",
+    "example": {
+      "input": "Product: LED Ring Light with stand",
+      "output": "ring light, led ring light with stand, tripod ring light, ringlight for tiktok, vlogging light, mobile lighting setup, selfie ring light Pakistan"
+    },
+    "faqs": [
+      [
+        "Where do I add search keywords in Daraz Seller Center?",
+        "On Add/Edit Product, open More Details / SEO-related sections and use Search Keywords or key attribute fields as shown in your Seller Center UI."
+      ],
+      [
+        "How should I format Daraz backend keywords?",
+        "Follow the field UI—often Enter creates tags, or space-separated terms. Avoid stuffing comma spam unless the interface explicitly expects commas."
+      ],
+      [
+        "Do backend Daraz keywords affect ranking?",
+        "Yes. They are buyer-invisible but crawled for relevance—ideal for synonyms, misspellings, and Urdu variants you do not want in the visible title."
+      ],
+      [
+        "Is there a limit to Daraz search keywords?",
+        "Yes—character or tag caps apply. Prioritize high-intent, product-relevant terms over unrelated high-volume words that hurt relevance."
+      ],
+      [
+        "Should I update keywords before Daraz mega campaigns?",
+        "Smart sellers add timely campaign-related queries (where policy-safe) weeks ahead so trend searches can match your listing during sales."
+      ],
+      [
+        "What is the best free Daraz keyword generator for Pakistan?",
+        "Zetawala's free Daraz keyword generator is built for Seller Center search terms, titles, and local buyer language—not generic global SEO lists."
+      ]
+    ]
+  },
+  "customer-reply": {
+    "name": "Customer Reply Generator",
+    "desc": "Draft customer support replies",
+    "title": "Daraz Customer Reply Generator – Chat Templates",
+    "description": "Draft polite, fast Daraz customer replies that protect Chat Response Rate (CRR) with Zetawala's free customer reply generator. Handle shipping delays, size questions, stock checks, and return queries in a professional tone Pakistan buyers trust. Strong Seller Center chat performance supports conversions and campaign eligibility.",
+    "example": {
+      "input": "Customer: Why is my delivery late?",
+      "output": "Dear Customer, thank you for reaching out. We apologize for the wait—your order has left our warehouse and is with Daraz Logistics. We are monitoring the tracking and will help if it needs escalation. We appreciate your patience!"
+    },
+    "faqs": [
+      [
+        "How does Chat Response Rate affect Daraz seller performance?",
+        "High CRR (often targeting 85–90%+) is a key Seller Center health signal. Strong response rates support visibility, trust, and campaign/eligibility metrics."
+      ],
+      [
+        "What is the Daraz chat response SLA?",
+        "Respond quickly—commonly within about 30 minutes in business hours. Fast replies win sales even when official windows differ on weekends/off-hours."
+      ],
+      [
+        "How should I reply to rude customers on Daraz chat?",
+        "Stay professional and policy-based. Do not argue. Escalate abuse via Daraz Seller Support. Use calm templates from a customer reply generator."
+      ],
+      [
+        "Can better chat replies increase Daraz conversion rate?",
+        "Yes. Many Pakistan buyers seek reassurance on stock, authenticity, and delivery. Clear, human replies reduce hesitation and cart abandonment."
+      ],
+      [
+        "Should I rely only on Quick Replies in Seller Center?",
+        "Quick Replies help acknowledgment and response-time metrics, but follow up with specific answers. Templates plus personalization work best."
+      ],
+      [
+        "Is Zetawala's Daraz customer reply tool free?",
+        "Yes. Free reply drafts for common Daraz seller chat scenarios to protect CRR and tone consistency."
+      ]
+    ]
+  },
+  "faq-generator": {
+    "name": "FAQ Generator",
+    "desc": "Generate buyer FAQs & answers",
+    "title": "Daraz FAQ Generator – Product Q&A for Listings",
+    "description": "Generate buyer-ready product FAQs with Zetawala's free FAQ generator for Daraz listings. Answer size, compatibility, warranty, battery, and package questions before customers open chat—reducing friction, returns, and support load while adding long-tail SEO phrases to your description in Seller Center.",
+    "example": {
+      "input": "Product: Bluetooth Earbuds",
+      "output": "Q: Battery backup kitna hai?\nA: Up to ~5 hours playback per charge, ~20 hours total with the magnetic charging case.\nQ: Laptop se connect hoga?\nA: Yes—Bluetooth 5.x compatible with most phones, tablets, and laptops."
+    },
+    "faqs": [
+      [
+        "Does a product FAQ section reduce Daraz returns?",
+        "Yes. Clarifying voltage, size, materials, and inclusions upfront prevents wrong purchases—the top driver of 'not as described' returns."
+      ],
+      [
+        "Where should I place FAQs on a Daraz listing?",
+        "Add them in the long-form description and optionally as a Lorikeet/info graphic for mobile shoppers who skim images first."
+      ],
+      [
+        "Can FAQs improve Daraz organic search rankings?",
+        "Conversational Q&A naturally includes long-tail queries (e.g. how to connect earbuds to laptop) that the crawler can associate with your listing."
+      ],
+      [
+        "What questions should a Daraz FAQ generator cover?",
+        "Friction points: dimensions, materials, warranty, battery life, compatibility, and what is in the box—plus common Roman Urdu phrasing buyers use."
+      ],
+      [
+        "Should FAQs promise Daraz shipping times?",
+        "Avoid guaranteeing logistics you do not control. Focus FAQs on the product; let Daraz show delivery estimates on the PDP."
+      ],
+      [
+        "Is Zetawala's FAQ generator free for Daraz sellers?",
+        "Yes. Free product FAQ drafts tailored for Daraz listing pages and buyer objection handling."
+      ]
+    ]
+  },
+  "benefits-generator": {
+    "name": "Product Benefits Generator",
+    "desc": "Craft product value features",
+    "title": "Product Benefits Generator – Features to Benefits Copy",
+    "description": "Turn dry specs into persuasive product benefits with Zetawala's free benefits generator for Daraz sellers. Translate features into lifestyle outcomes Pakistan buyers care about—loadshedding backup, monsoon protection, daily commute ease—so Highlights and ads convert better than generic competitor copy.",
+    "example": {
+      "input": "Spec: 2000mAh battery power bank",
+      "output": "Benefit: Stay powered through travel and loadshedding—extra juice for calls, maps, and WhatsApp without hunting for a socket. Ideal for office days and outstation trips."
+    },
+    "faqs": [
+      [
+        "What is the difference between a feature and a benefit?",
+        "A feature is a fact (waterproof nylon). A benefit is the outcome (keep your laptop dry in heavy monsoon rain). Buyers decide on outcomes."
+      ],
+      [
+        "Why do benefits matter more than specs on Daraz?",
+        "Specs inform; benefits persuade. Emotional clarity reduces price sensitivity and raises Add-to-Cart rates on crowded category pages."
+      ],
+      [
+        "Where should I put benefits on my Daraz listing?",
+        "Lead Highlights under the price, weave into description openers, and show benefit callouts on gallery images for mobile scrollers."
+      ],
+      [
+        "Can I use benefit copy in Daraz ads and social traffic?",
+        "Yes. Benefit-led hooks often outperform pure spec ads on Facebook/TikTok traffic sent to Daraz storefronts."
+      ],
+      [
+        "How do I find customer pain points for benefits copy?",
+        "Read competitor 1–2 star reviews. Frame your features as direct solutions to those repeated complaints."
+      ],
+      [
+        "Is Zetawala's product benefits generator free?",
+        "Yes. Free feature-to-benefit rewriting for Daraz and general ecommerce listings in Pakistan."
+      ]
+    ]
+  },
+  "negative-reply": {
+    "name": "Negative Review Reply Generator",
+    "desc": "Handle negative reviews politely",
+    "title": "Negative Review Reply Generator – Daraz Seller Responses",
+    "description": "Respond to 1-star and harsh Daraz feedback with calm, solution-first replies from Zetawala's free negative review reply generator. Protect seller rating, reassure future buyers reading public reviews, and invite resolution via chat—without arguing or pressuring review deletion against Daraz policy.",
+    "example": {
+      "input": "Review: Received broken item, bad quality",
+      "output": "Dear Customer, we are truly sorry your order arrived damaged. Quality matters to us—please message us on Daraz chat with your order ID so we can arrange a replacement under our support process right away. Thank you for giving us a chance to fix this."
+    },
+    "faqs": [
+      [
+        "Does replying to negative Daraz reviews help sales?",
+        "Yes. Future buyers read replies. A professional fix offer signals accountability and reduces fear of purchasing from your store."
+      ],
+      [
+        "Can I ask a customer to delete a negative Daraz review?",
+        "Do not pressure deletions. Resolve the issue properly, then you may politely ask if they would update feedback based on the new experience—per policy-safe practice."
+      ],
+      [
+        "How much does a 1-star review hurt Daraz ranking?",
+        "Low averages hurt conversion and algorithmic favor. Sustained poor ratings can suppress visibility as shoppers filter for higher-rated items."
+      ],
+      [
+        "Should I argue if a negative review seems unfair?",
+        "Never argue publicly. State facts politely, reference return/refund policy, and move resolution to chat. Aggression damages brand trust."
+      ],
+      [
+        "How fast should I reply to a negative Daraz review?",
+        "Aim for within 24 hours. Fast empathy can prevent escalation into formal disputes and shows active after-sales care."
+      ],
+      [
+        "Is Zetawala's negative review reply generator free?",
+        "Yes. Free professional reply drafts for Daraz seller reputation management in Pakistan."
+      ]
+    ]
+  },
+  "sales-copy": {
+    "name": "Persuasive Sales Copy Generator",
+    "desc": "Copywriting using AIDA formulas",
+    "title": "Sales Copy Generator – AIDA Copy for Daraz Listings",
+    "description": "Write persuasive Daraz sales copy with Zetawala's free AIDA sales copy generator. Use Attention–Interest–Desire–Action (and PAS) frameworks to turn browsers into buyers during flash sales and mega campaigns. Mobile-scannable, urgency-aware copy for Pakistan sellers competing in crowded niches.",
+    "example": {
+      "input": "Product: Anti-Theft Backpack",
+      "output": "AIDA: Attention – Stop making pickpockets' jobs easy.\nInterest – Hidden zippers + slash-resistant, water-ready fabric.\nDesire – Commute and bus travel with laptop & cash more secure.\nAction – Order today while stock lasts and lock in protection."
+    },
+    "faqs": [
+      [
+        "What is AIDA sales copy for Daraz products?",
+        "AIDA means Attention, Interest, Desire, Action—a proven structure to hook shoppers, present proof, build wanting, and prompt Add to Cart."
+      ],
+      [
+        "How does persuasive sales copy improve Daraz conversion rate?",
+        "It adds emotion, clarity, and urgency beyond dry specs, reducing hesitation and cart abandonment on mobile-heavy Daraz traffic."
+      ],
+      [
+        "What is the PAS framework and can I use it on Daraz?",
+        "Problem–Agitate–Solution: name the pain, intensify the cost of ignoring it, then present your product as the fix. Excellent for Highlights and ad creatives."
+      ],
+      [
+        "Should Daraz sales copy be long or short on mobile?",
+        "Short blocks win. One–two sentence paragraphs, bold key phrases, and bullets—over 80% of Daraz browsing is mobile."
+      ],
+      [
+        "Can strong AIDA copy justify a higher price on Daraz?",
+        "Often yes. Clear value, durability, and risk-reduction messaging raise perceived value versus cheaper thin listings."
+      ],
+      [
+        "Is Zetawala's AIDA sales copy generator free?",
+        "Yes. Free persuasive ecommerce copy drafts tailored for Daraz Pakistan listing and campaign use."
+      ]
+    ]
+  },
+  "profit-calculator": {
+    "name": "Daraz Profit Analyzer",
+    "desc": "Analyze margins & net profit",
+    "title": "Daraz Profit Calculator – Commission, Fees & Margin",
+    "description": "Calculate real Daraz profit after commission, payment fees, packaging, and provincial VAT with Zetawala's free Daraz profit calculator. Model FBM vs FBD costs for Pakistan sellers so every SKU in Seller Center launches with a clear net margin and ROI—not surprises after payouts.",
+    "example": {
+      "input": "Sell: Rs. 1,500 | Cost: Rs. 600 | Category: Fashion | FBM",
+      "output": "Est. Daraz fees (commission + payment): Rs. 210\nPackaging: Rs. 30 | VAT on fees: ~Rs. 35\nNet profit: ~Rs. 625 | Margin: ~41.6% | ROI on cost: ~104%"
+    },
+    "faqs": [
+      [
+        "How does the Daraz profit calculator handle commission?",
+        "Enter your sell price, product cost, and category so estimated category commission and payment fees are deducted before net profit—critical for Pakistan seller planning."
+      ],
+      [
+        "How is provincial VAT calculated on Daraz Pakistan fees?",
+        "VAT typically applies to Daraz service fees (commission, payment, related charges), not the full retail price. Rates differ by province (e.g. PRA ~16% in Punjab)."
+      ],
+      [
+        "What is the Daraz payment handling fee?",
+        "Daraz commonly charges about 1.25% payment handling on successful order value covering card, transfer, and COD-related processing."
+      ],
+      [
+        "Are there extra FBD fees beyond commission?",
+        "FBD can include inbound/outbound handling and storage by volume. You may save personal packaging costs and gain Express conversion benefits—model both sides."
+      ],
+      [
+        "What ROI should Daraz sellers target?",
+        "Many aim for ~80–100%+ ROI on sourcing cost to buffer returns, ads, and mega-campaign discounts. Exact targets depend on category and capital speed."
+      ],
+      [
+        "How do returns affect Daraz profit margins?",
+        "Returns can erase packaging costs and risk damaged stock even when some fees are adjusted. Factor return rate into your calculator assumptions before scaling."
+      ]
+    ]
+  }
+}

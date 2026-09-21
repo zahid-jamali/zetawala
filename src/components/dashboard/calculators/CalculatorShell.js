@@ -14,6 +14,7 @@ import {
   NextSteps,
   Field,
 } from './CalculatorShared';
+import { useLocale } from '../../i18n/LocaleProvider';
 
 function extractHeadlineValue(headline) {
   const text = String(headline || '');
@@ -126,6 +127,7 @@ function SalaryFields({ form, set, copy }) {
 }
 
 export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
+  const { t } = useLocale();
   const tool = getCalculatorTool(toolSlug);
   const config = calculatorFormConfig[toolSlug];
   const calculate = calculatorFns[toolSlug];
@@ -146,7 +148,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
   if (!tool || !config) {
     return (
       <div className="p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <p className="text-sm text-slate-500">{ui.notFound || 'Calculator not found.'}</p>
+        <p className="text-sm text-slate-500">{ui.notFound || t('toolPage.notFound') || 'Calculator not found.'}</p>
       </div>
     );
   }
@@ -174,7 +176,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
         ))}
 
         <p className="text-[10px] text-slate-500 leading-relaxed">
-          {ui.disclaimer || 'Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.'}
+          {ui.disclaimer || t('toolPage.disclaimer') || 'Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.'}
         </p>
       </div>
 
@@ -193,7 +195,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
                 </span>
               </p>
               {result.formula && (
-                <p className="text-[11px] text-slate-500">{ui.formulaLabel || 'Formula'}: {result.formula}</p>
+                <p className="text-[11px] text-slate-500">{ui.formulaLabel || t('toolPage.formula') || 'Formula'}: {result.formula}</p>
               )}
             </div>
 
@@ -206,7 +208,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
                     title={metricCopy.title || m.title}
                     value={m.value}
                     subtitle={metricCopy.subtitle || m.subtitle}
-                    badge={ui.badge || 'Zetawala Calculation'}
+                    badge={ui.badge || t('toolPage.badge') || 'Zetawala Calculation'}
                   />
                 );
               })}
@@ -214,7 +216,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
 
             {result.details?.length > 0 && (
               <div className="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 space-y-2">
-                <h4 className="text-xs font-extrabold">{ui.detailsTitle || 'Details'}</h4>
+                <h4 className="text-xs font-extrabold">{ui.detailsTitle || t('toolPage.details') || 'Details'}</h4>
                 <ul className="list-disc pl-4 text-xs text-slate-600 dark:text-slate-300 space-y-1">
                   {result.details.map((d) => (
                     <li key={d}>{d}</li>
@@ -225,7 +227,7 @@ export default function CalculatorShell({ toolSlug, locale, toolCopy }) {
 
             <NextSteps
               locale={locale}
-              title={ui.nextStepsTitle}
+              title={ui.nextStepsTitle || t('toolPage.nextSteps')}
               links={(config.nextSteps || []).map((link) => ({
                 ...link,
                 label: nextCopy[link.slug] || link.label,

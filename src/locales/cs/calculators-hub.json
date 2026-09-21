@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Bezplatné obchodní kalkulačky – Freelance, SaaS, Reklamy a E-commerce | Zetawala",
+    "description": "Bezplatné obchodní a marketingové kalkulačky: hodinové sazby na volné noze, náklady na AI API, ceny SaaS, LTV, CAC, bod zvratu, zisková marže, Google Ads, AdSense, affiliate a poplatky na tržištích.",
+    "keywords": [
+      "bezplatné obchodní kalkulačky",
+      "kalkulačka hodinové sazby freelance",
+      "kalkulačka ziskové marže",
+      "kalkulačka bodu zvratu",
+      "kalkulačka příjmů adsense"
+    ]
+  },
+  "hero": {
+    "title": "Obchodní a marketingové kalkulačky",
+    "subtitle": "Okamžité výpočty sazeb pro freelancery, tvorba cen SaaS, LTV, CAC, ROI reklam, AdSense a ziskovost na tržištích—18 bezplatných nástrojů s deterministickými vzorci bez závislosti na AI.",
+    "cta": "Otevřít kalkulačku hodinové sazby"
+  },
+  "grid": {
+    "title": "Všechny kalkulačky",
+    "subtitle": "18 nástrojů pro oceňování, jednotkovou ekonomiku, návratnost investic a marže v e-commerce.",
+    "localizedBadge": "Přeloženo"
+  },
+  "pickerTitle": "Vyberte si správnou kalkulačku",
+  "pickerSubtitle": "Najděte ideální výchozí bod podle svého aktuálního cíle.",
+  "learning": {
+    "title": "Vzdělávání v oblasti cenotvorby a ROI",
+    "subtitle": "Klíčové koncepty stojící za sadou kalkulaček.",
+    "blogCta": "Přečtěte si návody na blogu",
+    "topics": [
+      {
+        "title": "Proč výpočet překonává odhady",
+        "body": "Freelanceři s nízkými sazbami často ignorují daně, neúčtovatelný čas a režijní výdaje. Jasná minimální hodinová sazba chrání vaše cash flow."
+      },
+      {
+        "title": "LTV versus CAC",
+        "body": "Zdravý růst vyžaduje, aby LTV výrazně převyšovala CAC. Před škálováním placené akvizice porovnejte obě kalkulačky."
+      },
+      {
+        "title": "Vliv poplatků na tržištích",
+        "body": "Poplatky na Amazonu, Etsy a eBay se sčítají s dopravou a reklamou. Namodelujte si čistý zisk na jednotku předem."
+      },
+      {
+        "title": "Rozpočtování AI API",
+        "body": "Ceny tokenů vypadají na požadavek zanedbatelně, ale rychle rostou s denním objemem. Odhadněte měsíční a roční výdaje před spuštěním."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Často kladené otázky",
+    "subtitle": "Běžné dotazy k sadě kalkulaček.",
+    "items": [
+      {
+        "q": "Co je sada kalkulaček na Zetawala?",
+        "a": "Je to sada 18 bezplatných deterministických kalkulaček pro freelancery, zakladatele SaaS, marketéry a e-shopy. Výsledky se počítají přímo v prohlížeči bez volání LLM."
+      },
+      {
+        "q": "Používají tyto kalkulačky AI?",
+        "a": "Ne. Veškeré výpočty probíhají lokálně z vašich zadaných údajů."
+      },
+      {
+        "q": "Kterou kalkulačkou mám začít?",
+        "a": "Freelanceři by měli začít kalkulačkou Hodinové sazby nebo Ocenění projektu. Zakladatelé SaaS obvykle začínají s Ceny SaaS, LTV a CAC."
+      },
+      {
+        "q": "Jsou výsledky garantovaně přesné?",
+        "a": "Jedná se o transparentní odhady podle standardních obchodních vzorců. Vždy ověřte specifické poplatky a daně ve svých účtech."
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Calculatoare de afaceri gratuite – Freelance, SaaS, Reclame & E-commerce | Zetawala",
+    "description": "Calculatoare gratuite de afaceri și marketing: tarife orare freelance, costuri API AI, prețuri SaaS, LTV, CAC, punct de echilibru, marjă de profit, Google Ads, AdSense, afiliere și taxe pe marketplace.",
+    "keywords": [
+      "calculatoare de afaceri gratuite",
+      "calculator tarif orar freelance",
+      "calculator marjă de profit",
+      "calculator punct de echilibru",
+      "calculator venituri adsense"
+    ]
+  },
+  "hero": {
+    "title": "Calculatoare de afaceri și marketing",
+    "subtitle": "Calcule rapide pentru tarife freelance, prețuri SaaS, LTV, CAC, rentabilitatea reclamelor, AdSense și profit pe marketplace—18 instrumente gratuite cu formule deterministe, fără AI.",
+    "cta": "Deschide calculatorul de tarif freelance"
+  },
+  "grid": {
+    "title": "Toate calculatoarele",
+    "subtitle": "18 instrumente pentru stabilirea prețurilor, economie unitară, ROI și marje de e-commerce.",
+    "localizedBadge": "Tradus"
+  },
+  "pickerTitle": "Alegeți calculatorul potrivit",
+  "pickerSubtitle": "Potriviți obiectivul dvs. cu instrumentul potrivit din suită.",
+  "learning": {
+    "title": "Învățare despre prețuri și rentabilitate",
+    "subtitle": "Concepte fundamentale din spatele trusei de calculatoare.",
+    "blogCta": "Citiți ghidurile de pe blog",
+    "topics": [
+      {
+        "title": "De ce calculul depășește presupunerile",
+        "body": "Freelancerii care stabilesc prețuri prea mici ignoră adesea taxele, timpul nefacturabil și cheltuielile. Un prag minim clar pe oră protejează fluxul de numerar."
+      },
+      {
+        "title": "LTV vs CAC",
+        "body": "O creștere sănătoasă necesită ca LTV să fie substanțial mai mare decât CAC. Comparați ambele calculatoare înainte de a mări bugetul de reclame."
+      },
+      {
+        "title": "Impactul comisioanelor de marketplace",
+        "body": "Comisioanele Amazon, Etsy și eBay se cumulează cu livrarea și reclamele. Modelați profitul net pe unitate înainte de a lista produse."
+      },
+      {
+        "title": "Bugetarea API-urilor de AI",
+        "body": "Prețul tokenurilor pare mic per solicitare, dar crește rapid odată cu volumul zilnic. Estimați cheltuielile lunare și anuale înainte de lansare."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Întrebări frecvente despre suita de Calculatoare.",
+    "items": [
+      {
+        "q": "Ce este suita de Calculatoare pe Zetawala?",
+        "a": "Este o suită de 18 calculatoare deterministe gratuite pentru freelanceri, fondatori SaaS, specialiști în marketing și vânzători e-commerce. Toate rezultatele sunt calculate în browser."
+      },
+      {
+        "q": "Aceste calculatoare folosesc inteligență artificială?",
+        "a": "Nu. Toate calculele matematice rulează local pe baza datelor introduse de dvs."
+      },
+      {
+        "q": "Cu ce calculator ar trebui să încep?",
+        "a": "Freelancerii ar trebui să înceapă cu cel de Tarif Orar sau Preț Proiect. Fondatorii SaaS încep adesea cu Prețuri SaaS, LTV și CAC."
+      },
+      {
+        "q": "Sunt rezultatele garantat exacte?",
+        "a": "Sunt estimări transparente bazate pe formule standard de afaceri. Verificați întotdeauna taxele și comisioanele exacte din conturile dvs."
+      }
+    ]
+  }
+}

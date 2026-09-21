@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Hubungi Dukungan | Zetawala",
+    "description": "Hubungi dukungan Zetawala tentang alat SEO gratis, YouTube, marketplace, penulisan, dan kalkulator."
+  },
+  "back": "Kembali ke beranda",
+  "title": "Hubungi Dukungan",
+  "subtitle": "Hubungi tim dukungan kami tentang alat, data, atau pertanyaan akun.",
+  "nameLabel": "Nama lengkap",
+  "namePlaceholder": "Masukkan nama Anda",
+  "emailLabel": "Alamat email",
+  "emailPlaceholder": "anda@example.com",
+  "messageLabel": "Pesan",
+  "messagePlaceholder": "Ada yang bisa kami bantu?",
+  "submit": "Kirim pesan",
+  "sending": "Mengirim…",
+  "successTitle": "Pesan terkirim",
+  "successBody": "Pertanyaan Anda telah dicatat. Kami akan meninjau dan segera menindaklanjutinya.",
+  "successCta": "Kirim pesan lain",
+  "errors": {
+    "name": "Nama lengkap wajib diisi",
+    "email": "Alamat email wajib diisi",
+    "emailInvalid": "Harap berikan alamat email yang valid",
+    "message": "Pesan minimal 10 karakter",
+    "send": "Gagal mengirim formulir."
+  }
+}

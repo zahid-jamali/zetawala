@@ -7,8 +7,10 @@ import { seoData } from '../../config/seo';
 import BlogCarousel from './BlogCarousel';
 import { LANG_LABELS, getWritingTool } from '../../config/writing/tools';
 import { getWritingLangPath } from '../../config/writing/languages';
+import { useLocale } from '../i18n/LocaleProvider';
 
 export default function ToolSeoSection({ toolSlug, language = null, toolCopy = null }) {
+  const { t } = useLocale();
   const base = toolCopy?.seo || seoData[toolSlug];
   if (!base) return null;
 
@@ -156,15 +158,15 @@ export default function ToolSeoSection({ toolSlug, language = null, toolCopy = n
       <section className="grid md:grid-cols-12 gap-6 items-start w-full max-w-full min-w-0">
         <div className="md:col-span-4 space-y-1">
           <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-            {toolCopy?.ui?.sectionTitle || 'Algorithm Optimization & SEO Insights'}
+            {toolCopy?.ui?.sectionTitle || t('toolPage.seoTitle')}
           </h3>
-          <p className="text-[11px] text-slate-500">{toolCopy?.ui?.sectionHint || 'How this metadata tool helps search visibility & content ranking.'}</p>
+          <p className="text-[11px] text-slate-500">{toolCopy?.ui?.sectionHint || t('toolPage.seoHint')}</p>
         </div>
         <div className="md:col-span-8 p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm text-xs leading-relaxed text-slate-700 dark:text-slate-303 space-y-3">
           <p>{data.description}</p>
           {showLangLinks && (
             <p className="text-[11px] text-slate-500 pt-1 border-t border-slate-100 dark:border-slate-800">
-              Dedicated language pages:{' '}
+              {t('toolPage.dedicatedLanguagePages') || 'Dedicated language pages:'}{' '}
               {writingTool.languages.map((code, i) => (
                 <React.Fragment key={code}>
                   {i > 0 ? ' · ' : ''}
@@ -186,17 +188,17 @@ export default function ToolSeoSection({ toolSlug, language = null, toolCopy = n
         <section className="grid md:grid-cols-12 gap-6 items-start w-full max-w-full min-w-0">
           <div className="md:col-span-4 space-y-1">
             <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-              {toolCopy?.ui?.exampleTitle || 'Practical Usage Example'}
+              {toolCopy?.ui?.exampleTitle || t('toolPage.exampleTitle')}
             </h3>
-            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.exampleHint || 'Standard input parameters and the expected optimization output.'}</p>
+            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.exampleHint || t('toolPage.exampleHint')}</p>
           </div>
           <div className="md:col-span-8 grid sm:grid-cols-2 gap-4 w-full max-w-full min-w-0">
             <div className="p-4 sm:p-5 bg-slate-50 dark:bg-slate-950/45 border border-slate-150 dark:border-slate-850 rounded-2xl space-y-2 overflow-hidden">
-              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">{toolCopy?.ui?.sampleInput || 'Sample Input'}</span>
+              <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider block">{toolCopy?.ui?.sampleInput || t('toolPage.sampleInput')}</span>
               <p className="text-xs font-mono text-slate-650 dark:text-slate-400 whitespace-pre-wrap break-words [overflow-wrap:anywhere]">{data.example.input}</p>
             </div>
             <div className="p-4 sm:p-5 bg-sky-50/30 dark:bg-sky-950/10 border border-sky-100/50 dark:border-sky-900/20 rounded-2xl space-y-2 overflow-hidden">
-              <span className="text-[9px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block">{toolCopy?.ui?.sampleOutput || 'Generated Output'}</span>
+              <span className="text-[9px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block">{toolCopy?.ui?.sampleOutput || t('toolPage.sampleOutput')}</span>
               <p className="text-xs font-mono text-slate-750 dark:text-slate-300 whitespace-pre-wrap break-words [overflow-wrap:anywhere]">{data.example.output}</p>
             </div>
           </div>
@@ -208,9 +210,9 @@ export default function ToolSeoSection({ toolSlug, language = null, toolCopy = n
         <section className="grid md:grid-cols-12 gap-6 items-start w-full max-w-full min-w-0">
           <div className="md:col-span-4 space-y-1">
             <h3 className="text-base font-black tracking-tight text-slate-900 dark:text-white">
-              {toolCopy?.ui?.faqTitle || 'Frequently Asked Questions'}
+              {toolCopy?.ui?.faqTitle || t('toolPage.faqTitle')}
             </h3>
-            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.faqHint || 'Essential answers to technical ranking & search indexing questions.'}</p>
+            <p className="text-[11px] text-slate-500">{toolCopy?.ui?.faqHint || t('toolPage.faqHint')}</p>
           </div>
           <div className="md:col-span-8 space-y-3 w-full max-w-full min-w-0">
             {data.faqs.map((faq, idx) => (

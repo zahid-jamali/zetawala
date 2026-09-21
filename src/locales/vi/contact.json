@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Liên hệ hỗ trợ | Zetawala",
+    "description": "Liên hệ hỗ trợ Zetawala về các công cụ SEO miễn phí, YouTube, sàn thương mại điện tử, viết lách và máy tính."
+  },
+  "back": "Quay lại trang chủ",
+  "title": "Liên hệ hỗ trợ",
+  "subtitle": "Liên hệ với đội ngũ hỗ trợ của chúng tôi về công cụ, dữ liệu hoặc thắc mắc tài khoản.",
+  "nameLabel": "Họ và tên",
+  "namePlaceholder": "Nhập tên của bạn",
+  "emailLabel": "Địa chỉ email",
+  "emailPlaceholder": "ban@example.com",
+  "messageLabel": "Tin nhắn",
+  "messagePlaceholder": "Chúng tôi có thể giúp gì cho bạn?",
+  "submit": "Gửi tin nhắn",
+  "sending": "Đang gửi…",
+  "successTitle": "Tin nhắn đã gửi",
+  "successBody": "Yêu cầu của bạn đã được ghi nhận. Chúng tôi sẽ xem xét và phản hồi sớm.",
+  "successCta": "Gửi tin nhắn khác",
+  "errors": {
+    "name": "Họ và tên là bắt buộc",
+    "email": "Địa chỉ email là bắt buộc",
+    "emailInvalid": "Vui lòng cung cấp địa chỉ email hợp lệ",
+    "message": "Tin nhắn phải có ít nhất 10 ký tự",
+    "send": "Gửi biểu mẫu thất bại."
+  }
+}

@@ -1,0 +1,21 @@
+# Zetawala
+
+> Zetawala is a free online platform featuring 100+ AI-powered tools and business calculators for creators, freelancers, e-commerce sellers, and webmasters.
+
+## Suites & Hubs
+
+- [Main Portal](https://www.zetawala.com/): Comprehensive creator intelligence and business calculation platform.
+- [Business & Marketing Calculators](https://www.zetawala.com/calculators): Free calculators for profit margin, break-even, customer LTV/CAC, AdSense revenue, and freelance rates.
+- [SEO & Webmaster Suite](https://www.zetawala.com/seo): Technical SEO audit, PageSpeed analysis, keyword density, broken links, robots.txt, and sitemap generator.
+- [AI Writing & Language Tools](https://www.zetawala.com/writing): AI text humanizer, AI content detector, grammar checker, paraphrasing, and Urdu transliteration.
+- [AI Study & Education](https://www.zetawala.com/study): AI notes generator, quiz maker, flashcards, typing speed test, and homework solver.
+- [Freelancer Toolkit](https://www.zetawala.com/freelancer): Upwork proposal generator, job match analyzer, profile optimizer, and Fiverr gig tools.
+- [Shopee Seller Toolkit](https://www.zetawala.com/shopee): Listing SEO, fee calculator, shipping calculator, profit margin, and chat responder.
+- [Lazada Seller Toolkit](https://www.zetawala.com/lazada): Listing optimizer, title generator, keyword finder, and profit calculator.
+- [PDF & Image Utilities](https://www.zetawala.com/pdf-utilities): PDF to Markdown, table/image extraction, EXIF metadata remover, and Excel formula tools.
+- [Blog](https://www.zetawala.com/blog): In-depth guides, ranking strategies, e-commerce playbooks, and freelancing tips.
+- [Contact Support](https://www.zetawala.com/contact): Get in touch with the Zetawala team.
+
+## Technical & Sitemaps
+
+- [XML Sitemap](https://www.zetawala.com/sitemap.xml): Complete, dynamic XML sitemap indexing all static pages, suites, tools, and blog posts with multilingual hreflang mappings.

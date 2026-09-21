@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Calculadoras de Negócios Gratuitas – Freelance, SaaS, Anúncios & E-commerce | Zetawala",
+    "description": "Calculadoras gratuitas de negócios e marketing: tarifa por hora freelance, custo de API de IA, preços de SaaS, LTV, CAC, ponto de equilíbrio, margem de lucro, Google Ads, AdSense, afiliados e taxas de marketplaces.",
+    "keywords": [
+      "calculadoras de negócios gratuitas",
+      "calculadora de tarifa por hora freelance",
+      "calculadora de margem de lucro",
+      "calculadora de ponto de equilíbrio",
+      "calculadora de receita do adsense"
+    ]
+  },
+  "hero": {
+    "title": "Calculadoras de Negócios e Marketing",
+    "subtitle": "Cálculos instantâneos de tarifas freelance, precificação SaaS, LTV, CAC, ROI de anúncios, AdSense e lucro em marketplaces—18 ferramentas gratuitas com fórmulas determinísticas, sem depender de IA.",
+    "cta": "Abrir Calculadora de Tarifa Freelance"
+  },
+  "grid": {
+    "title": "Todas as Calculadoras",
+    "subtitle": "18 ferramentas para precificação, economia unitária, ROI de marketing e margens de e-commerce.",
+    "localizedBadge": "Traduzido"
+  },
+  "pickerTitle": "Escolha a Calculadora Certa",
+  "pickerSubtitle": "Alinhe seu objetivo com o ponto de partida ideal na suíte.",
+  "learning": {
+    "title": "Aprendizado sobre Preços e ROI",
+    "subtitle": "Conceitos centrais por trás do kit de ferramentas de calculadoras.",
+    "blogCta": "Leia os guias no blog",
+    "topics": [
+      {
+        "title": "Por que calcular supera palpites",
+        "body": "Freelancers que cobram barato geralmente ignoram impostos, tempo não faturável e despesas. Um piso mínimo por hora protege seu fluxo de caixa."
+      },
+      {
+        "title": "LTV vs CAC",
+        "body": "Um crescimento saudável exige que o LTV seja significativamente superior ao CAC. Avalie ambas as métricas antes de escalar anúncios."
+      },
+      {
+        "title": "O peso das taxas de marketplaces",
+        "body": "As taxas do Mercado Livre, Amazon, Shopee e Etsy acumulam-se com frete e publicidade. Modele o lucro líquido por unidade antes de listar."
+      },
+      {
+        "title": "Orçamento de APIs de IA",
+        "body": "O custo por token parece pequeno por requisição, mas escala rapidamente com o volume diário. Estime os gastos mensais antes do lançamento."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Dúvidas comuns sobre a suíte de Calculadoras.",
+    "items": [
+      {
+        "q": "O que é a suíte de Calculadoras na Zetawala?",
+        "a": "É uma suíte de 18 calculadoras determinísticas gratuitas para freelancers, fundadores de SaaS, profissionais de marketing e vendedores online. Todo resultado é calculado no navegador."
+      },
+      {
+        "q": "Essas calculadoras usam IA?",
+        "a": "Não. Todas as contas rodam localmente com base nos seus dados informados."
+      },
+      {
+        "q": "Por qual calculadora devo começar?",
+        "a": "Freelancers devem começar pela de Tarifa por Hora ou Preço de Projeto. Fundadores de SaaS costumam iniciar com Preços SaaS, LTV e CAC."
+      },
+      {
+        "q": "Os resultados são garantidamente exatos?",
+        "a": "São estimativas transparentes a partir de fórmulas comerciais padrão. Sempre confirme taxas, impostos e métricas nas suas contas."
+      }
+    ]
+  }
+}

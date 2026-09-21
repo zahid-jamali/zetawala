@@ -13,13 +13,15 @@ export const inputClasses =
 export const labelClasses =
   'text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block';
 
-export function MetricCard({ title, value, subtitle, badge = 'Zetawala Calculation' }) {
+export function MetricCard({ title, value, subtitle, badge }) {
+  const { t } = useLocale();
+  const badgeText = badge || t('toolPage.badge') || 'Zetawala Calculation';
   return (
     <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-1">
       <div className="flex items-center justify-between gap-2">
         <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{title}</p>
         <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
-          {badge}
+          {badgeText}
         </span>
       </div>
       <p className="text-lg font-black text-slate-900 dark:text-white">{value ?? 'N/A'}</p>
@@ -39,12 +41,12 @@ export function ErrorBanner({ message }) {
 }
 
 export function NextSteps({ links = [], title, locale: localeProp }) {
-  const { locale: ctxLocale } = useLocale();
+  const { locale: ctxLocale, t } = useLocale();
   const locale = localeProp || ctxLocale || DEFAULT_LOCALE;
   if (!links.length) return null;
   return (
     <div className="p-5 rounded-3xl bg-sky-50/50 dark:bg-sky-950/10 border border-sky-100 dark:border-sky-900/30 space-y-3">
-      <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">{title || 'Recommended Next Steps'}</h4>
+      <h4 className="text-xs font-extrabold text-slate-900 dark:text-white">{title || t('toolPage.nextSteps') || 'Recommended Next Steps'}</h4>
       <div className="flex flex-wrap gap-2">
         {links.map((link) => (
           <Link

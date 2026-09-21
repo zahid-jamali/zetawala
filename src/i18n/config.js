@@ -11,16 +11,16 @@ export const SITE_URL = 'https://www.zetawala.com';
 export const DEFAULT_LOCALE = 'en';
 
 /** All locales the platform knows about (including those not yet enabled). */
-export const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'de'];
+export const SUPPORTED_LOCALES = ['en', 'es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt'];
 
 /**
  * Locales that currently expose public, indexable URLs.
  * Keep this in sync with translated content — never enable a locale
  * that would serve English copy under a translated URL.
  */
-export const ENABLED_LOCALES = ['en', 'es', 'fr', 'de'];
+export const ENABLED_LOCALES = ['en', 'es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt'];
 
-/** Non-default locales that use a URL prefix (`/es`, `/fr`, `/de`). */
+/** Non-default locales that use a URL prefix (`/es`, `/fr`, `/de`, `/id`, `/vi`, `/cs`, `/hu`, `/ro`, `/pt`). */
 export const PREFIX_LOCALES = ENABLED_LOCALES.filter((locale) => locale !== DEFAULT_LOCALE);
 
 export const LOCALE_META = {
@@ -59,6 +59,60 @@ export const LOCALE_META = {
     nativeName: 'Deutsch',
     englishName: 'German',
     hreflang: 'de',
+  },
+  id: {
+    code: 'id',
+    htmlLang: 'id',
+    ogLocale: 'id_ID',
+    dir: 'ltr',
+    nativeName: 'Bahasa Indonesia',
+    englishName: 'Indonesian',
+    hreflang: 'id',
+  },
+  vi: {
+    code: 'vi',
+    htmlLang: 'vi',
+    ogLocale: 'vi_VN',
+    dir: 'ltr',
+    nativeName: 'Tiếng Việt',
+    englishName: 'Vietnamese',
+    hreflang: 'vi',
+  },
+  cs: {
+    code: 'cs',
+    htmlLang: 'cs',
+    ogLocale: 'cs_CZ',
+    dir: 'ltr',
+    nativeName: 'Čeština',
+    englishName: 'Czech',
+    hreflang: 'cs',
+  },
+  hu: {
+    code: 'hu',
+    htmlLang: 'hu',
+    ogLocale: 'hu_HU',
+    dir: 'ltr',
+    nativeName: 'Magyar',
+    englishName: 'Hungarian',
+    hreflang: 'hu',
+  },
+  ro: {
+    code: 'ro',
+    htmlLang: 'ro',
+    ogLocale: 'ro_RO',
+    dir: 'ltr',
+    nativeName: 'Română',
+    englishName: 'Romanian',
+    hreflang: 'ro',
+  },
+  pt: {
+    code: 'pt',
+    htmlLang: 'pt-BR',
+    ogLocale: 'pt_BR',
+    dir: 'ltr',
+    nativeName: 'Português (Brasil)',
+    englishName: 'Portuguese (Brazil)',
+    hreflang: 'pt-BR',
   },
 };
 

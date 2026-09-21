@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "title": "Kontaktovat podporu | Zetawala",
+    "description": "Kontaktujte podporu Zetawala ohledně bezplatných nástrojů pro SEO, YouTube, tržiště, psaní a kalkulaček."
+  },
+  "back": "Zpět na domovskou stránku",
+  "title": "Kontaktovat podporu",
+  "subtitle": "Spojte se s naším týmem podpory ohledně nástrojů, dat nebo dotazů k účtu.",
+  "nameLabel": "Celé jméno",
+  "namePlaceholder": "Zadejte své jméno",
+  "emailLabel": "E-mailová adresa",
+  "emailPlaceholder": "vy@example.com",
+  "messageLabel": "Zpráva",
+  "messagePlaceholder": "S čím vám můžeme pomoci?",
+  "submit": "Odeslat zprávu",
+  "sending": "Odesílání…",
+  "successTitle": "Zpráva odeslána",
+  "successBody": "Váš dotaz byl zaznamenán. Prověříme jej a brzy se vám ozveme.",
+  "successCta": "Odeslat další zprávu",
+  "errors": {
+    "name": "Celé jméno je povinné",
+    "email": "E-mailová adresa je povinná",
+    "emailInvalid": "Zadejte platnou e-mailovou adresu",
+    "message": "Zpráva musí mít alespoň 10 znaků",
+    "send": "Odeslání formuláře se nezdařilo."
+  }
+}

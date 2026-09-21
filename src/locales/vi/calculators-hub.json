@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "title": "Máy tính kinh doanh miễn phí – Freelance, SaaS, Quảng cáo & TMĐT | Zetawala",
+    "description": "Máy tính kinh doanh và tiếp thị miễn phí: giá theo giờ freelance, chi phí API AI, định giá SaaS, LTV, CAC, điểm hòa vốn, tỷ suất lợi nhuận, Google Ads, AdSense, tiếp thị liên kết, phí Amazon FBA, Etsy và eBay.",
+    "keywords": [
+      "máy tính kinh doanh miễn phí",
+      "máy tính giá theo giờ freelance",
+      "máy tính tỷ suất lợi nhuận",
+      "máy tính điểm hòa vốn",
+      "máy tính doanh thu adsense"
+    ]
+  },
+  "hero": {
+    "title": "Máy tính kinh doanh & Tiếp thị",
+    "subtitle": "Tính toán nhanh giá freelance, giá SaaS, LTV, CAC, ROI quảng cáo, AdSense, thu nhập tiếp thị liên kết và lợi nhuận sàn thương mại—18 công cụ miễn phí với công thức toán học chính xác, không phụ thuộc vào AI.",
+    "cta": "Mở máy tính giá Freelance"
+  },
+  "grid": {
+    "title": "Tất cả máy tính",
+    "subtitle": "18 công cụ định giá, kinh tế đơn vị, ROI tiếp thị và biên lợi nhuận thương mại điện tử.",
+    "localizedBadge": "Đã dịch"
+  },
+  "pickerTitle": "Chọn máy tính phù hợp",
+  "pickerSubtitle": "Kết hợp mục tiêu của bạn với điểm khởi đầu thích hợp trong bộ công cụ.",
+  "learning": {
+    "title": "Kiến thức định giá & ROI",
+    "subtitle": "Các khái niệm cốt lõi đằng sau bộ công cụ máy tính.",
+    "blogCta": "Đọc hướng dẫn blog về Máy tính",
+    "topics": [
+      {
+        "title": "Tại sao tính toán chuẩn xác tốt hơn phỏng đoán",
+        "body": "Freelancer định giá thấp thường bỏ qua thuế, thời gian không tính phí và chi phí vận hành. Mức giá sàn rõ ràng sẽ bảo vệ dòng tiền của bạn."
+      },
+      {
+        "title": "LTV so với CAC",
+        "body": "Tăng trưởng lành mạnh đòi hỏi LTV cao hơn rõ rệt so với CAC. Hãy kết hợp cả hai máy tính trước khi mở rộng ngân sách quảng cáo."
+      },
+      {
+        "title": "Gánh nặng phí sàn thương mại",
+        "body": "Phí Amazon, Etsy và eBay cộng dồn với phí vận chuyển và quảng cáo. Hãy tính lợi nhuận ròng trên từng đơn vị trước khi mở rộng danh sách."
+      },
+      {
+        "title": "Dự toán chi phí API AI",
+        "body": "Giá token có vẻ nhỏ trên mỗi yêu cầu nhưng sẽ tăng nhanh theo khối lượng hàng ngày. Ước tính chi tiêu hàng tháng và hàng năm trước khi ra mắt."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Các câu hỏi phổ biến về bộ công cụ Máy tính.",
+    "items": [
+      {
+        "q": "Bộ công cụ Máy tính trên Zetawala là gì?",
+        "a": "Đây là bộ 18 máy tính công thức chính xác miễn phí dành cho freelancer, nhà sáng lập SaaS, nhà tiếp thị và người bán hàng TMĐT. Mọi kết quả đều được tính trực tiếp trong trình duyệt—không gọi LLM."
+      },
+      {
+        "q": "Các máy tính này có sử dụng AI không?",
+        "a": "Không. Tất cả các phép tính đều chạy cục bộ từ dữ liệu bạn nhập."
+      },
+      {
+        "q": "Tôi nên bắt đầu với máy tính nào?",
+        "a": "Freelancer nên bắt đầu với máy tính Giá theo giờ hoặc Định giá dự án. Nhà sáng lập SaaS thường bắt đầu với Định giá SaaS, LTV và CAC."
+      },
+      {
+        "q": "Kết quả có đảm bảo chính xác tuyệt đối không?",
+        "a": "Đây là các ước tính minh bạch từ công thức kinh doanh chuẩn mực. Hãy luôn đối chiếu với tài khoản và thuế thực tế của bạn."
+      }
+    ]
+  }
+}

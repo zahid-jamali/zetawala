@@ -16,6 +16,7 @@ import TurnstileWidget from '../TurnstileWidget';
 import { getWritingTool, LANG_LABELS, WRITING_TOOL_SLUGS } from '../../../config/writing/tools';
 import { getWritingLangPath } from '../../../config/writing/languages';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
+import { useLocale } from '../../i18n/LocaleProvider';
 import { useRouter } from 'next/navigation';
 
 const inputClasses =
@@ -71,7 +72,8 @@ function countWords(t) {
   return String(t || '').trim().split(/\s+/).filter(Boolean).length;
 }
 
-function CopyBtn({ text, label = 'Copy' }) {
+function CopyBtn({ text, label }) {
+  const { t } = useLocale();
   const [ok, setOk] = useState(false);
   if (!text) return null;
   return (
@@ -85,12 +87,13 @@ function CopyBtn({ text, label = 'Copy' }) {
       className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-bold cursor-pointer"
     >
       {ok ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5" />}
-      {ok ? 'Copied' : label}
+      {ok ? (t('toolPage.copied') || 'Copied') : (label || t('toolPage.copy') || 'Copy')}
     </button>
   );
 }
 
 function DownloadBtn({ text, filename = 'output.txt' }) {
+  const { t } = useLocale();
   if (!text) return null;
   const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
   const href = URL.createObjectURL(blob);
@@ -101,7 +104,7 @@ function DownloadBtn({ text, filename = 'output.txt' }) {
       className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-[11px] font-bold"
     >
       <Download className="w-3.5 h-3.5" />
-      Download
+      {t('toolPage.download') || 'Download'}
     </a>
   );
 }
@@ -368,6 +371,7 @@ function ResultPanel({ toolSlug, data, rejectedIds, toggleReject }) {
 }
 
 export default function WritingHost({ toolSlug, initialLanguage = null }) {
+  const { t } = useLocale();
   const { toolHref } = useLocalizedHref();
   const tool = getWritingTool(toolSlug);
   const router = useRouter();
@@ -588,7 +592,7 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
           disabled={loading || extracting || (turnstileRequired && !securityToken)}
           className="w-full py-4 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 text-white font-semibold text-sm disabled:opacity-50 cursor-pointer"
         >
-          {loading ? 'Generating…' : 'Run Tool'}
+          {loading ? (t('toolPage.generating') || 'Generating…') : (t('toolPage.runTool') || 'Run Tool')}
         </button>
       </form>
 
@@ -614,7 +618,7 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
               toggleReject={toggleReject}
             />
             <div className="p-5 rounded-3xl bg-sky-50/50 dark:bg-sky-950/10 border border-sky-100 dark:border-sky-900/30 space-y-3">
-              <h4 className="text-xs font-extrabold">Recommended Next Steps</h4>
+              <h4 className="text-xs font-extrabold">{t('toolPage.nextSteps') || 'Recommended Next Steps'}</h4>
               <div className="flex flex-wrap gap-2">
                 {(NEXT[toolSlug] || []).map((l) => (
                   <Link

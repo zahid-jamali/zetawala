@@ -33,10 +33,13 @@ import { buildLocalizedToolMetadata, buildLocalizedPageMetadata } from '../src/i
 describe('locale resolution', () => {
   it('treats English as the default unprefixed locale', () => {
     assert.equal(DEFAULT_LOCALE, 'en');
-    assert.deepEqual(PREFIX_LOCALES, ['es', 'fr', 'de']);
+    assert.deepEqual(PREFIX_LOCALES, ['es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt']);
     assert.equal(isPrefixLocale('es'), true);
+    assert.equal(isPrefixLocale('id'), true);
+    assert.equal(isPrefixLocale('pt'), true);
     assert.equal(isPrefixLocale('en'), false);
     assert.equal(normalizeLocale('ES-MX'), 'es');
+    assert.equal(normalizeLocale('pt-BR'), 'pt');
     assert.equal(normalizeLocale('it'), 'en');
     assert.equal(isEnabledLocale('zz'), false);
   });
@@ -84,14 +87,23 @@ describe('localized slug resolution', () => {
     assert.equal(resolveLocalizedPage('es', 'calculadoras').pageId, 'calculators');
     assert.equal(resolveLocalizedPage('fr', 'calculateurs').pageId, 'calculators');
     assert.equal(resolveLocalizedPage('de', 'rechner').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('id', 'kalkulator').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('vi', 'may-tinh').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('cs', 'kalkulacky').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('hu', 'kalkulatorok').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('ro', 'calculatoare').pageId, 'calculators');
+    assert.equal(resolveLocalizedPage('pt', 'calculadoras').pageId, 'calculators');
     assert.equal(resolveLocalizedPage('es', 'escritura').pageId, 'writing');
     assert.equal(resolveLocalizedPage('es', 'estudio').pageId, 'study');
     assert.equal(resolveLocalizedPage('es', 'freelance').pageId, 'freelancer');
     assert.equal(resolveLocalizedPage('es', 'freelance/upwork').pageId, 'freelancer-upwork');
     assert.equal(resolveLocalizedPage('es', 'utilidades-pdf').pageId, 'pdf-utilities');
     assert.equal(resolveLocalizedPage('es', 'contacto').pageId, 'contact');
+    assert.equal(resolveLocalizedPage('id', 'kontak').pageId, 'contact');
+    assert.equal(resolveLocalizedPage('pt', 'contato').pageId, 'contact');
     assert.equal(resolveLocalizedPage('es', 'calculators'), null);
     assert.equal(isPageLocalized('home', 'de'), true);
+    assert.equal(isPageLocalized('home', 'pt'), true);
   });
 
   it('404s unsupported locale/tool combinations via resolveLocalePath', () => {
@@ -239,7 +251,7 @@ describe('translators', () => {
 });
 
 describe('enabled locales', () => {
-  it('exposes the four launch locales', () => {
-    assert.deepEqual(ENABLED_LOCALES, ['en', 'es', 'fr', 'de']);
+  it('exposes all ten enabled locales', () => {
+    assert.deepEqual(ENABLED_LOCALES, ['en', 'es', 'fr', 'de', 'id', 'vi', 'cs', 'hu', 'ro', 'pt']);
   });
 });

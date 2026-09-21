@@ -1,0 +1,487 @@
+{
+  "seo": {
+    "metadata": {
+      "title": "Intelijen SEO & Webmaster | Zetawala",
+      "description": "Audit teknis, validasi keterindeksan, analisis konten, ukur Core Web Vitals, dan modelkan ROI—17 alat khusus dalam satu ruang kerja."
+    },
+    "hero": {
+      "title": "Intelijen SEO & Webmaster",
+      "subtitle": "Audit teknis, validasi keterindeksan, analisis konten, ukur Core Web Vitals, dan modelkan ROI—17 alat khusus dalam satu ruang kerja.",
+      "cta": "Jalankan Audit SEO Situs"
+    },
+    "grid": {
+      "title": "All SEO & Webmaster Tools",
+      "subtitle": "17 tools for audits, indexability, performance, and ROI analysis."
+    },
+    "picker": {
+      "title": "Choose the Right SEO Tool",
+      "subtitle": "Match your goal to the right starting point in the suite.",
+      "items": [
+        {
+          "title": "Start with a full-site audit",
+          "desc": "Use the SEO Website Checker or Health Score when you need a broad baseline.",
+          "slugs": [
+            "website-checker",
+            "health-score"
+          ]
+        },
+        {
+          "title": "Fix crawl & index problems",
+          "desc": "Validate sitemaps, robots.txt, canonical tags, and indexability signals.",
+          "slugs": [
+            "sitemap-tool",
+            "robots-txt-tool",
+            "canonical-indexability"
+          ]
+        },
+        {
+          "title": "Optimize pages & content",
+          "desc": "Audit titles, meta descriptions, keyword density, and on-page structure.",
+          "slugs": [
+            "title-meta-analyzer",
+            "content-audit",
+            "keyword-density"
+          ]
+        },
+        {
+          "title": "Measure performance & ROI",
+          "desc": "Check Core Web Vitals and model SEO or content ROI.",
+          "slugs": [
+            "pagespeed-analyzer",
+            "traffic-revenue",
+            "seo-roi"
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "title": "SEO Learning",
+      "subtitle": "Core concepts behind the webmaster toolkit.",
+      "topics": [
+        {
+          "title": "Technical SEO fundamentals",
+          "body": "Learn how crawlers discover pages, why sitemaps and robots.txt matter, and how canonical tags prevent duplicate content dilution."
+        },
+        {
+          "title": "Core Web Vitals & PageSpeed",
+          "body": "Understand LCP, INP, and CLS—and how lab vs field data from Google PageSpeed Insights guides performance fixes."
+        },
+        {
+          "title": "On-page & content signals",
+          "body": "Titles, meta descriptions, heading hierarchy, internal links, and keyword usage still drive relevance."
+        },
+        {
+          "title": "Webmaster workflows",
+          "body": "Prioritize fixes with an action plan and tie SEO effort to traffic and revenue estimates."
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about the SEO & Webmaster suite.",
+      "items": [
+        {
+          "q": "What is SEO & Webmaster Intelligence on Zetawala?",
+          "a": "A suite of 17 free tools covering technical audits, indexability, PageSpeed, content analysis, and ROI modeling."
+        },
+        {
+          "q": "Which tool should I run first?",
+          "a": "Start with the SEO Website Checker or Health Score Calculator, then use specialized tools based on the issues surfaced."
+        },
+        {
+          "q": "Are these tools suitable for beginners?",
+          "a": "Yes. Outputs include plain-language explanations and the SEO Action Plan produces a prioritized roadmap."
+        }
+      ]
+    }
+  },
+  "writing": {
+    "metadata": {
+      "title": "Alat Penulisan & Bahasa AI | Zetawala",
+      "description": "Humanisasi teks AI, deteksi tulisan AI, perbaiki tata bahasa, konversi Roman Urdu, ringkas, dan tulis ulang—10 alat bahasa gratis."
+    },
+    "hero": {
+      "title": "Alat Penulisan & Bahasa AI",
+      "subtitle": "Humanisasi teks AI, deteksi tulisan AI, perbaiki tata bahasa, konversi Roman Urdu, ringkas, dan tulis ulang—10 alat bahasa gratis.",
+      "cta": "Buka Humanizer AI"
+    },
+    "grid": {
+      "title": "All Writing Tools",
+      "subtitle": "Humanize, detect, polish, convert, summarize, and rewrite."
+    },
+    "picker": {
+      "title": "Choose a writing workflow",
+      "subtitle": "Start with the job you need to finish today.",
+      "items": [
+        {
+          "title": "Humanize & detect AI text",
+          "desc": "Make AI drafts sound natural, then score AI vs human writing signals.",
+          "slugs": [
+            "ai-humanizer",
+            "ai-content-detector"
+          ]
+        },
+        {
+          "title": "Polish & protect originality",
+          "desc": "Fix grammar, check plagiarism, and paraphrase.",
+          "slugs": [
+            "grammar-checker",
+            "plagiarism-checker",
+            "paraphrasing-tool"
+          ]
+        },
+        {
+          "title": "Work in Urdu & Roman Urdu",
+          "desc": "Convert between scripts and fix Roman Urdu spelling.",
+          "slugs": [
+            "roman-urdu-to-urdu",
+            "urdu-to-roman-urdu",
+            "roman-urdu-grammar"
+          ]
+        },
+        {
+          "title": "Summarize & rewrite",
+          "desc": "Compress long text or rewrite for tone, length, and SEO.",
+          "slugs": [
+            "ai-text-summarizer",
+            "ai-rewrite-tool"
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "title": "Writing notes",
+      "subtitle": "How to get better drafts from the suite.",
+      "topics": [
+        {
+          "title": "Why humanize AI drafts",
+          "body": "Raw model output often sounds repetitive. A humanizer keeps meaning while improving rhythm and natural phrasing."
+        },
+        {
+          "title": "Detector signals are estimates",
+          "body": "AI detectors score patterns, not proof of authorship. Use them as a second opinion."
+        },
+        {
+          "title": "Roman Urdu ↔ Urdu scripts",
+          "body": "Converters speed drafting while grammar tools catch common Roman Urdu mistakes."
+        },
+        {
+          "title": "Rewrite with intent",
+          "body": "Shorter, longer, professional, friendly, and SEO modes adapt the same draft for different channels."
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the writing suite.",
+      "items": [
+        {
+          "q": "What is the AI Writing suite?",
+          "a": "Ten free tools for humanizing, detecting, grammar, plagiarism, paraphrasing, Urdu conversion, summarizing, and rewriting."
+        },
+        {
+          "q": "Which tool should I start with?",
+          "a": "Start with the AI Humanizer for drafts, Grammar Checker for polish, or the Roman Urdu → Urdu converter for script work."
+        }
+      ]
+    }
+  },
+  "study": {
+    "metadata": {
+      "title": "Studi AI, Kuis & Mengetik | Zetawala",
+      "description": "Catatan, kuis, flashcard, catatan studi YouTube, bantuan PR, dan latihan mengetik—10 alat pendidikan gratis."
+    },
+    "hero": {
+      "title": "Studi AI, Kuis & Mengetik",
+      "subtitle": "Catatan, kuis, flashcard, catatan studi YouTube, bantuan PR, dan latihan mengetik—10 alat pendidikan gratis.",
+      "cta": "Buat Catatan Studi"
+    },
+    "grid": {
+      "title": "All Study Tools",
+      "subtitle": "Learn faster with notes, quizzes, and typing practice."
+    },
+    "picker": {
+      "title": "Choose a study path",
+      "subtitle": "Match the tool to how you learn.",
+      "items": [
+        {
+          "title": "Notes, quizzes & flashcards",
+          "desc": "Generate notes and interactive practice from any topic.",
+          "slugs": [
+            "ai-notes-generator",
+            "ai-quiz-generator",
+            "ai-flashcard-generator"
+          ]
+        },
+        {
+          "title": "Learn from PDFs & YouTube",
+          "desc": "Turn documents and videos into quizzes and study notes.",
+          "slugs": [
+            "pdf-to-quiz",
+            "youtube-study-notes"
+          ]
+        },
+        {
+          "title": "Assignments & homework help",
+          "desc": "Draft structured assignments and get step-by-step explanations.",
+          "slugs": [
+            "ai-assignment-generator",
+            "ai-homework-solver"
+          ]
+        },
+        {
+          "title": "Typing speed & coding practice",
+          "desc": "Timed tests, guided lessons, and code typing with certificates.",
+          "slugs": [
+            "typing-speed-test",
+            "typing-master-course",
+            "coding-typing-test"
+          ]
+        }
+      ]
+    },
+    "learning": {
+      "title": "Study tips",
+      "subtitle": "Get more from each session.",
+      "topics": [
+        {
+          "title": "Active recall beats passive reading",
+          "body": "Quizzes and flashcards force retrieval practice, which strengthens memory more than re-reading notes alone."
+        },
+        {
+          "title": "Ground AI in your sources",
+          "body": "PDF and YouTube tools work best when they stay close to extracted text—always verify facts."
+        },
+        {
+          "title": "Typing is a compounding skill",
+          "body": "Short daily practice with accuracy-first goals builds speed without bad habits."
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the study suite.",
+      "items": [
+        {
+          "q": "What is the AI Study suite?",
+          "a": "Ten free tools for notes, quizzes, flashcards, YouTube notes, assignments, homework help, and typing practice."
+        },
+        {
+          "q": "Do typing tools use AI?",
+          "a": "No. Typing Speed Test, Typing Master Course, and Coding Typing Test use deterministic client logic."
+        }
+      ]
+    }
+  },
+  "freelancer": {
+    "metadata": {
+      "title": "Toolkit Freelancer | Zetawala",
+      "description": "Proposal Upwork, gig Fiverr, perhitungan tarif, email klien, dan pelacak faktur—10 alat alur kerja profesional."
+    },
+    "hero": {
+      "title": "Toolkit Freelancer",
+      "subtitle": "Proposal Upwork, gig Fiverr, perhitungan tarif, email klien, dan pelacak faktur—10 alat alur kerja profesional.",
+      "cta": "Buka Generator Proposal Upwork"
+    },
+    "grid": {
+      "title": "All Freelancer Tools",
+      "subtitle": "20 tools across Upwork and Fiverr."
+    },
+    "picker": {
+      "title": "Pick a marketplace",
+      "subtitle": "Jump into the platform you sell on.",
+      "items": [
+        {
+          "title": "Upwork",
+          "desc": "Proposals, job match, profile, cover letters, contracts, and follow-ups.",
+          "slugs": [
+            "upwork-proposal-generator",
+            "upwork-profile-optimizer",
+            "upwork-hourly-rate-calculator"
+          ]
+        },
+        {
+          "title": "Fiverr",
+          "desc": "Gig titles, descriptions, SEO, tags, pricing, and buyer replies.",
+          "slugs": [
+            "fiverr-gig-title-generator",
+            "fiverr-gig-seo-analyzer",
+            "fiverr-pricing-generator"
+          ]
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the freelancer toolkit.",
+      "items": [
+        {
+          "q": "What is the Freelancer Toolkit?",
+          "a": "Twenty free Upwork and Fiverr tools for proposals, gigs, profiles, pricing, contracts, and client messaging."
+        },
+        {
+          "q": "Do I need an account?",
+          "a": "No. Open a tool and start drafting. AI tools use DeepSeek where generation is needed."
+        }
+      ]
+    }
+  },
+  "freelancer-upwork": {
+    "metadata": {
+      "title": "Alat Freelancer Upwork | Zetawala",
+      "description": "Proposal Upwork, pengoptimal profil, pembuka cover letter, dan kalkulator biaya—alat khusus untuk freelancer Upwork."
+    },
+    "hero": {
+      "title": "Alat Freelancer Upwork",
+      "subtitle": "Proposal Upwork, pengoptimal profil, pembuka cover letter, dan kalkulator biaya—alat khusus untuk freelancer Upwork.",
+      "cta": "Buka Generator Proposal"
+    },
+    "grid": {
+      "title": "All Upwork Tools",
+      "subtitle": "Proposals, profile, pricing, and client communication."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the Upwork toolkit.",
+      "items": [
+        {
+          "q": "Which Upwork tool should I start with?",
+          "a": "Start with the proposal generator for a live job, then use the profile optimizer and hourly rate calculator."
+        }
+      ]
+    }
+  },
+  "freelancer-fiverr": {
+    "metadata": {
+      "title": "Alat Freelancer Fiverr | Zetawala",
+      "description": "Deskripsi gig Fiverr, judul, tag, dan FAQ—tingkatkan visibilitas dan pesanan gig Anda."
+    },
+    "hero": {
+      "title": "Alat Freelancer Fiverr",
+      "subtitle": "Deskripsi gig Fiverr, judul, tag, dan FAQ—tingkatkan visibilitas dan pesanan gig Anda.",
+      "cta": "Buka Generator Gig Fiverr"
+    },
+    "grid": {
+      "title": "All Fiverr Tools",
+      "subtitle": "Gig SEO, pricing, and buyer communication."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the Fiverr toolkit.",
+      "items": [
+        {
+          "q": "Which Fiverr tool should I start with?",
+          "a": "Start with the gig title generator, then run the gig SEO analyzer and pricing generator."
+        }
+      ]
+    }
+  },
+  "shopee": {
+    "metadata": {
+      "title": "Toolkit Penjual Shopee | Zetawala",
+      "description": "Judul listing teroptimasi SEO, deskripsi produk, riset kata kunci, penganalisis SEO listing, dan kalkulator laba Shopee."
+    },
+    "hero": {
+      "title": "Toolkit Penjual Shopee",
+      "subtitle": "Judul listing teroptimasi SEO, deskripsi produk, riset kata kunci, penganalisis SEO listing, dan kalkulator laba Shopee.",
+      "cta": "Buka Generator Judul Shopee"
+    },
+    "grid": {
+      "title": "All Shopee Tools",
+      "subtitle": "Listing SEO, seller math, and chat replies."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the Shopee toolkit.",
+      "items": [
+        {
+          "q": "What is the Shopee Seller Toolkit?",
+          "a": "Ten free tools for listing SEO, keywords, profit and fee math, shipping estimates, and chat replies."
+        }
+      ]
+    }
+  },
+  "lazada": {
+    "metadata": {
+      "title": "Toolkit Penjual Lazada | Zetawala",
+      "description": "Judul listing Lazada, deskripsi produk, kata kunci, penganalisis SEO listing, dan kalkulator laba Lazada."
+    },
+    "hero": {
+      "title": "Toolkit Penjual Lazada",
+      "subtitle": "Judul listing Lazada, deskripsi produk, kata kunci, penganalisis SEO listing, dan kalkulator laba Lazada.",
+      "cta": "Buka Generator Judul Lazada"
+    },
+    "grid": {
+      "title": "All Lazada Tools",
+      "subtitle": "Listing SEO, seller math, and chat replies."
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About the Lazada toolkit.",
+      "items": [
+        {
+          "q": "What is the Lazada Seller Toolkit?",
+          "a": "Ten free tools that share the seller engine with Shopee, tuned for Lazada listings and fees."
+        }
+      ]
+    }
+  },
+  "pdf-utilities": {
+    "metadata": {
+      "title": "Utilitas PDF & Gambar | Zetawala",
+      "description": "Ekstrak teks, kompres gambar, bersihkan metadata EXIF, OCR, dan konversi dokumen—alat utilitas cepat langsung di browser."
+    },
+    "hero": {
+      "title": "Utilitas PDF & Gambar",
+      "subtitle": "Ekstrak teks, kompres gambar, bersihkan metadata EXIF, OCR, dan konversi dokumen—alat utilitas cepat langsung di browser.",
+      "cta": "Buka Utilitas PDF"
+    },
+    "grid": {
+      "title": "All PDF & Image Tools",
+      "subtitle": "Convert, extract, resize, and read images—no paid APIs."
+    },
+    "picker": {
+      "title": "Choose a utility",
+      "subtitle": "Start with the file you have.",
+      "items": [
+        {
+          "title": "PDF extractors",
+          "desc": "Markdown, tables, links, images, and metadata from PDFs.",
+          "slugs": [
+            "pdf-to-markdown",
+            "pdf-table-extractor",
+            "pdf-link-extractor"
+          ]
+        },
+        {
+          "title": "Excel & data",
+          "desc": "Formulas, Excel/JSON/CSV converters.",
+          "slugs": [
+            "excel-formula-generator",
+            "excel-to-json",
+            "csv-to-excel"
+          ]
+        },
+        {
+          "title": "Images",
+          "desc": "EXIF, palettes, social sizes, and screenshot OCR.",
+          "slugs": [
+            "image-metadata-viewer",
+            "social-image-resizer",
+            "screenshot-to-text"
+          ]
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "About PDF and image utilities.",
+      "items": [
+        {
+          "q": "Do these utilities use AI?",
+          "a": "Most run locally or on the server with deterministic libraries. Screenshot OCR uses Tesseract. No paid third-party APIs are required."
+        }
+      ]
+    }
+  }
+}

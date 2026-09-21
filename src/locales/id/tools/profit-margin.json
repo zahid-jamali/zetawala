@@ -1,0 +1,89 @@
+{
+  "name": "Kalkulator Margin Laba",
+  "desc": "Laba kotor, margin % dan markup dari biaya & harga",
+  "metadata": {
+    "title": "Kalkulator Margin Laba | Zetawala",
+    "description": "Laba kotor, margin % dan markup dari biaya & harga",
+    "keywords": [
+      "profit margin calculator",
+      "gross margin calculator",
+      "markup calculator",
+      "margin vs markup",
+      "profit percentage calculator"
+    ]
+  },
+  "seo": {
+    "title": "Kalkulator Margin Laba",
+    "description": "Laba kotor, margin % dan markup dari biaya & harga",
+    "example": {
+      "input": "Product cost: $40 · Selling price: $100",
+      "output": "Gross profit $60 · Profit margin 60% · Markup 150%"
+    },
+    "faqs": [
+      {
+        "q": "How are margin and markup calculated?",
+        "a": "Gross profit = Price − Cost. Margin% = Gross profit ÷ Price × 100. Markup% = Gross profit ÷ Cost × 100 (when cost > 0)."
+      },
+      {
+        "q": "What is the difference between margin and markup?",
+        "a": "Margin is profit as a share of selling price. Markup is profit as a share of cost. A 50% margin is not the same as a 50% markup."
+      },
+      {
+        "q": "Is this profit margin calculator AI-powered?",
+        "a": "No. It uses only deterministic arithmetic so you always know how the percentages were derived."
+      },
+      {
+        "q": "Who should use a profit margin calculator?",
+        "a": "Ecommerce sellers, wholesalers, service businesses, and anyone setting or reviewing list prices against cost of goods."
+      },
+      {
+        "q": "Does this include shipping, ads, or fees?",
+        "a": "This tool focuses on cost vs price. For full landed profitability, use the Ecommerce Profit, Amazon FBA, Etsy, or eBay calculators."
+      },
+      {
+        "q": "Can margin be negative?",
+        "a": "Yes—if cost exceeds price, gross profit and margin go negative, signaling you are selling at a loss on that unit."
+      }
+    ]
+  },
+  "ui": {
+    "formTitle": "Margin Inputs",
+    "disclaimer": "Instant local calculation — no AI calls. Results update as you type. Estimates only; verify with your own data.",
+    "formulaLabel": "Formula",
+    "detailsTitle": "Details",
+    "nextStepsTitle": "Recommended Next Steps",
+    "badge": "Zetawala Calculation",
+    "notFound": "Calculator not found.",
+    "sectionTitle": "How this calculator helps",
+    "sectionHint": "Transparent margin and markup from cost and price.",
+    "exampleTitle": "Practical usage example",
+    "exampleHint": "Sample inputs and the expected output.",
+    "sampleInput": "Sample Input",
+    "sampleOutput": "Generated Output",
+    "faqTitle": "Frequently Asked Questions",
+    "faqHint": "Clear answers about margin, markup, and pricing.",
+    "fields": {
+      "productCost": "Product Cost ($)",
+      "sellingPrice": "Selling Price ($)"
+    },
+    "nextSteps": {
+      "ecommerce-profit": "Ecommerce Profit",
+      "break-even": "Break-even",
+      "amazon-fba-profit": "Amazon FBA Profit"
+    },
+    "results": {
+      "headline": "Profit margin: {value}",
+      "metrics": {
+        "Gross Profit": {
+          "title": "Gross Profit"
+        },
+        "Profit Margin": {
+          "title": "Profit Margin"
+        },
+        "Markup": {
+          "title": "Markup"
+        }
+      }
+    }
+  }
+}
