@@ -56,7 +56,7 @@ Return ONLY a JSON object.`;
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-v4-flash",
+        model: "deepseek-v4-pro",
         messages: [
           { role: "system", content: systemInstruction },
           { role: "user", content: userPrompt },
@@ -129,7 +129,7 @@ Rules: niches must be specific (not "gaming"). Respect topicsToAvoid. Prefer nic
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-v4-flash",
+        model: "deepseek-v4-pro",
         messages: [
           {
             role: "system",
