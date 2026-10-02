@@ -5,6 +5,7 @@
  */
 
 import { toolMetadata } from '../config/toolMetadata';
+import { getToolGuide } from '../config/toolGuides';
 import { getSeoPath } from '../config/routes';
 import { getToolHreflangLanguages } from '../i18n/hreflang';
 
@@ -24,11 +25,12 @@ export function buildToolPageMetadata({
   fallbackTitle,
   fallbackDescription,
 }) {
+  const guide = getToolGuide(internalSlug);
   const meta = toolMetadata[internalSlug] || {};
   const path = getSeoPath(category, internalSlug);
   const canonicalUrl = `${SITE}${path}`;
-  const title = meta.title || fallbackTitle;
-  const description = meta.description || fallbackDescription;
+  const title = guide?.seoTitle || meta.title || fallbackTitle;
+  const description = guide?.metaDescription || meta.description || fallbackDescription;
   const keywords = meta.keywords || [];
 
   const known = Boolean(meta.title);

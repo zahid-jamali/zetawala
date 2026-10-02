@@ -8,7 +8,7 @@ import { setLoading, setError, setOutput, setToolInput } from '../../store/toolS
 import PipelineStepTracker from './PipelineStepTracker';
 import ToolInputForm from './ToolInputForm';
 import OutputSandbox from './OutputSandbox';
-import ToolSeoSection from './ToolSeoSection';
+import ToolDocumentationSection from './documentation/ToolDocumentationSection';
 import DarazProfitCalculator from './DarazProfitCalculator';
 import YoutubeIntelligenceHost, { YOUTUBE_INTELLIGENCE_SLUGS } from './youtube/YoutubeIntelligenceHost';
 import SeoToolHost, { SEO_HOST_SLUGS } from './seo/SeoToolHost';
@@ -239,8 +239,8 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
         </div>
       )}
 
-      {/* Bottom SEO Section: Description, Example and FAQs */}
-      <ToolSeoSection toolSlug={toolSlug} language={initialLanguage} toolCopy={toolCopy} />
+      {/* Bottom Technical Documentation & SEO Section */}
+      <ToolDocumentationSection toolSlug={toolSlug} language={initialLanguage} toolCopy={toolCopy} />
 
     </div>
   );

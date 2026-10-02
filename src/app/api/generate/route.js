@@ -123,7 +123,7 @@ export async function POST(request) {
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-flash",
+        model: "deepseek-v4-flash",
         messages: [
           { role: "system", content: systemInstruction },
           {
