@@ -9,6 +9,12 @@ import PipelineStepTracker from './PipelineStepTracker';
 import ToolInputForm from './ToolInputForm';
 import OutputSandbox from './OutputSandbox';
 import ToolDocumentationSection from './documentation/ToolDocumentationSection';
+import {
+  AdsterraTopBanner,
+  AdsterraBanner300x250,
+  AdsterraBanner160x300,
+  AdsterraNativeBanner,
+} from '../ads/AdsterraPlacements';
 import DarazProfitCalculator from './DarazProfitCalculator';
 import YoutubeIntelligenceHost, { YOUTUBE_INTELLIGENCE_SLUGS } from './youtube/YoutubeIntelligenceHost';
 import SeoToolHost, { SEO_HOST_SLUGS } from './seo/SeoToolHost';
@@ -179,6 +185,9 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
         locale={locale}
       />
 
+      {/* 1. Top Ad Placement: 468x60 on Desktop, 320x50 on Mobile */}
+      <AdsterraTopBanner className="my-1 sm:my-2" />
+
       {/* Main Form/Output Grid */}
       {toolSlug === 'profit-calculator' ? (
         <DarazProfitCalculator />
@@ -238,6 +247,17 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
 
         </div>
       )}
+
+      {/* 2. Mid-Page Ad Banners: 300x250 & 160x300 Skyscraper */}
+      <div className="flex flex-wrap justify-center items-center gap-6 my-6">
+        <AdsterraBanner300x250 />
+        <div className="hidden xl:block">
+          <AdsterraBanner160x300 />
+        </div>
+      </div>
+
+      {/* 3. Native Banner: 2:1 Widget Layout */}
+      <AdsterraNativeBanner className="my-6" />
 
       {/* Bottom Technical Documentation & SEO Section */}
       <ToolDocumentationSection toolSlug={toolSlug} language={initialLanguage} toolCopy={toolCopy} />

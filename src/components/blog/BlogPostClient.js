@@ -4,6 +4,12 @@ import React from 'react';
 import Link from 'next/link';
 import { Calendar, User, ArrowLeft, AlertTriangle } from 'lucide-react';
 import CommentSection from './CommentSection';
+import {
+  AdsterraTopBanner,
+  AdsterraBanner300x250,
+  AdsterraBanner160x300,
+  AdsterraNativeBanner,
+} from '../ads/AdsterraPlacements';
 
 export default function BlogPostClient({ post, error }) {
   if (error || !post) {
@@ -63,6 +69,9 @@ export default function BlogPostClient({ post, error }) {
           </p>
         </div>
 
+        {/* 1. Top Banner: 468x60 (Desktop) / 320x50 (Mobile) */}
+        <AdsterraTopBanner className="my-4" />
+
         {post.coverImage && (
           <div className="relative aspect-[21/9] w-full overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm">
             <img
@@ -77,6 +86,17 @@ export default function BlogPostClient({ post, error }) {
           className="prose dark:prose-invert max-w-none text-xs sm:text-sm leading-relaxed text-slate-800 dark:text-slate-300 font-medium space-y-4 whitespace-pre-line"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        {/* 2. Post-Article Banners: 300x250 & 160x300 */}
+        <div className="flex flex-wrap justify-center items-center gap-6 my-8">
+          <AdsterraBanner300x250 />
+          <div className="hidden lg:block">
+            <AdsterraBanner160x300 />
+          </div>
+        </div>
+
+        {/* 3. Native Banner: 2:1 Widget Layout */}
+        <AdsterraNativeBanner className="my-8" />
 
         <CommentSection slug={post.slug} initialComments={post.comments || []} />
       </article>
