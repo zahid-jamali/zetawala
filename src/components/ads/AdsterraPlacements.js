@@ -62,3 +62,9 @@ export function AdsterraNativeBanner({ className = '' }) {
     </div>
   );
 }
+
+/**
+ * 7. Social Bar (Floating Push / Dialogue / In-Page Notification Bar)
+ */
+export { default as AdsterraSocialBar } from './AdsterraSocialBar';
+

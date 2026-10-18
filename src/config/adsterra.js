@@ -108,4 +108,12 @@ export const ADSTERRA_CONFIG = {
     `.trim(),
     minHeight: 250,
   },
+
+  // 6. Social Bar (Floating Push / Dialogue / In-Page Notification Bar)
+  socialBar: {
+    id: 'adsterra-social-bar',
+    label: 'Social Bar',
+    enabled: true,
+    src: 'https://bauval.org/14/86d1407b5d0ce88a0baf95ce2b6f5db5',
+  },
 };

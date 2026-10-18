@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setTheme } from '../store/uiSlice';
 import Navbar from './layout/Navbar';
 import Footer from './Footer';
+import AdsterraSocialBar from './ads/AdsterraSocialBar';
 
 export default function ClientLayoutWrapper({ children }) {
   const dispatch = useDispatch();
@@ -44,6 +45,9 @@ export default function ClientLayoutWrapper({ children }) {
 
       {/* Footer */}
       <Footer />
+
+      {/* Adsterra Social Bar (Floating Push / Dialogue / In-Page Notification format) */}
+      <AdsterraSocialBar />
     </div>
   );
 }
