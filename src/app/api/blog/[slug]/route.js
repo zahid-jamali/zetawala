@@ -2,8 +2,9 @@ import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import dbConnect from '../../../../lib/mongodb';
 import BlogPost from '../../../../models/BlogPost';
-
 import User from '../../../../models/User';
+import { submitToIndexNow } from '../../../../lib/indexnow';
+
 
 const SESSION_TOKEN_PREFIX = 'authenticated_zeta_session_';
 
@@ -83,6 +84,12 @@ export async function PUT(request, { params }) {
     post.updatedAt = new Date();
 
     await post.save();
+
+    // Notify IndexNow asynchronously of the update
+    submitToIndexNow([`/blog/${post.slug}`]).catch((indexErr) => {
+      console.warn('[IndexNow] Auto-submit error on blog update:', indexErr.message);
+    });
+
     return NextResponse.json({ success: true, post });
   } catch (err) {
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });
@@ -105,7 +112,13 @@ export async function DELETE(request, { params }) {
       return NextResponse.json({ success: false, error: 'Blog post not found.' }, { status: 404 });
     }
 
+    // Notify IndexNow asynchronously of deletion
+    submitToIndexNow([`/blog/${slug}`]).catch((indexErr) => {
+      console.warn('[IndexNow] Auto-submit error on blog delete:', indexErr.message);
+    });
+
     return NextResponse.json({ success: true, message: 'Blog post deleted successfully.' });
+
   } catch (err) {
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }

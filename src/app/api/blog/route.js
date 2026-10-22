@@ -2,8 +2,9 @@ import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import dbConnect from "../../../lib/mongodb";
 import BlogPost from "../../../models/BlogPost";
-
 import User from "../../../models/User";
+import { submitToIndexNow } from "../../../lib/indexnow";
+
 
 const SESSION_TOKEN_PREFIX = "authenticated_zeta_session_";
 
@@ -102,7 +103,13 @@ export async function POST(request) {
       author: "Admin",
     });
 
+    // Notify IndexNow asynchronously
+    submitToIndexNow([`/blog/${newPost.slug}`]).catch((indexErr) => {
+      console.warn('[IndexNow] Auto-submit error on blog create:', indexErr.message);
+    });
+
     return NextResponse.json({ success: true, post: newPost });
+
   } catch (err) {
     return NextResponse.json(
       { success: false, error: err.message },
