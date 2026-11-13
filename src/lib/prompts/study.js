@@ -2,6 +2,8 @@
  * AI Study tools — DeepSeek prompt templates.
  */
 
+import { DOCUMENT_LIMITS } from '../../config/aiInputLimits';
+
 function clamp(text, max = 14000) {
   const t = String(text || '').trim();
   if (t.length <= max) return t;
@@ -31,7 +33,7 @@ Return ONLY valid JSON:
     case 'ai-quiz-generator': {
       const topic = String(payload.topic || '').trim();
       const difficulty = payload.difficulty || 'medium';
-      const count = Math.min(20, Math.max(3, Number(payload.count) || 5));
+      const count = Math.min(15, Math.max(3, Number(payload.count) || 5));
       if (!topic) return null;
       return `Act as a quiz designer. Create ${count} multiple-choice questions on "${topic}" at ${difficulty} difficulty.
 
@@ -52,7 +54,7 @@ Return ONLY valid JSON:
     }
 
     case 'pdf-to-quiz': {
-      const text = clamp(payload.text);
+      const text = clamp(payload.text, DOCUMENT_LIMITS.pdfQuiz);
       const count = Math.min(15, Math.max(3, Number(payload.count) || 8));
       if (!text) return null;
       return `Act as an educator. From the following PDF text, generate ${count} multiple-choice practice questions grounded ONLY in the content. Do not invent facts not present.
@@ -79,8 +81,8 @@ Return ONLY valid JSON:
 
     case 'ai-flashcard-generator': {
       const topic = String(payload.topic || '').trim();
-      const text = clamp(payload.text || '', 10000);
-      const count = Math.min(30, Math.max(6, Number(payload.count) || 12));
+      const text = clamp(payload.text || '', DOCUMENT_LIMITS.flashcards);
+      const count = Math.min(20, Math.max(6, Number(payload.count) || 12));
       if (!topic && !text) return null;
       return `Act as a study coach. Create ${count} flashcards ${topic ? `about "${topic}"` : 'from the provided source text'}.
 
@@ -96,7 +98,7 @@ Return ONLY valid JSON:
 
     case 'youtube-study-notes': {
       const title = String(payload.videoTitle || 'YouTube video').trim();
-      const transcript = clamp(payload.transcript, 16000);
+      const transcript = clamp(payload.transcript, DOCUMENT_LIMITS.transcript);
       if (!transcript) return null;
       return `Act as an academic note-taker. Using ONLY the transcript from YouTube video "${title}", produce study notes, summary, key points, and a short quiz. Do not invent content not in the transcript.
 
@@ -125,7 +127,7 @@ Return ONLY valid JSON:
 
     case 'ai-assignment-generator': {
       const topic = String(payload.topic || '').trim();
-      const wordCount = Math.min(3000, Math.max(300, Number(payload.wordCount) || 800));
+      const wordCount = Math.min(1500, Math.max(300, Number(payload.wordCount) || 800));
       if (!topic) return null;
       return `Act as an academic writing assistant. Create a structured assignment on "${topic}" targeting about ${wordCount} words. Include clear headings, body sections, a references section (plausible academic-style placeholders labeled as examples), and a conclusion. Educational use only.
 

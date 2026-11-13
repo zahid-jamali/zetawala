@@ -127,7 +127,11 @@ Return ONLY a valid JSON array of objects:
     }
 
     case "script-master": {
-      const { title, duration } = payload;
+      const { title } = payload;
+      const duration =
+        payload.duration === "shorts"
+          ? "shorts"
+          : Math.min(12, Math.max(1, Number(payload.duration) || 5));
       if (duration === "shorts") {
         return `Act as a Master Documentarian and Scriptwriter for automated vertical channels (YouTube Shorts / TikTok / Reels). Given the video title '${title}', write a high-energy, fast-paced vertical video script under 60 seconds (total length ~130-150 words).
 

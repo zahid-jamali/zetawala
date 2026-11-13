@@ -12,6 +12,8 @@ import {
   Calculator,
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
+import CharLimit from '../CharLimit';
+import { getFieldMax, getNumberBounds, validateAiPayload } from '../../../config/aiInputLimits';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import { useLocale } from '../../i18n/LocaleProvider';
 import { getShopeeTool } from '../../../config/shopee/tools';
@@ -259,6 +261,11 @@ function MarketplaceAiPanel({ marketplace, toolSlug }) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    const check = validateAiPayload(toolSlug, form);
+    if (!check.ok) {
+      setError(check.error);
+      return;
+    }
     setLoading(true);
     setError(null);
     setResult(null);
@@ -305,13 +312,16 @@ function MarketplaceAiPanel({ marketplace, toolSlug }) {
           <div key={f.key} className="space-y-2">
             <label className={labelClasses}>{f.label}</label>
             {f.type === 'textarea' ? (
-              <textarea className={`${inputClasses} min-h-[120px]`} value={form[f.key] || ''} onChange={(e) => set(f.key, e.target.value)} required={f.required} />
+              <textarea className={`${inputClasses} min-h-[120px]`} value={form[f.key] || ''} onChange={(e) => set(f.key, e.target.value)} required={f.required} maxLength={getFieldMax(toolSlug, f.key)} />
             ) : f.type === 'select' ? (
               <select className={inputClasses} value={form[f.key] || f.options[0]} onChange={(e) => set(f.key, e.target.value)}>
                 {f.options.map((o) => <option key={o} value={o}>{o}</option>)}
               </select>
             ) : (
-              <input type={f.type === 'number' ? 'number' : 'text'} className={inputClasses} value={form[f.key] || ''} onChange={(e) => set(f.key, e.target.value)} required={f.required} min={f.type === 'number' ? '0' : undefined} step="any" />
+              <input type={f.type === 'number' ? 'number' : 'text'} className={inputClasses} value={form[f.key] || ''} onChange={(e) => set(f.key, e.target.value)} required={f.required} min={f.type === 'number' ? '0' : undefined} max={f.type === 'number' ? getNumberBounds(toolSlug, f.key)?.max : undefined} maxLength={f.type === 'number' ? undefined : getFieldMax(toolSlug, f.key)} step="any" />
+            )}
+            {f.type !== 'select' && f.type !== 'number' && (
+              <CharLimit value={form[f.key]} max={getFieldMax(toolSlug, f.key)} />
             )}
           </div>
         ))}

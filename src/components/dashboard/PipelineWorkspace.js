@@ -28,6 +28,7 @@ import { navigationConfig } from '../../config/navigation';
 import { getLocalizedToolPath } from '../../i18n/paths';
 import { DEFAULT_LOCALE } from '../../i18n/config';
 import { useLocale } from '../i18n/LocaleProvider';
+import { validateAiPayload } from '../../config/aiInputLimits';
 
 function getCategorySteps(categorySlug) {
   const cat = navigationConfig.find(c => c.slug === categorySlug) || navigationConfig.find(c => c.slug === 'daraz-seo');
@@ -117,6 +118,11 @@ export default function PipelineWorkspace({ toolSlug, categorySlug, initialLangu
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const check = validateAiPayload(toolSlug, toolInputs);
+    if (!check.ok) {
+      dispatch(setError(check.error));
+      return;
+    }
     dispatch(setLoading(true));
     dispatch(setError(null));
 

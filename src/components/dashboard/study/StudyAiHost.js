@@ -14,6 +14,13 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
+import CharLimit from '../CharLimit';
+import {
+  getFieldMax,
+  getNumberBounds,
+  clampToLimit,
+  validateAiPayload,
+} from '../../../config/aiInputLimits';
 import { getStudyTool, STUDY_AI_SLUGS } from '../../../config/study/tools';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
 import { useLocale } from '../../i18n/LocaleProvider';
@@ -242,6 +249,8 @@ export default function StudyAiHost({ toolSlug }) {
 
   const set = (k, v) => setForm((p) => ({ ...p, [k]: v }));
   const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const fieldMax = (k) => getFieldMax(toolSlug, k);
+  const bounds = (k, fallback) => getNumberBounds(toolSlug, k) || fallback;
 
   const extractPdf = async (file) => {
     if (!file) return;
@@ -258,9 +267,14 @@ export default function StudyAiHost({ toolSlug }) {
       const res = await fetch('/api/writing/extract', { method: 'POST', body: fd });
       const json = await res.json();
       if (!res.ok || !json.success) throw new Error(json.error || 'PDF extract failed.');
-      set('text', json.data.text || '');
+      const extracted = json.data.text || '';
+      const textMax = fieldMax('text');
+      set('text', clampToLimit(extracted, textMax));
       set('pdfName', json.data.filename || file.name);
-      setPdfPreview((json.data.text || '').slice(0, 1200));
+      setPdfPreview(extracted.slice(0, 1200));
+      if (textMax && extracted.length > textMax) {
+        setError(`PDF is long, so only the first ${textMax.toLocaleString()} characters will be used.`);
+      }
       setSecurityToken('');
       setTurnstileResetKey((k) => k + 1);
     } catch (err) {
@@ -271,6 +285,11 @@ export default function StudyAiHost({ toolSlug }) {
   };
 
   const runGenerate = async (payload) => {
+    const check = validateAiPayload(toolSlug, payload);
+    if (!check.ok) {
+      setError(check.error);
+      return;
+    }
     setLoading(true);
     setError(null);
     setResult(null);
@@ -337,7 +356,8 @@ export default function StudyAiHost({ toolSlug }) {
         {(toolSlug === 'ai-notes-generator' || toolSlug === 'ai-quiz-generator' || toolSlug === 'ai-flashcard-generator' || toolSlug === 'ai-assignment-generator') && (
           <div className="space-y-2">
             <label className={labelClasses}>Topic</label>
-            <input className={inputClasses} value={form.topic} onChange={(e) => set('topic', e.target.value)} placeholder="e.g. Photosynthesis" required={toolSlug !== 'ai-flashcard-generator' || !form.text} />
+            <input className={inputClasses} value={form.topic} onChange={(e) => set('topic', e.target.value)} maxLength={fieldMax('topic')} placeholder="e.g. Photosynthesis" required={toolSlug !== 'ai-flashcard-generator' || !form.text} />
+            <CharLimit value={form.topic} max={fieldMax('topic')} />
           </div>
         )}
 
@@ -363,8 +383,8 @@ export default function StudyAiHost({ toolSlug }) {
               </select>
             </div>
             <div className="space-y-2">
-              <label className={labelClasses}>Number of Questions</label>
-              <input className={inputClasses} type="number" min="3" max="20" value={form.count} onChange={(e) => set('count', e.target.value)} />
+              <label className={labelClasses}>Number of Questions (max {bounds('count', { max: 15 }).max})</label>
+              <input className={inputClasses} type="number" min={bounds('count', { min: 3 }).min} max={bounds('count', { max: 15 }).max} value={form.count} onChange={(e) => set('count', e.target.value)} />
             </div>
           </>
         )}
@@ -386,8 +406,8 @@ export default function StudyAiHost({ toolSlug }) {
             )}
             {toolSlug === 'pdf-to-quiz' && (
               <div className="space-y-2">
-                <label className={labelClasses}>Questions</label>
-                <input className={inputClasses} type="number" min="3" max="15" value={form.count} onChange={(e) => set('count', e.target.value)} />
+                <label className={labelClasses}>Questions (max {bounds('count', { max: 15 }).max})</label>
+                <input className={inputClasses} type="number" min={bounds('count', { min: 3 }).min} max={bounds('count', { max: 15 }).max} value={form.count} onChange={(e) => set('count', e.target.value)} />
               </div>
             )}
           </div>
@@ -396,29 +416,30 @@ export default function StudyAiHost({ toolSlug }) {
         {toolSlug === 'youtube-study-notes' && (
           <div className="space-y-2">
             <label className={labelClasses}>YouTube URL</label>
-            <input className={inputClasses} value={form.youtubeUrl} onChange={(e) => set('youtubeUrl', e.target.value)} placeholder="https://www.youtube.com/watch?v=..." required />
+            <input className={inputClasses} value={form.youtubeUrl} onChange={(e) => set('youtubeUrl', e.target.value)} maxLength={fieldMax('youtubeUrl')} placeholder="https://www.youtube.com/watch?v=..." required />
             <p className="text-[10px] text-slate-500">Requires captions/transcript on the video.</p>
           </div>
         )}
 
         {toolSlug === 'ai-assignment-generator' && (
           <div className="space-y-2">
-            <label className={labelClasses}>Word Count</label>
-            <input className={inputClasses} type="number" min="300" max="3000" value={form.wordCount} onChange={(e) => set('wordCount', e.target.value)} />
+            <label className={labelClasses}>Word Count (max {bounds('wordCount', { max: 1500 }).max})</label>
+            <input className={inputClasses} type="number" min={bounds('wordCount', { min: 300 }).min} max={bounds('wordCount', { max: 1500 }).max} value={form.wordCount} onChange={(e) => set('wordCount', e.target.value)} />
           </div>
         )}
 
         {toolSlug === 'ai-homework-solver' && (
           <div className="space-y-2">
             <label className={labelClasses}>Question</label>
-            <textarea className={`${inputClasses} min-h-[160px]`} value={form.question} onChange={(e) => set('question', e.target.value)} placeholder="Paste your homework question…" required />
+            <textarea className={`${inputClasses} min-h-[160px]`} value={form.question} onChange={(e) => set('question', e.target.value)} maxLength={fieldMax('question')} placeholder="Paste your homework question…" required />
+            <CharLimit value={form.question} max={fieldMax('question')} />
           </div>
         )}
 
         {toolSlug === 'ai-flashcard-generator' && (
           <div className="space-y-2">
-            <label className={labelClasses}>Cards</label>
-            <input className={inputClasses} type="number" min="6" max="30" value={form.count} onChange={(e) => set('count', e.target.value)} />
+            <label className={labelClasses}>Cards (max {bounds('count', { max: 20 }).max})</label>
+            <input className={inputClasses} type="number" min={bounds('count', { min: 6 }).min} max={bounds('count', { max: 20 }).max} value={form.count} onChange={(e) => set('count', e.target.value)} />
           </div>
         )}
 

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {
   Briefcase,
@@ -21,6 +21,13 @@ import {
   profilePrefillForTool,
 } from '../../../lib/freelancer/profile';
 import { calculateFiverrPackages } from '../../../lib/freelancer/pricing';
+import CharLimit from '../CharLimit';
+import {
+  getFieldMax,
+  getNumberBounds,
+  clampToLimit,
+  validateAiPayload,
+} from '../../../config/aiInputLimits';
 import { downloadTextAsPdf, downloadDocxLike } from '../../../lib/study/certificates';
 
 const inputClasses =
@@ -440,7 +447,7 @@ export default function FreelancerAiHost({ toolSlug }) {
     const prefill = profilePrefillForTool(toolSlug, loadFreelancerProfile());
     const merged = { ...base };
     fieldsFor.forEach((f) => {
-      if (prefill[f.key]) merged[f.key] = prefill[f.key];
+      if (prefill[f.key]) merged[f.key] = clampToLimit(prefill[f.key], getFieldMax(toolSlug, f.key));
     });
     // map common aliases
     if (fieldsFor.some((f) => f.key === 'resumeOrProfile') && prefill.skills) {
@@ -453,6 +460,7 @@ export default function FreelancerAiHost({ toolSlug }) {
       ]
         .filter(Boolean)
         .join('\n');
+      merged.resumeOrProfile = clampToLimit(merged.resumeOrProfile, getFieldMax(toolSlug, 'resumeOrProfile'));
     }
     setForm(merged);
     setResult(null);
@@ -464,7 +472,7 @@ export default function FreelancerAiHost({ toolSlug }) {
     setForm((prev) => {
       const next = { ...prev };
       (FIELDS[toolSlug] || []).forEach((f) => {
-        if (prefill[f.key]) next[f.key] = prefill[f.key];
+        if (prefill[f.key]) next[f.key] = clampToLimit(prefill[f.key], getFieldMax(toolSlug, f.key));
       });
       return next;
     });
@@ -474,15 +482,15 @@ export default function FreelancerAiHost({ toolSlug }) {
   const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
   const related = NEXT[toolSlug] || [];
 
-  const charCount = useMemo(() => {
-    const long = form.jobDescription || form.proposal || form.description || form.buyerRequest || form.customerReview || form.projectScope || '';
-    return String(long).length;
-  }, [form]);
-
   if (!tool) return <p className="text-sm text-slate-500">Unknown freelancer tool.</p>;
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    const check = validateAiPayload(toolSlug, form);
+    if (!check.ok) {
+      setError(check.error);
+      return;
+    }
     setLoading(true);
     setError(null);
     setResult(null);
@@ -547,6 +555,7 @@ export default function FreelancerAiHost({ toolSlug }) {
                   onChange={(e) => set(f.key, e.target.value)}
                   required={f.required}
                   placeholder={f.label}
+                  maxLength={getFieldMax(toolSlug, f.key)}
                 />
               ) : f.type === 'select' ? (
                 <select
@@ -566,15 +575,16 @@ export default function FreelancerAiHost({ toolSlug }) {
                   onChange={(e) => set(f.key, e.target.value)}
                   required={f.required}
                   placeholder={f.label}
-                  min={f.type === 'number' ? '0' : undefined}
+                  min={f.type === 'number' ? (getNumberBounds(toolSlug, f.key)?.min ?? 0) : undefined}
+                  max={f.type === 'number' ? getNumberBounds(toolSlug, f.key)?.max : undefined}
+                  maxLength={f.type === 'number' ? undefined : getFieldMax(toolSlug, f.key)}
                 />
+              )}
+              {f.type !== 'select' && f.type !== 'number' && (
+                <CharLimit value={form[f.key]} max={getFieldMax(toolSlug, f.key)} />
               )}
             </div>
           ))}
-
-          {charCount > 0 && (
-            <p className="text-[10px] text-slate-400">{charCount.toLocaleString()} characters</p>
-          )}
 
           <TurnstileWidget
             onTokenChange={setSecurityToken}

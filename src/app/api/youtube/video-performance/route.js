@@ -2,13 +2,14 @@ import { NextResponse } from 'next/server';
 import { guardYouTubeRequest, youtubeErrorResponse } from '../../../../lib/youtube/apiGuard';
 import { analyzeVideoPerformance } from '../../../../lib/youtube/youtubeAnalysisService';
 import { interpretYouTubeMetrics } from '../../../../lib/youtube/youtubeAiInterpret';
+import { clampYoutubeProfile } from '../../../../config/aiInputLimits';
 
 export async function POST(request) {
   try {
     const guard = await guardYouTubeRequest(request);
     if (!guard.ok) return guard.response;
 
-    const { videoInput } = guard.body;
+    const { videoInput } = clampYoutubeProfile(guard.body);
     if (!videoInput?.trim()) {
       return NextResponse.json(
         { success: false, error: 'Video URL or video ID is required.' },

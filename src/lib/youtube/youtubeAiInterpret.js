@@ -3,7 +3,16 @@
  * Uses DeepSeek with structured metrics — never as the source of truth for numbers.
  */
 
+import {
+  INTERPRET_OUTPUT_TOKENS,
+  NICHE_CANDIDATE_OUTPUT_TOKENS,
+  YOUTUBE_PROFILE_LIMITS,
+} from "../../config/aiInputLimits";
+
 const apiKey = process.env.DEEPSEEK_API_KEY;
+
+// Cap the metrics JSON sent to the model (input-token cost control)
+const MAX_METRICS_CHARS = 12000;
 
 function parseDeepSeekJson(rawText) {
   const cleaned = rawText
@@ -44,7 +53,7 @@ Return ONLY valid JSON matching the schema requested. No markdown.`;
 Instruction: ${instruction}
 
 METRICS_AND_EVIDENCE (authoritative — do not contradict numbers):
-${JSON.stringify(metricsPayload)}
+${JSON.stringify(metricsPayload).slice(0, MAX_METRICS_CHARS)}
 
 Return ONLY a JSON object.`;
 
@@ -62,6 +71,7 @@ Return ONLY a JSON object.`;
           { role: "user", content: userPrompt },
         ],
         temperature: 0.4,
+        max_tokens: INTERPRET_OUTPUT_TOKENS,
         response_format: { type: "json_object" },
       }),
     });
@@ -93,6 +103,16 @@ Return ONLY a JSON object.`;
   }
 }
 
+// Only send creator-profile fields to the model (never tokens or other body extras)
+function pickProfileFields(profile = {}) {
+  const out = {};
+  for (const [key, max] of Object.entries(YOUTUBE_PROFILE_LIMITS)) {
+    const v = profile[key];
+    if (typeof v === "string" && v.trim()) out[key] = v.trim().slice(0, max);
+  }
+  return out;
+}
+
 /**
  * Optional lightweight candidate niche generation (ideas only — validated later with real YT data).
  */
@@ -118,7 +138,7 @@ export async function generateNicheCandidates(profile) {
     { "name": "specific niche name", "angle": "faceless|personal|hybrid", "reason": "one line why it fits" }
   ]
 }
-Profile: ${JSON.stringify(profile)}
+Profile: ${JSON.stringify(pickProfileFields(profile))}
 Rules: niches must be specific (not "gaming"). Respect topicsToAvoid. Prefer niches testable via YouTube search.`;
 
   try {
@@ -138,6 +158,7 @@ Rules: niches must be specific (not "gaming"). Respect topicsToAvoid. Prefer nic
           { role: "user", content: prompt },
         ],
         temperature: 0.7,
+        max_tokens: NICHE_CANDIDATE_OUTPUT_TOKENS,
         response_format: { type: "json_object" },
       }),
     });

@@ -43,7 +43,7 @@ Return ONLY valid JSON:
 
     case 'ai-content-detector': {
       if (!text) return null;
-      return `Act as a cautious AI-writing analyst. Estimate whether the following ${lang} text appears AI-generated vs human-written. This is an ESTIMATE only — never claim certainty. Analyze sentence patterns, repetition, predictability, and stylistic uniformity.
+      return `Act as a cautious AI-writing analyst. Estimate whether the following ${lang} text appears AI-generated vs human-written. This is an ESTIMATE only — never claim certainty. Analyze sentence patterns, repetition, predictability, and stylistic uniformity. Include at most 12 of the most telling sentences in sentenceAnalysis.
 
 TEXT:
 """
@@ -66,7 +66,7 @@ Return ONLY valid JSON:
     case 'plagiarism-checker': {
       if (!text) return null;
       const reference = clampText(payload.referenceText || '', 8000);
-      return `Act as a local document similarity analyst. This is NOT a web-wide plagiarism search. Compare the primary text for internal repetition and${reference ? ' against the optional reference document' : ' self-similarity / boilerplate patterns'}. Be transparent that results are local/document-level estimates only.
+      return `Act as a local document similarity analyst. This is NOT a web-wide plagiarism search. Compare the primary text for internal repetition and${reference ? ' against the optional reference document' : ' self-similarity / boilerplate patterns'}. Be transparent that results are local/document-level estimates only. Return at most 8 highlightedSections and 5 sourceMatches, with short excerpts.
 
 PRIMARY TEXT (${lang}):
 """
@@ -91,7 +91,7 @@ Return ONLY valid JSON:
 
     case 'grammar-checker': {
       if (!text) return null;
-      return `Act as a professional ${lang} proofreader. Find grammar, spelling, punctuation, and style issues. Provide a fully corrected version plus actionable suggestions the user can accept or reject.
+      return `Act as a professional ${lang} proofreader. Find grammar, spelling, punctuation, and style issues. Provide a fully corrected version plus actionable suggestions the user can accept or reject (at most 15 suggestions, most important first).
 
 TEXT:
 """
@@ -173,7 +173,7 @@ Return ONLY valid JSON:
 
     case 'roman-urdu-grammar': {
       if (!text) return null;
-      return `Act as a Roman Urdu editor for Pakistani audiences. Correct spelling and grammar in the Roman Urdu text. Provide corrected version and a side-by-side friendly comparison list.
+      return `Act as a Roman Urdu editor for Pakistani audiences. Correct spelling and grammar in the Roman Urdu text. Provide corrected version and a side-by-side friendly comparison list (at most 15 suggestions).
 
 ROMAN URDU:
 """

@@ -10,6 +10,12 @@ import {
   verifyTurnstileToken,
 } from "../../../lib/security";
 import { fetchYouTubeTranscript } from "../../../lib/study/youtubeTranscript";
+import {
+  validateAiPayload,
+  getOutputTokenBudget,
+  clampToLimit,
+  DOCUMENT_LIMITS,
+} from "../../../config/aiInputLimits";
 
 const apiKey = process.env.DEEPSEEK_API_KEY;
 
@@ -81,19 +87,32 @@ export async function POST(request) {
       );
     }
 
+    // 4. Enforce per-field input limits (token cost control)
+    const validation = validateAiPayload(action, payload);
+    if (!validation.ok) {
+      return NextResponse.json(
+        { success: false, error: validation.error, field: validation.field },
+        { status: 400 },
+      );
+    }
+    const safePayload = validation.payload;
+
     // YouTube study notes: fetch transcript server-side so one Turnstile covers the full flow
-    let resolvedPayload = payload;
+    let resolvedPayload = safePayload;
     if (
       action === "youtube-study-notes" &&
-      payload.youtubeUrl &&
-      !payload.transcript
+      safePayload.youtubeUrl &&
+      !safePayload.transcript
     ) {
       try {
-        const transcriptData = await fetchYouTubeTranscript(payload.youtubeUrl);
+        const transcriptData = await fetchYouTubeTranscript(safePayload.youtubeUrl);
         resolvedPayload = {
-          ...payload,
-          transcript: transcriptData.transcript,
-          videoTitle: payload.videoTitle || transcriptData.videoId,
+          ...safePayload,
+          transcript: clampToLimit(
+            transcriptData.transcript,
+            DOCUMENT_LIMITS.transcript,
+          ),
+          videoTitle: safePayload.videoTitle || transcriptData.videoId,
         };
       } catch (err) {
         return NextResponse.json(
@@ -132,6 +151,7 @@ export async function POST(request) {
           },
         ],
         temperature: 0.7,
+        max_tokens: getOutputTokenBudget(action, resolvedPayload),
         response_format: { type: "json_object" },
       }),
     });
@@ -151,6 +171,20 @@ export async function POST(request) {
       );
     }
 
+    if (data.choices[0].finish_reason === "length") {
+      console.warn(
+        `DeepSeek output hit max_tokens for action "${action}" (usage: ${JSON.stringify(data.usage || {})})`,
+      );
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "The result was too long to finish. Please shorten your input or pick a smaller option and try again.",
+        },
+        { status: 422 },
+      );
+    }
+
     const text = data.choices[0].message.content;
     const parsedData = parseDeepSeekJson(text);
 
@@ -160,7 +194,7 @@ export async function POST(request) {
         await dbConnect();
         const score = parsedData.marketDemandScore?.score || 0;
         await ProductHunt.create({
-          query: payload.seed || "",
+          query: safePayload.seed || "",
           marketDemandScore: score,
           competitionLevel: parsedData.competitionLevel?.level || "Medium",
           estimatedProfitMargin: parsedData.estimatedProfitMargin || "",

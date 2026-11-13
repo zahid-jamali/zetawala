@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { Check, Copy, ArrowRight, Sparkles } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
 import { useLocalizedHref } from '../../i18n/useLocalizedHref';
+import { getFieldMax, clampToLimit } from '../../config/aiInputLimits';
 
 export default function ScriptViewer({ script }) {
   const router = useRouter();
@@ -45,7 +46,7 @@ export default function ScriptViewer({ script }) {
     dispatch(setToolInput({
       toolSlug: 'visuals-recommender',
       field: 'scriptText',
-      value: fullText
+      value: clampToLimit(fullText, getFieldMax('visuals-recommender', 'scriptText'))
     }));
     router.push(toolHref('youtube', 'visuals-recommender'));
   };

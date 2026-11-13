@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import TurnstileWidget from '../TurnstileWidget';
+import { YOUTUBE_PROFILE_LIMITS as LIMITS } from '../../../config/aiInputLimits';
 import {
   inputClasses,
   labelClasses,
@@ -57,15 +58,15 @@ export default function NicheOpportunityTool() {
         <h2 className="text-sm font-black text-slate-900 dark:text-white">Niche to Validate</h2>
         <div className="space-y-2">
           <label className={labelClasses}>Niche *</label>
-          <input required className={inputClasses} value={niche} onChange={(e) => setNiche(e.target.value)} placeholder='e.g. Faceless History Documentaries' />
+          <input required className={inputClasses} value={niche} onChange={(e) => setNiche(e.target.value)} maxLength={LIMITS.niche} placeholder='e.g. Faceless History Documentaries' />
         </div>
         <div className="space-y-2">
           <label className={labelClasses}>Target Country (optional)</label>
-          <input className={inputClasses} value={country} onChange={(e) => setCountry(e.target.value)} placeholder="e.g. Pakistan" />
+          <input className={inputClasses} value={country} onChange={(e) => setCountry(e.target.value)} maxLength={LIMITS.country} placeholder="e.g. Pakistan" />
         </div>
         <div className="space-y-2">
           <label className={labelClasses}>Language (optional)</label>
-          <input className={inputClasses} value={language} onChange={(e) => setLanguage(e.target.value)} placeholder="e.g. en" />
+          <input className={inputClasses} value={language} onChange={(e) => setLanguage(e.target.value)} maxLength={LIMITS.language} placeholder="e.g. en" />
         </div>
         <div className="space-y-2">
           <label className={labelClasses}>Content Format</label>

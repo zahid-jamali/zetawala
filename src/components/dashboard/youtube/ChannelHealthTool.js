@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import TurnstileWidget from '../TurnstileWidget';
+import { YOUTUBE_PROFILE_LIMITS as LIMITS } from '../../../config/aiInputLimits';
 import {
   inputClasses,
   labelClasses,
@@ -58,6 +59,7 @@ export default function ChannelHealthTool() {
             className={inputClasses}
             value={channelInput}
             onChange={(e) => setChannelInput(e.target.value)}
+            maxLength={LIMITS.channelInput}
             placeholder="youtube.com/@handle or UC..."
           />
         </div>

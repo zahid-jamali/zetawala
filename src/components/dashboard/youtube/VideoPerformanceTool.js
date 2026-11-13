@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import TurnstileWidget from '../TurnstileWidget';
+import { YOUTUBE_PROFILE_LIMITS as LIMITS } from '../../../config/aiInputLimits';
 import {
   inputClasses,
   labelClasses,
@@ -57,6 +58,7 @@ export default function VideoPerformanceTool() {
             className={inputClasses}
             value={videoInput}
             onChange={(e) => setVideoInput(e.target.value)}
+            maxLength={LIMITS.videoInput}
             placeholder="youtube.com/watch?v=... or shorts URL"
           />
         </div>

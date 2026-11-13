@@ -13,6 +13,13 @@ import {
   UploadCloud,
 } from 'lucide-react';
 import TurnstileWidget from '../TurnstileWidget';
+import CharLimit from '../CharLimit';
+import {
+  getFieldMax,
+  clampToLimit,
+  validateAiPayload,
+  DOCUMENT_LIMITS,
+} from '../../../config/aiInputLimits';
 import { getWritingTool, LANG_LABELS, WRITING_TOOL_SLUGS } from '../../../config/writing/tools';
 import { getWritingLangPath } from '../../../config/writing/languages';
 import { useLocalizedHref } from '../../../i18n/useLocalizedHref';
@@ -390,6 +397,7 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
   const [error, setError] = useState(null);
   const [result, setResult] = useState(null);
   const [rejectedIds, setRejectedIds] = useState(new Set());
+  const [notice, setNotice] = useState(null);
 
   useEffect(() => {
     if (initialLanguage && tool?.languages?.includes(initialLanguage)) {
@@ -402,6 +410,8 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
   const words = countWords(text);
   const chars = text.length;
   const needsLang = Array.isArray(tool.languages);
+  const textMax = getFieldMax(toolSlug, 'text') || DOCUMENT_LIMITS.writing;
+  const referenceMax = getFieldMax(toolSlug, 'referenceText');
   const turnstileRequired = !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
   const onLanguageChange = (code) => {
@@ -425,7 +435,13 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
       const res = await fetch('/api/writing/extract', { method: 'POST', body: form });
       const json = await res.json();
       if (!res.ok || !json.success) throw new Error(json.error || 'Extract failed.');
-      setText(json.data.text || '');
+      const extracted = json.data.text || '';
+      setText(clampToLimit(extracted, textMax));
+      setNotice(
+        extracted.length > textMax
+          ? `Document is long, so only the first ${textMax.toLocaleString()} characters were kept.`
+          : null
+      );
       setSecurityToken('');
       setTurnstileResetKey((k) => k + 1);
     } catch (err) {
@@ -439,6 +455,14 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
     e.preventDefault();
     if (!text.trim()) {
       setError('Please enter some text.');
+      return;
+    }
+    const check = validateAiPayload(toolSlug, {
+      text,
+      ...(toolSlug === 'plagiarism-checker' && referenceText.trim() ? { referenceText } : {}),
+    });
+    if (!check.ok) {
+      setError(check.error);
       return;
     }
     setLoading(true);
@@ -549,11 +573,16 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
           <textarea
             className={`${inputClasses} min-h-[180px]`}
             value={text}
-            onChange={(e) => setText(e.target.value)}
+            onChange={(e) => { setText(e.target.value); setNotice(null); }}
+            maxLength={textMax}
             placeholder="Paste your text here…"
             dir={toolSlug === 'urdu-to-roman-urdu' ? 'rtl' : 'ltr'}
           />
-          <p className="text-[10px] text-slate-500">{words} words · {chars} characters</p>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-[10px] text-slate-500">{words} words</p>
+            <CharLimit value={text} max={textMax} />
+          </div>
+          {notice && <p className="text-[10px] text-amber-600 dark:text-amber-400">{notice}</p>}
         </div>
 
         <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />
@@ -578,8 +607,10 @@ export default function WritingHost({ toolSlug, initialLanguage = null }) {
                 className={`${inputClasses} min-h-[100px]`}
                 value={referenceText}
                 onChange={(e) => setReferenceText(e.target.value)}
+                maxLength={referenceMax}
                 placeholder="Paste a second document to compare against…"
               />
+              <CharLimit value={referenceText} max={referenceMax} />
             </div>
             <p className="text-[10px] text-amber-600 dark:text-amber-400">
               Local/document similarity only — not a web-wide plagiarism search.

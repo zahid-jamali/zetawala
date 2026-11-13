@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import TurnstileWidget from '../TurnstileWidget';
+import { YOUTUBE_PROFILE_LIMITS as LIMITS } from '../../../config/aiInputLimits';
 import {
   inputClasses,
   labelClasses,
@@ -91,7 +92,7 @@ export default function NicheFinderTool() {
         ].map(([field, label, type, ph]) => (
           <div key={field} className="space-y-2">
             <label className={labelClasses}>{label}</label>
-            <input required type={type} className={inputClasses} value={form[field]} onChange={(e) => set(field, e.target.value)} placeholder={ph} />
+            <input required type={type} className={inputClasses} value={form[field]} onChange={(e) => set(field, e.target.value)} maxLength={LIMITS[field]} placeholder={ph} />
           </div>
         ))}
 
@@ -149,15 +150,15 @@ export default function NicheFinderTool() {
 
         <div className="space-y-2">
           <label className={labelClasses}>Weekly Time Available</label>
-          <input className={inputClasses} value={form.weeklyTime} onChange={(e) => set('weeklyTime', e.target.value)} placeholder="e.g. 8 hours" />
+          <input className={inputClasses} value={form.weeklyTime} onChange={(e) => set('weeklyTime', e.target.value)} maxLength={LIMITS.weeklyTime} placeholder="e.g. 8 hours" />
         </div>
         <div className="space-y-2">
           <label className={labelClasses}>Budget</label>
-          <input className={inputClasses} value={form.budget} onChange={(e) => set('budget', e.target.value)} placeholder="e.g. low / $50/mo" />
+          <input className={inputClasses} value={form.budget} onChange={(e) => set('budget', e.target.value)} maxLength={LIMITS.budget} placeholder="e.g. low / $50/mo" />
         </div>
         <div className="space-y-2">
           <label className={labelClasses}>Topics to Avoid</label>
-          <input className={inputClasses} value={form.topicsToAvoid} onChange={(e) => set('topicsToAvoid', e.target.value)} placeholder="e.g. crypto trading, politics" />
+          <input className={inputClasses} value={form.topicsToAvoid} onChange={(e) => set('topicsToAvoid', e.target.value)} maxLength={LIMITS.topicsToAvoid} placeholder="e.g. crypto trading, politics" />
         </div>
 
         <TurnstileWidget onTokenChange={setSecurityToken} resetKey={turnstileResetKey} />

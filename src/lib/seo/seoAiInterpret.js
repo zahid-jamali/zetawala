@@ -2,6 +2,8 @@
  * DeepSeek interpretation for SEO audits — metrics must already be computed.
  */
 
+import { INTERPRET_OUTPUT_TOKENS } from "../../config/aiInputLimits";
+
 const apiKey = process.env.DEEPSEEK_API_KEY;
 
 function parseJson(raw) {
@@ -48,6 +50,7 @@ export async function interpretSeoInsights({
           },
         ],
         temperature: 0.35,
+        max_tokens: INTERPRET_OUTPUT_TOKENS,
         response_format: { type: "json_object" },
       }),
     });

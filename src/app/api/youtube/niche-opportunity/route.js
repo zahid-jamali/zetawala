@@ -2,13 +2,14 @@ import { NextResponse } from 'next/server';
 import { guardYouTubeRequest, youtubeErrorResponse } from '../../../../lib/youtube/apiGuard';
 import { analyzeNicheOpportunity } from '../../../../lib/youtube/youtubeAnalysisService';
 import { interpretYouTubeMetrics } from '../../../../lib/youtube/youtubeAiInterpret';
+import { clampYoutubeProfile } from '../../../../config/aiInputLimits';
 
 export async function POST(request) {
   try {
     const guard = await guardYouTubeRequest(request);
     if (!guard.ok) return guard.response;
 
-    const { niche, country, language, contentFormat } = guard.body;
+    const { niche, country, language, contentFormat } = clampYoutubeProfile(guard.body);
     if (!niche?.trim()) {
       return NextResponse.json({ success: false, error: 'Niche is required.' }, { status: 400 });
     }

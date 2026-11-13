@@ -2,13 +2,14 @@ import { NextResponse } from 'next/server';
 import { guardYouTubeRequest, youtubeErrorResponse } from '../../../../lib/youtube/apiGuard';
 import { analyzeChannelHealth } from '../../../../lib/youtube/youtubeAnalysisService';
 import { interpretYouTubeMetrics } from '../../../../lib/youtube/youtubeAiInterpret';
+import { clampYoutubeProfile } from '../../../../config/aiInputLimits';
 
 export async function POST(request) {
   try {
     const guard = await guardYouTubeRequest(request);
     if (!guard.ok) return guard.response;
 
-    const { channelInput, videoLimit } = guard.body;
+    const { channelInput, videoLimit } = clampYoutubeProfile(guard.body);
     if (!channelInput?.trim()) {
       return NextResponse.json(
         { success: false, error: 'Channel URL, @handle, or channel ID is required.' },

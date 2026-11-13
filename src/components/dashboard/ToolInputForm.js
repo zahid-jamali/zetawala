@@ -6,12 +6,15 @@ import { Send, Loader2 } from 'lucide-react';
 import { setToolInput } from '../../store/toolSlice';
 import TurnstileWidget from './TurnstileWidget';
 import { useLocale } from '../i18n/LocaleProvider';
+import CharLimit from './CharLimit';
+import { getFieldMax } from '../../config/aiInputLimits';
 
 export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurityTokenChange, securityToken, turnstileResetKey = 0 }) {
   const { t } = useLocale();
   const dispatch = useDispatch();
   const { loading, inputs } = useSelector((state) => state.tools);
   const toolInputs = inputs[toolSlug] || {};
+  const fieldMax = (field) => getFieldMax(toolSlug, field);
 
   const handleInputChange = (field, value) => {
     dispatch(setToolInput({ toolSlug, field, value }));
@@ -31,9 +34,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.niche || ''}
             onChange={(e) => handleInputChange('niche', e.target.value)}
+            maxLength={fieldMax('niche')}
             className={inputClasses}
             placeholder="e.g. Mechanical Keyboard reviews, Solo Travel vlogs"
           />
+          <CharLimit value={toolInputs.niche} max={fieldMax('niche')} />
         </div>
       )}
 
@@ -46,9 +51,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.niche || ''}
               onChange={(e) => handleInputChange('niche', e.target.value)}
+              maxLength={fieldMax('niche')}
               className={inputClasses}
               placeholder="e.g. Keyboard Reviews"
             />
+            <CharLimit value={toolInputs.niche} max={fieldMax('niche')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.videoConcept') || 'Video Concept / Idea'}</label>
@@ -57,10 +64,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.idea || ''}
               onChange={(e) => handleInputChange('idea', e.target.value)}
+              maxLength={fieldMax('idea')}
               className={inputClasses}
               placeholder="e.g. Reviewing the cheapest mechanical keyboard available locally on Daraz"
               rows={4}
             />
+            <CharLimit value={toolInputs.idea} max={fieldMax('idea')} />
           </div>
         </>
       )}
@@ -74,9 +83,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.title || ''}
             onChange={(e) => handleInputChange('title', e.target.value)}
+            maxLength={fieldMax('title')}
             className={inputClasses}
             placeholder="e.g. I Bought the Cheapest Keyboard on Daraz — Is it E-Waste?"
           />
+          <CharLimit value={toolInputs.title} max={fieldMax('title')} />
         </div>
       )}
 
@@ -103,10 +114,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.scriptText || ''}
               onChange={(e) => handleInputChange('scriptText', e.target.value)}
+              maxLength={fieldMax('scriptText')}
               className={inputClasses}
               placeholder="Paste your video narrative script here to generate visual recommendations scene by scene..."
               rows={8}
             />
+            <CharLimit value={toolInputs.scriptText} max={fieldMax('scriptText')} />
           </div>
         </>
       )}
@@ -121,9 +134,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.title || ''}
               onChange={(e) => handleInputChange('title', e.target.value)}
+              maxLength={fieldMax('title')}
               className={inputClasses}
               placeholder="e.g. I Bought the Cheapest Keyboard on Daraz — Is it E-Waste?"
             />
+            <CharLimit value={toolInputs.title} max={fieldMax('title')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetDuration') || 'Target Duration / Format'}</label>
@@ -151,9 +166,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.seed || ''}
             onChange={(e) => handleInputChange('seed', e.target.value)}
+            maxLength={fieldMax('seed')}
             className={inputClasses}
             placeholder="e.g. Lightweight dry iron, wireless charger, study lamp..."
           />
+          <CharLimit value={toolInputs.seed} max={fieldMax('seed')} />
         </div>
       )}
 
@@ -166,9 +183,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.product || ''}
             onChange={(e) => handleInputChange('product', e.target.value)}
+            maxLength={fieldMax('product')}
             className={inputClasses}
             placeholder="e.g. RGB Mechanical Keyboard"
           />
+          <CharLimit value={toolInputs.product} max={fieldMax('product')} />
         </div>
       )}
 
@@ -182,9 +201,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.product || ''}
             onChange={(e) => handleInputChange('product', e.target.value)}
+            maxLength={fieldMax('product')}
             className={inputClasses}
             placeholder="e.g. Bluetooth wireless mouse, silk bedsheet"
           />
+          <CharLimit value={toolInputs.product} max={fieldMax('product')} />
         </div>
       )}
 
@@ -199,9 +220,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.product || ''}
               onChange={(e) => handleInputChange('product', e.target.value)}
+              maxLength={fieldMax('product')}
               className={inputClasses}
               placeholder="e.g. Ergonomic Office Chair"
             />
+            <CharLimit value={toolInputs.product} max={fieldMax('product')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.keyFeatures') || 'Key Features / Specs'}</label>
@@ -209,10 +232,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.features || ''}
               onChange={(e) => handleInputChange('features', e.target.value)}
+              maxLength={fieldMax('features')}
               className={inputClasses}
               placeholder="e.g. Mesh backrest, adjustable height, 3D armrests, heavy duty wheels"
               rows={4}
             />
+            <CharLimit value={toolInputs.features} max={fieldMax('features')} />
           </div>
         </>
       )}
@@ -228,6 +253,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             required
             value={toolInputs.textToAnalyze || ''}
             onChange={(e) => handleInputChange('textToAnalyze', e.target.value)}
+            maxLength={fieldMax('textToAnalyze')}
             className={inputClasses}
             placeholder={
               toolSlug === 'competitor-rewriter' 
@@ -238,6 +264,7 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
             }
             rows={5}
           />
+          <CharLimit value={toolInputs.textToAnalyze} max={fieldMax('textToAnalyze')} />
         </div>
       )}
 
@@ -252,9 +279,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.title || ''}
               onChange={(e) => handleInputChange('title', e.target.value)}
+              maxLength={fieldMax('title')}
               className={inputClasses}
               placeholder="e.g. wireless mouse 10m range black color"
             />
+            <CharLimit value={toolInputs.title} max={fieldMax('title')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.currentDesc') || 'Current Description / Highlights'}</label>
@@ -262,10 +291,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.description || ''}
               onChange={(e) => handleInputChange('description', e.target.value)}
+              maxLength={fieldMax('description')}
               className={inputClasses}
               placeholder="Paste current listing details..."
               rows={4}
             />
+            <CharLimit value={toolInputs.description} max={fieldMax('description')} />
           </div>
         </>
       )}
@@ -281,9 +312,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.productName || ''}
               onChange={(e) => handleInputChange('productName', e.target.value)}
+              maxLength={fieldMax('productName')}
               className={inputClasses}
               placeholder="e.g. Silk Dupatta Set, Mini Air Fryer"
             />
+            <CharLimit value={toolInputs.productName} max={fieldMax('productName')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.productOffer') || 'Product Details / Offer'}</label>
@@ -291,10 +324,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.productDetails || ''}
               onChange={(e) => handleInputChange('productDetails', e.target.value)}
+              maxLength={fieldMax('productDetails')}
               className={inputClasses}
               placeholder="e.g. Buy 2 Get 1 Free, Free Delivery Lahore, Cash on Delivery"
               rows={4}
             />
+            <CharLimit value={toolInputs.productDetails} max={fieldMax('productDetails')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetAudience') || 'Target Audience'}</label>
@@ -303,9 +338,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.targetAudience || ''}
               onChange={(e) => handleInputChange('targetAudience', e.target.value)}
+              maxLength={fieldMax('targetAudience')}
               className={inputClasses}
               placeholder="e.g. Ladies 18-35 in Lahore, students, housewives"
             />
+            <CharLimit value={toolInputs.targetAudience} max={fieldMax('targetAudience')} />
           </div>
         </>
       )}
@@ -321,9 +358,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.productCategory || ''}
               onChange={(e) => handleInputChange('productCategory', e.target.value)}
+              maxLength={fieldMax('productCategory')}
               className={inputClasses}
               placeholder="e.g. Kitchen Gadgets, Skincare, Kids Fashion"
             />
+            <CharLimit value={toolInputs.productCategory} max={fieldMax('productCategory')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.usp') || 'Unique Selling Proposition (USP)'}</label>
@@ -331,10 +370,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.usp || ''}
               onChange={(e) => handleInputChange('usp', e.target.value)}
+              maxLength={fieldMax('usp')}
               className={inputClasses}
               placeholder="e.g. Chops vegetables in 10 seconds, waterproof, COD available"
               rows={4}
             />
+            <CharLimit value={toolInputs.usp} max={fieldMax('usp')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.videoLength') || 'Video Length'}</label>
@@ -362,9 +403,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.productToSource || ''}
               onChange={(e) => handleInputChange('productToSource', e.target.value)}
+              maxLength={fieldMax('productToSource')}
               className={inputClasses}
               placeholder="e.g. Bluetooth Neckband, Cotton Bedsheet"
             />
+            <CharLimit value={toolInputs.productToSource} max={fieldMax('productToSource')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.expectedQty') || 'Expected Quantity'}</label>
@@ -373,9 +416,11 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.expectedQuantity || ''}
               onChange={(e) => handleInputChange('expectedQuantity', e.target.value)}
+              maxLength={fieldMax('expectedQuantity')}
               className={inputClasses}
               placeholder="e.g. 50 pcs, 100 dozen, 2 cartons"
             />
+            <CharLimit value={toolInputs.expectedQuantity} max={fieldMax('expectedQuantity')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.targetPrice') || 'Target Price / Questions'}</label>
@@ -383,10 +428,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.targetPriceQuestions || ''}
               onChange={(e) => handleInputChange('targetPriceQuestions', e.target.value)}
+              maxLength={fieldMax('targetPriceQuestions')}
               className={inputClasses}
               placeholder="e.g. Target Rs. 450 each, sample available? delivery Lahore?"
               rows={4}
             />
+            <CharLimit value={toolInputs.targetPriceQuestions} max={fieldMax('targetPriceQuestions')} />
           </div>
         </>
       )}
@@ -401,10 +448,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.customerComment || ''}
               onChange={(e) => handleInputChange('customerComment', e.target.value)}
+              maxLength={fieldMax('customerComment')}
               className={inputClasses}
               placeholder='e.g. "Price please" or "Delivery late thi, bohot gussa hai"'
               rows={4}
             />
+            <CharLimit value={toolInputs.customerComment} max={fieldMax('customerComment')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.desiredTone') || 'Desired Tone'}</label>
@@ -431,10 +480,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.productFeatures || ''}
               onChange={(e) => handleInputChange('productFeatures', e.target.value)}
+              maxLength={fieldMax('productFeatures')}
               className={inputClasses}
               placeholder="e.g. USB rechargeable, 3 heat modes, portable pouch"
               rows={4}
             />
+            <CharLimit value={toolInputs.productFeatures} max={fieldMax('productFeatures')} />
           </div>
           <div className="space-y-2">
             <label className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider block">{t('toolForm.painPoint') || 'Customer Pain Point It Solves'}</label>
@@ -442,10 +493,12 @@ export default function ToolInputForm({ toolSlug, onSubmit, inputRef, onSecurity
               required
               value={toolInputs.customerPainPoint || ''}
               onChange={(e) => handleInputChange('customerPainPoint', e.target.value)}
+              maxLength={fieldMax('customerPainPoint')}
               className={inputClasses}
               placeholder="e.g. Winter me haath thand se sooj jate hain"
               rows={4}
             />
+            <CharLimit value={toolInputs.customerPainPoint} max={fieldMax('customerPainPoint')} />
           </div>
         </>
       )}
